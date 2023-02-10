@@ -3,6 +3,8 @@ from datetime import datetime, timedelta
 from functools import lru_cache
 import json
 import logging
+import os
+from pathlib import Path
 import requests
 from typing import Dict, List
 import uuid
@@ -30,9 +32,9 @@ class MediumWebScraper():
 
         scraped_data = []
         for date in dates_array:
-            scraped_data.append(self.scrape_blogs(date))
+            scraped_data += self.scrape_blogs(date)
         
-        self.store_blogs(scraped_data, f"output/medium_blogs_{self.tag}_{self.get_extraction_id()}.json")
+        self.store_blogs(scraped_data, f"medium_blogs_{self.tag}_{self.get_extraction_id()}.json")
     
     def scrape_blogs(self, date_of_interest: datetime.date) -> list[dict]:
         logging.info(f"Scraping blogs on {date_of_interest.strftime('%Y=%m-%d')}...")
@@ -77,14 +79,20 @@ class MediumWebScraper():
                 class_="button button--smaller button--chromeless u-baseColor--buttonNormal",
             )["href"].split("?source=tag_archive")[0]
 
-            logging.info(data)
+            logging.info(f"{data=}")
             web_data.append(data)
 
         return web_data
 
-    def store_blogs(self, blogs: str, path: str):
-        logging.info(f"Saving to {path}...")
-        with open(path, "w", encoding="utf-8") as f_write:
+    def store_blogs(self, blogs: str, file_name: str):
+        if os.getenv("GITHUB_TOKEN"):
+            dir = "output"
+        else:
+            Path("./local_output").mkdir(parents=True, exist_ok=True)
+            dir = "local_output"
+
+        logging.info(f"Saving to {dir}/{file_name}...")
+        with open(f"{dir}/{file_name}", "w", encoding="utf-8") as f_write:
             json.dump(
                 blogs,
                 f_write,

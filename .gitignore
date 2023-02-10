@@ -6,5 +6,4 @@ __pycache__/*
 .pytest_cache
 .venv
 .vscode/*
-models/source/__pycache__/
-models/target/__pycache__/
+local_output/*

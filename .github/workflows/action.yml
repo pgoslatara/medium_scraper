@@ -1,15 +1,14 @@
 name: Run application medium_scraper
 
 on:
-  push
-  # workflow_dispatch:
-  # schedule:
-  #   - cron: "05 7 * * *"
+  workflow_dispatch:
+  schedule:
+    - cron: "0 16 * * *"
 
 jobs:
   run_main_py_and_save_to_repo:
     runs-on: ubuntu-20.04
-    # if: ${{ github.event_name == 'schedule' || github.ref == 'refs/heads/main'}}
+    if: ${{ github.event_name == 'schedule' || github.ref == 'refs/heads/main'}}
     steps:
 
       - uses: actions/checkout@v3
@@ -36,6 +35,5 @@ jobs:
         with:
           author_name: Github Actions
           author_email: actions@github.com
-          # remove: './dir/old_file.js'
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
