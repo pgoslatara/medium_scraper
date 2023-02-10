@@ -1,10 +1,10 @@
-from parser.pokemon_parser import PokemonParser
-from scraper.pokeapi_scraper import PokeAPIScraper
-
+from datetime import datetime, timedelta
+import logging
+from scraper.medium_web_scraper import MediumWebScraper
+from utils import utils
 
 if __name__ == "__main__":
-    scraper = PokeAPIScraper()
-    pokeapi_json = scraper.scrape_pokemon()
-    parser = PokemonParser()
-    parser.parse_pokemon(pokeapi_json)
-    parser.store_pokemon("output/pokemon.json")
+    utils.set_logging_options()
+
+    for tag in ["dbt"]:
+        MediumWebScraper(lookback_days=1, tag=tag).run()
