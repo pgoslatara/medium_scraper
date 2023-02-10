@@ -50,7 +50,7 @@ class MediumWebScraper():
         )
         logging.info(f"Found {len(stories)} stories...")
 
-        base_data = {"extraction_id": self.get_extraction_id(), "extracted_at": self.get_extracted_at()}
+        base_data = {"extraction_id": self.get_extraction_id(), "extracted_at": self.get_extracted_at(), "tag": tag}
 
         web_data = []
         for story in stories:
