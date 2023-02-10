@@ -1,0 +1,28 @@
+{
+    "build": {
+        "dockerfile": "Dockerfile",
+        "context": ".."
+    },
+
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "ms-python.python"
+            ],
+            "settings": {
+                "python.testing.pytestArgs": [
+                    "."
+                ],
+                "python.testing.pytestEnabled": true,
+                "python.formatting.provider": "black",
+                "python.linting.mypyEnabled": true,
+                "python.linting.enabled": true,
+                "terminal.integrated.shellIntegration.enabled": true,
+            }
+        }
+    },
+    "postcreatecommand": [
+        "pre-commit install hooks",
+        "echo 'Ready for action!'"
+    ]
+}
