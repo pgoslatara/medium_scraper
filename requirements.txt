@@ -1,5 +1,9 @@
 beautifulsoup4==4.11.2
 black==22.8.0
+duckdb==0.6.1
 mypy==0.982
 pre-commit==3.0.4
+
+    con = duckdb.connect(database=":memory:")
+    df = con.execute("SELECT * FROM read_json_objects('./local_output/*.json')")==11.0.0
 requests==2.28.1

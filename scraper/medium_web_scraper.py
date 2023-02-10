@@ -15,8 +15,13 @@ class MediumWebScraper():
         self.lookback_days = lookback_days
         self.tags = tags
         
+    @lru_cache
     def get_extracted_at(self) -> datetime:
         return datetime.utcnow()
+        
+    @lru_cache
+    def get_extracted_at_epoch(self) -> int:
+        return int((datetime.utcnow() - datetime(1970, 1, 1)).total_seconds())
 
     @lru_cache
     def get_extraction_id(self) -> uuid:
@@ -35,69 +40,79 @@ class MediumWebScraper():
             for date in dates_array:
                 scraped_data += self.scrape_blogs(date, tag)
             
-            self.store_blogs(scraped_data, f"medium_blogs_{tag}_{self.get_extraction_id()}.json")
+            self.store_blogs([dict(t) for t in {tuple(d.items()) for d in scraped_data}], tag)
     
     def scrape_blogs(self, date_of_interest: datetime.date, tag:str) -> list[dict]:
-        logging.info(f"Scraping blogs on {date_of_interest.strftime('%Y=%m-%d')}...")
         url = f"{self.base_url}/{tag}/archive/{date_of_interest.year}/{date_of_interest.month:02}/{date_of_interest.day:02}"
-        logging.info(f"{url=}")
+        logging.info(f"Scraping blogs on {date_of_interest.strftime('%Y=%m-%d')}: {url=}...")
 
         page = requests.get(url)
         soup = BeautifulSoup(page.text, "html.parser")
 
-        stories = soup.find_all(
-            "div", class_="streamItem streamItem--postPreview js-streamItem"
-        )
-        logging.info(f"Found {len(stories)} stories...")
+        if page.text.find("col u-inlineBlock u-width265 u-verticalAlignTop u-lineHeight35 u-paddingRight0") == -1:
+            logging.info("Monthly summary displayed, results require deduplication.")
+            url = url[:url.rfind("/")]
 
-        base_data = {"extraction_id": self.get_extraction_id(), "extracted_at": self.get_extracted_at(), "tag": tag}
-
-        web_data = []
-        for story in stories:
-            data = base_data.copy()
-
-            author_box = story.find(
-                "div", class_="postMetaInline u-floatLeft u-sm-maxWidthFullWidth"
-            )
-            data["author_url"] = author_box.find("a")["href"]
-            data["author_name"] = author_box.find(
-                "a",
-                class_="ds-link ds-link--styleSubtle link link--darken link--accent u-accentColor--textNormal u-accentColor--textDarken",
-            ).text
-
-            try:
-                data["reading_time_minutes"] = int(
-                    author_box.find("span", class_="readingTime")["title"].split()[0]
-                )
-            except:
-                data["reading_time_minutes"] = -1
-
-            data["published_at"] = story.find("time").get("datetime")
-            data["title"] = story.find("h3").text if story.find("h3") else "-"
-            data["subtitle"] = story.find("h4").text if story.find("h4") else "-"
-
-            try:
-                data["story_url"] = story.find(
-                    "a",
-                    class_="button button--smaller button--chromeless u-baseColor--buttonNormal",
-                )["href"].split("?source=tag_archive")[0]
-            except:
-                data["story_url"] = "-"
-            
-            logging.info(f"{data=}")
-            web_data.append(data)
-
-        return web_data
-
-    def store_blogs(self, blogs: str, file_name: str):
-        if os.getenv("GITHUB_TOKEN"):
-            dir = "output"
+        if page.text.find("These were the top 10 stories tagged with ") > 0: # i.e. No matching blogs on this date
+            logging.info("No blogs published on this date.")
+            return []
         else:
-            Path("./local_output").mkdir(parents=True, exist_ok=True)
-            dir = "local_output"
+            stories = soup.find_all(
+                "div", class_="streamItem streamItem--postPreview js-streamItem"
+            )
+            logging.info(f"Found {len(stories)} stories...")
 
-        logging.info(f"Saving to {dir}/{file_name}...")
-        with open(f"{dir}/{file_name}", "w", encoding="utf-8") as f_write:
+            base_data = {"extraction_id": self.get_extraction_id(), "extracted_at": self.get_extracted_at(), "extracted_at_epoch": self.get_extracted_at_epoch(), "extraction_url": url, "tag": tag}
+
+            web_data = []
+            for story in stories:
+                data = base_data.copy()
+
+                author_box = story.find(
+                    "div", class_="postMetaInline u-floatLeft u-sm-maxWidthFullWidth"
+                )
+                data["author_url"] = author_box.find("a")["href"]
+                data["author_name"] = author_box.find(
+                    "a",
+                    class_="ds-link ds-link--styleSubtle link link--darken link--accent u-accentColor--textNormal u-accentColor--textDarken",
+                ).text
+
+                try:
+                    data["reading_time_minutes"] = int(
+                        author_box.find("span", class_="readingTime")["title"].split()[0]
+                    )
+                except:
+                    data["reading_time_minutes"] = -1
+
+                data["published_at"] = story.find("time").get("datetime")
+                data["title"] = story.find("h3").text if story.find("h3") else "-"
+                data["subtitle"] = story.find("h4").text if story.find("h4") else "-"
+
+                try:
+                    data["story_url"] = story.find(
+                        "a",
+                        class_="button button--smaller button--chromeless u-baseColor--buttonNormal",
+                    )["href"].split("?source=tag_archive")[0]
+                except:
+                    data["story_url"] = "-"
+
+                sorted_data = dict(sorted(data.items(), key=lambda x: (x[0])))            
+                # logging.info(f"{sorted_data=}")
+                web_data.append(sorted_data)
+            
+            return web_data
+
+
+    def store_blogs(self, blogs: str, tag: str):
+        if os.getenv("GITHUB_TOKEN"):
+            dir = "./output"
+        else:
+            dir = "./local_output"
+
+        file_name = f"{dir}/tag={tag}/extracted_at={self.get_extracted_at_epoch()}/extraction_id={self.get_extraction_id()}.json"
+        logging.info(f"Saving {len(blogs)} blogs to {file_name}...")
+        Path(file_name[:file_name.rfind("/")]).mkdir(parents=True, exist_ok=True)
+        with open(file_name, "w", encoding="utf-8") as f_write:
             json.dump(
                 blogs,
                 f_write,
