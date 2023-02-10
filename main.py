@@ -6,5 +6,5 @@ from utils import utils
 if __name__ == "__main__":
     utils.set_logging_options()
 
-    for tag in ["dbt"]:
+    for tag in ["analytics-engineering", "apache-airflow", "databricks", "dbt"]:
         MediumWebScraper(lookback_days=7, tag=tag).run()

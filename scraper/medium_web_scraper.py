@@ -74,11 +74,15 @@ class MediumWebScraper():
             data["published_at"] = story.find("time").get("datetime")
             data["title"] = story.find("h3").text if story.find("h3") else "-"
             data["subtitle"] = story.find("h4").text if story.find("h4") else "-"
-            data["story_url"] = story.find(
-                "a",
-                class_="button button--smaller button--chromeless u-baseColor--buttonNormal",
-            )["href"].split("?source=tag_archive")[0]
 
+            try:
+                data["story_url"] = story.find(
+                    "a",
+                    class_="button button--smaller button--chromeless u-baseColor--buttonNormal",
+                )["href"].split("?source=tag_archive")[0]
+            except:
+                data["story_url"] = "-"
+            
             logging.info(f"{data=}")
             web_data.append(data)
 
