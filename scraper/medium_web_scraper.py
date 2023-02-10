@@ -10,10 +10,10 @@ from typing import Dict, List
 import uuid
 
 class MediumWebScraper():
-    def __init__(self, lookback_days:int, tag:str):
+    def __init__(self, lookback_days:int, tags:str):
         self.base_url = "https://medium.com/tag"
         self.lookback_days = lookback_days
-        self.tag = tag
+        self.tags = tags
         
     def get_extracted_at(self) -> datetime:
         return datetime.utcnow()
@@ -23,22 +23,23 @@ class MediumWebScraper():
         return str(uuid.uuid4())
 
     def run(self):
-        logging.info(f"Scraping blogs with tag '{self.tag}...")
+        for tag in self.tags:
+            logging.info(f"Scraping blogs with tag '{tag}...")
 
-        start_date = (datetime.utcnow() - timedelta(days=1+self.lookback_days)).date()
-        end_date = (datetime.utcnow() - timedelta(days=(1))).date()
-        dates_array = [start_date+timedelta(days=x) for x in range((end_date-start_date).days)]
-        logging.info(f"Generated {len(dates_array)} dates...")
+            start_date = (datetime.utcnow() - timedelta(days=1+self.lookback_days)).date()
+            end_date = (datetime.utcnow() - timedelta(days=(1))).date()
+            dates_array = [start_date+timedelta(days=x) for x in range((end_date-start_date).days)]
+            logging.info(f"Generated {len(dates_array)} dates...")
 
-        scraped_data = []
-        for date in dates_array:
-            scraped_data += self.scrape_blogs(date)
-        
-        self.store_blogs(scraped_data, f"medium_blogs_{self.tag}_{self.get_extraction_id()}.json")
+            scraped_data = []
+            for date in dates_array:
+                scraped_data += self.scrape_blogs(date, tag)
+            
+            self.store_blogs(scraped_data, f"medium_blogs_{tag}_{self.get_extraction_id()}.json")
     
-    def scrape_blogs(self, date_of_interest: datetime.date) -> list[dict]:
+    def scrape_blogs(self, date_of_interest: datetime.date, tag:str) -> list[dict]:
         logging.info(f"Scraping blogs on {date_of_interest.strftime('%Y=%m-%d')}...")
-        url = f"{self.base_url}/{self.tag}/archive/{date_of_interest.year}/{date_of_interest.month:02}/{date_of_interest.day:02}"
+        url = f"{self.base_url}/{tag}/archive/{date_of_interest.year}/{date_of_interest.month:02}/{date_of_interest.day:02}"
         logging.info(f"{url=}")
 
         page = requests.get(url)
