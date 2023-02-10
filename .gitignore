@@ -1,8 +1,10 @@
 */__pycache__/
+*.ipynb
 __pycache__/*
 .mypy_cache/*
 .env
 .pytest_cache
 .venv
+.vscode/*
 models/source/__pycache__/
 models/target/__pycache__/

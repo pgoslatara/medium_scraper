@@ -1,0 +1,20 @@
+[
+    {
+        "author_url": "https://medium.com/@anselmoborges",
+        "author_name": "Anselmo Borges",
+        "reading_time_minutes": 14,
+        "published_at": "2022-12-27T21:26:27.280Z",
+        "title": "Certificação Airflow Fundamentals (Parte 1/2)",
+        "subtitle": "Me rendi ao Airflow, aproveitando meus estudos, criei…",
+        "story_url": "https://medium.com/rescuepoint/certifica%C3%A7%C3%A3o-airflow-fundamentals-parte-1-2-f7c6fd09e1b0"
+    },
+    {
+        "author_url": "https://medium.com/@varshasingh.talk",
+        "author_name": "Varsha Singh",
+        "reading_time_minutes": 4,
+        "published_at": "2022-12-27T22:44:26.935Z",
+        "title": "Getting Started with Apache-Airflow",
+        "subtitle": "-",
+        "story_url": "https://medium.com/@varshasingh.talk/getting-started-with-apache-airflow-4fd506f06a40"
+    }
+]

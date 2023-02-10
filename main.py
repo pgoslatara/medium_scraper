@@ -1,10 +1,7 @@
-from parser.pokemon_parser import PokemonParser
-from scraper.pokeapi_scraper import PokeAPIScraper
+from scraper.medium_web_scraper import MediumWebScraper
 
 
 if __name__ == "__main__":
-    scraper = PokeAPIScraper()
-    pokeapi_json = scraper.scrape_pokemon()
-    parser = PokemonParser()
-    parser.parse_pokemon(pokeapi_json)
-    parser.store_pokemon("output/pokemon.json")
+    scraper = MediumWebScraper()
+    medium_web_json = scraper.scrape_blogs()
+    scraper.store_blogs(medium_web_json, "output/medium_blogs.json")
