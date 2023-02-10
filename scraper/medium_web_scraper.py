@@ -1,14 +1,16 @@
 from bs4 import BeautifulSoup
+from datetime import datetime
 import json
 import requests
 from typing import Dict, List
+import uuid
 
 BASE_URL = "https://medium.com/tag/"
 # TAGS = ["apache-airflow", "dbt"]
 
 
 class MediumWebScraper:
-    def scrape_blogs(self) -> List[Dict]:
+    def scrape_blogs(self) -> list[dict]:
         url = BASE_URL + "apache-airflow" + "/archive/2022/12/27"
 
         page = requests.get(url)
@@ -19,9 +21,11 @@ class MediumWebScraper:
         )
         print(f"Found {len(stories)} stories...")
 
+        base_data = {"extraction_id": uuid.uuid4(), "extracted_at": datetime.utcnow()}
+
         web_data = []
         for story in stories:
-            data = {}
+            data = base_data.copy()
 
             author_box = story.find(
                 "div", class_="postMetaInline u-floatLeft u-sm-maxWidthFullWidth"

@@ -1,5 +1,7 @@
 [
     {
+        "extraction_id": "513a97dc-de77-413e-a154-89f6771584a1",
+        "extracted_at": "2023-02-10 13:17:46.695432",
         "author_url": "https://medium.com/@anselmoborges",
         "author_name": "Anselmo Borges",
         "reading_time_minutes": 14,
@@ -9,6 +11,8 @@
         "story_url": "https://medium.com/rescuepoint/certifica%C3%A7%C3%A3o-airflow-fundamentals-parte-1-2-f7c6fd09e1b0"
     },
     {
+        "extraction_id": "513a97dc-de77-413e-a154-89f6771584a1",
+        "extracted_at": "2023-02-10 13:17:46.695432",
         "author_url": "https://medium.com/@varshasingh.talk",
         "author_name": "Varsha Singh",
         "reading_time_minutes": 4,
