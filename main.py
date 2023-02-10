@@ -1,7 +1,10 @@
+from datetime import datetime, timedelta
+import logging
 from scraper.medium_web_scraper import MediumWebScraper
-
+from utils import utils
 
 if __name__ == "__main__":
-    scraper = MediumWebScraper()
-    medium_web_json = scraper.scrape_blogs()
-    scraper.store_blogs(medium_web_json, "output/medium_blogs.json")
+    utils.set_logging_options()
+
+    for tag in ["dbt"]:
+        MediumWebScraper(lookback_days=1, tag=tag).run()
