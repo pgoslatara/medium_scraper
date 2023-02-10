@@ -7,4 +7,4 @@ if __name__ == "__main__":
     utils.set_logging_options()
 
     for tag in ["dbt"]:
-        MediumWebScraper(lookback_days=1, tag=tag).run()
+        MediumWebScraper(lookback_days=7, tag=tag).run()
