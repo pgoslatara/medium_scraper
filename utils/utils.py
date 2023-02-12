@@ -1,4 +1,39 @@
+import duckdb
+from functools import lru_cache
+from glob import glob
+import json
 import logging
+import os
+
+
+@lru_cache
+def get_output_dir() -> str:
+    if os.getenv("GITHUB_TOKEN"):
+        dir = "./output"
+    else:
+        dir = "./local_output"
+
+    return dir
+
+
+@lru_cache
+def get_json_content() -> list:
+    contents = []
+    for file_name in glob(f"{get_output_dir()}/*/*/*.json"):
+        with open(file_name) as f:
+            d = json.loads(f.read())
+            for x in d:
+                x["file_name"] = file_name
+        contents += d
+
+    logging.info(f"Read {len(contents)} blogs from json files")
+    return contents
+
+
+@lru_cache
+def initialise_duckdb() -> duckdb.connect:
+    return duckdb.connect(database=":memory:")
+
 
 def set_logging_options() -> None:
     LOG_FORMAT = "%(asctime)s %(levelname)s: %(message)s"
