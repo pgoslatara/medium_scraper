@@ -37,3 +37,6 @@ jobs:
           author_email: actions@github.com
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          SENDER_EMAIL_ADDRESS: ${{ secrets.SENDER_EMAIL_ADDRESS }}
+          SENDER_EMAIL_PASSWORD: ${{ secrets.SENDER_EMAIL_PASSWORD }}
+          RECIPIENT_EMAIL_ADDRESS: ${{ secrets.RECIPIENT_EMAIL_ADDRESS }}
