@@ -10,6 +10,7 @@ from typing import Dict, List
 import uuid
 from utils.utils import *
 
+
 class MediumWebScraper:
     def __init__(self, lookback_days: int, tags: list[str]):
         self.base_url = "https://medium.com/tag"
@@ -49,7 +50,7 @@ class MediumWebScraper:
             self.store_blogs(
                 [dict(t) for t in {tuple(d.items()) for d in scraped_data}], tag
             )
-        
+
         return self.get_extraction_id()
 
     def scrape_blogs(self, date_of_interest: datetime, tag: str) -> list[dict]:
@@ -124,8 +125,8 @@ class MediumWebScraper:
                     try:
                         title_index = str(story).find(data["title"])
                         href_index = str(story)[title_index:].find("data-action-value")
-                        href_base = str(story)[title_index+href_index+19:]
-                        data["story_url"] = href_base[:href_base.find('"')]
+                        href_base = str(story)[title_index + href_index + 19 :]
+                        data["story_url"] = href_base[: href_base.find('"')]
                     except:
                         data["story_url"] = "-"
 

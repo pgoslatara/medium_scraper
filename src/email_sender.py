@@ -5,14 +5,16 @@ import smtplib
 from tabulate import tabulate
 from utils.utils import *
 
+
 class EmailSender:
     def __init__(self, lookback_days: int):
         self.con = initialise_duckdb()
         self.lookback_days = lookback_days
-        
+
     def get_relevant_blogs(self) -> dict:
         arrow_table = pa.Table.from_pylist(get_json_content())
-        df = self.con.execute(f"""
+        df = self.con.execute(
+            f"""
             WITH base AS (
                 SELECT
                     *,
@@ -37,12 +39,15 @@ class EmailSender:
             WHERE
                 row_num = 1
             ORDER BY published_at
-        """).arrow()
+        """
+        ).arrow()
 
         data = df.to_pydict()
-        logging.info(f"SELECTed {len(data)} blogs from the last {self.lookback_days} days.")
+        logging.info(
+            f"SELECTed {len(data)} blogs from the last {self.lookback_days} days."
+        )
         return data
-        
+
     def run(self):
         blogs = self.get_relevant_blogs()
         logging.info("Sending email...")
@@ -52,10 +57,11 @@ class EmailSender:
         recipient_email_address = os.getenv("RECIPIENT_EMAIL_ADDRESS")
 
         msg = EmailMessage()
-        msg['Subject'] = 'Relevant Medium Blogs'
-        msg['From'] = sender_email_address 
-        msg['To'] = recipient_email_address
-        msg.set_content(f'''
+        msg["Subject"] = "Relevant Medium Blogs"
+        msg["From"] = sender_email_address
+        msg["To"] = recipient_email_address
+        msg.set_content(
+            f"""
         <!DOCTYPE html>
         <html>
             <body>
@@ -67,9 +73,11 @@ class EmailSender:
                 </div>
             </body>
         </html>
-        ''', subtype='html')
+        """,
+            subtype="html",
+        )
 
-        with smtplib.SMTP_SSL('smtp.gmail.com', 465) as smtp:
-            smtp.login(sender_email_address, sender_email_password) 
+        with smtplib.SMTP_SSL("smtp.gmail.com", 465) as smtp:
+            smtp.login(sender_email_address, sender_email_password)
             smtp.send_message(msg)
             logging.info("Email sent.")
