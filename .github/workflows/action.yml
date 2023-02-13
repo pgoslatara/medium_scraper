@@ -25,6 +25,9 @@ jobs:
 
       - run: pip install -r requirements.txt
 
+      - name: Setup upterm session
+        uses: lhotari/action-upterm@v1
+
       - name: run main.py
         run: python main.py
         env:
