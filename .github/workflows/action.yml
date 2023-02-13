@@ -8,7 +8,6 @@ on:
 jobs:
   run_main_py_and_save_to_repo:
     runs-on: ubuntu-20.04
-    if: ${{ github.event_name == 'schedule' || github.ref == 'refs/heads/main'}}
     steps:
 
       - uses: actions/checkout@v3
@@ -32,6 +31,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - uses: EndBug/add-and-commit@v9
+        if: ${{ github.event_name == 'schedule' || github.ref == 'refs/heads/main'}}
         with:
           author_name: Github Actions
           author_email: actions@github.com

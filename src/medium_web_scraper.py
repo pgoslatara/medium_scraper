@@ -10,8 +10,9 @@ from typing import Dict, List
 import uuid
 from utils.utils import *
 
+
 class MediumWebScraper:
-    def __init__(self, lookback_days: int, tags: str):
+    def __init__(self, lookback_days: int, tags: list[str]):
         self.base_url = "https://medium.com/tag"
         self.lookback_days = lookback_days
         self.tags = tags
@@ -25,7 +26,7 @@ class MediumWebScraper:
         return int((datetime.utcnow() - datetime(1970, 1, 1)).total_seconds())
 
     @lru_cache
-    def get_extraction_id(self) -> uuid:
+    def get_extraction_id(self) -> str:
         return str(uuid.uuid4())
 
     def run(self):
@@ -49,10 +50,10 @@ class MediumWebScraper:
             self.store_blogs(
                 [dict(t) for t in {tuple(d.items()) for d in scraped_data}], tag
             )
-        
+
         return self.get_extraction_id()
 
-    def scrape_blogs(self, date_of_interest: datetime.date, tag: str) -> list[dict]:
+    def scrape_blogs(self, date_of_interest: datetime, tag: str) -> list[dict]:
         url = f"{self.base_url}/{tag}/archive/{date_of_interest.year}/{date_of_interest.month:02}/{date_of_interest.day:02}"
         logging.info(
             f"Scraping blogs on {date_of_interest.strftime('%Y=%m-%d')}: {url=}..."
@@ -124,13 +125,12 @@ class MediumWebScraper:
                     try:
                         title_index = str(story).find(data["title"])
                         href_index = str(story)[title_index:].find("data-action-value")
-                        href_base = str(story)[title_index+href_index+19:]
-                        data["story_url"] = href_base[:href_base.find('"')]
+                        href_base = str(story)[title_index + href_index + 19 :]
+                        data["story_url"] = href_base[: href_base.find('"')]
                     except:
                         data["story_url"] = "-"
 
                 sorted_data = dict(sorted(data.items(), key=lambda x: (x[0])))
-                # logging.info(f"{sorted_data=}")
                 web_data.append(sorted_data)
 
             return web_data
