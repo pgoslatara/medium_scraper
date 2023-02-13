@@ -2,6 +2,7 @@ from email.message import EmailMessage
 import logging
 import pyarrow as pa
 import smtplib
+import ssl
 from tabulate import tabulate
 from utils.utils import *
 
@@ -77,7 +78,11 @@ class EmailSender:
             subtype="html",
         )
 
-        with smtplib.SMTP_SSL("smtp.gmail.com", 465) as smtp:
+        context = ssl.create_default_context()
+        with smtplib.SMTP("smtp.gmail.com", 587) as smtp:
+            smtp.ehlo()
+            smtp.starttls(context=context)
+            smtp.ehlo()
             smtp.login(sender_email_address, sender_email_password)
             smtp.send_message(msg)
             logging.info("Email sent.")
