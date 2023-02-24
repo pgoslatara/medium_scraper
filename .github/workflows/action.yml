@@ -3,7 +3,7 @@ name: Run application medium_scraper
 on:
   workflow_dispatch:
   schedule:
-    - cron: "0 16 * * 5"
+    - cron: "0 9 * * 5"
 
 jobs:
   run_main_py_and_save_to_repo:
