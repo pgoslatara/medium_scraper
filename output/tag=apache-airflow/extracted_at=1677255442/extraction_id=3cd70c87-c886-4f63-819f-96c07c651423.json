@@ -1,0 +1,72 @@
+[
+    {
+        "author_name": "Amarachi Ogu",
+        "author_url": "https://medium.com/@amarachi.ogu",
+        "extracted_at": "2023-02-24 16:17:22.012839",
+        "extracted_at_epoch": 1677255442,
+        "extraction_id": "3cd70c87-c886-4f63-819f-96c07c651423",
+        "extraction_url": "https://medium.com/tag/apache-airflow/archive/2023/02/21",
+        "published_at": "2023-02-21T09:02:28.837Z",
+        "reading_time_minutes": 8,
+        "story_url": "https://medium.com/@amarachi.ogu/implementing-ci-cd-in-cloud-composer-using-cloud-build-and-github-part-2-a721e4ed53da",
+        "subtitle": "-",
+        "tag": "apache-airflow",
+        "title": "Implementing CI/CD in Cloud Composer Using Cloud Build and GitHub — Part 2"
+    },
+    {
+        "author_name": "Amarachi Ogu",
+        "author_url": "https://medium.com/@amarachi.ogu",
+        "extracted_at": "2023-02-24 16:17:22.012839",
+        "extracted_at_epoch": 1677255442,
+        "extraction_id": "3cd70c87-c886-4f63-819f-96c07c651423",
+        "extraction_url": "https://medium.com/tag/apache-airflow/archive/2023/02/21",
+        "published_at": "2023-02-21T08:58:41.586Z",
+        "reading_time_minutes": 5,
+        "story_url": "https://medium.com/@amarachi.ogu/implementing-ci-cd-in-cloud-composer-using-cloud-build-and-github-part-1-f0a4240d9984",
+        "subtitle": "-",
+        "tag": "apache-airflow",
+        "title": "Implementing CI/CD in Cloud Composer Using Cloud Build and GitHub — Part 1"
+    },
+    {
+        "author_name": "Farhan Hanavi",
+        "author_url": "https://medium.com/@farhanhanavi07",
+        "extracted_at": "2023-02-24 16:17:22.012839",
+        "extracted_at_epoch": 1677255442,
+        "extraction_id": "3cd70c87-c886-4f63-819f-96c07c651423",
+        "extraction_url": "https://medium.com/tag/apache-airflow/archive/2023/02/17",
+        "published_at": "2023-02-17T06:16:19.556Z",
+        "reading_time_minutes": 4,
+        "story_url": "https://medium.com/@farhanhanavi07/quick-local-apache-airflow-installation-guide-using-docker-compose-b553da4dce6f",
+        "subtitle": "-",
+        "tag": "apache-airflow",
+        "title": "Quick Local Apache Airflow Installation Guide using Docker Compose"
+    },
+    {
+        "author_name": "Everton Araújo",
+        "author_url": "https://medium.com/@epma",
+        "extracted_at": "2023-02-24 16:17:22.012839",
+        "extracted_at_epoch": 1677255442,
+        "extraction_id": "3cd70c87-c886-4f63-819f-96c07c651423",
+        "extraction_url": "https://medium.com/tag/apache-airflow/archive/2023/02/21",
+        "published_at": "2023-02-21T17:55:10.623Z",
+        "reading_time_minutes": 2,
+        "story_url": "https://medium.com/@epma/install-airflow-using-terraform-80a5444c393",
+        "subtitle": "-",
+        "tag": "apache-airflow",
+        "title": "Install Airflow using Terraform"
+    },
+    {
+        "author_name": "Sundar Balasubramanian",
+        "author_url": "https://faun.pub/@shanbsundar",
+        "extracted_at": "2023-02-24 16:17:22.012839",
+        "extracted_at_epoch": 1677255442,
+        "extraction_id": "3cd70c87-c886-4f63-819f-96c07c651423",
+        "extraction_url": "https://medium.com/tag/apache-airflow/archive/2023/02/22",
+        "published_at": "2023-02-22T07:08:53.115Z",
+        "reading_time_minutes": 6,
+        "story_url": "https://faun.pub/airflow-catchup-vs-backfill-22f3a7d4ba6f",
+        "subtitle": "-",
+        "tag": "apache-airflow",
+        "title": "Airflow — Catchup vs Backfill"
+    }
+]
