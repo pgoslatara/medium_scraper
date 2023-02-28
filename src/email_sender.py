@@ -26,19 +26,30 @@ class EmailSender:
                     AND CAST(published_at AS DATE) < CURRENT_DATE()
             )
 
+            , formatting AS (
+                SELECT
+                    author_name,
+                    published_at,
+                    story_url,
+                    CASE
+                        WHEN subtitle = '-' THEN title || ' (' || reading_time_minutes || ' min.)'
+                        ELSE title || ': ' || subtitle || ' (' || reading_time_minutes || ' min.)'
+                    END AS article_summary,
+                    tag
+                FROM base
+                WHERE
+                    row_num = 1
+            )
+
             SELECT
                 CAST(published_at AS DATE) AS 'Publication Date',
                 author_name AS 'Author',
                 CASE
-                    WHEN story_url = '-' THEN title
-                    ELSE '<a href="' || story_url || '">' || title || '</a>'
-                END AS 'Title',
-                subtitle AS 'Subtitle',
-                tag AS 'Tag',
-                CAST(reading_time_minutes AS VARCHAR) || ' min.' AS 'Reading Time',
-            FROM base
-            WHERE
-                row_num = 1
+                    WHEN story_url = '-' THEN article_summary
+                    ELSE '<a href="' || story_url || '">' || article_summary || '</a>'
+                END AS 'Blog',
+                tag AS 'Tag(s)',
+            FROM formatting
             ORDER BY published_at
         """
         ).arrow()
