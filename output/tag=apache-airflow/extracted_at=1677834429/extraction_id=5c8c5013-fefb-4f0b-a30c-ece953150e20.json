@@ -1,0 +1,16 @@
+[
+    {
+        "author_name": "Yesi Days",
+        "author_url": "https://medium.com/@yesidays",
+        "extracted_at": "2023-03-03 09:07:09.301113",
+        "extracted_at_epoch": 1677834429,
+        "extraction_id": "5c8c5013-fefb-4f0b-a30c-ece953150e20",
+        "extraction_url": "https://medium.com/tag/apache-airflow/archive/2023/02/28",
+        "published_at": "2023-02-28T19:40:22.282Z",
+        "reading_time_minutes": 4,
+        "story_url": "https://medium.com/@yesidays/how-to-build-a-data-pipeline-with-apache-airflow-4741924fc537",
+        "subtitle": "-",
+        "tag": "apache-airflow",
+        "title": "How to Build a Data Pipeline with Apache Airflow"
+    }
+]
