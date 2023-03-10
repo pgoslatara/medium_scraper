@@ -1,0 +1,44 @@
+[
+    {
+        "author_name": "Georgios Satyridis",
+        "author_url": "https://towardsdev.com/@george.satyridis",
+        "extracted_at": "2023-03-10 09:07:21.474026",
+        "extracted_at_epoch": 1678439241,
+        "extraction_id": "79b40ba1-4340-4669-aad6-d93bb93e3f8e",
+        "extraction_url": "https://medium.com/tag/analytics-engineering/archive/2023/03",
+        "published_at": "2023-03-07T14:42:49.858Z",
+        "reading_time_minutes": 5,
+        "story_url": "https://towardsdev.com/a-brief-guide-to-dbts-custom-tests-7d0ce550457d",
+        "subtitle": "-",
+        "tag": "analytics-engineering",
+        "title": "A brief guide to dbt’s custom tests"
+    },
+    {
+        "author_name": "Ahmed Rachid Hazourli",
+        "author_url": "https://medium.com/@ahmedrachidhazourli",
+        "extracted_at": "2023-03-10 09:07:21.474026",
+        "extracted_at_epoch": 1678439241,
+        "extraction_id": "79b40ba1-4340-4669-aad6-d93bb93e3f8e",
+        "extraction_url": "https://medium.com/tag/analytics-engineering/archive/2023/03",
+        "published_at": "2023-03-06T22:36:33.504Z",
+        "reading_time_minutes": 7,
+        "story_url": "https://medium.com/greenplum-data-clinics/accelerate-analytics-with-greenplum-data-warehouse-dbt-629da21160ae",
+        "subtitle": "A hands-on tutorial to help you build &…",
+        "tag": "analytics-engineering",
+        "title": "Accelerate Analytics with Greenplum Data-Warehouse & dbt"
+    },
+    {
+        "author_name": "Jacob Frackson",
+        "author_url": "https://blog.montrealanalytics.com/@jfrcksn",
+        "extracted_at": "2023-03-10 09:07:21.474026",
+        "extracted_at_epoch": 1678439241,
+        "extraction_id": "79b40ba1-4340-4669-aad6-d93bb93e3f8e",
+        "extraction_url": "https://medium.com/tag/analytics-engineering/archive/2023/03",
+        "published_at": "2023-03-07T13:21:01.378Z",
+        "reading_time_minutes": 5,
+        "story_url": "https://blog.montrealanalytics.com/4-tips-for-effective-pull-request-naming-f60793998f04",
+        "subtitle": "Data Strategy",
+        "tag": "analytics-engineering",
+        "title": "4 Tips for Effective Pull Request Naming"
+    }
+]
