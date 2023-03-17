@@ -6,4 +6,16 @@ __pycache__/*
 .pytest_cache
 .venv
 .vscode/*
+dbt/dbt_packages/*
+dbt/logs/*
+dbt/target/*
+dbt/.user.yml
+dbt/dbt_dev.duckdb
+dbt_dev
+dbt_packages/*
+dbt_prod
+duckdb/*
 local_output/*
+main
+target/*
+tmp/*

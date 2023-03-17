@@ -4,6 +4,9 @@ on:
   workflow_dispatch:
   schedule:
     - cron: "0 9 * * 5"
+  
+env:
+  DATA_DIR: "/home/runner/work/medium_scraper/medium_scraper/output"
 
 jobs:
   run_main_py_and_save_to_repo:
@@ -25,13 +28,21 @@ jobs:
 
       - run: pip install -r requirements.txt
 
-      - name: run main.py
+      - name: Run main.py
         run: python main.py
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           SENDER_EMAIL_ADDRESS: ${{ secrets.SENDER_EMAIL_ADDRESS }}
           SENDER_EMAIL_PASSWORD: ${{ secrets.SENDER_EMAIL_PASSWORD }}
           RECIPIENT_EMAIL_ADDRESS: ${{ secrets.RECIPIENT_EMAIL_ADDRESS }}
+
+      - name: Run dbt (dev)
+        if: ${{ github.ref != 'refs/heads/main'}}
+        run: dbt build --profiles-dir ./dbt --project-dir ./dbt --target dev
+
+      - name: Run dbt (prod)
+        if: ${{ github.event_name == 'schedule' || github.ref == 'refs/heads/main'}}
+        run: dbt build --profiles-dir ./dbt --project-dir ./dbt --target prod
 
       - uses: EndBug/add-and-commit@v9
         if: ${{ github.event_name == 'schedule' || github.ref == 'refs/heads/main'}}
