@@ -1,7 +1,7 @@
 import duckdb
 import os
 from pathlib import Path
-import plotly.express as px
+import plotly.graph_objects as go
 from utils.utils import *
 
 
@@ -28,7 +28,7 @@ class BiAssembler:
                 *
             FROM read_parquet('{os.getenv('DATA_DIR')}/marts/fct_blogs_per_day.parquet')
         """).df()
-        fig = px.bar(df, x='published_date', y='num_blogs')
+        fig = go.Figure([go.Bar(x=list(df.published_date), y=list(df.num_blogs))])
 
         bi_html_filename = f"{os.getenv('DATA_DIR')}/bi/plotly.html"
         Path(bi_html_filename[:bi_html_filename.rfind("/")]).mkdir(parents=True, exist_ok=True)
