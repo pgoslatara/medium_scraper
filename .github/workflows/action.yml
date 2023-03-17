@@ -34,9 +34,6 @@ jobs:
 
       - run: pip install -r requirements.txt
 
-      - run: pwd
-      - run: ls -ahl
-
       - name: Run main.py
         run: python main.py
         env:
@@ -60,3 +57,9 @@ jobs:
           author_email: actions@github.com
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Deploy to GitHub Pages
+        if: ${{ github.event_name == 'schedule' || github.ref == 'refs/heads/main'}}
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          folder: /output/bi
