@@ -7,17 +7,17 @@ from utils import utils
 if __name__ == "__main__":
     utils.set_logging_options()
 
-    # lookback_days = int(os.getenv('MEDIUM_BLOG_LOOKBACK_WINDOW', 7))
-    # tags = [
-    #     "analytics-engineering",
-    #     "apache-airflow",
-    #     "databricks",
-    #     "dbt",
-    # ]
+    lookback_days = int(os.getenv('MEDIUM_BLOG_LOOKBACK_WINDOW', 7))
+    tags = [
+        "analytics-engineering",
+        "apache-airflow",
+        "databricks",
+        "dbt",
+    ]
 
-    # extraction_id = MediumWebScraper(
-    #     lookback_days=lookback_days,
-    #     tags=tags,
-    # ).run()
+    extraction_id = MediumWebScraper(
+        lookback_days=lookback_days,
+        tags=tags,
+    ).run()
     BiAssembler().run()
-    # EmailSender(lookback_days=lookback_days).run()
+    EmailSender(lookback_days=lookback_days).run()
