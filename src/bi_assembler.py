@@ -30,7 +30,7 @@ class BiAssembler:
         """).df()
         fig = go.Figure([go.Bar(x=list(df.published_date), y=list(df.num_blogs))])
 
-        bi_html_filename = f"{os.getenv('DATA_DIR')}/bi/plotly.html"
+        bi_html_filename = f"{os.getenv('DATA_DIR')}/bi/index.html"
         Path(bi_html_filename[:bi_html_filename.rfind("/")]).mkdir(parents=True, exist_ok=True)
         logging.info(f"Saving plotly html to {bi_html_filename}...")
         fig.write_html(bi_html_filename)
