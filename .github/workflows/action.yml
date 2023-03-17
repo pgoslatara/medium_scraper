@@ -28,14 +28,6 @@ jobs:
 
       - run: pip install -r requirements.txt
 
-      - name: Run dbt (dev)
-        if: ${{ github.ref != 'refs/heads/main'}}
-        run: dbt build --profiles-dir ./dbt --project-dir ./dbt --target dev
-
-      - name: Run dbt (prod)
-        if: ${{ github.event_name == 'schedule' || github.ref == 'refs/heads/main'}}
-        run: dbt build --profiles-dir ./dbt --project-dir ./dbt --target prod
-
       - name: Run main.py
         run: python main.py
         env:
@@ -43,6 +35,14 @@ jobs:
           SENDER_EMAIL_ADDRESS: ${{ secrets.SENDER_EMAIL_ADDRESS }}
           SENDER_EMAIL_PASSWORD: ${{ secrets.SENDER_EMAIL_PASSWORD }}
           RECIPIENT_EMAIL_ADDRESS: ${{ secrets.RECIPIENT_EMAIL_ADDRESS }}
+
+      - name: Run dbt (dev)
+        if: ${{ github.ref != 'refs/heads/main'}}
+        run: dbt build --profiles-dir ./dbt --project-dir ./dbt --target dev
+
+      - name: Run dbt (prod)
+        if: ${{ github.event_name == 'schedule' || github.ref == 'refs/heads/main'}}
+        run: dbt build --profiles-dir ./dbt --project-dir ./dbt --target prod
 
       - uses: EndBug/add-and-commit@v9
         if: ${{ github.event_name == 'schedule' || github.ref == 'refs/heads/main'}}
