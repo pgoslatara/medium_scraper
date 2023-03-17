@@ -6,7 +6,7 @@ on:
     - cron: "0 9 * * 5"
   
 env:
-  DATA_DIR: "output"
+  DATA_DIR: "/home/runner/work/medium_scraper/medium_scraper/output"
 
 jobs:
   run_main_py_and_save_to_repo:
