@@ -16,5 +16,6 @@ dbt_packages/*
 dbt_prod
 duckdb/*
 local_output/*
+main
 target/*
 tmp/*
