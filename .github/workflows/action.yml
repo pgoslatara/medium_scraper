@@ -11,7 +11,7 @@ on:
     - cron: "0 9 * * 5"
   
 env:
-  DATA_DIR: "/home/runner/work/medium_scraper/output"
+  DATA_DIR: "/home/runner/work/medium_scraper/medium_scraper/output"
   MEDIUM_BLOG_LOOKBACK_WINDOW: '${{ github.event.inputs.medium_blog_lookback_days }}'
 
 jobs:
@@ -33,6 +33,9 @@ jobs:
           restore-keys: ${{ runner.os }}-pip-
 
       - run: pip install -r requirements.txt
+
+      - run: pwd
+      - run: ls -ahl
 
       - name: Run main.py
         run: python main.py
