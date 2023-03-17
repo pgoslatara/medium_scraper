@@ -2,11 +2,17 @@ name: Run application medium_scraper
 
 on:
   workflow_dispatch:
+    inputs:
+      medium_blog_lookback_days:
+        description: The number of days (up to but mot including today) for which to search for
+        required: true
+        default: 7
   schedule:
     - cron: "0 9 * * 5"
   
 env:
   DATA_DIR: "/home/runner/work/medium_scraper/medium_scraper/output"
+  MEDIUM_BLOG_LOOKBACK_WINDOW: '${{ github.event.inputs.medium_blog_lookback_days }}'
 
 jobs:
   run_main_py_and_save_to_repo:
