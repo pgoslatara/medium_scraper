@@ -1,0 +1,44 @@
+[
+    {
+        "author_name": "Thirahealth",
+        "author_url": "https://medium.com/@thirahealth12023",
+        "extracted_at": "2023-03-17 15:29:43.479692",
+        "extracted_at_epoch": 1679066983,
+        "extraction_id": "bfe13039-830f-4888-8c84-9b3a0cb2f5cd",
+        "extraction_url": "https://medium.com/tag/dbt/archive/2023/03/15",
+        "published_at": "2023-03-15T00:59:00.394Z",
+        "reading_time_minutes": 1,
+        "story_url": "https://medium.com/@thirahealth12023/what-makes-life-worth-living-df1626f5b30a",
+        "subtitle": "-",
+        "tag": "dbt",
+        "title": "What Makes Life Worth Living"
+    },
+    {
+        "author_name": "ksshravan",
+        "author_url": "https://medium.com/@ksshravan667",
+        "extracted_at": "2023-03-17 15:29:43.479692",
+        "extracted_at_epoch": 1679066983,
+        "extraction_id": "bfe13039-830f-4888-8c84-9b3a0cb2f5cd",
+        "extraction_url": "https://medium.com/tag/dbt/archive/2023/03/15",
+        "published_at": "2023-03-15T08:38:58.512Z",
+        "reading_time_minutes": 1,
+        "story_url": "https://medium.com/@ksshravan667/installing-dbt-in-a-virtual-environment-5ae9d3dfc8a1",
+        "subtitle": "-",
+        "tag": "dbt",
+        "title": "Installing dbt in a virtual environment"
+    },
+    {
+        "author_name": "Thirahealth",
+        "author_url": "https://medium.com/@thirahealth12023",
+        "extracted_at": "2023-03-17 15:29:43.479692",
+        "extracted_at_epoch": 1679066983,
+        "extraction_id": "bfe13039-830f-4888-8c84-9b3a0cb2f5cd",
+        "extraction_url": "https://medium.com/tag/dbt/archive/2023/03/14",
+        "published_at": "2023-03-14T05:45:12.410Z",
+        "reading_time_minutes": 1,
+        "story_url": "https://www.thirahealth.com/anxiety-and-depression/",
+        "subtitle": "-",
+        "tag": "dbt",
+        "title": "DBT and the Treatment of Depression: A Guide —"
+    }
+]
