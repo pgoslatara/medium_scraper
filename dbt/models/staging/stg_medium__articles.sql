@@ -14,7 +14,7 @@ WITH base AS (
         tag,
         title,
         ROW_NUMBER() OVER(PARTITION BY story_url ORDER BY extracted_at DESC) AS rnum
-    FROM read_json_auto("{{ env_var('DATA_DIR') }}/*/*/*.json")
+    FROM read_json_auto("{{ env_var('DATA_DIR') }}/landing_zone/*/*/*.json")
 )
 
 SELECT
