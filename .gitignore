@@ -19,3 +19,4 @@ local_output/*
 main
 target/*
 tmp/*
+git

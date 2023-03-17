@@ -1,0 +1,9 @@
+version: 2
+
+models:
+  - name: stg_medium__articles
+    columns:
+      - name: story_url
+        tests:
+          - not_null
+          - unique
