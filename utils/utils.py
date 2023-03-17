@@ -5,10 +5,21 @@ import json
 import logging
 import os
 
+@lru_cache
+def get_environment() -> str:
+    if os.getenv("GITHUB_TOKEN"):
+        env = "prod"
+    else:
+        env = "dev"
+
+    logging.info(f"Running on environment: {env}")
+
+    return env
+
 
 @lru_cache
 def get_output_dir() -> str:
-    if os.getenv("GITHUB_TOKEN"):
+    if get_environment() == "prod":
         dir = "./output/landing_zone"
     else:
         dir = "./local_output/landing_zone"
