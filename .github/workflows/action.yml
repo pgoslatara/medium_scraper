@@ -50,12 +50,6 @@ jobs:
         if: ${{ github.event_name == 'schedule' || github.ref == 'refs/heads/main'}}
         run: dbt build --profiles-dir ./dbt --project-dir ./dbt --target prod
 
-      - name: Deploy to GitHub Pages
-        if: ${{ github.event_name == 'schedule' || github.ref == 'refs/heads/main'}}
-        uses: JamesIves/github-pages-deploy-action@v4
-        with:
-          folder: /home/runner/work/medium_scraper/medium_scraper/output/bi
-
       - uses: EndBug/add-and-commit@v9
         if: ${{ github.event_name == 'schedule' || github.ref == 'refs/heads/main'}}
         with:
@@ -63,3 +57,9 @@ jobs:
           author_email: actions@github.com
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Deploy to GitHub Pages
+        if: ${{ github.event_name == 'schedule' || github.ref == 'refs/heads/main'}}
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          folder: /home/runner/work/medium_scraper/medium_scraper/output/bi
