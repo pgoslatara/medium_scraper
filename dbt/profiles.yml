@@ -1,0 +1,13 @@
+medium_scraper:
+  target: dev
+  outputs:
+   dev:
+     type: duckdb
+     extensions:
+      - json
+     path: ./dbt_dev.duckdb
+   prod:
+     type: duckdb
+     extensions:
+      - json
+     path: ./dbt_prod.duckdb
