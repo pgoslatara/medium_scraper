@@ -9,9 +9,9 @@ import os
 @lru_cache
 def get_output_dir() -> str:
     if os.getenv("GITHUB_TOKEN"):
-        dir = "./output"
+        dir = "./output/landing_zone"
     else:
-        dir = "./local_output"
+        dir = "./local_output/landing_zone"
 
     return dir
 
