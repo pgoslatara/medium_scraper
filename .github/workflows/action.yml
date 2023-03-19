@@ -9,7 +9,7 @@ on:
         default: 7
   schedule:
     - cron: "0 9 * * 5"
-  
+
 env:
   DATA_DIR: "/home/runner/work/medium_scraper/medium_scraper/output"
   MEDIUM_BLOG_LOOKBACK_WINDOW: '${{ github.event.inputs.medium_blog_lookback_days }}'

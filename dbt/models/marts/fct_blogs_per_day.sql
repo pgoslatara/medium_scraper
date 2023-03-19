@@ -1,4 +1,10 @@
-SELECT 
+{{
+    config(
+        location='{{ env_var("DATA_DIR") }}/marts/{{ this.name }}.parquet'
+    )
+}}
+
+SELECT
     published_date,
     tag,
     COUNT(DISTINCT story_url) AS num_blogs

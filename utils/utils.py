@@ -5,6 +5,7 @@ import json
 import logging
 import os
 
+
 @lru_cache
 def get_environment() -> str:
     if os.getenv("GITHUB_TOKEN"):
