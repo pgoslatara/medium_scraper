@@ -4,6 +4,7 @@ from pathlib import Path
 import plotly.graph_objects as go
 from plotly.subplots import make_subplots
 import pyarrow as pa
+from sh import dbt
 from utils.utils import *
 
 
@@ -24,14 +25,24 @@ class BiAssembler:
         return duckdb.connect(database=database_file, read_only=True)
 
     def run(self):
+        # Run dbt to update marts
+        dbt(
+            f"build --profiles-dir ./dbt --project-dir ./dbt --target {get_environment()}".split(
+                " "
+            ),
+            _fg=True,
+        )
+
         # Use duckdb to read mart from data lake
+        mart_file = f"{os.getenv('DATA_DIR')}/marts/fct_blogs_per_day.parquet"
+        logging.info(f"Reading mart from : {mart_file}...")
         df = (
             self.get_duckdb_con()
             .execute(
                 f"""
             SELECT
                 *
-            FROM read_parquet('{os.getenv('DATA_DIR')}/marts/fct_blogs_per_day.parquet')
+            FROM read_parquet('{mart_file}')
         """
             )
             .arrow()
