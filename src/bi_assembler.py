@@ -3,6 +3,7 @@ import os
 from pathlib import Path
 import plotly.graph_objects as go
 from plotly.subplots import make_subplots
+import pyarrow as pa
 from utils.utils import *
 
 
@@ -33,17 +34,18 @@ class BiAssembler:
             FROM read_parquet('{os.getenv('DATA_DIR')}/marts/fct_blogs_per_day.parquet')
         """
             )
-            .df()
+            .arrow()
         )
 
         # Create subplot per tag
         tags = list(sorted(df["tag"].unique().tolist()))
         fig = make_subplots(rows=len(tags), cols=1, subplot_titles=tags)
         for tag in tags:
+            data = df.filter(pa.compute.equal(df["tag"], tag))
             fig.append_trace(
                 go.Bar(
-                    x=list(df[df.tag == tag].published_date),
-                    y=list(df[df.tag == tag].num_blogs),
+                    x=data["published_date"],
+                    y=df["num_blogs"],
                     showlegend=False,
                 ),
                 row=tags.index(tag) + 1,
