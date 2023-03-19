@@ -17,7 +17,7 @@
                 "python.formatting.provider": "black",
                 "python.linting.mypyEnabled": true,
                 "python.linting.enabled": true,
-                "terminal.integrated.shellIntegration.enabled": true,
+                "terminal.integrated.shellIntegration.enabled": true
             }
         }
     },
