@@ -8,7 +8,7 @@ WITH base AS (
         extraction_url,
         CAST(published_at AS TIMESTAMP) AS published_at,
         CAST(published_at AS DATE) AS published_date,
-        CAST(reading_time_minutes AS INTEGER) AS reading_time_minutes,
+        CAST(IF(reading_time_minutes = -1, 0, reading_time_minutes) AS INTEGER) AS reading_time_minutes,
         story_url,
         subtitle,
         tag,
