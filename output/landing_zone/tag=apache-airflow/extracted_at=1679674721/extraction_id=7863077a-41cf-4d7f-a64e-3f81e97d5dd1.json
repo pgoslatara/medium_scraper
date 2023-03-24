@@ -1,0 +1,44 @@
+[
+    {
+        "author_name": "Agusmahari",
+        "author_url": "https://medium.com/@agusmahari",
+        "extracted_at": "2023-03-24 16:18:41.375063",
+        "extracted_at_epoch": 1679674721,
+        "extraction_id": "7863077a-41cf-4d7f-a64e-3f81e97d5dd1",
+        "extraction_url": "https://medium.com/tag/apache-airflow/archive/2023/03/22",
+        "published_at": "2023-03-22T15:10:44.295Z",
+        "reading_time_minutes": 3,
+        "story_url": "https://medium.com/@agusmahari/getting-started-with-the-dummyoperator-in-airflow-simplifying-workflow-design-cd68048ff211",
+        "subtitle": "-",
+        "tag": "apache-airflow",
+        "title": "Getting Started with the DummyOperator in Airflow: Simplifying Workflow Design"
+    },
+    {
+        "author_name": "Ibrahima SOUMARE",
+        "author_url": "https://medium.com/@ibrahima-soumare",
+        "extracted_at": "2023-03-24 16:18:41.375063",
+        "extracted_at_epoch": 1679674721,
+        "extraction_id": "7863077a-41cf-4d7f-a64e-3f81e97d5dd1",
+        "extraction_url": "https://medium.com/tag/apache-airflow/archive/2023/03/18",
+        "published_at": "2023-03-18T15:37:18.642Z",
+        "reading_time_minutes": 4,
+        "story_url": "https://medium.com/@ibrahima-soumare/d%C3%A9marrer-avec-apache-airflow-fb166bc83a14",
+        "subtitle": "-",
+        "tag": "apache-airflow",
+        "title": "Démarrer avec Apache Airflow"
+    },
+    {
+        "author_name": "Yesi Days",
+        "author_url": "https://medium.com/@yesidays",
+        "extracted_at": "2023-03-24 16:18:41.375063",
+        "extracted_at_epoch": 1679674721,
+        "extraction_id": "7863077a-41cf-4d7f-a64e-3f81e97d5dd1",
+        "extraction_url": "https://medium.com/tag/apache-airflow/archive/2023/03/22",
+        "published_at": "2023-03-22T19:07:51.932Z",
+        "reading_time_minutes": 3,
+        "story_url": "https://medium.com/@yesidays/etl-with-apache-airflow-postgresql-and-s3-connection-d0c8b12fcf3c",
+        "subtitle": "-",
+        "tag": "apache-airflow",
+        "title": "ETL with Apache Airflow: PostgreSQL and S3 connection"
+    }
+]
