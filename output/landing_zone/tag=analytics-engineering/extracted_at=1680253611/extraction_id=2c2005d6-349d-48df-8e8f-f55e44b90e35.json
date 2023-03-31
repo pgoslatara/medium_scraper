@@ -1,0 +1,72 @@
+[
+    {
+        "author_name": "Dave Flynn",
+        "author_url": "https://medium.com/@daveflynn",
+        "extracted_at": "2023-03-31 09:06:51.670476",
+        "extracted_at_epoch": 1680253611,
+        "extraction_id": "2c2005d6-349d-48df-8e8f-f55e44b90e35",
+        "extraction_url": "https://medium.com/tag/analytics-engineering/archive/2023/03/28",
+        "published_at": "2023-03-28T05:24:51.939Z",
+        "reading_time_minutes": 3,
+        "story_url": "https://medium.com/inthepipeline/reduce-command-fatigue-working-on-dbt-data-projects-76ce0cf0ee61",
+        "subtitle": "-",
+        "tag": "analytics-engineering",
+        "title": "Reduce ‘command fatigue’ working on dbt data projects"
+    },
+    {
+        "author_name": "Balu Rama Chandra",
+        "author_url": "https://medium.com/@baluramachandra90",
+        "extracted_at": "2023-03-31 09:06:51.670476",
+        "extracted_at_epoch": 1680253611,
+        "extraction_id": "2c2005d6-349d-48df-8e8f-f55e44b90e35",
+        "extraction_url": "https://medium.com/tag/analytics-engineering/archive/2023/03/23",
+        "published_at": "2023-03-23T08:12:20.986Z",
+        "reading_time_minutes": 9,
+        "story_url": "https://medium.com/inthepipeline/how-to-catch-common-data-quality-issues-that-haunt-data-engineers-with-piperider-3a7703cd7f18",
+        "subtitle": "-",
+        "tag": "analytics-engineering",
+        "title": "How to Catch Common Data Quality Issues That Haunt Data Engineers with PipeRider"
+    },
+    {
+        "author_name": "Data 4 Everyone!",
+        "author_url": "https://levelup.gitconnected.com/@dataforeveryone",
+        "extracted_at": "2023-03-31 09:06:51.670476",
+        "extracted_at_epoch": 1680253611,
+        "extraction_id": "2c2005d6-349d-48df-8e8f-f55e44b90e35",
+        "extraction_url": "https://medium.com/tag/analytics-engineering/archive/2023/03/27",
+        "published_at": "2023-03-27T00:42:40.679Z",
+        "reading_time_minutes": 6,
+        "story_url": "https://levelup.gitconnected.com/the-best-article-you-will-read-about-how-to-set-up-dbt-with-docker-and-postgresql-56001ab61203",
+        "subtitle": "The 6-Steps Guide tested on Windows, Ubuntu, and Mac OS X",
+        "tag": "analytics-engineering",
+        "title": "How to Install dbt With Docker and PostgreSQL"
+    },
+    {
+        "author_name": "Ferdinando Micco",
+        "author_url": "https://medium.com/@f.micco",
+        "extracted_at": "2023-03-31 09:06:51.670476",
+        "extracted_at_epoch": 1680253611,
+        "extraction_id": "2c2005d6-349d-48df-8e8f-f55e44b90e35",
+        "extraction_url": "https://medium.com/tag/analytics-engineering/archive/2023/03/27",
+        "published_at": "2023-03-27T08:47:23.617Z",
+        "reading_time_minutes": 8,
+        "story_url": "https://medium.com/data-reply-it-datatech/analytics-engineering-with-dbt-the-evolution-of-the-modern-data-pipeline-96d9ee716334",
+        "subtitle": "-",
+        "tag": "analytics-engineering",
+        "title": "Analytics engineering with dbt : the evolution of the modern data pipeline"
+    },
+    {
+        "author_name": "Lokesh Rathi",
+        "author_url": "https://medium.com/@lokeshrth4617",
+        "extracted_at": "2023-03-31 09:06:51.670476",
+        "extracted_at_epoch": 1680253611,
+        "extraction_id": "2c2005d6-349d-48df-8e8f-f55e44b90e35",
+        "extraction_url": "https://medium.com/tag/analytics-engineering/archive/2023/03/24",
+        "published_at": "2023-03-24T08:15:24.667Z",
+        "reading_time_minutes": 3,
+        "story_url": "https://medium.com/@lokeshrth4617/lazy-evaluation-in-apache-spark-fb21638a207c",
+        "subtitle": "Objective:",
+        "tag": "analytics-engineering",
+        "title": "Lazy Evaluation in Apache Spark."
+    }
+]
