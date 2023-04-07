@@ -1,0 +1,72 @@
+[
+    {
+        "author_name": "Eric Arsenault",
+        "author_url": "https://medium.com/@erics-arsenault",
+        "extracted_at": "2023-04-07 09:06:06.670716",
+        "extracted_at_epoch": 1680858366,
+        "extraction_id": "ea1aa3ce-83f9-4596-8e68-fdb4521997ea",
+        "extraction_url": "https://medium.com/tag/analytics-engineering/archive/2023/04",
+        "published_at": "2023-04-04T19:04:31.706Z",
+        "reading_time_minutes": 25,
+        "story_url": "https://medium.com/@erics-arsenault/my-gift-to-you-a-free-monitoring-dashboard-for-looker-759cc5fb232b",
+        "subtitle": "-",
+        "tag": "analytics-engineering",
+        "title": "My Gift to You: A Free Monitoring Dashboard for Looker"
+    },
+    {
+        "author_name": "Balu Rama Chandra",
+        "author_url": "https://medium.com/@baluramachandra90",
+        "extracted_at": "2023-04-07 09:06:06.670716",
+        "extracted_at_epoch": 1680858366,
+        "extraction_id": "ea1aa3ce-83f9-4596-8e68-fdb4521997ea",
+        "extraction_url": "https://medium.com/tag/analytics-engineering/archive/2023/03/30",
+        "published_at": "2023-03-30T12:01:46.348Z",
+        "reading_time_minutes": 4,
+        "story_url": "https://medium.com/@baluramachandra90/common-data-transformation-techniques-for-data-engineers-ee807eaa97d7",
+        "subtitle": "Why transform data?",
+        "tag": "analytics-engineering",
+        "title": "Common Data Transformation Techniques for Data Engineers"
+    },
+    {
+        "author_name": "Pia Riachi",
+        "author_url": "https://medium.com/@piariachi",
+        "extracted_at": "2023-04-07 09:06:06.670716",
+        "extracted_at_epoch": 1680858366,
+        "extraction_id": "ea1aa3ce-83f9-4596-8e68-fdb4521997ea",
+        "extraction_url": "https://medium.com/tag/analytics-engineering/archive/2023/04",
+        "published_at": "2023-04-05T16:50:01.347Z",
+        "reading_time_minutes": 3,
+        "story_url": "https://medium.com/@piariachi/all-about-the-dbt-metrics-layer-e1e647212c92",
+        "subtitle": "-",
+        "tag": "analytics-engineering",
+        "title": "All About the dbt Metrics Layer"
+    },
+    {
+        "author_name": "Bas Nederkoorn",
+        "author_url": "https://towardsdatascience.com/@sebasn",
+        "extracted_at": "2023-04-07 09:06:06.670716",
+        "extracted_at_epoch": 1680858366,
+        "extraction_id": "ea1aa3ce-83f9-4596-8e68-fdb4521997ea",
+        "extraction_url": "https://medium.com/tag/analytics-engineering/archive/2023/04",
+        "published_at": "2023-04-05T13:43:21.201Z",
+        "reading_time_minutes": 9,
+        "story_url": "https://towardsdatascience.com/optimizing-vs-code-for-dbt-on-mac-a56dd27ba8d5",
+        "subtitle": "A Guide to Maximize Your dbt Productivity in Visual Studio Code",
+        "tag": "analytics-engineering",
+        "title": "Optimizing VS Code for dbt on Mac"
+    },
+    {
+        "author_name": "Orchestra",
+        "author_url": "https://medium.com/@hugo_42798",
+        "extracted_at": "2023-04-07 09:06:06.670716",
+        "extracted_at_epoch": 1680858366,
+        "extraction_id": "ea1aa3ce-83f9-4596-8e68-fdb4521997ea",
+        "extraction_url": "https://medium.com/tag/analytics-engineering/archive/2023/04",
+        "published_at": "2023-04-05T08:32:22.076Z",
+        "reading_time_minutes": 7,
+        "story_url": "https://medium.com/@hugo_42798/what-is-orchestra-d8d7c9d15fbb",
+        "subtitle": "And why should anyone care!",
+        "tag": "analytics-engineering",
+        "title": "What is Orchestra?"
+    }
+]
