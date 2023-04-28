@@ -1,0 +1,30 @@
+[
+    {
+        "author_name": "Adyen",
+        "author_url": "https://medium.com/@adyen",
+        "extracted_at": "2023-04-28 09:05:57.638459",
+        "extracted_at_epoch": 1682672757,
+        "extraction_id": "83977a68-9155-4c92-af5e-b4ed10c6ac9e",
+        "extraction_url": "https://medium.com/tag/analytics-engineering/archive/2023/04/20",
+        "published_at": "2023-04-20T15:36:02.150Z",
+        "reading_time_minutes": 5,
+        "story_url": "https://medium.com/adyen/data-engineering-at-adyen-ccded12a6eb",
+        "subtitle": "Engineered for High Quality Data",
+        "tag": "analytics-engineering",
+        "title": "Data Engineering at Adyen"
+    },
+    {
+        "author_name": "Matt Brady",
+        "author_url": "https://medium.com/@matthew_75153",
+        "extracted_at": "2023-04-28 09:05:57.638459",
+        "extracted_at_epoch": 1682672757,
+        "extraction_id": "83977a68-9155-4c92-af5e-b4ed10c6ac9e",
+        "extraction_url": "https://medium.com/tag/analytics-engineering/archive/2023/04/23",
+        "published_at": "2023-04-23T11:59:40.514Z",
+        "reading_time_minutes": 4,
+        "story_url": "https://medium.com/@matthew_75153/data-engineering-for-dummies-the-three-types-of-data-engineers-you-need-to-know-6ee4915e4d4a",
+        "subtitle": "-",
+        "tag": "analytics-engineering",
+        "title": "Data Engineering for Dummies: The Three Types of Data Engineers You Need to Know"
+    }
+]
