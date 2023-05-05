@@ -25,6 +25,9 @@ class BiAssembler:
         return duckdb.connect(database=database_file, read_only=True)
 
     def run(self):
+        # Ensure required directories exist
+        Path(f"{os.getenv('DATA_DIR')}/marts/").mkdir(parents=True, exist_ok=True)
+
         # Run dbt to update marts
         dbt(
             f"build --profiles-dir ./dbt --project-dir ./dbt --target {get_environment()}".split(
