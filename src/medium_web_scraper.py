@@ -3,10 +3,9 @@ from datetime import datetime, timedelta
 from functools import lru_cache
 import json
 import logging
-import os
 from pathlib import Path
 import requests
-from typing import Dict, List
+from typing import List
 import uuid
 from utils.utils import *
 
