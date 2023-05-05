@@ -1,5 +1,7 @@
 # medium_scraper
 
+A slightly sarcastic, highly over-engineered GitHub-as-a-Data-Platform Proof-of-Concept.
+
 # Development setup
 
 1. Create virtual env and install required packages:
