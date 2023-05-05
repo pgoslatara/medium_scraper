@@ -12,7 +12,7 @@ from utils.utils import *
 
 
 class MediumWebScraper:
-    def __init__(self, lookback_days: int, tags: list[str]):
+    def __init__(self, lookback_days: int, tags: List[str]):
         self.base_url = "https://medium.com/tag"
         self.lookback_days = lookback_days
         self.tags = tags
@@ -53,7 +53,7 @@ class MediumWebScraper:
 
         return self.get_extraction_id()
 
-    def scrape_blogs(self, date_of_interest: datetime, tag: str) -> list[dict]:
+    def scrape_blogs(self, date_of_interest: datetime, tag: str) -> List[dict]:
         url = f"{self.base_url}/{tag}/archive/{date_of_interest.year}/{date_of_interest.month:02}/{date_of_interest.day:02}"
         logging.info(
             f"Scraping blogs on {date_of_interest.strftime('%Y=%m-%d')}: {url=}..."
