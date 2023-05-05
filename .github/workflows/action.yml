@@ -21,7 +21,6 @@ jobs:
       fail-fast: false
       matrix:
         python-version:
-        - "3.7"
         - "3.8"
         - "3.9"
         - "3.10"
@@ -56,7 +55,7 @@ jobs:
           RECIPIENT_EMAIL_ADDRESS: ${{ secrets.RECIPIENT_EMAIL_ADDRESS }}
 
       - uses: EndBug/add-and-commit@v9
-        if: ${{ github.event_name == 'schedule' || github.ref == 'refs/heads/main'}}
+        if: ${{ matrix.python-version == '3.11' && (github.event_name == 'schedule' || github.ref == 'refs/heads/main') }}
         with:
           author_name: Github Actions
           author_email: actions@github.com
@@ -64,7 +63,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Deploy to GitHub Pages
-        if: ${{ github.event_name == 'schedule' || github.ref == 'refs/heads/main'}}
+        if: ${{ matrix.python-version == '3.11' && (github.event_name == 'schedule' || github.ref == 'refs/heads/main') }}
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           folder: /home/runner/work/medium_scraper/medium_scraper/output/bi
