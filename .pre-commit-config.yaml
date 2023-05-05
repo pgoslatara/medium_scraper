@@ -19,6 +19,11 @@ repos:
     hooks:
       - id: black
         name: Run black formatter
+  - repo: https://github.com/PyCQA/autoflake
+    rev: v2.1.1
+    hooks:
+      - id: autoflake
+        args: ["--in-place", "--remove-all-unused-imports"]
   - repo: https://github.com/tconbeer/sqlfmt
     rev: v0.18.0
     hooks:
