@@ -1,0 +1,30 @@
+[
+    {
+        "author_name": "Jessika Milhomem",
+        "author_url": "https://medium.com/@jessikamilhomem",
+        "extracted_at": "2023-05-05 09:06:03.647308",
+        "extracted_at_epoch": 1683277563,
+        "extraction_id": "630f3392-bd21-4f9c-96d4-3e38103c9f91",
+        "extraction_url": "https://medium.com/tag/analytics-engineering/archive/2023/05",
+        "published_at": "2023-05-01T20:03:32.260Z",
+        "reading_time_minutes": 5,
+        "story_url": "https://medium.com/@jessikamilhomem/dbt-the-framework-that-uses-sql-syntax-for-data-processing-392ac36e6f92",
+        "subtitle": "-",
+        "tag": "analytics-engineering",
+        "title": "DBT: the framework that uses SQL syntax for data processing"
+    },
+    {
+        "author_name": "Olivier Dupuis",
+        "author_url": "https://blog.rittmananalytics.com/@odupuis",
+        "extracted_at": "2023-05-05 09:06:03.647308",
+        "extracted_at_epoch": 1683277563,
+        "extraction_id": "630f3392-bd21-4f9c-96d4-3e38103c9f91",
+        "extraction_url": "https://medium.com/tag/analytics-engineering/archive/2023/04/28",
+        "published_at": "2023-04-28T12:04:38.630Z",
+        "reading_time_minutes": 5,
+        "story_url": "https://blog.rittmananalytics.com/optimizing-data-materialization-using-dagsters-policies-308fc77aba3c",
+        "subtitle": "-",
+        "tag": "analytics-engineering",
+        "title": "Optimizing Data Materialization Using Dagster’s Policies"
+    }
+]
