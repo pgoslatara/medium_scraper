@@ -62,7 +62,7 @@ class EmailSender:
 
     def run(self):
         blogs = self.get_relevant_blogs()
-        logging.info("Sending email...")
+        logging.info("Assembling email...")
 
         sender_email_address = os.getenv("SENDER_EMAIL_ADDRESS")
         sender_email_password = os.getenv("SENDER_EMAIL_PASSWORD")
@@ -89,11 +89,13 @@ class EmailSender:
             subtype="html",
         )
 
-        context = ssl.create_default_context()
-        with smtplib.SMTP("smtp.gmail.com", 587) as smtp:
-            smtp.ehlo()
-            smtp.starttls(context=context)
-            smtp.ehlo()
-            smtp.login(sender_email_address, sender_email_password)
-            smtp.send_message(msg)
-            logging.info("Email sent.")
+        if sender_email_address and sender_email_password and recipient_email_address:
+            logging.info("Sending email...")
+            context = ssl.create_default_context()
+            with smtplib.SMTP("smtp.gmail.com", 587) as smtp:
+                smtp.ehlo()
+                smtp.starttls(context=context)
+                smtp.ehlo()
+                smtp.login(sender_email_address, sender_email_password)
+                smtp.send_message(msg)
+                logging.info("Email sent.")
