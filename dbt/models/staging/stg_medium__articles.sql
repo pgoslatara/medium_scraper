@@ -15,6 +15,8 @@ WITH base AS (
         title,
         ROW_NUMBER() OVER(PARTITION BY story_url ORDER BY extracted_at DESC) AS rnum
     FROM read_json_auto("{{ env_var('DATA_DIR') }}/landing_zone/*/*/*.json")
+    WHERE
+        author_name != 'Thirahealth' -- Tags Dialectical Behavior Therapy blogs with dbt, want to exclude these
 )
 
 SELECT
