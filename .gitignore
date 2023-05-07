@@ -2,6 +2,7 @@
 *.ipynb
 __pycache__/*
 .mypy_cache/*
+.eggs/*
 .env
 .envrc
 .pytest_cache
@@ -18,5 +19,6 @@ dbt_prod
 duckdb/*
 local_output/*
 main
+medium_scraper.egg-info/*
 target/*
 tmp/*
