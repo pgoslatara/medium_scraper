@@ -43,8 +43,9 @@ jobs:
 
       - run: pip install -e .
 
-      - name: Run pre-commit
-        run: pre-commit run -a
+      - run: pre-commit run -a
+
+      - run: ls -ahl
 
       - name: Run main
         run: main
