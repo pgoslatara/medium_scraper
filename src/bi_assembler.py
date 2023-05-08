@@ -1,10 +1,10 @@
+from dbt.cli.main import dbtRunner
 import duckdb
 import os
 from pathlib import Path
 import plotly.graph_objects as go
 from plotly.subplots import make_subplots
 import pyarrow as pa
-from sh import dbt
 from utils.utils import *
 
 
@@ -29,11 +29,17 @@ class BiAssembler:
         Path(f"{os.getenv('DATA_DIR')}/marts/").mkdir(parents=True, exist_ok=True)
 
         # Run dbt to update marts
-        dbt(
-            f"build --profiles-dir ./dbt --project-dir ./dbt --target {get_environment()}".split(
-                " "
-            ),
-            _fg=True,
+        dbt = dbtRunner()
+        dbt.invoke(
+            [
+                "build",
+                "--profiles-dir",
+                "./dbt",
+                "--project-dir",
+                "./dbt",
+                "--target",
+                get_environment(),
+            ]
         )
 
         # Use duckdb to read mart from data lake
