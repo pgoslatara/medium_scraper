@@ -4,7 +4,8 @@ from src.email_sender import EmailSender
 from src.medium_web_scraper import MediumWebScraper
 from utils import utils
 
-if __name__ == "__main__":
+
+def main():
     utils.set_logging_options()
 
     # MEDIUM_BLOG_LOOKBACK_WINDOW is "" when action is triggered from main branch
@@ -27,3 +28,7 @@ if __name__ == "__main__":
     ).run()
     BiAssembler().run()
     EmailSender(lookback_days=lookback_days).run()
+
+
+if __name__ == "__main__":
+    main()

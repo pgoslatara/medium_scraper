@@ -2,11 +2,13 @@
 *.ipynb
 __pycache__/*
 .mypy_cache/*
+.eggs/*
 .env
 .envrc
 .pytest_cache
 .venv
 .vscode/*
+build/*
 dbt/dbt_packages/*
 dbt/logs/*
 dbt/target/*
@@ -18,5 +20,6 @@ dbt_prod
 duckdb/*
 local_output/*
 main
+medium_scraper.egg-info/*
 target/*
 tmp/*
