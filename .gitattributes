@@ -1,0 +1,3 @@
+*.sql linguist-detectable=true
+*.yml linguist-detectable=true
+*.yml linguist-language=YAML
