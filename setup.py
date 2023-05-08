@@ -22,11 +22,6 @@ dev_requirements = [
 extras_requirements = {"dev": dev_requirements}
 
 setup(
-    entry_points={
-        "console_scripts": [
-            "main = main:main",
-        ]
-    },
     include_package_data=True,
     name="medium-scraper",
     packages=find_packages(include=["src"]),
