@@ -146,3 +146,7 @@ class MediumWebScraper:
                 indent=4,
                 default=str,
             )
+
+
+def test():
+    print("test")

@@ -8,6 +8,7 @@ __pycache__/*
 .pytest_cache
 .venv
 .vscode/*
+build/*
 dbt/dbt_packages/*
 dbt/logs/*
 dbt/target/*
