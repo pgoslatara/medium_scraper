@@ -11,6 +11,7 @@ requirements = [
     "pre-commit",
     "pyarrow",
     "requests",
+    "setuptools<=62.6.0",
     "sh>=2.0.0",
     "tabulate",
 ]
