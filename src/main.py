@@ -1,4 +1,5 @@
 import os
+
 from src.bi_assembler import BiAssembler
 from src.email_sender import EmailSender
 from src.medium_web_scraper import MediumWebScraper

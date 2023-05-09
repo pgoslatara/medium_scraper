@@ -1,10 +1,12 @@
-from dbt.cli.main import dbtRunner
-import duckdb
 import os
 from pathlib import Path
+
+import duckdb
 import plotly.graph_objects as go
-from plotly.subplots import make_subplots
 import pyarrow as pa
+from dbt.cli.main import dbtRunner
+from plotly.subplots import make_subplots
+
 from utils.utils import *
 
 
