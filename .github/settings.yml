@@ -1,0 +1,13 @@
+repository:
+  # See https://developer.github.com/v3/repos/#edit for all available settings.
+  name: medium_scraper
+  description: A slightly sarcastic, highly over-engineered GitHub-as-a-Data-Platform Proof-of-Concept.
+  homepage: https://github.com/pgoslatara/medium_scraper
+  private: false
+  has_issues: true
+  has_wiki: false
+  has_downloads: false
+  default_branch: main
+  allow_squash_merge: true
+  allow_merge_commit: false
+  allow_rebase_merge: false
