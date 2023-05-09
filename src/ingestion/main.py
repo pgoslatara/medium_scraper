@@ -1,13 +1,12 @@
 import os
 
-from src.bi_assembler import BiAssembler
-from src.email_sender import EmailSender
-from src.medium_web_scraper import MediumWebScraper
-from utils import utils
+from utils.utils import set_logging_options
+
+from .medium_web_scraper import MediumWebScraper
 
 
 def main():
-    utils.set_logging_options()
+    set_logging_options()
 
     # MEDIUM_BLOG_LOOKBACK_WINDOW is "" when action is triggered from main branch
     default_lookback = 7
@@ -23,12 +22,10 @@ def main():
         "dbt",
     ]
 
-    extraction_id = MediumWebScraper(
+    MediumWebScraper(
         lookback_days=lookback_days,
         tags=tags,
     ).run()
-    BiAssembler().run()
-    EmailSender(lookback_days=lookback_days).run()
 
 
 if __name__ == "__main__":

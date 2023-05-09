@@ -5,6 +5,7 @@ from functools import lru_cache
 from glob import glob
 
 import duckdb
+from dbt.cli.main import dbtRunner
 
 
 @lru_cache
@@ -46,6 +47,21 @@ def get_json_content() -> list:
 @lru_cache
 def initialise_duckdb() -> duckdb.connect:
     return duckdb.connect(database=":memory:")
+
+
+def run_dbt_command(command: str) -> None:
+    dbt = dbtRunner()
+    dbt.invoke(
+        command.split(" ")[1:]
+        + [
+            "--profiles-dir",
+            "./dbt",
+            "--project-dir",
+            "./dbt",
+            "--target",
+            get_environment(),
+        ]
+    )
 
 
 def set_logging_options() -> None:

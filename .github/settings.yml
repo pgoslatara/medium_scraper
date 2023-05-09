@@ -21,10 +21,10 @@ branches:
         checks:
           # https://docs.github.com/en/rest/branches/branch-protection?apiVersion=2022-11-28#update-branch-protection
           context: [
-            "run_main_py_and_save_to_repo (3.8)",
-            "run_main_py_and_save_to_repo (3.9)",
-            "run_main_py_and_save_to_repo (3.10)",
-            "run_main_py_and_save_to_repo (3.11)"
+            "ci_pipeline/ci_pipeline (3.8)",
+            "ci_pipeline/ci_pipeline (3.9)",
+            "ci_pipeline/ci_pipeline (3.10)",
+            "ci_pipeline/ci_pipeline (3.11)"
           ]
       dismiss_stale_reviews: true
       enforce_admins: true

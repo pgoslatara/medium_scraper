@@ -4,13 +4,12 @@ from pathlib import Path
 import duckdb
 import plotly.graph_objects as go
 import pyarrow as pa
-from dbt.cli.main import dbtRunner
 from plotly.subplots import make_subplots
 
 from utils.utils import *
 
 
-class BiAssembler:
+class BuildPlotlyHTMLFile:
     def __init__(self):
         pass
 
@@ -27,23 +26,6 @@ class BiAssembler:
         return duckdb.connect(database=database_file, read_only=True)
 
     def run(self):
-        # Ensure required directories exist
-        Path(f"{os.getenv('DATA_DIR')}/marts/").mkdir(parents=True, exist_ok=True)
-
-        # Run dbt to update marts
-        dbt = dbtRunner()
-        dbt.invoke(
-            [
-                "build",
-                "--profiles-dir",
-                "./dbt",
-                "--project-dir",
-                "./dbt",
-                "--target",
-                get_environment(),
-            ]
-        )
-
         # Use duckdb to read mart from data lake
         mart_file = f"{os.getenv('DATA_DIR')}/marts/fct_blogs_per_day.parquet"
         logging.info(f"Reading mart from : {mart_file}...")
