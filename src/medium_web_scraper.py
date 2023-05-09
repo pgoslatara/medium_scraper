@@ -1,12 +1,14 @@
-from bs4 import BeautifulSoup
-from datetime import datetime, timedelta
-from functools import lru_cache
 import json
 import logging
-from pathlib import Path
-import requests
-from typing import List
 import uuid
+from datetime import datetime, timedelta
+from functools import lru_cache
+from pathlib import Path
+from typing import List
+
+import requests
+from bs4 import BeautifulSoup
+
 from utils.utils import *
 
 

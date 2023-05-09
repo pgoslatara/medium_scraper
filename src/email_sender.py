@@ -1,9 +1,11 @@
-from email.message import EmailMessage
 import logging
-import pyarrow as pa
 import smtplib
 import ssl
+from email.message import EmailMessage
+
+import pyarrow as pa
 from tabulate import tabulate
+
 from utils.utils import *
 
 

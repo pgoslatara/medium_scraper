@@ -1,9 +1,10 @@
-import duckdb
-from functools import lru_cache
-from glob import glob
 import json
 import logging
 import os
+from functools import lru_cache
+from glob import glob
+
+import duckdb
 
 
 @lru_cache
