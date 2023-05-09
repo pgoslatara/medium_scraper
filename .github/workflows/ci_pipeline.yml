@@ -1,11 +1,9 @@
-name: Run application medium_scraper
+name: ci_pipeline
 
 on:
   pull_request:
     branches:
       - main
-  schedule:
-    - cron: "0 9 * * 5"
   workflow_dispatch:
     inputs:
       medium_blog_lookback_days:
@@ -18,7 +16,7 @@ env:
   MEDIUM_BLOG_LOOKBACK_WINDOW: '${{ github.event.inputs.medium_blog_lookback_days }}'
 
 jobs:
-  run_main_py_and_save_to_repo:
+  ci_pipeline:
     runs-on: ubuntu-20.04
     strategy:
       fail-fast: false
@@ -30,7 +28,6 @@ jobs:
         - "3.11"
 
     steps:
-
       - uses: actions/checkout@v3
 
       - uses: actions/setup-python@v4
@@ -48,24 +45,12 @@ jobs:
 
       - run: pre-commit run -a
 
-      - name: Run main
-        run: main
+      - run: ingestion
+
+      - run: transformation
+
+      - run: data_products
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           SENDER_EMAIL_ADDRESS: ${{ secrets.SENDER_EMAIL_ADDRESS }}
           SENDER_EMAIL_PASSWORD: ${{ secrets.SENDER_EMAIL_PASSWORD }}
-          RECIPIENT_EMAIL_ADDRESS: ${{ secrets.RECIPIENT_EMAIL_ADDRESS }}
-
-      - uses: EndBug/add-and-commit@v9
-        if: ${{ matrix.python-version == '3.11' && (github.event_name == 'schedule' || github.ref == 'refs/heads/main') }}
-        with:
-          author_name: Github Actions
-          author_email: actions@github.com
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
-      - name: Deploy to GitHub Pages
-        if: ${{ matrix.python-version == '3.11' && (github.event_name == 'schedule' || github.ref == 'refs/heads/main') }}
-        uses: JamesIves/github-pages-deploy-action@v4
-        with:
-          folder: /home/runner/work/medium_scraper/medium_scraper/output/bi
+          RECIPIENT_EMAIL_ADDRESS: dummy_address@gmail.com
