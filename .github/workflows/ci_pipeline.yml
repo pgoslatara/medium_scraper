@@ -13,6 +13,7 @@ on:
 
 env:
   DATA_DIR: "/home/runner/work/medium_scraper/medium_scraper/output"
+  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
   MEDIUM_BLOG_LOOKBACK_WINDOW: '${{ github.event.inputs.medium_blog_lookback_days }}'
 
 jobs:

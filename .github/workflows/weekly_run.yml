@@ -12,6 +12,7 @@ on:
 
 env:
   DATA_DIR: "/home/runner/work/medium_scraper/medium_scraper/output"
+  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
   MEDIUM_BLOG_LOOKBACK_WINDOW: '${{ github.event.inputs.medium_blog_lookback_days }}'
 
 jobs:
@@ -38,7 +39,6 @@ jobs:
 
       - run: data_products
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           SENDER_EMAIL_ADDRESS: ${{ secrets.SENDER_EMAIL_ADDRESS }}
           SENDER_EMAIL_PASSWORD: ${{ secrets.SENDER_EMAIL_PASSWORD }}
           RECIPIENT_EMAIL_ADDRESS: ${{ secrets.RECIPIENT_EMAIL_ADDRESS }}
@@ -47,8 +47,6 @@ jobs:
         with:
           author_name: Github Actions
           author_email: actions@github.com
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
