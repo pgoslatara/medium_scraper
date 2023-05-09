@@ -9,7 +9,7 @@ from plotly.subplots import make_subplots
 from utils.utils import *
 
 
-class BiAssembler:
+class BuildPlotlyHTMLFile:
     def __init__(self):
         pass
 

@@ -9,7 +9,7 @@ from tabulate import tabulate
 from utils.utils import *
 
 
-class EmailSender:
+class SendMediumBlogsEmail:
     def __init__(self, lookback_days: int):
         self.con = initialise_duckdb()
         self.lookback_days = lookback_days

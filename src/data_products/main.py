@@ -2,8 +2,8 @@ import os
 
 from utils.utils import set_logging_options
 
-from .bi_plotly import BiAssembler
-from .email_weekly_medium_blogs import EmailSender
+from .bi_plotly import BuildPlotlyHTMLFile
+from .email_weekly_medium_blogs import SendMediumBlogsEmail
 
 
 def main():
@@ -16,8 +16,8 @@ def main():
     except:
         lookback_days = default_lookback
 
-    BiAssembler().run()
-    EmailSender(lookback_days=lookback_days).run()
+    BuildPlotlyHTMLFile().run()
+    SendMediumBlogsEmail(lookback_days=lookback_days).run()
 
 
 if __name__ == "__main__":
