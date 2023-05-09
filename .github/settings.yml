@@ -11,3 +11,20 @@ repository:
   allow_squash_merge: true
   allow_merge_commit: false
   allow_rebase_merge: false
+  delete_branch_on_merge: true
+
+branches:
+  - name: main
+    protection:
+      required_status_checks:
+        strict: true
+        checks:
+          # https://docs.github.com/en/rest/branches/branch-protection?apiVersion=2022-11-28#update-branch-protection
+          context: [
+            "run_main_py_and_save_to_repo (3.8)",
+            "run_main_py_and_save_to_repo (3.9)",
+            "run_main_py_and_save_to_repo (3.10)",
+            "run_main_py_and_save_to_repo (3.11)"
+          ]
+      dismiss_stale_reviews: true
+      enforce_admins: true
