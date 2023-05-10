@@ -52,9 +52,9 @@ jobs:
 
       - run: data_products
         env:
+          RECIPIENT_EMAIL_ADDRESS: 123@mailslurp.com
           SENDER_EMAIL_ADDRESS: ${{ secrets.SENDER_EMAIL_ADDRESS }}
           SENDER_EMAIL_PASSWORD: ${{ secrets.SENDER_EMAIL_PASSWORD }}
-          RECIPIENT_EMAIL_ADDRESS: 123@mailslurp.com
 
   dev_container:
     runs-on: ubuntu-latest
@@ -66,6 +66,9 @@ jobs:
         with:
           runCmd: ingestion && transformation && data_products
         env:
+          DATA_DIR: "/home/runner/work/medium_scraper/medium_scraper/output"
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          MEDIUM_BLOG_LOOKBACK_WINDOW: '${{ github.event.inputs.medium_blog_lookback_days }}'
+          RECIPIENT_EMAIL_ADDRESS: 123@mailslurp.com
           SENDER_EMAIL_ADDRESS: ${{ secrets.SENDER_EMAIL_ADDRESS }}
           SENDER_EMAIL_PASSWORD: ${{ secrets.SENDER_EMAIL_PASSWORD }}
-          RECIPIENT_EMAIL_ADDRESS: 123@mailslurp.com
