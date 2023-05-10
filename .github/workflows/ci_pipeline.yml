@@ -52,6 +52,28 @@ jobs:
 
       - run: data_products
         env:
+          RECIPIENT_EMAIL_ADDRESS: 123@mailslurp.com
           SENDER_EMAIL_ADDRESS: ${{ secrets.SENDER_EMAIL_ADDRESS }}
           SENDER_EMAIL_PASSWORD: ${{ secrets.SENDER_EMAIL_PASSWORD }}
+
+  dev_container:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Build container and run commands
+        uses: devcontainers/ci@v0.3
+        env:
+          MEDIUM_BLOG_LOOKBACK_WINDOW: '${{ github.event.inputs.medium_blog_lookback_days }}'
           RECIPIENT_EMAIL_ADDRESS: 123@mailslurp.com
+          SENDER_EMAIL_ADDRESS: ${{ secrets.SENDER_EMAIL_ADDRESS }}
+          SENDER_EMAIL_PASSWORD: ${{ secrets.SENDER_EMAIL_PASSWORD }}
+        with:
+          runCmd: ingestion && transformation && data_products
+          env: |
+            DATA_DIR=/workspaces/medium_scraper/output
+            GITHUB_TOKEN=dummy_value
+            MEDIUM_BLOG_LOOKBACK_WINDOW
+            RECIPIENT_EMAIL_ADDRESS
+            SENDER_EMAIL_ADDRESS
+            SENDER_EMAIL_PASSWORD
