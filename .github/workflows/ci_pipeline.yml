@@ -61,17 +61,11 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
-      - name: ingestion
+      - name: Build container and run commands
         uses: devcontainers/ci@v0.3
         with:
-          runCmd: ingestion
-
-      - name: transformation
-        uses: devcontainers/ci@v0.3
-        with:
-          runCmd: transformation
-
-      - name: ingestion
-        uses: devcontainers/ci@v0.3
-        with:
-          runCmd: data_products
+          runCmd: ingestion && transformation && data_products
+        env:
+          SENDER_EMAIL_ADDRESS: ${{ secrets.SENDER_EMAIL_ADDRESS }}
+          SENDER_EMAIL_PASSWORD: ${{ secrets.SENDER_EMAIL_PASSWORD }}
+          RECIPIENT_EMAIL_ADDRESS: 123@mailslurp.com
