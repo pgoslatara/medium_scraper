@@ -9,7 +9,7 @@ A slightly sarcastic, highly over-engineered GitHub-as-a-Data-Platform Proof-of-
     ```bash
     python -m virtualenv .venv
     source .venv/bin/activate
-    pip install -r requirements.txt
+    pip install -e .
     pre-commit install
     ```
 
