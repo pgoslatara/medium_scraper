@@ -50,18 +50,17 @@ def initialise_duckdb() -> duckdb.connect:
 
 
 def run_dbt_command(command: str) -> None:
+    command_fmt = command.split(" ")[1:] + [
+        "--profiles-dir",
+        "./dbt",
+        "--project-dir",
+        "./dbt",
+        "--target",
+        get_environment(),
+    ]
+    logging.info(f"Running dbt command: {command_fmt}")
     dbt = dbtRunner()
-    dbt.invoke(
-        command.split(" ")[1:]
-        + [
-            "--profiles-dir",
-            "./dbt",
-            "--project-dir",
-            "./dbt",
-            "--target",
-            get_environment(),
-        ]
-    )
+    dbt.invoke(command_fmt)
 
 
 def set_logging_options() -> None:
