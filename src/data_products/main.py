@@ -6,7 +6,7 @@ from .bi_plotly import BuildPlotlyHTMLFile
 from .email_weekly_medium_blogs import SendMediumBlogsEmail
 
 
-def main():
+def main() -> None:
     set_logging_options()
 
     # MEDIUM_BLOG_LOOKBACK_WINDOW is "" when action is triggered from main branch

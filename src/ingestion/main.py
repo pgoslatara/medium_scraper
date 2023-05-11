@@ -5,7 +5,7 @@ from utils.utils import set_logging_options
 from .medium_web_scraper import MediumWebScraper
 
 
-def main():
+def main() -> None:
     set_logging_options()
 
     # MEDIUM_BLOG_LOOKBACK_WINDOW is "" when action is triggered from main branch

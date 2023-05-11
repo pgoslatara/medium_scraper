@@ -4,7 +4,7 @@ from pathlib import Path
 from utils.utils import run_dbt_command
 
 
-def main():
+def main() -> None:
     # Ensure required directories exist
     Path(f"{os.getenv('DATA_DIR')}/marts/").mkdir(parents=True, exist_ok=True)
 

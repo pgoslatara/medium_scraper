@@ -1,3 +1,4 @@
+import logging
 import os
 from pathlib import Path
 
@@ -10,22 +11,20 @@ from utils.utils import *
 
 
 class BuildPlotlyHTMLFile:
-    def __init__(self):
+    def __init__(self) -> None:
         pass
 
-    def get_duckdb_con(self) -> duckdb.connect:
+    def get_duckdb_con(self) -> duckdb.DuckDBPyConnection:
         if get_environment() == "prod":
-            database_file = (
-                f"{os.getenv('DATA_DIR').replace('/output', '')}/dbt/dbt_prod.duckdb"
-            )
+            database_file = f"{str(os.getenv('DATA_DIR')).replace('/output', '')}/dbt/dbt_prod.duckdb"
         else:
-            database_file = f"{os.getenv('DATA_DIR').replace('/local_output', '')}/dbt/dbt_dev.duckdb"
+            database_file = f"{str(os.getenv('DATA_DIR')).replace('/local_output', '')}/dbt/dbt_dev.duckdb"
 
         logging.info(f"Opening duckdb connection to {database_file}...")
 
         return duckdb.connect(database=database_file, read_only=True)
 
-    def run(self):
+    def run(self) -> None:
         # Use duckdb to read mart from data lake
         mart_file = f"{os.getenv('DATA_DIR')}/marts/fct_blogs_per_day.parquet"
         logging.info(f"Reading mart from : {mart_file}...")

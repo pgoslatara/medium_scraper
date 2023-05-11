@@ -1,7 +1,9 @@
 import logging
+import os
 import smtplib
 import ssl
 from email.message import EmailMessage
+from typing import Mapping, Union
 
 import pyarrow as pa
 from tabulate import tabulate
@@ -14,7 +16,7 @@ class SendMediumBlogsEmail:
         self.con = initialise_duckdb()
         self.lookback_days = lookback_days
 
-    def get_relevant_blogs(self) -> dict:
+    def get_relevant_blogs(self) -> Mapping[type, Union[str, int]]:
         arrow_table = pa.Table.from_pylist(get_json_content())
         df = self.con.execute(
             f"""
@@ -60,9 +62,9 @@ class SendMediumBlogsEmail:
         logging.info(
             f"SELECTed {len(data)} blogs from the last {self.lookback_days} days."
         )
-        return data
+        return dict(data)
 
-    def run(self):
+    def run(self) -> None:
         blogs = self.get_relevant_blogs()
         logging.info("Assembling email...")
 
@@ -83,7 +85,7 @@ class SendMediumBlogsEmail:
                     <h2 style="font-family:Georgia, 'Times New Roman', Times, serif;color#454349;">Medium blogs from the last {self.lookback_days} days</h2>
                 </div>
                 <div style="padding:20px 0px">
-                    {tabulate(list(map(list, zip(*[v for k, v in blogs.items()]))), blogs.keys(), tablefmt="unsafehtml")}
+                    {tabulate([[v for k, v in blogs.items()]], [str(x) for x in blogs.keys()], tablefmt="unsafehtml")}
                 </div>
             </body>
         </html>

@@ -1,10 +1,10 @@
 import json
 import logging
 import uuid
-from datetime import datetime, timedelta
+from datetime import date, datetime, timedelta
 from functools import lru_cache
 from pathlib import Path
-from typing import List
+from typing import Dict, List
 
 import requests
 from bs4 import BeautifulSoup
@@ -30,7 +30,7 @@ class MediumWebScraper:
     def get_extraction_id(self) -> str:
         return str(uuid.uuid4())
 
-    def run(self):
+    def run(self) -> str:
         for tag in self.tags:
             logging.info(f"Scraping blogs with tag '{tag}...")
 
@@ -54,7 +54,7 @@ class MediumWebScraper:
 
         return self.get_extraction_id()
 
-    def scrape_blogs(self, date_of_interest: datetime, tag: str) -> List[dict]:
+    def scrape_blogs(self, date_of_interest: date, tag: str) -> List[Dict[str, object]]:
         url = f"{self.base_url}/{tag}/archive/{date_of_interest.year}/{date_of_interest.month:02}/{date_of_interest.day:02}"
         logging.info(
             f"Scraping blogs on {date_of_interest.strftime('%Y=%m-%d')}: {url=}..."
@@ -124,7 +124,7 @@ class MediumWebScraper:
                     )["href"].split("?source=tag_archive")[0]
                 except:
                     try:
-                        title_index = str(story).find(data["title"])
+                        title_index = str(story).find(str(data["title"]))
                         href_index = str(story)[title_index:].find("data-action-value")
                         href_base = str(story)[title_index + href_index + 19 :]
                         data["story_url"] = href_base[: href_base.find('"')]
@@ -136,7 +136,7 @@ class MediumWebScraper:
 
             return web_data
 
-    def store_blogs(self, blogs: str, tag: str):
+    def store_blogs(self, blogs: List[Dict[str, object]], tag: str) -> None:
         file_name = f"{get_output_dir()}/tag={tag}/extracted_at={self.get_extracted_at_epoch()}/extraction_id={self.get_extraction_id()}.json"
         logging.info(f"Saving {len(blogs)} blogs to {file_name}...")
         Path(file_name[: file_name.rfind("/")]).mkdir(parents=True, exist_ok=True)
