@@ -1,9 +1,8 @@
-import json
 import logging
+import time
 import uuid
 from datetime import date, datetime, timedelta
 from functools import lru_cache
-from pathlib import Path
 from typing import Dict, List
 
 import requests
@@ -30,7 +29,7 @@ class MediumWebScraper:
     def get_extraction_id(self) -> str:
         return str(uuid.uuid4())
 
-    def run(self) -> str:
+    def run(self) -> None:
         for tag in self.tags:
             logging.info(f"Scraping blogs with tag '{tag}...")
 
@@ -48,11 +47,76 @@ class MediumWebScraper:
             for date in dates_array:
                 scraped_data += self.scrape_blogs(date, tag)
 
-            self.store_blogs(
-                [dict(t) for t in {tuple(d.items()) for d in scraped_data}], tag
+            save_to_landing_zone(
+                data=[dict(t) for t in {tuple(d.items()) for d in scraped_data}],
+                file_name=f"domain=medium_blogs/tag={tag}/extracted_at={self.get_extracted_at_epoch()}/extraction_id={self.get_extraction_id()}.json",
             )
 
-        return self.get_extraction_id()
+        author_data = self.scrape_authors(extraction_id=self.get_extraction_id())
+        save_to_landing_zone(
+            data=author_data,
+            file_name=f"domain=medium_authors/extracted_at={self.get_extracted_at_epoch()}/extraction_id={self.get_extraction_id()}.json",
+        )
+
+    def scrape_authors(self, extraction_id: str) -> List[Dict[str, object]]:
+        data = [
+            x
+            for x in get_json_content(domain="medium_blogs")
+            if x["extraction_id"] == extraction_id
+        ]
+
+        author_urls = list({x["author_url"] for x in data})
+        logging.info(f"Found {len(author_urls)} distinct authors.")
+
+        author_data = []
+        for author_url in author_urls[0:]:
+            time.sleep(0.1)  # To avoid rate limit detection
+            logging.info(f"Scraping author URL: {author_url}...")
+
+            page = requests.get(f"{author_url}")
+            soup = BeautifulSoup(page.text, "html.parser")
+
+            num_followers_base = list(
+                {
+                    x.text
+                    for x in soup.find_all("a", {"rel": "noopener follow"})
+                    if x.text.endswith("Follower") or x.text.endswith("Followers")
+                }
+            )
+            if num_followers_base == []:
+                num_followers = 0
+            else:
+                num_followers_raw = (
+                    num_followers_base[0]
+                    .replace(" Followers", "")
+                    .replace(" Follower", "")
+                )
+                if num_followers_raw.endswith("K"):
+                    num_followers = int(float(num_followers_raw[:-1]) * 1000)
+                else:
+                    num_followers = int(num_followers_raw)
+
+            div_data = [x.text for x in soup.find_all("div")]
+            if num_followers == 1:
+                base = div_data[0][div_data[0].rfind("Follower") + 8 :]
+            else:
+                base = div_data[0][div_data[0].rfind("Follower") + 9 :]
+            short_bio = base[: base.find("Follow")]
+            if short_bio.startswith("appSign upSign InWriteSign"):
+                short_bio = ""  # Accounting for authors with no biography
+
+            author_data.append(
+                {
+                    "extraction_id": self.get_extraction_id(),
+                    "extracted_at": self.get_extracted_at(),
+                    "extracted_at_epoch": self.get_extracted_at_epoch(),
+                    "author_url": author_url,
+                    "num_followers": num_followers,
+                    "short_bio": short_bio,
+                }
+            )
+
+        return author_data
 
     def scrape_blogs(self, date_of_interest: date, tag: str) -> List[Dict[str, object]]:
         url = f"{self.base_url}/{tag}/archive/{date_of_interest.year}/{date_of_interest.month:02}/{date_of_interest.day:02}"
@@ -135,16 +199,3 @@ class MediumWebScraper:
                 web_data.append(sorted_data)
 
             return web_data
-
-    def store_blogs(self, blogs: List[Dict[str, object]], tag: str) -> None:
-        file_name = f"{get_output_dir()}/tag={tag}/extracted_at={self.get_extracted_at_epoch()}/extraction_id={self.get_extraction_id()}.json"
-        logging.info(f"Saving {len(blogs)} blogs to {file_name}...")
-        Path(file_name[: file_name.rfind("/")]).mkdir(parents=True, exist_ok=True)
-        with open(file_name, "w", encoding="utf-8") as f_write:
-            json.dump(
-                blogs,
-                f_write,
-                ensure_ascii=False,
-                indent=4,
-                default=str,
-            )

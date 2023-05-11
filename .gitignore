@@ -20,6 +20,7 @@ dbt_packages/*
 dbt_prod
 duckdb/*
 local_output/*
+logs/
 main
 medium_scraper.egg-info/*
 target/*
