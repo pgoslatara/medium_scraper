@@ -7,7 +7,7 @@ from pathlib import Path
 from typing import Dict, List, Mapping, Union
 
 import duckdb
-from dbt.cli.main import dbtRunner
+from sh import dbt
 
 
 @lru_cache
@@ -51,18 +51,19 @@ def initialise_duckdb() -> duckdb.DuckDBPyConnection:
     return duckdb.connect(database=":memory:")
 
 
-def run_dbt_command(command: str) -> None:
-    command_fmt = command.split(" ")[1:] + [
-        "--profiles-dir",
-        "./dbt",
-        "--project-dir",
-        "./dbt",
-        "--target",
-        get_environment(),
-    ]
-    logging.info(f"Running dbt command: {command_fmt}")
-    dbt = dbtRunner()
-    dbt.invoke(command_fmt)
+def run_dbt_commands(commands: List[str]) -> None:
+    for command in commands:
+        command_fmt = command.split(" ")[1:] + [
+            "--profiles-dir",
+            "./dbt",
+            "--project-dir",
+            "./dbt",
+            "--target",
+            get_environment(),
+        ]
+        logging.info(f"Running dbt command: {command_fmt}")
+        print(f"Running dbt command: {command_fmt}")
+        dbt(command_fmt, _fg=True)
 
 
 def save_to_landing_zone(data: List[Dict[str, object]], file_name: str) -> None:
