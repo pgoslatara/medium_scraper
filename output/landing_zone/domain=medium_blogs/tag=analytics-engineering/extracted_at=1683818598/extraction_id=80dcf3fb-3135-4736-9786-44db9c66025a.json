@@ -1,0 +1,72 @@
+[
+    {
+        "author_name": "Ahmed Omrane",
+        "author_url": "https://medium.com/@ahmedomrane",
+        "extracted_at": "2023-05-11 15:23:18.429557",
+        "extracted_at_epoch": 1683818598,
+        "extraction_id": "80dcf3fb-3135-4736-9786-44db9c66025a",
+        "extraction_url": "https://medium.com/tag/analytics-engineering/archive/2023/05",
+        "published_at": "2023-05-07T08:12:12.872Z",
+        "reading_time_minutes": 6,
+        "story_url": "https://medium.com/@ahmedomrane/on-data-analytics-architecture-how-to-design-you-data-model-for-scalable-accurate-analytics-dbt-dcfb7f379c75",
+        "subtitle": "-",
+        "tag": "analytics-engineering",
+        "title": "On Data/Analytics Architecture: How to design you data model for scalable accurate Analytics (dbt focused)"
+    },
+    {
+        "author_name": "Hugo Lu",
+        "author_url": "https://medium.com/@hugolu87",
+        "extracted_at": "2023-05-11 15:23:18.429557",
+        "extracted_at_epoch": 1683818598,
+        "extraction_id": "80dcf3fb-3135-4736-9786-44db9c66025a",
+        "extraction_url": "https://medium.com/tag/analytics-engineering/archive/2023/05",
+        "published_at": "2023-05-06T21:14:36.291Z",
+        "reading_time_minutes": 5,
+        "story_url": "https://medium.com/@hugolu87/why-you-dont-need-an-observability-tool-d2e3f8a15f9f",
+        "subtitle": "-",
+        "tag": "analytics-engineering",
+        "title": "Why you don’t need an observability tool"
+    },
+    {
+        "author_name": "Ross Helenius",
+        "author_url": "https://medium.com/@rhelenius",
+        "extracted_at": "2023-05-11 15:23:18.429557",
+        "extracted_at_epoch": 1683818598,
+        "extraction_id": "80dcf3fb-3135-4736-9786-44db9c66025a",
+        "extraction_url": "https://medium.com/tag/analytics-engineering/archive/2023/05",
+        "published_at": "2023-05-06T13:09:20.129Z",
+        "reading_time_minutes": 6,
+        "story_url": "https://medium.com/@rhelenius/the-single-most-important-question-for-analytics-engineers-b0598a6f40ab",
+        "subtitle": "-",
+        "tag": "analytics-engineering",
+        "title": "The Single Most Important Question for Analytics Engineers"
+    },
+    {
+        "author_name": "Kaustav Mitra",
+        "author_url": "https://medium.com/@kaustav",
+        "extracted_at": "2023-05-11 15:23:18.429557",
+        "extracted_at_epoch": 1683818598,
+        "extraction_id": "80dcf3fb-3135-4736-9786-44db9c66025a",
+        "extraction_url": "https://medium.com/tag/analytics-engineering/archive/2023/05",
+        "published_at": "2023-05-08T17:47:35.209Z",
+        "reading_time_minutes": 2,
+        "story_url": "https://medium.com/paradime-labs/paradime-product-update-global-availability-e17a0d690ebe",
+        "subtitle": "Paradime is now global availability across four…",
+        "tag": "analytics-engineering",
+        "title": "Paradime product update — global availability"
+    },
+    {
+        "author_name": "Jessika Milhomem",
+        "author_url": "https://medium.com/@jessikamilhomem",
+        "extracted_at": "2023-05-11 15:23:18.429557",
+        "extracted_at_epoch": 1683818598,
+        "extraction_id": "80dcf3fb-3135-4736-9786-44db9c66025a",
+        "extraction_url": "https://medium.com/tag/analytics-engineering/archive/2023/05",
+        "published_at": "2023-05-01T20:03:32.260Z",
+        "reading_time_minutes": 5,
+        "story_url": "https://medium.com/@jessikamilhomem/dbt-the-framework-that-uses-sql-syntax-for-data-processing-392ac36e6f92",
+        "subtitle": "-",
+        "tag": "analytics-engineering",
+        "title": "DBT: the framework that uses SQL syntax for data processing"
+    }
+]
