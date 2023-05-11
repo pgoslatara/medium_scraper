@@ -54,6 +54,7 @@ jobs:
         run: |
           sudo apt update && \
           sudo apt install -y gh && \
+          export GITHUB_TOKEN= && \
           echo ${{ secrets.PAT_GITHUB }} > token.txt && \
           gh auth login --with-token < token.txt
 
