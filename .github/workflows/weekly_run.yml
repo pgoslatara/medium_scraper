@@ -50,10 +50,10 @@ jobs:
           author_email: actions@github.com
           new_branch: weekly_run_branch_${{ github.run_id }}
 
+      # To ensure the PR triggers CI workflows it needs to use someone's PAT instead of the default GITHUB_TOKEN
       - name: Create Pull Request
         run: |
           export GITHUB_TOKEN= && \
           echo ${{ secrets.PAT_GITHUB }} > token.txt && \
           gh auth login --with-token < token.txt && \
-          gh auth status && \
           gh pr create -B main -H weekly_run_branch_${{ github.run_id }} --title 'weekly_run ${{ github.run_id }}' --body 'Created by Github action' --label 'automerge'
