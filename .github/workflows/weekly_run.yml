@@ -48,14 +48,14 @@ jobs:
         with:
           author_name: Github Actions
           author_email: actions@github.com
-          new_branch: weekly_run_branch_${GITHUB_RUN_ID}
+          new_branch: weekly_run_branch_${{ github.run_id }}
 
       - name: Create Pull Request
         uses: devops-infra/action-pull-request@v0.5.5
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           label: automerge
-          source_branch: weekly_run_branch_${GITHUB_RUN_ID}
+          source_branch: weekly_run_branch_${{ github.run_id }}
           target_branch: main
           title: weekly_run
 
