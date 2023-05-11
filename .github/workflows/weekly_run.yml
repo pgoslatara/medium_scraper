@@ -50,5 +50,8 @@ jobs:
           author_email: actions@github.com
           new_branch: weekly_run_branch_${{ github.run_id }}
 
+      - name: GitHub CLI login
+        run: gh auth login --with-token ${{ secrets.PAT_GITHUB }}
+
       - name: Create Pull Request
         run: gh pr create -B main -H weekly_run_branch_${{ github.run_id }} --title 'weekly_run ${{ github.run_id }}' --body 'Created by Github action' --label 'automerge'
