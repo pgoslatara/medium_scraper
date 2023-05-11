@@ -48,6 +48,7 @@ jobs:
         with:
           author_name: Github Actions
           author_email: actions@github.com
+          new_branch: weekly_run_branch
 
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
