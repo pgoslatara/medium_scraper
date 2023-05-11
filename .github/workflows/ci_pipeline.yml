@@ -77,3 +77,10 @@ jobs:
             RECIPIENT_EMAIL_ADDRESS
             SENDER_EMAIL_ADDRESS
             SENDER_EMAIL_PASSWORD
+
+  automerge_pull_requests:
+    needs: [ci_pipeline, dev_container]
+    runs-on: ubuntu-latest
+    steps:
+      - name: Merge pull request
+        uses: pascalgn/automerge-action@v0.15.6

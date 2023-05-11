@@ -53,9 +53,6 @@ jobs:
       - name: Create Pull Request
         run: gh pr create -B main -H weekly_run_branch_${{ github.run_id }} --title 'weekly_run ${{ github.run_id }}' --body 'Created by Github action' --label 'automerge'
 
-      - name: Merge pull request
-        uses: pascalgn/automerge-action@v0.15.6
-
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
         with:
