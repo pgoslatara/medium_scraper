@@ -51,7 +51,10 @@ jobs:
           new_branch: weekly_run_branch_${{ github.run_id }}
 
       - name: GitHub CLI login
-        run: echo ${{ secrets.PAT_GITHUB }} > token.txt && \
+        run: |
+          apt update && \
+          apt install -y gh && \
+          echo ${{ secrets.PAT_GITHUB }} > token.txt && \
           gh auth login --with-token < token.txt
 
       - name: Create Pull Request
