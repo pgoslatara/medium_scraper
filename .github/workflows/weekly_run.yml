@@ -52,8 +52,8 @@ jobs:
 
       - name: GitHub CLI login
         run: |
-          apt update && \
-          apt install -y gh && \
+          sudo apt update && \
+          sudo apt install -y gh && \
           echo ${{ secrets.PAT_GITHUB }} > token.txt && \
           gh auth login --with-token < token.txt
 
