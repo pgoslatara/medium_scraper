@@ -52,11 +52,10 @@ jobs:
 
       - name: GitHub CLI login
         run: |
-          sudo apt update && \
-          sudo apt install -y gh && \
           export GITHUB_TOKEN= && \
           echo ${{ secrets.PAT_GITHUB }} > token.txt && \
-          gh auth login --with-token < token.txt
+          gh auth login --with-token < token.txt && \
+          gh auth status
 
       - name: Create Pull Request
-        run: gh pr create -B main -H weekly_run_branch_${{ github.run_id }} --title 'weekly_run ${{ github.run_id }}' --body 'Created by Github action' --label 'automerge'
+        run: gh auth status && gh pr create -B main -H weekly_run_branch_${{ github.run_id }} --title 'weekly_run ${{ github.run_id }}' --body 'Created by Github action' --label 'automerge'
