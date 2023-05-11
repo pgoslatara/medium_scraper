@@ -16,8 +16,8 @@ class SendMediumBlogsEmail:
         self.con = initialise_duckdb()
         self.lookback_days = lookback_days
 
-    def get_relevant_blogs(self) -> Mapping[type, Union[str, int]]:
-        arrow_table = pa.Table.from_pylist(get_json_content())
+    def get_relevant_blogs(self) -> Mapping[str, Union[str, int]]:
+        arrow_table = pa.Table.from_pylist(get_json_content(domain="medium_blogs"))
         df = self.con.execute(
             f"""
             WITH base AS (

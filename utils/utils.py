@@ -3,7 +3,8 @@ import logging
 import os
 from functools import lru_cache
 from glob import glob
-from typing import List, Mapping, Union
+from pathlib import Path
+from typing import Dict, List, Mapping, Union
 
 import duckdb
 from dbt.cli.main import dbtRunner
@@ -32,9 +33,9 @@ def get_output_dir() -> str:
 
 
 @lru_cache
-def get_json_content() -> List[Mapping[type, Union[str, int]]]:
+def get_json_content(domain: str) -> List[Mapping[str, Union[str, int]]]:
     contents = []
-    for file_name in glob(f"{get_output_dir()}/*/*/*.json"):
+    for file_name in glob(f"{get_output_dir()}/domain={domain}/*/*/*.json"):
         with open(file_name) as f:
             d = json.loads(f.read())
             for x in d:
@@ -62,6 +63,21 @@ def run_dbt_command(command: str) -> None:
     logging.info(f"Running dbt command: {command_fmt}")
     dbt = dbtRunner()
     dbt.invoke(command_fmt)
+
+
+def save_to_landing_zone(data: List[Dict[str, object]], file_name: str) -> None:
+    file_name = f"{get_output_dir()}/{file_name}"
+    logging.info(f"Saving {len(data)} entries to {file_name}...")
+
+    Path(file_name[: file_name.rfind("/")]).mkdir(parents=True, exist_ok=True)
+    with open(file_name, "w", encoding="utf-8") as f_write:
+        json.dump(
+            data,
+            f_write,
+            ensure_ascii=False,
+            indent=4,
+            default=str,
+        )
 
 
 def set_logging_options() -> None:

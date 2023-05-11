@@ -19,7 +19,10 @@ with
             row_number() over (
                 partition by story_url order by extracted_at desc
             ) as rnum
-        from read_json_auto("{{ env_var('DATA_DIR') }}/landing_zone/*/*/*.json")
+        from
+            read_json_auto(
+                "{{ env_var('DATA_DIR') }}/landing_zone/domain=medium_blogs/*/*/*.json"
+            )
         where author_name != 'Thirahealth'  -- Tags Dialectical Behavior Therapy blogs with dbt, want to exclude these
     )
 
