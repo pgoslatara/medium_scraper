@@ -3,6 +3,7 @@ import logging
 import os
 from functools import lru_cache
 from glob import glob
+from typing import List, Mapping, Union
 
 import duckdb
 from dbt.cli.main import dbtRunner
@@ -31,7 +32,7 @@ def get_output_dir() -> str:
 
 
 @lru_cache
-def get_json_content() -> list:
+def get_json_content() -> List[Mapping[type, Union[str, int]]]:
     contents = []
     for file_name in glob(f"{get_output_dir()}/*/*/*.json"):
         with open(file_name) as f:
@@ -45,7 +46,7 @@ def get_json_content() -> list:
 
 
 @lru_cache
-def initialise_duckdb() -> duckdb.connect:
+def initialise_duckdb() -> duckdb.DuckDBPyConnection:
     return duckdb.connect(database=":memory:")
 
 
