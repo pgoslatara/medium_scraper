@@ -13,3 +13,13 @@ models:
     tests:
       - dbt_expectations.expect_table_column_count_to_be_between:
           min_value: 1
+
+  - name: stg_medium_authors__nlp_location
+    columns:
+      - name: author_url
+        tests:
+          - not_null
+          - unique
+    tests:
+      - dbt_expectations.expect_table_column_count_to_be_between:
+          min_value: 1

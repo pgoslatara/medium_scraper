@@ -3,13 +3,17 @@ from pathlib import Path
 
 from utils.utils import run_dbt_commands
 
+from .nlp_author_location import main as nlp_main
+
 
 def main() -> None:
     # Ensure required directories exist
     Path(f"{os.getenv('DATA_DIR')}/marts/").mkdir(parents=True, exist_ok=True)
 
     # Run dbt to update marts
-    run_dbt_commands(["dbt deps", "dbt build"])
+    run_dbt_commands(["dbt deps", "dbt build --select +dim_medium_authors"])
+
+    nlp_main()
 
 
 if __name__ == "__main__":
