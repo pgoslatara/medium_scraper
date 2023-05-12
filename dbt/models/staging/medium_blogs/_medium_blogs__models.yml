@@ -1,7 +1,7 @@
 version: 2
 
 models:
-  - name: stg_medium__articles
+  - name: stg_medium_blogs__articles
     columns:
       - name: story_url
         tests:
