@@ -44,6 +44,8 @@ jobs:
 
       - run: pip install -e .
 
+      - run: spacy download en_core_web_sm
+
       - run: pre-commit run -a
 
       - run: ingestion
