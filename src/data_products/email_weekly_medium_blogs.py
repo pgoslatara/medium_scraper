@@ -76,6 +76,12 @@ class SendMediumBlogsEmail:
         msg["Subject"] = "Relevant Medium Blogs"
         msg["From"] = sender_email_address
         msg["To"] = recipient_email_address
+
+        formatted_blogs = tabulate(
+            list(map(list, zip(*[v for k, v in blogs.items()]))),  # type: ignore
+            blogs.keys(),  # type: ignore
+            tablefmt="unsafehtml",
+        )
         msg.set_content(
             f"""
         <!DOCTYPE html>
@@ -85,7 +91,7 @@ class SendMediumBlogsEmail:
                     <h2 style="font-family:Georgia, 'Times New Roman', Times, serif;color#454349;">Medium blogs from the last {self.lookback_days} days</h2>
                 </div>
                 <div style="padding:20px 0px">
-                    {tabulate([[v for k, v in blogs.items()]], [str(x) for x in blogs.keys()], tablefmt="unsafehtml")}
+                    {formatted_blogs}
                 </div>
             </body>
         </html>
