@@ -1,0 +1,12 @@
+version: 2
+
+models:
+  - name: dim_medium_authors
+    tests:
+      - dbt_expectations.expect_table_column_count_to_be_between:
+          min_value: 1
+
+  - name: fct_medium_blogs_per_day
+    tests:
+      - dbt_expectations.expect_table_column_count_to_be_between:
+          min_value: 1

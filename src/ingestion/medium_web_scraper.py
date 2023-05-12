@@ -55,7 +55,7 @@ class MediumWebScraper:
         author_data = self.scrape_authors(extraction_id=self.get_extraction_id())
         save_to_landing_zone(
             data=author_data,
-            file_name=f"domain=medium_authors/extracted_at={self.get_extracted_at_epoch()}/extraction_id={self.get_extraction_id()}.json",
+            file_name=f"domain=medium_authors/schema_version=2/extracted_at={self.get_extracted_at_epoch()}/extraction_id={self.get_extraction_id()}.json",
         )
 
     def scrape_authors(self, extraction_id: str) -> List[Dict[str, object]]:
@@ -76,6 +76,9 @@ class MediumWebScraper:
             page = requests.get(f"{author_url}")
             soup = BeautifulSoup(page.text, "html.parser")
 
+            author_name = [
+                x.text for x in soup.find_all("h2") if str(x).find("author-name") > 0
+            ][0]
             num_followers_base = list(
                 {
                     x.text
@@ -110,6 +113,7 @@ class MediumWebScraper:
                     "extraction_id": self.get_extraction_id(),
                     "extracted_at": self.get_extracted_at(),
                     "extracted_at_epoch": self.get_extracted_at_epoch(),
+                    "author_name": author_name,
                     "author_url": author_url,
                     "num_followers": num_followers,
                     "short_bio": short_bio,
