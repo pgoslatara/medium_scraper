@@ -26,7 +26,7 @@ class BuildPlotlyHTMLFile:
 
     def run(self) -> None:
         # Use duckdb to read mart from data lake
-        mart_file = f"{os.getenv('DATA_DIR')}/marts/fct_blogs_per_day.parquet"
+        mart_file = f"{os.getenv('DATA_DIR')}/marts/fct_medium_blogs_per_day.parquet"
         logging.info(f"Reading mart from : {mart_file}...")
         df = (
             self.get_duckdb_con()

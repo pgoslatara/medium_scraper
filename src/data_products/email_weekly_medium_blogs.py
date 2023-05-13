@@ -5,7 +5,6 @@ import ssl
 from email.message import EmailMessage
 from typing import Mapping, Union
 
-import pyarrow as pa
 from tabulate import tabulate
 
 from utils.utils import *
@@ -17,20 +16,9 @@ class SendMediumBlogsEmail:
         self.lookback_days = lookback_days
 
     def get_relevant_blogs(self) -> Mapping[str, Union[str, int]]:
-        arrow_table = pa.Table.from_pylist(get_json_content(domain="medium_blogs"))
         df = self.con.execute(
             f"""
             WITH base AS (
-                SELECT
-                    *,
-                    ROW_NUMBER() OVER(PARTITION BY story_url ORDER BY extracted_at_epoch DESC) AS row_num
-                FROM arrow_table
-                WHERE
-                    CAST(published_at AS DATE) >= (CURRENT_DATE() - INTERVAL {self.lookback_days} DAY)
-                    AND CAST(published_at AS DATE) < CURRENT_DATE()
-            )
-
-            , formatting AS (
                 SELECT
                     author_name,
                     published_at,
@@ -40,9 +28,10 @@ class SendMediumBlogsEmail:
                         ELSE title || ': ' || subtitle || ' (' || reading_time_minutes || ' min.)'
                     END AS article_summary,
                     tag
-                FROM base
+                FROM read_parquet('{os.getenv('DATA_DIR')}/marts/fct_medium_blogs.parquet')
                 WHERE
-                    row_num = 1
+                    CAST(published_at AS DATE) >= (CURRENT_DATE() - INTERVAL {self.lookback_days} DAY)
+                    AND CAST(published_at AS DATE) < CURRENT_DATE()
             )
 
             SELECT
@@ -53,12 +42,13 @@ class SendMediumBlogsEmail:
                     ELSE '<a href="' || story_url || '">' || article_summary || '</a>'
                 END AS 'Blog',
                 tag AS 'Tag(s)',
-            FROM formatting
+            FROM base
             ORDER BY published_at
         """
         ).arrow()
 
         data = df.to_pydict()
+        logging.info(f"{data=}")
         logging.info(
             f"SELECTed {len(data)} blogs from the last {self.lookback_days} days."
         )
