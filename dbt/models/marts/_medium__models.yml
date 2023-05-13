@@ -10,3 +10,8 @@ models:
     tests:
       - dbt_expectations.expect_table_column_count_to_be_between:
           min_value: 1
+
+  - name: fct_medium_blogs
+    tests:
+      - dbt_expectations.expect_table_column_count_to_be_between:
+          min_value: 1

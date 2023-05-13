@@ -11,7 +11,7 @@ def main() -> None:
     Path(f"{os.getenv('DATA_DIR')}/marts/").mkdir(parents=True, exist_ok=True)
 
     # Run dbt to update marts
-    run_dbt_commands(["dbt deps", "dbt build --select +dim_medium_authors"])
+    run_dbt_commands(["dbt deps", "dbt build"])
 
     nlp_main()
 
