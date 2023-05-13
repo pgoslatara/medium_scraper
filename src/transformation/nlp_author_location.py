@@ -16,6 +16,7 @@ def main() -> None:
     df = con.execute(
         f"SELECT * FROM '{os.getenv('DATA_DIR')}/marts/dim_medium_authors.parquet'"
     ).arrow()
+    print(f"Running Spacy on {df.num_rows} authors...")
 
     # Run Spacy on all author bio's
     spacy_data = []
@@ -47,6 +48,7 @@ def main() -> None:
             extracted_locations.append(loc_data[0])
 
     # Add new column to dataframe with extracted locations and save to data lake
+    print("Spacy extraction completed, saving to data lake...")
     df = df.append_column("spacy_location", pa.array(extracted_locations, pa.string()))
     con.execute(
         f"COPY (SELECT author_url, short_bio, spacy_location FROM df) TO '{os.getenv('DATA_DIR')}/enriched/nlp_author_location.parquet' (FORMAT 'parquet');"
