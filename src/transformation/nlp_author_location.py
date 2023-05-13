@@ -48,10 +48,13 @@ def main() -> None:
             extracted_locations.append(loc_data[0])
 
     # Add new column to dataframe with extracted locations and save to data lake
-    print("Spacy extraction completed, saving to data lake...")
     df = df.append_column("spacy_location", pa.array(extracted_locations, pa.string()))
+    dest_file_name = f"{os.getenv('DATA_DIR')}/enriched/nlp_author_location.parquet"
+    print(
+        f"Spacy extraction completed, saving to {dest_file_name} ({df.num_rows} rows)..."
+    )
     con.execute(
-        f"COPY (SELECT author_url, short_bio, spacy_location FROM df) TO '{os.getenv('DATA_DIR')}/enriched/nlp_author_location.parquet' (FORMAT 'parquet');"
+        f"COPY (SELECT author_url, short_bio, spacy_location FROM df) TO '{dest_file_name}' (FORMAT 'parquet');"
     )
 
 
