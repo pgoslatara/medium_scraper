@@ -1,3 +1,12 @@
+{# Saving to data lake so NLP can be run on this models output #}
+{{
+    config(
+        format='parquet',
+        location='{{ env_var("DATA_DIR") }}/staging/medium_authors/{{ this.name }}.parquet',
+        materialized='external'
+    )
+}}
+
 with
     base as (
         select
