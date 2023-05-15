@@ -26,7 +26,12 @@ class SendMediumBlogsEmail:
                     CASE
                         WHEN subtitle = '-' THEN title || ' (' || reading_time_minutes || ' min.)'
                         ELSE title || ': ' || subtitle || ' (' || reading_time_minutes || ' min.)'
-                    END AS article_summary,
+                    END
+                    || IF(
+                        is_author_based_in_netherlands = TRUE,
+                        '🇳🇱',
+                        ''
+                    ) AS article_summary,
                     tag
                 FROM read_parquet('{os.getenv('DATA_DIR')}/marts/fct_medium_blogs.parquet')
                 WHERE

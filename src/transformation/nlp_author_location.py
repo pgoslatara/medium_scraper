@@ -14,7 +14,7 @@ def main() -> None:
 
     con = duckdb.connect(database=":memory:")
     df = con.execute(
-        f"SELECT * FROM '{os.getenv('DATA_DIR')}/marts/dim_medium_authors.parquet'"
+        f"SELECT * FROM '{os.getenv('DATA_DIR')}/staging/medium_authors/stg_medium_authors__authors.parquet'"
     ).arrow()
     print(f"Running Spacy on {df.num_rows} authors...")
 
