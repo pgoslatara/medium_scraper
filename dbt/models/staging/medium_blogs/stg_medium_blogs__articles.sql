@@ -21,7 +21,22 @@ with
             ) as rnum
         from
             read_json_auto(
-                "{{ env_var('DATA_DIR') }}/landing_zone/domain=medium_blogs/*/*/*.json"
+                "{{ env_var('DATA_DIR') }}/landing_zone/domain=medium_blogs/*/*/*.json",
+                columns = {
+                    author_name:'STRING',
+                    author_url:'STRING',
+                    extracted_at:'STRING',
+                    extracted_at_epoch:'NUMERIC',
+                    extraction_id:'UUID',
+                    extraction_url:'STRING',
+                    published_at:'STRING',
+                    published_date:'STRING',
+                    reading_time_minutes:'NUMERIC',
+                    story_url:'STRING',
+                    subtitle:'STRING',
+                    tag:'STRING',
+                    title:'STRING'
+                }
             )
         where author_name != 'Thirahealth'  -- Tags Dialectical Behavior Therapy blogs with dbt, want to exclude these
     )
