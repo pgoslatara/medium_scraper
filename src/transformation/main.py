@@ -3,7 +3,7 @@ from pathlib import Path
 
 from utils.utils import run_dbt_commands
 
-from .nlp_author_location import main as nlp_main
+from .author_details import main as transformation_main
 
 
 def main() -> None:
@@ -15,9 +15,9 @@ def main() -> None:
 
     run_dbt_commands(["dbt deps"])
 
-    # nlp_main depends on a dbt model
+    # transformation_main depends on a dbt model
     run_dbt_commands(["dbt build --select stg_medium_authors__authors"])
-    nlp_main()
+    transformation_main()
 
     # Run dbt to update marts
     run_dbt_commands(["dbt build"])

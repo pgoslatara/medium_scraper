@@ -1,9 +1,11 @@
 select
     a.*,
-    nlp.spacy_location,
+    auth_enr.linkedin_username,
+    auth_enr.spacy_location,
+    auth_enr.twitter_handle,
     if(
-        lower(nlp.spacy_location) like '%netherlands%'
-        or nlp.spacy_location in (
+        lower(auth_enr.spacy_location) like '%netherlands%'
+        or auth_enr.spacy_location in (
             'Almere',
             'Amsterdam',
             'Breda',
@@ -20,4 +22,5 @@ select
     ) as is_author_based_in_netherlands
 from {{ ref('stg_medium_authors__authors') }} a
 left join
-    {{ ref('stg_medium_authors__nlp_location') }} nlp on nlp.author_url = a.author_url
+    {{ ref('stg_medium_authors__authors_enriched') }} auth_enr
+    on auth_enr.author_url = a.author_url

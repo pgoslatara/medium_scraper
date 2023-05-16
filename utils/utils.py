@@ -6,7 +6,6 @@ from glob import glob
 from pathlib import Path
 from typing import Dict, List, Mapping, Union
 
-import duckdb
 from sh import dbt
 
 
@@ -44,11 +43,6 @@ def get_json_content(domain: str) -> List[Mapping[str, Union[str, int]]]:
 
     logging.info(f"Read {len(contents)} blogs from json files")
     return contents
-
-
-@lru_cache
-def initialise_duckdb() -> duckdb.DuckDBPyConnection:
-    return duckdb.connect(database=":memory:")
 
 
 def run_dbt_commands(commands: List[str]) -> None:
