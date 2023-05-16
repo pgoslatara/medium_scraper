@@ -5,19 +5,19 @@ import ssl
 from email.message import EmailMessage
 from typing import Mapping, Union
 
+import duckdb
 from tabulate import tabulate
-
-from utils.utils import *
 
 
 class SendMediumBlogsEmail:
     def __init__(self, lookback_days: int):
-        self.con = initialise_duckdb()
         self.lookback_days = lookback_days
 
     def get_relevant_blogs(self) -> Mapping[str, Union[str, int]]:
-        df = self.con.execute(
-            f"""
+        df = (
+            duckdb.connect(database=":memory:")
+            .execute(
+                f"""
             WITH base AS (
                 SELECT
                     author_name,
@@ -50,7 +50,9 @@ class SendMediumBlogsEmail:
             FROM base
             ORDER BY published_at
         """
-        ).arrow()
+            )
+            .arrow()
+        )
 
         data = df.to_pydict()
         logging.info(f"{data=}")
