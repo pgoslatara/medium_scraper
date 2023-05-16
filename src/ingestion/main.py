@@ -2,6 +2,7 @@ import os
 
 from utils.utils import set_logging_options
 
+from .github_actions import GitHubActionsExtractor
 from .medium_web_scraper import MediumWebScraper
 
 
@@ -22,6 +23,7 @@ def main() -> None:
         "dbt",
     ]
 
+    GitHubActionsExtractor().run()
     MediumWebScraper(
         lookback_days=lookback_days,
         tags=tags,

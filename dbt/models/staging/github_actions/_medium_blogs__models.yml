@@ -1,0 +1,22 @@
+version: 2
+
+models:
+  - name: stg_github_actions__jobs
+    columns:
+      - name: job_id
+        tests:
+          - not_null
+          - unique
+    tests:
+      - dbt_expectations.expect_table_column_count_to_be_between:
+          min_value: 1
+
+  - name: stg_github_actions__workflow_runs
+    columns:
+      - name: workflow_run_id
+        tests:
+          - not_null
+          - unique
+    tests:
+      - dbt_expectations.expect_table_column_count_to_be_between:
+          min_value: 1
