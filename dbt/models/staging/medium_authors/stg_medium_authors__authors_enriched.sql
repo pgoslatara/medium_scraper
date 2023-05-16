@@ -1,0 +1,52 @@
+select distinct
+    author_url,
+    linkedin_username,
+    short_bio,
+    if(
+        -- Removing locations that aren't real locations
+        spacy_location not in (
+            '@Autopedia',
+            '@drizly',
+            'A.I.',
+            'AI',
+            'Algorithm',
+            'Author',
+            'Building',
+            'Cloud',
+            'Databand.ai',
+            'Databricks',
+            'DevOps',
+            'DevRel',
+            'Docker',
+            'Facebook',
+            'Georgia Tech',
+            'Inventa',
+            'Lakehouse',
+            'Mentor',
+            'ML',
+            'Monzo',
+            'PayU',
+            'Pyspark',
+            'PySpark',
+            'Python',
+            'Qover',
+            'Ramen',
+            'Spark',
+            'SqlDBM',
+            'talent!',
+            'Tech',
+            'Tech Aficionado',
+            'tecnologia',
+            'Udemy',
+            'Vue',
+            'Xeneta',
+            'Zeotap',
+            'देव',
+            '💛'
+        )
+        and lower(spacy_location) not like '%linkedin%',
+        spacy_location,
+        null
+    ) as spacy_location,
+    twitter_handle
+from "{{ env_var('DATA_DIR') }}/enriched/nlp_author_location.parquet"
