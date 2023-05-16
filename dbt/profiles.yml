@@ -5,9 +5,9 @@ medium_scraper:
      type: duckdb
      extensions:
       - json
-     path: './dbt/dbt_dev.duckdb'
+     path: ':memory:'
    prod:
      type: duckdb
      extensions:
       - json
-     path: ./dbt/dbt_prod.duckdb
+     path: ':memory:'
