@@ -1,12 +1,11 @@
 import logging
 import os
 import uuid
-from datetime import datetime
+from datetime import datetime, timedelta
 from functools import lru_cache
-from typing import Dict, List
+from typing import Any, Dict, List, Mapping, Optional, Union
 
 import requests
-from github import Github
 
 from utils.utils import *
 
@@ -30,84 +29,110 @@ class GitHubActionsExtractor:
     def run(self) -> None:
         logging.info("Extracting data from GitHub...")
 
-        workflow_data = self.extract_github_workflow_runs()
+        workflow_runs = self.extract_github_workflow_runs()
         save_to_landing_zone(
-            data=workflow_data,
+            data=workflow_runs,
             file_name=f"domain=github_actions_workflow_runs/schema_version=1/extracted_at={self.get_extracted_at_epoch()}/extraction_id={self.get_extraction_id()}.json",
         )
 
-        jobs_data = self.extract_github_jobs(self.lookback_days, workflow_data)
+        jobs_data = self.extract_github_jobs(workflow_runs)
         save_to_landing_zone(
             data=jobs_data,
             file_name=f"domain=github_actions_jobs/schema_version=1/extracted_at={self.get_extracted_at_epoch()}/extraction_id={self.get_extraction_id()}.json",
         )
 
-    def extract_github_workflow_runs(self) -> List[Dict[str, object]]:
-        logging.info("Extracting workflow data from GitHub...")
-        workflow_data = []
-        gh_client = Github(os.getenv("PAT_GITHUB"))
-        for repo in gh_client.get_user().get_repos(type="owner"):
-            logging.info(f"Extracting usage from {repo.name}...")
-            for workflow_run in repo.get_workflow_runs():
-                raw_data = workflow_run.raw_data
-                try:
-                    run_duration_ms = workflow_run.timing().run_duration_ms
-                except AttributeError:
-                    run_duration_ms = 0
+    def call_github_api(
+        self,
+        method: str,
+        endpoint: str,
+        params: Optional[Mapping[str, Union[int, str]]] = None,
+    ) -> Mapping[Any, Any]:
+        if method.lower() == "get":
+            r = requests.get(
+                f"https://api.github.com/{endpoint}",
+                headers={
+                    "Accept": "application/vnd.github+json",
+                    "Authorization": f"Bearer {os.getenv('PAT_GITHUB')}",
+                },
+                params=params,
+            )
 
-                workflow_run_data = {
-                    "extraction_id": self.get_extraction_id(),
-                    "extracted_at": self.get_extracted_at(),
-                    "extracted_at_epoch": self.get_extracted_at_epoch(),
-                    "html_url": workflow_run.html_url,
-                    "repo_name": repo.name,
-                    "run_duration_ms": run_duration_ms,
-                    "run_started_at": raw_data["run_started_at"],
-                    "workflow_id": raw_data["workflow_id"],
-                    "workflow_name": raw_data["name"],
-                    "workflow_run_id": raw_data["id"],
-                }
-                workflow_data.append(workflow_run_data)
+        return dict(r.json())
 
-        logging.info(f"Extracted data from {len(workflow_data)} workflows from GitHub.")
+    def extract_github_workflow_runs(self) -> Any:
+        created_filter = (
+            f">{(datetime.today() - timedelta(days=7)).date().strftime('%Y-%m-%d')}"
+        )
+        logging.info(
+            f"Extracting workflow data from GitHub (filter '{created_filter}')..."
+        )
+        per_page = 10
 
-        return workflow_data
+        repos = self.call_github_api("GET", "users/pgoslatara/repos")
+
+        for repo in repos:
+            logging.info(f"Repo name: {repo['name']}")
+            workflows = self.call_github_api(
+                "GET", f"repos/pgoslatara/{repo['name']}/actions/workflows"
+            )["workflows"]
+            for workflow in workflows:
+                logging.info(f"Workflow name: {workflow['name']}")
+                r = self.call_github_api(
+                    "GET",
+                    f"repos/pgoslatara/{repo['name']}/actions/workflows/{workflow['id']}/runs",
+                    params={"created": created_filter, "page": 1, "per_page": per_page},
+                )
+                workflow_runs = r["workflow_runs"]
+                total_count = r["total_count"]
+
+                for page_num in list(range(2, int(total_count / per_page) + 2)):
+                    r = self.call_github_api(
+                        "GET",
+                        f"repos/pgoslatara/{repo['name']}/actions/workflows/{workflow['id']}/runs",
+                        params={
+                            "created": created_filter,
+                            "page": page_num,
+                            "per_page": per_page,
+                        },
+                    )
+                    workflow_runs += r["workflow_runs"]
+                logging.info(f"Retrieved {len(workflow_runs)} workflows.")
+
+        metadata = {
+            "extraction_id": self.get_extraction_id(),
+            "extracted_at": self.get_extracted_at(),
+            "extracted_at_epoch": self.get_extracted_at_epoch(),
+        }
+        for workflow in workflow_runs:
+            workflow = workflow.update(metadata)
+
+        logging.info(f"Extracted data from {len(workflow_runs)} workflows from GitHub.")
+
+        return workflow_runs
 
     def extract_github_jobs(
-        self, lookback_days: int, workflow_data: List[Dict[str, object]]
+        self, workflow_runs: List[Dict[str, object]]
     ) -> List[Dict[str, object]]:
-        logging.info(f"Extracting jobs data from GitHub (last {lookback_days} days)...")
+        logging.info("Extracting jobs data from GitHub...")
 
         jobs_data = []
-        for workflow in workflow_data:
-            if (
-                datetime.utcnow()
-                - datetime.strptime(
-                    str(workflow["run_started_at"]), "%Y-%m-%dT%H:%M:%SZ"
-                )
-            ).days <= lookback_days:
-                r = requests.get(
-                    f"https://api.github.com/repos/pgoslatara/medium_scraper/actions/runs/{workflow['workflow_run_id']}/jobs",
-                    headers={
-                        "Accept": "application/vnd.github+json",
-                        "Authorization": f"Bearer {os.getenv('PAT_GITHUB')}",
-                    },
-                )
-                if "message" not in r.json().keys():  # i.e. logs are still available
-                    for job in r.json()["jobs"]:
-                        job_data = {
-                            "extraction_id": self.get_extraction_id(),
-                            "extracted_at": self.get_extracted_at(),
-                            "extracted_at_epoch": self.get_extracted_at_epoch(),
-                            "completed_at": job["completed_at"],
-                            "html_url": job["html_url"],
-                            "job_id": job["id"],
-                            "job_name": job["name"],
-                            "started_at": job["started_at"],
-                            "workflow_run_id": job["run_id"],
-                        }
-                        jobs_data.append(job_data)
+        for workflow_run in workflow_runs:
+            r = self.call_github_api(
+                "GET",
+                f"repos/pgoslatara/medium_scraper/actions/runs/{workflow_run['id']}/jobs",
+            )
+            if "message" not in r.keys():  # i.e. logs are still available
+                for job in r["jobs"]:
+                    jobs_data.append(job)
 
-                logging.info(f"Extracted data from {len(jobs_data)} jobs from GitHub.")
+        metadata = {
+            "extraction_id": self.get_extraction_id(),
+            "extracted_at": self.get_extracted_at(),
+            "extracted_at_epoch": self.get_extracted_at_epoch(),
+        }
+        for job in jobs_data:
+            job = job.update(metadata)
+
+        logging.info(f"Extracted data from {len(jobs_data)} jobs from GitHub.")
 
         return jobs_data
