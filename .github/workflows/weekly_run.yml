@@ -13,7 +13,7 @@ on:
 env:
   DATA_DIR: "/home/runner/work/medium_scraper/medium_scraper/output"
   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-  INGESTION_LOOKBACK_WINDOW: '${{ github.event.inputs.ingestion_lookback_days }}'
+  INGESTION_LOOKBACK_WINDOW: '${{ github.event.inputs.ingestion_lookback_days || 7}}'
   PAT_GITHUB:  ${{ secrets.PAT_GITHUB }}
 
 jobs:
