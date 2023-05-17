@@ -1,12 +1,54 @@
 import json
 import logging
 import os
+from datetime import datetime
 from functools import lru_cache
 from glob import glob
 from pathlib import Path
-from typing import Dict, List, Mapping, Union
+from typing import Any, Dict, List, Mapping, Optional, Union
 
+import requests
 from sh import dbt
+
+
+class GitHubAPIRateLimitError(Exception):
+    def __init__(self) -> None:
+        pass
+
+    def __str__(self) -> str:
+        return f"GitHubAPIRateLimitError: API allocations resets at {self.get_api_reset_time()}."
+
+    def get_api_reset_time(self) -> datetime:
+        r = call_github_api(
+            "GET",
+            "rate_limit",
+        )
+        return datetime.fromtimestamp(r["rate"]["reset"])
+
+
+def call_github_api(
+    method: str,
+    endpoint: str,
+    params: Optional[Mapping[str, Union[int, str]]] = None,
+) -> Any:
+    if method.lower() == "get":
+        r = requests.get(
+            f"https://api.github.com/{endpoint}",
+            headers={
+                "Accept": "application/vnd.github+json",
+                "Authorization": f"Bearer {os.getenv('PAT_GITHUB')}",
+            },
+            params=params,
+        )
+
+    if (
+        isinstance(r.json(), dict)
+        and r.json().get("message")
+        and r.json()["message"].startswith("API rate limit exceeded for user ID")
+    ):
+        raise GitHubAPIRateLimitError
+
+    return r.json()
 
 
 @lru_cache
