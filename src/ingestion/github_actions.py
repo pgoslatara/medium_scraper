@@ -1,11 +1,8 @@
 import logging
-import os
 import uuid
 from datetime import datetime, timedelta
 from functools import lru_cache
-from typing import Any, Dict, List, Mapping, Optional, Union
-
-import requests
+from typing import Any, Dict, List
 
 from utils.utils import *
 
@@ -41,24 +38,6 @@ class GitHubActionsExtractor:
             file_name=f"domain=github_actions_jobs/schema_version=1/extracted_at={self.get_extracted_at_epoch()}/extraction_id={self.get_extraction_id()}.json",
         )
 
-    def call_github_api(
-        self,
-        method: str,
-        endpoint: str,
-        params: Optional[Mapping[str, Union[int, str]]] = None,
-    ) -> Any:
-        if method.lower() == "get":
-            r = requests.get(
-                f"https://api.github.com/{endpoint}",
-                headers={
-                    "Accept": "application/vnd.github+json",
-                    "Authorization": f"Bearer {os.getenv('PAT_GITHUB')}",
-                },
-                params=params,
-            )
-
-        return r.json()
-
     def extract_github_workflow_runs(self) -> Any:
         created_filter = f">{(datetime.today() - timedelta(days=self.lookback_days)).date().strftime('%Y-%m-%d')}"
         logging.info(
@@ -66,16 +45,16 @@ class GitHubActionsExtractor:
         )
         per_page = 10
 
-        repos = self.call_github_api("GET", "users/pgoslatara/repos")
+        repos = call_github_api("GET", "users/pgoslatara/repos")
 
         for repo in repos:
             logging.info(f"Repo name: {repo['name']}")
-            workflows = self.call_github_api(
+            workflows = call_github_api(
                 "GET", f"repos/pgoslatara/{repo['name']}/actions/workflows"
             )["workflows"]
             for workflow in workflows:
                 logging.info(f"Workflow name: {workflow['name']}")
-                r = self.call_github_api(
+                r = call_github_api(
                     "GET",
                     f"repos/pgoslatara/{repo['name']}/actions/workflows/{workflow['id']}/runs",
                     params={"created": created_filter, "page": 1, "per_page": per_page},
@@ -84,7 +63,7 @@ class GitHubActionsExtractor:
                 total_count = r["total_count"]
 
                 for page_num in list(range(2, int(total_count / per_page) + 2)):
-                    r = self.call_github_api(
+                    r = call_github_api(
                         "GET",
                         f"repos/pgoslatara/{repo['name']}/actions/workflows/{workflow['id']}/runs",
                         params={
@@ -115,7 +94,7 @@ class GitHubActionsExtractor:
 
         jobs_data = []
         for workflow_run in workflow_runs:
-            r = self.call_github_api(
+            r = call_github_api(
                 "GET",
                 f"repos/pgoslatara/medium_scraper/actions/runs/{workflow_run['id']}/jobs",
             )
