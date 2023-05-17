@@ -2,16 +2,16 @@ import os
 
 from utils.utils import set_logging_options
 
+from .github_actions import GitHubActionsExtractor
 from .medium_web_scraper import MediumWebScraper
 
 
 def main() -> None:
     set_logging_options()
 
-    # MEDIUM_BLOG_LOOKBACK_WINDOW is "" when action is triggered from main branch
     default_lookback = 7
     try:
-        lookback_days = int(os.getenv("MEDIUM_BLOG_LOOKBACK_WINDOW", default_lookback))
+        lookback_days = int(os.getenv("INGESTION_LOOKBACK_WINDOW", default_lookback))
     except:
         lookback_days = default_lookback
 
@@ -22,6 +22,7 @@ def main() -> None:
         "dbt",
     ]
 
+    GitHubActionsExtractor(lookback_days=lookback_days).run()
     MediumWebScraper(
         lookback_days=lookback_days,
         tags=tags,
