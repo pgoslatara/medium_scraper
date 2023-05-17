@@ -41,9 +41,12 @@ def call_github_api(
             params=params,
         )
 
-    if r.json().get("message"):
-        if r.json()["message"].startswith("API rate limit exceeded for user ID"):
-            raise GitHubAPIRateLimitError
+    if (
+        isinstance(r.json(), dict)
+        and r.json().get("message")
+        and r.json()["message"].startswith("API rate limit exceeded for user ID")
+    ):
+        raise GitHubAPIRateLimitError
 
     return r.json()
 
