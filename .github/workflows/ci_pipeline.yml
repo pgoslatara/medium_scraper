@@ -9,7 +9,7 @@ on:
       ingestion_lookback_days:
         description: The number of days into the past for which to ingest data for
         required: true
-        default: 7
+        default: 2
 
 env:
   DATA_DIR: "/home/runner/work/medium_scraper/medium_scraper/output"
