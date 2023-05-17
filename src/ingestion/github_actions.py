@@ -46,7 +46,7 @@ class GitHubActionsExtractor:
         method: str,
         endpoint: str,
         params: Optional[Mapping[str, Union[int, str]]] = None,
-    ) -> Mapping[Any, Any]:
+    ) -> Any:
         if method.lower() == "get":
             r = requests.get(
                 f"https://api.github.com/{endpoint}",
@@ -57,7 +57,7 @@ class GitHubActionsExtractor:
                 params=params,
             )
 
-        return dict(r.json())
+        return r.json()
 
     def extract_github_workflow_runs(self) -> Any:
         created_filter = (
