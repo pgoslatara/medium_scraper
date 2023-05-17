@@ -6,15 +6,15 @@ on:
       - main
   workflow_dispatch:
     inputs:
-      medium_blog_lookback_days:
-        description: The number of days (up to but mot including today) for which to search for
+      ingestion_lookback_days:
+        description: The number of days into the past for which to ingest data for
         required: true
         default: 7
 
 env:
   DATA_DIR: "/home/runner/work/medium_scraper/medium_scraper/output"
   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-  MEDIUM_BLOG_LOOKBACK_WINDOW: '${{ github.event.inputs.medium_blog_lookback_days }}'
+  INGESTION_LOOKBACK_WINDOW: '${{ github.event.inputs.ingestion_lookback_days }}'
   PAT_GITHUB:  ${{ secrets.PAT_GITHUB }}
 
 jobs:
@@ -67,7 +67,7 @@ jobs:
       - name: Build container and run commands
         uses: devcontainers/ci@v0.3
         env:
-          MEDIUM_BLOG_LOOKBACK_WINDOW: '${{ github.event.inputs.medium_blog_lookback_days }}'
+          INGESTION_LOOKBACK_WINDOW: '${{ github.event.inputs.ingestion_lookback_days }}'
           RECIPIENT_EMAIL_ADDRESS: 123@mailslurp.com
           SENDER_EMAIL_ADDRESS: ${{ secrets.SENDER_EMAIL_ADDRESS }}
           SENDER_EMAIL_PASSWORD: ${{ secrets.SENDER_EMAIL_PASSWORD }}
@@ -76,7 +76,7 @@ jobs:
           env: |
             DATA_DIR=/workspaces/medium_scraper/output
             GITHUB_TOKEN=dummy_value
-            MEDIUM_BLOG_LOOKBACK_WINDOW
+            INGESTION_LOOKBACK_WINDOW
             RECIPIENT_EMAIL_ADDRESS
             SENDER_EMAIL_ADDRESS
             SENDER_EMAIL_PASSWORD

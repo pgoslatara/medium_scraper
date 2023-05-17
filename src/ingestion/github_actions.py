@@ -12,8 +12,8 @@ from utils.utils import *
 
 
 class GitHubActionsExtractor:
-    def __init__(self) -> None:
-        pass
+    def __init__(self, lookback_days: int) -> None:
+        self.lookback_days = lookback_days
 
     @lru_cache
     def get_extracted_at(self) -> datetime:
@@ -36,7 +36,7 @@ class GitHubActionsExtractor:
             file_name=f"domain=github_actions_workflow_runs/schema_version=1/extracted_at={self.get_extracted_at_epoch()}/extraction_id={self.get_extraction_id()}.json",
         )
 
-        jobs_data = self.extract_github_jobs(workflow_data)
+        jobs_data = self.extract_github_jobs(self.lookback_days, workflow_data)
         save_to_landing_zone(
             data=jobs_data,
             file_name=f"domain=github_actions_jobs/schema_version=1/extracted_at={self.get_extracted_at_epoch()}/extraction_id={self.get_extraction_id()}.json",
@@ -74,33 +74,40 @@ class GitHubActionsExtractor:
         return workflow_data
 
     def extract_github_jobs(
-        self, workflow_data: List[Dict[str, object]]
+        self, lookback_days: int, workflow_data: List[Dict[str, object]]
     ) -> List[Dict[str, object]]:
-        logging.info("Extracting jobs data from GitHub...")
+        logging.info(f"Extracting jobs data from GitHub (last {lookback_days} days)...")
+
         jobs_data = []
         for workflow in workflow_data:
-            r = requests.get(
-                f"https://api.github.com/repos/pgoslatara/medium_scraper/actions/runs/{workflow['workflow_run_id']}/jobs",
-                headers={
-                    "Accept": "application/vnd.github+json",
-                    "Authorization": f"Bearer {os.getenv('PAT_GITHUB')}",
-                },
-            )
-            if "message" not in r.json().keys():  # i.e. logs are still available
-                for job in r.json()["jobs"]:
-                    job_data = {
-                        "extraction_id": self.get_extraction_id(),
-                        "extracted_at": self.get_extracted_at(),
-                        "extracted_at_epoch": self.get_extracted_at_epoch(),
-                        "completed_at": job["completed_at"],
-                        "html_url": job["html_url"],
-                        "job_id": job["id"],
-                        "job_name": job["name"],
-                        "started_at": job["started_at"],
-                        "workflow_run_id": job["run_id"],
-                    }
-                    jobs_data.append(job_data)
+            if (
+                datetime.utcnow()
+                - datetime.strptime(
+                    str(workflow["run_started_at"]), "%Y-%m-%dT%H:%M:%SZ"
+                )
+            ).days <= lookback_days:
+                r = requests.get(
+                    f"https://api.github.com/repos/pgoslatara/medium_scraper/actions/runs/{workflow['workflow_run_id']}/jobs",
+                    headers={
+                        "Accept": "application/vnd.github+json",
+                        "Authorization": f"Bearer {os.getenv('PAT_GITHUB')}",
+                    },
+                )
+                if "message" not in r.json().keys():  # i.e. logs are still available
+                    for job in r.json()["jobs"]:
+                        job_data = {
+                            "extraction_id": self.get_extraction_id(),
+                            "extracted_at": self.get_extracted_at(),
+                            "extracted_at_epoch": self.get_extracted_at_epoch(),
+                            "completed_at": job["completed_at"],
+                            "html_url": job["html_url"],
+                            "job_id": job["id"],
+                            "job_name": job["name"],
+                            "started_at": job["started_at"],
+                            "workflow_run_id": job["run_id"],
+                        }
+                        jobs_data.append(job_data)
 
-        logging.info(f"Extracted data from {len(jobs_data)} jobs from GitHub.")
+                logging.info(f"Extracted data from {len(jobs_data)} jobs from GitHub.")
 
         return jobs_data
