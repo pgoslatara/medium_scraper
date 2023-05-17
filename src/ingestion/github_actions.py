@@ -60,9 +60,7 @@ class GitHubActionsExtractor:
         return r.json()
 
     def extract_github_workflow_runs(self) -> Any:
-        created_filter = (
-            f">{(datetime.today() - timedelta(days=7)).date().strftime('%Y-%m-%d')}"
-        )
+        created_filter = f">{(datetime.today() - timedelta(days=self.lookback_days)).date().strftime('%Y-%m-%d')}"
         logging.info(
             f"Extracting workflow data from GitHub (filter '{created_filter}')..."
         )
