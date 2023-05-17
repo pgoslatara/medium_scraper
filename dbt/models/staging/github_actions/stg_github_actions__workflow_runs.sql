@@ -1,7 +1,7 @@
 with
     base as (
         select
-            cast(extracted_at as timestamp) as extracted_at,
+            extracted_at,
             extracted_at_epoch,
             extraction_id,
             html_url,
