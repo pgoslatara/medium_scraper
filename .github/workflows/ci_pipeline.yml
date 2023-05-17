@@ -68,6 +68,7 @@ jobs:
         uses: devcontainers/ci@v0.3
         env:
           INGESTION_LOOKBACK_WINDOW: '${{ github.event.inputs.ingestion_lookback_days }}'
+          PAT_GITHUB: ${{ secrets.PAT_GITHUB }}
           RECIPIENT_EMAIL_ADDRESS: 123@mailslurp.com
           SENDER_EMAIL_ADDRESS: ${{ secrets.SENDER_EMAIL_ADDRESS }}
           SENDER_EMAIL_PASSWORD: ${{ secrets.SENDER_EMAIL_PASSWORD }}
@@ -77,6 +78,7 @@ jobs:
             DATA_DIR=/workspaces/medium_scraper/output
             GITHUB_TOKEN=dummy_value
             INGESTION_LOOKBACK_WINDOW
+            PAT_GITHUB
             RECIPIENT_EMAIL_ADDRESS
             SENDER_EMAIL_ADDRESS
             SENDER_EMAIL_PASSWORD
