@@ -26,7 +26,8 @@ with
                     repository:'STRUCT(name STRING)',
                     run_started_at:'STRING',
                     workflow_id:'NUMERIC'
-                }
+                },
+                maximum_object_size = 33554432
             )
     )
 

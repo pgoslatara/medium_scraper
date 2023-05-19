@@ -24,7 +24,8 @@ with
                     name:'STRING',
                     run_id:'NUMERIC',
                     started_at:'STRING'
-                }
+                },
+                maximum_object_size = 33554432
             )
     )
 
