@@ -41,12 +41,15 @@ class GitHubActionsExtractor:
     def extract_github_workflow_runs(self) -> Any:
         created_filter = f">{(datetime.today() - timedelta(days=self.lookback_days)).date().strftime('%Y-%m-%d')}"
         logging.info(
-            f"Extracting workflow data from GitHub (filter '{created_filter}')..."
+            f"Extracting workflow run data from GitHub (filter '{created_filter}')..."
         )
-        per_page = 10
+        per_page = 100
 
-        repos = call_github_api("GET", "users/pgoslatara/repos")
+        repos = call_github_api(
+            "GET", "user/repos", params={"per_page": per_page, "type": "owner"}
+        )
 
+        workflow_runs = []
         for repo in repos:
             logging.info(f"Repo name: {repo['name']}")
             workflows = call_github_api(
@@ -59,8 +62,9 @@ class GitHubActionsExtractor:
                     f"repos/pgoslatara/{repo['name']}/actions/workflows/{workflow['id']}/runs",
                     params={"created": created_filter, "page": 1, "per_page": per_page},
                 )
-                workflow_runs = r["workflow_runs"]
+                workflow_runs += r["workflow_runs"]
                 total_count = r["total_count"]
+                logging.debug(f"{total_count=}")
 
                 for page_num in list(range(2, int(total_count / per_page) + 2)):
                     r = call_github_api(
@@ -73,7 +77,8 @@ class GitHubActionsExtractor:
                         },
                     )
                     workflow_runs += r["workflow_runs"]
-                logging.info(f"Retrieved {len(workflow_runs)} workflows.")
+
+                logging.info(f"Retrieved {len(workflow_runs)} workflows runs so far...")
 
         metadata = {
             "extraction_id": self.get_extraction_id(),
@@ -83,7 +88,9 @@ class GitHubActionsExtractor:
         for workflow in workflow_runs:
             workflow = workflow.update(metadata)
 
-        logging.info(f"Extracted data from {len(workflow_runs)} workflows from GitHub.")
+        logging.info(
+            f"Extracted data from {len(workflow_runs)} workflows runs from GitHub."
+        )
 
         return workflow_runs
 
@@ -96,7 +103,7 @@ class GitHubActionsExtractor:
         for workflow_run in workflow_runs:
             r = call_github_api(
                 "GET",
-                f"repos/pgoslatara/medium_scraper/actions/runs/{workflow_run['id']}/jobs",
+                f"repos/pgoslatara/{workflow_run['repository']['name']}/actions/runs/{workflow_run['id']}/jobs",  # type: ignore[index]
             )
             if "message" not in r.keys():  # i.e. logs are still available
                 for job in r["jobs"]:

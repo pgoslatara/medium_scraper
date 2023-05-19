@@ -37,6 +37,7 @@ def call_github_api(
             headers={
                 "Accept": "application/vnd.github+json",
                 "Authorization": f"Bearer {os.getenv('PAT_GITHUB')}",
+                "X-GitHub-Api-Version": "2022-11-28",
             },
             params=params,
         )
