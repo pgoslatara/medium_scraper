@@ -1,0 +1,44 @@
+[
+    {
+        "author_name": "Agusmahari",
+        "author_url": "https://medium.com/@agusmahari",
+        "extracted_at": "2023-05-26 09:11:48.057242",
+        "extracted_at_epoch": 1685092308,
+        "extraction_id": "449018cd-25b1-47a7-bf9a-037d2347bdc9",
+        "extraction_url": "https://medium.com/tag/apache-airflow/archive/2023/05/19",
+        "published_at": "2023-05-19T03:48:42.785Z",
+        "reading_time_minutes": 3,
+        "story_url": "https://medium.com/@agusmahari/mastering-task-dependencies-in-apache-airflow-building-efficient-workflows-cc78a39487de",
+        "subtitle": "-",
+        "tag": "apache-airflow",
+        "title": "Mastering Task Dependencies in Apache Airflow: Building Efficient Workflows"
+    },
+    {
+        "author_name": "Tamara Janina Fingerlin",
+        "author_url": "https://medium.com/@tjanif",
+        "extracted_at": "2023-05-26 09:11:48.057242",
+        "extracted_at_epoch": 1685092308,
+        "extraction_id": "449018cd-25b1-47a7-bf9a-037d2347bdc9",
+        "extraction_url": "https://medium.com/tag/apache-airflow/archive/2023/05/18",
+        "published_at": "2023-05-18T16:02:04.481Z",
+        "reading_time_minutes": 4,
+        "story_url": "https://medium.com/apache-airflow/apache-kafka-%EF%B8%8F-apache-airflow-a-no-install-click-and-play-demo-of-the-kafka-airflow-provider-6a1df9427c01",
+        "subtitle": "-",
+        "tag": "apache-airflow",
+        "title": "Apache Kafka ❤️ Apache Airflow: A no-install click-and-play demo of the Kafka Airflow provider"
+    },
+    {
+        "author_name": "Neha Gupta",
+        "author_url": "https://medium.com/@guptaneha0908",
+        "extracted_at": "2023-05-26 09:11:48.057242",
+        "extracted_at_epoch": 1685092308,
+        "extraction_id": "449018cd-25b1-47a7-bf9a-037d2347bdc9",
+        "extraction_url": "https://medium.com/tag/apache-airflow/archive/2023/05/18",
+        "published_at": "2023-05-18T14:36:59.224Z",
+        "reading_time_minutes": 4,
+        "story_url": "https://medium.com/@guptaneha0908/debugging-airflow-issues-on-cloud-composer-part-1-configuration-optimization-a2d856ac6f75",
+        "subtitle": "-",
+        "tag": "apache-airflow",
+        "title": "Debugging Airflow issues on Cloud Composer: Part 1 — Configuration optimization"
+    }
+]
