@@ -1,0 +1,72 @@
+[
+    {
+        "author_name": "Ravil Guzairov",
+        "author_url": "https://medium.com/@guzairovravil",
+        "extracted_at": "2023-05-26 09:11:48.057242",
+        "extracted_at_epoch": 1685092308,
+        "extraction_id": "449018cd-25b1-47a7-bf9a-037d2347bdc9",
+        "extraction_url": "https://medium.com/tag/analytics-engineering/archive/2023/05/22",
+        "published_at": "2023-05-22T08:35:14.375Z",
+        "reading_time_minutes": 3,
+        "story_url": "https://medium.com/@guzairovravil/monitor-superset-usage-with-dbt-and-superset-d4510c7a5d6d",
+        "subtitle": "Build analytics-ready dbt models to monitor the Apache…",
+        "tag": "analytics-engineering",
+        "title": "Monitor Superset usage with dbt and Superset"
+    },
+    {
+        "author_name": "Balu Rama Chandra",
+        "author_url": "https://medium.com/@baluramachandra90",
+        "extracted_at": "2023-05-26 09:11:48.057242",
+        "extracted_at_epoch": 1685092308,
+        "extraction_id": "449018cd-25b1-47a7-bf9a-037d2347bdc9",
+        "extraction_url": "https://medium.com/tag/analytics-engineering/archive/2023/05/23",
+        "published_at": "2023-05-23T13:02:05.635Z",
+        "reading_time_minutes": 5,
+        "story_url": "https://medium.com/@baluramachandra90/10-data-engineering-terms-that-you-need-to-know-d78d6dce216a",
+        "subtitle": "-",
+        "tag": "analytics-engineering",
+        "title": "10 data engineering terms that you need to know"
+    },
+    {
+        "author_name": "Joey Holmesmeyer",
+        "author_url": "https://blog.startupstash.com/@joey_30056",
+        "extracted_at": "2023-05-26 09:11:48.057242",
+        "extracted_at_epoch": 1685092308,
+        "extraction_id": "449018cd-25b1-47a7-bf9a-037d2347bdc9",
+        "extraction_url": "https://medium.com/tag/analytics-engineering/archive/2023/05/22",
+        "published_at": "2023-05-22T23:29:09.079Z",
+        "reading_time_minutes": 4,
+        "story_url": "https://blog.startupstash.com/mastering-your-data-landscape-with-dbt-labs-a-game-changer-for-small-businesses-207ace176f2b",
+        "subtitle": "-",
+        "tag": "analytics-engineering",
+        "title": "Mastering Your Data Landscape With DBT Labs: A Game-Changer For Small Businesses"
+    },
+    {
+        "author_name": "Luís Oliveira",
+        "author_url": "https://medium.com/@lgsoliveira",
+        "extracted_at": "2023-05-26 09:11:48.057242",
+        "extracted_at_epoch": 1685092308,
+        "extraction_id": "449018cd-25b1-47a7-bf9a-037d2347bdc9",
+        "extraction_url": "https://medium.com/tag/analytics-engineering/archive/2023/05/24",
+        "published_at": "2023-05-24T09:30:53.126Z",
+        "reading_time_minutes": 6,
+        "story_url": "https://medium.com/@lgsoliveira/five-tips-on-how-you-can-understand-your-companys-core-business-as-a-data-professional-ccf95a8cad21",
+        "subtitle": "-",
+        "tag": "analytics-engineering",
+        "title": "Five Tips on How You Can Understand Your Company’s Core Business As A Data Professional"
+    },
+    {
+        "author_name": "Balu Rama Chandra",
+        "author_url": "https://medium.com/@baluramachandra90",
+        "extracted_at": "2023-05-26 09:11:48.057242",
+        "extracted_at_epoch": 1685092308,
+        "extraction_id": "449018cd-25b1-47a7-bf9a-037d2347bdc9",
+        "extraction_url": "https://medium.com/tag/analytics-engineering/archive/2023/05/18",
+        "published_at": "2023-05-18T12:31:44.298Z",
+        "reading_time_minutes": 5,
+        "story_url": "https://medium.com/inthepipeline/why-you-need-code-review-for-you-data-projects-95e039083df0",
+        "subtitle": "Proper code review for data projects means you…",
+        "tag": "analytics-engineering",
+        "title": "Why you need code review for you data projects"
+    }
+]
