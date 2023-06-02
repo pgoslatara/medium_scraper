@@ -1,0 +1,58 @@
+[
+    {
+        "author_name": "Push Protocol",
+        "author_url": "https://medium.com/@push-protocol",
+        "extracted_at": "2023-06-02 09:11:36.896095",
+        "extracted_at_epoch": 1685697096,
+        "extraction_id": "de99b399-d322-4f94-be5f-1aefcd77d1ce",
+        "extraction_url": "https://medium.com/tag/analytics-engineering/archive/2023/05/25",
+        "published_at": "2023-05-25T16:08:23.994Z",
+        "reading_time_minutes": 6,
+        "story_url": "https://medium.com/push-protocol/building-a-real-time-analytics-dashboard-for-blockchain-transactions-with-alchemy-and-push-8eca1825e9c2",
+        "subtitle": "-",
+        "tag": "analytics-engineering",
+        "title": "How to Build a Real-Time Analytics Dashboard for Blockchain Transactions with Alchemy and Push 📊"
+    },
+    {
+        "author_name": "Pablo Porto",
+        "author_url": "https://medium.com/@pablo.porto",
+        "extracted_at": "2023-06-02 09:11:36.896095",
+        "extracted_at_epoch": 1685697096,
+        "extraction_id": "de99b399-d322-4f94-be5f-1aefcd77d1ce",
+        "extraction_url": "https://medium.com/tag/analytics-engineering/archive/2023/05/31",
+        "published_at": "2023-05-31T07:58:51.211Z",
+        "reading_time_minutes": 7,
+        "story_url": "https://medium.com/@pablo.porto/improving-the-code-quality-of-your-dbt-models-with-unit-tests-and-tdd-203ed0be791e",
+        "subtitle": "All you need to know to start…",
+        "tag": "analytics-engineering",
+        "title": "Improving the code quality of your dbt models with unit tests and TDD"
+    },
+    {
+        "author_name": "vorfra",
+        "author_url": "https://medium.com/@Swati.B",
+        "extracted_at": "2023-06-02 09:11:36.896095",
+        "extracted_at_epoch": 1685697096,
+        "extraction_id": "de99b399-d322-4f94-be5f-1aefcd77d1ce",
+        "extraction_url": "https://medium.com/tag/analytics-engineering/archive/2023/05/25",
+        "published_at": "2023-05-25T19:03:34.083Z",
+        "reading_time_minutes": 3,
+        "story_url": "https://medium.com/@Swati.B/how-to-upgrade-dbt-to-an-higher-version-2d40b94857aa",
+        "subtitle": "What is dbt?",
+        "tag": "analytics-engineering",
+        "title": "How To Upgrade dbt To An Higher Version"
+    },
+    {
+        "author_name": "IPERA AI",
+        "author_url": "https://medium.com/@iperaai",
+        "extracted_at": "2023-06-02 09:11:36.896095",
+        "extracted_at_epoch": 1685697096,
+        "extraction_id": "de99b399-d322-4f94-be5f-1aefcd77d1ce",
+        "extraction_url": "https://medium.com/tag/analytics-engineering/archive/2023/05/25",
+        "published_at": "2023-05-25T17:40:34.608Z",
+        "reading_time_minutes": 4,
+        "story_url": "https://medium.com/@iperaai/the-complete-guide-to-workplace-analytics-system-benefits-in-2023-ecb2d4b87508",
+        "subtitle": "-",
+        "tag": "analytics-engineering",
+        "title": "The Complete Guide to Workplace Analytics System Benefits in 2023"
+    }
+]
