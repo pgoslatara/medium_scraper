@@ -1,0 +1,44 @@
+[
+    {
+        "author_name": "Slawomir Lisowski",
+        "author_url": "https://medium.com/@slisowski",
+        "extracted_at": "2023-06-09 09:10:43.417996",
+        "extracted_at_epoch": 1686301843,
+        "extraction_id": "ce48de8a-1e2b-4655-99d0-29abf8ae7f4a",
+        "extraction_url": "https://medium.com/tag/apache-airflow/archive/2023/06",
+        "published_at": "2023-06-03T15:04:34.923Z",
+        "reading_time_minutes": 5,
+        "story_url": "https://medium.com/@slisowski/how-to-control-trading-costs-2eeabf250317",
+        "subtitle": "Trading costs - how limit and optimize it",
+        "tag": "apache-airflow",
+        "title": "How to control trading costs ?"
+    },
+    {
+        "author_name": "Juliomacedobsb",
+        "author_url": "https://medium.com/@juliomacedobsb",
+        "extracted_at": "2023-06-09 09:10:43.417996",
+        "extracted_at_epoch": 1686301843,
+        "extraction_id": "ce48de8a-1e2b-4655-99d0-29abf8ae7f4a",
+        "extraction_url": "https://medium.com/tag/apache-airflow/archive/2023/06",
+        "published_at": "2023-06-01T17:27:33.256Z",
+        "reading_time_minutes": 6,
+        "story_url": "https://medium.com/@juliomacedobsb/apache-airflow-postgresql-efici%C3%AAncia-e-seguran%C3%A7a-em-fluxos-de-trabalho-42a1b903cf41",
+        "subtitle": "-",
+        "tag": "apache-airflow",
+        "title": "Apache Airflow + PostgreSQL: Eficiência e Segurança em Fluxos de Trabalho."
+    },
+    {
+        "author_name": "Afaruksargin",
+        "author_url": "https://medium.com/@afaruksargin",
+        "extracted_at": "2023-06-09 09:10:43.417996",
+        "extracted_at_epoch": 1686301843,
+        "extraction_id": "ce48de8a-1e2b-4655-99d0-29abf8ae7f4a",
+        "extraction_url": "https://medium.com/tag/apache-airflow/archive/2023/06",
+        "published_at": "2023-06-03T08:20:11.611Z",
+        "reading_time_minutes": 2,
+        "story_url": "https://medium.com/@afaruksargin/apache-airflow-i%CC%87le-email-g%C3%B6nderme-ddf81d602d97",
+        "subtitle": "-",
+        "tag": "apache-airflow",
+        "title": "Apache Airflow İle EMail Gönderme"
+    }
+]
