@@ -1,0 +1,72 @@
+[
+    {
+        "author_name": "Goodchild",
+        "author_url": "https://medium.com/@redbetelgeuse",
+        "extracted_at": "2023-06-16 09:10:32.127680",
+        "extracted_at_epoch": 1686906632,
+        "extraction_id": "b9cf01aa-9b35-4334-97c9-8a6cc09c88c7",
+        "extraction_url": "https://medium.com/tag/analytics-engineering/archive/2023/06",
+        "published_at": "2023-06-08T00:42:34.266Z",
+        "reading_time_minutes": 3,
+        "story_url": "https://medium.com/@redbetelgeuse/practical-dbt-using-macros-to-create-a-date-model-725837100705",
+        "subtitle": "-",
+        "tag": "analytics-engineering",
+        "title": "Practical dbt : Using Macros to create a date model"
+    },
+    {
+        "author_name": "Mikkel Dengsøe",
+        "author_url": "https://medium.com/@mikldd",
+        "extracted_at": "2023-06-16 09:10:32.127680",
+        "extracted_at_epoch": 1686906632,
+        "extraction_id": "b9cf01aa-9b35-4334-97c9-8a6cc09c88c7",
+        "extraction_url": "https://medium.com/tag/analytics-engineering/archive/2023/06",
+        "published_at": "2023-06-06T06:15:35.339Z",
+        "reading_time_minutes": 11,
+        "story_url": "https://medium.com/@mikldd/activating-ownership-with-data-contracts-in-dbt-4f2de41c4657",
+        "subtitle": "-",
+        "tag": "analytics-engineering",
+        "title": "Activating ownership with data contracts in dbt"
+    },
+    {
+        "author_name": "typo",
+        "author_url": "https://medium.com/@typoapp",
+        "extracted_at": "2023-06-16 09:10:32.127680",
+        "extracted_at_epoch": 1686906632,
+        "extraction_id": "b9cf01aa-9b35-4334-97c9-8a6cc09c88c7",
+        "extraction_url": "https://medium.com/tag/analytics-engineering/archive/2023/06",
+        "published_at": "2023-06-01T07:04:40.675Z",
+        "reading_time_minutes": 5,
+        "story_url": "https://medium.com/@typoapp/how-to-count-lines-of-code-a-complete-overview-cadc4e111f49",
+        "subtitle": "-",
+        "tag": "analytics-engineering",
+        "title": "How to count lines of code: A complete overview"
+    },
+    {
+        "author_name": "Hugo Lu",
+        "author_url": "https://medium.com/@hugolu87",
+        "extracted_at": "2023-06-16 09:10:32.127680",
+        "extracted_at_epoch": 1686906632,
+        "extraction_id": "b9cf01aa-9b35-4334-97c9-8a6cc09c88c7",
+        "extraction_url": "https://medium.com/tag/analytics-engineering/archive/2023/06",
+        "published_at": "2023-06-07T08:36:45.992Z",
+        "reading_time_minutes": 4,
+        "story_url": "https://medium.com/@hugolu87/how-can-generative-ai-improve-data-engineering-5405a636b816",
+        "subtitle": "-",
+        "tag": "analytics-engineering",
+        "title": "How can generative AI improve data engineering?"
+    },
+    {
+        "author_name": "Goodchild",
+        "author_url": "https://medium.com/@redbetelgeuse",
+        "extracted_at": "2023-06-16 09:10:32.127680",
+        "extracted_at_epoch": 1686906632,
+        "extraction_id": "b9cf01aa-9b35-4334-97c9-8a6cc09c88c7",
+        "extraction_url": "https://medium.com/tag/analytics-engineering/archive/2023/06",
+        "published_at": "2023-06-09T00:56:54.970Z",
+        "reading_time_minutes": 3,
+        "story_url": "https://medium.com/@redbetelgeuse/practical-dbt-flatten-json-with-dbt-c24a2ee67fbf",
+        "subtitle": "-",
+        "tag": "analytics-engineering",
+        "title": "Practical dbt : Flatten Json with dbt"
+    }
+]
