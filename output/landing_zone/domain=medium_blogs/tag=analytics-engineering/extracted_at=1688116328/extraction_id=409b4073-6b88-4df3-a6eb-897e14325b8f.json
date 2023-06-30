@@ -1,0 +1,30 @@
+[
+    {
+        "author_name": "Arthur Rogério",
+        "author_url": "https://medium.com/@rogerio_thur",
+        "extracted_at": "2023-06-30 09:12:08.761334",
+        "extracted_at_epoch": 1688116328,
+        "extraction_id": "409b4073-6b88-4df3-a6eb-897e14325b8f",
+        "extraction_url": "https://medium.com/tag/analytics-engineering/archive/2023/06/25",
+        "published_at": "2023-06-25T22:27:18.271Z",
+        "reading_time_minutes": 4,
+        "story_url": "https://medium.com/@rogerio_thur/project-building-a-modern-data-stack-with-airbyte-snowflake-dbt-317a420fbcda",
+        "subtitle": "-",
+        "tag": "analytics-engineering",
+        "title": "Project Building a Modern Data Stack with Airbyte, Snowflake, & DBT!"
+    },
+    {
+        "author_name": "Barthelemy Chopin",
+        "author_url": "https://medium.com/@barthelemy.chopin",
+        "extracted_at": "2023-06-30 09:12:08.761334",
+        "extracted_at_epoch": 1688116328,
+        "extraction_id": "409b4073-6b88-4df3-a6eb-897e14325b8f",
+        "extraction_url": "https://medium.com/tag/analytics-engineering/archive/2023/06/26",
+        "published_at": "2023-06-26T14:46:40.438Z",
+        "reading_time_minutes": 7,
+        "story_url": "https://medium.com/inato/decoding-data-a-glimpse-into-my-life-as-a-senior-data-analyst-at-inato-4526dd4fb02c",
+        "subtitle": "-",
+        "tag": "analytics-engineering",
+        "title": "Decoding Data: A Glimpse into my Life as a Senior Data Analyst at Inato"
+    }
+]
