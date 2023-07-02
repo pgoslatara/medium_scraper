@@ -1,7 +1,5 @@
 import logging
-import uuid
 from datetime import datetime, timedelta
-from functools import lru_cache
 from typing import Any, Dict, List
 
 from utils.utils import *
@@ -11,31 +9,19 @@ class GitHubActionsExtractor:
     def __init__(self, lookback_days: int) -> None:
         self.lookback_days = lookback_days
 
-    @lru_cache
-    def get_extracted_at(self) -> datetime:
-        return datetime.utcnow()
-
-    @lru_cache
-    def get_extracted_at_epoch(self) -> int:
-        return int((datetime.utcnow() - datetime(1970, 1, 1)).total_seconds())
-
-    @lru_cache
-    def get_extraction_id(self) -> str:
-        return str(uuid.uuid4())
-
     def run(self) -> None:
         logging.info("Extracting data from GitHub...")
 
         workflow_runs = self.extract_github_workflow_runs()
         save_to_landing_zone(
             data=workflow_runs,
-            file_name=f"domain=github_actions_workflow_runs/schema_version=1/extracted_at={self.get_extracted_at_epoch()}/extraction_id={self.get_extraction_id()}.json",
+            file_name=f"domain=github_actions_workflow_runs/schema_version=1/extracted_at={get_extracted_at_epoch()}/extraction_id={get_extraction_id()}.json",
         )
 
         jobs_data = self.extract_github_jobs(workflow_runs)
         save_to_landing_zone(
             data=jobs_data,
-            file_name=f"domain=github_actions_jobs/schema_version=1/extracted_at={self.get_extracted_at_epoch()}/extraction_id={self.get_extraction_id()}.json",
+            file_name=f"domain=github_actions_jobs/schema_version=1/extracted_at={get_extracted_at_epoch()}/extraction_id={get_extraction_id()}.json",
         )
 
     def extract_github_workflow_runs(self) -> Any:
@@ -81,9 +67,9 @@ class GitHubActionsExtractor:
                 logging.info(f"Retrieved {len(workflow_runs)} workflows runs so far...")
 
         metadata = {
-            "extraction_id": self.get_extraction_id(),
-            "extracted_at": self.get_extracted_at(),
-            "extracted_at_epoch": self.get_extracted_at_epoch(),
+            "extraction_id": get_extraction_id(),
+            "extracted_at": get_extracted_at(),
+            "extracted_at_epoch": get_extracted_at_epoch(),
         }
         for workflow in workflow_runs:
             workflow = workflow.update(metadata)
@@ -110,9 +96,9 @@ class GitHubActionsExtractor:
                     jobs_data.append(job)
 
         metadata = {
-            "extraction_id": self.get_extraction_id(),
-            "extracted_at": self.get_extracted_at(),
-            "extracted_at_epoch": self.get_extracted_at_epoch(),
+            "extraction_id": get_extraction_id(),
+            "extracted_at": get_extracted_at(),
+            "extracted_at_epoch": get_extracted_at_epoch(),
         }
         for job in jobs_data:
             job = job.update(metadata)

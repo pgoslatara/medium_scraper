@@ -12,6 +12,7 @@ on:
         default: 2
 
 env:
+  CICD_RUN: True
   DATA_DIR: "/home/runner/work/medium_scraper/medium_scraper/output"
   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
   INGESTION_LOOKBACK_WINDOW: '${{ github.event.inputs.ingestion_lookback_days || 2 }}'

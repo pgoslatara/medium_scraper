@@ -1,8 +1,6 @@
 import logging
 import time
-import uuid
 from datetime import date, datetime, timedelta
-from functools import lru_cache
 from typing import Dict, List
 
 import requests
@@ -16,18 +14,6 @@ class MediumWebScraper:
         self.base_url = "https://medium.com/tag"
         self.lookback_days = lookback_days
         self.tags = tags
-
-    @lru_cache
-    def get_extracted_at(self) -> datetime:
-        return datetime.utcnow()
-
-    @lru_cache
-    def get_extracted_at_epoch(self) -> int:
-        return int((datetime.utcnow() - datetime(1970, 1, 1)).total_seconds())
-
-    @lru_cache
-    def get_extraction_id(self) -> str:
-        return str(uuid.uuid4())
 
     def run(self) -> None:
         for tag in self.tags:
@@ -49,13 +35,13 @@ class MediumWebScraper:
 
             save_to_landing_zone(
                 data=[dict(t) for t in {tuple(d.items()) for d in scraped_data}],
-                file_name=f"domain=medium_blogs/tag={tag}/extracted_at={self.get_extracted_at_epoch()}/extraction_id={self.get_extraction_id()}.json",
+                file_name=f"domain=medium_blogs/tag={tag}/extracted_at={get_extracted_at_epoch()}/extraction_id={get_extraction_id()}.json",
             )
 
-        author_data = self.scrape_authors(extraction_id=self.get_extraction_id())
+        author_data = self.scrape_authors(extraction_id=get_extraction_id())
         save_to_landing_zone(
             data=author_data,
-            file_name=f"domain=medium_authors/schema_version=2/extracted_at={self.get_extracted_at_epoch()}/extraction_id={self.get_extraction_id()}.json",
+            file_name=f"domain=medium_authors/schema_version=2/extracted_at={get_extracted_at_epoch()}/extraction_id={get_extraction_id()}.json",
         )
 
     def scrape_authors(self, extraction_id: str) -> List[Dict[str, object]]:
@@ -110,9 +96,9 @@ class MediumWebScraper:
 
             author_data.append(
                 {
-                    "extraction_id": self.get_extraction_id(),
-                    "extracted_at": self.get_extracted_at(),
-                    "extracted_at_epoch": self.get_extracted_at_epoch(),
+                    "extraction_id": get_extraction_id(),
+                    "extracted_at": get_extracted_at(),
+                    "extracted_at_epoch": get_extracted_at_epoch(),
                     "author_name": author_name,
                     "author_url": author_url,
                     "num_followers": num_followers,
@@ -152,9 +138,9 @@ class MediumWebScraper:
             logging.info(f"Found {len(stories)} stories...")
 
             base_data = {
-                "extraction_id": self.get_extraction_id(),
-                "extracted_at": self.get_extracted_at(),
-                "extracted_at_epoch": self.get_extracted_at_epoch(),
+                "extraction_id": get_extraction_id(),
+                "extracted_at": get_extracted_at(),
+                "extracted_at_epoch": get_extracted_at_epoch(),
                 "extraction_url": url,
                 "tag": tag,
             }

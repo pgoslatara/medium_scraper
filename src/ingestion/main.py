@@ -3,6 +3,7 @@ import os
 from utils.utils import set_logging_options
 
 from .github_actions import GitHubActionsExtractor
+from .github_repo_interactors import main as github_repo_interactors_run
 from .medium_web_scraper import MediumWebScraper
 
 
@@ -23,6 +24,7 @@ def main() -> None:
     ]
 
     GitHubActionsExtractor(lookback_days=lookback_days).run()
+    github_repo_interactors_run()
     MediumWebScraper(
         lookback_days=lookback_days,
         tags=tags,
