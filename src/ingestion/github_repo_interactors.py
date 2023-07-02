@@ -13,7 +13,7 @@ from utils.utils import (
 )
 
 
-def get_github_repos_per_org(org: str) -> List[dict[str, object]]:
+def get_github_repos_per_org(org: str) -> List[Dict[str, object]]:
     org_repos = []
     page = 1
     _repos: List[Dict[str, object]] = []
