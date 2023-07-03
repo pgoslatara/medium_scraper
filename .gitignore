@@ -22,6 +22,7 @@ duckdb/*
 local_output/*
 logs/
 main
+main.wal
 medium_scraper.egg-info/*
 target/*
 tmp/*

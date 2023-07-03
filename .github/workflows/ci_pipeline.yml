@@ -12,6 +12,7 @@ on:
         default: 2
 
 env:
+  CICD_RUN: True
   DATA_DIR: "/home/runner/work/medium_scraper/medium_scraper/output"
   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
   INGESTION_LOOKBACK_WINDOW: '${{ github.event.inputs.ingestion_lookback_days || 2 }}'
@@ -67,6 +68,7 @@ jobs:
       - name: Build container and run commands
         uses: devcontainers/ci@v0.3
         env:
+          CICD_RUN: True
           INGESTION_LOOKBACK_WINDOW: '${{ github.event.inputs.ingestion_lookback_days }}'
           PAT_GITHUB: ${{ secrets.PAT_GITHUB }}
           RECIPIENT_EMAIL_ADDRESS: 123@mailslurp.com
@@ -75,6 +77,7 @@ jobs:
         with:
           runCmd: ingestion && transformation && data_products
           env: |
+            CICD_RUN
             DATA_DIR=/workspaces/medium_scraper/output
             GITHUB_TOKEN=dummy_value
             INGESTION_LOOKBACK_WINDOW

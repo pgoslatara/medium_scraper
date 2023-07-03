@@ -1,0 +1,42 @@
+version: 2
+
+models:
+  - name: stg_github_repo_interactors__issues
+    columns:
+      - name: issue_id
+        tests:
+          - not_null
+          - unique
+    tests:
+      - dbt_expectations.expect_table_column_count_to_be_between:
+          min_value: 1
+
+  - name: stg_github_repo_interactors__pull_requests
+    columns:
+      - name: pull_request_id
+        tests:
+          - not_null
+          - unique
+    tests:
+      - dbt_expectations.expect_table_column_count_to_be_between:
+          min_value: 1
+
+  - name: stg_github_repo_interactors__repos
+    columns:
+      - name: repo_name
+        tests:
+          - not_null
+          - unique
+    tests:
+      - dbt_expectations.expect_table_column_count_to_be_between:
+          min_value: 1
+
+  - name: stg_github_repo_interactors__users
+    columns:
+      - name: username
+        tests:
+          - not_null
+          - unique
+    tests:
+      - dbt_expectations.expect_table_column_count_to_be_between:
+          min_value: 1

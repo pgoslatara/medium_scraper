@@ -1,6 +1,7 @@
 import json
 import logging
 import os
+import uuid
 from datetime import datetime
 from functools import lru_cache
 from glob import glob
@@ -62,6 +63,21 @@ def get_environment() -> str:
     logging.info(f"Running on environment: {env}")
 
     return env
+
+
+@lru_cache
+def get_extracted_at() -> datetime:
+    return datetime.utcnow()
+
+
+@lru_cache
+def get_extracted_at_epoch() -> int:
+    return int((datetime.utcnow() - datetime(1970, 1, 1)).total_seconds())
+
+
+@lru_cache
+def get_extraction_id() -> str:
+    return str(uuid.uuid4())
 
 
 @lru_cache

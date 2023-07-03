@@ -39,7 +39,7 @@ def extract_author_location_using_nlp(df: pa.lib.StringArray) -> List[str]:
         if loc_data == []:
             extracted_locations.append("")
         else:
-            extracted_locations.append(loc_data[0])
+            extracted_locations.append(str(loc_data[0]))
 
     return extracted_locations
 
