@@ -41,7 +41,7 @@ def get_github_repos_per_org(org: str) -> List[Dict[str, object]]:
 
 def get_github_issues(repos: List[object]) -> List[Dict[str, object]]:
     _since = (
-        (datetime.utcnow() - timedelta(days=7))
+        (datetime.utcnow() - timedelta(days=3))
         if os.getenv("CICD_RUN")
         else datetime(1900, 1, 1)
     )
@@ -105,7 +105,9 @@ def get_github_pull_requests(repos: List[object]) -> List[Dict[str, object]]:
             logging.info(f"Retrieved {len(pull_requests_retrieved)} PRs from {repo}...")
             pull_requests += pull_requests_retrieved
             page += 1
-            if len(pull_requests_retrieved) == 0:
+            if len(pull_requests_retrieved) == 0 or (
+                os.getenv("CICD_RUN") and page > 2
+            ):
                 break
 
     metadata = {
@@ -146,7 +148,10 @@ def main() -> None:
     github_orgs = ["dbt-labs"]
     for org in github_orgs:
         repos = get_github_repos_per_org(org)
-        repo_names = [x["full_name"] for x in repos]
+        repo_names = [x["full_name"] for x in repos if not x["fork"]]
+        logging.info(
+            f"Retrieving issues and PRs for {len(repo_names)} non-forked repos."
+        )
         issues = get_github_issues(repo_names)
         prs = get_github_pull_requests(repo_names)
         repo_interactors = {x["user"]["login"] for x in prs + issues}  # type: ignore[index]
