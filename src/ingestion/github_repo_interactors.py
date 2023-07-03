@@ -125,6 +125,9 @@ def get_github_pull_requests(repos: List[object]) -> List[Dict[str, object]]:
 
 
 def get_github_repo_interactor_info(usernames: List[object]) -> List[Dict[str, object]]:
+    if os.getenv("CICD_RUN"):
+        usernames = usernames[:50]
+
     user_info = [call_github_api("GET", f"users/{username}") for username in usernames]
     logging.info(f"Retrieved info on {len(usernames)} repo interactors.")
 
