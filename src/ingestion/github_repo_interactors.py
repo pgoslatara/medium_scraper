@@ -152,6 +152,9 @@ def main() -> None:
     for org in github_orgs:
         repos = get_github_repos_per_org(org)
         repo_names = [x["full_name"] for x in repos if not x["fork"]]
+        if os.getenv("CICD_RUN"):
+            repo_names = repo_names[:50]
+
         logging.info(
             f"Retrieving issues and PRs for {len(repo_names)} non-forked repos."
         )
