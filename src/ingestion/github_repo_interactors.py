@@ -21,7 +21,8 @@ def get_github_repos_per_org(org: str) -> List[Dict[str, object]]:
         _repos = call_github_api(
             "GET", f"orgs/{org}/repos", params={"per_page": 100, "page": page}
         )
-        org_repos += _repos
+        keys_to_keep = ["id", "name", "full_name", "html_url", "url", "fork"]
+        org_repos += [{k: v for k, v in x.items() if k in keys_to_keep} for x in _repos]
         logging.info(f"Retrieved {len(org_repos)} repos from {org}...")
         page += 1
 
@@ -64,7 +65,20 @@ def get_github_issues(repos: List[object]) -> List[Dict[str, object]]:
                 },
             )
             logging.info(f"Retrieved {len(issues_retrieved)} issues from {repo}...")
-            issues += issues_retrieved
+            keys_to_keep = [
+                "created_at",
+                "html_url",
+                "id",
+                "number",
+                "repository_url",
+                "state",
+                "title",
+                "user",
+            ]
+            issues += [
+                {k: v for k, v in x.items() if k in keys_to_keep}
+                for x in issues_retrieved
+            ]
             page += 1
             if len(issues_retrieved) == 0:
                 break
@@ -103,7 +117,20 @@ def get_github_pull_requests(repos: List[object]) -> List[Dict[str, object]]:
                 },
             )
             logging.info(f"Retrieved {len(pull_requests_retrieved)} PRs from {repo}...")
-            pull_requests += pull_requests_retrieved
+            keys_to_keep = [
+                "created_at",
+                "html_url",
+                "id",
+                "number",
+                "repository_url",
+                "state",
+                "title",
+                "user",
+            ]
+            pull_requests += [
+                {k: v for k, v in x.items() if k in keys_to_keep}
+                for x in pull_requests_retrieved
+            ]
             page += 1
             if len(pull_requests_retrieved) == 0 or (
                 os.getenv("CICD_RUN") and page > 2
@@ -130,6 +157,20 @@ def get_github_repo_interactor_info(usernames: List[object]) -> List[Dict[str, o
 
     user_info = [call_github_api("GET", f"users/{username}") for username in usernames]
     logging.info(f"Retrieved info on {len(usernames)} repo interactors.")
+
+    keys_to_keep = [
+        "bio",
+        "blog",
+        "company",
+        "email",
+        "id",
+        "html_url",
+        "location",
+        "login",
+        "name",
+        "twitter_username",
+    ]
+    user_info = [{k: v for k, v in x.items() if k in keys_to_keep} for x in user_info]
 
     metadata = {
         "extraction_id": get_extraction_id(),
