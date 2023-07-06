@@ -10,7 +10,7 @@ with
                     extraction_id:'UUID',
                     created_at:'STRING',
                     html_url:'STRING',
-                    id:'STRING',
+                    id:'NUMERIC',
                     number:'NUMERIC',
                     repository_url:'STRING',
                     state:'STRING',
