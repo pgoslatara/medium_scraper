@@ -7,6 +7,7 @@ with
             html_url,
             id as workflow_run_id,
             name as workflow_name,
+            repository.private as is_private_repo,
             repository.name as repo_name,
             strptime(run_started_at, '%Y-%m-%dT%H:%M:%SZ') as run_started_at,
             workflow_id,
@@ -23,7 +24,7 @@ with
                     html_url:'STRING',
                     id:'NUMERIC',
                     name:'STRING',
-                    repository:'STRUCT(name STRING)',
+                    repository:'STRUCT(name STRING, private BOOLEAN)',
                     run_started_at:'STRING',
                     workflow_id:'NUMERIC'
                 },
