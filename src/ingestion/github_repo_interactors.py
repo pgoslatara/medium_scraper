@@ -1,6 +1,7 @@
 import logging
 import os
 from datetime import datetime, timedelta
+from multiprocessing.pool import ThreadPool
 from typing import Dict, List
 
 from utils.utils import (
@@ -40,16 +41,9 @@ def get_github_repos_per_org(org: str) -> List[Dict[str, object]]:
     return org_repos
 
 
-def get_github_issues(repos: List[object]) -> List[Dict[str, object]]:
-    _since = (
-        (datetime.utcnow() - timedelta(days=3))
-        if os.getenv("CICD_RUN")
-        else datetime(1900, 1, 1)
-    )
-    logging.info(f"{_since=}")
-
-    issues: List[Dict[str, object]] = []
-    for repo in repos:
+def get_github_issues(repos: List[str]) -> List[Dict[str, object]]:
+    def get_issues_in_repo(repo: str) -> List[Dict[str, object]]:
+        issues: List[Dict[str, object]] = []
         page = 1
         while True:
             issues_retrieved = call_github_api(
@@ -83,6 +77,25 @@ def get_github_issues(repos: List[object]) -> List[Dict[str, object]]:
             if len(issues_retrieved) == 0:
                 break
 
+        return issues
+
+    _since = (
+        (datetime.utcnow() - timedelta(days=3))
+        if os.getenv("CICD_RUN")
+        else datetime(1900, 1, 1)
+    )
+    logging.info(f"{_since=}")
+
+    pool = ThreadPool(64)
+    issues = [
+        x
+        for y in pool.map(
+            lambda repo: get_issues_in_repo(repo),
+            repos,
+        )
+        for x in y
+    ]
+
     metadata = {
         "extraction_id": get_extraction_id(),
         "extracted_at": get_extracted_at(),
@@ -97,12 +110,9 @@ def get_github_issues(repos: List[object]) -> List[Dict[str, object]]:
     return issues
 
 
-def get_github_pull_requests(repos: List[object]) -> List[Dict[str, object]]:
-    _state = "open" if os.getenv("CICD_RUN") else "all"
-    logging.info(f"{_state=}")
-
-    pull_requests: List[Dict[str, object]] = []
-    for repo in repos:
+def get_github_pull_requests(repos: List[str]) -> List[Dict[str, object]]:
+    def get_pull_requests_in_repo(repo: str) -> List[Dict[str, object]]:
+        pull_requests: List[Dict[str, object]] = []
         page = 1
         while True:
             pull_requests_retrieved = call_github_api(
@@ -137,6 +147,21 @@ def get_github_pull_requests(repos: List[object]) -> List[Dict[str, object]]:
             ):
                 break
 
+        return pull_requests
+
+    _state = "open" if os.getenv("CICD_RUN") else "all"
+    logging.info(f"{_state=}")
+
+    pool = ThreadPool(64)
+    pull_requests = [
+        x
+        for y in pool.map(
+            lambda repo: get_pull_requests_in_repo(repo),
+            repos,
+        )
+        for x in y
+    ]
+
     metadata = {
         "extraction_id": get_extraction_id(),
         "extracted_at": get_extracted_at(),
@@ -155,7 +180,11 @@ def get_github_repo_interactor_info(usernames: List[object]) -> List[Dict[str, o
     if os.getenv("CICD_RUN"):
         usernames = usernames[:50]
 
-    user_info = [call_github_api("GET", f"users/{username}") for username in usernames]
+    pool = ThreadPool(64)
+    user_info = pool.map(
+        lambda username: call_github_api("GET", f"users/{username}"),
+        usernames,
+    )
     logging.info(f"Retrieved info on {len(usernames)} repo interactors.")
 
     keys_to_keep = [
@@ -192,7 +221,7 @@ def main() -> None:
     github_orgs = ["dbt-labs"]
     for org in github_orgs:
         repos = get_github_repos_per_org(org)
-        repo_names = [x["full_name"] for x in repos if not x["fork"]]
+        repo_names = [str(x["full_name"]) for x in repos if not x["fork"]]
         if os.getenv("CICD_RUN"):
             repo_names = repo_names[:50]
 
