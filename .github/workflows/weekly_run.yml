@@ -2,7 +2,7 @@ name: weekly_run
 
 on:
   schedule:
-    - cron: "0 9 * * 5"
+    - cron: "0 6 * * 5"
   workflow_dispatch:
     inputs:
       ingestion_lookback_days:
