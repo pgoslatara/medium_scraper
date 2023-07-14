@@ -86,7 +86,7 @@ def get_github_issues(repos: List[str]) -> List[Dict[str, object]]:
     )
     logging.info(f"{_since=}")
 
-    pool = ThreadPool(64)
+    pool = ThreadPool(8)
     issues = [
         x
         for y in pool.map(
@@ -152,7 +152,7 @@ def get_github_pull_requests(repos: List[str]) -> List[Dict[str, object]]:
     _state = "open" if os.getenv("CICD_RUN") else "all"
     logging.info(f"{_state=}")
 
-    pool = ThreadPool(64)
+    pool = ThreadPool(8)
     pull_requests = [
         x
         for y in pool.map(
@@ -180,7 +180,7 @@ def get_github_repo_interactor_info(usernames: List[object]) -> List[Dict[str, o
     if os.getenv("CICD_RUN"):
         usernames = usernames[:50]
 
-    pool = ThreadPool(64)
+    pool = ThreadPool(8)
     user_info = pool.map(
         lambda username: call_github_api("GET", f"users/{username}"),
         usernames,
