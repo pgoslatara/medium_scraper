@@ -21,7 +21,7 @@ repos:
         args: ["--profile", "black", "--filter-files"]
         name: isort (python)
   - repo: https://github.com/ambv/black
-    rev: 23.3.0
+    rev: 23.7.0
     hooks:
       - id: black
         name: Run black formatter
@@ -37,6 +37,6 @@ repos:
       additional_dependencies: ["types-beautifulsoup4", "types-requests", "types-tabulate"]
       args: ["--install-types", "--strict"]
   - repo: https://github.com/tconbeer/sqlfmt
-    rev: v0.19.0
+    rev: v0.19.1
     hooks:
       - id: sqlfmt
