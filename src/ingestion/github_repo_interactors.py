@@ -178,7 +178,7 @@ def get_github_pull_requests(repos: List[str]) -> List[Dict[str, object]]:
 
 def get_github_repo_interactor_info(usernames: List[object]) -> List[Dict[str, object]]:
     if os.getenv("CICD_RUN"):
-        usernames = usernames[:50]
+        usernames = usernames[:10]
 
     pool = ThreadPool(1)
     user_info = pool.map(
@@ -223,7 +223,7 @@ def main() -> None:
         repos = get_github_repos_per_org(org)
         repo_names = [str(x["full_name"]) for x in repos if not x["fork"]]
         if os.getenv("CICD_RUN"):
-            repo_names = repo_names[:50]
+            repo_names = repo_names[:10]
 
         logging.info(
             f"Retrieving issues and PRs for {len(repo_names)} non-forked repos."
