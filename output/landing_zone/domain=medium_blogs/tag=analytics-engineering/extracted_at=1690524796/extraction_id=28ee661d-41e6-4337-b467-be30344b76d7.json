@@ -1,0 +1,44 @@
+[
+    {
+        "author_name": "Thanapol Thanamit",
+        "author_url": "https://medium.com/@aumt3",
+        "extracted_at": "2023-07-28 06:13:16.865805",
+        "extracted_at_epoch": 1690524796,
+        "extraction_id": "28ee661d-41e6-4337-b467-be30344b76d7",
+        "extraction_url": "https://medium.com/tag/analytics-engineering/archive/2023/07/23",
+        "published_at": "2023-07-23T06:05:02.524Z",
+        "reading_time_minutes": 3,
+        "story_url": "https://medium.com/@aumt3/dbt-data-build-tool-ep-01-adb58297e788",
+        "subtitle": "-",
+        "tag": "analytics-engineering",
+        "title": "DBT(data build tool) EP: 01"
+    },
+    {
+        "author_name": "Leah Nguyen",
+        "author_url": "https://towardsdatascience.com/@ndleah",
+        "extracted_at": "2023-07-28 06:13:16.865805",
+        "extracted_at_epoch": 1690524796,
+        "extraction_id": "28ee661d-41e6-4337-b467-be30344b76d7",
+        "extraction_url": "https://medium.com/tag/analytics-engineering/archive/2023/07/21",
+        "published_at": "2023-07-21T13:37:02.957Z",
+        "reading_time_minutes": 9,
+        "story_url": "https://towardsdatascience.com/dbt-incremental-the-right-way-63f931263f4a",
+        "subtitle": "From Full-Load Pain to Incremental Gain (and a Few Mistakes Along the…",
+        "tag": "analytics-engineering",
+        "title": "dbt Incremental — The Right Way"
+    },
+    {
+        "author_name": "Pavol Kutaj",
+        "author_url": "https://medium.com/@pavolkutaj",
+        "extracted_at": "2023-07-28 06:13:16.865805",
+        "extracted_at_epoch": 1690524796,
+        "extraction_id": "28ee661d-41e6-4337-b467-be30344b76d7",
+        "extraction_url": "https://medium.com/tag/analytics-engineering/archive/2023/07/26",
+        "published_at": "2023-07-26T08:31:21.337Z",
+        "reading_time_minutes": 1,
+        "story_url": "https://medium.com/@pavolkutaj/showing-the-5-aspects-of-engineering-in-analytics-engineering-as-coined-by-dbt-2611f2c17489",
+        "subtitle": "The aim of this page📝 is to list 5 traits of analytics enginering practice taken from software engineering — and compare…",
+        "tag": "analytics-engineering",
+        "title": "Showing the 5 aspects of engineering in Analytics Engineering as coined by dbt"
+    }
+]
