@@ -1,0 +1,30 @@
+[
+    {
+        "author_name": "Prayag Sangode",
+        "author_url": "https://medium.com/@prayag-sangode",
+        "extracted_at": "2023-08-04 06:13:40.201087",
+        "extracted_at_epoch": 1691129620,
+        "extraction_id": "6744566f-1487-472d-b7a5-7a2c8515b637",
+        "extraction_url": "https://medium.com/tag/apache-airflow/archive/2023/07/29",
+        "published_at": "2023-07-29T07:52:43.934Z",
+        "reading_time_minutes": 4,
+        "story_url": "https://medium.com/@prayag-sangode/cloud-composer-manage-apache-airflow-environments-on-gcp-2dba92e5f76c",
+        "subtitle": "-",
+        "tag": "apache-airflow",
+        "title": "Cloud Composer -Manage Apache Airflow environments on GCP"
+    },
+    {
+        "author_name": "Fiat Teetat",
+        "author_url": "https://medium.com/@fiat.ttkk",
+        "extracted_at": "2023-08-04 06:13:40.201087",
+        "extracted_at_epoch": 1691129620,
+        "extraction_id": "6744566f-1487-472d-b7a5-7a2c8515b637",
+        "extraction_url": "https://medium.com/tag/apache-airflow/archive/2023/07/31",
+        "published_at": "2023-07-31T09:26:42.482Z",
+        "reading_time_minutes": 14,
+        "story_url": "https://medium.com/@fiat.ttkk/fashion-retail-shop-data-pipeline-end-to-end-project-data-engineer-cb01e066049c",
+        "subtitle": "-",
+        "tag": "apache-airflow",
+        "title": "Fashion retail shop; Data pipeline end-to-end Project [Data Engineer]"
+    }
+]
