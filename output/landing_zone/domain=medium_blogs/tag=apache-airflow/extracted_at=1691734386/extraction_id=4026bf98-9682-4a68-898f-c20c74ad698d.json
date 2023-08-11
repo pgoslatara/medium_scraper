@@ -1,0 +1,44 @@
+[
+    {
+        "author_name": "Bazla Kausar",
+        "author_url": "https://medium.com/@kausarbazla",
+        "extracted_at": "2023-08-11 06:13:06.939031",
+        "extracted_at_epoch": 1691734386,
+        "extraction_id": "4026bf98-9682-4a68-898f-c20c74ad698d",
+        "extraction_url": "https://medium.com/tag/apache-airflow/archive/2023/08",
+        "published_at": "2023-08-04T13:55:57.816Z",
+        "reading_time_minutes": 7,
+        "story_url": "mItem streamItem--postPreview js-streamItem",
+        "subtitle": "-",
+        "tag": "apache-airflow",
+        "title": "Airflow: Sensors, Operators & Hooks !"
+    },
+    {
+        "author_name": "Tristian",
+        "author_url": "https://medium.com/@tristian_56632",
+        "extracted_at": "2023-08-11 06:13:06.939031",
+        "extracted_at_epoch": 1691734386,
+        "extraction_id": "4026bf98-9682-4a68-898f-c20c74ad698d",
+        "extraction_url": "https://medium.com/tag/apache-airflow/archive/2023/08",
+        "published_at": "2023-08-09T19:07:08.546Z",
+        "reading_time_minutes": 3,
+        "story_url": "https://medium.com/@tristian_56632/installing-apache-airflow-on-windows-using-wsl-771e803762c9",
+        "subtitle": "-",
+        "tag": "apache-airflow",
+        "title": "Installing Apache Airflow on Windows using WSL"
+    },
+    {
+        "author_name": "Wanjohi Christopher",
+        "author_url": "https://medium.com/@nyagachris411",
+        "extracted_at": "2023-08-11 06:13:06.939031",
+        "extracted_at_epoch": 1691734386,
+        "extraction_id": "4026bf98-9682-4a68-898f-c20c74ad698d",
+        "extraction_url": "https://medium.com/tag/apache-airflow/archive/2023/08",
+        "published_at": "2023-08-03T23:53:25.863Z",
+        "reading_time_minutes": 4,
+        "story_url": "https://medium.com/@nyagachris411/automating-talend-jobs-using-apache-airflow-a067cd9cce45",
+        "subtitle": "-",
+        "tag": "apache-airflow",
+        "title": "Automating Talend Jobs Using Apache Airflow"
+    }
+]
