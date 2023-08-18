@@ -1,0 +1,344 @@
+[
+    {
+        "extraction_id": "fcb9a865-9046-4632-90fc-351cbbc1a13d",
+        "extracted_at": "2023-08-18 06:13:31.730792",
+        "extracted_at_epoch": 1692339211,
+        "author_name": "Weber Matias",
+        "author_url": "https://medium.com/@webermatias",
+        "num_followers": 10,
+        "short_bio": "I'm a passionate data scientist and marathon runner!"
+    },
+    {
+        "extraction_id": "fcb9a865-9046-4632-90fc-351cbbc1a13d",
+        "extracted_at": "2023-08-18 06:13:31.730792",
+        "extracted_at_epoch": 1692339211,
+        "author_name": "Tristian",
+        "author_url": "https://medium.com/@tristian_56632",
+        "num_followers": 0,
+        "short_bio": ""
+    },
+    {
+        "extraction_id": "fcb9a865-9046-4632-90fc-351cbbc1a13d",
+        "extracted_at": "2023-08-18 06:13:31.730792",
+        "extracted_at_epoch": 1692339211,
+        "author_name": "dezimaldata",
+        "author_url": "https://medium.com/@dezimaldata",
+        "num_followers": 2,
+        "short_bio": ""
+    },
+    {
+        "extraction_id": "fcb9a865-9046-4632-90fc-351cbbc1a13d",
+        "extracted_at": "2023-08-18 06:13:31.730792",
+        "extracted_at_epoch": 1692339211,
+        "author_name": "Wanjohi Christopher",
+        "author_url": "https://medium.com/@nyagachris411",
+        "num_followers": 1,
+        "short_bio": "Data Engineer"
+    },
+    {
+        "extraction_id": "fcb9a865-9046-4632-90fc-351cbbc1a13d",
+        "extracted_at": "2023-08-18 06:13:31.730792",
+        "extracted_at_epoch": 1692339211,
+        "author_name": "Ujjwal Gupta",
+        "author_url": "https://medium.com/@ujjwal.gupta_21067",
+        "num_followers": 8,
+        "short_bio": ""
+    },
+    {
+        "extraction_id": "fcb9a865-9046-4632-90fc-351cbbc1a13d",
+        "extracted_at": "2023-08-18 06:13:31.730792",
+        "extracted_at_epoch": 1692339211,
+        "author_name": "Paul Fry",
+        "author_url": "https://medium.com/@paulfry999",
+        "num_followers": 206,
+        "short_bio": "Welsh Data Architect, based in Dublin. Certified across: dbt, Airflow, Snowflake & AWS."
+    },
+    {
+        "extraction_id": "fcb9a865-9046-4632-90fc-351cbbc1a13d",
+        "extracted_at": "2023-08-18 06:13:31.730792",
+        "extracted_at_epoch": 1692339211,
+        "author_name": "ISHAN PRADHAN",
+        "author_url": "https://medium.com/@ishanpradhan",
+        "num_followers": 7,
+        "short_bio": "Data Integration Specialist | Big Data"
+    },
+    {
+        "extraction_id": "fcb9a865-9046-4632-90fc-351cbbc1a13d",
+        "extracted_at": "2023-08-18 06:13:31.730792",
+        "extracted_at_epoch": 1692339211,
+        "author_name": "Alexandre Bergere",
+        "author_url": "https://medium.com/@alexandre.bergere",
+        "num_followers": 48,
+        "short_bio": "Data Architect & Solution Architect independent ☁️ Delta & openLineage lover."
+    },
+    {
+        "extraction_id": "fcb9a865-9046-4632-90fc-351cbbc1a13d",
+        "extracted_at": "2023-08-18 06:13:31.730792",
+        "extracted_at_epoch": 1692339211,
+        "author_name": "Kaustav Mitra",
+        "author_url": "https://medium.com/@kaustav",
+        "num_followers": 136,
+        "short_bio": "ex-aerospace, building paradime.io to fix data's people problem — love building new stuff, meeting new people and solving crisis. and really bad at writing!"
+    },
+    {
+        "extraction_id": "fcb9a865-9046-4632-90fc-351cbbc1a13d",
+        "extracted_at": "2023-08-18 06:13:31.730792",
+        "extracted_at_epoch": 1692339211,
+        "author_name": "Dagster Blog",
+        "author_url": "https://medium.com/@dagster-io",
+        "num_followers": 431,
+        "short_bio": "The open source cloud-native orchestrator for the whole development lifecycle."
+    },
+    {
+        "extraction_id": "fcb9a865-9046-4632-90fc-351cbbc1a13d",
+        "extracted_at": "2023-08-18 06:13:31.730792",
+        "extracted_at_epoch": 1692339211,
+        "author_name": "Alan Tolubayev",
+        "author_url": "https://medium.com/@tolubay",
+        "num_followers": 0,
+        "short_bio": ""
+    },
+    {
+        "extraction_id": "fcb9a865-9046-4632-90fc-351cbbc1a13d",
+        "extracted_at": "2023-08-18 06:13:31.730792",
+        "extracted_at_epoch": 1692339211,
+        "author_name": "Durgaprasad",
+        "author_url": "https://medium.com/@durgaprasad141632",
+        "num_followers": 17,
+        "short_bio": ""
+    },
+    {
+        "extraction_id": "fcb9a865-9046-4632-90fc-351cbbc1a13d",
+        "extracted_at": "2023-08-18 06:13:31.730792",
+        "extracted_at_epoch": 1692339211,
+        "author_name": "Haq Nawaz",
+        "author_url": "https://blog.devgenius.io/@hnawaz100",
+        "num_followers": 1400,
+        "short_bio": "I am a business intelligence developer and data science enthusiast. In my free time I like to travel and code, and I enjoy landscape photography."
+    },
+    {
+        "extraction_id": "fcb9a865-9046-4632-90fc-351cbbc1a13d",
+        "extracted_at": "2023-08-18 06:13:31.730792",
+        "extracted_at_epoch": 1692339211,
+        "author_name": "Youssef Mrini",
+        "author_url": "https://medium.com/@youssefmrini",
+        "num_followers": 216,
+        "short_bio": ""
+    },
+    {
+        "extraction_id": "fcb9a865-9046-4632-90fc-351cbbc1a13d",
+        "extracted_at": "2023-08-18 06:13:31.730792",
+        "extracted_at_epoch": 1692339211,
+        "author_name": "Italo Barros",
+        "author_url": "https://medium.com/@ircbarros",
+        "num_followers": 11,
+        "short_bio": "An Electrical Engineer who migrated to the field of ​​Computer Engineering. Passionate about Data Visualization, IA, ML and Beer."
+    },
+    {
+        "extraction_id": "fcb9a865-9046-4632-90fc-351cbbc1a13d",
+        "extracted_at": "2023-08-18 06:13:31.730792",
+        "extracted_at_epoch": 1692339211,
+        "author_name": "Constantin Lungu",
+        "author_url": "https://medium.com/@cnstlungu",
+        "num_followers": 151,
+        "short_bio": "Software Engineer with a focus on Analytics — Data Engineering, Data Science & Business Intelligence | Opinions are my own"
+    },
+    {
+        "extraction_id": "fcb9a865-9046-4632-90fc-351cbbc1a13d",
+        "extracted_at": "2023-08-18 06:13:31.730792",
+        "extracted_at_epoch": 1692339211,
+        "author_name": "Venkatakrishnan",
+        "author_url": "https://medium.com/@venkatkarthick15",
+        "num_followers": 168,
+        "short_bio": "Experienced Lead Data Engineer with expertise in SAS Products, SQL, Python, Spark, Hadoop Ecosystem, AWS, Kafka, Data Warehouse, and Agile Methodologies."
+    },
+    {
+        "extraction_id": "fcb9a865-9046-4632-90fc-351cbbc1a13d",
+        "extracted_at": "2023-08-18 06:13:31.730792",
+        "extracted_at_epoch": 1692339211,
+        "author_name": "Summer He",
+        "author_url": "https://levelup.gitconnected.com/@yoloshe302",
+        "num_followers": 234,
+        "short_bio": "🌌 Space enthusiast exploring modern data technologies. Join me on a cosmic journey! 🚀"
+    },
+    {
+        "extraction_id": "fcb9a865-9046-4632-90fc-351cbbc1a13d",
+        "extracted_at": "2023-08-18 06:13:31.730792",
+        "extracted_at_epoch": 1692339211,
+        "author_name": "Atanu Das",
+        "author_url": "https://medium.com/@atanuconsulting",
+        "num_followers": 8,
+        "short_bio": "Atanu is a skilled Azure & Snowflake data engineer and data architect with expertise in designing and implementing data solutions."
+    },
+    {
+        "extraction_id": "fcb9a865-9046-4632-90fc-351cbbc1a13d",
+        "extracted_at": "2023-08-18 06:13:31.730792",
+        "extracted_at_epoch": 1692339211,
+        "author_name": "Oindrila Chakraborty",
+        "author_url": "https://medium.com/@oindrila-chakraborty88",
+        "num_followers": 323,
+        "short_bio": "I have 10+ experience in IT industry. I love to learn about the data and work with data. I am happy to share my knowledge with all. Hope this will be of help."
+    },
+    {
+        "extraction_id": "fcb9a865-9046-4632-90fc-351cbbc1a13d",
+        "extracted_at": "2023-08-18 06:13:31.730792",
+        "extracted_at_epoch": 1692339211,
+        "author_name": "Aliaksandr Sheliutsin",
+        "author_url": "https://medium.com/@sheliutsin.aliaksandr",
+        "num_followers": 2,
+        "short_bio": "Freelancer Data Engineer/Architect"
+    },
+    {
+        "extraction_id": "fcb9a865-9046-4632-90fc-351cbbc1a13d",
+        "extracted_at": "2023-08-18 06:13:31.730792",
+        "extracted_at_epoch": 1692339211,
+        "author_name": "Meeting Day",
+        "author_url": "https://medium.com/@meetingday.150",
+        "num_followers": 0,
+        "short_bio": ""
+    },
+    {
+        "extraction_id": "fcb9a865-9046-4632-90fc-351cbbc1a13d",
+        "extracted_at": "2023-08-18 06:13:31.730792",
+        "extracted_at_epoch": 1692339211,
+        "author_name": "Willy Zhuang",
+        "author_url": "https://medium.com/@willyzhuang",
+        "num_followers": 5,
+        "short_bio": "Data Analyst / R&D at Institute for Information Industry."
+    },
+    {
+        "extraction_id": "fcb9a865-9046-4632-90fc-351cbbc1a13d",
+        "extracted_at": "2023-08-18 06:13:31.730792",
+        "extracted_at_epoch": 1692339211,
+        "author_name": "SH Tseng",
+        "author_url": "https://medium.com/@james604s",
+        "num_followers": 33,
+        "short_bio": "怕工作或是學習中忘東忘西，做點筆記提醒自己。"
+    },
+    {
+        "extraction_id": "fcb9a865-9046-4632-90fc-351cbbc1a13d",
+        "extracted_at": "2023-08-18 06:13:31.730792",
+        "extracted_at_epoch": 1692339211,
+        "author_name": "Short Story Shenanigans",
+        "author_url": "https://medium.com/@mojhareneemacdowell",
+        "num_followers": 27,
+        "short_bio": "My co-authors and I are casual storytellers learning about Dialectical Behavioral Therapy's advantages. I will share our stories and the DBT Skills I practice."
+    },
+    {
+        "extraction_id": "fcb9a865-9046-4632-90fc-351cbbc1a13d",
+        "extracted_at": "2023-08-18 06:13:31.730792",
+        "extracted_at_epoch": 1692339211,
+        "author_name": "Martha Mwaura",
+        "author_url": "https://medium.com/@mwaurahmn",
+        "num_followers": 2,
+        "short_bio": "Data Scientist"
+    },
+    {
+        "extraction_id": "fcb9a865-9046-4632-90fc-351cbbc1a13d",
+        "extracted_at": "2023-08-18 06:13:31.730792",
+        "extracted_at_epoch": 1692339211,
+        "author_name": "Amarkrgupta",
+        "author_url": "https://medium.com/@amarkrgupta96",
+        "num_followers": 44,
+        "short_bio": ""
+    },
+    {
+        "extraction_id": "fcb9a865-9046-4632-90fc-351cbbc1a13d",
+        "extracted_at": "2023-08-18 06:13:31.730792",
+        "extracted_at_epoch": 1692339211,
+        "author_name": "Shan",
+        "author_url": "https://medium.com/@shannie1502",
+        "num_followers": 0,
+        "short_bio": ""
+    },
+    {
+        "extraction_id": "fcb9a865-9046-4632-90fc-351cbbc1a13d",
+        "extracted_at": "2023-08-18 06:13:31.730792",
+        "extracted_at_epoch": 1692339211,
+        "author_name": "Community Post",
+        "author_url": "https://m.mage.ai/@mage_community",
+        "num_followers": 32,
+        "short_bio": "Blogs and articles created by and for the data community."
+    },
+    {
+        "extraction_id": "fcb9a865-9046-4632-90fc-351cbbc1a13d",
+        "extracted_at": "2023-08-18 06:13:31.730792",
+        "extracted_at_epoch": 1692339211,
+        "author_name": "Shivangi Sharma",
+        "author_url": "https://medium.com/@shivangisharma2205",
+        "num_followers": 1,
+        "short_bio": "Big Data | Analytics | Data Science | Expedia | ex-Airtel Africa,ZS"
+    },
+    {
+        "extraction_id": "fcb9a865-9046-4632-90fc-351cbbc1a13d",
+        "extracted_at": "2023-08-18 06:13:31.730792",
+        "extracted_at_epoch": 1692339211,
+        "author_name": "Nate Kupp",
+        "author_url": "https://tech.instacart.com/@natekupp",
+        "num_followers": 319,
+        "short_bio": "Data Infrastructure @ Instacart. Previous Elementl, Thumbtack, Apple."
+    },
+    {
+        "extraction_id": "fcb9a865-9046-4632-90fc-351cbbc1a13d",
+        "extracted_at": "2023-08-18 06:13:31.730792",
+        "extracted_at_epoch": 1692339211,
+        "author_name": "Thanapol Thanamit",
+        "author_url": "https://medium.com/@aumt3",
+        "num_followers": 12,
+        "short_bio": "Learning Data Today 💻, Leading the World Tomorrow 🌏 | Small bye (Smile boy)"
+    },
+    {
+        "extraction_id": "fcb9a865-9046-4632-90fc-351cbbc1a13d",
+        "extracted_at": "2023-08-18 06:13:31.730792",
+        "extracted_at_epoch": 1692339211,
+        "author_name": "Matthew Salminen",
+        "author_url": "https://medium.com/@matthewsalminen",
+        "num_followers": 3,
+        "short_bio": "Marathoner | Data Engineer | living in Irvine, CA"
+    },
+    {
+        "extraction_id": "fcb9a865-9046-4632-90fc-351cbbc1a13d",
+        "extracted_at": "2023-08-18 06:13:31.730792",
+        "extracted_at_epoch": 1692339211,
+        "author_name": "Bazla Kausar",
+        "author_url": "https://medium.com/@kausarbazla",
+        "num_followers": 18,
+        "short_bio": "A data enthusiast, trying to be a productive organ of Technology."
+    },
+    {
+        "extraction_id": "fcb9a865-9046-4632-90fc-351cbbc1a13d",
+        "extracted_at": "2023-08-18 06:13:31.730792",
+        "extracted_at_epoch": 1692339211,
+        "author_name": "Alwyn Dsouza",
+        "author_url": "https://medium.com/@alwyndsouza_99041",
+        "num_followers": 1,
+        "short_bio": ""
+    },
+    {
+        "extraction_id": "fcb9a865-9046-4632-90fc-351cbbc1a13d",
+        "extracted_at": "2023-08-18 06:13:31.730792",
+        "extracted_at_epoch": 1692339211,
+        "author_name": "Oscar",
+        "author_url": "https://medium.com/@oscar_chu",
+        "num_followers": 0,
+        "short_bio": ""
+    },
+    {
+        "extraction_id": "fcb9a865-9046-4632-90fc-351cbbc1a13d",
+        "extracted_at": "2023-08-18 06:13:31.730792",
+        "extracted_at_epoch": 1692339211,
+        "author_name": "Munikrishna S",
+        "author_url": "https://medium.com/@munikrishna.s_36571",
+        "num_followers": 0,
+        "short_bio": ""
+    },
+    {
+        "extraction_id": "fcb9a865-9046-4632-90fc-351cbbc1a13d",
+        "extracted_at": "2023-08-18 06:13:31.730792",
+        "extracted_at_epoch": 1692339211,
+        "author_name": "Nagaraju Gajula",
+        "author_url": "https://medium.com/@nagaraju.gajula",
+        "num_followers": 6,
+        "short_bio": "Principal Data Architect @latentview"
+    }
+]
