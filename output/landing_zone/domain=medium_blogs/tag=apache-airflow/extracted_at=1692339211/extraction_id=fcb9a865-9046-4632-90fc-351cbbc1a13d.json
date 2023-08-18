@@ -1,0 +1,72 @@
+[
+    {
+        "author_name": "Wanjohi Christopher",
+        "author_url": "https://medium.com/@nyagachris411",
+        "extracted_at": "2023-08-18 06:13:31.730792",
+        "extracted_at_epoch": 1692339211,
+        "extraction_id": "fcb9a865-9046-4632-90fc-351cbbc1a13d",
+        "extraction_url": "https://medium.com/tag/apache-airflow/archive/2023/08",
+        "published_at": "2023-08-03T23:53:25.863Z",
+        "reading_time_minutes": 4,
+        "story_url": "https://medium.com/@nyagachris411/automating-talend-jobs-using-apache-airflow-a067cd9cce45",
+        "subtitle": "-",
+        "tag": "apache-airflow",
+        "title": "Automating Talend Jobs Using Apache Airflow"
+    },
+    {
+        "author_name": "Aliaksandr Sheliutsin",
+        "author_url": "https://medium.com/@sheliutsin.aliaksandr",
+        "extracted_at": "2023-08-18 06:13:31.730792",
+        "extracted_at_epoch": 1692339211,
+        "extraction_id": "fcb9a865-9046-4632-90fc-351cbbc1a13d",
+        "extraction_url": "https://medium.com/tag/apache-airflow/archive/2023/08",
+        "published_at": "2023-08-11T06:47:46.922Z",
+        "reading_time_minutes": 2,
+        "story_url": "https://medium.com/@sheliutsin.aliaksandr/flexible-historical-data-download-using-airflow-3eabdbcb178f",
+        "subtitle": "-",
+        "tag": "apache-airflow",
+        "title": "Flexible historical data download using Airflow."
+    },
+    {
+        "author_name": "Bazla Kausar",
+        "author_url": "https://medium.com/@kausarbazla",
+        "extracted_at": "2023-08-18 06:13:31.730792",
+        "extracted_at_epoch": 1692339211,
+        "extraction_id": "fcb9a865-9046-4632-90fc-351cbbc1a13d",
+        "extraction_url": "https://medium.com/tag/apache-airflow/archive/2023/08",
+        "published_at": "2023-08-04T13:55:57.816Z",
+        "reading_time_minutes": 7,
+        "story_url": "mItem streamItem--postPreview js-streamItem",
+        "subtitle": "-",
+        "tag": "apache-airflow",
+        "title": "Airflow: Sensors, Operators & Hooks !"
+    },
+    {
+        "author_name": "Tristian",
+        "author_url": "https://medium.com/@tristian_56632",
+        "extracted_at": "2023-08-18 06:13:31.730792",
+        "extracted_at_epoch": 1692339211,
+        "extraction_id": "fcb9a865-9046-4632-90fc-351cbbc1a13d",
+        "extraction_url": "https://medium.com/tag/apache-airflow/archive/2023/08",
+        "published_at": "2023-08-09T19:07:08.546Z",
+        "reading_time_minutes": 3,
+        "story_url": "https://medium.com/@tristian_56632/installing-apache-airflow-on-windows-using-wsl-771e803762c9",
+        "subtitle": "-",
+        "tag": "apache-airflow",
+        "title": "Installing Apache Airflow on Windows using WSL"
+    },
+    {
+        "author_name": "Shivangi Sharma",
+        "author_url": "https://medium.com/@shivangisharma2205",
+        "extracted_at": "2023-08-18 06:13:31.730792",
+        "extracted_at_epoch": 1692339211,
+        "extraction_id": "fcb9a865-9046-4632-90fc-351cbbc1a13d",
+        "extraction_url": "https://medium.com/tag/apache-airflow/archive/2023/08",
+        "published_at": "2023-08-14T16:27:08.561Z",
+        "reading_time_minutes": 1,
+        "story_url": "https://medium.com/@shivangisharma2205/airflow-b96c72e0d78",
+        "subtitle": "What ? ‘It is a batch workflow orchestration platform.’",
+        "tag": "apache-airflow",
+        "title": "Airflow"
+    }
+]
