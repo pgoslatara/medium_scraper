@@ -54,7 +54,7 @@ def call_github_api(
         except GitHubAPIRateLimitError:
             logging.info("Retrying in 60 seconds...")
             time.sleep(60)
-            call_github_api(
+            return call_github_api(
                 method,
                 endpoint,
                 params,
