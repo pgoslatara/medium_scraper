@@ -15,7 +15,7 @@ from sh import dbt
 
 class GitHubAPIRateLimitError(Exception):
     def __init__(self) -> None:
-        print(self.__str__())
+        logging.info(self.__str__())
 
     def __str__(self) -> str:
         return f"GitHubAPIRateLimitError: API allocations resets at {self.get_api_reset_time()}."
