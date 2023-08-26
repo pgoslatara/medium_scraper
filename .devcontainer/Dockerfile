@@ -1,5 +1,9 @@
 FROM python:3.11
 
+# Set working directory
+RUN mkdir -p /data
+WORKDIR /data
+
 RUN apt update && \
     apt upgrade -y && \
     apt install git sudo -y

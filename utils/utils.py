@@ -1,6 +1,7 @@
 import json
 import logging
 import os
+import time
 import uuid
 from datetime import datetime
 from functools import lru_cache
@@ -14,7 +15,7 @@ from sh import dbt
 
 class GitHubAPIRateLimitError(Exception):
     def __init__(self) -> None:
-        pass
+        print(self.__str__())
 
     def __str__(self) -> str:
         return f"GitHubAPIRateLimitError: API allocations resets at {self.get_api_reset_time()}."
@@ -48,7 +49,16 @@ def call_github_api(
         and r.json().get("message")
         and r.json()["message"].startswith("API rate limit exceeded for user ID")
     ):
-        raise GitHubAPIRateLimitError
+        try:
+            raise GitHubAPIRateLimitError
+        except GitHubAPIRateLimitError:
+            logging.info("Retrying in 60 seconds...")
+            time.sleep(60)
+            call_github_api(
+                method,
+                endpoint,
+                params,
+            )
 
     return r.json()
 
