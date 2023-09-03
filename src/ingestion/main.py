@@ -1,10 +1,9 @@
 import os
 
+from src.ingestion.github_actions import GitHubActionsExtractor
+from src.ingestion.github_repo_interactors import main as github_repo_interactors_run
+from src.ingestion.medium_web_scraper import MediumWebScraper
 from utils.utils import set_logging_options
-
-from .github_actions import GitHubActionsExtractor
-from .github_repo_interactors import main as github_repo_interactors_run
-from .medium_web_scraper import MediumWebScraper
 
 
 def main() -> None:
