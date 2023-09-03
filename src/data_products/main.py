@@ -1,9 +1,8 @@
 import os
 
+from src.data_products.bi_plotly import BuildPlotlyHTMLFile
+from src.data_products.email_weekly_medium_blogs import SendMediumBlogsEmail
 from utils.utils import set_logging_options
-
-from .bi_plotly import BuildPlotlyHTMLFile
-from .email_weekly_medium_blogs import SendMediumBlogsEmail
 
 
 def main() -> None:

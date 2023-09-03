@@ -1,9 +1,8 @@
 import os
 from pathlib import Path
 
+from src.transformation.author_details import main as transformation_main
 from utils.utils import run_dbt_commands
-
-from .author_details import main as transformation_main
 
 
 def main() -> None:
