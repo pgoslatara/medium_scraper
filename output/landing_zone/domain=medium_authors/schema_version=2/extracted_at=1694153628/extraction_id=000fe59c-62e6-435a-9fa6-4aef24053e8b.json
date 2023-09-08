@@ -1,0 +1,218 @@
+[
+    {
+        "extraction_id": "000fe59c-62e6-435a-9fa6-4aef24053e8b",
+        "extracted_at": "2023-09-08 06:13:48.451908",
+        "extracted_at_epoch": 1694153628,
+        "author_name": "Jogchumm",
+        "author_url": "https://medium.com/@jogchumm",
+        "num_followers": 0,
+        "short_bio": "HomeAboutPinnedThe power of Regular Expressions (RegEx) in Databricks with some help of AIAs a relative newcomer to the data engineering space I’ve been amazed at the prowess and versatility of PySpark when it comes to data processing. Sometimes, however, you encounter data which requires a tool with a little bit more ‘oompf’ in order to get the result you are looking for…Pyspark4 min readPyspark4 min readJogchumm"
+    },
+    {
+        "extraction_id": "000fe59c-62e6-435a-9fa6-4aef24053e8b",
+        "extracted_at": "2023-09-08 06:13:48.451908",
+        "extracted_at_epoch": 1694153628,
+        "author_name": "Jose Colque",
+        "author_url": "https://medium.com/@jogacolhue",
+        "num_followers": 1,
+        "short_bio": ""
+    },
+    {
+        "extraction_id": "000fe59c-62e6-435a-9fa6-4aef24053e8b",
+        "extracted_at": "2023-09-08 06:13:48.451908",
+        "extracted_at_epoch": 1694153628,
+        "author_name": "Okan Yenigün",
+        "author_url": "https://medium.com/@okanyenigun",
+        "num_followers": 1000,
+        "short_bio": "Top Writer for Django | Design Patterns | Image Processing | Regression | Time Series Forecasting. Writes about Python | Scala | Go | ML&DL |"
+    },
+    {
+        "extraction_id": "000fe59c-62e6-435a-9fa6-4aef24053e8b",
+        "extracted_at": "2023-09-08 06:13:48.451908",
+        "extracted_at_epoch": 1694153628,
+        "author_name": "Viswanathan Arunachalam",
+        "author_url": "https://medium.com/@vishwa.ar",
+        "num_followers": 0,
+        "short_bio": "han ArunachalamHomeAboutAug 31Member-onlyReal-Time Sentiment Analysis of News Articles with DatabricksSentiment analysis is the process of determining the sentiment & emotional tone of a piece of text. It can be used to understand how people feel about a particular topic, product, or service. Real-time sentiment analysis is the process of analyzing sentiment as soon as new data becomes available. …Databricks5 min readDatabricks5 min readPublished inChurn Prediction Modeling with PySpark·Aug 4, 2019IntroductionIntroduction Sparkify is a fictious music streaming app, which contains two months of user behavior log which is around 128MB in size. This dataset emulates the data similar to that of a regular music streaming app (Imagine something like Spotify). The user log contains some basic information about the user…Machine Learning7 min readMachine Learning7 min readViswanathan Arunachalam"
+    },
+    {
+        "extraction_id": "000fe59c-62e6-435a-9fa6-4aef24053e8b",
+        "extracted_at": "2023-09-08 06:13:48.451908",
+        "extracted_at_epoch": 1694153628,
+        "author_name": "Tom Corbin",
+        "author_url": "https://medium.com/@tomhcorbin",
+        "num_followers": 62,
+        "short_bio": "Data Engineer, Spark Enthusiast, and Databricks Advocate"
+    },
+    {
+        "extraction_id": "000fe59c-62e6-435a-9fa6-4aef24053e8b",
+        "extracted_at": "2023-09-08 06:13:48.451908",
+        "extracted_at_epoch": 1694153628,
+        "author_name": "Sridhar Bandaru",
+        "author_url": "https://medium.com/@bandarusridhar1",
+        "num_followers": 0,
+        "short_bio": "BandaruHomeAbout11 hours agoMeasuring Azure Blob Storage (ABFS) Performance in Databricks: A Comprehensive GuideAzure Blob Storage (ABFS) is a widely used cloud storage solution for storing unstructured data in Microsoft Azure. In this guide, we will explore how to measure the performance of ABFS when it comes to read and write operations within a Databricks environment. We’ll use Python and Databricks Runtime to…Blob3 min readBlob3 min read1 day agoCleaning up Cluster Logs in DatabricksIn any data engineering or analytics environment, managing logs is a crucial task. Logs provide valuable insights into the health and performance of your clusters, but they can also consume valuable storage space if not managed properly. In this blog post, we will guide you through the process of cleaning…Databricks3 min readDatabricks3 min readSridhar Bandaru"
+    },
+    {
+        "extraction_id": "000fe59c-62e6-435a-9fa6-4aef24053e8b",
+        "extracted_at": "2023-09-08 06:13:48.451908",
+        "extracted_at_epoch": 1694153628,
+        "author_name": "RisingWave Labs",
+        "author_url": "https://medium.com/@RisingWave_Engineering",
+        "num_followers": 8,
+        "short_bio": "RisingWave Database is an open-source distributed SQL streaming database designed for the cloud.（https://www.risingwave.com/database/）"
+    },
+    {
+        "extraction_id": "000fe59c-62e6-435a-9fa6-4aef24053e8b",
+        "extracted_at": "2023-09-08 06:13:48.451908",
+        "extracted_at_epoch": 1694153628,
+        "author_name": "dezimaldata",
+        "author_url": "https://medium.com/@dezimaldata",
+        "num_followers": 8,
+        "short_bio": ""
+    },
+    {
+        "extraction_id": "000fe59c-62e6-435a-9fa6-4aef24053e8b",
+        "extracted_at": "2023-09-08 06:13:48.451908",
+        "extracted_at_epoch": 1694153628,
+        "author_name": "Sudarshan Koirala",
+        "author_url": "https://medium.com/@sudarshan-koirala",
+        "num_followers": 14,
+        "short_bio": "Machine Learning Engineer | Video about AI, Data Science and LLM 👉 https://www.youtube.com/@datasciencebasics"
+    },
+    {
+        "extraction_id": "000fe59c-62e6-435a-9fa6-4aef24053e8b",
+        "extracted_at": "2023-09-08 06:13:48.451908",
+        "extracted_at_epoch": 1694153628,
+        "author_name": "Ashok Gopal Rao",
+        "author_url": "https://medium.com/@ashokgr",
+        "num_followers": 1,
+        "short_bio": "Ahhh…bored IT guy"
+    },
+    {
+        "extraction_id": "000fe59c-62e6-435a-9fa6-4aef24053e8b",
+        "extracted_at": "2023-09-08 06:13:48.451908",
+        "extracted_at_epoch": 1694153628,
+        "author_name": "Rakesh Dey",
+        "author_url": "https://medium.com/@rakeshdey.0018",
+        "num_followers": 3,
+        "short_bio": ""
+    },
+    {
+        "extraction_id": "000fe59c-62e6-435a-9fa6-4aef24053e8b",
+        "extracted_at": "2023-09-08 06:13:48.451908",
+        "extracted_at_epoch": 1694153628,
+        "author_name": "Vijay Balasubramaniam",
+        "author_url": "https://medium.com/@vbalasu",
+        "num_followers": 6,
+        "short_bio": ""
+    },
+    {
+        "extraction_id": "000fe59c-62e6-435a-9fa6-4aef24053e8b",
+        "extracted_at": "2023-09-08 06:13:48.451908",
+        "extracted_at_epoch": 1694153628,
+        "author_name": "Martha",
+        "author_url": "https://medium.com/@marthalasia",
+        "num_followers": 16,
+        "short_bio": "Senior Data Engineer, PhD in Theoretical Physics, Permaculturist, The Netherlands. I write about Data Engineering, Machine Learning and DevOps on MS Azure."
+    },
+    {
+        "extraction_id": "000fe59c-62e6-435a-9fa6-4aef24053e8b",
+        "extracted_at": "2023-09-08 06:13:48.451908",
+        "extracted_at_epoch": 1694153628,
+        "author_name": "Ganesh Chandrasekaran",
+        "author_url": "https://medium.com/@gchandra",
+        "num_followers": 727,
+        "short_bio": "Big Data Solution Architect | Adjunct Professor. Thoughts and opinions are my own and don’t represent the companies I work for."
+    },
+    {
+        "extraction_id": "000fe59c-62e6-435a-9fa6-4aef24053e8b",
+        "extracted_at": "2023-09-08 06:13:48.451908",
+        "extracted_at_epoch": 1694153628,
+        "author_name": "Umesh Pawar",
+        "author_url": "https://medium.com/@gcp.azure.aws",
+        "num_followers": 8,
+        "short_bio": "Cloud Solution Architect"
+    },
+    {
+        "extraction_id": "000fe59c-62e6-435a-9fa6-4aef24053e8b",
+        "extracted_at": "2023-09-08 06:13:48.451908",
+        "extracted_at_epoch": 1694153628,
+        "author_name": "Laura Lupinacci Miciatto",
+        "author_url": "https://medium.com/@miciatto.laura",
+        "num_followers": 0,
+        "short_bio": "pinacci MiciattoHomeAbout1 day agoAnálise Exploratória dos Dados (EDA) em SQL: Investigando as vendas da Dunder Mifflin [Parte 2]Contexto A Dunder Mifflin é uma empresa fictícia retratada na série norte-americana The Office. Neste projeto, realizado no ambiente do Databricks, analisei os dados de vendas da Dunder Mifflin em 2021. Utilizei principalmente SQL, mas também incluí um pouco de Python em minha abordagem. A análise exploratória do dataset de vendas…Sql8 min readSql8 min read1 day agoAnálise Exploratória dos Dados (EDA) em SQL: Investigando as vendas da Dunder Mifflin [Parte 1]Contexto A Dunder Mifflin é uma empresa fictícia retratada na série norte-americana The Office. Neste projeto, realizado no ambiente do Databricks, analisei os dados de vendas da Dunder Mifflin em 2021. Utilizei principalmente SQL, mas também incluí um pouco de Python em minha abordagem. A análise exploratória do dataset de vendas…Eda5 min readEda5 min readLaura Lupinacci Miciatto"
+    },
+    {
+        "extraction_id": "000fe59c-62e6-435a-9fa6-4aef24053e8b",
+        "extracted_at": "2023-09-08 06:13:48.451908",
+        "extracted_at_epoch": 1694153628,
+        "author_name": "Jorge Machado",
+        "author_url": "https://medium.com/@jomach",
+        "num_followers": 29,
+        "short_bio": "CEO and data engineer @ www.dmesh.io"
+    },
+    {
+        "extraction_id": "000fe59c-62e6-435a-9fa6-4aef24053e8b",
+        "extracted_at": "2023-09-08 06:13:48.451908",
+        "extracted_at_epoch": 1694153628,
+        "author_name": "Alysson Souza",
+        "author_url": "https://medium.com/@alyssonmarquesdesouza",
+        "num_followers": 22,
+        "short_bio": "Specialist Solutions Architect at Databricks. With a background in cloud infrastructure and security, I help data teams implement Databricks deployments safely."
+    },
+    {
+        "extraction_id": "000fe59c-62e6-435a-9fa6-4aef24053e8b",
+        "extracted_at": "2023-09-08 06:13:48.451908",
+        "extracted_at_epoch": 1694153628,
+        "author_name": "Anand Taralika",
+        "author_url": "https://pub.towardsai.net/@taralika",
+        "num_followers": 133,
+        "short_bio": "Software Engineer using tech, data, machine learning for cybersecurity, finance, healthcare, sustainable energy. More 👉 anand.id"
+    },
+    {
+        "extraction_id": "000fe59c-62e6-435a-9fa6-4aef24053e8b",
+        "extracted_at": "2023-09-08 06:13:48.451908",
+        "extracted_at_epoch": 1694153628,
+        "author_name": "Grid Dynamics",
+        "author_url": "https://medium.com/@griddynamics",
+        "num_followers": 77,
+        "short_bio": "We accelerate digital transformation of Fortune 1000 US enterprises. We bring expertise in customer experience, data analytics, and cloud, lean software, etc."
+    },
+    {
+        "extraction_id": "000fe59c-62e6-435a-9fa6-4aef24053e8b",
+        "extracted_at": "2023-09-08 06:13:48.451908",
+        "extracted_at_epoch": 1694153628,
+        "author_name": "Amit Joshi",
+        "author_url": "https://medium.com/@amitjoshi7",
+        "num_followers": 33,
+        "short_bio": ""
+    },
+    {
+        "extraction_id": "000fe59c-62e6-435a-9fa6-4aef24053e8b",
+        "extracted_at": "2023-09-08 06:13:48.451908",
+        "extracted_at_epoch": 1694153628,
+        "author_name": "Wahid Atoui",
+        "author_url": "https://medium.com/@wahidatoui",
+        "num_followers": 172,
+        "short_bio": "Data Engineer. Paris, France"
+    },
+    {
+        "extraction_id": "000fe59c-62e6-435a-9fa6-4aef24053e8b",
+        "extracted_at": "2023-09-08 06:13:48.451908",
+        "extracted_at_epoch": 1694153628,
+        "author_name": "Motif Analytics",
+        "author_url": "https://medium.com/@motifanalytics",
+        "num_followers": 424,
+        "short_bio": "Go from raw events to growth breakthroughs in minutes."
+    },
+    {
+        "extraction_id": "000fe59c-62e6-435a-9fa6-4aef24053e8b",
+        "extracted_at": "2023-09-08 06:13:48.451908",
+        "extracted_at_epoch": 1694153628,
+        "author_name": "Hugo Lu",
+        "author_url": "https://blog.det.life/@hugolu87",
+        "num_followers": 324,
+        "short_bio": "Hugo Lu - I write about how to be good at Data engineering and do the coolest data stuff. I am the CEO @ Orchestra, a data release pipeline management platform"
+    }
+]
