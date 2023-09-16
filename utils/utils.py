@@ -43,7 +43,6 @@ def call_github_api(
             },
             params=params,
         )
-
     if (
         isinstance(r.json(), dict)
         and r.json().get("message")

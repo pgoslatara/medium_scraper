@@ -38,7 +38,9 @@ with
                     title:'STRING'
                 }
             )
-        where author_name != 'Thirahealth'  -- Tags Dialectical Behavior Therapy blogs with dbt, want to exclude these
+        where
+            author_name != 'Thirahealth'  -- Tags Dialectical Behavior Therapy blogs with dbt, want to exclude these
+            and published_at <> ''
     )
 
 select * exclude(rnum)
