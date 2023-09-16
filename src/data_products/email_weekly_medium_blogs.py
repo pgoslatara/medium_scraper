@@ -95,6 +95,7 @@ class SendMediumBlogsEmail:
         """,
             subtype="html",
         )
+        logging.info(formatted_blogs)
 
         if sender_email_address and sender_email_password and recipient_email_address:
             logging.info("Sending email...")
