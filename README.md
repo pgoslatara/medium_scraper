@@ -7,7 +7,7 @@ A slightly sarcastic, highly over-engineered GitHub-as-a-Data-Platform Proof-of-
 1. Create virtual env and install required packages:
 
     ```bash
-    python -m virtualenv .venv
+    python3.11 -m virtualenv .venv
     source .venv/bin/activate
     pip install -e .
     pre-commit install
