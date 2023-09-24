@@ -10,12 +10,17 @@ on:
         description: The number of days into the past for which to ingest data for
         required: true
         default: 2
+      ingestion_medium_blog_limit:
+        description: Number of blog posts to ingest from Medium
+        required: true
+        default: 100
 
 env:
   CICD_RUN: True
   DATA_DIR: "/home/runner/work/medium_scraper/medium_scraper/output"
   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
   INGESTION_LOOKBACK_WINDOW: '${{ github.event.inputs.ingestion_lookback_days || 2 }}'
+  INGESTION_MEDIUM_BLOG_LIMIT: '${{ github.event.inputs.ingestion_medium_blog_limit || 100 }}'
   PAT_GITHUB:  ${{ secrets.PAT_GITHUB }}
 
 jobs:
@@ -67,6 +72,7 @@ jobs:
         env:
           CICD_RUN: True
           INGESTION_LOOKBACK_WINDOW: '${{ github.event.inputs.ingestion_lookback_days }}'
+          INGESTION_MEDIUM_BLOG_LIMIT: '${{ github.event.inputs.ingestion_medium_blog_limit }}'
           PAT_GITHUB: ${{ secrets.PAT_GITHUB }}
           RECIPIENT_EMAIL_ADDRESS: 123@mailslurp.com
           SENDER_EMAIL_ADDRESS: ${{ secrets.SENDER_EMAIL_ADDRESS }}
@@ -78,6 +84,7 @@ jobs:
             DATA_DIR=/workspaces/medium_scraper/output
             GITHUB_TOKEN=dummy_value
             INGESTION_LOOKBACK_WINDOW
+            INGESTION_MEDIUM_BLOG_LIMIT
             PAT_GITHUB
             RECIPIENT_EMAIL_ADDRESS
             SENDER_EMAIL_ADDRESS

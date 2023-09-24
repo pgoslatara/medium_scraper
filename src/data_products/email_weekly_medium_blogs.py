@@ -55,9 +55,9 @@ class SendMediumBlogsEmail:
         )
 
         data = df.to_pydict()
-        logging.info(f"{data=}")
+        logging.debug(f"{data=}")
         logging.info(
-            f"SELECTed {len(data)} blogs from the last {self.lookback_days} days."
+            f"SELECTed {len(data['Blog'])} blogs from the last {self.lookback_days} days."
         )
         return dict(data)
 
@@ -95,7 +95,7 @@ class SendMediumBlogsEmail:
         """,
             subtype="html",
         )
-        logging.info(formatted_blogs)
+        logging.debug(formatted_blogs)
 
         if sender_email_address and sender_email_password and recipient_email_address:
             logging.info("Sending email...")

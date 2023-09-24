@@ -15,6 +15,14 @@ def main() -> None:
     except:
         lookback_days = default_lookback
 
+    default_medium_blog_limit = 100
+    try:
+        medium_blog_limit = int(
+            os.getenv("INGESTION_MEDIUM_BLOG_LIMIT", default_medium_blog_limit)
+        )
+    except:
+        medium_blog_limit = default_medium_blog_limit
+
     tags = [
         "analytics-engineering",
         "apache-airflow",
@@ -25,7 +33,7 @@ def main() -> None:
     GitHubActionsExtractor(lookback_days=lookback_days).run()
     github_repo_interactors_run()
     MediumWebScraper(
-        lookback_days=lookback_days,
+        medium_blog_limit=medium_blog_limit,
         tags=tags,
     ).run()
 
