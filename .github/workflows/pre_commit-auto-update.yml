@@ -1,5 +1,3 @@
-# Source: https://github.com/browniebroke/github-actions#pre-commit-auto-update
-
 name: Pre-commit auto-update
 
 on:
@@ -8,12 +6,20 @@ on:
   workflow_dispatch:
 
 jobs:
-  upgrade:
-    uses: browniebroke/github-actions/.github/workflows/pre-commit-autoupdate.yml@v1
-    secrets:
-      gh_pat: ${{ secrets.PAT_GITHUB }}
-    with:
-      python_version: "3.11"
-      branch_name: "update/pre-commit-hooks"
-      pull_request_title: "chore(deps): upgrade dependencies"
-      commit_message: "chore(deps): upgrade dependencies"
+  auto-update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - uses: actions/setup-python@v2
+
+      - uses: browniebroke/pre-commit-autoupdate-action@main
+
+      - uses: peter-evans/create-pull-request@v3
+        with:
+          token: ${{ secrets.PAT_GITHUB }}
+          branch: update/pre-commit-hooks
+          title: Update pre-commit hooks
+          commit-message: "chore: update pre-commit hooks"
+          body: Update versions of pre-commit hooks to latest version.
+          labels: automerge
