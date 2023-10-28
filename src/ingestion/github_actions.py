@@ -2,6 +2,8 @@ import logging
 from datetime import datetime, timedelta
 from typing import Any, Dict, List
 
+from retry import retry
+
 from utils.utils import *
 
 
@@ -24,6 +26,7 @@ class GitHubActionsExtractor:
             file_name=f"domain=github_actions_jobs/schema_version=1/extracted_at={get_extracted_at_epoch()}/extraction_id={get_extraction_id()}.json",
         )
 
+    @retry(tries=3, delay=5)
     def extract_github_workflow_runs(self) -> Any:
         created_filter = f">{(datetime.today() - timedelta(days=self.lookback_days)).date().strftime('%Y-%m-%d')}"
         logging.info(
