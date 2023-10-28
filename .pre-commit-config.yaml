@@ -34,7 +34,7 @@ repos:
     rev: v1.6.1
     hooks:
     - id: mypy
-      additional_dependencies: ["types-beautifulsoup4", "types-requests", "types-tabulate"]
+      additional_dependencies: ["types-beautifulsoup4", "types-requests", "types-retry", "types-tabulate"]
       args: ["--install-types", "--strict"]
   - repo: https://github.com/tconbeer/sqlfmt
     rev: v0.21.0

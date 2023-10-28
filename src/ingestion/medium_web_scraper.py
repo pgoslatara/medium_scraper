@@ -6,6 +6,7 @@ from typing import Dict, List
 
 import requests
 from bs4 import BeautifulSoup
+from retry import retry
 
 from utils.utils import *
 
@@ -33,6 +34,7 @@ class MediumWebScraper:
         )
 
     def scrape_authors(self, extraction_id: str) -> List[Dict[str, object]]:
+        @retry(tries=5, delay=5)
         def medium_scrape_authors(author_url: str) -> Dict[str, object]:
             time.sleep(1)  # To avoid rate limit detection
             logging.info(f"Scraping author URL: {author_url}...")
