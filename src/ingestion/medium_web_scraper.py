@@ -4,11 +4,17 @@ from datetime import datetime
 from multiprocessing.pool import ThreadPool
 from typing import Dict, List
 
-import requests
 from bs4 import BeautifulSoup
 from retry import retry
 
-from utils.utils import *
+from utils.utils import (
+    create_requests_session,
+    get_extracted_at,
+    get_extracted_at_epoch,
+    get_extraction_id,
+    get_json_content,
+    save_to_landing_zone,
+)
 
 
 class MediumWebScraper:
@@ -40,7 +46,7 @@ class MediumWebScraper:
             time.sleep(1)  # To avoid rate limit detection
             logging.info(f"Scraping author URL: {author_url}...")
 
-            page = requests.get(f"{author_url}")
+            page = create_requests_session().get(f"{author_url}")
             soup = BeautifulSoup(page.text, "html.parser")
 
             author_name = [
@@ -127,7 +133,7 @@ class MediumWebScraper:
             },
         ]
 
-        response = requests.post(
+        response = create_requests_session().post(
             "https://medium.com/_/graphql", headers=headers, json=json_data
         )
         logging.info(
