@@ -34,7 +34,7 @@ def call_github_api(
     params: Optional[Mapping[str, Union[int, str]]] = None,
 ) -> Any:
     if method.lower() == "get":
-        r = requests.get(
+        r = create_requests_session().get(
             f"https://api.github.com/{endpoint}",
             headers={
                 "Accept": "application/vnd.github+json",
@@ -60,6 +60,12 @@ def call_github_api(
             )
 
     return r.json()
+
+
+@lru_cache
+def create_requests_session() -> requests.Session:
+    logging.info("Creating re-usable requests session...")
+    return requests.Session()
 
 
 @lru_cache
