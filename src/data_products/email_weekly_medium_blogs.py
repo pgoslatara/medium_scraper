@@ -1,4 +1,3 @@
-import logging
 import os
 import smtplib
 import ssl
@@ -7,6 +6,8 @@ from typing import Mapping, Union
 
 import duckdb
 from tabulate import tabulate
+
+from utils.logger import logger
 
 
 class SendMediumBlogsEmail:
@@ -55,15 +56,13 @@ class SendMediumBlogsEmail:
         )
 
         data = df.to_pydict()
-        logging.debug(f"{data=}")
-        logging.info(
-            f"SELECTed {len(data['Blog'])} blogs from the last {self.lookback_days} days."
-        )
+        logger.debug(f"{data=}")
+        logger.info(f"SELECTed {len(data['Blog'])} blogs from the last {self.lookback_days} days.")
         return dict(data)
 
     def run(self) -> None:
         blogs = self.get_relevant_blogs()
-        logging.info("Assembling email...")
+        logger.info("Assembling email...")
 
         sender_email_address = os.getenv("SENDER_EMAIL_ADDRESS")
         sender_email_password = os.getenv("SENDER_EMAIL_PASSWORD")
@@ -95,10 +94,10 @@ class SendMediumBlogsEmail:
         """,
             subtype="html",
         )
-        logging.debug(formatted_blogs)
+        logger.debug(formatted_blogs)
 
         if sender_email_address and sender_email_password and recipient_email_address:
-            logging.info("Sending email...")
+            logger.info("Sending email...")
             context = ssl.create_default_context()
             with smtplib.SMTP("smtp.gmail.com", 587) as smtp:
                 smtp.ehlo()
@@ -106,4 +105,4 @@ class SendMediumBlogsEmail:
                 smtp.ehlo()
                 smtp.login(sender_email_address, sender_email_password)
                 smtp.send_message(msg)
-                logging.info("Email sent.")
+                logger.info("Email sent.")

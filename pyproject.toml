@@ -1,6 +1,56 @@
-[build-system]
-requires = ["setuptools"]
-build-backend = "setuptools.build_meta"
+[tool.black]
+line-length = 99
+include = '/project$|\.pyi?$'
+exclude = '''
+/(
+    \.git
+  | \.hg
+  | \.eggs
+  | \.mypy_cache
+  | \.tox
+  | \.venv
+  | \.vscode
+  | _build
+  | buck-out
+  | build
+  | dist
+)/
+'''
 
 [tool.isort]
 profile = "black"
+
+[tool.poetry]
+name = "medium_scraper"
+version = "0.0.0"
+description = "A slightly sarcastic, highly over-engineered GitHub-as-a-Data-Platform Proof-of-Concept."
+authors = []
+packages = [
+    { include = "src" },
+]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+beautifulsoup4="*"
+dbt-duckdb="*"
+plotly=">=5.13.0"
+pyarrow="*"
+PyGithub="*"
+requests="*"
+retry="*"
+spacy="*"
+tabulate="*"
+
+[tool.poetry.scripts]
+data_products = "src.data_products.main:main"
+ingestion = "src.ingestion.main:main"
+transformation = "src.transformation.main:main"
+
+[tool.poetry.group.dev.dependencies]
+duckcli="*"
+pre-commit=">3"
+pytest = ">=7.1.1"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"

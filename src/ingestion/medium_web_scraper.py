@@ -1,4 +1,3 @@
-import logging
 import time
 from datetime import datetime
 from multiprocessing.pool import ThreadPool
@@ -7,6 +6,7 @@ from typing import Dict, List
 from bs4 import BeautifulSoup
 from retry import retry
 
+from utils.logger import logger
 from utils.utils import (
     create_requests_session,
     get_extracted_at,
@@ -18,13 +18,13 @@ from utils.utils import (
 
 
 class MediumWebScraper:
-    def __init__(self, medium_blog_limit: int, tags: List[str]):
-        self.medium_blog_limit = medium_blog_limit
+    def __init__(self, tags: List[str]):
+        self.medium_blog_limit = 100  # Hard-coding for simplicity, previously was selectable
         self.tags = tags
 
     def run(self) -> None:
         for tag in self.tags:
-            logging.info(f"Scraping {self.medium_blog_limit} blogs with tag '{tag}'...")
+            logger.info(f"Scraping {self.medium_blog_limit} blogs with tag '{tag}'...")
 
             scraped_data = self.scrape_blogs(tag=tag)
 
@@ -44,14 +44,14 @@ class MediumWebScraper:
         @retry(tries=5, delay=5)
         def medium_scrape_authors(author_url: str) -> Dict[str, object]:
             time.sleep(1)  # To avoid rate limit detection
-            logging.info(f"Scraping author URL: {author_url}...")
+            logger.info(f"Scraping author URL: {author_url}...")
 
             page = create_requests_session().get(f"{author_url}")
             soup = BeautifulSoup(page.text, "html.parser")
 
-            author_name = [
-                x.text for x in soup.find_all("h2") if str(x).find("author-name") > 0
-            ][0]
+            author_name = [x.text for x in soup.find_all("h2") if str(x).find("author-name") > 0][
+                0
+            ]
             num_followers_base = list(
                 {
                     x.text
@@ -63,9 +63,7 @@ class MediumWebScraper:
                 num_followers = 0
             else:
                 num_followers_raw = (
-                    num_followers_base[0]
-                    .replace(" Followers", "")
-                    .replace(" Follower", "")
+                    num_followers_base[0].replace(" Followers", "").replace(" Follower", "")
                 )
                 if num_followers_raw.endswith("K"):
                     num_followers = int(float(num_followers_raw[:-1]) * 1000)
@@ -98,7 +96,7 @@ class MediumWebScraper:
         ]
 
         author_urls = list({x["author_url"] for x in data})
-        logging.info(f"Found {len(author_urls)} distinct authors.")
+        logger.info(f"Found {len(author_urls)} distinct authors.")
 
         pool = ThreadPool(8)
         author_data = pool.map(
@@ -110,7 +108,7 @@ class MediumWebScraper:
 
     def scrape_blogs(self, tag: str) -> List[Dict[str, object]]:
         url = f"https://medium.com/tag/{tag}/archive"
-        logging.info(f"Scraping blogs from {url=}...")
+        logger.info(f"Scraping blogs from {url=}...")
 
         headers = {
             "content-type": "application/json",
@@ -136,7 +134,7 @@ class MediumWebScraper:
         response = create_requests_session().post(
             "https://medium.com/_/graphql", headers=headers, json=json_data
         )
-        logging.info(
+        logger.info(
             f'Retrieved {len(response.json()[0]["data"]["tagFromSlug"]["sortedFeed"]["edges"])} blogs...'
         )
 
@@ -154,9 +152,7 @@ class MediumWebScraper:
             info = {
                 "author_name": i["node"]["creator"]["name"],
                 "author_url": "https://medium.com/@" + i["node"]["creator"]["username"],
-                "published_at": datetime.fromtimestamp(
-                    i["node"]["firstPublishedAt"] / 1000
-                ),
+                "published_at": datetime.fromtimestamp(i["node"]["firstPublishedAt"] / 1000),
                 "reading_time_minutes": i["node"]["readingTime"],
                 "story_url": i["node"]["mediumUrl"],
                 "subtitle": i["node"]["extendedPreviewContent"]["subtitle"],

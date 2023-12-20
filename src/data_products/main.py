@@ -2,12 +2,9 @@ import os
 
 from src.data_products.bi_plotly import BuildPlotlyHTMLFile
 from src.data_products.email_weekly_medium_blogs import SendMediumBlogsEmail
-from utils.utils import set_logging_options
 
 
 def main() -> None:
-    set_logging_options()
-
     # MEDIUM_BLOG_LOOKBACK_WINDOW is "" when action is triggered from main branch
     default_lookback = 7
     try:

@@ -1,21 +1,23 @@
 import json
-import logging
 import os
 import time
 import uuid
 from datetime import datetime
-from functools import lru_cache
+from functools import lru_cache, partial
 from glob import glob
 from pathlib import Path
 from typing import Any, Dict, List, Mapping, Optional, Union
 
 import requests
-from sh import dbt
+from dbt.cli.main import dbtRunner, dbtRunnerResult
+from dbt.events.base_types import EventMsg
+
+from utils.logger import logger
 
 
 class GitHubAPIRateLimitError(Exception):
     def __init__(self) -> None:
-        logging.info(self.__str__())
+        logger.info(self.__str__())
 
     def __str__(self) -> str:
         return f"GitHubAPIRateLimitError: API allocations resets at {self.get_api_reset_time()}."
@@ -51,7 +53,7 @@ def call_github_api(
         try:
             raise GitHubAPIRateLimitError
         except GitHubAPIRateLimitError:
-            logging.info("Retrying in 60 seconds...")
+            logger.info("Retrying in 60 seconds...")
             time.sleep(60)
             return call_github_api(
                 method,
@@ -64,7 +66,7 @@ def call_github_api(
 
 @lru_cache
 def create_requests_session() -> requests.Session:
-    logging.info("Creating re-usable requests session...")
+    logger.info("Creating re-usable requests session...")
     return requests.Session()
 
 
@@ -75,7 +77,7 @@ def get_environment() -> str:
     else:
         env = "dev"
 
-    logging.info(f"Running on environment: {env}")
+    logger.info(f"Running on environment: {env}")
 
     return env
 
@@ -115,28 +117,79 @@ def get_json_content(domain: str) -> List[Mapping[str, Union[str, int]]]:
                 x["file_name"] = file_name
         contents += d
 
-    logging.info(f"Read {len(contents)} blogs from json files")
+    logger.info(f"Read {len(contents)} blogs from json files")
     return contents
 
 
-def run_dbt_commands(commands: List[str]) -> None:
-    for command in commands:
-        command_fmt = command.split(" ")[1:] + [
-            "--profiles-dir",
-            "./dbt",
-            "--project-dir",
-            "./dbt",
-            "--target",
-            get_environment(),
+def dbt_invoke(dbt_cli_args: List[str], suppress_log: bool = False) -> dbtRunnerResult:
+    """
+    Takes a list of dbt command line arguments and calls `invoke` with
+    a custom callback that makes logs available.
+    """
+
+    def capture_dbt_log(event: EventMsg, log_level: int, suppress_log: bool) -> None:
+        from utils.logger import logger  # needs to be inside callback function
+
+        # Small clean up of event data from dbt
+        cleaned_info = {
+            "level": event.info.level,
+            "msg": event.info.msg,
+            "name": event.info.name,
+            "time": datetime.fromtimestamp(
+                event.info.ts.seconds + (event.info.ts.nanos * (10**-9))
+            ),
+        }
+
+        log_level_map = {
+            "debug": 10,
+            "info": 20,
+            "warn": 30,
+            "error": 40,
+        }
+
+        # This callback runs for every log message, we want to only log events
+        # that have a log level >= the log level the package is running with.
+        if suppress_log is False and log_level <= log_level_map[cleaned_info["level"]]:
+            # i.e log message
+            if cleaned_info["level"] == "debug":
+                logger.debug(cleaned_info["msg"])
+            elif cleaned_info["level"] == "info":
+                logger.info(cleaned_info["msg"])
+            elif cleaned_info["level"] == "warn":
+                logger.warning(cleaned_info["msg"])
+            elif cleaned_info["level"] == "error":
+                logger.error(cleaned_info["msg"])
+
+    standard_cli_args = [
+        "--project-dir",
+        os.getenv("DBT_PROJECT_DIR"),
+        "--profiles-dir",
+        os.getenv("DBT_PROFILES_DIR"),
+        "--log-level",
+        "none",  # logger will be handled by callback function
+    ]
+    args_to_pass = dbt_cli_args + standard_cli_args
+
+    logger.info(f"Calling `dbtRunner.invoke` with args: {args_to_pass}")
+
+    res = dbtRunner(
+        callbacks=[
+            partial(
+                capture_dbt_log,
+                log_level=logger.getEffectiveLevel(),
+                suppress_log=suppress_log,
+            )
         ]
-        logging.info(f"Running dbt command: {command_fmt}")
-        print(f"Running dbt command: {command_fmt}")
-        dbt(command_fmt, _fg=True)
+    ).invoke(args_to_pass)
+
+    if res.exception:
+        raise RuntimeError(res.exception)
+    return res
 
 
 def save_to_landing_zone(data: List[Dict[str, object]], file_name: str) -> None:
     file_name = f"{get_output_dir()}/{file_name}"
-    logging.info(f"Saving {len(data)} entries to {file_name}...")
+    logger.info(f"Saving {len(data)} entries to {file_name}...")
 
     Path(file_name[: file_name.rfind("/")]).mkdir(parents=True, exist_ok=True)
     with open(file_name, "w", encoding="utf-8") as f_write:
@@ -147,18 +200,3 @@ def save_to_landing_zone(data: List[Dict[str, object]], file_name: str) -> None:
             indent=4,
             default=str,
         )
-
-
-def set_logging_options() -> None:
-    LOG_FORMAT = "%(asctime)s %(levelname)s: %(message)s"
-    DATE_FORMAT = "%Y-%m-%d %H:%M:%S"
-
-    logging.basicConfig(
-        level=logging.INFO,
-        format=LOG_FORMAT,
-        datefmt=DATE_FORMAT,
-    )
-
-    logging.getLogger("py4j").setLevel(logging.WARNING)
-    logger = logging.getLogger(__name__)
-    logger.setLevel(logging.INFO)

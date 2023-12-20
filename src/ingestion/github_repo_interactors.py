@@ -1,16 +1,15 @@
-import logging
 import os
 from datetime import datetime, timedelta
 from multiprocessing.pool import ThreadPool
 from typing import Dict, List
 
+from utils.logger import logger
 from utils.utils import (
     call_github_api,
     get_extracted_at,
     get_extracted_at_epoch,
     get_extraction_id,
     save_to_landing_zone,
-    set_logging_options,
 )
 
 
@@ -24,7 +23,7 @@ def get_github_repos_per_org(org: str) -> List[Dict[str, object]]:
         )
         keys_to_keep = ["id", "name", "full_name", "html_url", "url", "fork"]
         org_repos += [{k: v for k, v in x.items() if k in keys_to_keep} for x in _repos]
-        logging.info(f"Retrieved {len(org_repos)} repos from {org}...")
+        logger.info(f"Retrieved {len(org_repos)} repos from {org}...")
         page += 1
 
     metadata = {
@@ -58,7 +57,7 @@ def get_github_issues(repos: List[str]) -> List[Dict[str, object]]:
                     "since": str(_since),
                 },
             )
-            logging.info(f"Retrieved {len(issues_retrieved)} issues from {repo}...")
+            logger.info(f"Retrieved {len(issues_retrieved)} issues from {repo}...")
             keys_to_keep = [
                 "created_at",
                 "html_url",
@@ -69,10 +68,7 @@ def get_github_issues(repos: List[str]) -> List[Dict[str, object]]:
                 "title",
                 "user",
             ]
-            issues += [
-                {k: v for k, v in x.items() if k in keys_to_keep}
-                for x in issues_retrieved
-            ]
+            issues += [{k: v for k, v in x.items() if k in keys_to_keep} for x in issues_retrieved]
             page += 1
             if len(issues_retrieved) == 0:
                 break
@@ -80,11 +76,9 @@ def get_github_issues(repos: List[str]) -> List[Dict[str, object]]:
         return issues
 
     _since = (
-        (datetime.utcnow() - timedelta(days=3))
-        if os.getenv("CICD_RUN")
-        else datetime(1900, 1, 1)
+        (datetime.utcnow() - timedelta(days=3)) if os.getenv("CICD_RUN") else datetime(1900, 1, 1)
     )
-    logging.info(f"{_since=}")
+    logger.info(f"{_since=}")
 
     pool = ThreadPool(1)
     issues = [
@@ -126,7 +120,7 @@ def get_github_pull_requests(repos: List[str]) -> List[Dict[str, object]]:
                     "page": page,
                 },
             )
-            logging.info(f"Retrieved {len(pull_requests_retrieved)} PRs from {repo}...")
+            logger.info(f"Retrieved {len(pull_requests_retrieved)} PRs from {repo}...")
             keys_to_keep = [
                 "created_at",
                 "html_url",
@@ -138,19 +132,16 @@ def get_github_pull_requests(repos: List[str]) -> List[Dict[str, object]]:
                 "user",
             ]
             pull_requests += [
-                {k: v for k, v in x.items() if k in keys_to_keep}
-                for x in pull_requests_retrieved
+                {k: v for k, v in x.items() if k in keys_to_keep} for x in pull_requests_retrieved
             ]
             page += 1
-            if len(pull_requests_retrieved) == 0 or (
-                os.getenv("CICD_RUN") and page > 2
-            ):
+            if len(pull_requests_retrieved) == 0 or (os.getenv("CICD_RUN") and page > 2):
                 break
 
         return pull_requests
 
     _state = "open" if os.getenv("CICD_RUN") else "all"
-    logging.info(f"{_state=}")
+    logger.info(f"{_state=}")
 
     pool = ThreadPool(1)
     pull_requests = [
@@ -185,7 +176,7 @@ def get_github_repo_interactor_info(usernames: List[object]) -> List[Dict[str, o
         lambda username: call_github_api("GET", f"users/{username}"),
         usernames,
     )
-    logging.info(f"Retrieved info on {len(usernames)} repo interactors.")
+    logger.info(f"Retrieved info on {len(usernames)} repo interactors.")
 
     keys_to_keep = [
         "bio",
@@ -216,8 +207,6 @@ def get_github_repo_interactor_info(usernames: List[object]) -> List[Dict[str, o
 
 
 def main() -> None:
-    set_logging_options()
-
     github_orgs = ["dbt-labs"]
     for org in github_orgs:
         repos = get_github_repos_per_org(org)
@@ -225,13 +214,11 @@ def main() -> None:
         if os.getenv("CICD_RUN"):
             repo_names = repo_names[:10]
 
-        logging.info(
-            f"Retrieving issues and PRs for {len(repo_names)} non-forked repos."
-        )
+        logger.info(f"Retrieving issues and PRs for {len(repo_names)} non-forked repos.")
         issues = get_github_issues(repo_names)
         prs = get_github_pull_requests(repo_names)
         repo_interactors = {x["user"]["login"] for x in prs + issues}  # type: ignore[index]
-        logging.info(f"Extracted {len(repo_interactors)} unique GitHub usernames.")
+        logger.info(f"Extracted {len(repo_interactors)} unique GitHub usernames.")
         get_github_repo_interactor_info(list(repo_interactors))
 
 
