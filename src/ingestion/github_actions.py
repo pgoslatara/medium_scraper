@@ -1,9 +1,9 @@
-import logging
 from datetime import datetime, timedelta
 from typing import Any, Dict, List
 
 from retry import retry
 
+from utils.logger import logger
 from utils.utils import *
 
 
@@ -12,7 +12,7 @@ class GitHubActionsExtractor:
         self.lookback_days = lookback_days
 
     def run(self) -> None:
-        logging.info("Extracting data from GitHub...")
+        logger.info("Extracting data from GitHub...")
 
         workflow_runs = self.extract_github_workflow_runs()
         save_to_landing_zone(
@@ -29,9 +29,7 @@ class GitHubActionsExtractor:
     @retry(tries=3, delay=5)
     def extract_github_workflow_runs(self) -> Any:
         created_filter = f">{(datetime.today() - timedelta(days=self.lookback_days)).date().strftime('%Y-%m-%d')}"
-        logging.info(
-            f"Extracting workflow run data from GitHub (filter '{created_filter}')..."
-        )
+        logger.info(f"Extracting workflow run data from GitHub (filter '{created_filter}')...")
         per_page = 100
 
         repos = call_github_api(
@@ -40,12 +38,12 @@ class GitHubActionsExtractor:
 
         workflow_runs = []
         for repo in repos:
-            logging.info(f"Repo name: {repo['name']}")
+            logger.info(f"Repo name: {repo['name']}")
             workflows = call_github_api(
                 "GET", f"repos/pgoslatara/{repo['name']}/actions/workflows"
             )["workflows"]
             for workflow in workflows:
-                logging.info(f"Workflow name: {workflow['name']}")
+                logger.info(f"Workflow name: {workflow['name']}")
                 r = call_github_api(
                     "GET",
                     f"repos/pgoslatara/{repo['name']}/actions/workflows/{workflow['id']}/runs",
@@ -53,7 +51,7 @@ class GitHubActionsExtractor:
                 )
                 workflow_runs += r["workflow_runs"]
                 total_count = r["total_count"]
-                logging.debug(f"{total_count=}")
+                logger.debug(f"{total_count=}")
 
                 for page_num in list(range(2, int(total_count / per_page) + 2)):
                     r = call_github_api(
@@ -67,7 +65,7 @@ class GitHubActionsExtractor:
                     )
                     workflow_runs += r["workflow_runs"]
 
-                logging.info(f"Retrieved {len(workflow_runs)} workflows runs so far...")
+                logger.info(f"Retrieved {len(workflow_runs)} workflows runs so far...")
 
         metadata = {
             "extraction_id": get_extraction_id(),
@@ -77,16 +75,14 @@ class GitHubActionsExtractor:
         for workflow in workflow_runs:
             workflow = workflow.update(metadata)
 
-        logging.info(
-            f"Extracted data from {len(workflow_runs)} workflows runs from GitHub."
-        )
+        logger.info(f"Extracted data from {len(workflow_runs)} workflows runs from GitHub.")
 
         return workflow_runs
 
     def extract_github_jobs(
         self, workflow_runs: List[Dict[str, object]]
     ) -> List[Dict[str, object]]:
-        logging.info("Extracting jobs data from GitHub...")
+        logger.info("Extracting jobs data from GitHub...")
 
         jobs_data = []
         for workflow_run in workflow_runs:
@@ -106,6 +102,6 @@ class GitHubActionsExtractor:
         for job in jobs_data:
             job = job.update(metadata)
 
-        logging.info(f"Extracted data from {len(jobs_data)} jobs from GitHub.")
+        logger.info(f"Extracted data from {len(jobs_data)} jobs from GitHub.")
 
         return jobs_data

@@ -1,10 +1,11 @@
-import logging
 import os
 import smtplib
 import ssl
 from email.message import EmailMessage
 
 import duckdb
+
+from utils.logger import logger
 
 df = duckdb.sql(
     f"""
@@ -78,7 +79,7 @@ if monthly_billable_minutes_pct > pct_month_elapsed:
         subtype="html",
     )
     if sender_email_address and sender_email_password and recipient_email_address:
-        logging.info("Sending email...")
+        logger.info("Sending email...")
         context = ssl.create_default_context()
         with smtplib.SMTP("smtp.gmail.com", 587) as smtp:
             smtp.ehlo()
@@ -86,4 +87,4 @@ if monthly_billable_minutes_pct > pct_month_elapsed:
             smtp.ehlo()
             smtp.login(sender_email_address, sender_email_password)
             smtp.send_message(msg)
-            logging.info("Email sent.")
+            logger.info("Email sent.")

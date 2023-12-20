@@ -1,4 +1,3 @@
-import logging
 import os
 from pathlib import Path
 
@@ -6,6 +5,8 @@ import duckdb
 import plotly.graph_objects as go
 import pyarrow as pa
 from plotly.subplots import make_subplots
+
+from utils.logger import logger
 
 
 class BuildPlotlyHTMLFile:
@@ -15,7 +16,7 @@ class BuildPlotlyHTMLFile:
     def run(self) -> None:
         # Use duckdb to read mart from data lake
         mart_file = f"{os.getenv('DATA_DIR')}/marts/fct_medium_blogs_per_day.parquet"
-        logging.info(f"Reading mart from : {mart_file}...")
+        logger.info(f"Reading mart from : {mart_file}...")
         df = (
             duckdb.connect(database=":memory:")
             .execute(
@@ -47,8 +48,6 @@ class BuildPlotlyHTMLFile:
 
         # Save to html file in data lake
         bi_html_filename = f"{os.getenv('DATA_DIR')}/bi/index.html"
-        Path(bi_html_filename[: bi_html_filename.rfind("/")]).mkdir(
-            parents=True, exist_ok=True
-        )
-        logging.info(f"Saving plotly html to {bi_html_filename}...")
+        Path(bi_html_filename[: bi_html_filename.rfind("/")]).mkdir(parents=True, exist_ok=True)
+        logger.info(f"Saving plotly html to {bi_html_filename}...")
         fig.write_html(bi_html_filename)
