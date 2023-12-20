@@ -75,7 +75,7 @@ class SendMediumBlogsEmail:
         msg["To"] = recipient_email_address
 
         formatted_blogs = tabulate(
-            list(map(list, zip(*[v for k, v in blogs.items()]))),  # type: ignore
+            list(map(list, zip(*[v for k, v in blogs.items()]))),
             blogs.keys(),  # type: ignore
             tablefmt="unsafehtml",
         )
