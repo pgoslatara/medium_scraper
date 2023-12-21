@@ -54,8 +54,6 @@ jobs:
       - run: poetry run pre-commit run -a
         if: github.event_name == 'pull_request'
 
-      - run: poetry run spacy download en_core_web_sm
-
       - run: poetry run ingestion
 
       - run: poetry run transformation

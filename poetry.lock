@@ -689,6 +689,23 @@ files = [
 ]
 
 [[package]]
+name = "en-core-web-sm"
+version = "3.7.1"
+description = "English pipeline optimized for CPU. Components: tok2vec, tagger, parser, senter, ner, attribute_ruler, lemmatizer."
+optional = false
+python-versions = "*"
+files = [
+    {file = "en_core_web_sm-3.7.1-py3-none-any.whl", hash = "sha256:86cc141f63942d4b2c5fcee06630fd6f904788d2f0ab005cce45aadb8fb73889"},
+]
+
+[package.dependencies]
+spacy = ">=3.7.2,<3.8.0"
+
+[package.source]
+type = "url"
+url = "https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.7.1/en_core_web_sm-3.7.1-py3-none-any.whl"
+
+[[package]]
 name = "filelock"
 version = "3.13.1"
 description = "A platform independent file lock."
@@ -2522,4 +2539,4 @@ files = [
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.11"
-content-hash = "558c04a3401b1e17f129d5943606e2e19bc77a34dc1054cac302bcc88b942d53"
+content-hash = "1e7a17197aebe7a3d03c0730018d505f3e91ed857619cc6b9f02aacd75a4e50c"
