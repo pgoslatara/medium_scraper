@@ -1,0 +1,72 @@
+name: weekly_run
+
+on:
+  schedule:
+    - cron: "0 6 * * 5"
+  workflow_dispatch:
+    inputs:
+      ingestion_lookback_days:
+        description: The number of days into the past for which to ingest data for
+        required: true
+        default: 7
+
+env:
+  DATA_DIR: "/home/runner/work/medium_scraper/medium_scraper/output"
+  DBT_PROFILES_DIR: "${{ github.workspace }}/dbt"
+  DBT_PROJECT_DIR: "${{ github.workspace }}/dbt"
+  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+  INGESTION_LOOKBACK_WINDOW: '${{ github.event.inputs.ingestion_lookback_days || 7}}'
+  PAT_GITHUB:  ${{ secrets.PAT_GITHUB }}
+
+jobs:
+  weekly_run:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v4
+        id: setup-python
+
+      - name: Install Poetry
+        uses: snok/install-poetry@v1
+        with:
+            virtualenvs-create: true
+            virtualenvs-in-project: true
+            installer-parallel: true
+
+      - name: Load cached venv
+        id: cached-poetry-dependencies
+        uses: actions/cache@v3
+        with:
+            path: .venv
+            key: venv-${{ runner.os }}-${{ steps.setup-python.outputs.python-version }}-${{ hashFiles('**/poetry.lock') }}
+
+      - name: Install python dependencies
+        if: steps.cached-poetry-dependencies.outputs.cache-hit != 'true'
+        run: poetry install --no-interaction --no-ansi
+
+      - run: poetry run spacy download en_core_web_sm
+
+      - run: poetry run ingestion
+
+      - run: poetry run transformation
+
+      - run: poetry run data_products
+        env:
+          SENDER_EMAIL_ADDRESS: ${{ secrets.SENDER_EMAIL_ADDRESS }}
+          SENDER_EMAIL_PASSWORD: ${{ secrets.SENDER_EMAIL_PASSWORD }}
+          RECIPIENT_EMAIL_ADDRESS: ${{ secrets.RECIPIENT_EMAIL_ADDRESS }}
+
+      - uses: EndBug/add-and-commit@v9
+        with:
+          author_name: Github Actions
+          author_email: actions@github.com
+          new_branch: weekly_run_branch_${{ github.run_id }}
+
+      # To ensure the PR triggers CI workflows it needs to use someone's PAT instead of the default GITHUB_TOKEN
+      - name: Create Pull Request
+        run: |
+          export GITHUB_TOKEN= && \
+          echo ${{ secrets.PAT_GITHUB }} > token.txt && \
+          gh auth login --with-token < token.txt && \
+          gh pr create -B main -H weekly_run_branch_${{ github.run_id }} --title 'weekly_run ${{ github.run_id }}' --body 'Created by Github action' --label 'automerge'
