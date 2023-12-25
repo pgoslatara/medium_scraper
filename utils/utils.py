@@ -61,6 +61,7 @@ def call_github_api(
                 params,
             )
 
+    logger.info(f"Response: {r.status_code} {r.reason}")
     return r.json()
 
 
