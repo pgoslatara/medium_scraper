@@ -1514,6 +1514,27 @@ test = ["ansi2html", "diffoscope", "pytest-console-scripts", "pytest-cov", "pyte
 translation = ["jupyterlab-server (>=2.8.1,<3)"]
 
 [[package]]
+name = "jupyterlite-pyodide-kernel"
+version = "0.2.0"
+description = "Python kernel for JupyterLite powered by Pyodide"
+optional = false
+python-versions = ">=3.8"
+files = [
+    {file = "jupyterlite_pyodide_kernel-0.2.0-py3-none-any.whl", hash = "sha256:17d713f0eeb3f778c4d51129834096d364c16f05ac06e10292383c43c0eb5bd9"},
+    {file = "jupyterlite_pyodide_kernel-0.2.0.tar.gz", hash = "sha256:5979ffd9e4eeb8af145e14a900952a2e8ce3633158b385b9444a8238520f3482"},
+]
+
+[package.dependencies]
+jupyterlite-core = ">=0.2.0,<0.3.0"
+pkginfo = "*"
+
+[package.extras]
+dev = ["build", "hatch", "jupyterlab (>=4.0.7,<5.0.0a0)"]
+docs = ["ipywidgets (>=8.1.1,<9)", "jupyter-server-mathjax", "jupyterlab-language-pack-fr-fr", "jupyterlab-language-pack-zh-cn", "libarchive-c", "myst-parser", "pydata-sphinx-theme", "sphinx-copybutton"]
+lint = ["black", "ruff"]
+test = ["pytest", "pytest-console-scripts (>=1.4.0)", "pytest-cov", "pytest-html"]
+
+[[package]]
 name = "langcodes"
 version = "3.3.0"
 description = "Tools for labeling human languages with IETF language tags"
@@ -3884,4 +3905,4 @@ testing = ["big-O", "jaraco.functools", "jaraco.itertools", "more-itertools", "p
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.11"
-content-hash = "df67c0ee67ffaa85c73da486e86a7349c5ef03a0d1fb3ed0c4576a58b0302ead"
+content-hash = "18441347a74f178044e2ae38bce8b2c6c5ec82e61a622472e7eeb2adab60da04"

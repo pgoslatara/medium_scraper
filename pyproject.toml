@@ -42,6 +42,7 @@ retry="*"
 spacy="*"
 tabulate="*"
 jupyterlite-core = {version="^0.2.1", extras=["all"]}
+jupyterlite-pyodide-kernel = "^0.2.0"
 
 [tool.poetry.scripts]
 data_products = "src.data_products.main:main"
