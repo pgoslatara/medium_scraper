@@ -2,7 +2,7 @@ repository:
   # See https://developer.github.com/v3/repos/#edit for all available settings.
   name: medium_scraper
   description: A slightly sarcastic, highly over-engineered GitHub-as-a-Data-Platform Proof-of-Concept.
-  homepage: https://github.com/pgoslatara/medium_scraper
+  homepage: https://pgoslatara.github.io/medium_scraper/
   private: false
   has_issues: true
   has_wiki: false
@@ -21,11 +21,7 @@ branches:
         checks:
           # https://docs.github.com/en/rest/branches/branch-protection?apiVersion=2022-11-28#update-branch-protection
           context: [
-            "ci_pipeline / ci_pipeline (3.8)",
-            "ci_pipeline / ci_pipeline (3.9)",
-            "ci_pipeline / ci_pipeline (3.10)",
             "ci_pipeline / ci_pipeline (3.11)",
-            "ci_pipeline / dev_container"
           ]
       dismiss_stale_reviews: true
       enforce_admins: true
