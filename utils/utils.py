@@ -8,7 +8,7 @@ from glob import glob
 from pathlib import Path
 from typing import Any, Dict, List, Mapping, Optional, Union
 
-import requests
+import cloudscraper  # type: ignore[import-not-found]
 from dbt.cli.main import dbtRunner, dbtRunnerResult
 from dbt.events.base_types import EventMsg
 
@@ -66,9 +66,9 @@ def call_github_api(
 
 
 @lru_cache
-def create_requests_session() -> requests.Session:
+def create_requests_session() -> cloudscraper.Session:
     logger.info("Creating re-usable requests session...")
-    return requests.Session()
+    return cloudscraper.create_scraper()
 
 
 @lru_cache
