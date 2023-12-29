@@ -1,6 +1,7 @@
 import os
 
-from src.data_products.bi_plotly import BuildPlotlyHTMLFile
+import papermill as pm  # type: ignore[import-not-found]
+
 from src.data_products.email_weekly_medium_blogs import SendMediumBlogsEmail
 
 
@@ -12,8 +13,11 @@ def main() -> None:
     except:
         lookback_days = default_lookback
 
-    BuildPlotlyHTMLFile().run()
     SendMediumBlogsEmail(lookback_days=lookback_days).run()
+    pm.execute_notebook(
+        input_path="./src/data_products/jupyter-lite.ipynb",
+        output_path="./src/data_products/jupyter-lite.ipynb",
+    )
 
 
 if __name__ == "__main__":

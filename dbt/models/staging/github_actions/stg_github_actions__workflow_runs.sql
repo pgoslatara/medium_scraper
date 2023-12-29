@@ -10,6 +10,9 @@ with
             repository.private as is_private_repo,
             repository.name as repo_name,
             strptime(run_started_at, '%Y-%m-%dT%H:%M:%SZ') as run_started_at,
+            cast(
+                strptime(run_started_at, '%Y-%m-%dT%H:%M:%SZ') as date
+            ) as run_started_date,
             workflow_id,
             row_number() over (
                 partition by workflow_run_id order by extracted_at desc
