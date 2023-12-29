@@ -28,6 +28,13 @@
       },
       {
         "extension": "./extension",
+        "liteExtension": true,
+        "load": "static/remoteEntry.6b46a36ecbe39a20325f.js",
+        "name": "@jupyterlite/xeus-python-kernel",
+        "style": "./style"
+      },
+      {
+        "extension": "./extension",
         "liteExtension": false,
         "load": "static/remoteEntry.70a4f7e7a0383740860d.js",
         "mimeExtension": "./mimeExtension",

@@ -6,8 +6,10 @@ medium_scraper:
      extensions:
       - json
      path: ':memory:'
+     threads: 8
    prod:
      type: duckdb
      extensions:
       - json
      path: ':memory:'
+     threads: 8

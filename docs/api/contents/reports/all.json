@@ -1,0 +1,29 @@
+{
+  "content": [
+    {
+      "content": null,
+      "created": "2023-12-29T18:44:46.095305Z",
+      "format": null,
+      "hash": null,
+      "hash_algorithm": null,
+      "last_modified": "2023-12-29T18:35:52.061063Z",
+      "mimetype": null,
+      "name": "rpt_github_action_usage.parquet",
+      "path": "reports/rpt_github_action_usage.parquet",
+      "size": 1134,
+      "type": "file",
+      "writable": true
+    }
+  ],
+  "created": "2023-12-29T18:44:46.095305Z",
+  "format": "json",
+  "hash": null,
+  "hash_algorithm": null,
+  "last_modified": "2023-12-29T18:44:46.095305Z",
+  "mimetype": null,
+  "name": "reports",
+  "path": "reports",
+  "size": null,
+  "type": "directory",
+  "writable": true
+}
