@@ -64,9 +64,6 @@ jobs:
           SENDER_EMAIL_ADDRESS: ${{ secrets.SENDER_EMAIL_ADDRESS }}
           SENDER_EMAIL_PASSWORD: ${{ secrets.SENDER_EMAIL_PASSWORD }}
 
-      - name: Run jupyter-lite.ipynb
-        run: poetry run jupyter execute ./src/data_products.jupyter-lite.ipynb
-
       - name: Build static content
         run: |
           poetry run jupyter lite build \

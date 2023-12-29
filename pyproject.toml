@@ -36,7 +36,7 @@ dbt-duckdb="*"
 en_core_web_sm = {url = "https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.7.1/en_core_web_sm-3.7.1-py3-none-any.whl"}
 jupyterlite-core = {version="*", extras=["all"]}
 jupyterlite-pyodide-kernel = "*"
-plotly=">=5.13.0"
+papermill = "*"
 pyarrow="*"
 PyGithub="*"
 requests="*"
