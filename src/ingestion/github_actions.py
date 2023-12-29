@@ -1,3 +1,4 @@
+import os
 from datetime import datetime, timedelta
 from typing import Any, Dict, List
 
@@ -35,6 +36,8 @@ class GitHubActionsExtractor:
         repos = call_github_api(
             "GET", "user/repos", params={"per_page": per_page, "type": "owner"}
         )
+        if os.getenv("CICD_RUN"):
+            repos = repos[0:5]
 
         workflow_runs = []
         for repo in repos:
