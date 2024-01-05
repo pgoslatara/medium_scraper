@@ -72,6 +72,14 @@ jobs:
             --lite-dir ./src/data_products \
             --output-dir docs
 
+      - name: Run pre-commit
+        if: github.event_name != 'pull_request'
+        run: poetry run pre-commit run -a || true'
+
+      - name: Run pre-commit (again)
+        if: github.event_name != 'pull_request'
+        run: poetry run pre-commit run -a || true'
+
       - uses: EndBug/add-and-commit@v9
         if: github.event_name != 'pull_request'
         with:
