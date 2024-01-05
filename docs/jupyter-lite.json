@@ -16,6 +16,12 @@
       },
       {
         "extension": "./extension",
+        "liteExtension": false,
+        "load": "static/remoteEntry.a37e37c87d212fe85e13.js",
+        "name": "@jupyter-widgets/jupyterlab-manager"
+      },
+      {
+        "extension": "./extension",
         "liteExtension": true,
         "load": "static/remoteEntry.b251ea2aad2b76ca95d7.js",
         "name": "@jupyterlite/pyodide-kernel-extension"
