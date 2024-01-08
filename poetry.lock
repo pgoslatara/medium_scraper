@@ -1701,13 +1701,13 @@ test = ["hatch", "ipykernel", "openapi-core (>=0.18.0,<0.19.0)", "openapi-spec-v
 
 [[package]]
 name = "jupyterlite-core"
-version = "0.2.1"
+version = "0.2.2"
 description = ""
 optional = false
 python-versions = ">=3.8"
 files = [
-    {file = "jupyterlite_core-0.2.1-py3-none-any.whl", hash = "sha256:3f6161c4ad609bca913a42598005ff577611daae8dce448292fbb2c15db6b393"},
-    {file = "jupyterlite_core-0.2.1.tar.gz", hash = "sha256:83814923ddef30b4f99e699559865f767a4640761a9dbd3d8f7ae58cd96ebfbb"},
+    {file = "jupyterlite_core-0.2.2-py3-none-any.whl", hash = "sha256:1f1babdbe630d429f631a508f0e3b3ffb4dfa005aeb748831e854c24025e766f"},
+    {file = "jupyterlite_core-0.2.2.tar.gz", hash = "sha256:7094cd2b1cc6d8bd61f132988467900fda78caaf8ccdd839d6d50f391d5df89e"},
 ]
 
 [package.dependencies]
