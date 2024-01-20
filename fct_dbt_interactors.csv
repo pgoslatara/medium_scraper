@@ -1,0 +1,11 @@
+,username,user_url,location,num_issues_created,first_issue_created_at,last_issue_created_at,num_prs_created,first_pr_created_at,last_pr_created_at,is_user_based_in_netherlands
+0,emmyoop,https://github.com/emmyoop,"Austin, TX",1.0,2023-12-07 15:47:42,2023-12-07 15:47:42,4.0,2023-11-01 20:09:29,2023-12-18 19:27:05,False
+1,dave-connors-3,https://github.com/dave-connors-3,Chicago,,,,1.0,2023-02-08 15:08:33,2023-02-08 15:08:33,False
+2,eogilvy12,https://github.com/eogilvy12,Philadelphia,,,,1.0,2019-03-15 01:50:17,2019-03-15 01:50:17,False
+3,MichelleArk,https://github.com/MichelleArk,Toronto,,,,4.0,2023-08-08 00:47:00,2023-12-07 16:21:53,False
+4,mikealfare,https://github.com/mikealfare,"Richmond, VA",,,,4.0,2023-06-04 16:24:02,2023-11-06 23:58:50,False
+5,colin-rogers-dbt,https://github.com/colin-rogers-dbt,,,,,1.0,2023-12-12 22:24:40,2023-12-12 22:24:40,False
+6,seanglynn-thrive,https://github.com/seanglynn-thrive,,,,,1.0,2023-08-31 16:47:35,2023-08-31 16:47:35,False
+7,yassun7010,https://github.com/yassun7010,Japan,,,,1.0,2023-12-06 02:53:45,2023-12-06 02:53:45,False
+8,IlyaDropit,https://github.com/IlyaDropit,,1.0,2023-12-26 13:34:18,2023-12-26 13:34:18,,,,False
+9,sfwatergit,https://github.com/sfwatergit,"San Francisco, CA",1.0,2023-09-26 19:28:50,2023-09-26 19:28:50,,,,False
