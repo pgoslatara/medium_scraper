@@ -36,7 +36,7 @@ class GitHubActionsExtractor:
         repos = call_github_api(
             "GET", "user/repos", params={"per_page": per_page, "type": "owner"}
         )
-        if os.getenv("CICD_RUN"):
+        if os.getenv("CICD_RUN") == "True":
             repos = repos[0:5]
 
         workflow_runs = []
