@@ -76,7 +76,9 @@ def get_github_issues(repos: List[str]) -> List[Dict[str, object]]:
         return issues
 
     _since = (
-        (datetime.utcnow() - timedelta(days=3)) if os.getenv("CICD_RUN") else datetime(1900, 1, 1)
+        (datetime.utcnow() - timedelta(days=3))
+        if os.getenv("CICD_RUN") == "True"
+        else datetime(1900, 1, 1)
     )
     logger.info(f"{_since=}")
 
@@ -135,12 +137,12 @@ def get_github_pull_requests(repos: List[str]) -> List[Dict[str, object]]:
                 {k: v for k, v in x.items() if k in keys_to_keep} for x in pull_requests_retrieved
             ]
             page += 1
-            if len(pull_requests_retrieved) == 0 or (os.getenv("CICD_RUN") and page > 2):
+            if len(pull_requests_retrieved) == 0 or (os.getenv("CICD_RUN") == "True" and page > 2):
                 break
 
         return pull_requests
 
-    _state = "open" if os.getenv("CICD_RUN") else "all"
+    _state = "open" if os.getenv("CICD_RUN") == "True" else "all"
     logger.info(f"{_state=}")
 
     pool = ThreadPool(1)
@@ -168,7 +170,7 @@ def get_github_pull_requests(repos: List[str]) -> List[Dict[str, object]]:
 
 
 def get_github_repo_interactor_info(usernames: List[object]) -> List[Dict[str, object]]:
-    if os.getenv("CICD_RUN"):
+    if os.getenv("CICD_RUN") == "True":
         usernames = usernames[:10]
 
     pool = ThreadPool(1)
@@ -211,7 +213,7 @@ def main() -> None:
     for org in github_orgs:
         repos = get_github_repos_per_org(org)
         repo_names = [str(x["full_name"]) for x in repos if not x["fork"]]
-        if os.getenv("CICD_RUN"):
+        if os.getenv("CICD_RUN") == "True":
             repo_names = repo_names[:10]
 
         logger.info(f"Retrieving issues and PRs for {len(repo_names)} non-forked repos.")
