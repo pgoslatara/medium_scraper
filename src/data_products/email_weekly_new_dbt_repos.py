@@ -21,7 +21,7 @@ class SendNewDbtRepoEmail:
                 f"""
                     SELECT
                         repo_name,
-                        url,
+                        html_url,
                         first_extracted_at
                     FROM read_parquet("{os.getenv('DATA_DIR')}/marts/dim_dbt_repos.parquet")
                     WHERE
