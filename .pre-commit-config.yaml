@@ -27,12 +27,12 @@ repos:
         args: ["--profile", "black", "--filter-files"]
         name: isort (python)
   - repo: https://github.com/ambv/black
-    rev: 24.1.1
+    rev: 24.2.0
     hooks:
       - id: black
         name: Run black formatter
   - repo: https://github.com/PyCQA/autoflake
-    rev: v2.2.1
+    rev: v2.3.0
     hooks:
       - id: autoflake
         args: ["--in-place", "--remove-all-unused-imports"]
