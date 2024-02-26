@@ -852,13 +852,13 @@ urllib3 = ">=1.0,<2.0"
 
 [[package]]
 name = "dbt-duckdb"
-version = "1.7.1"
+version = "1.7.2"
 description = "The duckdb adapter plugin for dbt (data build tool)"
 optional = false
 python-versions = ">=3.8"
 files = [
-    {file = "dbt-duckdb-1.7.1.tar.gz", hash = "sha256:e59b3e58d7a461988d000892b75ce95245cdf899c847e3a430eb2e9e10e63bb9"},
-    {file = "dbt_duckdb-1.7.1-py3-none-any.whl", hash = "sha256:bd75b1a72924b942794d0c3293a1159a01f21ab9d82c9f18b22c253dedad101a"},
+    {file = "dbt-duckdb-1.7.2.tar.gz", hash = "sha256:4767743f9e437a74b94722984bf7ae201e91f83ef7eb8023850a970b1fb7505c"},
+    {file = "dbt_duckdb-1.7.2-py3-none-any.whl", hash = "sha256:5e2f1cfb2244caa464d4a28674e5a8c3d06a2e9243a7712113997fd49d19ac37"},
 ]
 
 [package.dependencies]
@@ -867,6 +867,7 @@ duckdb = ">=0.7.0"
 
 [package.extras]
 glue = ["boto3", "mypy-boto3-glue"]
+md = ["duckdb (>=0.7.0,<=0.9.2)"]
 
 [[package]]
 name = "dbt-extractor"
