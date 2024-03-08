@@ -1,0 +1,542 @@
+[
+    {
+        "extraction_id": "28d6d2fc-94f3-4bcd-b1ba-6fcfaea3ebf1",
+        "extracted_at": "2024-03-08 21:44:30.559429",
+        "extracted_at_epoch": 1709934270,
+        "author_name": "simon kamande",
+        "author_url": "https://medium.com/@kamandesimone",
+        "num_followers": 8,
+        "short_bio": "data enthusiast , all about data science and machine learning"
+    },
+    {
+        "extraction_id": "28d6d2fc-94f3-4bcd-b1ba-6fcfaea3ebf1",
+        "extracted_at": "2024-03-08 21:44:30.559429",
+        "extracted_at_epoch": 1709934270,
+        "author_name": "Florian Valéry",
+        "author_url": "https://medium.com/@florian.valery1",
+        "num_followers": 1,
+        "short_bio": "SRE and devops stuff."
+    },
+    {
+        "extraction_id": "28d6d2fc-94f3-4bcd-b1ba-6fcfaea3ebf1",
+        "extracted_at": "2024-03-08 21:44:30.559429",
+        "extracted_at_epoch": 1709934270,
+        "author_name": "Eleanor Watson",
+        "author_url": "https://medium.com/@eleanor.watson",
+        "num_followers": 40,
+        "short_bio": "Data Engineer/ Machine Learning Engineer. Tech, Sailing, Bouldering. All views are my own. Consider buying me a coffee: https://bmc.link/lnrwatsonb"
+    },
+    {
+        "extraction_id": "28d6d2fc-94f3-4bcd-b1ba-6fcfaea3ebf1",
+        "extracted_at": "2024-03-08 21:44:30.559429",
+        "extracted_at_epoch": 1709934270,
+        "author_name": "João Escórcio",
+        "author_url": "https://medium.com/@jv.escorcio",
+        "num_followers": 8,
+        "short_bio": "Hello! I'm João Escórcio, or just João :). Data Analyst | Economist from UFC | Master's student in Economics and Public Policy at ISCTE-IUL."
+    },
+    {
+        "extraction_id": "28d6d2fc-94f3-4bcd-b1ba-6fcfaea3ebf1",
+        "extracted_at": "2024-03-08 21:44:30.559429",
+        "extracted_at_epoch": 1709934270,
+        "author_name": "JakkapatG",
+        "author_url": "https://medium.com/@jakkapat.j7",
+        "num_followers": 0,
+        "short_bio": "appSign upSign inWriteSign upSign inJakkapatGHomeAboutFeb 13, 2024Mage AI VS Airflowopensource data pipeline platform Data Engineer คืออะไร Data Engineer คือ ผู้ที่ทำหน้าที่ในการรวบรวม ทำความสะอาด จัดเก็บ และประมวลผลข้อมูลที่ได้มา ให้เป็นระเบียบ เพื่อพร้อมสำหรับการใช้งาน Data Pipeline คืออะไร Data Pipeline คือ กระบวนการอย่างหนึ่งที่แสดงถึงการเคลื่อนที่ของข้อมูลจากแหล่งข้อมูล (Data Source) ไปยังจุดหมายปลายทาง ซึ่งประกอบไปด้วย 4 ขั้นตอน คือ การนำเข้าข้อมูล (Ingestion) การแปลงข้อมูล (Transformation)Mage Ai2 min readMage Ai2 min readJul 24, 20235 เทคนิคการใช้สี ในการทำ Presentationหลักการในการใช้สีที่เหมาะสม ในการทำ Presentation —  การใช้สีนั้นเป็นสิ่งที่ต้องมี ในหลากหลายการที่มีความเกี่ยวข้องกับการออกแบบ ซึ่งรวมไปถึงการทำ Presentation ด้วย หากมีการใช้สีที่ไม่ดีหรือไม่เหมาะสม จะทำให้งานที่ออกมา มีความไม่สมดุลหรือไม่สวยงาม เทคนิคการใช้สีง่ายๆ นั้นประกอบไปด้วย ศึกษาความหมายของสี ใช้สีไม่เกิน 3 สี ใช้ทฤษฎี 60–30–10 ใช้สีขั่วตรงข้าม ใช้สีตามทฤษฎีสี เทคนิคที่ 1 ศึกษาความหมายของสีเทคนิคการใช้สี2 min readเทคนิคการใช้สี2 min readAug 1, 20225 tricks in pythonBeginner in python สลับค่าของตัวแปร เมื่อเรามีความจำเป็นที่จะต้องสลับค่าของตัวแปรที่สร้างขึ้น แต่ไม่อยากที่จะสร้างตัวแปรใหม่ ใช้วิธีนี้เลย a = 5\nb = 10 print(a, b)\n>> 5 10 a, b = b, a print(a, b)\n>> 10 5 2. เขียน if-else ในบรรทัดเดียว ในกรณีที่อยากเขียนเงื่อนไขง่ายๆ ไม่ซับซ้อนแต่ไม่อยากเขียนหลายบรรทัด ก็ให้ใช้โครงสร้างนี้ start = True if start:\n    print(\"GO!!\")\nelse:\n    print(\"STOP!!!\") # one liner\nprint(\"GO!!\") …Python Tricks1 min readPython Tricks1 min readMay 17, 2022Rust Language Releases 2024 Roadmapทีมออกแบบภาษา Rust ได้เปิดเผยแผนงานในการวางแผนการพัฒนาภาษาจนถึงปี 2024 ปัจจุบัน Rust ได้รับการคุ้มครองโดย Rust Foundation ซึ่งเป็นองค์กรข้ามอุตสาหกรรมที่มุ่งสนับสนุนภาษาและนักพัฒนา\n\nRust เป็นที่นิยมในสถานการณ์ต่างๆ รวมถึงการฝังในภาษาอื่น การเขียนโปรแกรมที่มีข้อกำหนดด้านพื้นที่และเวลาเฉพาะ และการเขียนโค้ดระดับต่ำRust Language1 min readRust Language1 min readFeb 28, 2022Tutorial for Chat BotHow to make facebook Chat-Bot with django in step by step Befor we begin I have to say that I learnt how to make chat bot from link below. If you want to find more visit this link. Facebook Messenger Bot with Django // Blog // Coding for Entrepreneurs\nCoding for Entrepreneurs is a series of project-based programming courses designed to teach non-technical founders how…www.codingforentrepreneurs.comChat Bot4 min readChat Bot4 min readFeb 8, 2022Deepmind AI that can be a programmerคงมีบางคนรู้จักเจ้า Alphacode กันมาบ้าง ไม่ว่าจะทางเว็ปข่าวสารต่างๆ ไม่ก็จากงานเเข่งขันที่เจ้า Alphacodeเข้าร่วม อย่างเเรกเลยคือเจ้า Alphacodeมันคือ AI ที่ถูกออกเเบบมาเพื่อเป็น Programmer อย่างที่ทุกคนรู้กัน AI เกิดมาจากการเขียนโปรเเกรมซึ่งเจ้า Alphacodeก็เช่นกัน เเต่มันเป็น AI ที่เขียนโปรเเกรมได้เอง ผู้สร้างของเจ้า Alphacode คือ Deepmind นั้นเอง เรามาดูตัวอย่างโจทย์ที่เจ้า Alphacode ได้ในการเเข่งขันกันดีกว่าAlphacode1 min readAlphacode1 min readNov 23, 2021How to “List Comprehention”Hacker rank (Find Digits with list comprehention) Solving Basic Solv2 min read2 min readSep 7, 2021มีใครรู้จัก Quantum Computing บ้างงทำไมมันดูใหญ่จังฟะ…….ช่างเถอะเข้าเรื่องกันน Quantum computing คือขั้นกว่าของ computer หรือเรียกอีกอย่างว่า computer ของพระเจ้า 555 (เเต่มันเกิดหลังคอมพิวเตอร์นะ) Quantum computing เนี้ยสามารถประมวลผลได้ไว้กว่าคอมพิวเตอร์ถึง 100 ล้านเท่าไม่ใช่สิต้องบอกว่า 100 ล้านล้านเท่าถึงจะถูก ไวเกิ้นนนนน ด้วยการที่มันสามารถทำการคำนวนเชิงคณิตศาสตร์ได้พร้อมกันหลายๆอย่าง จึงทำให้คอมพิวเตอร์ปัจจุบันที่การคำนวณจะแสดงออกในรูปแบบของ Linear กินฝุ่นกันเลยทีเดียวQuantum Computing1 min readQuantum Computing1 min readJakkapatG"
+    },
+    {
+        "extraction_id": "28d6d2fc-94f3-4bcd-b1ba-6fcfaea3ebf1",
+        "extracted_at": "2024-03-08 21:44:30.559429",
+        "extracted_at_epoch": 1709934270,
+        "author_name": "Hugo Lu",
+        "author_url": "https://medium.com/@hugolu87",
+        "num_followers": 5200,
+        "short_bio": "Friend of MediumHugo Lu - I write about how to be good at Data engineering and do the coolest data stuff. I am the CEO @ Orchestra, a data release pipeline management platform"
+    },
+    {
+        "extraction_id": "28d6d2fc-94f3-4bcd-b1ba-6fcfaea3ebf1",
+        "extracted_at": "2024-03-08 21:44:30.559429",
+        "extracted_at_epoch": 1709934270,
+        "author_name": "Sheranga Gamwasam",
+        "author_url": "https://medium.com/@sherangaofc",
+        "num_followers": 37,
+        "short_bio": "Data Engineer : https://www.linkedin.com/in/sheranga-gamwasam/"
+    },
+    {
+        "extraction_id": "28d6d2fc-94f3-4bcd-b1ba-6fcfaea3ebf1",
+        "extracted_at": "2024-03-08 21:44:30.559429",
+        "extracted_at_epoch": 1709934270,
+        "author_name": "Paulo Cesar Rodrigues da Silva",
+        "author_url": "https://medium.com/@paulocesar.r.silva",
+        "num_followers": 3,
+        "short_bio": "Passionate about data and technology."
+    },
+    {
+        "extraction_id": "28d6d2fc-94f3-4bcd-b1ba-6fcfaea3ebf1",
+        "extracted_at": "2024-03-08 21:44:30.559429",
+        "extracted_at_epoch": 1709934270,
+        "author_name": "Amit Khullaar",
+        "author_url": "https://medium.com/@amitkhullaar",
+        "num_followers": 0,
+        "short_bio": "appSign upSign inWriteSign upSign inAmit KhullaarHomeListsAboutPinnedMVP : First Step to build a successful productAn MVP is a simplified version of your product or service that contains only the most important features needed to validate your business idea and satisfy early adopters. By testing your MVP, you can gather customer feedback, improve your product, and ultimately increase your chances of success. However, careful planning…Software Development3 min readSoftware Development3 min read3 days agoArchitecting Data PipelinesIn the era of big data, the effective management and processing of data are critical for businesses. Data pipelines serve as the backbone of modern data architecture, facilitating the seamless flow of information from various sources to destinations for analysis and decision-making. Definition of Data Pipelines A data pipeline is a set of processes…Data Pipeline18 min readData Pipeline18 min read3 days agoDemystifying AI: How Machine Learning is Transforming Software DevelopmentArtificial Intelligence (AI) and Machine Learning (ML) have moved from being buzzwords to driving transformative changes across various industries, including software development. In this blog, we will explore the deep impact of AI and ML on software development, shedding light on concepts, benefits, challenges, and practical implementation steps. Understanding AI and Machine Learning AI refers…Machine Learning5 min readMachine Learning5 min read3 days agoAI-Powered Test Automation: Transforming Software TestingIn this article, we will delve deep into the world of AI-powered test automation, exploring what it is, how it works, and how it can be implemented effectively in real-world scenarios. We’ll also provide concrete examples and discuss the technologies and tools that enable AI-driven test automation. Understanding AI-Powered Test Automation AI-powered test automation…5 min read5 min read6 days agoAI in Security Testing:In Software development security is imperative. With cyber threats continuously evolving, traditional security testing methods often fall short. This is where Artificial Intelligence (AI) comes into the picture. AI-powered security testing leverages machine intelligence to find vulnerabilities and strengthen defenses more effectively. In this comprehensive guide, lets dive deep into…AI4 min readAI4 min readMar 1, 2024AI in Test Environment ManagementTest environment management is a crucial aspect of software testing. It involves setting up, configuring, and maintaining the environments in which tests are conducted. This can be a complex and time-consuming process, especially in large-scale software development projects. …5 min read5 min readFeb 29, 2024AI-Driven Test PrioritizationIn the fast-paced world of software development, ensuring that your applications are both functional and reliable is crucial. This is where software testing comes into play. However, as applications grow in complexity, so do the number of test cases required. …AI4 min readAI4 min readFeb 28, 2024AI-Driven Test Data GenerationIn software testing, one of the critical challenges is ensuring that your test data should be not only comprehensive but also representative of real-world scenarios. Test data generation is a fundamental aspect of testing, but manual generation can be time-consuming, error-prone, and often inadequate to cover all possible test cases…3 min read3 min readFeb 27, 2024Implementing AI-Powered Test Analytics: Transforming Software TestingIts impreative to ensure the quality and reliability of software and to meet this demand, the integration of Artificial Intelligence (AI) in software testing has become a game-changer. In this article we will explore how AI-driven analytics can revolutionize software testing. Understanding AI-Powered Test Analytics AI-powered test analytics involves the use of artificial intelligence…AI3 min readAI3 min readFeb 25, 2024How to Leverage AI in Software Testing ?In the ever-evolving landscape of software development, testing is a critical phase to ensure the quality and reliability of software products. With the rapid advancements in Artificial Intelligence (AI), integrating AI into software testing has become a game-changer. …Software Testing3 min readSoftware Testing3 min readAmit KhullaarSenior Technology Leader | Building SaaS platforms , Engineer Innovative Solutions , Scale Organisations | I Help taking companies from 1 to 100"
+    },
+    {
+        "extraction_id": "28d6d2fc-94f3-4bcd-b1ba-6fcfaea3ebf1",
+        "extracted_at": "2024-03-08 21:44:30.559429",
+        "extracted_at_epoch": 1709934270,
+        "author_name": "Iamjaswanth",
+        "author_url": "https://medium.com/@iamjaswanth9",
+        "num_followers": 6,
+        "short_bio": ""
+    },
+    {
+        "extraction_id": "28d6d2fc-94f3-4bcd-b1ba-6fcfaea3ebf1",
+        "extracted_at": "2024-03-08 21:44:30.559429",
+        "extracted_at_epoch": 1709934270,
+        "author_name": "Furcy Pin",
+        "author_url": "https://medium.com/@pin.furcy",
+        "num_followers": 501,
+        "short_bio": "[Available for freelance work] Data Engineer, Data Plumber, Data Librarian, Data Smithy."
+    },
+    {
+        "extraction_id": "28d6d2fc-94f3-4bcd-b1ba-6fcfaea3ebf1",
+        "extracted_at": "2024-03-08 21:44:30.559429",
+        "extracted_at_epoch": 1709934270,
+        "author_name": "Seckin Dinc",
+        "author_url": "https://medium.com/@seckindinc",
+        "num_followers": 453,
+        "short_bio": "Building successful data teams to develop great data products"
+    },
+    {
+        "extraction_id": "28d6d2fc-94f3-4bcd-b1ba-6fcfaea3ebf1",
+        "extracted_at": "2024-03-08 21:44:30.559429",
+        "extracted_at_epoch": 1709934270,
+        "author_name": "Jaime Andres Salas",
+        "author_url": "https://medium.com/@jsalasmoreira",
+        "num_followers": 4,
+        "short_bio": "Sr Data Engineer @Infostrux. Experience in ML and Data Ops"
+    },
+    {
+        "extraction_id": "28d6d2fc-94f3-4bcd-b1ba-6fcfaea3ebf1",
+        "extracted_at": "2024-03-08 21:44:30.559429",
+        "extracted_at_epoch": 1709934270,
+        "author_name": "Justin Kolpak",
+        "author_url": "https://medium.com/@justin.kolpak",
+        "num_followers": 16,
+        "short_bio": ""
+    },
+    {
+        "extraction_id": "28d6d2fc-94f3-4bcd-b1ba-6fcfaea3ebf1",
+        "extracted_at": "2024-03-08 21:44:30.559429",
+        "extracted_at_epoch": 1709934270,
+        "author_name": "Murat Özcan",
+        "author_url": "https://medium.com/@muratozcann",
+        "num_followers": 5,
+        "short_bio": ""
+    },
+    {
+        "extraction_id": "28d6d2fc-94f3-4bcd-b1ba-6fcfaea3ebf1",
+        "extracted_at": "2024-03-08 21:44:30.559429",
+        "extracted_at_epoch": 1709934270,
+        "author_name": "Anav Mahajan",
+        "author_url": "https://medium.com/@anavsaraf",
+        "num_followers": 172,
+        "short_bio": "Passionate DevOps enthusiast and eager student of the subject."
+    },
+    {
+        "extraction_id": "28d6d2fc-94f3-4bcd-b1ba-6fcfaea3ebf1",
+        "extracted_at": "2024-03-08 21:44:30.559429",
+        "extracted_at_epoch": 1709934270,
+        "author_name": "Sara Almeda Caballero",
+        "author_url": "https://medium.com/@sara.almedac",
+        "num_followers": 10,
+        "short_bio": "I'm a data architect who combines technical expertise, and strategic thinking. I have a relentless curiosity and genuine passion for data."
+    },
+    {
+        "extraction_id": "28d6d2fc-94f3-4bcd-b1ba-6fcfaea3ebf1",
+        "extracted_at": "2024-03-08 21:44:30.559429",
+        "extracted_at_epoch": 1709934270,
+        "author_name": "Vaibhav Srivastava",
+        "author_url": "https://medium.com/@vabnix",
+        "num_followers": 13,
+        "short_bio": "Solutions Architect | AWS & Azure Certified | Hybrid & Multi-Cloud Exp. | Technophile"
+    },
+    {
+        "extraction_id": "28d6d2fc-94f3-4bcd-b1ba-6fcfaea3ebf1",
+        "extracted_at": "2024-03-08 21:44:30.559429",
+        "extracted_at_epoch": 1709934270,
+        "author_name": "Mahipal Zanakat",
+        "author_url": "https://medium.com/@storiesbymahipal",
+        "num_followers": 5,
+        "short_bio": "Random outlier exploring new technologies."
+    },
+    {
+        "extraction_id": "28d6d2fc-94f3-4bcd-b1ba-6fcfaea3ebf1",
+        "extracted_at": "2024-03-08 21:44:30.559429",
+        "extracted_at_epoch": 1709934270,
+        "author_name": "Rafael VM",
+        "author_url": "https://medium.com/@jr.vera.ma",
+        "num_followers": 2,
+        "short_bio": ""
+    },
+    {
+        "extraction_id": "28d6d2fc-94f3-4bcd-b1ba-6fcfaea3ebf1",
+        "extracted_at": "2024-03-08 21:44:30.559429",
+        "extracted_at_epoch": 1709934270,
+        "author_name": "Mor Dvash",
+        "author_url": "https://medium.com/@mordvash1",
+        "num_followers": 25,
+        "short_bio": "I'm a Backend Engineer , who loves to learn new things every day and evolve.."
+    },
+    {
+        "extraction_id": "28d6d2fc-94f3-4bcd-b1ba-6fcfaea3ebf1",
+        "extracted_at": "2024-03-08 21:44:30.559429",
+        "extracted_at_epoch": 1709934270,
+        "author_name": "Emelie Johanna Holgersson",
+        "author_url": "https://medium.com/@emeliejohannaholgersson",
+        "num_followers": 3,
+        "short_bio": ""
+    },
+    {
+        "extraction_id": "28d6d2fc-94f3-4bcd-b1ba-6fcfaea3ebf1",
+        "extracted_at": "2024-03-08 21:44:30.559429",
+        "extracted_at_epoch": 1709934270,
+        "author_name": "Kingsley Okoye",
+        "author_url": "https://medium.com/@exceldispensing",
+        "num_followers": 2,
+        "short_bio": "Data analyst | Business Analytics | Python ETL developer LINKED IN: www.linkedin.com/in/ifeanyi-okoye-a857911ba"
+    },
+    {
+        "extraction_id": "28d6d2fc-94f3-4bcd-b1ba-6fcfaea3ebf1",
+        "extracted_at": "2024-03-08 21:44:30.559429",
+        "extracted_at_epoch": 1709934270,
+        "author_name": "Wikasitha S Herath",
+        "author_url": "https://medium.com/@wikasithawsh",
+        "num_followers": 1,
+        "short_bio": "Associate Tech Lead - Data Engineering"
+    },
+    {
+        "extraction_id": "28d6d2fc-94f3-4bcd-b1ba-6fcfaea3ebf1",
+        "extracted_at": "2024-03-08 21:44:30.559429",
+        "extracted_at_epoch": 1709934270,
+        "author_name": "Palak Bhandari",
+        "author_url": "https://medium.com/@palakvb02",
+        "num_followers": 1,
+        "short_bio": "Hey, I'm Palak, exploring the magic of learning and growth! 📖 📚 🌟"
+    },
+    {
+        "extraction_id": "28d6d2fc-94f3-4bcd-b1ba-6fcfaea3ebf1",
+        "extracted_at": "2024-03-08 21:44:30.559429",
+        "extracted_at_epoch": 1709934270,
+        "author_name": "Mamuka Shenheliia",
+        "author_url": "https://medium.com/@mamuka96",
+        "num_followers": 0,
+        "short_bio": "appSign upSign inWriteSign upSign inMamuka ShenheliiaHomeAboutPublished inTowards Dev·Feb 20, 2024Using powerbiclient in Jupyter NotebookWith POWERBICLIENT package, it’s possible to embed a report into a jupyter notebook for further analysis or to automate various processes. In this blog, I will show by example certain capabilities of this package. Installation:\nIf you use jupyter notebook run the command: pip install powerbiclient If jupyter lab then: …Power Bi3 min readPower Bi3 min readPublished inTowards Dev·Feb 10, 2024Automate Data Base testing with Apache Airflow (AthenaOperator)AGENDA Why is it important? How to implement auto-validation for Athena In our project, the ETL process is created NOT on static data (believe it’s usual practice). So on a daily basis, we receive a bunch of new row data. That could affect our resulting table. \nAnd running SQL query…Apache Airflow3 min readApache Airflow3 min readPublished inTowards Dev·Nov 21, 2023Data quality in ETL (Extract Transform Load) processAgenda: What is Data Quality (DQ) ?:\n- Defining the essence of data quality and its significance in information management. The Role of Data Quality in ETL:\n- Exploring where to add data testing in the ETL process Practical recommendations for Validating Data Across the entire ETL Process with SQL:\n- Providing…Data Quality3 min readData Quality3 min readMamuka ShenheliiaData quality engineer"
+    },
+    {
+        "extraction_id": "28d6d2fc-94f3-4bcd-b1ba-6fcfaea3ebf1",
+        "extracted_at": "2024-03-08 21:44:30.559429",
+        "extracted_at_epoch": 1709934270,
+        "author_name": "Massimo Capobianco",
+        "author_url": "https://medium.com/@massimocapobianco",
+        "num_followers": 2,
+        "short_bio": "Analytics Engineer / Data Analyst based in Berlin."
+    },
+    {
+        "extraction_id": "28d6d2fc-94f3-4bcd-b1ba-6fcfaea3ebf1",
+        "extracted_at": "2024-03-08 21:44:30.559429",
+        "extracted_at_epoch": 1709934270,
+        "author_name": "Maksim Krupenin",
+        "author_url": "https://medium.com/@maksimkrupenin",
+        "num_followers": 51,
+        "short_bio": "Data & Analytics Solutions Architect"
+    },
+    {
+        "extraction_id": "28d6d2fc-94f3-4bcd-b1ba-6fcfaea3ebf1",
+        "extracted_at": "2024-03-08 21:44:30.559429",
+        "extracted_at_epoch": 1709934270,
+        "author_name": "Gabrielsantosvi",
+        "author_url": "https://medium.com/@gabrielsantosvi97",
+        "num_followers": 1,
+        "short_bio": ""
+    },
+    {
+        "extraction_id": "28d6d2fc-94f3-4bcd-b1ba-6fcfaea3ebf1",
+        "extracted_at": "2024-03-08 21:44:30.559429",
+        "extracted_at_epoch": 1709934270,
+        "author_name": "Daniel Herrera",
+        "author_url": "https://medium.com/@DanielH_Takes",
+        "num_followers": 28,
+        "short_bio": "I'm a Product Manager by trade, Software Developer by passion, and Problem Solver by nature. Intrigued by the idea of user ownership of data."
+    },
+    {
+        "extraction_id": "28d6d2fc-94f3-4bcd-b1ba-6fcfaea3ebf1",
+        "extracted_at": "2024-03-08 21:44:30.559429",
+        "extracted_at_epoch": 1709934270,
+        "author_name": "Mohamed Naseer Ahmed",
+        "author_url": "https://medium.com/@risan4841",
+        "num_followers": 6,
+        "short_bio": "Lead Platform Specialist Databricks --- Opinions are my own"
+    },
+    {
+        "extraction_id": "28d6d2fc-94f3-4bcd-b1ba-6fcfaea3ebf1",
+        "extracted_at": "2024-03-08 21:44:30.559429",
+        "extracted_at_epoch": 1709934270,
+        "author_name": "Fred Waldow",
+        "author_url": "https://medium.com/@fredwaldow",
+        "num_followers": 2,
+        "short_bio": ""
+    },
+    {
+        "extraction_id": "28d6d2fc-94f3-4bcd-b1ba-6fcfaea3ebf1",
+        "extracted_at": "2024-03-08 21:44:30.559429",
+        "extracted_at_epoch": 1709934270,
+        "author_name": "Fumiaki Kobayashi",
+        "author_url": "https://medium.com/@fumiaki.kobayashi",
+        "num_followers": 2,
+        "short_bio": "Analytics engineer / Data Analyst / dbt enthusiast. LinkedIn: https://www.linkedin.com/in/fumiaki-kobayashi-39395215a/"
+    },
+    {
+        "extraction_id": "28d6d2fc-94f3-4bcd-b1ba-6fcfaea3ebf1",
+        "extracted_at": "2024-03-08 21:44:30.559429",
+        "extracted_at_epoch": 1709934270,
+        "author_name": "Kaviprakash Selvaraj",
+        "author_url": "https://medium.com/@kaviprakash.2007",
+        "num_followers": 3,
+        "short_bio": "Lead Engineer - Data, Analytics and AI"
+    },
+    {
+        "extraction_id": "28d6d2fc-94f3-4bcd-b1ba-6fcfaea3ebf1",
+        "extracted_at": "2024-03-08 21:44:30.559429",
+        "extracted_at_epoch": 1709934270,
+        "author_name": "Prem Vishnoi(cloudvala)",
+        "author_url": "https://medium.com/@premvishnoi",
+        "num_followers": 72,
+        "short_bio": "Lead Data Engineer experienced in designing, implementing, and managing large-scale data infrastructure. Skilled in ETL, data modeling, and cloud computing."
+    },
+    {
+        "extraction_id": "28d6d2fc-94f3-4bcd-b1ba-6fcfaea3ebf1",
+        "extracted_at": "2024-03-08 21:44:30.559429",
+        "extracted_at_epoch": 1709934270,
+        "author_name": "Brian Johnson",
+        "author_url": "https://medium.com/@hitgovernor",
+        "num_followers": 13,
+        "short_bio": "Sharing what little I know with the world."
+    },
+    {
+        "extraction_id": "28d6d2fc-94f3-4bcd-b1ba-6fcfaea3ebf1",
+        "extracted_at": "2024-03-08 21:44:30.559429",
+        "extracted_at_epoch": 1709934270,
+        "author_name": "Chiranjeet Mandal",
+        "author_url": "https://medium.com/@chiranjeetmandal222",
+        "num_followers": 2,
+        "short_bio": ""
+    },
+    {
+        "extraction_id": "28d6d2fc-94f3-4bcd-b1ba-6fcfaea3ebf1",
+        "extracted_at": "2024-03-08 21:44:30.559429",
+        "extracted_at_epoch": 1709934270,
+        "author_name": "Carmel Wenga",
+        "author_url": "https://medium.com/@carmelwenga",
+        "num_followers": 7,
+        "short_bio": ""
+    },
+    {
+        "extraction_id": "28d6d2fc-94f3-4bcd-b1ba-6fcfaea3ebf1",
+        "extracted_at": "2024-03-08 21:44:30.559429",
+        "extracted_at_epoch": 1709934270,
+        "author_name": "Dave Flynn",
+        "author_url": "https://medium.com/@daveflynn",
+        "num_followers": 399,
+        "short_bio": "Technical Advocate @ DataRecce.io — the data modeling validation toolkit for dbt data projects"
+    },
+    {
+        "extraction_id": "28d6d2fc-94f3-4bcd-b1ba-6fcfaea3ebf1",
+        "extracted_at": "2024-03-08 21:44:30.559429",
+        "extracted_at_epoch": 1709934270,
+        "author_name": "Ryan Chynoweth",
+        "author_url": "https://medium.com/@24chynoweth",
+        "num_followers": 446,
+        "short_bio": "Senior Solutions Architect Databricks — anything shared is my own thoughts and opinions"
+    },
+    {
+        "extraction_id": "28d6d2fc-94f3-4bcd-b1ba-6fcfaea3ebf1",
+        "extracted_at": "2024-03-08 21:44:30.559429",
+        "extracted_at_epoch": 1709934270,
+        "author_name": "Kaushik M. of LiveWellTalk.com",
+        "author_url": "https://medium.com/@livewelltalk",
+        "num_followers": 77,
+        "short_bio": "I am Kaushik M., founder of LiveWellTalk, a blog where I share best tips on coping with mental health problems. Check it out here: https://www.livewelltalk.com/"
+    },
+    {
+        "extraction_id": "28d6d2fc-94f3-4bcd-b1ba-6fcfaea3ebf1",
+        "extracted_at": "2024-03-08 21:44:30.559429",
+        "extracted_at_epoch": 1709934270,
+        "author_name": "Ajinkya Sirsikar",
+        "author_url": "https://medium.com/@ajinkyasirsikar",
+        "num_followers": 0,
+        "short_bio": "appSign upSign inWriteSign upSign inAjinkya SirsikarHomeAboutFeb 27, 2024Airflow Basics: A Beginner’s GuideWrangling the Workflows: Introducing Airflow Say goodbye to workflow chaos! Airflow empowers you to build and schedule tasks seamlessly with its intuitive Python API. See your entire workflow laid out clearly with Directed Acyclic Graphs (DAGs), and ensure accurate execution every time. Plus, a user-friendly web interface puts monitoring and control right at your fingertips. …Airflow6 min readAirflow6 min readFeb 7, 2024Window Functions: The Secret Sauce for Advanced AnalyticsWindow functions in SQL are a game-changer for data analysts and Business Intelligence Engineers, offering unparalleled flexibility and precision in analytical queries. Window functions enable calculations over a given window or subset of rows inside a result set, providing strong analytical capabilities. Partitions are fundamental to window functions because they…12 min read12 min readFeb 6, 2024SQL Unveiled: From Novice Queries to Pro Insights — A Journey Through JOINs and Window FunctionsAs a seasoned Business Intelligence Engineer navigating the intricate world of data analytics, I find SQL, with its versatile capabilities, to be an indispensable tool in my daily endeavors. In this article, we’ll start with the basics of SQL, including the order of execution of SQL statements and understanding JOIN…Sql5 min readSql5 min readAjinkya SirsikarSr. Business Intelligence Engineer @ AWS"
+    },
+    {
+        "extraction_id": "28d6d2fc-94f3-4bcd-b1ba-6fcfaea3ebf1",
+        "extracted_at": "2024-03-08 21:44:30.559429",
+        "extracted_at_epoch": 1709934270,
+        "author_name": "NULLIF() - An analytics engineering blog",
+        "author_url": "https://medium.com/@nullif.blog",
+        "num_followers": 50,
+        "short_bio": "An analytics engineering blog, created by an analytics engineer."
+    },
+    {
+        "extraction_id": "28d6d2fc-94f3-4bcd-b1ba-6fcfaea3ebf1",
+        "extracted_at": "2024-03-08 21:44:30.559429",
+        "extracted_at_epoch": 1709934270,
+        "author_name": "Sonali",
+        "author_url": "https://medium.com/@489sonali",
+        "num_followers": 30,
+        "short_bio": "Data Analyst @ Accenture | Sharing blogs on data"
+    },
+    {
+        "extraction_id": "28d6d2fc-94f3-4bcd-b1ba-6fcfaea3ebf1",
+        "extracted_at": "2024-03-08 21:44:30.559429",
+        "extracted_at_epoch": 1709934270,
+        "author_name": "Hemachandran Dhinakaran",
+        "author_url": "https://medium.com/@hemz",
+        "num_followers": 5,
+        "short_bio": "Senior AI Engineer. Crafting AI Systems & Algorithms for Tomorrow's Innovations. AI | Data | Databricks | MLOps"
+    },
+    {
+        "extraction_id": "28d6d2fc-94f3-4bcd-b1ba-6fcfaea3ebf1",
+        "extracted_at": "2024-03-08 21:44:30.559429",
+        "extracted_at_epoch": 1709934270,
+        "author_name": "Rakesh singhania",
+        "author_url": "https://medium.com/@rakeshsinghania02",
+        "num_followers": 184,
+        "short_bio": "As a student of technology, each day I take a single step forward on the path of learning."
+    },
+    {
+        "extraction_id": "28d6d2fc-94f3-4bcd-b1ba-6fcfaea3ebf1",
+        "extracted_at": "2024-03-08 21:44:30.559429",
+        "extracted_at_epoch": 1709934270,
+        "author_name": "Lagozon Technologies",
+        "author_url": "https://medium.com/@lagozontechnologies",
+        "num_followers": 0,
+        "short_bio": "appSign upSign inWriteSign upSign inLagozon TechnologiesHomeAbout1 day agoEmpower Your Data Insights: Hire Expert Qlik Sense Developers at Lagozon TechnologiesUnlock the full potential of your data with Lagozon Technologies’ skilled Qlik Sense developers. Harness the power of Qlik Sense for intuitive data visualization and analysis. Contact us today for tailored solutions to elevate your data-driven decision-making.Qlik Sense Developers1 min readQlik Sense Developers1 min read1 day agoUnlocking the Power of Data Engineering with Databricks: Lagozon TechnologiesIntroduction: In today’s data-driven world, the role of a data engineer is indispensable. And when it comes to empowering data engineers with cutting-edge tools, Databricks stands out as a game-changer. At Lagozon Technologies, we recognize the transformative potential of Databricks for data engineering. In this blog post, we delve into how…Data Engineering3 min readData Engineering3 min readFeb 25, 2024Elevate Your Customer Service with Lagozon Technologies’ CRM SoftwareIn the fast-paced world of business, customer service reigns supreme. Every interaction with a customer is an opportunity to build loyalty, enhance brand reputation, and drive revenue. With the advent of technology, managing these interactions has become more efficient and effective than ever before. …Customer Service Software2 min readCustomer Service Software2 min readFeb 19, 2024The Power of Qlik Sense Cloud by Logozon TechnologiesIn today’s fast-paced business landscape, data holds the key to unlocking valuable insights and driving informed decision-making. Logozon Technologies introduces Qlik Sense Cloud, a cutting-edge business intelligence platform designed to empower organizations with real-time data analytics capabilities. Unleashing the Potential of Qlik Sense Cloud Qlik Sense Cloud revolutionizes the way businesses harness data. With its intuitive interface…Qlik Sense Cloud2 min readQlik Sense Cloud2 min readFeb 13, 2024Unlocking the Power of Data Visualization with Qlik Sense Cloud | Logozon TechnologiesIntroduction: In today’s data-driven world, businesses rely heavily on robust analytics tools to gain insights and make informed decisions. One such powerful tool is Qlik Sense Cloud, offered by Logozon Technologies. Let’s delve into how Qlik Sense Cloud can revolutionize the way you visualize and analyze data. What is Qlik Sense Cloud? Qlik Sense Cloud is…Qlik Sense Cloud2 min readQlik Sense Cloud2 min readFeb 5, 2024Unleashing the Power of Databricks: A Data Engineer’s Guide by Logozon TechnologiesIn the ever-evolving landscape of data management and analytics, the role of a skilled data engineer is crucial for organizations aiming to harness the full potential of their data. At the forefront of cutting-edge technologies stands Databricks, a platform that has revolutionized the way data is processed, analyzed, and leveraged…Logozon Technologies2 min readLogozon Technologies2 min readJan 28, 2024Unleashing the Power of Databricks: A Data Engineer’s Guide with Logozon TechnologiesIntroduction: In the dynamic landscape of data engineering, the role of a Databricks Data Engineer has become indispensable. At Logozon Technologies, we recognize the transformative potential that Databricks brings to the world of data analytics. …Databricks Data Engineer2 min readDatabricks Data Engineer2 min readLagozon TechnologiesLagozon Technologies is a leading IT service provider with experience in providing a comprehensive Consulting & Services. https://www.lagozon.com/"
+    },
+    {
+        "extraction_id": "28d6d2fc-94f3-4bcd-b1ba-6fcfaea3ebf1",
+        "extracted_at": "2024-03-08 21:44:30.559429",
+        "extracted_at_epoch": 1709934270,
+        "author_name": "Stefentaime",
+        "author_url": "https://medium.com/@stefentaime_10958",
+        "num_followers": 445,
+        "short_bio": "Data engineer sharing insights and best practices on data pipelines, ETL, and data modeling. Connect and learn with me on Medium!"
+    },
+    {
+        "extraction_id": "28d6d2fc-94f3-4bcd-b1ba-6fcfaea3ebf1",
+        "extracted_at": "2024-03-08 21:44:30.559429",
+        "extracted_at_epoch": 1709934270,
+        "author_name": "Manu Jerath",
+        "author_url": "https://medium.com/@manujerath",
+        "num_followers": 0,
+        "short_bio": "appSign upSign inWriteSign upSign inManu JerathHomeAboutPinnedPLG and Customer Activation — New Paradigm in B2B Marketing AnalyticsPLG and customer activation powered by advanced marketing analytics capabilities are among the top priorities for all business and growth marketing leaders across B2B SaaS organizations. The primary focus of the marketing analytics work that we have been doing with some of the most forward-looking B2B marketing analytics leaders across…Plg9 min readPlg9 min readPinnedMarketing Attribution — The Beginning of a Data JourneyThe ability of a marketing organization to track marketing attribution is often considered an end in itself when it comes to advanced marketing analytics. Every marketing leader takes immense pride in talking about the marketing analytics teams at their organizations when they have implemented attribution tools/frameworks and can provide attribution…Attribution6 min readAttribution6 min readPinnedSales "
+    },
+    {
+        "extraction_id": "28d6d2fc-94f3-4bcd-b1ba-6fcfaea3ebf1",
+        "extracted_at": "2024-03-08 21:44:30.559429",
+        "extracted_at_epoch": 1709934270,
+        "author_name": "Shani Cohen",
+        "author_url": "https://medium.com/@shani-cohen1902",
+        "num_followers": 48,
+        "short_bio": "Software Developer at Tikal - Fullstack as a service"
+    },
+    {
+        "extraction_id": "28d6d2fc-94f3-4bcd-b1ba-6fcfaea3ebf1",
+        "extracted_at": "2024-03-08 21:44:30.559429",
+        "extracted_at_epoch": 1709934270,
+        "author_name": "Mehdi Sidi Boumedine",
+        "author_url": "https://medium.com/@sidiboumedine",
+        "num_followers": 15,
+        "short_bio": ""
+    },
+    {
+        "extraction_id": "28d6d2fc-94f3-4bcd-b1ba-6fcfaea3ebf1",
+        "extracted_at": "2024-03-08 21:44:30.559429",
+        "extracted_at_epoch": 1709934270,
+        "author_name": "Jimmy Jensen",
+        "author_url": "https://medium.com/@jimmy-jensen",
+        "num_followers": 32,
+        "short_bio": "Data Engineer @ twoday"
+    },
+    {
+        "extraction_id": "28d6d2fc-94f3-4bcd-b1ba-6fcfaea3ebf1",
+        "extracted_at": "2024-03-08 21:44:30.559429",
+        "extracted_at_epoch": 1709934270,
+        "author_name": "Ayyoub Maulana",
+        "author_url": "https://medium.com/@ayyoubmaulana",
+        "num_followers": 52,
+        "short_bio": "Data Enthusiast | Passionate Data Engineer https://www.linkedin.com/in/ayyoub-maulana/ | Wanna mentored by me ? https://adplist.org/mentors/ayyoub-maulana"
+    },
+    {
+        "extraction_id": "28d6d2fc-94f3-4bcd-b1ba-6fcfaea3ebf1",
+        "extracted_at": "2024-03-08 21:44:30.559429",
+        "extracted_at_epoch": 1709934270,
+        "author_name": "Bek Tashpulatov",
+        "author_url": "https://medium.com/@oybektee",
+        "num_followers": 0,
+        "short_bio": "appSign upSign inWriteSign upSign inBek TashpulatovHomeAboutFeb 26, 2024A Custom ETL Approach to PostgreSQLIf you’re reading this article, you likely have basic understanding of the vast volume of data generated by millions of users and thousands of organizations. Often, this data becomes overwhelming for humans to consume — it’s either too granular, messy or scattered across numerous files and sources. That’s where an…Etl5 min readEtl5 min readBek TashpulatovData Analytics professional"
+    },
+    {
+        "extraction_id": "28d6d2fc-94f3-4bcd-b1ba-6fcfaea3ebf1",
+        "extracted_at": "2024-03-08 21:44:30.559429",
+        "extracted_at_epoch": 1709934270,
+        "author_name": "Aurelien Bacart",
+        "author_url": "https://medium.com/@aurelien.bacart",
+        "num_followers": 1,
+        "short_bio": ""
+    },
+    {
+        "extraction_id": "28d6d2fc-94f3-4bcd-b1ba-6fcfaea3ebf1",
+        "extracted_at": "2024-03-08 21:44:30.559429",
+        "extracted_at_epoch": 1709934270,
+        "author_name": "Bhavin Patel",
+        "author_url": "https://medium.com/@bhavin.pp",
+        "num_followers": 2,
+        "short_bio": ""
+    },
+    {
+        "extraction_id": "28d6d2fc-94f3-4bcd-b1ba-6fcfaea3ebf1",
+        "extracted_at": "2024-03-08 21:44:30.559429",
+        "extracted_at_epoch": 1709934270,
+        "author_name": "Alex Merced - Tech Evangelist",
+        "author_url": "https://medium.com/@alexmercedcoder",
+        "num_followers": 137,
+        "short_bio": "Alex Merced is a Developer Advocate for Dremio and host of the Web Dev 101 and Datanation Podcasts."
+    },
+    {
+        "extraction_id": "28d6d2fc-94f3-4bcd-b1ba-6fcfaea3ebf1",
+        "extracted_at": "2024-03-08 21:44:30.559429",
+        "extracted_at_epoch": 1709934270,
+        "author_name": "Audrey Leduc",
+        "author_url": "https://medium.com/@audreyleduc",
+        "num_followers": 71,
+        "short_bio": "I build data products!"
+    },
+    {
+        "extraction_id": "28d6d2fc-94f3-4bcd-b1ba-6fcfaea3ebf1",
+        "extracted_at": "2024-03-08 21:44:30.559429",
+        "extracted_at_epoch": 1709934270,
+        "author_name": "Mudra Patel",
+        "author_url": "https://medium.com/@mudrapatel17",
+        "num_followers": 27,
+        "short_bio": "Budding computer engineer"
+    },
+    {
+        "extraction_id": "28d6d2fc-94f3-4bcd-b1ba-6fcfaea3ebf1",
+        "extracted_at": "2024-03-08 21:44:30.559429",
+        "extracted_at_epoch": 1709934270,
+        "author_name": "Satyajit Senapati",
+        "author_url": "https://medium.com/@iamsatyajit963",
+        "num_followers": 3,
+        "short_bio": ""
+    }
+]
