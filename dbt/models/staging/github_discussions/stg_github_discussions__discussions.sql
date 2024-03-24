@@ -23,7 +23,7 @@ with
             extraction_id,
             author.login as author,
             category.name as category_name,
-            strptime(createdat, '%Y-%m-%dT%H:%M:%SZ') as created_at,
+            strptime(createdat, '%Y-%m-%dT%H:%M:%S%Z') as created_at,
             id as discussion_id,
             number as discussion_number,
             string_split(url, '/')[4] as repo_owner,
