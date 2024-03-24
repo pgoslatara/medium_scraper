@@ -1,0 +1,12 @@
+version: 2
+
+models:
+  - name: stg_github_discussions__discussions
+    columns:
+      - name: discussion_number
+        tests:
+          - not_null
+          - unique
+    tests:
+      - dbt_expectations.expect_table_column_count_to_be_between:
+          min_value: 1
