@@ -32,7 +32,8 @@ class GitHubAPIRateLimitError(Exception):
 
 def call_github_api(
     method: str,
-    endpoint: str,
+    endpoint: Optional[str] = None,
+    json: Optional[Mapping[str, Union[int, str]]] = None,
     params: Optional[Mapping[str, Union[int, str]]] = None,
 ) -> Any:
     if method.lower() == "get":
@@ -44,6 +45,16 @@ def call_github_api(
                 "X-GitHub-Api-Version": "2022-11-28",
             },
             params=params,
+        )
+    elif method.lower() == "graphql":
+        r = create_requests_session().post(
+            url="https://api.github.com/graphql",
+            headers={
+                "Accept": "application/vnd.github+json",
+                "Authorization": f"Bearer {os.getenv('PAT_GITHUB')}",
+                "X-GitHub-Api-Version": "2022-11-28",
+            },
+            json=json,
         )
     if (
         isinstance(r.json(), dict)
@@ -61,7 +72,7 @@ def call_github_api(
                 params,
             )
 
-    logger.info(f"Response: {r.status_code} {r.reason}")
+    logger.debug(f"Response: {r.status_code} {r.reason}")
     return r.json()
 
 

@@ -3,6 +3,13 @@ from datetime import datetime, timedelta
 from multiprocessing.pool import ThreadPool
 from typing import Dict, List
 
+from graphql_query import (  # type: ignore[import-not-found]
+    Argument,
+    Field,
+    Operation,
+    Query,
+)
+
 from utils.logger import logger
 from utils.utils import (
     call_github_api,
@@ -38,6 +45,83 @@ def get_github_repos_per_org(org: str) -> List[Dict[str, object]]:
         file_name=f"domain=github_repos/schema_version=1/org={org}/extracted_at={get_extracted_at_epoch()}/extraction_id={get_extraction_id()}.json",
     )
     return org_repos
+
+
+def get_github_discussions(repos: List[str]) -> None:
+    overall_discussions: List[Dict[str, object]] = []
+    for repo in repos:
+        logger.debug(f"Fetching discussions from {repo=}...")
+
+        repo_query = Query(
+            name="repository",
+            arguments=[
+                Argument(name="owner", value=f'"{repo.split("/")[0]}"'),
+                Argument(name="name", value=f'"{repo.split("/")[1]}"'),
+            ],
+            fields=[
+                Field(
+                    name="discussions",
+                    arguments=[
+                        Argument(name="first", value="100"),
+                        Argument(name="after", value="null"),
+                    ],
+                    fields=[
+                        "totalCount",
+                        Field(
+                            name="pageInfo",
+                            fields=["startCursor", "endCursor", "hasNextPage", "hasPreviousPage"],
+                        ),
+                        Field(
+                            name="edges",
+                            fields=[
+                                Field(
+                                    name="node",
+                                    fields=[
+                                        Field(name="author", fields=["login"]),
+                                        Field(name="category", fields=["name"]),
+                                        "createdAt",
+                                        "id",
+                                        "number",
+                                        "title",
+                                        "url",
+                                    ],
+                                ),
+                            ],
+                        ),
+                    ],
+                )
+            ],
+        )
+
+        discussions = []
+        endCursor = "null"  # Initialising
+        while endCursor == "null" or endCursor is not None:
+            r = call_github_api(
+                method="graphql",
+                json={"query": Operation(type="query", queries=[repo_query]).render()},
+            )
+            endCursor = r["data"]["repository"]["discussions"]["pageInfo"]["endCursor"]
+            repo_query.fields[0].arguments[1].value = f'"{endCursor}"'
+            for disc in r["data"]["repository"]["discussions"]["edges"]:
+                discussions.append(disc["node"])
+
+        logger.info(f"Retrieved {len(discussions)} from {repo}...")
+        for d in discussions:
+            overall_discussions.append(d)
+
+    logger.info(f"Retrieved {len(overall_discussions)} in total...")
+
+    metadata = {
+        "extraction_id": get_extraction_id(),
+        "extracted_at": get_extracted_at(),
+        "extracted_at_epoch": get_extracted_at_epoch(),
+    }
+    for d in overall_discussions:
+        d = d.update(metadata)  # type: ignore[assignment]
+    save_to_landing_zone(
+        data=overall_discussions,
+        file_name=f"domain=github_discussions/schema_version=1/extracted_at={get_extracted_at_epoch()}/extraction_id={get_extraction_id()}.json",
+    )
 
 
 def get_github_issues(repos: List[str]) -> List[Dict[str, object]]:
@@ -219,9 +303,13 @@ def main() -> None:
         logger.info(f"Retrieving issues and PRs for {len(repo_names)} non-forked repos.")
         issues = get_github_issues(repo_names)
         prs = get_github_pull_requests(repo_names)
+
         repo_interactors = {x["user"]["login"] for x in prs + issues}  # type: ignore[index]
         logger.info(f"Extracted {len(repo_interactors)} unique GitHub usernames.")
         get_github_repo_interactor_info(list(repo_interactors))
+
+        logger.info(f"Retrieving discussions for {len(repo_names)} non-forked repos.")
+        get_github_discussions(repo_names)
 
 
 if __name__ == "__main__":
