@@ -1,0 +1,560 @@
+[
+    {
+        "extraction_id": "304c8787-8911-4e55-8bfb-8ddb7533ac1f",
+        "extracted_at": "2024-03-29 06:17:34.385678",
+        "extracted_at_epoch": 1711693054,
+        "author_name": "Anuoluwapo Balogun",
+        "author_url": "https://medium.com/@anuoluwapods",
+        "num_followers": 100,
+        "short_bio": "Data Analyst | Analytics Engineer"
+    },
+    {
+        "extraction_id": "304c8787-8911-4e55-8bfb-8ddb7533ac1f",
+        "extracted_at": "2024-03-29 06:17:34.385678",
+        "extracted_at_epoch": 1711693054,
+        "author_name": "Kien Nguyen",
+        "author_url": "https://medium.com/@kiennguyn",
+        "num_followers": 9,
+        "short_bio": "Data Enthusiast, Data Engineer and Software Engineer"
+    },
+    {
+        "extraction_id": "304c8787-8911-4e55-8bfb-8ddb7533ac1f",
+        "extracted_at": "2024-03-29 06:17:34.385678",
+        "extracted_at_epoch": 1711693054,
+        "author_name": "Mohammed Asif",
+        "author_url": "https://medium.com/@asifkalathingal",
+        "num_followers": 0,
+        "short_bio": "appSign upSign inWriteSign upSign inMohammed AsifHomeAbout2 days agoWriting and Reading files in sparkWriting and Reading files in spark Here I detail about the different methods in writing and reading files in spark. This won’t cover all file types but the files which I come across. Json files Reading val dframe = spark.read.json(\"hdfs:///data/spark/adult.json\") The result is a DataFrame. Data can be saved in…Spark2 min readSpark2 min read2 days agoRemote SSH in VSCode from WindowsThe Visual Studio Code Remote — SSH extension allows you to open a remote folder on any remote machine, virtual machine, or container with a running SSH server and take full advantage of VS Code’s feature set. Once connected to a server, you can interact with files and folders anywhere…Remote Ssh1 min readRemote Ssh1 min readSep 30, 2019Kafka Streams Error with timestampGot below error while consuming data from kafka topic using kafka strems and writing to another topic. has invalid (negative) timestamp. Possibly because a pre-0.10 producer client was used to write this record to Kafka without embedding a timestamp, or because the input topic was created before upgrading the Kafka…Big Data2 min readBig Data2 min readMohammed Asif"
+    },
+    {
+        "extraction_id": "304c8787-8911-4e55-8bfb-8ddb7533ac1f",
+        "extracted_at": "2024-03-29 06:17:34.385678",
+        "extracted_at_epoch": 1711693054,
+        "author_name": "Seckin Dinc",
+        "author_url": "https://medium.com/@seckindinc",
+        "num_followers": 483,
+        "short_bio": "Building successful data teams to develop great data products"
+    },
+    {
+        "extraction_id": "304c8787-8911-4e55-8bfb-8ddb7533ac1f",
+        "extracted_at": "2024-03-29 06:17:34.385678",
+        "extracted_at_epoch": 1711693054,
+        "author_name": "Rudyar Cortes",
+        "author_url": "https://medium.com/@rudyar.cortes",
+        "num_followers": 18,
+        "short_bio": ""
+    },
+    {
+        "extraction_id": "304c8787-8911-4e55-8bfb-8ddb7533ac1f",
+        "extracted_at": "2024-03-29 06:17:34.385678",
+        "extracted_at_epoch": 1711693054,
+        "author_name": "Gayan Sanjeewa",
+        "author_url": "https://medium.com/@gsanjeewa1111",
+        "num_followers": 239,
+        "short_bio": "Lead Engineer | Consultant |AI | Big Data | LLM"
+    },
+    {
+        "extraction_id": "304c8787-8911-4e55-8bfb-8ddb7533ac1f",
+        "extracted_at": "2024-03-29 06:17:34.385678",
+        "extracted_at_epoch": 1711693054,
+        "author_name": "Manu Jerath",
+        "author_url": "https://medium.com/@manujerath",
+        "num_followers": 0,
+        "short_bio": "appSign upSign inWriteSign upSign inManu JerathHomeAboutPinnedPLG and Customer Activation — New Paradigm in B2B Marketing AnalyticsPLG and customer activation powered by advanced marketing analytics capabilities are among the top priorities for all business and growth marketing leaders across B2B SaaS organizations. The primary focus of the marketing analytics work that we have been doing with some of the most forward-looking B2B marketing analytics leaders across…Plg9 min readPlg9 min readPinnedMarketing Attribution — The Beginning of a Data JourneyThe ability of a marketing organization to track marketing attribution is often considered an end in itself when it comes to advanced marketing analytics. Every marketing leader takes immense pride in talking about the marketing analytics teams at their organizations when they have implemented attribution tools/frameworks and can provide attribution…Attribution6 min readAttribution6 min readPinnedSales "
+    },
+    {
+        "extraction_id": "304c8787-8911-4e55-8bfb-8ddb7533ac1f",
+        "extracted_at": "2024-03-29 06:17:34.385678",
+        "extracted_at_epoch": 1711693054,
+        "author_name": "Mudra Patel",
+        "author_url": "https://medium.com/@mudrapatel17",
+        "num_followers": 306,
+        "short_bio": "Budding computer engineer"
+    },
+    {
+        "extraction_id": "304c8787-8911-4e55-8bfb-8ddb7533ac1f",
+        "extracted_at": "2024-03-29 06:17:34.385678",
+        "extracted_at_epoch": 1711693054,
+        "author_name": "Napatsakorn Pianchana",
+        "author_url": "https://medium.com/@napatpianchana",
+        "num_followers": 41,
+        "short_bio": "เข้าใจตัวเองให้มากกว่าเข้าใจคนอื่น ฟังให้มากกว่าพูด และจงผิดพลาดซะ เพราะนั่นคือหนทางเดียวที่จะเรียนรู้ ODDS|"
+    },
+    {
+        "extraction_id": "304c8787-8911-4e55-8bfb-8ddb7533ac1f",
+        "extracted_at": "2024-03-29 06:17:34.385678",
+        "extracted_at_epoch": 1711693054,
+        "author_name": "Emelie Johanna Holgersson",
+        "author_url": "https://medium.com/@emeliejohannaholgersson",
+        "num_followers": 3,
+        "short_bio": ""
+    },
+    {
+        "extraction_id": "304c8787-8911-4e55-8bfb-8ddb7533ac1f",
+        "extracted_at": "2024-03-29 06:17:34.385678",
+        "extracted_at_epoch": 1711693054,
+        "author_name": "Joe Fletcher",
+        "author_url": "https://medium.com/@joefletcher",
+        "num_followers": 266,
+        "short_bio": "VP of Experience Design at Publicis Sapient"
+    },
+    {
+        "extraction_id": "304c8787-8911-4e55-8bfb-8ddb7533ac1f",
+        "extracted_at": "2024-03-29 06:17:34.385678",
+        "extracted_at_epoch": 1711693054,
+        "author_name": "Palak Bhandari",
+        "author_url": "https://medium.com/@palakvb02",
+        "num_followers": 5,
+        "short_bio": "Hey, I'm Palak, exploring the magic of learning and growth! 📖 📚 🌟"
+    },
+    {
+        "extraction_id": "304c8787-8911-4e55-8bfb-8ddb7533ac1f",
+        "extracted_at": "2024-03-29 06:17:34.385678",
+        "extracted_at_epoch": 1711693054,
+        "author_name": "Fumiaki Kobayashi",
+        "author_url": "https://medium.com/@fumiaki.kobayashi",
+        "num_followers": 9,
+        "short_bio": "Analytics engineer / Data Analyst / dbt enthusiast. LinkedIn: https://www.linkedin.com/in/fumiaki-kobayashi-39395215a/"
+    },
+    {
+        "extraction_id": "304c8787-8911-4e55-8bfb-8ddb7533ac1f",
+        "extracted_at": "2024-03-29 06:17:34.385678",
+        "extracted_at_epoch": 1711693054,
+        "author_name": "Sonal Mane",
+        "author_url": "https://medium.com/@sonalpmane",
+        "num_followers": 445,
+        "short_bio": "@Databricks @Qualtrics @PIPELINEorg Past: @MSFTStartups @GirlsinTech #VC @math_v_p @Chicagolandec #Product @windows @bing @Office @usc"
+    },
+    {
+        "extraction_id": "304c8787-8911-4e55-8bfb-8ddb7533ac1f",
+        "extracted_at": "2024-03-29 06:17:34.385678",
+        "extracted_at_epoch": 1711693054,
+        "author_name": "Ben",
+        "author_url": "https://medium.com/@sc393976",
+        "num_followers": 10,
+        "short_bio": "Senior Data Platform Engineer working at Avanade"
+    },
+    {
+        "extraction_id": "304c8787-8911-4e55-8bfb-8ddb7533ac1f",
+        "extracted_at": "2024-03-29 06:17:34.385678",
+        "extracted_at_epoch": 1711693054,
+        "author_name": "Venkata Viswanath Chittilla",
+        "author_url": "https://medium.com/@cvviswa7",
+        "num_followers": 4,
+        "short_bio": "Cloud Data Engineer | Ex-Microsoft | Certified Associate in Azure, Databricks, MongoDB, PowerBI | Top Data Engineering and Cloud Computing voice"
+    },
+    {
+        "extraction_id": "304c8787-8911-4e55-8bfb-8ddb7533ac1f",
+        "extracted_at": "2024-03-29 06:17:34.385678",
+        "extracted_at_epoch": 1711693054,
+        "author_name": "Douenergy",
+        "author_url": "https://medium.com/@douenergy",
+        "num_followers": 1,
+        "short_bio": ""
+    },
+    {
+        "extraction_id": "304c8787-8911-4e55-8bfb-8ddb7533ac1f",
+        "extracted_at": "2024-03-29 06:17:34.385678",
+        "extracted_at_epoch": 1711693054,
+        "author_name": "Maikel Gali",
+        "author_url": "https://medium.com/@gmaikel",
+        "num_followers": 6,
+        "short_bio": "I write what I like to like what I write"
+    },
+    {
+        "extraction_id": "304c8787-8911-4e55-8bfb-8ddb7533ac1f",
+        "extracted_at": "2024-03-29 06:17:34.385678",
+        "extracted_at_epoch": 1711693054,
+        "author_name": "Alejandro De La Cruz López",
+        "author_url": "https://medium.com/@acrulopez",
+        "num_followers": 22,
+        "short_bio": "MLOps Engineer passionate about bridging ML & Data Science. Focused on maintainable, scalable solutions & continuous learning. Here to share insights & grow."
+    },
+    {
+        "extraction_id": "304c8787-8911-4e55-8bfb-8ddb7533ac1f",
+        "extracted_at": "2024-03-29 06:17:34.385678",
+        "extracted_at_epoch": 1711693054,
+        "author_name": "Teddy Brun",
+        "author_url": "https://medium.com/@tedbrun97",
+        "num_followers": 0,
+        "short_bio": "appSign upSign inWriteSign upSign inTeddy BrunHomeAbout2 days agoStreamlining Machine Learning Experiments with Databricks on AWS: A Template ApproachThis article was written by Barthelemy Pavy and Teddy Brun. —  Introduction: Introducing Foxintelligence, a leading Consumer Intelligence company in the e-commerce market. Utilizing a vast European consumer panel, primarily built through their popular app Cleanfox, Foxintelligence collects, anonymizes, and aggregates transactional data. Notably, they prioritize data privacy, refraining from any data sales for advertising or profiling.Databricks5 min readDatabricks5 min readTeddy Brun"
+    },
+    {
+        "extraction_id": "304c8787-8911-4e55-8bfb-8ddb7533ac1f",
+        "extracted_at": "2024-03-29 06:17:34.385678",
+        "extracted_at_epoch": 1711693054,
+        "author_name": "Ameya Abhyankar",
+        "author_url": "https://medium.com/@abhyankar-ameya",
+        "num_followers": 313,
+        "short_bio": "Founder: FinQuest Institute | Ekspert Consulting; www.finquestinstitute.com; www.ekspertconsulting.com"
+    },
+    {
+        "extraction_id": "304c8787-8911-4e55-8bfb-8ddb7533ac1f",
+        "extracted_at": "2024-03-29 06:17:34.385678",
+        "extracted_at_epoch": 1711693054,
+        "author_name": "Matthew McCoy, Ph.D.",
+        "author_url": "https://medium.com/@matthewmccoy6",
+        "num_followers": 1,
+        "short_bio": "Data Scientist"
+    },
+    {
+        "extraction_id": "304c8787-8911-4e55-8bfb-8ddb7533ac1f",
+        "extracted_at": "2024-03-29 06:17:34.385678",
+        "extracted_at_epoch": 1711693054,
+        "author_name": "Edison Lai",
+        "author_url": "https://medium.com/@kuanchoulai10",
+        "num_followers": 44,
+        "short_bio": ""
+    },
+    {
+        "extraction_id": "304c8787-8911-4e55-8bfb-8ddb7533ac1f",
+        "extracted_at": "2024-03-29 06:17:34.385678",
+        "extracted_at_epoch": 1711693054,
+        "author_name": "Elmo",
+        "author_url": "https://medium.com/@elmo92",
+        "num_followers": 1,
+        "short_bio": ""
+    },
+    {
+        "extraction_id": "304c8787-8911-4e55-8bfb-8ddb7533ac1f",
+        "extracted_at": "2024-03-29 06:17:34.385678",
+        "extracted_at_epoch": 1711693054,
+        "author_name": "Serge Smertin",
+        "author_url": "https://medium.com/@nf-x",
+        "num_followers": 206,
+        "short_bio": "Extreme Programming. Digital Forensics. Thoughts are my own."
+    },
+    {
+        "extraction_id": "304c8787-8911-4e55-8bfb-8ddb7533ac1f",
+        "extracted_at": "2024-03-29 06:17:34.385678",
+        "extracted_at_epoch": 1711693054,
+        "author_name": "Jose Luis Colmenares",
+        "author_url": "https://medium.com/@jlrcolmenares",
+        "num_followers": 2,
+        "short_bio": "Data Engineer at ClarityAI. You could find more about me in https://linktr.ee/jlrcolmenares"
+    },
+    {
+        "extraction_id": "304c8787-8911-4e55-8bfb-8ddb7533ac1f",
+        "extracted_at": "2024-03-29 06:17:34.385678",
+        "extracted_at_epoch": 1711693054,
+        "author_name": "Sandhiya Munishwaran",
+        "author_url": "https://medium.com/@sandhiya.munishwaran",
+        "num_followers": 13,
+        "short_bio": "Data Engineer @bi3technologies"
+    },
+    {
+        "extraction_id": "304c8787-8911-4e55-8bfb-8ddb7533ac1f",
+        "extracted_at": "2024-03-29 06:17:34.385678",
+        "extracted_at_epoch": 1711693054,
+        "author_name": "Mark Rittman",
+        "author_url": "https://medium.com/@markrittman",
+        "num_followers": 1800,
+        "short_bio": "CEO of Rittman Analytics, host of the Drill to Detail Podcast, ex-product manager and twice company founder."
+    },
+    {
+        "extraction_id": "304c8787-8911-4e55-8bfb-8ddb7533ac1f",
+        "extracted_at": "2024-03-29 06:17:34.385678",
+        "extracted_at_epoch": 1711693054,
+        "author_name": "David Blain",
+        "author_url": "https://medium.com/@dablomatique",
+        "num_followers": 4,
+        "short_bio": ""
+    },
+    {
+        "extraction_id": "304c8787-8911-4e55-8bfb-8ddb7533ac1f",
+        "extracted_at": "2024-03-29 06:17:34.385678",
+        "extracted_at_epoch": 1711693054,
+        "author_name": "Sai Akhil",
+        "author_url": "https://medium.com/@saiakhil1011",
+        "num_followers": 1,
+        "short_bio": ""
+    },
+    {
+        "extraction_id": "304c8787-8911-4e55-8bfb-8ddb7533ac1f",
+        "extracted_at": "2024-03-29 06:17:34.385678",
+        "extracted_at_epoch": 1711693054,
+        "author_name": "Kiattiphum suwanarsa",
+        "author_url": "https://medium.com/@kiattiphum.learning",
+        "num_followers": 4,
+        "short_bio": ""
+    },
+    {
+        "extraction_id": "304c8787-8911-4e55-8bfb-8ddb7533ac1f",
+        "extracted_at": "2024-03-29 06:17:34.385678",
+        "extracted_at_epoch": 1711693054,
+        "author_name": "NULLIF() - An analytics engineering blog",
+        "author_url": "https://medium.com/@nullif.blog",
+        "num_followers": 52,
+        "short_bio": "An analytics engineering blog, created by an analytics engineer."
+    },
+    {
+        "extraction_id": "304c8787-8911-4e55-8bfb-8ddb7533ac1f",
+        "extracted_at": "2024-03-29 06:17:34.385678",
+        "extracted_at_epoch": 1711693054,
+        "author_name": "Ryan Chynoweth",
+        "author_url": "https://medium.com/@24chynoweth",
+        "num_followers": 538,
+        "short_bio": "Senior Solutions Architect Databricks — anything shared is my own thoughts and opinions"
+    },
+    {
+        "extraction_id": "304c8787-8911-4e55-8bfb-8ddb7533ac1f",
+        "extracted_at": "2024-03-29 06:17:34.385678",
+        "extracted_at_epoch": 1711693054,
+        "author_name": "Carolina Battaglia",
+        "author_url": "https://medium.com/@carolina.battaglia",
+        "num_followers": 10,
+        "short_bio": "Analytics Engineer helping companies build and improve their ETLs, Data Models and Data Visualizations"
+    },
+    {
+        "extraction_id": "304c8787-8911-4e55-8bfb-8ddb7533ac1f",
+        "extracted_at": "2024-03-29 06:17:34.385678",
+        "extracted_at_epoch": 1711693054,
+        "author_name": "Thijs de Goede",
+        "author_url": "https://medium.com/@tcdeg1",
+        "num_followers": 0,
+        "short_bio": "appSign upSign inWriteSign upSign inThijs de GoedeHomeAboutPublished inNN Tech·22 hours agoDelta Sharing is Caring: How the Delta Sharing Protocol can save the dayShare your Databricks environment data to (external) recipients without them having Databricks cluster access. —  Picture this: you are working as a Data Engineer in a large successful company. The data analysts in your team have an important deadline coming up for a large Report on the data you maintain in your shared Databricks workspace. On the last workday of the deadline you set everything…Data Engineering3 min readData Engineering3 min readPublished inNN Tech·22 hours agoDelta Sharing is Caring: How to set up a Delta Share with DatabricksLearn how to share your Databricks environment data to external recipients without them having access to a Databricks cluster. —  In this article we will show how to use the Delta Sharing Protocol with a Unity Catalog enabled Databricks workspace. The Delta Sharing protocol allows you to share data directly from your Databricks workspace without the data recipient needing their own Databricks cluster (Databricks, 2023). This is interesting because this…Data Engineering9 min readData Engineering9 min readThijs de GoedeCertified Nerd figuring out life one interest at the time."
+    },
+    {
+        "extraction_id": "304c8787-8911-4e55-8bfb-8ddb7533ac1f",
+        "extracted_at": "2024-03-29 06:17:34.385678",
+        "extracted_at_epoch": 1711693054,
+        "author_name": "Murat Özcan",
+        "author_url": "https://medium.com/@muratozcann",
+        "num_followers": 7,
+        "short_bio": ""
+    },
+    {
+        "extraction_id": "304c8787-8911-4e55-8bfb-8ddb7533ac1f",
+        "extracted_at": "2024-03-29 06:17:34.385678",
+        "extracted_at_epoch": 1711693054,
+        "author_name": "Aditya Jindal",
+        "author_url": "https://medium.com/@jindaladitya",
+        "num_followers": 28,
+        "short_bio": "Developer | @iiit_hyderabad Alumnus | Caffeine Addict | Tech Enthusiast | Cricket Fan | Opinions are my own | Check out linktr.ee/aditjind"
+    },
+    {
+        "extraction_id": "304c8787-8911-4e55-8bfb-8ddb7533ac1f",
+        "extracted_at": "2024-03-29 06:17:34.385678",
+        "extracted_at_epoch": 1711693054,
+        "author_name": "Nilimesh Halder, PhD",
+        "author_url": "https://medium.com/@HalderNilimesh",
+        "num_followers": 565,
+        "short_bio": "Friend of MediumPrincipal Analytics Specialist - Statistics & Data Science Hub (https://nilimesh.substack.com/). Passionate writer and coder."
+    },
+    {
+        "extraction_id": "304c8787-8911-4e55-8bfb-8ddb7533ac1f",
+        "extracted_at": "2024-03-29 06:17:34.385678",
+        "extracted_at_epoch": 1711693054,
+        "author_name": "SagarBhatt",
+        "author_url": "https://medium.com/@iamsagarbhatt",
+        "num_followers": 4,
+        "short_bio": "Software Engineer | Python | Apache-Airflow | GIT | Django | Flask | REST API"
+    },
+    {
+        "extraction_id": "304c8787-8911-4e55-8bfb-8ddb7533ac1f",
+        "extracted_at": "2024-03-29 06:17:34.385678",
+        "extracted_at_epoch": 1711693054,
+        "author_name": "Ganesh Neelakanta",
+        "author_url": "https://medium.com/@ganeshneelakanta",
+        "num_followers": 1,
+        "short_bio": "I am a dedicated Data Engineer with a strong passion for interactive collaboration, startups, and leveraging technology to drive innovative solutions."
+    },
+    {
+        "extraction_id": "304c8787-8911-4e55-8bfb-8ddb7533ac1f",
+        "extracted_at": "2024-03-29 06:17:34.385678",
+        "extracted_at_epoch": 1711693054,
+        "author_name": "Sonali",
+        "author_url": "https://medium.com/@489sonali",
+        "num_followers": 38,
+        "short_bio": "Analyst @ Accenture | Sharing blogs on data"
+    },
+    {
+        "extraction_id": "304c8787-8911-4e55-8bfb-8ddb7533ac1f",
+        "extracted_at": "2024-03-29 06:17:34.385678",
+        "extracted_at_epoch": 1711693054,
+        "author_name": "Yanluo",
+        "author_url": "https://medium.com/@yanluo_57621",
+        "num_followers": 0,
+        "short_bio": "appSign upSign inWriteSign upSign inYanluoHomeAboutMar 20, 2024Use of dbt in MLOpsThis mini project builds on pre-processed data from movie streaming data (Kafka) and users information (provided APIs). The project can be found on GitHub. This post is made in part for the Machine Learning in Production course at CMU (Course Webpage) Understanding dbt and Its Relevance Introducing dbt (Bridging the Gap in Data Transformation): In…Dbt9 min readDbt9 min readYanluo"
+    },
+    {
+        "extraction_id": "304c8787-8911-4e55-8bfb-8ddb7533ac1f",
+        "extracted_at": "2024-03-29 06:17:34.385678",
+        "extracted_at_epoch": 1711693054,
+        "author_name": "Chanon Krittapholchai",
+        "author_url": "https://medium.com/@chanon.krittapholchai",
+        "num_followers": 115,
+        "short_bio": "Data Analytic with Operation and SCM Background"
+    },
+    {
+        "extraction_id": "304c8787-8911-4e55-8bfb-8ddb7533ac1f",
+        "extracted_at": "2024-03-29 06:17:34.385678",
+        "extracted_at_epoch": 1711693054,
+        "author_name": "Badmaev Tsebek",
+        "author_url": "https://medium.com/@badmaev.t",
+        "num_followers": 5,
+        "short_bio": ""
+    },
+    {
+        "extraction_id": "304c8787-8911-4e55-8bfb-8ddb7533ac1f",
+        "extracted_at": "2024-03-29 06:17:34.385678",
+        "extracted_at_epoch": 1711693054,
+        "author_name": "Srinivas Muralidharan",
+        "author_url": "https://medium.com/@srinivasmuralidharan.official",
+        "num_followers": 23,
+        "short_bio": "A person who loves to have a smile and happiness around. #Student for Life. #srinivasmuralidharan.in"
+    },
+    {
+        "extraction_id": "304c8787-8911-4e55-8bfb-8ddb7533ac1f",
+        "extracted_at": "2024-03-29 06:17:34.385678",
+        "extracted_at_epoch": 1711693054,
+        "author_name": "Mastering Snowflake",
+        "author_url": "https://medium.com/@masteringsnowflake",
+        "num_followers": 280,
+        "short_bio": "Our mission is to help people trapped in a career dead end, working with on-premise, legacy technology break into cloud computing by using Snowflake."
+    },
+    {
+        "extraction_id": "304c8787-8911-4e55-8bfb-8ddb7533ac1f",
+        "extracted_at": "2024-03-29 06:17:34.385678",
+        "extracted_at_epoch": 1711693054,
+        "author_name": "Dave Flynn",
+        "author_url": "https://medium.com/@daveflynn",
+        "num_followers": 422,
+        "short_bio": "Technical Advocate @ DataRecce.io — the data modeling validation toolkit for dbt data projects"
+    },
+    {
+        "extraction_id": "304c8787-8911-4e55-8bfb-8ddb7533ac1f",
+        "extracted_at": "2024-03-29 06:17:34.385678",
+        "extracted_at_epoch": 1711693054,
+        "author_name": "Sunny Sharma",
+        "author_url": "https://medium.com/@sunny.sharma_2288",
+        "num_followers": 34,
+        "short_bio": "This is my Mphasis Datalytyx work medium account."
+    },
+    {
+        "extraction_id": "304c8787-8911-4e55-8bfb-8ddb7533ac1f",
+        "extracted_at": "2024-03-29 06:17:34.385678",
+        "extracted_at_epoch": 1711693054,
+        "author_name": "TONI RAMCHANDANI",
+        "author_url": "https://medium.com/@toniramchandani",
+        "num_followers": 86,
+        "short_bio": "https://www.linkedin.com/in/toni-ramchandani/"
+    },
+    {
+        "extraction_id": "304c8787-8911-4e55-8bfb-8ddb7533ac1f",
+        "extracted_at": "2024-03-29 06:17:34.385678",
+        "extracted_at_epoch": 1711693054,
+        "author_name": "Pavithran Lakshmanan",
+        "author_url": "https://medium.com/@pavithran.lakshmanan",
+        "num_followers": 9,
+        "short_bio": ""
+    },
+    {
+        "extraction_id": "304c8787-8911-4e55-8bfb-8ddb7533ac1f",
+        "extracted_at": "2024-03-29 06:17:34.385678",
+        "extracted_at_epoch": 1711693054,
+        "author_name": "Asif",
+        "author_url": "https://medium.com/@aasuhu",
+        "num_followers": 0,
+        "short_bio": "appSign upSign inWriteSign upSign inAsifHomeAbout1 day agoExecute the Databricks Workflow jobs using the API (Postman)I will be explaining in this artical, how we can invoke the databricks workflow jobs through API (Postman) Prerequisite: Databricks account\nPostman deskop app Step 1: get the token Go to user setting , under the develop section, you can create the token for this account. Step 2: create the…Databricks2 min readDatabricks2 min read1 day agoExecute the Databricks Workflow jobs using the Microsoft Power AutomateIn this article, I will be explaining how to execute the Databricks workflow jobs using the Microsoft Power Automate App. Perquisites: Account of Databricks.\nAccount of power automate Step 1: Create a sample notebook, you can create your own. I have used the sample for this article. …Databricks2 min readDatabricks2 min readMar 21, 2024Access Microsoft Azure Key Vault Secret in Azure Databricks NotebooksSo, in this article i will be explainig how we will use the azure vault in your databricks notebook. Step 1: Create Azure Vault Using the azure vault management module, we can store the all the secrets into centralize place. …Microsft2 min readMicrosft2 min readFeb 26, 2024Microsoft Fabric DataScience — Pipeline or Data Pipeline Notification Strategies (Email & Team) Part-2Notification using the Microsoft Fabric Data science project, notification is not only acknowledges the pipeline successfully executed but can also be used the debug or detect the failing causes. Here are the steps to add the email and team notification, these are following steps which are below. Step 1: First…Microsoft Fabric2 min readMicrosoft Fabric2 min readFeb 23, 2024Microsoft Fabric DataScience — Pipeline or Data Pipeline (Part 1)Before creating make sure you have an account of Microsoft Fabric, Open the data science project. There are two ways you can create the pipeline \n1- Create the notebook, and add the new data pipeline. 2- Or directly add the data pipeline.Fabric3 min readFabric3 min readAsif"
+    },
+    {
+        "extraction_id": "304c8787-8911-4e55-8bfb-8ddb7533ac1f",
+        "extracted_at": "2024-03-29 06:17:34.385678",
+        "extracted_at_epoch": 1711693054,
+        "author_name": "Carmel Wenga",
+        "author_url": "https://medium.com/@carmelwenga",
+        "num_followers": 10,
+        "short_bio": ""
+    },
+    {
+        "extraction_id": "304c8787-8911-4e55-8bfb-8ddb7533ac1f",
+        "extracted_at": "2024-03-29 06:17:34.385678",
+        "extracted_at_epoch": 1711693054,
+        "author_name": "Sheranga Gamwasam",
+        "author_url": "https://medium.com/@sherangaofc",
+        "num_followers": 37,
+        "short_bio": "Data Engineer : https://www.linkedin.com/in/sheranga-gamwasam/"
+    },
+    {
+        "extraction_id": "304c8787-8911-4e55-8bfb-8ddb7533ac1f",
+        "extracted_at": "2024-03-29 06:17:34.385678",
+        "extracted_at_epoch": 1711693054,
+        "author_name": "Amit Khullaar",
+        "author_url": "https://medium.com/@amitkhullaar",
+        "num_followers": 1,
+        "short_bio": "Senior Technology Leader | Building SaaS platforms , Engineer Innovative Solutions , Scale Organisations | I Help taking companies from 1 to 100"
+    },
+    {
+        "extraction_id": "304c8787-8911-4e55-8bfb-8ddb7533ac1f",
+        "extracted_at": "2024-03-29 06:17:34.385678",
+        "extracted_at_epoch": 1711693054,
+        "author_name": "Furcy Pin",
+        "author_url": "https://medium.com/@pin.furcy",
+        "num_followers": 810,
+        "short_bio": "[Available for freelance work] Data Engineer, Data Plumber, Data Librarian, Data Smithy."
+    },
+    {
+        "extraction_id": "304c8787-8911-4e55-8bfb-8ddb7533ac1f",
+        "extracted_at": "2024-03-29 06:17:34.385678",
+        "extracted_at_epoch": 1711693054,
+        "author_name": "Jimmy Jensen",
+        "author_url": "https://medium.com/@jimmy-jensen",
+        "num_followers": 46,
+        "short_bio": "Data Engineer @ twoday"
+    },
+    {
+        "extraction_id": "304c8787-8911-4e55-8bfb-8ddb7533ac1f",
+        "extracted_at": "2024-03-29 06:17:34.385678",
+        "extracted_at_epoch": 1711693054,
+        "author_name": "Punsiri Boonyakiat",
+        "author_url": "https://medium.com/@punsiriboonyakiat",
+        "num_followers": 358,
+        "short_bio": "Senior Data Engineer | Google Cloud Certified Professional Data Engineer| Traveller | A Mom | Learner"
+    },
+    {
+        "extraction_id": "304c8787-8911-4e55-8bfb-8ddb7533ac1f",
+        "extracted_at": "2024-03-29 06:17:34.385678",
+        "extracted_at_epoch": 1711693054,
+        "author_name": "Leo",
+        "author_url": "https://medium.com/@leo_dev",
+        "num_followers": 1,
+        "short_bio": ""
+    },
+    {
+        "extraction_id": "304c8787-8911-4e55-8bfb-8ddb7533ac1f",
+        "extracted_at": "2024-03-29 06:17:34.385678",
+        "extracted_at_epoch": 1711693054,
+        "author_name": "Kaine Victoria",
+        "author_url": "https://medium.com/@kaine.vic.kg",
+        "num_followers": 3,
+        "short_bio": ""
+    },
+    {
+        "extraction_id": "304c8787-8911-4e55-8bfb-8ddb7533ac1f",
+        "extracted_at": "2024-03-29 06:17:34.385678",
+        "extracted_at_epoch": 1711693054,
+        "author_name": "Ripu Jain",
+        "author_url": "https://medium.com/@ripu.jain",
+        "num_followers": 37,
+        "short_bio": ""
+    },
+    {
+        "extraction_id": "304c8787-8911-4e55-8bfb-8ddb7533ac1f",
+        "extracted_at": "2024-03-29 06:17:34.385678",
+        "extracted_at_epoch": 1711693054,
+        "author_name": "Bek Tashpulatov",
+        "author_url": "https://medium.com/@oybektee",
+        "num_followers": 0,
+        "short_bio": "appSign upSign inWriteSign upSign inBek TashpulatovHomeAboutFeb 26, 2024A Custom ETL Approach to PostgreSQLIf you’re reading this article, you likely have basic understanding of the vast volume of data generated by millions of users and thousands of organizations. Often, this data becomes overwhelming for humans to consume — it’s either too granular, messy or scattered across numerous files and sources. That’s where an…Etl5 min readEtl5 min readBek TashpulatovData Analytics professional"
+    },
+    {
+        "extraction_id": "304c8787-8911-4e55-8bfb-8ddb7533ac1f",
+        "extracted_at": "2024-03-29 06:17:34.385678",
+        "extracted_at_epoch": 1711693054,
+        "author_name": "João Escórcio",
+        "author_url": "https://medium.com/@jv.escorcio",
+        "num_followers": 8,
+        "short_bio": "Hello! I'm João Escórcio, or just João :). Data Analyst | Economist from UFC | Master's student in Economics and Public Policy at ISCTE-IUL."
+    }
+]
