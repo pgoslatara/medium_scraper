@@ -23,7 +23,7 @@ with
             extraction_id,
             author.login as author,
             category.name as category_name,
-            strptime(createdat, '%Y-%m-%dT%H:%M:%S%Z') as created_at,
+            strptime("createdAt", '%Y-%m-%dT%H:%M:%S%Z') as created_at,
             id as discussion_id,
             number as discussion_number,
             string_split(url, '/')[4] as repo_owner,
@@ -37,7 +37,7 @@ with
                 columns = {
                     author:'STRUCT(login STRING)',
                     category:'STRUCT(name STRING)',
-                    createdat:'STRING',
+                    "createdAt":'STRING',
                     extracted_at:'STRING',
                     extracted_at_epoch:'NUMERIC',
                     extraction_id:'UUID',

@@ -105,11 +105,11 @@ def get_github_discussions(repos: List[str]) -> None:
             for disc in r["data"]["repository"]["discussions"]["edges"]:
                 discussions.append(disc["node"])
 
-        logger.info(f"Retrieved {len(discussions)} from {repo}...")
+        logger.info(f"Retrieved {len(discussions)} discussions from {repo}...")
         for d in discussions:
             overall_discussions.append(d)
 
-    logger.info(f"Retrieved {len(overall_discussions)} in total...")
+    logger.info(f"Retrieved {len(overall_discussions)} discussions in total...")
 
     metadata = {
         "extraction_id": get_extraction_id(),
