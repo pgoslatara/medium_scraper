@@ -70,8 +70,8 @@ class SendMediumBlogsEmail:
 
         msg = EmailMessage()
         msg["Subject"] = "Relevant Medium Blogs"
-        msg["From"] = sender_email_address
-        msg["To"] = recipient_email_address
+        msg["From"] = sender_email_address  # type: ignore
+        msg["To"] = recipient_email_address  # type: ignore
 
         formatted_blogs = tabulate(
             list(map(list, zip(*[v for k, v in blogs.items()]))),
