@@ -49,15 +49,15 @@ df = duckdb.sql(
 monthly_billable_minutes_pct = df.fetchall()[0][3]
 pct_month_elapsed = df.fetchall()[0][4]
 if monthly_billable_minutes_pct > pct_month_elapsed:
-    # i.e. Percentage-wise, more Action minutes have been used than proportion of the moonth has elapsed
+    # i.e. Percentage-wise, more Action minutes have been used than proportion of the month has elapsed
     sender_email_address = os.getenv("SENDER_EMAIL_ADDRESS")
     sender_email_password = os.getenv("SENDER_EMAIL_PASSWORD")
     recipient_email_address = os.getenv("RECIPIENT_EMAIL_ADDRESS")
 
     msg = EmailMessage()
     msg["Subject"] = "Relevant Medium Blogs"
-    msg["From"] = sender_email_address
-    msg["To"] = recipient_email_address
+    msg["From"] = sender_email_address  # type: ignore
+    msg["To"] = recipient_email_address  # type: ignore
 
     msg.set_content(
         f"""

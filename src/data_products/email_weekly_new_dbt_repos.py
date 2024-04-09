@@ -49,8 +49,8 @@ class SendNewDbtRepoEmail:
 
         msg = EmailMessage()
         msg["Subject"] = "Recently extracted dbt repos"
-        msg["From"] = sender_email_address
-        msg["To"] = recipient_email_address
+        msg["From"] = sender_email_address  # type: ignore
+        msg["To"] = recipient_email_address  # type: ignore
 
         formatted_repos = tabulate(
             list(map(list, zip(*[v for k, v in blogs.items()]))),
