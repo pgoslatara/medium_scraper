@@ -1,7 +1,7 @@
 import os
 from datetime import datetime, timedelta
 from multiprocessing.pool import ThreadPool
-from typing import Dict, List
+from typing import Any, Dict, List
 
 from graphql_query import (  # type: ignore[import-not-found]
     Argument,
@@ -254,29 +254,41 @@ def get_github_pull_requests(repos: List[str]) -> List[Dict[str, object]]:
 
 
 def get_github_repo_interactor_info(usernames: List[object]) -> List[Dict[str, object]]:
+    def get_username_info(username: object) -> Any:
+        logger.debug(f"Fetching user: {username=}...")
+        user_query = Query(
+            name="user",
+            arguments=[
+                Argument(name="login", value=f'"{username}"'),
+            ],
+            fields=[
+                Field(name="bio"),
+                Field(name="websiteUrl"),  # formerly blog
+                Field(name="company"),
+                Field(name="email"),
+                Field(name="url"),  # formerly html_url
+                Field(name="databaseId"),  # formerly id
+                Field(name="location"),
+                Field(name="login"),
+                Field(name="name"),
+                Field(name="twitterUsername"),
+            ],
+        )
+
+        return call_github_api(
+            method="graphql",
+            json={"query": Operation(type="query", queries=[user_query]).render()},
+        )["data"]["user"]
+
     if os.getenv("CICD_RUN") == "True":
         usernames = usernames[:10]
 
     pool = ThreadPool(1)
     user_info = pool.map(
-        lambda username: call_github_api("GET", f"users/{username}"),
+        lambda username: get_username_info(username),
         usernames,
     )
     logger.info(f"Retrieved info on {len(usernames)} repo interactors.")
-
-    keys_to_keep = [
-        "bio",
-        "blog",
-        "company",
-        "email",
-        "id",
-        "html_url",
-        "location",
-        "login",
-        "name",
-        "twitter_username",
-    ]
-    user_info = [{k: v for k, v in x.items() if k in keys_to_keep} for x in user_info]
 
     metadata = {
         "extraction_id": get_extraction_id(),
@@ -287,7 +299,7 @@ def get_github_repo_interactor_info(usernames: List[object]) -> List[Dict[str, o
         user = user.update(metadata)
     save_to_landing_zone(
         data=user_info,
-        file_name=f"domain=github_users/schema_version=1/extracted_at={get_extracted_at_epoch()}/extraction_id={get_extraction_id()}.json",
+        file_name=f"domain=github_users/schema_version=2/extracted_at={get_extracted_at_epoch()}/extraction_id={get_extraction_id()}.json",
     )
     return user_info
 

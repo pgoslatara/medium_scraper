@@ -4,7 +4,7 @@ with
 
         from
             read_json_auto(
-                "{{ env_var('DATA_DIR') }}/landing_zone/domain=github_users/schema_version=1/*/*.json",
+                "{{ env_var('DATA_DIR') }}/landing_zone/domain=github_users/schema_version=2/*/*.json",
                 maximum_object_size = 134217728
             )
 
@@ -12,18 +12,18 @@ with
 
 select
     bio,
-    blog,
+    "websiteUrl" as blog,
     company,
     email,
-    id,
-    html_url,
+    "databaseId" as id,
+    url as html_url,
     location,
     login as username,
     name,
-    twitter_username
+    "twitterUsername" as twitter_username
 from
     read_json_auto(
-        "{{ env_var('DATA_DIR') }}/landing_zone/domain=github_users/schema_version=1/*/*.json",
+        "{{ env_var('DATA_DIR') }}/landing_zone/domain=github_users/schema_version=2/*/*.json",
         maximum_object_size = 134217728
     ) l
 join t1 on l.extracted_at_epoch = t1.max_extracted_at_epoch
