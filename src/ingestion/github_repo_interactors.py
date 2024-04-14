@@ -334,7 +334,7 @@ def main() -> None:
         issues = get_github_issues(repo_names)
         prs = get_github_pull_requests(repo_names)
 
-        repo_interactors = {x["user"]["login"] for x in prs + issues}  # type: ignore[index]
+        repo_interactors = set([x["user"]["login"] for x in prs] + [x["author"]["login"] for x in issues])  # type: ignore[index]
         logger.info(f"Extracted {len(repo_interactors)} unique GitHub usernames.")
         get_github_repo_interactor_info(list(repo_interactors))
 
