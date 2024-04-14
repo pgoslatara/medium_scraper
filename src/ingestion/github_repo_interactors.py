@@ -404,7 +404,15 @@ def main() -> None:
         issues = get_github_issues(repo_names)
         prs = get_github_pull_requests(repo_names)
 
-        repo_interactors = {x["author"]["login"] for x in prs + issues}  # type: ignore[index]
+        # Accounting for accounts that have been deleted
+        repo_interactors = [
+            y
+            for y in {
+                (x.get("author").get("login") if x.get("author") is not None else x.get("author"))  # type: ignore[attr-defined]
+                for x in prs + issues
+            }
+            if y is not None
+        ]
         logger.info(f"Extracted {len(repo_interactors)} unique GitHub usernames.")
         get_github_repo_interactor_info(list(repo_interactors))
 
