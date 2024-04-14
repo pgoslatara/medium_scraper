@@ -3,19 +3,19 @@ with
         select *
         from
             read_json_auto(
-                "{{ env_var('DATA_DIR') }}/landing_zone/domain=github_issues/schema_version=1/*/*.json",
+                "{{ env_var('DATA_DIR') }}/landing_zone/domain=github_issues/schema_version=2/*/*.json",
                 columns = {
+                    "author":'STRUCT(login STRING)',
+                    "createdAt":'STRING',
+                    "databaseId":'NUMERIC',
                     extracted_at:'STRING',
                     extracted_at_epoch:'NUMERIC',
                     extraction_id:'UUID',
-                    created_at:'STRING',
-                    html_url:'STRING',
-                    id:'NUMERIC',
+                    repository:'STRUCT(url STRING)',
                     number:'NUMERIC',
-                    repository_url:'STRING',
                     state:'STRING',
                     title:'STRING',
-                    "user":'STRUCT(login STRING)'
+                    url:'STRING'
                 },
                 maximum_object_size = 134217728
             )
@@ -23,12 +23,12 @@ with
     t1 as (select max(extracted_at_epoch) as max_extracted_at_epoch from base)
 
 select
-    cast(created_at as timestamp) as created_at,
-    html_url,
-    id as issue_id,
-    "user".login as issue_creator,
+    cast("createdAt" as timestamp) as created_at,
+    url as html_url,
+    "databaseId" as issue_id,
+    author.login as issue_creator,
     number as issue_number,
-    repository_url,
+    repository.url as repository_url,
     state,
     title
 from base
