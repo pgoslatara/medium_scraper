@@ -20,30 +20,76 @@ from utils.utils import (
 
 
 def get_github_repos_per_org(org: str) -> List[Dict[str, object]]:
-    org_repos = []
-    page = 1
-    _repos: List[Dict[str, object]] = []
-    while page == 1 or _repos != []:
-        _repos = call_github_api(
-            "GET", f"orgs/{org}/repos", params={"per_page": 100, "page": page}
+    logger.info(f"Fetching repos from {org=}...")
+
+    org_query = Query(
+        name="organization",
+        arguments=[
+            Argument(name="login", value=f'"{org.split("/")[0]}"'),
+        ],
+        fields=[
+            Field(
+                name="repositories",
+                arguments=[
+                    Argument(name="first", value="100"),
+                    Argument(name="after", value="null"),
+                ],
+                fields=[
+                    "totalCount",
+                    # Field(name="organization"),
+                    Field(
+                        name="pageInfo",
+                        fields=["startCursor", "endCursor", "hasNextPage", "hasPreviousPage"],
+                    ),
+                    Field(
+                        name="edges",
+                        fields=[
+                            Field(
+                                name="node",
+                                fields=[
+                                    "createdAt",
+                                    "databaseId",
+                                    "isFork",
+                                    "name",
+                                    "nameWithOwner",
+                                    "url",
+                                ],
+                            ),
+                        ],
+                    ),
+                ],
+            ),
+        ],
+    )
+
+    r = call_github_api(
+        method="graphql",
+        json={"query": Operation(type="query", queries=[org_query]).render()},
+    )
+    repos = []
+    endCursor = "null"  # Initialising
+    while endCursor == "null" or endCursor is not None:
+        r = call_github_api(
+            method="graphql",
+            json={"query": Operation(type="query", queries=[org_query]).render()},
         )
-        keys_to_keep = ["id", "name", "full_name", "html_url", "url", "fork"]
-        org_repos += [{k: v for k, v in x.items() if k in keys_to_keep} for x in _repos]
-        logger.info(f"Retrieved {len(org_repos)} repos from {org}...")
-        page += 1
+        endCursor = r["data"]["organization"]["repositories"]["pageInfo"]["endCursor"]
+        org_query.fields[0].arguments[1].value = f'"{endCursor}"'
+        for i in r["data"]["organization"]["repositories"]["edges"]:
+            repos.append(i["node"])
 
     metadata = {
         "extraction_id": get_extraction_id(),
         "extracted_at": get_extracted_at(),
         "extracted_at_epoch": get_extracted_at_epoch(),
     }
-    for repo in org_repos:
-        repo = repo.update(metadata)  # type: ignore[assignment]
+    for repo in repos:
+        repo = repo.update(metadata)
     save_to_landing_zone(
-        data=org_repos,
-        file_name=f"domain=github_repos/schema_version=1/org={org}/extracted_at={get_extracted_at_epoch()}/extraction_id={get_extraction_id()}.json",
+        data=repos,
+        file_name=f"domain=github_repos/schema_version=2/org={org}/extracted_at={get_extracted_at_epoch()}/extraction_id={get_extraction_id()}.json",
     )
-    return org_repos
+    return repos
 
 
 def get_github_discussions(repos: List[str]) -> None:
@@ -205,70 +251,94 @@ def get_github_issues(repos: List[str]) -> List[Dict[str, object]]:
         data=overall_issues,
         file_name=f"domain=github_issues/schema_version=2/extracted_at={get_extracted_at_epoch()}/extraction_id={get_extraction_id()}.json",
     )
-    return issues
+    return overall_issues
 
 
 def get_github_pull_requests(repos: List[str]) -> List[Dict[str, object]]:
-    def get_pull_requests_in_repo(repo: str) -> List[Dict[str, object]]:
-        pull_requests: List[Dict[str, object]] = []
-        page = 1
-        while True:
-            pull_requests_retrieved = call_github_api(
-                "GET",
-                f"repos/{repo}/pulls",
-                params={
-                    "state": _state,
-                    "sort": "created",
-                    "direction": "desc",
-                    "per_page": 100,
-                    "page": page,
-                },
-            )
-            logger.info(f"Retrieved {len(pull_requests_retrieved)} PRs from {repo}...")
-            keys_to_keep = [
-                "created_at",
-                "html_url",
-                "id",
-                "number",
-                "repository_url",
-                "state",
-                "title",
-                "user",
-            ]
-            pull_requests += [
-                {k: v for k, v in x.items() if k in keys_to_keep} for x in pull_requests_retrieved
-            ]
-            page += 1
-            if len(pull_requests_retrieved) == 0 or (os.getenv("CICD_RUN") == "True" and page > 2):
-                break
+    overall_prs: List[Dict[str, object]] = []
+    for repo in repos:
+        logger.info(f"Fetching PRs from {repo=}...")
 
-        return pull_requests
-
-    _state = "open" if os.getenv("CICD_RUN") == "True" else "all"
-    logger.info(f"{_state=}")
-
-    pool = ThreadPool(1)
-    pull_requests = [
-        x
-        for y in pool.map(
-            lambda repo: get_pull_requests_in_repo(repo),
-            repos,
+        pr_query = Query(
+            name="repository",
+            arguments=[
+                Argument(name="owner", value=f'"{repo.split("/")[0]}"'),
+                Argument(name="name", value=f'"{repo.split("/")[1]}"'),
+            ],
+            fields=[
+                Field(
+                    name="pullRequests",
+                    arguments=[
+                        Argument(name="first", value="100"),
+                        Argument(name="after", value="null"),
+                    ],
+                    fields=[
+                        "totalCount",
+                        Field(
+                            name="pageInfo",
+                            fields=["startCursor", "endCursor", "hasNextPage", "hasPreviousPage"],
+                        ),
+                        Field(
+                            name="edges",
+                            fields=[
+                                Field(
+                                    name="node",
+                                    fields=[
+                                        Field(
+                                            name="author", fields=["login"]
+                                        ),  # formerly user.login
+                                        Field(name="createdAt"),
+                                        Field(name="databaseId"),
+                                        Field(name="number"),
+                                        Field(
+                                            name="repository", fields=[Field(name="url")]
+                                        ),  # formerly html_url
+                                        Field(name="state"),
+                                        Field(name="title"),
+                                        Field(name="url"),
+                                    ],
+                                ),
+                            ],
+                        ),
+                    ],
+                ),
+            ],
         )
-        for x in y
-    ]
+
+        r = call_github_api(
+            method="graphql",
+            json={"query": Operation(type="query", queries=[pr_query]).render()},
+        )
+        prs = []
+        endCursor = "null"  # Initialising
+        while endCursor == "null" or endCursor is not None:
+            r = call_github_api(
+                method="graphql",
+                json={"query": Operation(type="query", queries=[pr_query]).render()},
+            )
+            endCursor = r["data"]["repository"]["pullRequests"]["pageInfo"]["endCursor"]
+            pr_query.fields[0].arguments[1].value = f'"{endCursor}"'
+            for i in r["data"]["repository"]["pullRequests"]["edges"]:
+                prs.append(i["node"])
+
+        logger.info(f"Retrieved {len(prs)} PRs from {repo}...")
+        for i in prs:
+            overall_prs.append(i)
+
+    logger.info(f"Retrieved {len(overall_prs)} PRs in total...")
 
     metadata = {
         "extraction_id": get_extraction_id(),
         "extracted_at": get_extracted_at(),
         "extracted_at_epoch": get_extracted_at_epoch(),
     }
-    for pr in pull_requests:
+    for pr in overall_prs:
         pr = pr.update(metadata)  # type: ignore[assignment]
     save_to_landing_zone(
-        data=pull_requests,
-        file_name=f"domain=github_pull_requests/schema_version=1/extracted_at={get_extracted_at_epoch()}/extraction_id={get_extraction_id()}.json",
+        data=overall_prs,
+        file_name=f"domain=github_pull_requests/schema_version=2/extracted_at={get_extracted_at_epoch()}/extraction_id={get_extraction_id()}.json",
     )
-    return pull_requests
+    return overall_prs
 
 
 def get_github_repo_interactor_info(usernames: List[object]) -> List[Dict[str, object]]:
@@ -326,7 +396,7 @@ def main() -> None:
     github_orgs = ["dbt-labs"]
     for org in github_orgs:
         repos = get_github_repos_per_org(org)
-        repo_names = [str(x["full_name"]) for x in repos if not x["fork"]]
+        repo_names = [str(x["nameWithOwner"]) for x in repos if not x["isFork"]]
         if os.getenv("CICD_RUN") == "True":
             repo_names = repo_names[:10]
 
@@ -334,7 +404,15 @@ def main() -> None:
         issues = get_github_issues(repo_names)
         prs = get_github_pull_requests(repo_names)
 
-        repo_interactors = set([x["user"]["login"] for x in prs] + [x["author"]["login"] for x in issues])  # type: ignore[index]
+        # Accounting for accounts that have been deleted
+        repo_interactors = [
+            y
+            for y in {
+                (x.get("author").get("login") if x.get("author") is not None else x.get("author"))  # type: ignore[attr-defined]
+                for x in prs + issues
+            }
+            if y is not None
+        ]
         logger.info(f"Extracted {len(repo_interactors)} unique GitHub usernames.")
         get_github_repo_interactor_info(list(repo_interactors))
 
