@@ -3,7 +3,7 @@ with
         select *
         from
             read_json_auto(
-                "{{ env_var('DATA_DIR') }}/landing_zone/domain=github_pull_requests/schema_version=1/*/*.json",
+                "{{ env_var('DATA_DIR') }}/landing_zone/domain=github_pull_requests/schema_version=2/*/*.json",
                 columns = {
                     author:'STRUCT(login STRING)',
                     "createdAt":'STRING',
