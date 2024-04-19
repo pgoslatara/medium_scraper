@@ -416,8 +416,8 @@ def main() -> None:
         logger.info(f"Extracted {len(repo_interactors)} unique GitHub usernames.")
         get_github_repo_interactor_info(list(repo_interactors))
 
-        # logger.info(f"Retrieving discussions for {len(repo_names)} non-forked repos.")
-        # get_github_discussions(repo_names)
+        logger.info(f"Retrieving discussions for {len(repo_names)} non-forked repos.")
+        get_github_discussions(repo_names)
 
 
 if __name__ == "__main__":
