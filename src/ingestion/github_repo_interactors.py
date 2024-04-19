@@ -25,7 +25,7 @@ def get_github_repos_per_org(org: str) -> List[Dict[str, object]]:
     org_query = Query(
         name="organization",
         arguments=[
-            Argument(name="login", value=f'"{org.split("/")[0]}"'),
+            Argument(name="login", value=f'"{org}"'),
         ],
         fields=[
             Field(
@@ -343,7 +343,7 @@ def get_github_pull_requests(repos: List[str]) -> List[Dict[str, object]]:
 
 def get_github_repo_interactor_info(usernames: List[object]) -> List[Dict[str, object]]:
     def get_username_info(username: object) -> Any:
-        logger.debug(f"Fetching user: {username=}...")
+        logger.info(f"Fetching user: {username=}...")
         user_query = Query(
             name="user",
             arguments=[
@@ -416,8 +416,8 @@ def main() -> None:
         logger.info(f"Extracted {len(repo_interactors)} unique GitHub usernames.")
         get_github_repo_interactor_info(list(repo_interactors))
 
-        logger.info(f"Retrieving discussions for {len(repo_names)} non-forked repos.")
-        get_github_discussions(repo_names)
+        # logger.info(f"Retrieving discussions for {len(repo_names)} non-forked repos.")
+        # get_github_discussions(repo_names)
 
 
 if __name__ == "__main__":

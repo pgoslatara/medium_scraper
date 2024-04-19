@@ -30,6 +30,23 @@ class GitHubAPIRateLimitError(Exception):
         return datetime.fromtimestamp(r["rate"]["reset"])
 
 
+class GitHubGraphqlRateLimitError(Exception):
+    def __init__(self) -> None:
+        logger.info(self.__str__())
+
+    def __str__(self) -> str:
+        return (
+            f"GitHubGraphqlRateLimitError: API allocations resets at {self.get_api_reset_time()}."
+        )
+
+    def get_api_reset_time(self) -> datetime:
+        r = call_github_api(
+            "GET",
+            "rate_limit",
+        )
+        return datetime.fromtimestamp(r["resources"]["graphql"]["reset"])
+
+
 def call_github_api(
     method: str,
     endpoint: Optional[str] = None,
@@ -56,14 +73,27 @@ def call_github_api(
             },
             json=json,
         )
-    if (
-        isinstance(r.json(), dict)
-        and r.json().get("message")
-        and r.json()["message"].startswith("API rate limit exceeded for user ID")
+    if isinstance(r.json(), dict) and (
+        (
+            r.json().get("message")
+            and r.json()["message"].startswith("API rate limit exceeded for user ID")
+        )
+        or (
+            method.lower() == "graphql"
+            and "errors" in r.json()
+            and (
+                r.json().get("errors")[0].get("type") in ["RATE_LIMITED"]
+                or r.json().get("errors")[0].get("message")
+                in ["A query attribute must be specified and must be a string."]
+            )
+        )
     ):
         try:
-            raise GitHubAPIRateLimitError
-        except GitHubAPIRateLimitError:
+            if method.lower() == "graphql":
+                raise GitHubGraphqlRateLimitError
+            else:
+                raise GitHubAPIRateLimitError
+        except (GitHubAPIRateLimitError, GitHubGraphqlRateLimitError):
             logger.info("Retrying in 60 seconds...")
             time.sleep(60)
             return call_github_api(
