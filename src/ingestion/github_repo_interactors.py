@@ -1,4 +1,5 @@
 import os
+import time
 from multiprocessing.pool import ThreadPool
 from typing import Any, Dict, List
 
@@ -344,6 +345,10 @@ def get_github_pull_requests(repos: List[str]) -> List[Dict[str, object]]:
 def get_github_repo_interactor_info(usernames: List[object]) -> List[Dict[str, object]]:
     def get_username_info(username: object) -> Any:
         logger.info(f"Fetching user: {username=}...")
+
+        # TODO: remove and handle rate limits correctly
+        time.sleep(1)
+
         user_query = Query(
             name="user",
             arguments=[
