@@ -106,24 +106,30 @@ def call_github_api(
         or (
             method.lower() == "graphql"
             and (
-                "errors" in r.json().keys()
-                and (
-                    r.json().get("errors")[0].get("type") in ["RATE_LIMITED"]
-                    or r.json().get("errors")[0].get("message")
-                    in ["A query attribute must be specified and must be a string."]
+                (
+                    "errors" in r.json().keys()
+                    and (
+                        r.json().get("errors")[0].get("type") in ["RATE_LIMITED"]
+                        or r.json().get("errors")[0].get("message")
+                        in ["A query attribute must be specified and must be a string."]
+                    )
+                    or "data" not in r.json().keys()
                 )
-                or "data" not in r.json().keys()
+                or (
+                    r.json().get("documentation_url")
+                    == "https://docs.github.com/free-pro-team@latest/rest/overview/rate-limits-for-the-rest-api#about-secondary-rate-limits"
+                )
             )
         )
     ):
+        logger.warning(f"Error detected, returned data: {r.json()=}")
         try:
             if method.lower() == "graphql":
                 raise GitHubGraphqlRateLimitError
             else:
                 raise GitHubAPIRateLimitError
         except GitHubGraphqlRateLimitError as e:
-            reset_info: dict[str, Union[int, datetime, str]] = {}
-            reset_info["remaining"] = 0  # initialise
+            reset_info: dict[str, Union[int, datetime, str]] = {"remaining": 0}
             while reset_info["remaining"] == 0:
                 time.sleep(60)  # Only log "Waiting ..." message every 60 seconds
                 reset_info = e.get_api_reset_info()
@@ -155,10 +161,10 @@ def create_requests_session() -> cloudscraper.Session:
 
 @lru_cache
 def get_environment() -> str:
-    if os.getenv("GITHUB_TOKEN"):
-        env = "prod"
-    else:
+    if os.getenv("CICD_RUN") == "True":
         env = "dev"
+    else:
+        env = "prod"
 
     logger.info(f"Running on environment: {env}")
 

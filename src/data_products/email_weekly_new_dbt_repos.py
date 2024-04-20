@@ -22,11 +22,11 @@ class SendNewDbtRepoEmail:
                     SELECT
                         repo_name,
                         html_url,
-                        first_extracted_at
+                        created_at
                     FROM read_parquet("{os.getenv('DATA_DIR')}/marts/dim_dbt_repos.parquet")
                     WHERE
-                        first_extracted_at >= (GET_CURRENT_TIMESTAMP() - INTERVAL {self.lookback_days} DAY)
-                    ORDER BY first_extracted_at DESC
+                        EPOCH_MS(created_at) >= EPOCH_MS(GET_CURRENT_TIMESTAMP() - INTERVAL {self.lookback_days} DAY)
+                    ORDER BY created_at DESC
         """
             )
             .arrow()
@@ -35,7 +35,7 @@ class SendNewDbtRepoEmail:
         data = df.to_pydict()
         logger.debug(f"{data=}")
         logger.info(
-            f"SELECTed {len(data['repo_name'])} repos first extracted in the last {self.lookback_days} days."
+            f"SELECTed {len(data['repo_name'])} repos created in the last {self.lookback_days} days."
         )
         return dict(data)
 
@@ -63,7 +63,7 @@ class SendNewDbtRepoEmail:
         <html>
             <body>
                 <div style="background-color:#eee;padding:10px 20px;">
-                    <h2 style="font-family:Georgia, 'Times New Roman', Times, serif;color#454349;">dbt repos first extracted in the last {self.lookback_days} days</h2>
+                    <h2 style="font-family:Georgia, 'Times New Roman', Times, serif;color#454349;">dbt repos created in the last {self.lookback_days} days</h2>
                 </div>
                 <div style="padding:20px 0px">
                     {formatted_repos}

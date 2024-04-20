@@ -8,10 +8,10 @@ from src.data_products.email_weekly_new_dbt_repos import SendNewDbtRepoEmail
 
 
 def main() -> None:
-    # MEDIUM_BLOG_LOOKBACK_WINDOW is "" when action is triggered from main branch
+    # INGESTION_LOOKBACK_WINDOW is "" when action is triggered from main branch
     default_lookback = 7
     try:
-        lookback_days = int(os.getenv("MEDIUM_BLOG_LOOKBACK_WINDOW", default_lookback))
+        lookback_days = int(os.getenv("INGESTION_LOOKBACK_WINDOW", default_lookback))
     except:
         lookback_days = default_lookback
 

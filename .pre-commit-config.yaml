@@ -5,7 +5,7 @@ repos:
       - id: trailing-whitespace
         exclude: "docs"
       - id: check-added-large-files
-        exclude: "docs"
+        exclude: "docs|output"
       - id: check-json
       - id: check-ast
       - id: check-merge-conflict
