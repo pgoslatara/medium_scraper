@@ -175,7 +175,7 @@ def get_github_discussions(repos: List[str]) -> None:
 
 
 def get_github_issues(repos: List[str]) -> List[Dict[str, object]]:
-    def get_issue_comments(repo: str) -> Any:
+    def get_issue_info(repo: str) -> Any:
         logger.info(f"Fetching issues from {repo=}...")
 
         issue_query = Query(
@@ -243,7 +243,7 @@ def get_github_issues(repos: List[str]) -> List[Dict[str, object]]:
 
     pool = ThreadPool(8)
     overall_issues = pool.map(
-        lambda repo: get_issue_comments(repo),
+        lambda repo: get_issue_info(repo),
         repos,
     )
     overall_issues = [issue for r in overall_issues for issue in r]

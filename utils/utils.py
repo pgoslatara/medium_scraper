@@ -105,11 +105,14 @@ def call_github_api(
         )
         or (
             method.lower() == "graphql"
-            and "errors" in r.json()
             and (
-                r.json().get("errors")[0].get("type") in ["RATE_LIMITED"]
-                or r.json().get("errors")[0].get("message")
-                in ["A query attribute must be specified and must be a string."]
+                "errors" in r.json().keys()
+                and (
+                    r.json().get("errors")[0].get("type") in ["RATE_LIMITED"]
+                    or r.json().get("errors")[0].get("message")
+                    in ["A query attribute must be specified and must be a string."]
+                )
+                or "data" not in r.json().keys()
             )
         )
     ):
