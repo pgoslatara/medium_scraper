@@ -77,7 +77,6 @@ class SendNewDbtDiscussionEmail:
             subtype="html",
         )
         logger.debug(formatted_discussions)
-        logger.info(msg)
 
         if sender_email_address and sender_email_password and recipient_email_address:
             logger.info("Sending email...")

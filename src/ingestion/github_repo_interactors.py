@@ -1,5 +1,4 @@
 import os
-import time
 from multiprocessing.pool import ThreadPool
 from typing import Any, Dict, List
 
@@ -360,10 +359,6 @@ def get_github_pull_requests(repos: List[str]) -> List[Dict[str, object]]:
 def get_github_repo_interactor_info(usernames: List[object]) -> List[Dict[str, object]]:
     def get_username_info(username: object) -> Any:
         logger.info(f"Fetching user: {username=}...")
-
-        # TODO: remove and handle rate limits correctly
-        time.sleep(1)
-
         user_query = Query(
             name="user",
             arguments=[
@@ -404,7 +399,11 @@ def get_github_repo_interactor_info(usernames: List[object]) -> List[Dict[str, o
         "extracted_at_epoch": get_extracted_at_epoch(),
     }
     for user in user_info:
-        user = user.update(metadata)
+        try:
+            user = user.update(metadata)
+        except AttributeError as e:
+            logger.warning(f"{user=}")
+            logger.warning(f"{e=}")
     save_to_landing_zone(
         data=user_info,
         file_name=f"domain=github_users/schema_version=2/extracted_at={get_extracted_at_epoch()}/extraction_id={get_extraction_id()}.json",
