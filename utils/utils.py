@@ -9,8 +9,15 @@ from pathlib import Path
 from typing import Any, Dict, List, Mapping, Optional, Union
 
 import cloudscraper  # type: ignore[import-not-found]
+import pytz
 from dbt.cli.main import dbtRunner, dbtRunnerResult
 from dbt.events.base_types import EventMsg
+from graphql_query import (  # type: ignore[import-not-found]
+    Argument,
+    Field,
+    Operation,
+    Query,
+)
 
 from utils.logger import logger
 
@@ -36,15 +43,32 @@ class GitHubGraphqlRateLimitError(Exception):
 
     def __str__(self) -> str:
         return (
-            f"GitHubGraphqlRateLimitError: API allocations resets at {self.get_api_reset_time()}."
+            f"GitHubGraphqlRateLimitError: API allocations resets at {self.get_api_reset_info()}."
         )
 
-    def get_api_reset_time(self) -> datetime:
-        r = call_github_api(
-            "GET",
-            "rate_limit",
+    def get_api_reset_info(self) -> dict[str, Union[int, datetime, str]]:
+        ratelimit_query = Query(
+            name="rateLimit",
+            fields=[
+                Field(name="limit"),
+                Field(name="remaining"),
+                Field(name="used"),
+                Field(name="resetAt"),
+            ],
         )
-        return datetime.fromtimestamp(r["resources"]["graphql"]["reset"])
+
+        r = call_github_api(
+            method="graphql",
+            json={"query": Operation(type="query", queries=[ratelimit_query]).render()},
+        )
+        logger.info(f"{r=}")
+        return {
+            "remaining": r["data"]["rateLimit"]["remaining"],
+            "used": r["data"]["rateLimit"]["used"],
+            "resetAt": pytz.utc.localize(
+                datetime.strptime(r["data"]["rateLimit"]["resetAt"], "%Y-%m-%dT%H:%M:%SZ")
+            ),
+        }
 
 
 def call_github_api(
@@ -73,6 +97,7 @@ def call_github_api(
             },
             json=json,
         )
+
     if isinstance(r.json(), dict) and (
         (
             r.json().get("message")
@@ -93,7 +118,20 @@ def call_github_api(
                 raise GitHubGraphqlRateLimitError
             else:
                 raise GitHubAPIRateLimitError
-        except (GitHubAPIRateLimitError, GitHubGraphqlRateLimitError):
+        except GitHubGraphqlRateLimitError as e:
+            reset_info: dict[str, Union[int, datetime, str]] = {}
+            reset_info["remaining"] = 0  # initialise
+            while reset_info["remaining"] == 0:
+                time.sleep(60)  # Only log "Waiting ..." message every 60 seconds
+                reset_info = e.get_api_reset_info()
+                logger.info(f"Waiting until {reset_info['resetAt']} UTC...")
+            return call_github_api(
+                method,
+                endpoint,
+                json,
+                params,
+            )
+        except GitHubAPIRateLimitError:
             logger.info("Retrying in 60 seconds...")
             time.sleep(60)
             return call_github_api(
