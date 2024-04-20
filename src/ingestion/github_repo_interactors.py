@@ -1,5 +1,4 @@
 import os
-import time
 from multiprocessing.pool import ThreadPool
 from typing import Any, Dict, List
 
@@ -94,8 +93,7 @@ def get_github_repos_per_org(org: str) -> List[Dict[str, object]]:
 
 
 def get_github_discussions(repos: List[str]) -> None:
-    overall_discussions: List[Dict[str, object]] = []
-    for repo in repos:
+    def get_discussions(repo: str) -> Any:
         logger.debug(f"Fetching discussions from {repo=}...")
 
         repo_query = Query(
@@ -152,8 +150,14 @@ def get_github_discussions(repos: List[str]) -> None:
                 discussions.append(disc["node"])
 
         logger.info(f"Retrieved {len(discussions)} discussions from {repo}...")
-        for d in discussions:
-            overall_discussions.append(d)
+        return discussions
+
+    pool = ThreadPool(8)
+    overall_discussions = pool.map(
+        lambda repo: get_discussions(repo),
+        repos,
+    )
+    overall_discussions = [discussion for r in overall_discussions for discussion in r]
 
     logger.info(f"Retrieved {len(overall_discussions)} discussions in total...")
 
@@ -163,7 +167,7 @@ def get_github_discussions(repos: List[str]) -> None:
         "extracted_at_epoch": get_extracted_at_epoch(),
     }
     for d in overall_discussions:
-        d = d.update(metadata)  # type: ignore[assignment]
+        d = d.update(metadata)
     save_to_landing_zone(
         data=overall_discussions,
         file_name=f"domain=github_discussions/schema_version=1/extracted_at={get_extracted_at_epoch()}/extraction_id={get_extraction_id()}.json",
@@ -171,8 +175,7 @@ def get_github_discussions(repos: List[str]) -> None:
 
 
 def get_github_issues(repos: List[str]) -> List[Dict[str, object]]:
-    overall_issues: List[Dict[str, object]] = []
-    for repo in repos:
+    def get_issue_comments(repo: str) -> Any:
         logger.info(f"Fetching issues from {repo=}...")
 
         issue_query = Query(
@@ -236,8 +239,14 @@ def get_github_issues(repos: List[str]) -> List[Dict[str, object]]:
                 issues.append(i["node"])
 
         logger.info(f"Retrieved {len(issues)} issues from {repo}...")
-        for i in issues:
-            overall_issues.append(i)
+        return issues
+
+    pool = ThreadPool(8)
+    overall_issues = pool.map(
+        lambda repo: get_issue_comments(repo),
+        repos,
+    )
+    overall_issues = [issue for r in overall_issues for issue in r]
 
     logger.info(f"Retrieved {len(overall_issues)} issues in total...")
 
@@ -247,7 +256,7 @@ def get_github_issues(repos: List[str]) -> List[Dict[str, object]]:
         "extracted_at_epoch": get_extracted_at_epoch(),
     }
     for issue in overall_issues:
-        issue = issue.update(metadata)  # type: ignore[assignment]
+        issue = issue.update(metadata)
     save_to_landing_zone(
         data=overall_issues,
         file_name=f"domain=github_issues/schema_version=2/extracted_at={get_extracted_at_epoch()}/extraction_id={get_extraction_id()}.json",
@@ -256,8 +265,7 @@ def get_github_issues(repos: List[str]) -> List[Dict[str, object]]:
 
 
 def get_github_pull_requests(repos: List[str]) -> List[Dict[str, object]]:
-    overall_prs: List[Dict[str, object]] = []
-    for repo in repos:
+    def get_pr_info(repo: str) -> Any:
         logger.info(f"Fetching PRs from {repo=}...")
 
         pr_query = Query(
@@ -323,8 +331,14 @@ def get_github_pull_requests(repos: List[str]) -> List[Dict[str, object]]:
                 prs.append(i["node"])
 
         logger.info(f"Retrieved {len(prs)} PRs from {repo}...")
-        for i in prs:
-            overall_prs.append(i)
+        return prs
+
+    pool = ThreadPool(8)
+    overall_prs = pool.map(
+        lambda repo: get_pr_info(repo),
+        repos,
+    )
+    overall_prs = [pr for r in overall_prs for pr in r]
 
     logger.info(f"Retrieved {len(overall_prs)} PRs in total...")
 
@@ -334,7 +348,7 @@ def get_github_pull_requests(repos: List[str]) -> List[Dict[str, object]]:
         "extracted_at_epoch": get_extracted_at_epoch(),
     }
     for pr in overall_prs:
-        pr = pr.update(metadata)  # type: ignore[assignment]
+        pr = pr.update(metadata)
     save_to_landing_zone(
         data=overall_prs,
         file_name=f"domain=github_pull_requests/schema_version=2/extracted_at={get_extracted_at_epoch()}/extraction_id={get_extraction_id()}.json",
@@ -345,10 +359,6 @@ def get_github_pull_requests(repos: List[str]) -> List[Dict[str, object]]:
 def get_github_repo_interactor_info(usernames: List[object]) -> List[Dict[str, object]]:
     def get_username_info(username: object) -> Any:
         logger.info(f"Fetching user: {username=}...")
-
-        # TODO: remove and handle rate limits correctly
-        time.sleep(1)
-
         user_query = Query(
             name="user",
             arguments=[
@@ -376,7 +386,7 @@ def get_github_repo_interactor_info(usernames: List[object]) -> List[Dict[str, o
     if os.getenv("CICD_RUN") == "True":
         usernames = usernames[:10]
 
-    pool = ThreadPool(1)
+    pool = ThreadPool(8)
     user_info = pool.map(
         lambda username: get_username_info(username),
         usernames,
