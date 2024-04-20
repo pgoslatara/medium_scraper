@@ -1,5 +1,6 @@
 import os
 
+from src.ingestion.github_actions import GitHubActionsExtractor
 from src.ingestion.github_repo_interactors import main as github_repo_interactors_run
 from src.ingestion.medium_web_scraper import MediumWebScraper
 
@@ -18,7 +19,7 @@ def main() -> None:
         "dbt",
     ]
 
-    # GitHubActionsExtractor(lookback_days=lookback_days).run()
+    GitHubActionsExtractor(lookback_days=lookback_days).run()
     github_repo_interactors_run()
     MediumWebScraper(
         tags=tags,
