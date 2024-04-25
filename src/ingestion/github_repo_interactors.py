@@ -2,6 +2,8 @@ import os
 from multiprocessing.pool import ThreadPool
 from typing import Any, Dict, List
 
+import duckdb
+import pyarrow as pa
 from graphql_query import (  # type: ignore[import-not-found]
     Argument,
     Field,
@@ -152,7 +154,7 @@ def get_github_discussions(repos: List[str]) -> None:
         logger.info(f"Retrieved {len(discussions)} discussions from {repo}...")
         return discussions
 
-    pool = ThreadPool(8)
+    pool = ThreadPool(4)
     overall_discussions = pool.map(
         lambda repo: get_discussions(repo),
         repos,
@@ -241,7 +243,7 @@ def get_github_issues(repos: List[str]) -> List[Dict[str, object]]:
         logger.info(f"Retrieved {len(issues)} issues from {repo}...")
         return issues
 
-    pool = ThreadPool(8)
+    pool = ThreadPool(4)
     overall_issues = pool.map(
         lambda repo: get_issue_info(repo),
         repos,
@@ -333,7 +335,7 @@ def get_github_pull_requests(repos: List[str]) -> List[Dict[str, object]]:
         logger.info(f"Retrieved {len(prs)} PRs from {repo}...")
         return prs
 
-    pool = ThreadPool(8)
+    pool = ThreadPool(4)
     overall_prs = pool.map(
         lambda repo: get_pr_info(repo),
         repos,
@@ -383,10 +385,58 @@ def get_github_repo_interactor_info(usernames: List[object]) -> List[Dict[str, o
             json={"query": Operation(type="query", queries=[user_query]).render()},
         )["data"]["user"]
 
+    logger.info(f"Passed {len(usernames)} unique GitHub usernames, let's analyse them.")
     if os.getenv("CICD_RUN") == "True":
         usernames = usernames[:10]
 
-    pool = ThreadPool(8)
+    # Only get info for users new users and users whose data is > 90 days old
+    try:
+        conn = duckdb.connect(database=":memory:")
+        df_recently_extracted_usernames = conn.execute(
+            f"""
+            SELECT
+                username,
+                user_info_extracted_at
+            FROM read_parquet('{os.getenv('DATA_DIR')}/marts/fct_dbt_interactors.parquet')
+            WHERE
+                EPOCH_MS(user_info_extracted_at) >= EPOCH_MS(GET_CURRENT_TIMESTAMP() - INTERVAL 7 DAY)
+        """
+        ).arrow()
+
+        usernames_pa = pa.Table.from_arrays([pa.array(usernames)], names=["username"])
+        df_usernames_to_extract = conn.execute(
+            f"""
+            -- new usernames
+            SELECT
+                usernames_pa.username
+            FROM usernames_pa
+            LEFT JOIN read_parquet('{os.getenv('DATA_DIR')}/marts/fct_dbt_interactors.parquet') base on base.username = usernames_pa.username
+            WHERE
+                base.username IS NULL
+
+            UNION DISTINCT
+
+            -- existing usernames, but not recently extracted
+            SELECT
+                usernames_pa.username
+            FROM usernames_pa
+            LEFT JOIN df_recently_extracted_usernames on df_recently_extracted_usernames.username = usernames_pa.username
+            WHERE
+                df_recently_extracted_usernames.username IS NULL
+            USING SAMPLE 1000 -- never more than 1000 usernames that have already been extracted
+        """
+        ).arrow()
+        usernames = [u["username"] for u in df_usernames_to_extract.to_pylist()]
+    except duckdb.BinderException as e:
+        logger.warning(
+            "DuckDB error encountered, likely marts don't exist yet if working locally."
+        )
+
+    logger.info(
+        f"Fetching {len(usernames)} unique GitHub usernames that are new or have not been extracted recently."
+    )
+
+    pool = ThreadPool(4)
     user_info = pool.map(
         lambda username: get_username_info(username),
         usernames,
