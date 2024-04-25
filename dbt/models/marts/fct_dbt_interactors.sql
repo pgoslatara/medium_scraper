@@ -64,7 +64,8 @@ select
         or u.location = 'NL',
         true,
         false
-    ) as is_user_based_in_netherlands
+    ) as is_user_based_in_netherlands,
+    u.user_info_extracted_at
 from {{ ref ('stg_github_repo_interactors__users') }} u
 left join issue_stats i on u.username = i.username
 left join pr_stats pr on u.username = pr.username
