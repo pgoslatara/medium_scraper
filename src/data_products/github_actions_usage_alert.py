@@ -56,8 +56,8 @@ if monthly_billable_minutes_pct > pct_month_elapsed:
 
     msg = EmailMessage()
     msg["Subject"] = "Relevant Medium Blogs"
-    msg["From"] = sender_email_address  # type: ignore
-    msg["To"] = recipient_email_address  # type: ignore
+    msg["From"] = sender_email_address
+    msg["To"] = recipient_email_address
 
     msg.set_content(
         f"""
