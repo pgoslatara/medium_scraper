@@ -154,7 +154,7 @@ def get_github_discussions(repos: List[str]) -> None:
         logger.info(f"Retrieved {len(discussions)} discussions from {repo}...")
         return discussions
 
-    pool = ThreadPool(2)
+    pool = ThreadPool(1)
     overall_discussions = pool.map(
         lambda repo: get_discussions(repo),
         repos,
@@ -243,7 +243,7 @@ def get_github_issues(repos: List[str]) -> List[Dict[str, object]]:
         logger.info(f"Retrieved {len(issues)} issues from {repo}...")
         return issues
 
-    pool = ThreadPool(2)
+    pool = ThreadPool(1)
     overall_issues = pool.map(
         lambda repo: get_issue_info(repo),
         repos,
@@ -335,7 +335,7 @@ def get_github_pull_requests(repos: List[str]) -> List[Dict[str, object]]:
         logger.info(f"Retrieved {len(prs)} PRs from {repo}...")
         return prs
 
-    pool = ThreadPool(2)
+    pool = ThreadPool(1)
     overall_prs = pool.map(
         lambda repo: get_pr_info(repo),
         repos,
@@ -436,7 +436,7 @@ def get_github_repo_interactor_info(usernames: List[object]) -> List[Dict[str, o
         f"Fetching {len(usernames)} unique GitHub usernames that are new or have not been extracted recently."
     )
 
-    pool = ThreadPool(2)
+    pool = ThreadPool(1)
     user_info = pool.map(
         lambda username: get_username_info(username),
         usernames,
