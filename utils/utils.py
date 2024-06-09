@@ -11,7 +11,7 @@ from typing import Any, Dict, List, Mapping, Optional, Union
 import cloudscraper  # type: ignore[import-not-found]
 import pytz
 from dbt.cli.main import dbtRunner, dbtRunnerResult
-from dbt.events.base_types import EventMsg
+from dbt_common.events.base_types import EventMsg  # type: ignore[import-not-found]
 from graphql_query import (  # type: ignore[import-not-found]
     Argument,
     Field,
