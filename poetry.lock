@@ -894,13 +894,13 @@ test = ["hypothesis (>=6.87,<7.0)", "pytest (>=7.3,<8.0)", "pytest-cov (>=4.1,<5
 
 [[package]]
 name = "dbt-core"
-version = "1.8.1"
+version = "1.8.2"
 description = "With dbt, data analysts and engineers can build analytics the way engineers build applications."
 optional = false
 python-versions = ">=3.8"
 files = [
-    {file = "dbt_core-1.8.1-py3-none-any.whl", hash = "sha256:24bca2f60b8e2f0b07fbdd968550e0abfab8748598f34fa7c42b192ed570d391"},
-    {file = "dbt_core-1.8.1.tar.gz", hash = "sha256:4b61d68ebf5647bd3d760f9135506f744755dcfa7ef6b49e0ead1d07bbc820fe"},
+    {file = "dbt_core-1.8.2-py3-none-any.whl", hash = "sha256:09a09a7c2a5febfe618d162ea996b0207b58c31d30671d589492947ed2b87e9d"},
+    {file = "dbt_core-1.8.2.tar.gz", hash = "sha256:a9da3c8a8a3fe76730757c5795208bdba26e1a4c42536e2c1d339811a624c2bb"},
 ]
 
 [package.dependencies]
