@@ -1,0 +1,542 @@
+[
+    {
+        "extraction_id": "4ba438e1-642c-4599-8157-fbb28c526231",
+        "extracted_at": "2024-08-16 06:22:15.088569",
+        "extracted_at_epoch": 1723789335,
+        "author_name": "Matheus Bragança",
+        "author_url": "https://medium.com/@matbragan",
+        "num_followers": 2,
+        "short_bio": ""
+    },
+    {
+        "extraction_id": "4ba438e1-642c-4599-8157-fbb28c526231",
+        "extracted_at": "2024-08-16 06:22:15.088569",
+        "extracted_at_epoch": 1723789335,
+        "author_name": "haritz Muhammad",
+        "author_url": "https://medium.com/@harits.muhammad.only",
+        "num_followers": 51,
+        "short_bio": "IT things learner with a lot of curiousity"
+    },
+    {
+        "extraction_id": "4ba438e1-642c-4599-8157-fbb28c526231",
+        "extracted_at": "2024-08-16 06:22:15.088569",
+        "extracted_at_epoch": 1723789335,
+        "author_name": "Andy Sawyer",
+        "author_url": "https://medium.com/@nydas",
+        "num_followers": 750,
+        "short_bio": "Bringing software engineering best practices and a product driven mindset to the world of data. Find me at https://www.linkedin.com/in/andrewdsawyer/"
+    },
+    {
+        "extraction_id": "4ba438e1-642c-4599-8157-fbb28c526231",
+        "extracted_at": "2024-08-16 06:22:15.088569",
+        "extracted_at_epoch": 1723789335,
+        "author_name": "Sai Parvathaneni",
+        "author_url": "https://medium.com/@saiparvathaneni",
+        "num_followers": 1300,
+        "short_bio": "Data Engineer on a mission to dumb down complex data engineering concepts"
+    },
+    {
+        "extraction_id": "4ba438e1-642c-4599-8157-fbb28c526231",
+        "extracted_at": "2024-08-16 06:22:15.088569",
+        "extracted_at_epoch": 1723789335,
+        "author_name": "Rodrigo",
+        "author_url": "https://medium.com/@silva.rodrigo31",
+        "num_followers": 0,
+        "short_bio": "appSign upSign inWriteSign upSign inRodrigoHomeAboutRodrigoAnálise exploratória dos imóveis da Cidade de Ribeirão Preto1- IntroduçãoJul 30Jul 30RodrigoConstrução de um dashboard com os dados da API do youtubelink para o código completo: https://github.com/rodrigorocha1/analise_dados_youtube_segunda_versaoJul 30Jul 30RodrigoProjeto de Arquitetura: Webscraping google empresas1- Ideia do projetoJul 28Jul 28RodrigoProjeto de Arquitetura: Webscraping do site vivareal1- Ideia do projetoJul 28Jul 28RodrigoProjeto de arquitetura: Extração de dados da API youtube Segunda Versãolink do código: https://github.com/rodrigorocha1/arquitetura_youtubeJul 28Jul 28RodrigoConstrução de um dashboard com os dados da API do youtubeInspirado nos vídeos do Canal Espaço BIMar 11Mar 11RodrigoEntusiasta de dados"
+    },
+    {
+        "extraction_id": "4ba438e1-642c-4599-8157-fbb28c526231",
+        "extracted_at": "2024-08-16 06:22:15.088569",
+        "extracted_at_epoch": 1723789335,
+        "author_name": "Volker Janz",
+        "author_url": "https://medium.com/@vojay",
+        "num_followers": 533,
+        "short_bio": "Expert Data Engineer @ InnoGames | 👨‍💻 Data Engineering, SQL, Python, Java, Kafka, Flink, Hadoop, Cloud | 🎙️ Passionate Speaker | 🧩 I Bring Big Data to life"
+    },
+    {
+        "extraction_id": "4ba438e1-642c-4599-8157-fbb28c526231",
+        "extracted_at": "2024-08-16 06:22:15.088569",
+        "extracted_at_epoch": 1723789335,
+        "author_name": "Sanjayram Raja Srinivasan",
+        "author_url": "https://medium.com/@sanjayramrajasrinivasan",
+        "num_followers": 2,
+        "short_bio": ""
+    },
+    {
+        "extraction_id": "4ba438e1-642c-4599-8157-fbb28c526231",
+        "extracted_at": "2024-08-16 06:22:15.088569",
+        "extracted_at_epoch": 1723789335,
+        "author_name": "Tito Fonseca",
+        "author_url": "https://medium.com/@titoamfonseca",
+        "num_followers": 8,
+        "short_bio": "Head of Analytics & Senior PPC Manager @ Wise Pirates. Junior Data Engineer & Cloud Enthusiast @ localhost:8000. Leading data measurement and analysis."
+    },
+    {
+        "extraction_id": "4ba438e1-642c-4599-8157-fbb28c526231",
+        "extracted_at": "2024-08-16 06:22:15.088569",
+        "extracted_at_epoch": 1723789335,
+        "author_name": "dlthub.com",
+        "author_url": "https://medium.com/@dlthub.com",
+        "num_followers": 12,
+        "short_bio": "We are a group of data engineers and data scientists working on the dlt pythonic ingestion standard"
+    },
+    {
+        "extraction_id": "4ba438e1-642c-4599-8157-fbb28c526231",
+        "extracted_at": "2024-08-16 06:22:15.088569",
+        "extracted_at_epoch": 1723789335,
+        "author_name": "Neeraj Reddy",
+        "author_url": "https://medium.com/@neeraj3685",
+        "num_followers": 24,
+        "short_bio": "Data Engineer | Expertise in Modern Data Architectures"
+    },
+    {
+        "extraction_id": "4ba438e1-642c-4599-8157-fbb28c526231",
+        "extracted_at": "2024-08-16 06:22:15.088569",
+        "extracted_at_epoch": 1723789335,
+        "author_name": "Atheon Analytics Ltd",
+        "author_url": "https://medium.com/@AtheonAnalytics",
+        "num_followers": 41,
+        "short_bio": "Our purpose is to humanise data so that people can make complex decisions with confidence."
+    },
+    {
+        "extraction_id": "4ba438e1-642c-4599-8157-fbb28c526231",
+        "extracted_at": "2024-08-16 06:22:15.088569",
+        "extracted_at_epoch": 1723789335,
+        "author_name": "Joy Bose",
+        "author_url": "https://medium.com/@joyboseroy",
+        "num_followers": 76,
+        "short_bio": "Working as a software developer in machine learning projects. Interested in the intersection between technology, machine learning, society and well being."
+    },
+    {
+        "extraction_id": "4ba438e1-642c-4599-8157-fbb28c526231",
+        "extracted_at": "2024-08-16 06:22:15.088569",
+        "extracted_at_epoch": 1723789335,
+        "author_name": "Neeraj Sabharwal",
+        "author_url": "https://medium.com/@neerajsabharwal",
+        "num_followers": 194,
+        "short_bio": "Book AuthorPassionate about helping founders on their sales challenges. Technical background and now running sales."
+    },
+    {
+        "extraction_id": "4ba438e1-642c-4599-8157-fbb28c526231",
+        "extracted_at": "2024-08-16 06:22:15.088569",
+        "extracted_at_epoch": 1723789335,
+        "author_name": "Viet_1846",
+        "author_url": "https://medium.com/@viet1846",
+        "num_followers": 13,
+        "short_bio": ""
+    },
+    {
+        "extraction_id": "4ba438e1-642c-4599-8157-fbb28c526231",
+        "extracted_at": "2024-08-16 06:22:15.088569",
+        "extracted_at_epoch": 1723789335,
+        "author_name": "Vinicius Freitas",
+        "author_url": "https://medium.com/@engvinifreitas",
+        "num_followers": 0,
+        "short_bio": "appSign upSign inWriteSign upSign inVinicius FreitasHomeAboutVinicius FreitasInstalação simples do Apache Airflow no WindowsOlá, pessoal, neste artigo irei mostrar como podemos realizar uma instalação rápida para fins de estudo do Apache Airflow para quem usa…1d ago1d agoVinicius FreitasInstalação simples do Apache Superset no WindowsOlá, pessoal, neste artigo irei explicar da maneira mais simplista possível como instalar o apache superset na sua maquina local, a…Aug 6Aug 6Vinicius FreitasComo passei na certificação DP 203 Azure Data EngineerNeste artigo irei contar como passei na certificação de engenheiro de dados da microsoft e algumas dicas do que estudar para obter o passJul 22Jul 22Vinicius FreitasComo passei na certificação PL 300 Power BI Data Analyst AssociateNeste artigo irei falar um pouco sobre a minha experiencia com o exame e algumas dicas que podem ser uteis para quem pensa em tirar essa…Jun 18Jun 18Vinicius FreitasCriando pipeline com spark no microsoft FabricNeste artigo irei criar um pipeline utilizando o spark, a abordagem vai ser diferente do ultimo artigo onde criei utilizando low-code…Jun 13Jun 13Vinicius FreitasCriando um Pipeline de Dados Simples com Microsoft FabricNeste artigo, vou compartilhar um guia passo a passo sobre como criar um pipeline de dados completo usando o Microsoft Fabric e como…May 28May 28Vinicius FreitasCertificação DP-900 — Azure Data FundamentalsDesde de que iniciei minha carreira, despertei minha curiosidade com analise de dados e impressionado em como eles podem ser utilizados…May 15May 15Vinicius FreitasMaster Data Analyst | 3x OCI | 5x Microsoft | Azure Data Engineer Associate"
+    },
+    {
+        "extraction_id": "4ba438e1-642c-4599-8157-fbb28c526231",
+        "extracted_at": "2024-08-16 06:22:15.088569",
+        "extracted_at_epoch": 1723789335,
+        "author_name": "Krishna yogi",
+        "author_url": "https://medium.com/@krishna-yogik",
+        "num_followers": 110,
+        "short_bio": "Everything from Data Engg to AI"
+    },
+    {
+        "extraction_id": "4ba438e1-642c-4599-8157-fbb28c526231",
+        "extracted_at": "2024-08-16 06:22:15.088569",
+        "extracted_at_epoch": 1723789335,
+        "author_name": "Muhammad Habibi",
+        "author_url": "https://medium.com/@muhabibi",
+        "num_followers": 3,
+        "short_bio": "Just another data engineer"
+    },
+    {
+        "extraction_id": "4ba438e1-642c-4599-8157-fbb28c526231",
+        "extracted_at": "2024-08-16 06:22:15.088569",
+        "extracted_at_epoch": 1723789335,
+        "author_name": "Daniel Santhiago",
+        "author_url": "https://medium.com/@danieldeveloper01",
+        "num_followers": 3,
+        "short_bio": "Engenheiro de Controle e Automação com 11 anos de experiência em tecnologia e 4 como Engenheiro de Dados."
+    },
+    {
+        "extraction_id": "4ba438e1-642c-4599-8157-fbb28c526231",
+        "extracted_at": "2024-08-16 06:22:15.088569",
+        "extracted_at_epoch": 1723789335,
+        "author_name": "PeamMiiZ",
+        "author_url": "https://medium.com/@peemmygg",
+        "num_followers": 0,
+        "short_bio": "appSign upSign inWriteSign upSign inPeamMiiZHomeListsAboutPeamMiiZ[ DataTH ] รีวิวคอร์สเรียน Road To Data Engineer 3.0 2024สวัสดีทุกคนครับ สำหรับบล๊อกนี้ผมจะมารีวิวคอร์ส Road To Data Engineer 3.0 จากเพจ DataTH…Jul 30Jul 30PeamMiiZ"
+    },
+    {
+        "extraction_id": "4ba438e1-642c-4599-8157-fbb28c526231",
+        "extracted_at": "2024-08-16 06:22:15.088569",
+        "extracted_at_epoch": 1723789335,
+        "author_name": "Mariusz Brucki",
+        "author_url": "https://medium.com/@mariuszbrucki",
+        "num_followers": 2,
+        "short_bio": "Analytics Engineer in Greenpeace and Docplanner."
+    },
+    {
+        "extraction_id": "4ba438e1-642c-4599-8157-fbb28c526231",
+        "extracted_at": "2024-08-16 06:22:15.088569",
+        "extracted_at_epoch": 1723789335,
+        "author_name": "Jacek Laskowski",
+        "author_url": "https://medium.com/@jaceklaskowski",
+        "num_followers": 1900,
+        "short_bio": "Freelance Data(bricks) Engineer | #ApacheSpark #DeltaLake #Databricks #ApacheKafka #KafkaStreams | Java Champion | @theASF | #DatabricksBeacons"
+    },
+    {
+        "extraction_id": "4ba438e1-642c-4599-8157-fbb28c526231",
+        "extracted_at": "2024-08-16 06:22:15.088569",
+        "extracted_at_epoch": 1723789335,
+        "author_name": "iair linker",
+        "author_url": "https://medium.com/@ilinker",
+        "num_followers": 50,
+        "short_bio": ""
+    },
+    {
+        "extraction_id": "4ba438e1-642c-4599-8157-fbb28c526231",
+        "extracted_at": "2024-08-16 06:22:15.088569",
+        "extracted_at_epoch": 1723789335,
+        "author_name": "Feruz Urazaliev",
+        "author_url": "https://medium.com/@urazaliev_f",
+        "num_followers": 2200,
+        "short_bio": "Friend of MediumData Engineer | Exploring the nexus of self improvement & philosophy | Curious mind at play."
+    },
+    {
+        "extraction_id": "4ba438e1-642c-4599-8157-fbb28c526231",
+        "extracted_at": "2024-08-16 06:22:15.088569",
+        "extracted_at_epoch": 1723789335,
+        "author_name": "Paradime Labs",
+        "author_url": "https://medium.com/@paradimemarketing",
+        "num_followers": 5,
+        "short_bio": ""
+    },
+    {
+        "extraction_id": "4ba438e1-642c-4599-8157-fbb28c526231",
+        "extracted_at": "2024-08-16 06:22:15.088569",
+        "extracted_at_epoch": 1723789335,
+        "author_name": "Agarapu Ramesh",
+        "author_url": "https://medium.com/@agarapuramesh",
+        "num_followers": 160,
+        "short_bio": "Editor at Govindhtech"
+    },
+    {
+        "extraction_id": "4ba438e1-642c-4599-8157-fbb28c526231",
+        "extracted_at": "2024-08-16 06:22:15.088569",
+        "extracted_at_epoch": 1723789335,
+        "author_name": "Vechtomova Maria",
+        "author_url": "https://medium.com/@vechtomova.maria",
+        "num_followers": 1100,
+        "short_bio": "Leading MLOps transformation"
+    },
+    {
+        "extraction_id": "4ba438e1-642c-4599-8157-fbb28c526231",
+        "extracted_at": "2024-08-16 06:22:15.088569",
+        "extracted_at_epoch": 1723789335,
+        "author_name": "Rubens Sôto",
+        "author_url": "https://medium.com/@rubenssoto2005",
+        "num_followers": 26,
+        "short_bio": "Sou apaixonado por tecnologia, especialmente pela área de dados. Os assuntos que mais gosto de escrever e ler são relacionados a Big Data e Cloud."
+    },
+    {
+        "extraction_id": "4ba438e1-642c-4599-8157-fbb28c526231",
+        "extracted_at": "2024-08-16 06:22:15.088569",
+        "extracted_at_epoch": 1723789335,
+        "author_name": "Mauricio Rojas",
+        "author_url": "https://medium.com/@orellabac",
+        "num_followers": 117,
+        "short_bio": "Engineer with a passion for software design & AI. Expert in Java, C++, & big data. MSc in Computer Science. Currently exploring SnowPark."
+    },
+    {
+        "extraction_id": "4ba438e1-642c-4599-8157-fbb28c526231",
+        "extracted_at": "2024-08-16 06:22:15.088569",
+        "extracted_at_epoch": 1723789335,
+        "author_name": "Mkosovec",
+        "author_url": "https://medium.com/@mkosovec",
+        "num_followers": 0,
+        "short_bio": "appSign upSign inWriteSign upSign inMkosovecHomeAboutMkosovecinDataForgeIntroduction to the DataForge Declarative Transformation Framework — Part 2Part 1 of this blog series introduced a new generalized framework for working with SQL transformations by using column-pure and row-pure…2d ago2d agoMkosovecinDataForgeIntroduction to the DataForge Declarative Transformation Framework — Part 1Building, maintaining, and extending data pipelines and transformation logic is the backbone of every data product. Without consolidated…2d ago2d agoMkosovec"
+    },
+    {
+        "extraction_id": "4ba438e1-642c-4599-8157-fbb28c526231",
+        "extracted_at": "2024-08-16 06:22:15.088569",
+        "extracted_at_epoch": 1723789335,
+        "author_name": "Matt Weingarten",
+        "author_url": "https://medium.com/@matt_weingarten",
+        "num_followers": 2100,
+        "short_bio": "Currently a Data Engineer at Disney Streaming Services. Previously at Meta and Nielsen. Bridge player and sports fan. Thoughts are my own."
+    },
+    {
+        "extraction_id": "4ba438e1-642c-4599-8157-fbb28c526231",
+        "extracted_at": "2024-08-16 06:22:15.088569",
+        "extracted_at_epoch": 1723789335,
+        "author_name": "Gregory Hansen",
+        "author_url": "https://medium.com/@gregory.hansen",
+        "num_followers": 1,
+        "short_bio": "Friend of Medium"
+    },
+    {
+        "extraction_id": "4ba438e1-642c-4599-8157-fbb28c526231",
+        "extracted_at": "2024-08-16 06:22:15.088569",
+        "extracted_at_epoch": 1723789335,
+        "author_name": "Mohsinchoudhary",
+        "author_url": "https://medium.com/@mohsinchoudhary12",
+        "num_followers": 1,
+        "short_bio": ""
+    },
+    {
+        "extraction_id": "4ba438e1-642c-4599-8157-fbb28c526231",
+        "extracted_at": "2024-08-16 06:22:15.088569",
+        "extracted_at_epoch": 1723789335,
+        "author_name": "Joris Van Den Borre",
+        "author_url": "https://medium.com/@jvdborre",
+        "num_followers": 29,
+        "short_bio": "Founder of Tropos.io, helping business leaders innovate using data analytics on Amazon Web Services and Snowflake."
+    },
+    {
+        "extraction_id": "4ba438e1-642c-4599-8157-fbb28c526231",
+        "extracted_at": "2024-08-16 06:22:15.088569",
+        "extracted_at_epoch": 1723789335,
+        "author_name": "Rashmi Nagarahalli",
+        "author_url": "https://medium.com/@nagarahalli.rashmi",
+        "num_followers": 0,
+        "short_bio": "appSign upSign inWriteSign upSign inRashmi NagarahalliHomeAboutRashmi NagarahalliKAFKAApache Kafka is an open-source stream-processing software platform developed by LinkedIn and donated to the Apache Software Foundation…Aug 8Aug 8Rashmi NagarahalliLeveraging AI: Revolutionizing Manual and Automation TestingApr 29Apr 29Rashmi NagarahalliUnveiling the Power of Appium: Simplifying Mobile App TestingIn today’s digital era, mobile applications have become an integral part of our lives, offering convenience, entertainment, and…Apr 8Apr 8Rashmi NagarahalliSimple Cucumber UI Automation Framework with TestNGCreating a simple Cucumber UI automation framework with TestNG involves combining the capabilities of Cucumber and TestNG for…Jan 7Jan 7Rashmi NagarahalliKuberenetesWhat is Kubernetes?\nKubernetes is a container management system developed on the Google platform. Kubernetes helps to manage containerised…Oct 2, 2023Oct 2, 2023Rashmi NagarahalliAzure ServicesMicrosoft Azure, often referred to as Azure, is a cloud computing platform which was launched by Microsoft in February 2010. It is an open…Sep 19, 2023Sep 19, 2023Rashmi NagarahalliAWS ServicesWhat is AWS?\nAmazon Web Services (AWS) is the largest cloud computing platform, offering 200+ universally featured resources, from…Sep 15, 20231Sep 15, 20231Rashmi NagarahalliJAVA VersionsWhat is the latest Java version?\nAs of September 2023, Java 21 is the latest released Java version. The current long-term support version…Sep 15, 2023Sep 15, 2023Rashmi NagarahalliWebservices API Testing, REST API using java and BDD CucumberAPIs, or Application Programming Interfaces, are the connecting tissue between different systems or layers of an application. Applications…Oct 18, 2022Oct 18, 2022Rashmi Nagarahalli"
+    },
+    {
+        "extraction_id": "4ba438e1-642c-4599-8157-fbb28c526231",
+        "extracted_at": "2024-08-16 06:22:15.088569",
+        "extracted_at_epoch": 1723789335,
+        "author_name": "Ganesh Chandrasekaran",
+        "author_url": "https://medium.com/@gchandra",
+        "num_followers": 1300,
+        "short_bio": "Friend of MediumBig Data Solution Architect | Adjunct Professor. Thoughts and opinions are my own and don’t represent the companies I work for."
+    },
+    {
+        "extraction_id": "4ba438e1-642c-4599-8157-fbb28c526231",
+        "extracted_at": "2024-08-16 06:22:15.088569",
+        "extracted_at_epoch": 1723789335,
+        "author_name": "Shuyeb N Mohammed",
+        "author_url": "https://medium.com/@mohshuyeb",
+        "num_followers": 2,
+        "short_bio": "Techno Business Enabler | Low-Code AI & ML | Simplifying AI Learning | Coach & Mentor | Harvard Business School"
+    },
+    {
+        "extraction_id": "4ba438e1-642c-4599-8157-fbb28c526231",
+        "extracted_at": "2024-08-16 06:22:15.088569",
+        "extracted_at_epoch": 1723789335,
+        "author_name": "Stephen Dillon",
+        "author_url": "https://medium.com/@StephenMDillon",
+        "num_followers": 2,
+        "short_bio": ""
+    },
+    {
+        "extraction_id": "4ba438e1-642c-4599-8157-fbb28c526231",
+        "extracted_at": "2024-08-16 06:22:15.088569",
+        "extracted_at_epoch": 1723789335,
+        "author_name": "Jean-Michel ARNAUD",
+        "author_url": "https://medium.com/@j3amail",
+        "num_followers": 2,
+        "short_bio": "Enthusiastic about digital transformation management, with a strong focus on customer satisfaction and technical excellence."
+    },
+    {
+        "extraction_id": "4ba438e1-642c-4599-8157-fbb28c526231",
+        "extracted_at": "2024-08-16 06:22:15.088569",
+        "extracted_at_epoch": 1723789335,
+        "author_name": "Sanjayram Rajasrinivasan",
+        "author_url": "https://medium.com/@sanjayram.rajasrinivasan_41786",
+        "num_followers": 0,
+        "short_bio": "appSign upSign inWriteSign upSign inSanjayram RajasrinivasanHomeAboutSanjayram RajasrinivasanApache Airflow Part 1: Installing and Configuring Apache Airflow on Your Local SystemApache Airflow is a powerful tool for orchestrating workflows and data pipelines. In this post, we’ll guide you through the process of…Jul 24Jul 24Sanjayram Rajasrinivasan"
+    },
+    {
+        "extraction_id": "4ba438e1-642c-4599-8157-fbb28c526231",
+        "extracted_at": "2024-08-16 06:22:15.088569",
+        "extracted_at_epoch": 1723789335,
+        "author_name": "Hugo Lu",
+        "author_url": "https://medium.com/@hugolu87",
+        "num_followers": 8800,
+        "short_bio": "Friend of MediumI write on Data engineering and the coolest data stuff. CEO@ Orchestra, the best-in-class data pipeline management platform. https://app.getorchestra.io/signup"
+    },
+    {
+        "extraction_id": "4ba438e1-642c-4599-8157-fbb28c526231",
+        "extracted_at": "2024-08-16 06:22:15.088569",
+        "extracted_at_epoch": 1723789335,
+        "author_name": "alexeylark",
+        "author_url": "https://medium.com/@alexeylark",
+        "num_followers": 2,
+        "short_bio": "LinkedIn: https://www.linkedin.com/in/alexey-andryukhin/"
+    },
+    {
+        "extraction_id": "4ba438e1-642c-4599-8157-fbb28c526231",
+        "extracted_at": "2024-08-16 06:22:15.088569",
+        "extracted_at_epoch": 1723789335,
+        "author_name": "Atif Tariq",
+        "author_url": "https://medium.com/@atiftariq1",
+        "num_followers": 0,
+        "short_bio": "appSign upSign inWriteSign upSign inAtif TariqHomeAboutAtif TariqDBT and Spark SQL use casesBoth dbt (data build tool) and Spark SQL are powerful tools used in the data engineering and analytics space, but they serve different…Aug 5Aug 5Atif Tariq"
+    },
+    {
+        "extraction_id": "4ba438e1-642c-4599-8157-fbb28c526231",
+        "extracted_at": "2024-08-16 06:22:15.088569",
+        "extracted_at_epoch": 1723789335,
+        "author_name": "IntellaNOVA",
+        "author_url": "https://medium.com/@ibbyrahmani",
+        "num_followers": 1,
+        "short_bio": "Intellanova is Go-To-Market consulting firm. We create content for Sales Enablement, Demand Gen, Web and Partners in the Data, AI, Security & Governance space."
+    },
+    {
+        "extraction_id": "4ba438e1-642c-4599-8157-fbb28c526231",
+        "extracted_at": "2024-08-16 06:22:15.088569",
+        "extracted_at_epoch": 1723789335,
+        "author_name": "Arbi Nurhakim",
+        "author_url": "https://medium.com/@arbinurhakim",
+        "num_followers": 0,
+        "short_bio": "appSign upSign inWriteSign upSign inArbi NurhakimHomeAboutArbi NurhakimFrom Weather APIs to PostgreSQL Database: A Robust ETL PipelineIntroduction18h ago18h agoArbi NurhakimAnalyze Business Questions Over DVD Rental Database (PostgreSQL Database Sample)IntroductionMar 21Mar 21Arbi Nurhakim"
+    },
+    {
+        "extraction_id": "4ba438e1-642c-4599-8157-fbb28c526231",
+        "extracted_at": "2024-08-16 06:22:15.088569",
+        "extracted_at_epoch": 1723789335,
+        "author_name": "Mihir Samant",
+        "author_url": "https://medium.com/@mihirs202",
+        "num_followers": 42,
+        "short_bio": ""
+    },
+    {
+        "extraction_id": "4ba438e1-642c-4599-8157-fbb28c526231",
+        "extracted_at": "2024-08-16 06:22:15.088569",
+        "extracted_at_epoch": 1723789335,
+        "author_name": "Jitesh Raut",
+        "author_url": "https://medium.com/@deploytoprod",
+        "num_followers": 4,
+        "short_bio": "🖱️Data Engineer | 👨‍💻Tech Explorer | ✨Futurist Unveiling the possibilities one byte at a time."
+    },
+    {
+        "extraction_id": "4ba438e1-642c-4599-8157-fbb28c526231",
+        "extracted_at": "2024-08-16 06:22:15.088569",
+        "extracted_at_epoch": 1723789335,
+        "author_name": "Y_Lu",
+        "author_url": "https://medium.com/@ellieberry0419",
+        "num_followers": 13,
+        "short_bio": "a data engineer who enjoys exploring data world and new teches"
+    },
+    {
+        "extraction_id": "4ba438e1-642c-4599-8157-fbb28c526231",
+        "extracted_at": "2024-08-16 06:22:15.088569",
+        "extracted_at_epoch": 1723789335,
+        "author_name": "Sanjay Kumar PhD",
+        "author_url": "https://medium.com/@skphd",
+        "num_followers": 20,
+        "short_bio": "AI Product Management | Data Scientist | GenAI | Machine Learning | LLM | AI Agents | NLP"
+    },
+    {
+        "extraction_id": "4ba438e1-642c-4599-8157-fbb28c526231",
+        "extracted_at": "2024-08-16 06:22:15.088569",
+        "extracted_at_epoch": 1723789335,
+        "author_name": "Complere Infosystem",
+        "author_url": "https://medium.com/@complereinfosystem827",
+        "num_followers": 0,
+        "short_bio": "appSign upSign inWriteSign upSign inComplere InfosystemHomeAboutComplere InfosystemWhy Databricks is the Future of Data Engineering? See 9 Valid ReasonsIntroductionJust nowJust nowComplere InfosystemTop 9 Practices to Scale Data Solutions with DatabricksScaling your data solution effectively is crucial for maintaining a competitive edge in today’s data-driven world. Our latest blog post…2d ago12d ago1Complere InfosystemNobody Will Tell You About These Top 9 Practices to Scale with DatabricksIntroductionAug 8Aug 8Complere InfosystemTop 8 Databricks Features You Must ExploreIntroductionAug 1Aug 1Complere InfosystemHow Databricks Integration Can Flawlessly Connect Your Data EcosystemIntroductionJul 24Jul 24Complere InfosystemThe Llm Landscape: A Look at Gpt-4, Gemini, Claude 3, and Meta Llama 3The landscape is more dynamic and promising than ever in the ever-evolving realm of language models. Our latest blog post, “The LLM…Jul 17Jul 17Complere InfosystemDatabrick Vs Traditional Data WarehousesIntroductionJul 17Jul 17Complere Infosystem5 Databrick Benefits for Real-Time Data ProcessingIntroductionJul 10Jul 10Complere InfosystemGenerating More Relevant and Reliable Openai’s API ResponsesDiscover the secrets to enhancing the reliability of your AI responses with our in-depth exploration of the OpenAI API. This detailed guide…Jul 1Jul 1Complere InfosystemBest Data Engineering Tools and Technologies Trends in 2024In 2024, the landscape of data engineering is evolving rapidly, bringing forward an array of advanced tools and technologies that transform…Jun 18Jun 18Complere InfosystemComplere Infosystem is a multi-technology service provider with a reliable technology partner. We offer many services, Data Analytics, Engineering."
+    },
+    {
+        "extraction_id": "4ba438e1-642c-4599-8157-fbb28c526231",
+        "extracted_at": "2024-08-16 06:22:15.088569",
+        "extracted_at_epoch": 1723789335,
+        "author_name": "Begum KOCA CEYHANLI",
+        "author_url": "https://medium.com/@bgm.koca",
+        "num_followers": 2,
+        "short_bio": ""
+    },
+    {
+        "extraction_id": "4ba438e1-642c-4599-8157-fbb28c526231",
+        "extracted_at": "2024-08-16 06:22:15.088569",
+        "extracted_at_epoch": 1723789335,
+        "author_name": "Karine Bernardino",
+        "author_url": "https://medium.com/@karinebernardino",
+        "num_followers": 15,
+        "short_bio": "Analytics Engineer at XP Inc."
+    },
+    {
+        "extraction_id": "4ba438e1-642c-4599-8157-fbb28c526231",
+        "extracted_at": "2024-08-16 06:22:15.088569",
+        "extracted_at_epoch": 1723789335,
+        "author_name": "Shashwath Shenoy",
+        "author_url": "https://medium.com/@shenoy.shashwath",
+        "num_followers": 243,
+        "short_bio": "Friend of MediumExperienced Data Engineering Leader with a passion for delivering scalable, efficient and high-performance data solutions."
+    },
+    {
+        "extraction_id": "4ba438e1-642c-4599-8157-fbb28c526231",
+        "extracted_at": "2024-08-16 06:22:15.088569",
+        "extracted_at_epoch": 1723789335,
+        "author_name": "Joe Karuthedath",
+        "author_url": "https://medium.com/@JoeKaruthedath",
+        "num_followers": 1,
+        "short_bio": ""
+    },
+    {
+        "extraction_id": "4ba438e1-642c-4599-8157-fbb28c526231",
+        "extracted_at": "2024-08-16 06:22:15.088569",
+        "extracted_at_epoch": 1723789335,
+        "author_name": "Mena Wang, PhD",
+        "author_url": "https://medium.com/@menawang",
+        "num_followers": 61,
+        "short_bio": "Book Author🔍 Data Scientist | 💡 ML Top Voice | 📚 Author | 🎓 ex-Uni Lecturer https://www.linkedin.com/in/mena-ning-wang/"
+    },
+    {
+        "extraction_id": "4ba438e1-642c-4599-8157-fbb28c526231",
+        "extracted_at": "2024-08-16 06:22:15.088569",
+        "extracted_at_epoch": 1723789335,
+        "author_name": "Martin Jurado Pedroza",
+        "author_url": "https://medium.com/@martin.jurado.p",
+        "num_followers": 139,
+        "short_bio": "Book AuthorMy name is Martin Jurado, and I am a technology enthusiast with experience in data, innovation, development, and design. 🤓"
+    },
+    {
+        "extraction_id": "4ba438e1-642c-4599-8157-fbb28c526231",
+        "extracted_at": "2024-08-16 06:22:15.088569",
+        "extracted_at_epoch": 1723789335,
+        "author_name": "Med Ali B",
+        "author_url": "https://medium.com/@bardimedali",
+        "num_followers": 1,
+        "short_bio": ""
+    },
+    {
+        "extraction_id": "4ba438e1-642c-4599-8157-fbb28c526231",
+        "extracted_at": "2024-08-16 06:22:15.088569",
+        "extracted_at_epoch": 1723789335,
+        "author_name": "Carol Fazani",
+        "author_url": "https://medium.com/@carolfazani",
+        "num_followers": 10,
+        "short_bio": ""
+    },
+    {
+        "extraction_id": "4ba438e1-642c-4599-8157-fbb28c526231",
+        "extracted_at": "2024-08-16 06:22:15.088569",
+        "extracted_at_epoch": 1723789335,
+        "author_name": "Shima",
+        "author_url": "https://medium.com/@shb8086",
+        "num_followers": 241,
+        "short_bio": "Hi, I'm Shima 💁‍♀️ | Linkedin: https://www.linkedin.com/in/shb8086/ | GitHub: https://github.com/shb8086 | Substack: https://substack.com/@shb8086"
+    },
+    {
+        "extraction_id": "4ba438e1-642c-4599-8157-fbb28c526231",
+        "extracted_at": "2024-08-16 06:22:15.088569",
+        "extracted_at_epoch": 1723789335,
+        "author_name": "Lorraine Trindade",
+        "author_url": "https://medium.com/@lorrainetrindade",
+        "num_followers": 103,
+        "short_bio": "(entusiasta da tecnologia)"
+    },
+    {
+        "extraction_id": "4ba438e1-642c-4599-8157-fbb28c526231",
+        "extracted_at": "2024-08-16 06:22:15.088569",
+        "extracted_at_epoch": 1723789335,
+        "author_name": "Ash",
+        "author_url": "https://medium.com/@datadabbler",
+        "num_followers": 5,
+        "short_bio": "Data Analyst | AWS Certified Cloud Practitioner"
+    }
+]
