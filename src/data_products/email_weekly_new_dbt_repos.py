@@ -22,10 +22,11 @@ class SendNewDbtRepoEmail:
                     SELECT
                         repo_name,
                         html_url,
-                        created_at
+                        created_at,
+                        to_timestamp(first_extracted_at) as first_extracted_at
                     FROM read_parquet("{os.getenv('DATA_DIR')}/marts/dim_dbt_repos.parquet")
                     WHERE
-                        EPOCH_MS(created_at) >= EPOCH_MS(GET_CURRENT_TIMESTAMP() - INTERVAL {self.lookback_days} DAY)
+                        to_timestamp(first_extracted_at) >= (GET_CURRENT_TIMESTAMP() - INTERVAL {self.lookback_days} DAY)
                     ORDER BY created_at DESC
         """
             )
