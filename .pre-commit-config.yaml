@@ -43,6 +43,6 @@ repos:
       additional_dependencies: ["types-beautifulsoup4", "types-pytz", "types-requests", "types-retry", "types-tabulate"]
       args: ["--install-types", "--strict"]
   - repo: https://github.com/tconbeer/sqlfmt
-    rev: v0.23.3
+    rev: v0.24.0
     hooks:
       - id: sqlfmt
