@@ -271,8 +271,8 @@ def dbt_invoke(dbt_cli_args: List[str], suppress_log: bool = False) -> dbtRunner
         ]
     ).invoke(args_to_pass)
 
-    if res.exception:
-        raise RuntimeError(res.exception)
+    if not res.success:
+        raise RuntimeError(f"dbt_invoke failed with args: {dbt_cli_args}")
     return res
 
 

@@ -1,6 +1,6 @@
 packages:
-- package: calogica/dbt_expectations
-  version: 0.8.5
-- package: calogica/dbt_date
-  version: 0.7.2
-sha1_hash: f75987b4ce8fc192a59ea7059199ee57ae931b09
+  - git: https://github.com/metaplane/dbt-expectations.git
+    revision: bdb8f8e668da2743036a81fa95565d5787a56532
+  - package: calogica/dbt_date
+    version: 0.10.1
+sha1_hash: affd0e880d20ab3f7ff4a83a7d9697a787f19b91
