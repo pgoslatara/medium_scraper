@@ -1,3 +1,32 @@
+[project]
+name = "medium_scraper"
+version = "0.0.0"
+description = "A slightly sarcastic, highly over-engineered GitHub-as-a-Data-Platform Proof-of-Concept."
+authors = []
+dependencies = [
+  "beautifulsoup4",
+  "cloudscraper",
+  "dbt-core",
+  "dbt-duckdb",
+  "en_core_web_sm @ https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.7.1/en_core_web_sm-3.7.1-py3-none-any.whl",
+  "graphql-query",
+  "jupyterlite-core[all]",
+  "jupyterlite-pyodide-kernel",
+  "papermill",
+  "pyarrow",
+  "PyGithub",
+  "requests",
+  "retry",
+  "spacy",
+  "tabulate"
+]
+requires-python = ">=3.11,<3.12"
+
+[project.scripts]
+data_products = "src.data_products.main:main"
+ingestion = "src.ingestion.main:main"
+transformation = "src.transformation.main:main"
+
 [tool.black]
 line-length = 99
 include = '/project$|\.pyi?$'
@@ -21,36 +50,9 @@ exclude = '''
 profile = "black"
 
 [tool.poetry]
-name = "medium_scraper"
-version = "0.0.0"
-description = "A slightly sarcastic, highly over-engineered GitHub-as-a-Data-Platform Proof-of-Concept."
-authors = []
 packages = [
     { include = "src" },
 ]
-
-[tool.poetry.dependencies]
-python = "^3.11"
-beautifulsoup4="*"
-cloudscraper = "*"
-dbt-core="*"
-dbt-duckdb="*"
-en_core_web_sm = {url = "https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.7.1/en_core_web_sm-3.7.1-py3-none-any.whl"}
-graphql-query = "*"
-jupyterlite-core = {version="*", extras=["all"]}
-jupyterlite-pyodide-kernel = "*"
-papermill = "*"
-pyarrow="*"
-PyGithub="*"
-requests="*"
-retry="*"
-spacy="*"
-tabulate="*"
-
-[tool.poetry.scripts]
-data_products = "src.data_products.main:main"
-ingestion = "src.ingestion.main:main"
-transformation = "src.transformation.main:main"
 
 [tool.poetry.group.dev.dependencies]
 duckcli="*"
