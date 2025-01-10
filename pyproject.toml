@@ -12,11 +12,13 @@ dependencies = [
   "graphql-query",
   "jupyterlite-core[all]",
   "jupyterlite-pyodide-kernel",
+  "matplotlib",
   "papermill",
   "pyarrow",
   "PyGithub",
   "requests",
   "retry",
+  "seaborn",
   "spacy",
   "tabulate"
 ]
