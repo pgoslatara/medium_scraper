@@ -21,7 +21,7 @@ repos:
     hooks:
       - id: nbstripout
   - repo: https://github.com/pycqa/isort
-    rev: 5.13.2
+    rev: 6.0.0
     hooks:
       - id: isort
         args: ["--profile", "black", "--filter-files"]
@@ -43,6 +43,6 @@ repos:
       additional_dependencies: ["types-beautifulsoup4", "types-pytz", "types-requests", "types-retry", "types-tabulate"]
       args: ["--install-types", "--strict"]
   - repo: https://github.com/tconbeer/sqlfmt
-    rev: v0.25.0
+    rev: v0.26.0
     hooks:
       - id: sqlfmt
