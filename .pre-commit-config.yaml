@@ -21,13 +21,13 @@ repos:
     hooks:
       - id: nbstripout
   - repo: https://github.com/pycqa/isort
-    rev: 5.13.2
+    rev: 6.0.1
     hooks:
       - id: isort
         args: ["--profile", "black", "--filter-files"]
         name: isort (python)
   - repo: https://github.com/ambv/black
-    rev: 24.10.0
+    rev: 25.1.0
     hooks:
       - id: black
         name: Run black formatter
@@ -37,12 +37,12 @@ repos:
       - id: autoflake
         args: ["--in-place", "--remove-all-unused-imports"]
   - repo: https://github.com/pre-commit/mirrors-mypy
-    rev: v1.14.1
+    rev: v1.15.0
     hooks:
     - id: mypy
       additional_dependencies: ["types-beautifulsoup4", "types-pytz", "types-requests", "types-retry", "types-tabulate"]
       args: ["--install-types", "--strict"]
   - repo: https://github.com/tconbeer/sqlfmt
-    rev: v0.24.0
+    rev: v0.26.0
     hooks:
       - id: sqlfmt
