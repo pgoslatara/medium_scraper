@@ -1,0 +1,488 @@
+[
+    {
+        "extraction_id": "54cb21fb-3ff9-410d-a580-593365a845bc",
+        "extracted_at": "2024-10-25 06:24:48.037790",
+        "extracted_at_epoch": 1729837488,
+        "author_name": "Hugo Lu",
+        "author_url": "https://medium.com/@hugolu87",
+        "num_followers": 9200,
+        "short_bio": "Friend of MediumI write on Data engineering and the coolest data stuff. CEO@ Orchestra, the best-in-class unified control plane for dataops. https://app.getorchestra.io/signup"
+    },
+    {
+        "extraction_id": "54cb21fb-3ff9-410d-a580-593365a845bc",
+        "extracted_at": "2024-10-25 06:24:48.037790",
+        "extracted_at_epoch": 1729837488,
+        "author_name": "David Morton",
+        "author_url": "https://medium.com/@davidmmorton",
+        "num_followers": 3,
+        "short_bio": "David is a technology nerd and amateur mathemagician."
+    },
+    {
+        "extraction_id": "54cb21fb-3ff9-410d-a580-593365a845bc",
+        "extracted_at": "2024-10-25 06:24:48.037790",
+        "extracted_at_epoch": 1729837488,
+        "author_name": "RainbowBrite",
+        "author_url": "https://medium.com/@mikdvs3",
+        "num_followers": 125,
+        "short_bio": "I'm an average person who wants to write about whatever comes to mind. Look back to unpack and keep it simple. Thankyou in advance for reading my ramblings."
+    },
+    {
+        "extraction_id": "54cb21fb-3ff9-410d-a580-593365a845bc",
+        "extracted_at": "2024-10-25 06:24:48.037790",
+        "extracted_at_epoch": 1729837488,
+        "author_name": "Chengzhi Zhao",
+        "author_url": "https://medium.com/@chengzhizhao",
+        "num_followers": 930,
+        "short_bio": "Data Engineer | Data Content Creator | Contributor of Airflow, Flink | Blog chengzhizhao.com"
+    },
+    {
+        "extraction_id": "54cb21fb-3ff9-410d-a580-593365a845bc",
+        "extracted_at": "2024-10-25 06:24:48.037790",
+        "extracted_at_epoch": 1729837488,
+        "author_name": "Qing Ye",
+        "author_url": "https://medium.com/@yeqing_40735",
+        "num_followers": 7,
+        "short_bio": ""
+    },
+    {
+        "extraction_id": "54cb21fb-3ff9-410d-a580-593365a845bc",
+        "extracted_at": "2024-10-25 06:24:48.037790",
+        "extracted_at_epoch": 1729837488,
+        "author_name": "Snir Israeli",
+        "author_url": "https://medium.com/@snir.isl",
+        "num_followers": 16,
+        "short_bio": "I'm a Data Engineer, tech geek who loves data, infrastructure and everything in between :)"
+    },
+    {
+        "extraction_id": "54cb21fb-3ff9-410d-a580-593365a845bc",
+        "extracted_at": "2024-10-25 06:24:48.037790",
+        "extracted_at_epoch": 1729837488,
+        "author_name": "Bryan McMaster",
+        "author_url": "https://medium.com/@bryanmcmaster",
+        "num_followers": 21,
+        "short_bio": "I enjoy writing about data. Concentrating on strategy and governance. I work at Databricks and love helping customers achieve their vision with data."
+    },
+    {
+        "extraction_id": "54cb21fb-3ff9-410d-a580-593365a845bc",
+        "extracted_at": "2024-10-25 06:24:48.037790",
+        "extracted_at_epoch": 1729837488,
+        "author_name": "Nicolas Lelièvre",
+        "author_url": "https://medium.com/@nicolasglelievre",
+        "num_followers": 4,
+        "short_bio": "Analytics Engineering Tech Lead @Maxa | Montreal (QC), Canada"
+    },
+    {
+        "extraction_id": "54cb21fb-3ff9-410d-a580-593365a845bc",
+        "extracted_at": "2024-10-25 06:24:48.037790",
+        "extracted_at_epoch": 1729837488,
+        "author_name": "Viral Patel",
+        "author_url": "https://medium.com/@data_engineering_0216",
+        "num_followers": 265,
+        "short_bio": "Azure Morden Data Platform, Senior Solution Architect, Databricks Champion"
+    },
+    {
+        "extraction_id": "54cb21fb-3ff9-410d-a580-593365a845bc",
+        "extracted_at": "2024-10-25 06:24:48.037790",
+        "extracted_at_epoch": 1729837488,
+        "author_name": "Douglas Souza",
+        "author_url": "https://medium.com/@dougdataeng",
+        "num_followers": 8,
+        "short_bio": ""
+    },
+    {
+        "extraction_id": "54cb21fb-3ff9-410d-a580-593365a845bc",
+        "extracted_at": "2024-10-25 06:24:48.037790",
+        "extracted_at_epoch": 1729837488,
+        "author_name": "Dan Sutherland",
+        "author_url": "https://medium.com/@sutherl99",
+        "num_followers": 182,
+        "short_bio": "Friend of MediumDan is Senior Director of Technology at Protiviti. He advises Fortune 1000 clients on data and cloud data management strategies and Modern Data Architectures."
+    },
+    {
+        "extraction_id": "54cb21fb-3ff9-410d-a580-593365a845bc",
+        "extracted_at": "2024-10-25 06:24:48.037790",
+        "extracted_at_epoch": 1729837488,
+        "author_name": "Gustavo Akashi",
+        "author_url": "https://medium.com/@gustavoakx",
+        "num_followers": 10,
+        "short_bio": "Data Platform Engineer @ QuintoAndar"
+    },
+    {
+        "extraction_id": "54cb21fb-3ff9-410d-a580-593365a845bc",
+        "extracted_at": "2024-10-25 06:24:48.037790",
+        "extracted_at_epoch": 1729837488,
+        "author_name": "Ben Todd",
+        "author_url": "https://medium.com/@bentodd_46499",
+        "num_followers": 6,
+        "short_bio": ""
+    },
+    {
+        "extraction_id": "54cb21fb-3ff9-410d-a580-593365a845bc",
+        "extracted_at": "2024-10-25 06:24:48.037790",
+        "extracted_at_epoch": 1729837488,
+        "author_name": "Frank Caron",
+        "author_url": "https://medium.com/@frankycaron",
+        "num_followers": 397,
+        "short_bio": "Taken (back) the black at www.frankcaron.com"
+    },
+    {
+        "extraction_id": "54cb21fb-3ff9-410d-a580-593365a845bc",
+        "extracted_at": "2024-10-25 06:24:48.037790",
+        "extracted_at_epoch": 1729837488,
+        "author_name": "SqlDBM",
+        "author_url": "https://medium.com/@sqldbm",
+        "num_followers": 114,
+        "short_bio": "SqlDBM is uniquely positioned to address the needs in Enterprise Data Management to design, manage, and document analytical data within cloud data platforms."
+    },
+    {
+        "extraction_id": "54cb21fb-3ff9-410d-a580-593365a845bc",
+        "extracted_at": "2024-10-25 06:24:48.037790",
+        "extracted_at_epoch": 1729837488,
+        "author_name": "Krispil Sapir",
+        "author_url": "https://medium.com/@krispilsapir",
+        "num_followers": 0,
+        "short_bio": "appSign upSign inWriteSign upSign inKrispil SapirHomeAboutKrispil SapirBuilding a No-Code Data Transformation Tool with Dynamic Airflow DAGsIn today’s fast-paced data-driven world, efficiency and scalability are key. Data engineers often find themselves juggling multiple…Oct 8Oct 8Krispil SapirUpdate Your Airflow Variables Using Git ActionsManaging Airflow variables can be a bit challenging, especially if you prefer to keep your configurations version-controlled in a Git…Sep 10Sep 10Krispil SapirSenior Data Engineer"
+    },
+    {
+        "extraction_id": "54cb21fb-3ff9-410d-a580-593365a845bc",
+        "extracted_at": "2024-10-25 06:24:48.037790",
+        "extracted_at_epoch": 1729837488,
+        "author_name": "Emily Johnson",
+        "author_url": "https://medium.com/@emilyjohnsonready",
+        "num_followers": 5,
+        "short_bio": "I'm Emily Johnson, a software developer and tech journalist. I build innovative solutions and share insights on AI and coding trends through my blog."
+    },
+    {
+        "extraction_id": "54cb21fb-3ff9-410d-a580-593365a845bc",
+        "extracted_at": "2024-10-25 06:24:48.037790",
+        "extracted_at_epoch": 1729837488,
+        "author_name": "Giri R Varatharajan",
+        "author_url": "https://medium.com/@giri.varatharajan",
+        "num_followers": 0,
+        "short_bio": "appSign upSign inWriteSign upSign inGiri R VaratharajanHomeAboutGiri R VaratharajanHarnessing AI for Log analysis using AI functions in DatabricksIn today’s data-driven world, quickly identifying and resolving issues in data pipelines (both real-time and batch) is key to improving…3d ago3d agoGiri R Varatharajan"
+    },
+    {
+        "extraction_id": "54cb21fb-3ff9-410d-a580-593365a845bc",
+        "extracted_at": "2024-10-25 06:24:48.037790",
+        "extracted_at_epoch": 1729837488,
+        "author_name": "Christophe Oudar",
+        "author_url": "https://medium.com/@kayrnt",
+        "num_followers": 169,
+        "short_bio": "Staff Software engineer at @Teads, mostly working on Big Data related topics"
+    },
+    {
+        "extraction_id": "54cb21fb-3ff9-410d-a580-593365a845bc",
+        "extracted_at": "2024-10-25 06:24:48.037790",
+        "extracted_at_epoch": 1729837488,
+        "author_name": "Sriram Srinivasan",
+        "author_url": "https://medium.com/@sramsrinivasan",
+        "num_followers": 4,
+        "short_bio": ""
+    },
+    {
+        "extraction_id": "54cb21fb-3ff9-410d-a580-593365a845bc",
+        "extracted_at": "2024-10-25 06:24:48.037790",
+        "extracted_at_epoch": 1729837488,
+        "author_name": "Nikola Ilic",
+        "author_url": "https://medium.com/@datamozart",
+        "num_followers": 3200,
+        "short_bio": "Data Mozart — Make Music from your Data!| data-mozart.com | @DataMozart | Microsoft Data Platform MVP | Power BI Addict | Blogger, speaker, learner…"
+    },
+    {
+        "extraction_id": "54cb21fb-3ff9-410d-a580-593365a845bc",
+        "extracted_at": "2024-10-25 06:24:48.037790",
+        "extracted_at_epoch": 1729837488,
+        "author_name": "Chetan Gupta",
+        "author_url": "https://medium.com/@chetan.cheetu",
+        "num_followers": 0,
+        "short_bio": "appSign upSign inWriteSign upSign inChetan GuptaHomeAboutChetan GuptaApache Airflow and Dagster for Data OrchestrationChoosing Between Apache Airflow and Dagster for Data Orchestration: A Detailed Comparison for a Data PlatformOct 9Oct 9Chetan GuptaUnderstanding OLTP and Choosing the Right Database for Your Transactional WorkloadsIntroduction to OLTP (Online Transaction Processing)Oct 7Oct 7Chetan GuptaStar Schema vs. Snowflake Schema: A ComparisonBoth Star Schema and Snowflake Schema are common data modeling designs used in data warehousing to structure data for efficient reporting…Sep 29Sep 29Chetan GuptaData Showdown: OLAP vs. OLTPOLAP versus OLTPsSep 29Sep 29Chetan GuptaMastering Scalable Data Warehousing on AWS: From S3 to Semantic Layers with AtScaleAs organizations scale, they generate massive volumes of data that need to be ingested, stored, processed, and analyzed efficiently. AWS…Sep 27Sep 27Chetan Gupta"
+    },
+    {
+        "extraction_id": "54cb21fb-3ff9-410d-a580-593365a845bc",
+        "extracted_at": "2024-10-25 06:24:48.037790",
+        "extracted_at_epoch": 1729837488,
+        "author_name": "Michael Berry",
+        "author_url": "https://medium.com/@databerryau",
+        "num_followers": 83,
+        "short_bio": "Analytics Engineer | Fabric | Azure | Databricks https://www.linkedin.com/in/databerryau/"
+    },
+    {
+        "extraction_id": "54cb21fb-3ff9-410d-a580-593365a845bc",
+        "extracted_at": "2024-10-25 06:24:48.037790",
+        "extracted_at_epoch": 1729837488,
+        "author_name": "Eduard Popa",
+        "author_url": "https://medium.com/@eduard2popa",
+        "num_followers": 345,
+        "short_bio": "Senior Consultant and Data Engineer https://substack.com/@eduardpopa https://www.linkedin.com/in/eduard-andrei-popa/"
+    },
+    {
+        "extraction_id": "54cb21fb-3ff9-410d-a580-593365a845bc",
+        "extracted_at": "2024-10-25 06:24:48.037790",
+        "extracted_at_epoch": 1729837488,
+        "author_name": "Piotr Sieminski",
+        "author_url": "https://medium.com/@sieminskipiotr",
+        "num_followers": 12,
+        "short_bio": "AWS & dbt & Snowflake certified | Optimising data architecture processes!"
+    },
+    {
+        "extraction_id": "54cb21fb-3ff9-410d-a580-593365a845bc",
+        "extracted_at": "2024-10-25 06:24:48.037790",
+        "extracted_at_epoch": 1729837488,
+        "author_name": "Punsiri Boonyakiat",
+        "author_url": "https://medium.com/@punsiriboonyakiat",
+        "num_followers": 466,
+        "short_bio": "Senior Data Engineer | Google Cloud Certified Professional Data Engineer| Traveller | A Mom | Learner"
+    },
+    {
+        "extraction_id": "54cb21fb-3ff9-410d-a580-593365a845bc",
+        "extracted_at": "2024-10-25 06:24:48.037790",
+        "extracted_at_epoch": 1729837488,
+        "author_name": "Engineer With Data",
+        "author_url": "https://medium.com/@engineerwithdata",
+        "num_followers": 1,
+        "short_bio": "empowers learners to master data engineering through hands-on training. Building data pipelines and practical skills for real-world data processing."
+    },
+    {
+        "extraction_id": "54cb21fb-3ff9-410d-a580-593365a845bc",
+        "extracted_at": "2024-10-25 06:24:48.037790",
+        "extracted_at_epoch": 1729837488,
+        "author_name": "Axel Schwanke",
+        "author_url": "https://medium.com/@axel.schwanke",
+        "num_followers": 402,
+        "short_bio": "Senior Data Engineer | Data Architect | Data Science | Data Mesh | Data Governance | Databricks | https://www.linkedin.com/in/axelschwanke/"
+    },
+    {
+        "extraction_id": "54cb21fb-3ff9-410d-a580-593365a845bc",
+        "extracted_at": "2024-10-25 06:24:48.037790",
+        "extracted_at_epoch": 1729837488,
+        "author_name": "Wilmer Ropero",
+        "author_url": "https://medium.com/@wilmer.ropero.castano",
+        "num_followers": 14,
+        "short_bio": "Data engineer eager to share DE knowledge & offer career guidance.Let's explore the world of data together!🚀"
+    },
+    {
+        "extraction_id": "54cb21fb-3ff9-410d-a580-593365a845bc",
+        "extracted_at": "2024-10-25 06:24:48.037790",
+        "extracted_at_epoch": 1729837488,
+        "author_name": "Akshatha",
+        "author_url": "https://medium.com/@akshathakulal",
+        "num_followers": 9,
+        "short_bio": ""
+    },
+    {
+        "extraction_id": "54cb21fb-3ff9-410d-a580-593365a845bc",
+        "extracted_at": "2024-10-25 06:24:48.037790",
+        "extracted_at_epoch": 1729837488,
+        "author_name": "AccentFuture",
+        "author_url": "https://medium.com/@accentfuture",
+        "num_followers": 5,
+        "short_bio": "Master data engineering with real-time ETL, Apache Airflow, Spark, Databricks, cloud platforms like AWS,Azure,24x7 support, and job assistance for career growth"
+    },
+    {
+        "extraction_id": "54cb21fb-3ff9-410d-a580-593365a845bc",
+        "extracted_at": "2024-10-25 06:24:48.037790",
+        "extracted_at_epoch": 1729837488,
+        "author_name": "Digital Power",
+        "author_url": "https://medium.com/@digitalpower",
+        "num_followers": 15,
+        "short_bio": "As a fast-growing data consultancy, we help you go from data to action. Our mission? To become your data partner."
+    },
+    {
+        "extraction_id": "54cb21fb-3ff9-410d-a580-593365a845bc",
+        "extracted_at": "2024-10-25 06:24:48.037790",
+        "extracted_at_epoch": 1729837488,
+        "author_name": "IntellaNOVA",
+        "author_url": "https://medium.com/@ibbyrahmani",
+        "num_followers": 7,
+        "short_bio": "Intellanova is a Data, AI, Security and Governance consulting firm. We create content for Sales Enablement, Demand Gen, Events, Web, and Partner."
+    },
+    {
+        "extraction_id": "54cb21fb-3ff9-410d-a580-593365a845bc",
+        "extracted_at": "2024-10-25 06:24:48.037790",
+        "extracted_at_epoch": 1729837488,
+        "author_name": "Tushar Bhasin",
+        "author_url": "https://medium.com/@tshr.bhasin",
+        "num_followers": 4,
+        "short_bio": ""
+    },
+    {
+        "extraction_id": "54cb21fb-3ff9-410d-a580-593365a845bc",
+        "extracted_at": "2024-10-25 06:24:48.037790",
+        "extracted_at_epoch": 1729837488,
+        "author_name": "Rui Carvalho",
+        "author_url": "https://medium.com/@ruimigueltcarvalho",
+        "num_followers": 1000,
+        "short_bio": "Data Enthusiast | One of my passions is to teach what´ve learned | Storys every week."
+    },
+    {
+        "extraction_id": "54cb21fb-3ff9-410d-a580-593365a845bc",
+        "extracted_at": "2024-10-25 06:24:48.037790",
+        "extracted_at_epoch": 1729837488,
+        "author_name": "TechnoLifts",
+        "author_url": "https://medium.com/@technolifts",
+        "num_followers": 44,
+        "short_bio": ""
+    },
+    {
+        "extraction_id": "54cb21fb-3ff9-410d-a580-593365a845bc",
+        "extracted_at": "2024-10-25 06:24:48.037790",
+        "extracted_at_epoch": 1729837488,
+        "author_name": "Daisuke",
+        "author_url": "https://medium.com/@Benjamin0313",
+        "num_followers": 39,
+        "short_bio": "Snowflake Squad"
+    },
+    {
+        "extraction_id": "54cb21fb-3ff9-410d-a580-593365a845bc",
+        "extracted_at": "2024-10-25 06:24:48.037790",
+        "extracted_at_epoch": 1729837488,
+        "author_name": "Negar Shahrokh",
+        "author_url": "https://medium.com/@neg.shahrokh",
+        "num_followers": 7,
+        "short_bio": "Experienced Data Engineer, eager for learning new tools and technologies."
+    },
+    {
+        "extraction_id": "54cb21fb-3ff9-410d-a580-593365a845bc",
+        "extracted_at": "2024-10-25 06:24:48.037790",
+        "extracted_at_epoch": 1729837488,
+        "author_name": "Ahmad Kamiludin",
+        "author_url": "https://medium.com/@ahmadkamiludin",
+        "num_followers": 29,
+        "short_bio": "Data Engineer | Upwork Freelancer"
+    },
+    {
+        "extraction_id": "54cb21fb-3ff9-410d-a580-593365a845bc",
+        "extracted_at": "2024-10-25 06:24:48.037790",
+        "extracted_at_epoch": 1729837488,
+        "author_name": "Anusha Phyrdha",
+        "author_url": "https://medium.com/@anushaphyrdha",
+        "num_followers": 0,
+        "short_bio": "appSign upSign inWriteSign upSign inAnusha PhyrdhaHomeAboutPinnedAnusha PhyrdhaMastering Advanced techniques with dbt Jinja: Custom Filters, Dynamic Model Generation and moredbt’s Jinja integration improves data transformations with reusable macros, dynamic SQL generation, conditional logic, template variables…Aug 16, 2023Aug 16, 2023Anusha PhyrdhaDBT MacrosMacros in dbt are reusable code blocks, similar to functions in programming languages. They help developers avoid repeating the same code…4d ago4d agoAnusha PhyrdhaSpecialist Programmer | Data Engineer @dbt | dagster | Python Enthusiast"
+    },
+    {
+        "extraction_id": "54cb21fb-3ff9-410d-a580-593365a845bc",
+        "extracted_at": "2024-10-25 06:24:48.037790",
+        "extracted_at_epoch": 1729837488,
+        "author_name": "Purvang Parikh",
+        "author_url": "https://medium.com/@purvang.parikh",
+        "num_followers": 0,
+        "short_bio": "appSign upSign inWriteSign upSign inPurvang ParikhHomeAboutPurvang ParikhDatabricks Apps Hands-on (1 of 3)Authors: Purvang Parikh & Souvik Pratiher1d ago1d agoPurvang Parikhhttps://www.linkedin.com/in/purvangparikh/"
+    },
+    {
+        "extraction_id": "54cb21fb-3ff9-410d-a580-593365a845bc",
+        "extracted_at": "2024-10-25 06:24:48.037790",
+        "extracted_at_epoch": 1729837488,
+        "author_name": "Bhavik",
+        "author_url": "https://medium.com/@limanibhavik",
+        "num_followers": 246,
+        "short_bio": "On a personal level, I consider myself a young dynamic open-minded person with a particular interest in entrepreneurship and new technologies."
+    },
+    {
+        "extraction_id": "54cb21fb-3ff9-410d-a580-593365a845bc",
+        "extracted_at": "2024-10-25 06:24:48.037790",
+        "extracted_at_epoch": 1729837488,
+        "author_name": "Avin Kohale",
+        "author_url": "https://medium.com/@kohaleavin",
+        "num_followers": 676,
+        "short_bio": "In love with Data Engineering. When not debugging, you'll find me with a psychological thriller book, or debating the merits of Python over Java with my cat! 🐱"
+    },
+    {
+        "extraction_id": "54cb21fb-3ff9-410d-a580-593365a845bc",
+        "extracted_at": "2024-10-25 06:24:48.037790",
+        "extracted_at_epoch": 1729837488,
+        "author_name": "Wajahatullah Khan",
+        "author_url": "https://medium.com/@wajahatullah.k",
+        "num_followers": 8,
+        "short_bio": "With over 12 years of experience in data engineering and analysis, I help organizations harness the power of big data and generate value from their data assets."
+    },
+    {
+        "extraction_id": "54cb21fb-3ff9-410d-a580-593365a845bc",
+        "extracted_at": "2024-10-25 06:24:48.037790",
+        "extracted_at_epoch": 1729837488,
+        "author_name": "Madelyne Hull",
+        "author_url": "https://medium.com/@madelyne.hull",
+        "num_followers": 1,
+        "short_bio": ""
+    },
+    {
+        "extraction_id": "54cb21fb-3ff9-410d-a580-593365a845bc",
+        "extracted_at": "2024-10-25 06:24:48.037790",
+        "extracted_at_epoch": 1729837488,
+        "author_name": "Fumiaki Kobayashi",
+        "author_url": "https://medium.com/@fumiaki.kobayashi",
+        "num_followers": 31,
+        "short_bio": "Freelance Analytics engineer / LinkedIn: https://www.linkedin.com/in/fumiaki-kobayashi-39395215a/"
+    },
+    {
+        "extraction_id": "54cb21fb-3ff9-410d-a580-593365a845bc",
+        "extracted_at": "2024-10-25 06:24:48.037790",
+        "extracted_at_epoch": 1729837488,
+        "author_name": "Sanket Prabhu",
+        "author_url": "https://medium.com/@sanket.prabhu34",
+        "num_followers": 150,
+        "short_bio": "Data engineer with extensive experience in data migration and management, proficient in Cloud technologies and data warehouses. Loves sci-fi and aliens movies."
+    },
+    {
+        "extraction_id": "54cb21fb-3ff9-410d-a580-593365a845bc",
+        "extracted_at": "2024-10-25 06:24:48.037790",
+        "extracted_at_epoch": 1729837488,
+        "author_name": "Tarek Khaled",
+        "author_url": "https://medium.com/@tarekhaled",
+        "num_followers": 6,
+        "short_bio": ""
+    },
+    {
+        "extraction_id": "54cb21fb-3ff9-410d-a580-593365a845bc",
+        "extracted_at": "2024-10-25 06:24:48.037790",
+        "extracted_at_epoch": 1729837488,
+        "author_name": "Jairus Martinez",
+        "author_url": "https://medium.com/@jairus-m",
+        "num_followers": 0,
+        "short_bio": "appSign upSign inWriteSign upSign inJairus MartinezHomeAboutJairus MartinezConfiguring dbt Unit Tests: Takeaways from my first implementationWith the release of dbt-core v1.8 earlier this year, there was a lot of hype and excitement for new features that were coming in beta…4d ago4d agoJairus Martinez"
+    },
+    {
+        "extraction_id": "54cb21fb-3ff9-410d-a580-593365a845bc",
+        "extracted_at": "2024-10-25 06:24:48.037790",
+        "extracted_at_epoch": 1729837488,
+        "author_name": "Alex Merced",
+        "author_url": "https://medium.com/@alexmercedtech",
+        "num_followers": 51,
+        "short_bio": "Book AuthorI'm a tech, development and data enthusiast who has a lot to say. You can find all my blogs, videos and podcasts at AlexMerced.com"
+    },
+    {
+        "extraction_id": "54cb21fb-3ff9-410d-a580-593365a845bc",
+        "extracted_at": "2024-10-25 06:24:48.037790",
+        "extracted_at_epoch": 1729837488,
+        "author_name": "Srinivas Ch",
+        "author_url": "https://medium.com/@srinivas.dataengineer",
+        "num_followers": 0,
+        "short_bio": "appSign upSign inWriteSign upSign inSrinivas ChHomeListsAboutSrinivas ChSupercharge Your dbt Monitoring with Elementary DataAs a data engineer, I’ve worked with multiple companies using dbt (data build tool) for their data transformations. While dbt is an…5d ago5d agoSrinivas Ch"
+    },
+    {
+        "extraction_id": "54cb21fb-3ff9-410d-a580-593365a845bc",
+        "extracted_at": "2024-10-25 06:24:48.037790",
+        "extracted_at_epoch": 1729837488,
+        "author_name": "Marco Vargas",
+        "author_url": "https://medium.com/@marcova1997",
+        "num_followers": 0,
+        "short_bio": "appSign upSign inWriteSign upSign inMarco VargasHomeAboutMarco VargasOptimizing Data Strategies for a Data-Driven FutureFor the past few years, we have been through a digital transformation process, turning our company into a data-driven one. Data has been…7h ago7h agoMarco Vargas"
+    },
+    {
+        "extraction_id": "54cb21fb-3ff9-410d-a580-593365a845bc",
+        "extracted_at": "2024-10-25 06:24:48.037790",
+        "extracted_at_epoch": 1729837488,
+        "author_name": "Hitesh Parab",
+        "author_url": "https://medium.com/@hitesh09parab",
+        "num_followers": 24,
+        "short_bio": ""
+    },
+    {
+        "extraction_id": "54cb21fb-3ff9-410d-a580-593365a845bc",
+        "extracted_at": "2024-10-25 06:24:48.037790",
+        "extracted_at_epoch": 1729837488,
+        "author_name": "Umme Munira",
+        "author_url": "https://medium.com/@ummeamunira",
+        "num_followers": 27,
+        "short_bio": "Deep learning enthusiast, engineer, traveller, foodie"
+    }
+]

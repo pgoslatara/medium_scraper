@@ -8,7 +8,7 @@ from utils.utils import dbt_invoke
 def main() -> None:
     # Ensure required directories exist
     Path(f"{os.getenv('DATA_DIR')}/staging/medium_authors/").mkdir(parents=True, exist_ok=True)
-    Path(f"{os.getenv('DATA_DIR')}/marts/").mkdir(parents=True, exist_ok=True)
+    Path(f"{os.getenv('DATA_DIR')}/marts/reports").mkdir(parents=True, exist_ok=True)
 
     dbt_invoke(["deps"])
 
