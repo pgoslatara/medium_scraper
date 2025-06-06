@@ -1,0 +1,569 @@
+[
+    {
+        "extraction_id": "7d2787d7-86a8-4504-af66-a5186b29fca4",
+        "extracted_at": "2025-06-06 06:30:24.168095",
+        "extracted_at_epoch": 1749191424,
+        "author_name": "George Zefkilis",
+        "author_url": "https://medium.com/@georgioszefkilis",
+        "num_followers": 0,
+        "short_bio": "pen in appSign upSign inMedium LogoWriteSign upSign inGeorge Zefkilis225 followersHomeListsAboutPinnedPublished inData Engineer ThingsBuilding a Local Data Lake from scratch with MinIO, Iceberg, Spark, StarRocks, Mage, and DockerHello again, fellow technology enthusiasts! I am a software/data engineer who transitioned from data science. The learning curve in this…Jul 13, 2024A response icon8Jul 13, 2024A response icon8PinnedPublished inData Engineer ThingsData Pipeline Development with MinIO, Iceberg, Nessie, Polars, StarRocks, Mage, and DockerHello again, fellow technology enthusiasts!Oct 15, 2024A response icon2Oct 15, 2024A response icon2Published inData Engineer ThingsAutomating Databricks Deployments: CI/CD with Asset Bundles and Semantic ReleaseHey again, fellow tech enthusiasts!2d ago2d agoPublished inData Engineer ThingsModernizing Databricks: Setting Up a Local Dev Environment with Dev Containers and Asset BundlesHello again, fellow technology enthusiasts!May 28May 28Published inData Engineer ThingsLambda Architecture in Action — From Sensors to Dashboards with Kafka, Iceberg, Nessie, StarRocks…Hello again, fellow technology enthusiasts!May 22May 22Published inData Engineer ThingsBauplan- The Serverless Data Lakehouse: WAP pattern exampleEnd-to-end Implementation of the Medallion Architecture and WAP Pattern — Without the HassleMar 22A response icon1Mar 22A response icon1Published inLevel Up CodingFrom Zero to GitOps: Deploying Mage AI on Local Kubernetes with Argo CDThis is the second part of DevOps for Data Engineers seriesJan 15Jan 15Published inLevel Up CodingDevOps for Data Engineers: Setting Up CI/CD Pipelines with Github Actions, Semantic Release and…Hey again, fellow tech enthusiasts!Dec 3, 2024Dec 3, 2024Published inTowards Data EngineeringBuilding a Personal Finance Management App: Integrating REST API, Node.js,Hello fellow technology enthusiasts, I am a software/data engineer who transitioned from data science. This is the continuation of the…Mar 16, 2024Mar 16, 2024Published inTowards Data EngineeringBuilding a Personal Finance Management App: Database Setup with PostgreSQL and Docker.Hello fellow technology enthusiasts, I am a software/data engineer who transitioned from data science. The learning curve in this new role…Mar 15, 2024A response icon1Mar 15, 2024A response icon1George Zefkilis225 followersSoftware/Data Engineer documenting my journey through data & software engineering. Join my newsletter : georgioszefkilis.substack.com"
+    },
+    {
+        "extraction_id": "7d2787d7-86a8-4504-af66-a5186b29fca4",
+        "extracted_at": "2025-06-06 06:30:24.168095",
+        "extracted_at_epoch": 1749191424,
+        "author_name": "Hugo Lu",
+        "author_url": "https://medium.com/@hugolu87",
+        "num_followers": 0,
+        "short_bio": "pen in appSign upSign inMedium LogoWriteSign upSign inHugo Lu10.7K followersHomeAboutPinnedPlatform-Mesh, Hub and Spoke, and Centralised | 3 Types of data teamWhy understanding Team Structure is critical for Data and AIMar 11Mar 11PinnedThe Rise of the Open Lakehouse made Databricks. It could bring it down.Why open storage invites competitors into the back gardenApr 1A response icon6Apr 1A response icon6PinnedOur most powerful integration yet: native python supportCode based utility and python execution from within orchestraNov 27, 2024Nov 27, 2024PinnedOrchestra vs. dbt Cloud | (2025 updated)Orchestra is an alternative to dbt Cloud, in this article we’ll see how it comparesDec 2, 2024Dec 2, 2024What Salesforce’ Informatica acquisition means for the Data IndustryThe industry keeps consolidating and the market gets smallerMay 28A response icon3May 28A response icon3Musings on the Data Market in 2025Massive Tailwinds being driven by AIMay 20May 20The Future of Data is a rude awakening for the Modern Data StackWhat “good” looks like in 2 yearsApr 29A response icon4Apr 29A response icon4Published inOrchestra’s Data Release Pipeline BlogA lot of large releases — the next phase of OrchestraMaking stuff simple, powerful, and scalableApr 28Apr 28What Datadog’s acquisition of Metaplane means for the Data IndustryThey did it — they finally did it. Datadog for dogs who like dataApr 27Apr 27Every data Ingestion Tool ever RankedWhy Ingestion Tools will never go awayApr 24A response icon1Apr 24A response icon1Hugo Lu10.7K followersFriend of MediumI write on Data engineering and the coolest data stuff. CEO@ Orchestra, the best-in-class control plane for Data and AI. https://app.getorchestra.io/signup"
+    },
+    {
+        "extraction_id": "7d2787d7-86a8-4504-af66-a5186b29fca4",
+        "extracted_at": "2025-06-06 06:30:24.168095",
+        "extracted_at_epoch": 1749191424,
+        "author_name": "Lorena Gongang",
+        "author_url": "https://medium.com/@lorenagongang",
+        "num_followers": 0,
+        "short_bio": "pen in appSign upSign inMedium LogoWriteSign upSign inLorena Gongang971 followersHomeAboutPublished inData Engineer ThingsData Quality With Airflow SQL Check Operators: A Step-by-Step GuideAutomate data quality checks, detect errors, and stop bad data downstream using Airflow’s SQL Check Operators4d agoA response icon14d agoA response icon1Published inData Engineer ThingsHow To Implement Column Masking in Databricks To Protect Sensitive DataGive Data Analysts the Data They Need — Without Exposing What They Shouldn’t SeeMay 18A response icon1May 18A response icon1Published inData Engineer ThingsBuild a Streaming Deduplication Pipeline with Kafka, GlassFlow and ClickHouseUse Glassgen to simulate noisy data, Kafka to stream it, and GlassFlow to deduplicate and clean it before storageMay 7A response icon1May 7A response icon1Published inData Engineer ThingsData Quality Checks with Databricks DQX: A Step-by-Step GuideAutomate data quality checks, detect errors, and optimize your data pipeline using Databricks DQX Framework.Apr 29A response icon2Apr 29A response icon2Published inData Engineer ThingsHow to Set Up CI/CD with Databricks Asset Bundles and GitHub ActionsFrom VS Code to Databricks — a step-by-step CI/CD workflow with GitHub Actions and Asset Bundles.Apr 16Apr 16Published inData Engineer ThingsHow Spark Used Lazy Evaluation for Optimization— Spark seriesWhy Spark’s Laziness is a Good ThingMar 11Mar 11Published inArt of Data EngineeringActions vs Transformations in Spark: Spark SeriesLearn How to Optimize Large-Scale Data Pipelines by Mastering When and How Spark Executes Your CodeMar 11Mar 11Published inData Engineer ThingsI Passed the Databricks Certified Associate Developer for Apache Spark Exam: Here’s How You Can TooA step-by-step guide to preparing for and passing the exam from someone who has already done it.Mar 10A response icon5Mar 10A response icon5Published inArt of Data EngineeringApache Spark in Few Words: Spark SeriesWhat you need to understand about Spark in fewer words.Feb 25A response icon2Feb 25A response icon2Published inData Engineer ThingsReduce dbt Build Time and Cost with This One TrickOne simple way to speed up dbt builds and cut costsFeb 17A response icon1Feb 17A response icon1Lorena Gongang971 followersFriend of MediumData Engineer | Technical Writer | Interested in Data, Startup ecosystem and Art | Open for consulting gigs"
+    },
+    {
+        "extraction_id": "7d2787d7-86a8-4504-af66-a5186b29fca4",
+        "extracted_at": "2025-06-06 06:30:24.168095",
+        "extracted_at_epoch": 1749191424,
+        "author_name": "Michael Stroud",
+        "author_url": "https://medium.com/@michael.stroud87",
+        "num_followers": 0,
+        "short_bio": "pen in appSign upSign inMedium LogoWriteSign upSign inMichael Stroud3 followersHomeListsAboutPinnedBuilding a Customer Analytics Pipeline with dbtProblem and ScenarioApr 25Apr 25Implementing Exposures and Seeds in dbt for a Subscription Analytics DashboardProblem and Scenario DefinitionMay 1May 1Understanding Macros in dbtApr 28Apr 28Managing Government Transportation Data Using dbt with Incremental ModelsProblem and ScenarioApr 28Apr 28PTransforms and PCollections in Apache BeamApache Beam is a versatile framework designed to process both batch and streaming data through pipelines. Central to its functionality are…Apr 28Apr 28conditionally_filter and always_filter in LookMLLookML, the modeling language used by Looker, provides powerful tools to control how users query data. Two such parameters…Apr 28Apr 28Understanding `datagroup`, `persist_with` , and `persist_for`in LookMLIn LookML, the modeling language used by Looker, managing data caching is critical for balancing query performance and data freshness…Apr 28Apr 28Understanding Models and Explores in LookMLApr 28Apr 28Understanding Dimension Groups in LookMLApr 28Apr 28Healthcare Data Analysis Using LookML: Dimension Groups, Drill Fields, and SetsProblem and ScenarioApr 25Apr 25Michael Stroud3 followersData Analytics Engineer | LookerML, DBT, Python, SQL, Tableau, BigQuery | Crafting clear, step-by-step worked examples to simplify complex data challenges."
+    },
+    {
+        "extraction_id": "7d2787d7-86a8-4504-af66-a5186b29fca4",
+        "extracted_at": "2025-06-06 06:30:24.168095",
+        "extracted_at_epoch": 1749191424,
+        "author_name": "THE BRICK LEARNING",
+        "author_url": "https://medium.com/@infinitylearnings1201",
+        "num_followers": 0,
+        "short_bio": "pen in appSign upSign inMedium LogoWriteSign upSign inTHE BRICK LEARNING836 followersHomeListsAboutPublished inTowards Data Engineering100 Days of Machine Learning Day 27: Summarizing Your DatasetMean, Median, Mode, Skewness1d ago1d agoPublished inTowards Data EngineeringSQL for Data Engineers: SQL Interview Series — Article 4: JOINs ExplainedINNER, LEFT, RIGHT, FULL JOIN1d ago1d agoPublished inTowards Data EngineeringApache Iceberg v3: Unifying the Data Lakehouse EcosystemApache Iceberg has long been at the heart of the modern data lakehouse architecture — bringing SQL-like capabilities to massive, scalable…1d agoA response icon11d agoA response icon1Published inTowards Data EngineeringSQL for Data Engineering: SQL Interview Series — Article 4: Filtering Aggregates with HAVINGMany data engineers are comfortable with WHERE and GROUP BY, but the moment you introduce aggregated filters, confusion sets in. That's…2d ago2d agoPublished inTowards Data EngineeringSQL for Machine Learning Interview Series — Article 2: SQL AggregationsCOUNT, SUM, AVG, and GROUP BY2d ago2d agoPublished inTowards Data EngineeringSQL for Data Engineers Interview Series — Article 1: SQL FundamentalsWhy This Topic?2d ago2d agoPublished inTowards Data Engineering100 Days of Machine learning Day 41: Understanding the Role of Data Engineering in Machine LearningMachine learning (ML) is not just about algorithms and models — it heavily relies on the foundational work done through Data Engineering…2d ago2d agoPublished inTowards Data Engineering100 Days of Machine Learning on Databricks Day 26: The Role of Exploratory Data Analysis (EDA) in…Before training any machine learning model, the most critical phase is understanding the data — this is where Exploratory Data Analysis…2d ago2d agoPublished inTowards Data Engineering100 Days of Machine Learning on Databricks Day 18: Convex vs Non-Convex Functions in OptimizationIn machine learning, optimization is the backbone of model training. Whether you’re minimizing error in linear regression or fine-tuning a…2d ago2d agoPublished inTowards Data Engineering100 Days of Machine Learning on Databricks Day 17: Evaluation Metrics for Regression ModelsIn any machine learning project, building a model is only half the battle. The other half is evaluating its performance accurately. In the…2d ago2d agoTHE BRICK LEARNING836 followersA DATA & AI learning on Databricks platform."
+    },
+    {
+        "extraction_id": "7d2787d7-86a8-4504-af66-a5186b29fca4",
+        "extracted_at": "2025-06-06 06:30:24.168095",
+        "extracted_at_epoch": 1749191424,
+        "author_name": "Fadli Ahmad J",
+        "author_url": "https://medium.com/@fadliahmad-j",
+        "num_followers": 0,
+        "short_bio": "pen in appSign upSign inMedium LogoWriteSign upSign inFadli Ahmad J4 followersHomeAboutBuilding a Data Warehouse from Scratch on AWSThis end-to-end analytics engineering project aims to demonstrate a comprehensive data pipeline, data warehousing, and analytics solution.May 27May 27Car Sales — SQL ProjectProject BackgroundApr 16, 2023Apr 16, 2023Python for Data Professional Beginner — Part 1Hai, kembali lagi di blog Saya. Pada kesempatan kali ini, kita akan langsung mengulas dan membahas Data Analyst Career Track di DQLab.id…Jan 21, 2021Jan 21, 2021Learning Data ScienceAlasan kenapa memilih untuk memulai belajar Data ScienceDec 18, 2020Dec 18, 2020Fadli Ahmad J4 followersData Analyst"
+    },
+    {
+        "extraction_id": "7d2787d7-86a8-4504-af66-a5186b29fca4",
+        "extracted_at": "2025-06-06 06:30:24.168095",
+        "extracted_at_epoch": 1749191424,
+        "author_name": "Gerónimo Ezequiel Pérez Salas",
+        "author_url": "https://medium.com/@geronimo.perez.salas",
+        "num_followers": 0,
+        "short_bio": "pen in appSign upSign inMedium LogoWriteSign upSign inGerónimo Ezequiel Pérez Salas4 followersHomeAboutFrom legacy pipelines to Medallion Architectures: A New Era for Data Engineering with DatabricksWe’ve come a long way since the days when traditional data warehouses were the go-to solution for reporting and analytics. Back then…15h ago15h agoBreaking Down the Pros and Cons of Modern “Microservices” SystemsMicroservices-oriented systems offer numerous advantages, but it is essential to consider the trade-offs involved in adopting it.Apr 11, 2023Apr 11, 2023Gerónimo Ezequiel Pérez Salas4 followers"
+    },
+    {
+        "extraction_id": "7d2787d7-86a8-4504-af66-a5186b29fca4",
+        "extracted_at": "2025-06-06 06:30:24.168095",
+        "extracted_at_epoch": 1749191424,
+        "author_name": "Chengzhi Zhao",
+        "author_url": "https://medium.com/@chengzhizhao",
+        "num_followers": 0,
+        "short_bio": "pen in appSign upSign inMedium LogoWriteSign upSign inMastodonChengzhi Zhao1.4K followersHomeListsAboutPinnedPublished inData Engineering SpaceDon’t Get Tripped Up! 10 Common Data Engineering PitfallsHow to Avoid Common Data Engineering Pitfalls17h ago17h agoPinnedPublished inData Engineering SpaceBeyond Dashboards: How I Transformed Streaming Data into an Interactive Pac-Man Adventure (A 2025…More Than Just Dots and Ghosts: A Data Engineer’s Journey into Gamifying Live Streams for Truly Engaging VizMay 15A response icon3May 15A response icon3PinnedPublished inData Engineering SpaceThe AI Wake-Up Call for Data Engineers: Why LLMs + MCP Matter NowFrom Skeptic to Builder: Why AI Is Now Critical for Data EngineersMay 1A response icon15May 1A response icon15PinnedPublished inData Engineering SpaceUnboxing Apache Airflow 3.0: What’s New, What’s Gone, and Why It MattersA Comprehensive Deep Dive on Airflow 3.0Apr 25A response icon1Apr 25A response icon1PinnedPublished inTDS ArchiveHow to Build an AI Agent for Data Analytics Without Writing SQLCreate a comprehensive AI agent from the ground up utilizing LangChain and DuckDBJan 7A response icon12Jan 7A response icon12Published inData Engineering SpaceBeyond Basic Prompts: LLM + MCP Tackling Real-World Challenges — The Airflow 3.0Leverage LLM + MCP to Update DAG for Apache Airflow 3.0May 12May 12Published inData Engineering SpaceData Engineering in 2025: A Practical Guide for New Grads Entering the AI-First EraWhat Every New Data Engineer Needs to Know in 2025May 6May 6Published inData Engineering SpaceDuckDB Local UI is Awesome!Why DuckDB Local UI is Awesome and a Must-Have for Data WorkflowsMar 15A response icon1Mar 15A response icon1Published inData Engineering SpaceDeepSeek SmallPond: A Game-Changer for Data Engineers Seeking Lightweight SolutionsWhy DeepSeek SmallPond is the New Contender in Data Engineering FrameworksMar 8A response icon5Mar 8A response icon5Published inTDS ArchiveLLM for Data Visualization: How AI Shapes the Future of AnalyticsFrom Raw Data to Stunning Visuals: LLMs in ActionJan 17A response icon1Jan 17A response icon1Chengzhi Zhao1.4K followersData Engineer | Data Content Creator | Contributor of Airflow, Flink | Blog chengzhizhao.com"
+    },
+    {
+        "extraction_id": "7d2787d7-86a8-4504-af66-a5186b29fca4",
+        "extracted_at": "2025-06-06 06:30:24.168095",
+        "extracted_at_epoch": 1749191424,
+        "author_name": "Lasya",
+        "author_url": "https://medium.com/@lasyachowdary1703",
+        "num_followers": 0,
+        "short_bio": "pen in appSign upSign inMedium LogoWriteSign upSign inLasya19 followersHomeAboutDay 34: Horizontal vs Vertical Scaling in Data InfrastructureWelcome to Day 34 of my 45-Day Data Engineering Journey! 👩‍💻4h ago4h agoDay 33: Role-Based Access Control (RBAC) & IAM in Data SystemsWelcome to Day 33 of my 45-day Data Engineering journey! 👩‍💻\n Yesterday, we covered how encryption and masking protect sensitive data…1d ago1d agoDay 32: Data Encryption & Masking TechniquesWelcome back to Day 32 of my 45-Day Data Engineering Journey!\n Yesterday, we discussed Data Governance & Compliance, a crucial foundation…2d ago2d agoDay 31: Introduction to Data Governance & Compliance🔐 Building trust and accountability into every byte of data.3d ago3d agoDay 30: Data Observability — The Pulse of Modern Data SystemsWelcome to Day 30 of my 45-Day Data Engineering Journey!4d ago4d agoDay 29: Data Quality Checks with Great ExpectationsWelcome to Day 29 of my 45-day Data Engineering journey! 👩‍💻\n Yesterday, we discussed Data Contracts — formal agreements to prevent…5d ago5d agoDay 28: Data Contracts — Aligning Data Expectations in the Modern Data StackWelcome to Day 28 of my 45-day Data Engineering journey! 👩‍💻\n Yesterday, we explored file handling in pipelines — a core element in…6d ago6d agoDay 27: File Handling in Data Pipelines — Uploading & Downloading from S3 & GCSWelcome to Day 27 of my 45-Day Data Engineering Journey! 👩‍💻\n Yesterday, we explored Apache Spark, the distributed powerhouse behind…May 29May 29Day 26: Apache Spark — Large-Scale Distributed Processing for Big Data WorkflowsWelcome to Day 26 of my 45-Day Data Engineering Journey! 👩‍💻\n Yesterday, we dove into Apache Kafka — the go-to for real-time messaging…May 28May 28Day 25: Apache Kafka — Messaging at Scale for Real-Time Data PipelinesWelcome to Day 25 of my 45-Day Data Engineering Journey! 👩‍💻\n Yesterday, I explored the architectural split between stream and batch…May 27May 27Lasya19 followers"
+    },
+    {
+        "extraction_id": "7d2787d7-86a8-4504-af66-a5186b29fca4",
+        "extracted_at": "2025-06-06 06:30:24.168095",
+        "extracted_at_epoch": 1749191424,
+        "author_name": "Vit Cuellar",
+        "author_url": "https://medium.com/@vialmeidacuellar",
+        "num_followers": 0,
+        "short_bio": "pen in appSign upSign inMedium LogoWriteSign upSign inVit Cuellarshe/her48 followersHomeListsAboutProtegendo suas Credenciais de Acesso com Python: Biblioteca de Fernet.Esse artigo é para falarmos sobre um método relativamente simples de proteger suas credenciais ou dados utilizando uma biblioteca em…4d ago4d agoBigQuery Views: An “Overview”.This article aims to give you some understanding about Views and what it mean, where they live, and how to use them. Also, I’m bringing 2…May 21May 21De Analista de Dados a Engenheira de Dados: Um Ano Depois .Esse artigo não é uma receita de bolo, não é uma historinha pra boi dormir; é a realidade de alguém que está em constante aprendizado e…May 11May 11An Introduction to the Medallion ArchitectureWhile working with data engineering, you probably have heard or read this term in somewhere. The objective here is to translate it and make…May 7May 7Guia de Sobrevivência no Airflow: Organizando tasks e entendendo sobre paralelismo.Como já falamos nos últimos artigos dessa série, a DAG (Directed Acyclic Graphs) é o principal conceito que está presente no Airflow. Neste…Apr 22Apr 22Por que escrever artigos em Inglês ?Sem receita de bolo aqui, galera… apenas refletindo sobre os benefícios que eu tive quando comecei a fazer isso! E não, não sou professora…Mar 30Mar 30Starting in Apache Airflow: building a DAG in Python.As I said in the first one, here goes the second so we can practice! Theory and fundamentals are critical, but without practice, nothing…Mar 29Mar 29Starting in Apache Airflow: an introduction.This one is for those who are considering learning Airflow and don’t know where to start. So, let’s start from the beggining. Also, in this…Feb 8Feb 8How to optimize your BigQuery queries to reduce costs and improve performance?As we talked about in other chapters, BigQuery is a Data Warehouse service, which means it can store, organize and process or analyze data…Oct 2, 2024Oct 2, 2024Using MERGE in BigQuery to incremental dataFirst of all, what’s incremental data? Where does it lives? When to use it?Aug 21, 2024Aug 21, 2024Vit Cuellarshe/her48 followersData Engineer in @gb.tech , constantly trying to improve myself. I invite you to join me through this carreer journey in Data. Together, in code and bugs!"
+    },
+    {
+        "extraction_id": "7d2787d7-86a8-4504-af66-a5186b29fca4",
+        "extracted_at": "2025-06-06 06:30:24.168095",
+        "extracted_at_epoch": 1749191424,
+        "author_name": "Aryan Khurana",
+        "author_url": "https://medium.com/@aryank1511",
+        "num_followers": 0,
+        "short_bio": "pen in appSign upSign inMedium LogoWriteSign upSign inAryan Khuranahe/him2 followersHomeListsAboutFirst Contribution to Apache AirflowImprove Debug Logging in the Http Provider2d ago2d agoMLH Fellowship Week 02Meeting mentors, setting up, and diving into Apache Airflow5d ago5d agoKicking Off My MLH Fellowship JourneyA behind-the-scenes look at life as a Software Engineering Fellow at Major League Hacking (Summer 2025)May 24May 24Aryan Khuranahe/him2 followersI yap about stuff"
+    },
+    {
+        "extraction_id": "7d2787d7-86a8-4504-af66-a5186b29fca4",
+        "extracted_at": "2025-06-06 06:30:24.168095",
+        "extracted_at_epoch": 1749191424,
+        "author_name": "ThamizhElango Natarajan",
+        "author_url": "https://medium.com/@thamizhelango",
+        "num_followers": 0,
+        "short_bio": "pen in appSign upSign inMedium LogoWriteSign upSign inThamizhElango Natarajan45 followersHomeListsAboutDoes libuv Abstract Everything? A Deep Dive into Cross-Platform OS AbstractionWhen developers embark on cross-platform development, one of the first questions that arises is: “Which abstraction library should I use?”…1d ago1d agoShould You Switch from Scikit-learn to PyTorch for GPU-Accelerated Machine Learning?As datasets grow exponentially and computational demands increase, the question of GPU acceleration becomes crucial for data scientists and…1d ago1d agoNeo4j: The Complete Guide to Graph DatabasesGraph databases have revolutionized how we think about data relationships, moving beyond the rigid structures of relational databases to…1d ago1d agoHow Java Reactor Frameworks Leverage OS-Level Async I/O: From Theory to ProductionModern web applications demand high concurrency and low latency. Traditional thread-per-request models quickly become bottlenecks when…1d ago1d agoThe Complete Guide to Karpenter: Implementation and Performance Across AWS, Azure, and GCPKarpenter is revolutionizing Kubernetes node management by providing lightning-fast node provisioning that dramatically outperforms…1d ago1d agoBuilding JVMs with Rust: The Future of Memory-Safe Virtual MachinesThe Java Virtual Machine (JVM) has been the backbone of enterprise software development for over two decades. Yet, as software demands…1d ago1d agoBridging the OS Divide: A Comprehensive Guide to Cross-Platform System AbstractionIn today’s multi-platform development landscape, creating software that runs seamlessly across Linux, Windows, and macOS has become…1d ago1d agoHow Emscripten Abstracts the OS for WebAssembly: Bridging Native Code and the WebWebAssembly has revolutionized how we think about running high-performance code in web browsers. However, one of the biggest challenges in…1d ago1d agoRust’s Async I/O Revolution: Unifying Cross-Platform Development at Compile TimeThe world of systems programming has long been plagued by a fundamental challenge: different operating systems expose vastly different APIs…1d ago1d agoRevolutionizing JavaScript Engines with Rust: From V8 Bindings to Native ImplementationsThe JavaScript runtime landscape is experiencing a paradigm shift. While Google’s V8 engine has dominated for over a decade, powering…1d ago1d agoThamizhElango Natarajan45 followers"
+    },
+    {
+        "extraction_id": "7d2787d7-86a8-4504-af66-a5186b29fca4",
+        "extracted_at": "2025-06-06 06:30:24.168095",
+        "extracted_at_epoch": 1749191424,
+        "author_name": "Nnaemezue Obi-Eyisi",
+        "author_url": "https://medium.com/@afroinfotech",
+        "num_followers": 0,
+        "short_bio": "pen in appSign upSign inMedium LogoWriteSign upSign inNnaemezue Obi-Eyisi834 followersHomeListsAboutPinnedI Almost Got Fired Because of Pandas on Databricks — Here’s What You Should Learn From My MistakeJust because your code works doesn’t mean it scales.May 3A response icon28May 3A response icon28How I’m Upskilling as a Data Engineer in 2025In 2022, learning Spark and SQL made me feel like a data wizard. In 2025, they feel like table stakes. So what now?2h ago2h agoNot All Data Errors Throw Exceptions: How Business Logic Violations Quietly Ruin TrustIn today’s world of big data, distributed systems, and real-time analytics, data quality has quietly become the backbone of trustworthy…1d ago1d agoThe RAG Pipeline From Hell: How I Survived My Worst Data Engineering WeekThe Costly Mistakes I Made Parsing Unstructured Data for a RAG Project — and How You Can Avoid Them2d agoA response icon12d agoA response icon1The Data Engineering Interview Pitfalls No One Talks About (But Many Make)“I solved the coding problem. I answered the SQL question. I even mentioned Spark… but I didn’t get the job.”3d agoA response icon33d agoA response icon3How GitHub Copilot Agent Mode is Reshaping My Workflow as a Data Engineer“Do you want me to just write the test for you?”\n That’s the kind of nudge GitHub Copilot Agent Mode gave me recently — and it changed how…5d ago5d agoI Had a Colleague Ask Me How to Do Incremental Load on a Complex Reporting Table — Here’s What I…One of the most common performance pain points I see in data pipelines is this:May 29May 29I Keep Seeing AI Agents Everywhere — But How Do I Actually Build One and Take It to Production?Over the past few months, I’ve seen a wave of posts, demos, and videos showing off AI agents doing everything from answering emails to…May 28May 28I Almost Got Fired Early in My Data Engineering Career — Because I Didn’t Know When NOT to Scale Up…More compute doesn’t always solve your performance problems. Sometimes, it just makes them more expensive.May 28A response icon2May 28A response icon2I spent over 20 hours struggling to parse a legacy CSV file in Pyspark— Learn from my pain“How can one little comma cause this much chaos?”May 22A response icon3May 22A response icon3Nnaemezue Obi-Eyisi834 followersI am passionate about empowering, educating, and encouraging individuals pursuing a career in data engineering. Currently a Senior Data Engineer at Capgemini"
+    },
+    {
+        "extraction_id": "7d2787d7-86a8-4504-af66-a5186b29fca4",
+        "extracted_at": "2025-06-06 06:30:24.168095",
+        "extracted_at_epoch": 1749191424,
+        "author_name": "Hitesh",
+        "author_url": "https://medium.com/@hiteshkhk0105",
+        "num_followers": 0,
+        "short_bio": "pen in appSign upSign inMedium LogoWriteSign upSign inHitesh3 followersHomeListsAboutFormula -1 Insights: Real-Time Replay & Historical Analytics 🏁Now that we are all at a point to now build out a comprehensive data project! 🏎️5d agoA response icon15d agoA response icon1Hitesh3 followersAnalytics engineer 2 | Data Storyteller | Airflow dbt & databricks"
+    },
+    {
+        "extraction_id": "7d2787d7-86a8-4504-af66-a5186b29fca4",
+        "extracted_at": "2025-06-06 06:30:24.168095",
+        "extracted_at_epoch": 1749191424,
+        "author_name": "Jared Jesionek",
+        "author_url": "https://medium.com/@jared_86317",
+        "num_followers": 0,
+        "short_bio": "pen in appSign upSign inMedium LogoWriteSign upSign inJared Jesionek3 followersHomeAboutdbt vs SQLMesh: A Deep Dive Comparison for Analytics EngineeringIn the data transformation world, dbt is the established standard: it’s widely adopted, has a huge community, and tight integration with…May 29May 29Visualizing Linear Project Management DataSet by Step Guide Set up metrics for your Linear Project with the Modern Data Stack.Aug 3, 2024Aug 3, 2024Published inDev GeniusVisualizing Pytest Results with the Modern Data StackStep by step guide for leveraging Pytest, Fivetran & Visivo to quickly create monitoring for your CI/CD.Sep 26, 2023Sep 26, 2023Jared Jesionek3 followersAnalytics • Data Engineering • Data Visualization"
+    },
+    {
+        "extraction_id": "7d2787d7-86a8-4504-af66-a5186b29fca4",
+        "extracted_at": "2025-06-06 06:30:24.168095",
+        "extracted_at_epoch": 1749191424,
+        "author_name": "Sriram Narasimhan",
+        "author_url": "https://medium.com/@sriram-narasim",
+        "num_followers": 0,
+        "short_bio": "pen in appSign upSign inMedium LogoWriteSign upSign inSriram Narasimhan55 followersHomeAboutPinnedPublished inNerd For TechSemantic Search: Part 2 — Question/Answer system powered by LLM using LangChainIn the last article on this topic, we saw a semantic Question/Answering system built based on a transformer (BERT) model based on Haystack…May 1, 2023May 1, 2023PinnedPublished inAWS in Plain EnglishBuilding an Easy-To-Use Dashboard to Have Fun with NBA DataI wanted to build an easy-to-use BI dashboard to compare 4 of the superstar NBA guards, analyzing their performance over the past few…May 3, 2021May 3, 2021From Cloud to Client: A New Architecture for Hyper-Fast In-Browser AnalyticsWeb analytics has undergone a dramatic transformation over the last decade. Traditionally, analytics applications relied heavily on…May 22May 22Spark and Beyond: Choosing the Right Tools in Today’s Data StackNot long ago, if you were building anything big with data, the answer was simple: Apache Spark. Whether it was batch ETL, stream…Apr 13Apr 13The AI-Driven Spend Cube: Smarter Procurement in the Agentic EraToday, procurement organizations face immense pressure to control costs, manage supplier risks, and drive strategic value. Traditional…Mar 24Mar 24Published inNerd For TechAutonomous Analytics: Agentic AI in the Data Product WorldAI is only as good as the data it consumes. Just as APIs revolutionized software by standardizing access to functionality, Data Products…Mar 3A response icon1Mar 3A response icon1Published inNerd For TechData Sharing with Confidence: Differential Privacy to the RescueEnterprises today are more data-driven than ever, aiming to outpace the competition by tapping into vast amounts of private data which…Oct 24, 2024A response icon1Oct 24, 2024A response icon1Published inNerd For TechDimensional modeling is dead; long live dimensional modeling! — Part 2Our previous post explored why dimensional modeling remains highly relevant in modern data architecture. In this follow-up, we’ll dive…Sep 25, 2024Sep 25, 2024Take That For Data: Three Steps for Launching Your NextGen Intelligent B2B Apps — Part IIn our previous segment, “Dimensional Modeling is Dead; Long Live Dimensional Modeling — Part 1,” we examined why the concept of…Mar 15, 2024Mar 15, 2024Published inNerd For TechDimensional modeling is dead; long live dimensional modeling! — Part 1There is this never-ending debate on the relevance of Dimensional Modeling in a Modern Data Ecosystem. There are a lot of debates on…Oct 23, 2023A response icon1Oct 23, 2023A response icon1Sriram Narasimhan55 followersVP Engineering, Data & Analytics - SAP Procurement , Chief Architect, Basketball/sports nerd"
+    },
+    {
+        "extraction_id": "7d2787d7-86a8-4504-af66-a5186b29fca4",
+        "extracted_at": "2025-06-06 06:30:24.168095",
+        "extracted_at_epoch": 1749191424,
+        "author_name": "Jetlingnikhitha",
+        "author_url": "https://medium.com/@jetlingnikhitha",
+        "num_followers": 0,
+        "short_bio": "pen in appSign upSign inMedium LogoWriteSign upSign inJetlingnikhitha1 followerHomeAboutData Engineering Blog -1: dbt Meets Snowflake External Tables: Loading Data from S3.We all live in the world of data and every organization wants to be a data driven one which enable them to drive business insights…4d ago4d agoJetlingnikhitha1 follower"
+    },
+    {
+        "extraction_id": "7d2787d7-86a8-4504-af66-a5186b29fca4",
+        "extracted_at": "2025-06-06 06:30:24.168095",
+        "extracted_at_epoch": 1749191424,
+        "author_name": "Adithya Nanduri",
+        "author_url": "https://medium.com/@adithya.nanduri",
+        "num_followers": 0,
+        "short_bio": "pen in appSign upSign inMedium LogoWriteSign upSign inAdithya Nanduri11 followersHomeAboutA Practical Guide to Environment Isolation and Access Control with Unity CatalogEstablishing a secure and well-structured data architecture is essential for scaling analytics in modern enterprises, particularly in…2d ago2d agoPublished inSnowflake Builders Blog: Data Engineers, App Developers, AI/ML, & Data ScienceCohort Builder: Streamlining Data Segmentation with Streamlit and SnowflakeHave you ever struggled with segmenting large datasets to tailor marketing campaigns or optimize product offerings? Do you need a…Aug 1, 2024Aug 1, 2024Published inSnowflake Builders Blog: Data Engineers, App Developers, AI/ML, & Data ScienceEmpowering Retailers: A Comprehensive Guide to Market Basket Analysis with SnowflakeYou know that feeling when the latest iPhone drops, and suddenly, you’re glued to Apple and BestBuy websites, eyeing every cool feature and…Feb 24, 2024Feb 24, 2024Published inSnowflake Builders Blog: Data Engineers, App Developers, AI/ML, & Data ScienceQuote Manipulation Detection in the Finance Industry using SnowflakeWritten By: Adithya Nanduri & Shriya RaiFeb 23, 2024A response icon1Feb 23, 2024A response icon1Adithya Nanduri11 followers"
+    },
+    {
+        "extraction_id": "7d2787d7-86a8-4504-af66-a5186b29fca4",
+        "extracted_at": "2025-06-06 06:30:24.168095",
+        "extracted_at_epoch": 1749191424,
+        "author_name": "Sandeep",
+        "author_url": "https://medium.com/@sandeep.0219",
+        "num_followers": 0,
+        "short_bio": "pen in appSign upSign inMedium LogoWriteSign upSign inSandeepHomeAboutPinnedHow dbt is a Game Changer in Business IntelligenceIn today’s data-driven world, turning raw data into reliable, actionable insights is both a challenge and a competitive advantage. dbt has…5d ago5d agoFrom Tasks to Impact: How Understanding the Business Problem Transformed My Data Analytics JourneyWhen I began my career in data analytics, I was laser-focused on the technical side of things. I saw each task as a standalone objective —…5d ago5d agoSandeep"
+    },
+    {
+        "extraction_id": "7d2787d7-86a8-4504-af66-a5186b29fca4",
+        "extracted_at": "2025-06-06 06:30:24.168095",
+        "extracted_at_epoch": 1749191424,
+        "author_name": "Venkat Dasari",
+        "author_url": "https://medium.com/@dasari2828",
+        "num_followers": 0,
+        "short_bio": "pen in appSign upSign inMedium LogoWriteSign upSign inVenkat Dasari21 followersHomeAboutBuilding OLTP on Databricks: Our Journey with Lakebase and StreamlitIntro: Wait… Databricks Does OLTP Now?1d ago1d agoFrom Pandas Recursion to Spark Graphs: How We Crushed 100K+ Row Hierarchies in 18 Minutes“I used to write recursive Pandas functions. Then I tried running them on 100K rows… The cluster cried. My soul did too.”May 22May 22Modular Ingestion on Databricks: Building a Scalable, Config-Driven Framework with PyHOCONA story about reusable pipelines, YAML-powered validation, and why configuration may be your best data engineer.Apr 17Apr 17Streamlining Access Control with Databricks Apps: Building a Admin Grant Manager (Without Being a…Streamlining Access Control with Databricks Apps: Building an Admin Grant Manager (Without Being a UI Dev)Apr 13Apr 13How I Built an AI-Driven Slack Query Bot for Patient Data Analytics (and Survived the Challenges!)1. Introduction: The MissionDec 22, 2024A response icon1Dec 22, 2024A response icon1Published inDev GeniusUsing Airbyte with Rest APIFYI. Not about building a Rest API Custom Connector!!!Nov 20, 2022A response icon1Nov 20, 2022A response icon1Spark KUDO — D2IQ-Cloudera Storage vs. ComputeOverview:- Having multiple tenants and different applications stressing the cluster, Spark KUDO provides a simplified solution in…Jun 29, 2020Jun 29, 2020Venkat Dasari21 followers"
+    },
+    {
+        "extraction_id": "7d2787d7-86a8-4504-af66-a5186b29fca4",
+        "extracted_at": "2025-06-06 06:30:24.168095",
+        "extracted_at_epoch": 1749191424,
+        "author_name": "Meghana V",
+        "author_url": "https://medium.com/@meghana.v",
+        "num_followers": 0,
+        "short_bio": "pen in appSign upSign inMedium LogoWriteSign upSign inMeghana V3 followersHomeAboutPublished innewmathdataDatabricks Asset BundlesA first look at the tool’s maturity, benefits and current limitations15h ago15h agoMeghana V3 followersSoftware Solutions Architect at New Math Data."
+    },
+    {
+        "extraction_id": "7d2787d7-86a8-4504-af66-a5186b29fca4",
+        "extracted_at": "2025-06-06 06:30:24.168095",
+        "extracted_at_epoch": 1749191424,
+        "author_name": "Shannon Barrow",
+        "author_url": "https://medium.com/@shannon.barrow",
+        "num_followers": 0,
+        "short_bio": "pen in appSign upSign inMedium LogoWriteSign upSign inShannon Barrow9 followersHomeAboutPublished inDBSQL SME EngineeringBenchmarking ETL with the TPC-DIPart 1: How we can Benchmark Data Engineering on Databricks using TPC’s Lone ETL Benchmark6h ago6h agoShannon Barrow9 followers"
+    },
+    {
+        "extraction_id": "7d2787d7-86a8-4504-af66-a5186b29fca4",
+        "extracted_at": "2025-06-06 06:30:24.168095",
+        "extracted_at_epoch": 1749191424,
+        "author_name": "Gourav Nagar",
+        "author_url": "https://medium.com/@gauravnagar148714",
+        "num_followers": 0,
+        "short_bio": "pen in appSign upSign inMedium LogoWriteSign upSign inGourav Nagar18 followersHomeListsAboutPinnedSPARK LEARNING DAY 1 — INTRODUCTION TO APACHE SPARK - [My Learnings from the “O’Reilly Spark: The…I’ve recently started reading the book “Spark: The Definitive Guide” by Bill Chambers & Matei Zaharia (O’Reilly). This book is considered…1d ago1d agoPinnedApache Spark: A Powerful Tool for Data Engineers [Revolutionizing Data Technology]Are you a data engineer already working in data fieds or looking to enhance your skills and excel in the field of big data processing? Look…Jun 19, 2023Jun 19, 2023SPARK LEARNING DAY 2 - UNDERSTANDING SPARK ARCHITECTURE -[My Learnings Notes from the “O’Reilly…Continuing my daily blog series based on “Spark: The Definitive Guide” by Bill Chambers & Matei Zaharia (O’Reilly), today’s focus is on one…21h ago21h agoBig Data — Hive design level optimization — Partitioning (Static & Dynamic )Big Data — Hive design level optimization — PartitioningSep 12, 2024A response icon1Sep 12, 2024A response icon1Essential AWS S3 Commands for Data Engineers — 10 Most Frequently Used S3 CommandsAs a Data Engineer while working with AWS S3, there are several essential commands you should be familiar with to manage and interact with…May 23, 2023May 23, 2023Big Data — Hive OptimizationHIVE OPTIMIZATIONAug 4, 2022Aug 4, 2022Gourav Nagar18 followersLead Data Engineer - Databricks | Azure | AWS"
+    },
+    {
+        "extraction_id": "7d2787d7-86a8-4504-af66-a5186b29fca4",
+        "extracted_at": "2025-06-06 06:30:24.168095",
+        "extracted_at_epoch": 1749191424,
+        "author_name": "Gopi Kannedhara",
+        "author_url": "https://medium.com/@gopinath530",
+        "num_followers": 0,
+        "short_bio": "pen in appSign upSign inMedium LogoWriteSign upSign inGopi Kannedhara4 followersHomeAboutFlowQL: Informatica to SQL and DBTMigrating legacy ETL workflows to modern data platforms like Snowflake is rarely straightforward. During our own migration journey, we…2d ago2d agoAirflow: EMR serverless deferrableApache Airflow has become a standard for orchestrating complex workflows. When dealing with Amazon EMR Serverless, we often use the EMR…Feb 28Feb 28Apache Kylin on KubernetesIntroduction:Aug 2, 2020A response icon1Aug 2, 2020A response icon1Gopi Kannedhara4 followersData Engineer"
+    },
+    {
+        "extraction_id": "7d2787d7-86a8-4504-af66-a5186b29fca4",
+        "extracted_at": "2025-06-06 06:30:24.168095",
+        "extracted_at_epoch": 1749191424,
+        "author_name": "Farhan Rizaldi",
+        "author_url": "https://medium.com/@rizaldifarhan",
+        "num_followers": 0,
+        "short_bio": "pen in appSign upSign inMedium LogoWriteSign upSign inFarhan Rizaldi14 followersHomeListsAboutPinnedLearning dbt in 7 Days: What to Expect?My learning journey, personal project, resources, and what’s next. A beginner’s take on dbt!May 5May 5How an Effective App Transformed My Financial Tracking: A Comprehensive ReviewFirst things first, why should everyone (or at least I) track their finances? You can check out my other writing on this topic here: 2…Oct 19, 2024Oct 19, 2024Setelah 2 Tahun Mencatat 97% Transaksi Keuangan Pribadi, lalu?“Kembali ke tahun 2020, saat saya sudah lulus sarjana, namun belum punya pekerjaan full-time. Tabungan ada sih, sedikit, sedang magang…Apr 19, 2023A response icon1Apr 19, 2023A response icon1DataCo Dashboard ReportProblem Statement & GoalsApr 16, 2023Apr 16, 2023Farhan Rizaldi14 followers"
+    },
+    {
+        "extraction_id": "7d2787d7-86a8-4504-af66-a5186b29fca4",
+        "extracted_at": "2025-06-06 06:30:24.168095",
+        "extracted_at_epoch": 1749191424,
+        "author_name": "Amber Walker",
+        "author_url": "https://medium.com/@datawithamber",
+        "num_followers": 0,
+        "short_bio": "pen in appSign upSign inMedium LogoWriteSign upSign inAmber Walker54 followersHomeAboutPinnedPublished inAI AdvancesHow I Used a U-Net to Map Building Footprints from the SkyTraining a Neural Network to Detect Buildings Like a ProNov 18, 2024A response icon3Nov 18, 2024A response icon3PinnedDouble Machine Learning for Panel DataExploring How Peace Agreements Impact Violence LevelsNov 12, 2024A response icon4Nov 12, 2024A response icon4Breaking into Data Science as an Analytics EngineerHow I went from Project Management to Data Science and MLMay 25May 25Amber Walker54 followersAnalytics Engineer focused on data science and ML in retail. Sharing what I’ve learned from grad school and hands-on projects in the real world."
+    },
+    {
+        "extraction_id": "7d2787d7-86a8-4504-af66-a5186b29fca4",
+        "extracted_at": "2025-06-06 06:30:24.168095",
+        "extracted_at_epoch": 1749191424,
+        "author_name": "Rajat Jain",
+        "author_url": "https://medium.com/@rajatjain_47026",
+        "num_followers": 0,
+        "short_bio": "pen in appSign upSign inMedium LogoWriteSign upSign inRajat Jain5 followersHomeListsAboutPinnedMigrating from Legacy Workspaces to E2 Workspaces in Databricks: A Personal Journey## My Experience with Single Tenant to E2 MigrationJun 5, 2024Jun 5, 2024Dimensional Modeling vs. One Big Table: Choosing the Right Path on DatabricksIn today’s fast-evolving data landscape, how you model your data can profoundly impact both the speed and quality of your insights. While…2d ago2d agoOptimising Spark Performance: A Decade of InsightsIntroductionAug 22, 2024Aug 22, 2024Rajat Jain5 followersLead Solution Architect | Capgemini Deutschland |"
+    },
+    {
+        "extraction_id": "7d2787d7-86a8-4504-af66-a5186b29fca4",
+        "extracted_at": "2025-06-06 06:30:24.168095",
+        "extracted_at_epoch": 1749191424,
+        "author_name": "Devendra",
+        "author_url": "https://medium.com/@devendra631995",
+        "num_followers": 0,
+        "short_bio": "pen in appSign upSign inMedium LogoWriteSign upSign inDevendra14 followersHomeAbout🎛️ Toggleable dbt Full Refresh in Dagster with a Simple FlagWhen working with dbt in production, full-refreshes can be powerful — but risky. Rebuilding your models from scratch is great for fixing…6d ago6d agoGraph Theory-Based Modeling of ETL Workflows for Dependency Resolution and Optimization Using…As data pipelines grow in complexity, understanding and managing task dependencies becomes a challenge. Apache Airflow addresses this…May 10May 10🚀 Turn Your ESP8266 Into an AI Chatbot Server Using ChatGPT! 🤖📡Ever wondered if a tiny microcontroller like the ESP8266 could talk to OpenAI’s ChatGPT? Well, it can — and you’re about to learn exactly…May 1May 1A Deep Dive into Medallion Architecture: Key Principles and Practical ImplementationIn the ever-evolving world of data engineering, managing large volumes of data in a streamlined, efficient way is crucial. Medallion…Mar 28Mar 28Building Scalable APIs with FastAPI, Docker, and Docker ComposeFastAPI is one of the fastest-growing web frameworks for building APIs in Python. Known for its performance, ease of use, and automatic…Mar 23Mar 23How to Implement the “Delete + Insert” Strategy in DBT for Data RefreshA common approach in DBT (Data Build Tool) to handle data refreshes is the “delete + insert” strategy. This method ensures that the target…Mar 6Mar 6Understanding *args and **kwargs in PythonIn Python, functions are often defined with a fixed number of arguments. But what if you want to write a function that can accept any…Mar 6Mar 6Memory Usage in Polars vs. Apache SparkMemory management is one of the key factors that determines how well a data processing framework can handle large datasets, especially when…Mar 6Mar 6Rolling WindowWhat is a Rolling Window?Jan 30Jan 30From Streams to Insights: Integrating Kafka, Cassandra, PySpark, and Grafana with DockerWhether you’re tracking user interactions, processing sensor data, or building complex data pipelines, the ability to handle massive…Jan 19Jan 19Devendra14 followersData Engineer, https://devendra.tech"
+    },
+    {
+        "extraction_id": "7d2787d7-86a8-4504-af66-a5186b29fca4",
+        "extracted_at": "2025-06-06 06:30:24.168095",
+        "extracted_at_epoch": 1749191424,
+        "author_name": "Michael Guild",
+        "author_url": "https://medium.com/@michaelguild13",
+        "num_followers": 0,
+        "short_bio": "pen in appSign upSign inMedium LogoWriteSign upSign inMichael Guild21 followersHomeAboutLLM Evaluation KPI’s for TelemetryWhile organizations race to implement generative AI solutions, there’s a critical component being overlooked: robust KPI frameworks for…May 13May 13Modern Frameworks and Tools for System Design: A Comprehensive GuideIn today’s rapidly evolving tech landscape, system design has become a critical skill for software engineers and architects. Building…Apr 15Apr 15Understanding React’s Lifecycle: The Virtual DOM and Fiber ArchitectureReact has evolved dramatically since its initial release, transforming from a simple UI library to a powerful framework that powers…Apr 4Apr 4Choosing the Right Human-Centered Design Method: A Phase-Based ApproachHuman-centered design isn’t just about using the right methods — it’s about using the right methods at the right time. Each project phase…Mar 19Mar 19The Designer’s Toolkit: A Comparative Analysis of Human-Centered Design MethodsIn today’s competitive marketplace, understanding user needs isn’t just good practice — it’s essential for survival. Human-centered design…Mar 19Mar 19A Cautionary Tale for the IT Community: Interviewing in the Age of AII just had a fascinating and unusual interview experience where I suspect the candidate was using GPT to answer my questions.Sep 20, 2024Sep 20, 2024Combining Improvement Kata and Human-Centered Design for Holistic Problem-SolvingIn today’s rapidly changing world, organizations are faced with a constant need to innovate, improve processes, and deliver exceptional…Aug 12, 2023Aug 12, 2023Human-Centered Design: A Framework for Innovation and User-Centric SolutionsHuman-Centered Design (HCD) is a problem-solving approach that puts people at the heart of the design process. It involves understanding…May 23, 2023May 23, 2023The Life Cycle of Product Development (UCD & Scrum)The process that I like to follow is a mix of user centered design (UCD) following production guidelines of Scrum framework following…Apr 13, 2021Apr 13, 2021Michael Guild21 followersOver 20 yrs in the software industry, a passionate advocate for empathy-driven value creation, focusing on impactful, mindful step change across various sectors"
+    },
+    {
+        "extraction_id": "7d2787d7-86a8-4504-af66-a5186b29fca4",
+        "extracted_at": "2025-06-06 06:30:24.168095",
+        "extracted_at_epoch": 1749191424,
+        "author_name": "Usamak Mirza",
+        "author_url": "https://medium.com/@usamak.mirza",
+        "num_followers": 0,
+        "short_bio": "pen in appSign upSign inMedium LogoWriteSign upSign inUsamak Mirza5 followersHomeAbout☁️ Brewing My First Airflow DAG: A Data Engineer’s Morning RitualA few months into my data engineering, I heard these three words: Apache Airflow DAG.\nEveryone was using them. Everyone was talking about…May 26A response icon1May 26A response icon1Configure “Docker Compose” for a Ruby on Rails application running on an Ubuntu machineDocker is a platform that makes it easier to create, deploy, and run applications by using containers. Containers are lightweight…Feb 6, 2023Feb 6, 2023Integrating Tamara Payment Gateway — we suffered, so you don’t have to.Getting Started with Ruby on RailsDec 22, 2022Dec 22, 2022Usamak Mirza5 followers"
+    },
+    {
+        "extraction_id": "7d2787d7-86a8-4504-af66-a5186b29fca4",
+        "extracted_at": "2025-06-06 06:30:24.168095",
+        "extracted_at_epoch": 1749191424,
+        "author_name": "young Gary",
+        "author_url": "https://medium.com/@jdhjdjkdcy",
+        "num_followers": 0,
+        "short_bio": "pen in appSign upSign inMedium LogoWriteSign upSign inyoung GaryHomeAboutBuilding a Scalable Movie Recommendation Pipeline Using Spark, Airflow, Elasticsearch, and Kibana“From raw data to dashboards — an end-to-end Big Data project using real-world movie datasets.”May 29May 29young Gary"
+    },
+    {
+        "extraction_id": "7d2787d7-86a8-4504-af66-a5186b29fca4",
+        "extracted_at": "2025-06-06 06:30:24.168095",
+        "extracted_at_epoch": 1749191424,
+        "author_name": "Benjamin Engen",
+        "author_url": "https://medium.com/@bengen",
+        "num_followers": 0,
+        "short_bio": "pen in appSign upSign inMedium LogoWriteSign upSign inBenjamin Engen34 followersHomeListsAboutWhen All You Have is a HammerAnalytics Engineers’ Guide to Source Quality IssuesMay 5May 5Published inGoogle Cloud - CommunityBuild Your Castles In The SkySet up a powerful remote development environment on Google’s new Cloud WorkstationsJan 10, 2023A response icon1Jan 10, 2023A response icon1Published inTDS ArchiveDeploying Apache Superset on Google Cloud RunGet Your Proof of Concept Up in MinutesMay 27, 2022A response icon3May 27, 2022A response icon3Published inTDS ArchiveLevel Up Your Conversion Rate in Just a Few Lines of PythonAnd produce some beautiful visualizations while you’re at itSep 8, 2021Sep 8, 2021Does Political Direct Mail Work?We conducted a first of it’s kind study to quantify the impact of all that junk mail.Aug 21, 2020Aug 21, 2020Benjamin Engen34 followersStaff Analytics Engineer @ The Zebra"
+    },
+    {
+        "extraction_id": "7d2787d7-86a8-4504-af66-a5186b29fca4",
+        "extracted_at": "2025-06-06 06:30:24.168095",
+        "extracted_at_epoch": 1749191424,
+        "author_name": "Adith - The Data Guy",
+        "author_url": "https://medium.com/@adithsreeram",
+        "num_followers": 0,
+        "short_bio": "pen in appSign upSign inMedium LogoWriteSign upSign inAdith - The Data Guy205 followersHomeAboutMedallion ArchitectureThe Gold Standard for Scalable Data PipelinesMay 29May 29Published inPython in Plain EnglishUnderstanding Airflow Architecture and How It Orchestrates Data PipelinesIn the world of modern data engineering, building reliable, scalable, and maintainable data pipelines is a necessity. Organizations today…May 26May 26Perception and Cognition in Data VisualizationBridging the Gap between Numbers and InsightMar 3Mar 3Published inJavarevisitedAdvanced Python Concept: Metaprogramming with MetaclassesA Deep Dive into Metaclasses in PythonJan 2Jan 2Understanding Causal Inference in Advanced Data AnalyticsMaking sense of complex datasets in data analytics often involves going beyond correlation to uncover causation. Communication is critical…Dec 13, 2024Dec 13, 2024Published inJavarevisitedUnlocking the Future: Advanced Data Analytics in the Energy SectorThe energy sector is facing unprecedented challenges and opportunities. As the world transitions towards cleaner, more sustainable energy…Sep 20, 2024Sep 20, 2024Apache Spark Vs. MapReduceA Comprehensive Comparison of Big Data Processing FrameworksSep 11, 2024Sep 11, 2024Published inILLUMINATIONNavigating the Emotional Landscape of Data AnalysisIntroductionAug 5, 2024A response icon1Aug 5, 2024A response icon1Published inILLUMINATION’S MIRRORCombating Exhaustion as a Data AnalystBurnout in the World of DataAug 3, 2024Aug 3, 2024Database Partitioning in SQLJul 30, 2024Jul 30, 2024Adith - The Data Guy205 followersPassionate about sharing knowledge through blogs. Turning data into narratives. Data enthusiast. Content Curator with AI. https://www.linkedin.com/in/asr373/"
+    },
+    {
+        "extraction_id": "7d2787d7-86a8-4504-af66-a5186b29fca4",
+        "extracted_at": "2025-06-06 06:30:24.168095",
+        "extracted_at_epoch": 1749191424,
+        "author_name": "Sendoa Moronta",
+        "author_url": "https://medium.com/@sendoamoronta",
+        "num_followers": 0,
+        "short_bio": "pen in appSign upSign inMedium LogoWriteSign upSign inSendoa Moronta20 followersHomeAboutApache Iceberg on GCP: Enabling Advanced Data Lake Use Cases (with Hive Metastore on Dataproc)Discover how Apache Iceberg and Hive Metastore on Dataproc solve critical data lake challenges that BigQuery can’t address.20h ago20h agoSmarter Data Quality Monitoring in BigQuery with Gaussian Mixture ModelsSay goodbye to manual rules: detect subtle, multivariate anomalies and reduce costs with adaptive statistical models in Google Cloud.2d ago2d agodbt + BigQuery in Production: 13 Technical Practices to Scale and Optimize Your Data PlatformBest practices using dbt with BigQuery3d ago3d agoRuntime Security in Cloud Composer: Enforcing Per-App DAG Isolation with External PoliciesEnhancing Runtime Security in Airflow: DAG-Level Isolation Strategies for Secure Cloud Workflows6d ago6d agoAutomate Data Quality in BigQuery with DBT, dbt-expectations, and AirflowThis post shows how to build an automated and advanced system to monitor data quality in BigQuery using DBT, dbt-expectations, and Airflow.May 28May 28Column-Level Lineage and Data Quality in dbt with SQLGlot and ElementaryEnhancing Data Observability with Column-Level Lineage and Automated Quality MonitoringMay 26May 26dbt Artifacts + BigQuery: The Observability Layer You Didn’t Know You Already HadMay 23May 23Published inTowards Data EngineeringBuilding Resilient Data Pipelines with dbt, BigQuery, Airflow, and Great ExpectationsCombine orchestration, transformation, and data validation to create robust and maintainable pipelines on Google CloudMay 22May 22Chaos Engineering en Pipelines de Datos: Simulando Fallos en ETLs con BigQuery, Cloud Composer y…May 19May 19Sendoa Moronta20 followersCloud architect and big data specialist"
+    },
+    {
+        "extraction_id": "7d2787d7-86a8-4504-af66-a5186b29fca4",
+        "extracted_at": "2025-06-06 06:30:24.168095",
+        "extracted_at_epoch": 1749191424,
+        "author_name": "Meghana Thota",
+        "author_url": "https://medium.com/@meghanathota13",
+        "num_followers": 0,
+        "short_bio": "pen in appSign upSign inMedium LogoWriteSign upSign inMeghana Thota15 followersHomeAboutLet’s take a deep dive into Selenium — a versatile library for web scraping and browser automation.Selenium is a powerful open-source framework used for automating web browser interactions. It enables developers and testers to control web…May 26May 26Introduction to Apache Airflow DAGs: A Beginner-Friendly GuideApache Airflow is one of the most powerful platforms for programmatically authoring, scheduling, and monitoring workflows. At the heart of…May 25A response icon2May 25A response icon2Meghana Thota15 followers"
+    },
+    {
+        "extraction_id": "7d2787d7-86a8-4504-af66-a5186b29fca4",
+        "extracted_at": "2025-06-06 06:30:24.168095",
+        "extracted_at_epoch": 1749191424,
+        "author_name": "Mykola-Bohdan Vynnytskyi",
+        "author_url": "https://medium.com/@mbvyn",
+        "num_followers": 0,
+        "short_bio": "pen in appSign upSign inMedium LogoWriteSign upSign inMykola-Bohdan Vynnytskyi332 followersHomeAboutUnderstanding dbt. ExposuresWelcome back to the Understanding dbt series! Let talk about Exposures!May 4May 4Understanding dbt. HooksWelcome back to the Understanding dbt series! Let’s talk about hooks!Apr 27Apr 27Understanding dbt. AnalysesWelcome back to the Understanding dbt series! In today’s article, we’ll be exploring analysesMar 29Mar 29Understanding dbt. TestsIn this article, we’ll explore one of the most important aspects of working with data — testingFeb 15Feb 15Understanding dbt. SnapshotsIn this article, we’re diving into one of dbt’s most powerful features — snapshots.Feb 1Feb 1Understanding dbt. Seeds and SourcesWelcome back to the Understanding dbt series! In this article, we’ll continue exploring the core components of dbt and dive into two…Jan 12Jan 12Understanding dbt. Incremental materializationWelcome back to the Understanding dbt series! If you’ve been following along, this is the third article in our journey through dbt, where…Nov 9, 2024Nov 9, 2024Understanding dbt. ModelsIntroduction to the main block of the dbtJun 3, 2024Jun 3, 2024Top 5 Books for Data Engineers in 2024Key books to become a successful data engineerFeb 24, 2024A response icon2Feb 24, 2024A response icon2Understanding dbtIntroduction to the T of the modern data stackFeb 4, 2024Feb 4, 2024Mykola-Bohdan Vynnytskyi332 followersData Engineer by day. YouTuber, author, and creator of courses by night. Passionate about Big Data and self-development."
+    },
+    {
+        "extraction_id": "7d2787d7-86a8-4504-af66-a5186b29fca4",
+        "extracted_at": "2025-06-06 06:30:24.168095",
+        "extracted_at_epoch": 1749191424,
+        "author_name": "Digital Hive",
+        "author_url": "https://medium.com/@digital_hive",
+        "num_followers": 0,
+        "short_bio": "pen in appSign upSign inMedium LogoWriteSign upSign in1 followerHomeAboutCan I still automate ingestion if my source data is inconsistent ?When dealing with real world data we often face inconsistencies in source data structure, especially when those sources are file based…3d ago3d agodbt build selector: A Practical GuideWhen you’re working with dbt, especially on larger projects, you don’t always want to build every model every time. That’s where selectors…3d ago3d agoSnowflake external stage limit exceededWhen querying an external stage you should be aware of the following limitations. You may encounter an error 001057, which relates to…Apr 4Apr 4The road to POC app building with StreamlitWhen developing a proof-of-concept (POC) application, the aim is to rapidly validate the core logic, assumptions, and functionalities of an…Feb 28Feb 28The Path to SnowPro Core CertificationSnowflake is a popular data lake/warehouse. It offers many different tools that data engineers can utilize for their data pipelines. As a…Jan 31Jan 31The path to the dbt Developer CertificationAfter getting dbt certified, we want to share the experiences and help others to learn more about dbt.Dec 26, 2024Dec 26, 2024Leverage DBT audit to ensure accurate model generationThis blog explores using DBT audit_helper to compare and validate data accuracy during a transition from legacy ETL to DBT models.Nov 22, 2024Nov 22, 2024Digital Hive1 followerExpert Consultancy in CRM, Data, and Marketing. Guiding Businesses Towards Digital Empowerment."
+    },
+    {
+        "extraction_id": "7d2787d7-86a8-4504-af66-a5186b29fca4",
+        "extracted_at": "2025-06-06 06:30:24.168095",
+        "extracted_at_epoch": 1749191424,
+        "author_name": "Doran Gao",
+        "author_url": "https://medium.com/@dorangao",
+        "num_followers": 0,
+        "short_bio": "pen in appSign upSign inMedium LogoWriteSign upSign inDoran Gao44 followersHomeListsAboutPinnedPublished inDev GeniusGoogle Cloud Pub/Sub Schema Validation with Avro and Protobuf“To aim is not to miss; to miss is to aim with no target.” — AnonymousMay 5May 5PinnedGPT-4o-Mini: Small Yet Powerful — A Journey of Learning and Applying Generative AI — Milestone 1“To see a World in a Grain of Sand and a Heaven in a Wild Flower, Hold Infinity in the palm of your hand and Eternity in an hour.” —…Jul 23, 2024Jul 23, 2024Autonomous GraphQL Testing with OpenAI Agent and Apollo MCP“To raise new questions, new possibilities, to regard old problems from a new angle, requires creative imagination.” — Albert Einstein.4d ago4d agoApache Airflow 101: Local Setup and Core Concepts TutorialGrowth is never by mere chance; it is the result of forces working together. — James Cash Penney4d ago4d agoReal-Time Collaborative Drawing Game with Next.js and Firebase“The future is won by those who learn more skills — and combine them in creative ways.” ― Robert GreeneMay 26May 26Validating Database Migration with OpenAI Agents and MCP“Without transformation, there is no growth.” — Walt Disney.May 4May 4Published inJavaScript in Plain EnglishStep-by-Step Guide: Integrate NextAuth v5 (Beta) with Credentials (JWT Sessions) into Next.js“Even the tallest tower started from the ground.” — T.S. EliotApr 20Apr 20Object-Oriented Programming in Python: A Beginner’s TutorialNothing will ever be attempted if all possible objections must first be overcome. — Samuel JohnsonApr 16A response icon1Apr 16A response icon1Published inDev GeniusMastering the * Operator in Python: A Deep Dive into Async and ThreadingInnovate, iterate, illuminate. — Andrea M. JonesApr 15Apr 15Published inDev GeniusGraphQL Federation with Netflix DGS and Apollo GatewayIt’s not the load that breaks you down, it’s the way you carry it. — Lou HoltzApr 4Apr 4Doran Gao44 followersDoran Gao is a software engineering professional passionate about technology, running, literature, and enjoying life."
+    },
+    {
+        "extraction_id": "7d2787d7-86a8-4504-af66-a5186b29fca4",
+        "extracted_at": "2025-06-06 06:30:24.168095",
+        "extracted_at_epoch": 1749191424,
+        "author_name": "evgeniya makarova",
+        "author_url": "https://medium.com/@emakarova86",
+        "num_followers": 0,
+        "short_bio": "pen in appSign upSign inMedium LogoWriteSign upSign inevgeniya makarova1 followerHomeAboutThe Truth Is Born in Argument: Is Data Governance a Responsibility of Business?The debate over who is responsible for data governance is as old as data itself — and still very much alive today. As organizations across…May 9May 9Leveraging “AI” for Data Modelling and Business AnalysisHello everyone, I am Evgeniya, Data Architect, and I wanted to share with community how I am using AI to be more efficient at work.Nov 8, 2024Nov 8, 2024Data Quality and Service Canada: A Passport DramaEver wonder how data quality can impact your everyday life? Buckle up for a tale of bureaucratic blunders and personal perseverance.Jun 18, 2024A response icon1Jun 18, 2024A response icon1evgeniya makarova1 follower"
+    },
+    {
+        "extraction_id": "7d2787d7-86a8-4504-af66-a5186b29fca4",
+        "extracted_at": "2025-06-06 06:30:24.168095",
+        "extracted_at_epoch": 1749191424,
+        "author_name": "David Ogden",
+        "author_url": "https://medium.com/@ogdendc",
+        "num_followers": 0,
+        "short_bio": "pen in appSign upSign inMedium LogoWriteSign upSign inDavid Ogden28 followersHomeAboutRestoring Column Metadata for a Databricks TableMy table was replaced and all the column descriptions were wiped! Argh!2d ago2d agoDatabricks DQX to Generate DLT ExpectationsHow to Automatically Generate 100’s or 1000’s of Delta Live Table ExpectationsJan 31Jan 31David Ogden28 followers"
+    },
+    {
+        "extraction_id": "7d2787d7-86a8-4504-af66-a5186b29fca4",
+        "extracted_at": "2025-06-06 06:30:24.168095",
+        "extracted_at_epoch": 1749191424,
+        "author_name": "mehmet_zmn",
+        "author_url": "https://medium.com/@ozmenmehmet98",
+        "num_followers": 0,
+        "short_bio": "pen in appSign upSign inMedium LogoWriteSign upSign inmehmet_zmn1 followerHomeAboutDBT in Practice: A Simple Demo with Airflow and DockerDBT (data build tool) is one of the popular ETL/ELT tools of recent times. By combining SQL and Jinja syntaxes in data transformations…2d ago2d agoStreaming Simplicity: Dockerized Kafka ETL with MongoDB and PostgreSQLKafka is one of the first tools that comes to mind when talking about real-time data streaming. Instead of providing a lengthy explanation…May 21May 21mehmet_zmn1 follower"
+    },
+    {
+        "extraction_id": "7d2787d7-86a8-4504-af66-a5186b29fca4",
+        "extracted_at": "2025-06-06 06:30:24.168095",
+        "extracted_at_epoch": 1749191424,
+        "author_name": "Crack FAANG",
+        "author_url": "https://medium.com/@crackfaang",
+        "num_followers": 0,
+        "short_bio": "pen in appSign upSign inMedium LogoWriteSign upSign inCrack FAANG1.7K followersHomeListsAboutLeveraging Data-Driven Strategies for Optimal Marketing ROI Across IndustriesIn today’s data-centric marketing landscape, harnessing analytics is paramount. This blog delves deep into how data-driven strategies…4d ago4d agoHow DBT Supercharges Data TransformationModern businesses generate hundreds of millions of data points every day, from order placements to inventory updates. However, raw data in…4d ago4d agoThe PR Powerhouse: Communications, Messaging, and Media RelationshipsPublic Relations (PR) is often misunderstood. Some see it as just “getting good press,” but it’s so much more than that. It’s about…May 16May 16UTM Parameters: The Ultimate Guide for SaaS TrackingIn the ultra-competitive world of SaaS, you need precise data to understand exactly which marketing channels, ad variations, and campaigns…May 3May 3Introducing Escrow-as-a-Service (EaaS): A Revolutionary Approach to Secure TransactionsBusinesses of all sizes are increasingly conducting transactions online. This has led to a growing demand for secure and efficient ways to…May 1May 1Navigating Communications and PR Across Diverse IndustriesIn the fast-paced realm of public relations and communications, versatility and strategic prowess are essential for success.Apr 16Apr 16From Search to Sign-Up: Driving More Product Qualified Leads with Google AdsA simple email address from a download (an MQL) might not guarantee serious interest. In contrast, a Product Qualified Lead (PQL) is…Apr 6Apr 6Fueling Merchant Growth: A Deep Dive into Lifecycle Solutions and Partner StrategiesBusinesses need more than just payment processing; they need a comprehensive ecosystem that supports their growth at every stage. This is…Apr 1Apr 1Communicating with StakeholdersIn business operations, understanding your audience is crucial for effective communication.Mar 17Mar 17Comparing Google Search, Display, YouTube, and Performance Max Ad CampaignsWhen running digital marketing, choosing the right Google Ads campaign type can significantly impact your cost per lead (CPL) and return on…Mar 2Mar 2Crack FAANG1.7K followersDive into our tips on tech interviews and industry insights. "
+    },
+    {
+        "extraction_id": "7d2787d7-86a8-4504-af66-a5186b29fca4",
+        "extracted_at": "2025-06-06 06:30:24.168095",
+        "extracted_at_epoch": 1749191424,
+        "author_name": "Munna",
+        "author_url": "https://medium.com/@munna710",
+        "num_followers": 0,
+        "short_bio": "pen in appSign upSign inMedium LogoWriteSign upSign inMunna2 followersHomeAboutHow I Used dbt to Break Down Anime Production Data“Have you ever wondered why some anime consistently outperform others?”4d ago4d agoMunna2 followers"
+    },
+    {
+        "extraction_id": "7d2787d7-86a8-4504-af66-a5186b29fca4",
+        "extracted_at": "2025-06-06 06:30:24.168095",
+        "extracted_at_epoch": 1749191424,
+        "author_name": "Sreenibhogi",
+        "author_url": "https://medium.com/@sreenibhogi",
+        "num_followers": 0,
+        "short_bio": "pen in appSign upSign inMedium LogoWriteSign upSign inSreenibhogiHomeAboutSlowly Changing Dimensions Type 1 (SCD1) in PySpark with Oracle Source and TargetIn data warehousing, managing Slowly Changing Dimensions (SCD) is critical for handling changes in dimensional data over time. SCD Type 1…10h ago10h agoEnd-to-end project with Snowflake + dbt + Astro (Airflow)Building a Data Pipeline with Snowflake + dbt + Astro (Airflow): From Raw to Marts Using TPCH Sample Data in Snowflake5d ago5d agoReal-time Data Ingestion from Azure Blob to Snowflake using SnowpipeIntroduction:May 27May 27Building a COVID Data Pipeline with Apache Airflow, Azure Blob Storage, and SnowflakeIn this article, I’ll walk you through how I built an end-to-end data pipeline using Apache Airflow, Azure Blob Storage, and Snowflake…May 27May 27Pyspark code — Read from the Oracle table and write it into the Oracle table.In this article, we will learn how to read the data from the Oracle table and write the result set into another Oracle table using PySpark.Oct 12, 2024Oct 12, 2024Sreenibhogi"
+    },
+    {
+        "extraction_id": "7d2787d7-86a8-4504-af66-a5186b29fca4",
+        "extracted_at": "2025-06-06 06:30:24.168095",
+        "extracted_at_epoch": 1749191424,
+        "author_name": "Fei Zhan",
+        "author_url": "https://medium.com/@enfeizhan",
+        "num_followers": 0,
+        "short_bio": "pen in appSign upSign inMedium LogoWriteSign upSign inFei Zhan5 followersHomeAboutFrom dbt Beginner to Expert — Part 1A Learning Journal for Aspiring Data Engineers5d ago5d agoHealing After Divorce: A Guide for Men to Rebuild with Purpose and PowerPractical, uplifting strategies for transforming post-divorce pain into a powerful season of growth.May 19May 19Escaping the YouTube Spiral: 7 Realistic Strategies That WorkThis is not just about screen time. It’s about taking our attention back — without relying on willpower alone.May 11May 11Recursive Function and Variable Scope in JavascriptA Pythonian’s adventure on the “Recursive Function Mountain” in NodeJS.May 2May 2From Reading to Writing: How to Transform Powerful Sentences into Your Own VoiceA practical guide for language learners and thoughtful writers to turn admired prose into personal expression — scalably, creatively, and…May 1May 1Mastering Anger: How to Heal Faster and Protect Our Health and RelationshipsSimple, powerful strategies to soften anger, move on quickly, and grow into our best self.Apr 27Apr 27Breaking the Procrastination Cycle: Proven Strategies to Achieve Your GoalsDiscover the real reasons behind procrastination and how you can break the cycle for good.Apr 25Apr 25Flip the Script on a Tough Life and Live BetterSmall shifts can transform the way we live our life.Apr 12Apr 12Fei Zhan5 followers"
+    },
+    {
+        "extraction_id": "7d2787d7-86a8-4504-af66-a5186b29fca4",
+        "extracted_at": "2025-06-06 06:30:24.168095",
+        "extracted_at_epoch": 1749191424,
+        "author_name": "Bhumisharma",
+        "author_url": "https://medium.com/@bhumisharma.01bs",
+        "num_followers": 0,
+        "short_bio": "pen in appSign upSign inMedium LogoWriteSign upSign inBhumisharma5 followersHomeAbout“Rethinking Data Pipelines: Why Dagster is a Game Changer”Dagster is an open-source, cloud-native data orchestrator designed to help teams build, schedule, and monitor reliable data pipelines.1d ago1d agoApache Airflow Architecture & DAG File StructureApache Airflow is an open-source platform used to programmatically author, schedule, and monitor workflows. It allows you to orchestrate…3d ago3d agoInstall & Run Apache Airflow on EC2 (Amazon Linux 2 / Free Tier)1. Launch your EC2 instance3d ago3d agoFrom Cron to Airflow: The Evolution of Data OrchestrationWhat is Orchestration?5d ago5d agoETL | Extract Transform LoadETL (Extract, Transform, Load) is the process of extracting data from various sources, transforming it into a suitable format, and loading…May 14May 14Efficient ETL: Why Incremental Loading Beats Full Loads Every Time”Why Use Incremental Loading Instead of Full Loads?May 13May 13Data Warehouse vs Database: What’s the Real Difference?As data engineers or enthusiasts stepping into the world of data infrastructure, one common question often arises:May 12May 12E Comm Data ModelingLet’s Create a Data Modelling for Ecomm for Childrens Ecomm,Nov 30, 2024Nov 30, 2024Bhumisharma5 followers"
+    },
+    {
+        "extraction_id": "7d2787d7-86a8-4504-af66-a5186b29fca4",
+        "extracted_at": "2025-06-06 06:30:24.168095",
+        "extracted_at_epoch": 1749191424,
+        "author_name": "G e o r g i a n",
+        "author_url": "https://medium.com/@techgeorge",
+        "num_followers": 0,
+        "short_bio": "pen in appSign upSign inMedium LogoWriteSign upSign inG e o r g i a n147 followersHomeAboutPinnedSAP + Databricks: Architecture, Integration and What We Know So FarSAP and Databricks have teamed up for some time to deliver a unified data platform, bringing cloud data lakehouse capabilities directly…Apr 25Apr 25PinnedPublished inDev GeniusConvolutional Neural Network to Spot Pneumonia from X-rays on Databricks with Tensorflow and KerasThis is what happens when you take a Convolutional Neural Network, train it on grayscale chest X-rays, and ask it one question:Apr 2Apr 2PinnedPublished inDev GeniusUnlocking Granular Cost Tracking in Azure Databricks Using System TablesUnlocking Granular Cost Tracking in Azure Databricks Using System TablesJan 24Jan 24PinnedPublished inTowards Data EngineeringUnderstanding Triggers with Databricks Spark Structured Streaming: Default, ProcessingTime and…IntroductionNov 26, 2024Nov 26, 2024PinnedPublished inDev GeniusManaging Databricks User Permissions with Unity Catalog and Cluster PoliciesEmpower Users While Maintaining Control: A Guide to Databricks Governance”Nov 17, 2024Nov 17, 2024Why Databricks Feature Engineering Client Doesn’t Work in VS Code (Yet)Introduction11h ago11h agoPublished inTowards Data EngineeringBuilding Better ML Tree Models With CatBoost on DatabricksIntuitionMay 24A response icon1May 24A response icon1Handle Missing Data in Machine Learning and Data Engineering? A Practical Guide on DatabricksMissing data is one of the most common and frustrating issues you’ll encounter when working on machine learning and data engineering use…Apr 24Apr 24Published inTowards Data EngineeringArtificial Neuronal Network for Banking Churn Predicition with Tensorflow and Keras on DatabricksIn today’s competitive banking industry, predicting customer churn is essential. Customer churn, the loss of customers to a competitor or…Apr 22Apr 22Published inTowards Data EngineeringCoalesce: A Lesson about Data Skewness in Databricks with SparkI remember the times when I worked as a Big Data Engineer & Consultant for a company in Germany. Our customer in the energy sector and…Apr 16Apr 16G e o r g i a n147 followers5 x Azure certified, 2 x Databricks certified & Databrick Champion. Let`s talk about: Cloud Technologies, Data & AI, Business and Leadership and Basketball."
+    },
+    {
+        "extraction_id": "7d2787d7-86a8-4504-af66-a5186b29fca4",
+        "extracted_at": "2025-06-06 06:30:24.168095",
+        "extracted_at_epoch": 1749191424,
+        "author_name": "István",
+        "author_url": "https://medium.com/@istvan_49459",
+        "num_followers": 0,
+        "short_bio": "pen in appSign upSign inMedium LogoWriteSign upSign inIstván1 followerHomeAboutSchema Evolution in DatabricksSchema Evolution is a really great feature of Databricks and over the recent years it has gone through a few changes in terms of how to…1d ago1d agoIstván1 follower"
+    },
+    {
+        "extraction_id": "7d2787d7-86a8-4504-af66-a5186b29fca4",
+        "extracted_at": "2025-06-06 06:30:24.168095",
+        "extracted_at_epoch": 1749191424,
+        "author_name": "VaibhavTamang",
+        "author_url": "https://medium.com/@deadlyhacker12",
+        "num_followers": 0,
+        "short_bio": "pen in appSign upSign inMedium LogoWriteSign upSign inVaibhavTamang2 followersHomeAbout🚀 Demystifying Apache Airflow: The Modern Workflow OrchestratorIn today’s data-driven world, managing complex workflows across multiple systems, dependencies, and schedules can quickly become a…May 29May 29🥇 Medallion Architecture: A Beginner’s Guide to Building Clean and Scalable Data PipelinesWhen you’re dealing with data at scale — millions of records, multiple sources, real-time updates — you need more than just a database and…May 28May 28Simplify Big Data Processing with mrjob: A Beginner’s GuideBig data sounds intimidating, right? 😵‍💫 Processing terabytes of information across distributed systems like Hadoop used to mean writing…Apr 28Apr 28What is the Hadoop Ecosystem and Why Should You Care?In the era of big data, Hadoop isn’t just a buzzword — it’s a cornerstone. But Hadoop isn’t one tool. It’s a whole ecosystem built to…Apr 23Apr 23Say Hello to uv: The New Kid on the Python Packaging BlockIf you’ve been using Python for anything beyond print(“Hello, world!”), you’ve met pip. It's the go-to package installer, and for most of…Apr 21Apr 21Delta Live Tables (DLT): A Game-Changer for Data Engineers ⚙️🔥Data engineers are under pressure to deliver clean, reliable data — fast. But building and managing production-grade pipelines isn’t…Apr 20Apr 20What is MCP and Why It’s a Game Changer in AIAI moves fast. Blink, and you’re already behind. Yesterday it was all about massive language models — today, everyone’s buzzing about…Apr 18Apr 18🚀 How OpenAI’s o3 & o4-mini Could Transform a Developer’s Workflow“AI that actually thinks before it speaks?”Apr 17Apr 17Run AI Models with Hugging Face — No PhD Required! 🚀Ever wanted to harness the power of AI without drowning in complex code? Thanks to Hugging Face, running an AI model is easier than you…Mar 9Mar 9VaibhavTamang2 followers"
+    },
+    {
+        "extraction_id": "7d2787d7-86a8-4504-af66-a5186b29fca4",
+        "extracted_at": "2025-06-06 06:30:24.168095",
+        "extracted_at_epoch": 1749191424,
+        "author_name": "Varun Tyagi",
+        "author_url": "https://medium.com/@varun.tyagi83",
+        "num_followers": 0,
+        "short_bio": "pen in appSign upSign inMedium LogoWriteSign upSign inVarun Tyagi80 followersHomeListsAboutThe Rise of Agentic AI: How Modular GPT Assistants Are Solving Real Work ProblemsHow Agentic AI Is Replacing Task Overload with Autonomous Execution. One Smart Agent at a Time1d ago1d agoWhy Data Contracting Is the Future of Reliable Data — and How to Get It RightData contracts bring clarity and accountability to your pipelines by aligning engineers and analysts through shared expectations. Here’s…May 5May 5From Buzzword to Utility: Building an Agentic AI That Does Your Startup ResearchAgentic AI is the hottest trend in artificial intelligence right now — and for good reason. It promises to shift AI from being a passive…May 4May 4Published inInspire MotivationFrom Almost Cricketer to a Data Leader: My Unlikely Journey into Tech and What It Taught Me About…How a dusty cricket ground shaped a global data leader.May 3May 3Published inOperations Research BitHow Mid-Sized Companies Can Successfully Implement Data Mesh (Without the Hype)Beyond the Buzzwords — A Practical Guide to Decentralized Data Ownership, Empowerment, and ScalabilityMay 2May 2Synthetic Data is Coming for Your Job But It Might Also Save ItThe rise of synthetic data is challenging everything we know about real-world analytics. Are you ready?Apr 11Apr 11The Data Team Dilemma: From Report Factory to Strategic ForceWhat if the real value of your data team isn’t in how fast they deliver — but in what they choose not to?Apr 11Apr 11Published inOperations Research BitStopping Churn Before It Happens: How Machine Learning Can Help Re-Engage CustomersIn today’s hyper-competitive market, retaining customers is crucial. Customer churn, where users stop engaging with a business, is like a…Oct 27, 2024Oct 27, 2024Published inOperations Research BitExpediting Decision-Making in Mobile Gaming: A/B Testing Meets Machine LearningReward structures, game mechanics, and user engagement strategies must evolve continually, driven by data, to retain players and keep them…Sep 14, 2024Sep 14, 2024Published inOperations Research BitMastering Predictive LTV in Mobile Gaming: A Comprehensive GuideIn the dynamic world of mobile gaming, understanding and predicting player value is crucial for success. This blog post will dive deep into…Sep 12, 2024Sep 12, 2024Varun Tyagi80 followers"
+    },
+    {
+        "extraction_id": "7d2787d7-86a8-4504-af66-a5186b29fca4",
+        "extracted_at": "2025-06-06 06:30:24.168095",
+        "extracted_at_epoch": 1749191424,
+        "author_name": "Hubert Dudek",
+        "author_url": "https://medium.com/@databrickster",
+        "num_followers": 0,
+        "short_bio": "pen in appSign upSign inMedium LogoWriteSign upSign inHubert Dudek857 followersHomeAboutUnity Catalog to Azure Key Vault: No more dbutils.secrets()In this article, I’ll walk you through granting Azure Databricks secure access to Azure Key Vault with an Azure Databricks Access…14h ago14h agoMERGE in Python, which one has the nicest syntax and is the fastest?If you are not yet a member of Medium, you can access for free via a friend’s link.5d ago5d agoMERGE in databricks — a few new improvements about which you need to knowRecently, we made a few improvements to the MERGE command, which you can not miss as it is one of the most popular commands for every data…May 29A response icon2May 29A response icon2Stored Procedures in databricksDatabricks Runtime 17.0 introduced support for SQL stored procedures. For example, the procedure below moves orders to demonstrate that…May 27May 27Databricks Asset Bundles with UI in the workspaceDatabricks Asset Bundles became a best practice for CI/CD and are now available in the workspace UI.May 21A response icon1May 21A response icon1Collation Modifiers in DatabricksMake case-insensitive or accent-insensitive queries easier and improve performance.May 17A response icon1May 17A response icon1Clean Landing Zone — autoloader cleanSourceOne of the most annoying things for me is data duplication. In particular, bronze and landing zones keep the same data in the medallion…May 14A response icon2May 14A response icon2Writing Compound SQL Code with BEGIN ... END in DatabricksBEGIN … END will make migration from legacy SQL easier, but I also found it excellent for handling errors, including custom errors…May 7A response icon2May 7A response icon2SQL Scripting in databricks: CASE statementDatabricks Runtime 16.3 introduced SQL scripting. I decided to examine all the new statements one by one—first, CASE. I tested the code…May 5May 5Write Cleaner Spark Code Without Temp ViewsDo you use spark.sql in pyspark and find your code messy with many temp views? There’s a better way! Since Spark 3.4.0, you can run SQL…May 4A response icon7May 4A response icon7Hubert Dudek857 followers"
+    },
+    {
+        "extraction_id": "7d2787d7-86a8-4504-af66-a5186b29fca4",
+        "extracted_at": "2025-06-06 06:30:24.168095",
+        "extracted_at_epoch": 1749191424,
+        "author_name": "d_Sreyashree",
+        "author_url": "https://medium.com/@spaceandfight2006",
+        "num_followers": 0,
+        "short_bio": "pen in appSign upSign inMedium LogoWriteSign upSign ind_Sreyashreeshe/her57 followersHomeListsAboutPublished inbloody sweet writersDelta Lake: The Smart Notebook for Your DataBecause Your Data Lake Deserves a Little Order (and Less Drama)1d ago1d agoPublished inLong. Sweet. Valuable.Honestly, I’m Clueless!!!Just read it and you’ll find out2d agoA response icon12d agoA response icon1Published inbloody sweet writersFrom Zero to Spark Job: My First Real Ride on DatabricksThis Wasn’t Just Code, It Was My First SparkMay 26May 26The Unexpected GuestWhen Life Changes Without KnockingMay 24May 24Published inPen With PaperWill I Always Be This Rash?Is this just youth, or is this who I’ll always be?May 23May 23Published inNo Time“Lakehouse Architecture: Where Raw Chaos Meets Data Zen”Handling Data Chaos & AI Dreams — the Lakehouse WayMay 23May 23“When I Chose Silence, I Chose Myself”My Stillness Is Not Your InvitationMay 17May 17Published inNo Time“Handshake Politics\": Peace Talks and Power PlaysWhile Leaders Shake Hands, War Keeps the World TurningMay 17A response icon1May 17A response icon1Published inHeartline PublicationsThis Is Hungry WorldWhen the world teaches you to starve what makes you human.May 12May 12Published inNo TimeThe Minds Behind the Machines: OpenAI vs AnthropicMore Than Code: The Ideologies Powering the Future of AIMay 9May 9d_Sreyashreeshe/her57 followersI explore the human experience in two languages: the raw rhythm of emotion and the structured pulse of ideas. Always writing. Always wondering."
+    },
+    {
+        "extraction_id": "7d2787d7-86a8-4504-af66-a5186b29fca4",
+        "extracted_at": "2025-06-06 06:30:24.168095",
+        "extracted_at_epoch": 1749191424,
+        "author_name": "Abhishek Kumar Gupta",
+        "author_url": "https://medium.com/@abhishekkrgupta0",
+        "num_followers": 0,
+        "short_bio": "pen in appSign upSign inMedium LogoWriteSign upSign inMastodonAbhishek Kumar Gupta26 followersHomeListsAboutPinnedPublished inTech with AbhishekBeyond Tokens: How Large Concept Models (LCMs) Are Rewiring AI ReasoningIntroduction:Large Language Models (LLMs) like GPT-4 revolutionized how machines understand and generate text. But under the hood, LLMs…May 27May 27Published inTech with AbhishekVibe Coding: The Future of Software Development Is Just a Prompt AwayUnlocking the next era of development — where your imagination and a few sentences are all you need to code.10h agoA response icon110h agoA response icon1Published inTech with Abhishek🧠Prompt-Driven Workflows with Snowflake Copilot and GenAIWrite, Refine, and Debug mirrors real tasks11h ago11h agoPublished inTech with Abhishek🚀Building Real-Time Pipelines with Snowflake Tasks and StreamsReal-Time Pipelines with Snowflake: Native CDC, Scheduled Tasks, and GenAI for Recovery1d ago1d agoPublished inTech with Abhishek🌨️ 10 Snowflake Tips I Wish I Knew Before Scaling to 100M Rows🧠 Introduction :Snowflake has rapidly evolved in 2025, introducing features that significantly enhance performance, scalability, and AI…2d agoA response icon12d agoA response icon1Published inTech with Abhishek🔬The dbt Decision Framework: When to Choose, When to Skip, and What Alternatives Actually Work in…✨ A CTO’s 2 AM Google Search2d ago2d agoPublished inStack & SoulFrom SIPs to Side Hustles: Financial Planning for Indian TechiesYour blueprint to balancing code, cash flow, and calm2d ago2d agoPublished inTech with Abhishek🛠️ Building a Self-Healing Data Platform with GenAI & Observability🧠 Introduction: From Alerts to Autonomous Repair4d ago4d agoPublished inStack & SoulAtomic Habits for Engineers: Code Better, Live CalmerHow small, identity-driven habits can help developers stay focused, productive, and less burnt out.4d agoA response icon14d agoA response icon1Published inTech with Abhishek🛠️ Building Self-Healing Data Pipelines with GenAI + dbtHarness the power of GenAI to create autonomous dbt pipelines that detect, diagnose, and resolve issues proactively.4d ago4d agoAbhishek Kumar Gupta26 followersI build smart data systems that think, act, and fix themselves. Writing real-world guides on GenAI, LLMs, observability, and everything in between."
+    },
+    {
+        "extraction_id": "7d2787d7-86a8-4504-af66-a5186b29fca4",
+        "extracted_at": "2025-06-06 06:30:24.168095",
+        "extracted_at_epoch": 1749191424,
+        "author_name": "Heitor Felix",
+        "author_url": "https://medium.com/@heitorfelix",
+        "num_followers": 0,
+        "short_bio": "pen in appSign upSign inMedium LogoWriteSign upSign inHeitor Felix1 followerHomeAboutI Struggled with Databricks Unity Catalog So You Don’t Have To: The Quick GuideDealing with storage credentials, external location, catalogs, schema and volumes on Azure Databricks5h ago5h agoDesmistificando conceitos sobre LLMsO que é prompt engineering? O que é RAG? O que são agentes? Entenda de uma vez por todas!Nov 22, 2024Nov 22, 2024Desvendando o Data Lakehouse: Meu primeiro Projeto no DatabricksUma jornada prática pela construção de um Data Lakehouse no Databricks.Oct 5, 2024Oct 5, 2024Desmistificando ambientes virtuais em Python: Aprenda de vez como usarIntroduçãoFeb 26, 2024Feb 26, 2024Clusterização: Começando pelo básico com RFM Segmentation ModelSoluções de clusterização são aquelas em que o time de dados separa atributos parecidos e segmenta uma base de dados em grupos. Um clássico…Mar 22, 2022Mar 22, 2022Heitor Felix1 followerCientista de dados em formação."
+    },
+    {
+        "extraction_id": "7d2787d7-86a8-4504-af66-a5186b29fca4",
+        "extracted_at": "2025-06-06 06:30:24.168095",
+        "extracted_at_epoch": 1749191424,
+        "author_name": "Sarayavalasaravikiran",
+        "author_url": "https://medium.com/@sarayavalasaravikiran",
+        "num_followers": 0,
+        "short_bio": "pen in appSign upSign inMedium LogoWriteSign upSign inSarayavalasaravikiran599 followersHomeAboutPinnedPublished inArtificial Intelligence in Plain EnglishKAG: A Better Alternative to RAG for Domain-Specific Knowledge ApplicationsThe rise of large language models (LLMs) has brought remarkable breakthroughs in natural language processing (NLP). Retrieval-Augmented…Jan 3A response icon22Jan 3A response icon22PinnedPublished inArtificial Intelligence in Plain EnglishKAG: Knowledge Augmented Generation A Pratical Guide better than Rag1. What is KAG?Jan 8A response icon6Jan 8A response icon6PinnedOptimizing RAG with Embedding TuningLearn how to improve the performance of RAG systems, and make them more accurate at retrieving context-aware information.Nov 6, 2024A response icon1Nov 6, 2024A response icon1PinnedStart Making $2000–3000/Month as a Data scientist: My Career WayHow to find clients and promote your freelance businessOct 2, 2024Oct 2, 2024Published inAI Simplified in Plain EnglishChatGPT Launched A NEW Feature That’s CRAZY! New MCP connectors for Google Drive, BoxOpenAI’s ChatGPT is adding new features for business users, including integrations with different cloud services, meeting recordings, and…1d ago1d agoPublished inAI Simplified in Plain EnglishHow to Perform RAG using MCP?Tired of seeing AI giving vague answers when it doesn’t have access to live data? Bored of writing code for performing RAG on local data…1d ago1d agoPublished inAI Simplified in Plain EnglishI Tried Perplexity Labs and it turns your idea to realityI am sure you have already used Perplexity for searching a query or doing deep research on a topic. What I personally love about this tool…2d ago2d agoPublished inAI Simplified in Plain EnglishHow to Connect Your Zerodha Account to Claude Using Kite MCPHave you ever wished you could ask an AI Assistant to analyze your portfolio and tell you how your stocks are doing today? With the latest…3d ago3d agoPublished inAI Simplified in Plain EnglishMistral Launches Agents API: A New Platform for Developer-Friendly AI Agent CreationMistral has introduced its Agents API, a framework designed to facilitate the development of AI agents capable of executing a variety of…4d ago4d agoPublished inAI Simplified in Plain EnglishQwenLong-L1: Unlocking Near-Infinite Memory for LLMs with Smart Context CompressionRecently, Alibaba officially released its brand-new AI model, QwenLong-L1–32B, a long-context reasoning model optimized with reinforcement…5d ago5d agoSarayavalasaravikiran599 followers"
+    },
+    {
+        "extraction_id": "7d2787d7-86a8-4504-af66-a5186b29fca4",
+        "extracted_at": "2025-06-06 06:30:24.168095",
+        "extracted_at_epoch": 1749191424,
+        "author_name": "Evelina Bratuhina",
+        "author_url": "https://medium.com/@e.bratuhina",
+        "num_followers": 0,
+        "short_bio": "pen in appSign upSign inMedium LogoWriteSign upSign inEvelina BratuhinaHomeAboutPublished inData Reply IT | DataTechBuilding a Modern Governance Framework with dbt, DataHub, and Generative AIWe live in a world where data drives every business decision. Whether it’s launching a product, analyzing performance, or forecasting…1d ago1d agoEvelina Bratuhina"
+    },
+    {
+        "extraction_id": "7d2787d7-86a8-4504-af66-a5186b29fca4",
+        "extracted_at": "2025-06-06 06:30:24.168095",
+        "extracted_at_epoch": 1749191424,
+        "author_name": "Ritika Lahariya",
+        "author_url": "https://medium.com/@ritikalahariya",
+        "num_followers": 0,
+        "short_bio": "pen in appSign upSign inMedium LogoWriteSign upSign inRitika LahariyaHomeAboutPublished inGlobantAutomating pipelines with dbt and Airflow using CosmosIn today’s fast-paced business environment, the ability to quickly extract meaningful insights from ever-growing volumes of raw data is no…May 20May 20Ritika Lahariya"
+    },
+    {
+        "extraction_id": "7d2787d7-86a8-4504-af66-a5186b29fca4",
+        "extracted_at": "2025-06-06 06:30:24.168095",
+        "extracted_at_epoch": 1749191424,
+        "author_name": "Alwyn DSouza",
+        "author_url": "https://medium.com/@aradsouza",
+        "num_followers": 0,
+        "short_bio": "pen in appSign upSign inMedium LogoWriteSign upSign inAlwyn DSouza7 followersHomeListsAboutPinnedUnderstanding dbt Modelling Layers and Their Purposedbt (data build tool) is a powerful tool for transforming raw data into meaningful insights. It organizes data transformation into distinct…Nov 17, 2024Nov 17, 2024dbt as well run kitchen stationIn this article, I use a cooking analogy to explain the different layers of dbt modeling. If you haven’t yet read my article on dbt…May 24May 2412 Golden Rules for dbt SuccessAfter working extensively with dbt in production environments across multiple organisations, I have compiled this expanded set of gold…May 3May 3How to Use the zip function in dbtdbt (data build tool) is a powerful tool for transforming data in your warehouse. One of the lesser-known but incredibly useful features in…Apr 4Apr 4Evolution of Data Architecture: A Comparative AnalysisData Warehouse Architecture (1980s)Mar 31Mar 31Understanding Principles of Data Mesh Architecture — part 2In this section — we will deep dive into each of the guiding principles of data meshMar 23Mar 23Understanding Principles of Data Mesh Architecture — part 1OverviewMar 23Mar 23Use dbt retry to run from point of failureThe dbt retry command is a powerful tool in the dbt (data build tool) ecosystem, designed to re-execute the last dbt command from the point…Mar 18Mar 18dbt Cloud Setup Guide with Databricksdbt cloud setup with databricksMar 7Mar 7Ensuring Data Quality with dbt-expectationsIn the world of data engineering, ensuring the accuracy and reliability of your data is paramount. Enter dbt-expectations, an extension…Mar 7Mar 7Alwyn DSouza7 followers"
+    },
+    {
+        "extraction_id": "7d2787d7-86a8-4504-af66-a5186b29fca4",
+        "extracted_at": "2025-06-06 06:30:24.168095",
+        "extracted_at_epoch": 1749191424,
+        "author_name": "Ammar Chalifah",
+        "author_url": "https://medium.com/@ammarchalifah",
+        "num_followers": 0,
+        "short_bio": "pen in appSign upSign inMedium LogoWriteSign upSign inAmmar Chalifah62 followersHomeAboutSelf-Service Analytics with LLM + Tool CallingI began my career in the data space more or less 3.5 years ago, as a “data scientist” in a mid-sized Indonesian SaaS company. Back then…3d ago3d agoPublished inCodeXWeb Scraping Using BeautifulSoup + Pushing Data to MySQL DatabaseCreate your own dataset by regularly scrape and log data from websites.Sep 12, 2021Sep 12, 2021Published inTDS ArchiveRunning Airflow with Docker on EC2 + CI/CD with GitLabCreate a simple data pipeline with basic commands and run your own cloud-based pipeline!Sep 3, 2021A response icon2Sep 3, 2021A response icon2Ammar Chalifah62 followersFinance Data Engineer at Bolt, Estonia, and an aspiring comic artist."
+    },
+    {
+        "extraction_id": "7d2787d7-86a8-4504-af66-a5186b29fca4",
+        "extracted_at": "2025-06-06 06:30:24.168095",
+        "extracted_at_epoch": 1749191424,
+        "author_name": "Kopal Garg",
+        "author_url": "https://medium.com/@kopalgarg",
+        "num_followers": 0,
+        "short_bio": "pen in appSign upSign inMedium LogoWriteSign upSign inKopal Garg38 followersHomeAboutApache Airflow on Helm in GKE + Cloud Functions IntegrationApache Airflow is a great tool for managing complex data workflows. But if you’ve worked with Google Cloud Composer, you know it can be…1d ago1d agoGenerative AI for Protein Binder DesignUsing NVIDIA’s BioNeMo to generate protein bindersFeb 5Feb 5PPT Query Tool with Google’s LLMsImagine you have a set of content-heavy slide decks that you need to quickly parse through for an upcoming board meeting. In this blog, we…Nov 3, 2024Nov 3, 2024Guided Generation for LLM OutputsLLMs like GPT-4 and Gemini Pro are useful for generating and manipulating text. But to harness their full potential, it’s important to…Jun 5, 2024Jun 5, 2024TechBio Bytes: FAbCon, a generative foundation model for de novo antibody sequence generationIn this series, I will be reviewing recent papers within the realm of AI and biomedicine/health. Posts will include practical examples for…Jun 4, 2024Jun 4, 2024Use Google Cloud Batch for Running WDLs on CromwellGoogle’s Cloud Life Sciences API is being deprecated. For those relying on it, Google Cloud Batch combined with Cromwell offers a powerful…Feb 22, 2024Feb 22, 2024Data Sync Between Google BigQuery and Google SheetAs a data engineer, one of the frequent tasks you might encounter is syncing data from a Google Sheet to a Google BigQuery table.Feb 5, 2024A response icon1Feb 5, 2024A response icon1Swagger Docs for RESTful Flask APIsSo, you have your API working like a charm. But what if someone else wants to use it? That’s where documentation comes in. This blog will…Feb 2, 2024Feb 2, 2024Set Up a Neo4j Graph Database on a GCP VMImagine a group of friends, each with their favourite coffee shop. We’re going to create a graph in Neo4j that represents each friend…Feb 2, 2024A response icon1Feb 2, 2024A response icon1Automated Testing of GitHub Actions for Docker Image DeploymentIn any tech team, CI/CD pipelines are indispensable. They essentially automate the process of building, testing, and deploying…Feb 2, 2024Feb 2, 2024Kopal Garg38 followersData Scientist and ML Engineer @Cartography | MSc in Computer Science UofT and Vector Institute | Engineering uWaterloo"
+    },
+    {
+        "extraction_id": "7d2787d7-86a8-4504-af66-a5186b29fca4",
+        "extracted_at": "2025-06-06 06:30:24.168095",
+        "extracted_at_epoch": 1749191424,
+        "author_name": "Ojo joseph",
+        "author_url": "https://medium.com/@JosephOjo",
+        "num_followers": 0,
+        "short_bio": "pen in appSign upSign inMedium LogoWriteSign upSign inOjo joseph65 followersHomeAboutPinnedA Case for the Not-So-Popular dbt Feature: “Exposures”If you work with data, you’ve probably heard of dbt. It’s one of those tools that’s gotten pretty popular lately, and for good reason. dbt…Apr 4Apr 4We No Longer Dread dbt Full Refresh — What We DidLike many, we started off with a full rebuild of our models when we adopted dbt early on and later switched to an incremental strategy for…May 18A response icon3May 18A response icon3Improving Documentation with dbt-checkpointOne of the tools I love in the data space is dbt. You probably already figured that out, I’ve written about it quite a bit (this is a cue…Apr 24Apr 24Solving a Silent Bug in dbtApr 18A response icon2Apr 18A response icon2dbt Incremental Models on Partitioned TablesIf you work in data engineering or analytics, terms like “incremental” and “partitioned tables” are likely familiar. While learning dbt…Apr 5A response icon1Apr 5A response icon1A Fantasy Premier League Data Pipeline that costs $0/month (Part 1)Jan 16, 2024Jan 16, 2024Long Running ETL Pipeline with AWS Fargate and EventBridgeAs someone who uses AWS Lambda a lot, it didn’t take me time to encounter a challenge: the hard run time limit of 15 minutes for AWS…Jan 15, 2024Jan 15, 2024MongoDB Replica Set with Docker-composeThis post walks you through how to set up a Mongo db replica set with docker-compose. This assumes some familiarity with Docker and…Jan 14, 2024A response icon2Jan 14, 2024A response icon2How to assign a static IP Address to AWS LambdaAWS Lambda is a beautiful serverless service loved by many (PS: I am many). As someone who embraces a serverless-first approach, this is…Jan 7, 2024Jan 7, 2024Makefile: Automating AWS Lambda Layer creationThe first time you will use AWS Lambda, it wont take you time to figure out that you cant simply use some libraries out of the box and…Dec 22, 2023Dec 22, 2023Ojo joseph65 followersAn Engineer at heart https://www.linkedin.com/in/ojofemijoseph/"
+    },
+    {
+        "extraction_id": "7d2787d7-86a8-4504-af66-a5186b29fca4",
+        "extracted_at": "2025-06-06 06:30:24.168095",
+        "extracted_at_epoch": 1749191424,
+        "author_name": "Jake Hotchkiss",
+        "author_url": "https://medium.com/@jacobrhotchkiss",
+        "num_followers": 0,
+        "short_bio": "pen in appSign upSign inMedium LogoWriteSign upSign inJake Hotchkiss18 followersHomeListsAboutBuilding a Scalable Data Pipeline with Apache Airflow, Redshift, and S3OverviewMay 21May 21Deploying a Flight Delay Prediction API with FastAPI, Docker, and GitLab CI/CDIntroductionMay 5May 5Building a Reproducible Machine Learning Pipeline with MLflow and DVCIntroductionApr 24Apr 24My First Data Engineering Portfolio ProjectHello everyone! I’m excited to kick off what I consider my big leap into the world of data engineering. After spending countless hours…Oct 16, 2024Oct 16, 2024Jake Hotchkiss18 followersData Analytics grad student passionate about data engineering, cloud tech, and building scalable data pipelines. Sharing my journey and projects."
+    },
+    {
+        "extraction_id": "7d2787d7-86a8-4504-af66-a5186b29fca4",
+        "extracted_at": "2025-06-06 06:30:24.168095",
+        "extracted_at_epoch": 1749191424,
+        "author_name": "Elad Pardilov",
+        "author_url": "https://medium.com/@eladpardilov",
+        "num_followers": 0,
+        "short_bio": "pen in appSign upSign inMedium LogoWriteSign upSign inElad Pardilov1 followerHomeAboutEnd-to-End DAG Testing in Airflow, Minus the Kubernetes HeadacheA practical approach for testing Airflow DAGs end-to-end in CI by replacing Kubernetes operators with lightweight Python equivalents.5d ago5d agoManaged Table Content Migration using AlembicLatching onto Alembic’s autogeneration to create content migration revisions alongside schema migration ones for more complete DB…Apr 17, 2024Apr 17, 2024Elad Pardilov1 follower"
+    }
+]
