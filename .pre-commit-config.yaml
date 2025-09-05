@@ -1,6 +1,6 @@
 repos:
   - repo: https://github.com/pre-commit/pre-commit-hooks
-    rev: v5.0.0
+    rev: v6.0.0
     hooks:
       - id: trailing-whitespace
         exclude: "docs"
@@ -37,12 +37,12 @@ repos:
       - id: autoflake
         args: ["--in-place", "--remove-all-unused-imports"]
   - repo: https://github.com/pre-commit/mirrors-mypy
-    rev: v1.16.0
+    rev: v1.17.1
     hooks:
     - id: mypy
       additional_dependencies: ["types-beautifulsoup4", "types-pytz", "types-requests", "types-retry", "types-tabulate"]
       args: ["--install-types", "--strict"]
   - repo: https://github.com/tconbeer/sqlfmt
-    rev: v0.26.0
+    rev: v0.27.0
     hooks:
       - id: sqlfmt
