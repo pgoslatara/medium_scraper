@@ -27,7 +27,7 @@ repos:
         args: ["--profile", "black", "--filter-files"]
         name: isort (python)
   - repo: https://github.com/ambv/black
-    rev: 25.1.0
+    rev: 25.9.0
     hooks:
       - id: black
         name: Run black formatter
