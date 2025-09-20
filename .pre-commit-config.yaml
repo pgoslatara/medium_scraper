@@ -37,7 +37,7 @@ repos:
       - id: autoflake
         args: ["--in-place", "--remove-all-unused-imports"]
   - repo: https://github.com/pre-commit/mirrors-mypy
-    rev: v1.18.1
+    rev: v1.18.2
     hooks:
     - id: mypy
       additional_dependencies: ["types-beautifulsoup4", "types-pytz", "types-requests", "types-retry", "types-tabulate"]
