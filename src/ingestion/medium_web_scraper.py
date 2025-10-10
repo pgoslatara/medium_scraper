@@ -39,7 +39,8 @@ class MediumWebScraper:
             file_name=f"domain=medium_authors/schema_version=2/extracted_at={get_extracted_at_epoch()}/extraction_id={get_extraction_id()}.json",
         )
 
-    @retry(tries=3, delay=2)
+    # Has a habit of failing so keeping the retry logic tight
+    @retry(tries=1)
     def scrape_authors(self, extraction_id: str) -> List[Dict[str, object]]:
         @retry(tries=2, delay=3)
         def medium_scrape_authors(author_url: str) -> Dict[str, object]:
