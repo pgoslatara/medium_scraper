@@ -40,9 +40,8 @@ class MediumWebScraper:
         )
 
     # Has a habit of failing so keeping the retry logic tight
-    @retry(tries=1)
     def scrape_authors(self, extraction_id: str) -> List[Dict[str, object]]:
-        @retry(tries=2, delay=3)
+        @retry(tries=1, delay=3)
         def medium_scrape_authors(author_url: str) -> Dict[str, object]:
             time.sleep(1)  # To avoid rate limit detection
             logger.info(f"Scraping author URL: {author_url}...")
@@ -96,7 +95,7 @@ class MediumWebScraper:
             if x["extraction_id"] == extraction_id
         ]
 
-        author_urls = list({x["author_url"] for x in data})
+        author_urls = list(set({x["author_url"] for x in data}))
         logger.info(f"Found {len(author_urls)} distinct authors.")
 
         pool = ThreadPool(8)

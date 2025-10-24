@@ -436,7 +436,7 @@ def get_github_repo_interactor_info(usernames: List[object]) -> List[Dict[str, o
         f"Fetching {len(usernames)} unique GitHub usernames that are new or have not been extracted recently."
     )
 
-    pool = ThreadPool(1)
+    pool = ThreadPool(8)
     user_info = pool.map(
         lambda username: get_username_info(username),
         usernames,
