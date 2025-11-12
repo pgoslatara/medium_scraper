@@ -49,9 +49,14 @@ class MediumWebScraper:
             page = create_requests_session().get(f"{author_url}")
             soup = BeautifulSoup(page.text, "html.parser")
 
-            author_name = [x.text for x in soup.find_all("h2") if str(x).find("author-name") > 0][
-                0
-            ]
+            # Fails very often so using placeholder to avoid failing the entire pipeline.
+            try:
+                author_name = [
+                    x.text for x in soup.find_all("h2") if str(x).find("author-name") > 0
+                ][0]
+            except Exception:
+                author_name = "Unable to parse"
+
             num_followers_base = list(
                 {
                     x.text
