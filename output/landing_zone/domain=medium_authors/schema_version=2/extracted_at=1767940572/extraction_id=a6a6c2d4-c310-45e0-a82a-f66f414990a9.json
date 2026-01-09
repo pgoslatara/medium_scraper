@@ -1,0 +1,623 @@
+[
+    {
+        "extraction_id": "a6a6c2d4-c310-45e0-a82a-f66f414990a9",
+        "extracted_at": "2026-01-09 06:36:12.605403",
+        "extracted_at_epoch": 1767940572,
+        "author_name": "Mitul Luhar",
+        "author_url": "https://medium.com/@luhar.mitul",
+        "num_followers": 0,
+        "short_bio": "pen in appSign upSign inMedium LogoWriteSearchSign upSign inMitul Luhar9 followersHomeAboutPinnedBefore You Blame the Dashboard, Check the CSVAlmost every analytics issue I’ve debugged over the years had the same root cause.5d ago5d agoPinnedProduct Correlation Analysis using Google BigQueryEver wondered how product correlation analysis boosts sales by suggesting winning product combinations and encouraging repeat purchases…Apr 26, 2024A response icon2Apr 26, 2024A response icon2From 10 Minutes to 30 Seconds: How I Slashed BigQuery Costs by 70%BigQuery is incredibly powerful — but if queries are written without cloud-native thinking, costs can quietly explode.Dec 27, 2025Dec 27, 2025Published inTowards DevSeamlessly Transfer Data Between PostgreSQL Databases with the dblink ExtensionIn the world of data engineering, building efficient data pipelines is crucial. Recently, while working on an internal data warehousing…Mar 11, 2025Mar 11, 202515 Incredible Python Scripts to Elevate Your Productivity and Work SmarterIn the fast-paced world we live in, time is more valuable than ever. Python, with its simplicity and versatility, is the ultimate…Dec 25, 2024Dec 25, 2024Published inTowards DevHow Can One Unleash the Potential of Dynamic SQL in Google BigQueryTo unlock the full capabilities of dynamic SQL in Google BigQuery, it’s essential to understand its potential. By harnessing dynamic SQL…May 3, 2024May 3, 2024Mitul Luhar9 followersI'm a passionate SQL and Python enthusiast who currently holds the position of Senior Business Intelligence Analyst at Hire4Higher Consulting."
+    },
+    {
+        "extraction_id": "a6a6c2d4-c310-45e0-a82a-f66f414990a9",
+        "extracted_at": "2026-01-09 06:36:12.605403",
+        "extracted_at_epoch": 1767940572,
+        "author_name": "Unable to parse",
+        "author_url": "https://medium.com/@udaykiran8472",
+        "num_followers": 0,
+        "short_bio": "avaScript and cookies to continu"
+    },
+    {
+        "extraction_id": "a6a6c2d4-c310-45e0-a82a-f66f414990a9",
+        "extracted_at": "2026-01-09 06:36:12.605403",
+        "extracted_at_epoch": 1767940572,
+        "author_name": "Vectorlane",
+        "author_url": "https://medium.com/@jickpatel611",
+        "num_followers": 0,
+        "short_bio": "pen in appSign upSign inMedium LogoWriteSearchSign upSign inVectorlane241 followersHomeAbout5 Crypto Payments Experiments With Real UsersNot pilots. Not proofs-of-concept. Real checkout flows, real settlement, real operational lessons you can steal.23h ago23h agoHow Web3 Apps Hit 1M Users Without “Number Go Up”The growth playbook isn’t memes or pumps — it’s frictionless onboarding, real utility, and loops that survive when speculation doesn’t.1d ago1d ago7 Cultural Shifts as Web3 Starts Powering TradFi RailsWhen blockchains stop being “the product” and become infrastructure, teams — banks, fintechs, funds, and startups — start behaving…1d ago1d agoInside an AI Agent’s BrainA practical, plain-English look at how LLM agents plan, choose tools, remember context, and actually get things done.1d ago1d agoTeaching an AI Chess From Scratch (Without Losing Your Mind)A practical reinforcement learning tutorial in Python — self-play, sparse rewards, legal-move masking, and a training loop you can actually…1d ago1d agoBeyond Fine-Tuning: Smarter Ways to Teach LLMs Your DataPractical techniques — RAG, tool use, memory, and model editing — to make LLMs “know your world” without a risky retrain.1d ago1d ago5 Lessons From Teams Bridging On-Chain + Off-Chain RevenueWhat actually works when your business earns in fiat, settles on-chain, and still needs clean books.2d ago2d ago10 Long-Term Bets Behind High-Throughput ChainsIf you believe fast, cheap blockspace wins, these are the product, infrastructure, and market bets you’re really making.3d agoA response icon13d agoA response icon17 Quiet Signs a Chain Is Enterprise-ReadyNo buzzwords needed — these signals show whether a blockchain can handle production workloads, audits, and uptime expectations without…3d ago3d agoBefore You Take That L2 Deal: 7 Security QuestionsA practical security due diligence checklist for evaluating Layer 2 incentive deals — so “growth support” doesn’t become “incident…4d ago4d agoVectorlane241 followersTech tinkerer & lifelong learner. I share sharp takes on AI, tools, and workflows to fuel your next idea."
+    },
+    {
+        "extraction_id": "a6a6c2d4-c310-45e0-a82a-f66f414990a9",
+        "extracted_at": "2026-01-09 06:36:12.605403",
+        "extracted_at_epoch": 1767940572,
+        "author_name": "Unable to parse",
+        "author_url": "https://medium.com/@kalluripradeep99",
+        "num_followers": 0,
+        "short_bio": "avaScript and cookies to continu"
+    },
+    {
+        "extraction_id": "a6a6c2d4-c310-45e0-a82a-f66f414990a9",
+        "extracted_at": "2026-01-09 06:36:12.605403",
+        "extracted_at_epoch": 1767940572,
+        "author_name": "Unable to parse",
+        "author_url": "https://medium.com/@abhishekkrgupta0",
+        "num_followers": 0,
+        "short_bio": "avaScript and cookies to continu"
+    },
+    {
+        "extraction_id": "a6a6c2d4-c310-45e0-a82a-f66f414990a9",
+        "extracted_at": "2026-01-09 06:36:12.605403",
+        "extracted_at_epoch": 1767940572,
+        "author_name": "Aman Maheshwari",
+        "author_url": "https://medium.com/@aman311993",
+        "num_followers": 0,
+        "short_bio": "pen in appSign upSign inMedium LogoWriteSearchSign upSign inAman Maheshwari50 followersHomeAboutSpark Structured Streaming Part 2Lets discuss about Structured Streaming …1d ago1d agoSpark Structured Streaming Part 1Before we start to learn about Spark structured Streaming , I want to go little in the past and to get the clarity on how things evolve.2d ago2d agoChange Data Capture in DatabricksChange Data Capture in Databricks is the mechanism to identify , track and propagate only data changes-insert, update and delete from a…5d ago5d agoDatabricks Clean RoomDatabricks Clean Room is a secure, governed collaboration environment that allows multiple organizations or teams to analyze and share…6d ago6d agoWhat are Sets in Python Part 1A set in Python is an unordered collection data type that is iterable, mutable and contains no duplicate elements.Jun 21, 2023Jun 21, 2023What is iloc[] and loc[] in pandas and how they function Part 1:For data slicing pandas offers two unique methods that is loc() and iloc().Let us understand each one in depth.Mar 12, 2023Mar 12, 2023What is *args and **kwargs and how they function : Part 2Continuing from part1 uptil now it is clear in that :Feb 8, 2023Feb 8, 2023What is *args and **kwargs and how they function : Part 1This is one of the most important topic in python and also very simple but still people often get confused so in today’s article I am…Feb 7, 2023Feb 7, 2023Methods to Create a Data Frame in Pandas Part 2:Method 5 : Creating DataFrame from list of dictionaryFeb 4, 2023Feb 4, 2023Methods to Create a Data Frame in Pandas Part 1:Before I start my discussion on how to create data frame in pandas let me introduce you first what is Data Frame ?Feb 3, 2023Feb 3, 2023Aman Maheshwari50 followersData Engineer | 3x Databricks Certified | Azure | Generative AI | Spark | #TalksAboutDatabricks https://www.linkedin.com/in/amanmahesh/"
+    },
+    {
+        "extraction_id": "a6a6c2d4-c310-45e0-a82a-f66f414990a9",
+        "extracted_at": "2026-01-09 06:36:12.605403",
+        "extracted_at_epoch": 1767940572,
+        "author_name": "Unable to parse",
+        "author_url": "https://medium.com/@sandhiya.munishwaran",
+        "num_followers": 0,
+        "short_bio": "avaScript and cookies to continu"
+    },
+    {
+        "extraction_id": "a6a6c2d4-c310-45e0-a82a-f66f414990a9",
+        "extracted_at": "2026-01-09 06:36:12.605403",
+        "extracted_at_epoch": 1767940572,
+        "author_name": "Chisomorika",
+        "author_url": "https://medium.com/@chisomorika",
+        "num_followers": 0,
+        "short_bio": "pen in appSign upSign inMedium LogoWriteSearchSign upSign inChisomorika9 followersHomeAboutHow I Handle Schema Evolution Across 200+ Tenant SchemasA config-driven dbt approach that made adding new tenants a data change, not a code change.1d ago1d agoTEXT PREPROCESSING IN NATURAL LANGUAGE PROCESSING.Techniques for Text Preprocessing.Nov 9, 2021Nov 9, 2021Chisomorika9 followersData Analytics, NLP, SQLHelpStatusAboutCareersPressBlogPrivacyRulesTermsText to speec"
+    },
+    {
+        "extraction_id": "a6a6c2d4-c310-45e0-a82a-f66f414990a9",
+        "extracted_at": "2026-01-09 06:36:12.605403",
+        "extracted_at_epoch": 1767940572,
+        "author_name": "Unable to parse",
+        "author_url": "https://medium.com/@nishant.sharma.007",
+        "num_followers": 0,
+        "short_bio": "avaScript and cookies to continu"
+    },
+    {
+        "extraction_id": "a6a6c2d4-c310-45e0-a82a-f66f414990a9",
+        "extracted_at": "2026-01-09 06:36:12.605403",
+        "extracted_at_epoch": 1767940572,
+        "author_name": "Unable to parse",
+        "author_url": "https://medium.com/@pierre.munhoz",
+        "num_followers": 0,
+        "short_bio": "avaScript and cookies to continu"
+    },
+    {
+        "extraction_id": "a6a6c2d4-c310-45e0-a82a-f66f414990a9",
+        "extracted_at": "2026-01-09 06:36:12.605403",
+        "extracted_at_epoch": 1767940572,
+        "author_name": "Unable to parse",
+        "author_url": "https://medium.com/@dv-engineering",
+        "num_followers": 0,
+        "short_bio": "avaScript and cookies to continu"
+    },
+    {
+        "extraction_id": "a6a6c2d4-c310-45e0-a82a-f66f414990a9",
+        "extracted_at": "2026-01-09 06:36:12.605403",
+        "extracted_at_epoch": 1767940572,
+        "author_name": "Unable to parse",
+        "author_url": "https://medium.com/@bingeek",
+        "num_followers": 0,
+        "short_bio": "avaScript and cookies to continu"
+    },
+    {
+        "extraction_id": "a6a6c2d4-c310-45e0-a82a-f66f414990a9",
+        "extracted_at": "2026-01-09 06:36:12.605403",
+        "extracted_at_epoch": 1767940572,
+        "author_name": "Unable to parse",
+        "author_url": "https://medium.com/@abiodun.adenugba_80627",
+        "num_followers": 0,
+        "short_bio": "avaScript and cookies to continu"
+    },
+    {
+        "extraction_id": "a6a6c2d4-c310-45e0-a82a-f66f414990a9",
+        "extracted_at": "2026-01-09 06:36:12.605403",
+        "extracted_at_epoch": 1767940572,
+        "author_name": "Unable to parse",
+        "author_url": "https://medium.com/@lsleena",
+        "num_followers": 0,
+        "short_bio": "avaScript and cookies to continu"
+    },
+    {
+        "extraction_id": "a6a6c2d4-c310-45e0-a82a-f66f414990a9",
+        "extracted_at": "2026-01-09 06:36:12.605403",
+        "extracted_at_epoch": 1767940572,
+        "author_name": "Unable to parse",
+        "author_url": "https://medium.com/@asrathore08",
+        "num_followers": 0,
+        "short_bio": "avaScript and cookies to continu"
+    },
+    {
+        "extraction_id": "a6a6c2d4-c310-45e0-a82a-f66f414990a9",
+        "extracted_at": "2026-01-09 06:36:12.605403",
+        "extracted_at_epoch": 1767940572,
+        "author_name": "Unable to parse",
+        "author_url": "https://medium.com/@akarshith98",
+        "num_followers": 0,
+        "short_bio": "avaScript and cookies to continu"
+    },
+    {
+        "extraction_id": "a6a6c2d4-c310-45e0-a82a-f66f414990a9",
+        "extracted_at": "2026-01-09 06:36:12.605403",
+        "extracted_at_epoch": 1767940572,
+        "author_name": "Unable to parse",
+        "author_url": "https://medium.com/@hjparmar1944",
+        "num_followers": 0,
+        "short_bio": "avaScript and cookies to continu"
+    },
+    {
+        "extraction_id": "a6a6c2d4-c310-45e0-a82a-f66f414990a9",
+        "extracted_at": "2026-01-09 06:36:12.605403",
+        "extracted_at_epoch": 1767940572,
+        "author_name": "Unable to parse",
+        "author_url": "https://medium.com/@rahuldhip2002",
+        "num_followers": 0,
+        "short_bio": "avaScript and cookies to continu"
+    },
+    {
+        "extraction_id": "a6a6c2d4-c310-45e0-a82a-f66f414990a9",
+        "extracted_at": "2026-01-09 06:36:12.605403",
+        "extracted_at_epoch": 1767940572,
+        "author_name": "Unable to parse",
+        "author_url": "https://medium.com/@lorenzouriel",
+        "num_followers": 0,
+        "short_bio": "avaScript and cookies to continu"
+    },
+    {
+        "extraction_id": "a6a6c2d4-c310-45e0-a82a-f66f414990a9",
+        "extracted_at": "2026-01-09 06:36:12.605403",
+        "extracted_at_epoch": 1767940572,
+        "author_name": "Unable to parse",
+        "author_url": "https://medium.com/@anchitgupt2012",
+        "num_followers": 0,
+        "short_bio": "avaScript and cookies to continu"
+    },
+    {
+        "extraction_id": "a6a6c2d4-c310-45e0-a82a-f66f414990a9",
+        "extracted_at": "2026-01-09 06:36:12.605403",
+        "extracted_at_epoch": 1767940572,
+        "author_name": "Unable to parse",
+        "author_url": "https://medium.com/@2nick2patel2",
+        "num_followers": 0,
+        "short_bio": "avaScript and cookies to continu"
+    },
+    {
+        "extraction_id": "a6a6c2d4-c310-45e0-a82a-f66f414990a9",
+        "extracted_at": "2026-01-09 06:36:12.605403",
+        "extracted_at_epoch": 1767940572,
+        "author_name": "Unable to parse",
+        "author_url": "https://medium.com/@soham.sarbadhikari",
+        "num_followers": 0,
+        "short_bio": "avaScript and cookies to continu"
+    },
+    {
+        "extraction_id": "a6a6c2d4-c310-45e0-a82a-f66f414990a9",
+        "extracted_at": "2026-01-09 06:36:12.605403",
+        "extracted_at_epoch": 1767940572,
+        "author_name": "Unable to parse",
+        "author_url": "https://medium.com/@jenn_wang",
+        "num_followers": 0,
+        "short_bio": "avaScript and cookies to continu"
+    },
+    {
+        "extraction_id": "a6a6c2d4-c310-45e0-a82a-f66f414990a9",
+        "extracted_at": "2026-01-09 06:36:12.605403",
+        "extracted_at_epoch": 1767940572,
+        "author_name": "Unable to parse",
+        "author_url": "https://medium.com/@sms11487",
+        "num_followers": 0,
+        "short_bio": "avaScript and cookies to continu"
+    },
+    {
+        "extraction_id": "a6a6c2d4-c310-45e0-a82a-f66f414990a9",
+        "extracted_at": "2026-01-09 06:36:12.605403",
+        "extracted_at_epoch": 1767940572,
+        "author_name": "Unable to parse",
+        "author_url": "https://medium.com/@mdmahrabkhan",
+        "num_followers": 0,
+        "short_bio": "avaScript and cookies to continu"
+    },
+    {
+        "extraction_id": "a6a6c2d4-c310-45e0-a82a-f66f414990a9",
+        "extracted_at": "2026-01-09 06:36:12.605403",
+        "extracted_at_epoch": 1767940572,
+        "author_name": "Unable to parse",
+        "author_url": "https://medium.com/@harshakumavat",
+        "num_followers": 0,
+        "short_bio": "avaScript and cookies to continu"
+    },
+    {
+        "extraction_id": "a6a6c2d4-c310-45e0-a82a-f66f414990a9",
+        "extracted_at": "2026-01-09 06:36:12.605403",
+        "extracted_at_epoch": 1767940572,
+        "author_name": "Unable to parse",
+        "author_url": "https://medium.com/@lucia.subatin",
+        "num_followers": 0,
+        "short_bio": "avaScript and cookies to continu"
+    },
+    {
+        "extraction_id": "a6a6c2d4-c310-45e0-a82a-f66f414990a9",
+        "extracted_at": "2026-01-09 06:36:12.605403",
+        "extracted_at_epoch": 1767940572,
+        "author_name": "Unable to parse",
+        "author_url": "https://medium.com/@arashroshani",
+        "num_followers": 0,
+        "short_bio": "avaScript and cookies to continu"
+    },
+    {
+        "extraction_id": "a6a6c2d4-c310-45e0-a82a-f66f414990a9",
+        "extracted_at": "2026-01-09 06:36:12.605403",
+        "extracted_at_epoch": 1767940572,
+        "author_name": "Unable to parse",
+        "author_url": "https://medium.com/@sendoamoronta",
+        "num_followers": 0,
+        "short_bio": "avaScript and cookies to continu"
+    },
+    {
+        "extraction_id": "a6a6c2d4-c310-45e0-a82a-f66f414990a9",
+        "extracted_at": "2026-01-09 06:36:12.605403",
+        "extracted_at_epoch": 1767940572,
+        "author_name": "Unable to parse",
+        "author_url": "https://medium.com/@reliabledataengineering",
+        "num_followers": 0,
+        "short_bio": "avaScript and cookies to continu"
+    },
+    {
+        "extraction_id": "a6a6c2d4-c310-45e0-a82a-f66f414990a9",
+        "extracted_at": "2026-01-09 06:36:12.605403",
+        "extracted_at_epoch": 1767940572,
+        "author_name": "Unable to parse",
+        "author_url": "https://medium.com/@aman.kohli1",
+        "num_followers": 0,
+        "short_bio": "avaScript and cookies to continu"
+    },
+    {
+        "extraction_id": "a6a6c2d4-c310-45e0-a82a-f66f414990a9",
+        "extracted_at": "2026-01-09 06:36:12.605403",
+        "extracted_at_epoch": 1767940572,
+        "author_name": "Unable to parse",
+        "author_url": "https://medium.com/@michael.shji",
+        "num_followers": 0,
+        "short_bio": "avaScript and cookies to continu"
+    },
+    {
+        "extraction_id": "a6a6c2d4-c310-45e0-a82a-f66f414990a9",
+        "extracted_at": "2026-01-09 06:36:12.605403",
+        "extracted_at_epoch": 1767940572,
+        "author_name": "Praxen",
+        "author_url": "https://medium.com/@Praxen",
+        "num_followers": 0,
+        "short_bio": "pen in appSign upSign inMedium LogoWriteSearchSign upSign inPraxen286 followersHomeAboutWho’s Writing the Rules for AI Ethics?Global AI standards bodies are quietly building a common language for “trustworthy AI” — and it’s starting to look like a real operating…23h ago23h agoPiezoelectric Fabrics: Clothing That Harvests Your MotionPiezoelectric textiles promise wearable power without bulky batteries — here’s what’s actually working, what’s hype, and what’s next.1d ago1d agoAI Mentorship for Remote Teams That Actually Feels PersonalHow to build personalized growth paths for distributed employees — without turning mentorship into another calendar tax.1d ago1d agoOpen LLMs Are Coming for GPT-4Community-built models are closing the gap fast — here’s what’s actually changing, what’s hype, and how enterprises are using open weights…1d ago1d agoNode.js in 2025: Trends, Tools, Performance HacksWhat’s actually changing in modern Node — plus the practical tricks that make APIs faster, safer, and easier to ship.1d ago1d ago10 JavaScript Performance Hacks You’ll Actually FeelPractical fixes to ship faster sites: smoother UIs, fewer long tasks, and cleaner code that doesn’t melt the main thread.1d ago1d agoDiamonds That Listen: NV Quantum Sensors in HealthcareHow nitrogen-vacancy (NV) centers can detect whisper-level biomagnetic signals — opening a path to earlier, safer, and more portable…2d ago2d agoESG Investing in an Inflation World: What Actually Holds Up?How to build an ESG portfolio that respects rising prices, higher rates, and the messy reality between “values” and “returns.”3d ago3d agoSan Pedro Isn’t “Gentle” — It’s Just SlowerWhat huachuma (San Pedro cactus) can and can’t offer for emotional release — and the safety, legality, and integration realities people…3d ago3d agoThe 5 UX Tweaks That Stop Users Signing Malicious PromptsPractical, interface-level defenses that reduce “oops” approvals — without turning every transaction into a 10-step interrogation.4d ago4d agoPraxen286 followers"
+    },
+    {
+        "extraction_id": "a6a6c2d4-c310-45e0-a82a-f66f414990a9",
+        "extracted_at": "2026-01-09 06:36:12.605403",
+        "extracted_at_epoch": 1767940572,
+        "author_name": "Unable to parse",
+        "author_url": "https://medium.com/@hadiyolworld007",
+        "num_followers": 0,
+        "short_bio": "avaScript and cookies to continu"
+    },
+    {
+        "extraction_id": "a6a6c2d4-c310-45e0-a82a-f66f414990a9",
+        "extracted_at": "2026-01-09 06:36:12.605403",
+        "extracted_at_epoch": 1767940572,
+        "author_name": "Unable to parse",
+        "author_url": "https://medium.com/@hugolu87",
+        "num_followers": 0,
+        "short_bio": "avaScript and cookies to continu"
+    },
+    {
+        "extraction_id": "a6a6c2d4-c310-45e0-a82a-f66f414990a9",
+        "extracted_at": "2026-01-09 06:36:12.605403",
+        "extracted_at_epoch": 1767940572,
+        "author_name": "Unable to parse",
+        "author_url": "https://medium.com/@wa.sriyanong",
+        "num_followers": 0,
+        "short_bio": "avaScript and cookies to continu"
+    },
+    {
+        "extraction_id": "a6a6c2d4-c310-45e0-a82a-f66f414990a9",
+        "extracted_at": "2026-01-09 06:36:12.605403",
+        "extracted_at_epoch": 1767940572,
+        "author_name": "Unable to parse",
+        "author_url": "https://medium.com/@kaushik.pandrapragada",
+        "num_followers": 0,
+        "short_bio": "avaScript and cookies to continu"
+    },
+    {
+        "extraction_id": "a6a6c2d4-c310-45e0-a82a-f66f414990a9",
+        "extracted_at": "2026-01-09 06:36:12.605403",
+        "extracted_at_epoch": 1767940572,
+        "author_name": "Unable to parse",
+        "author_url": "https://medium.com/@goshabaturin",
+        "num_followers": 0,
+        "short_bio": "avaScript and cookies to continu"
+    },
+    {
+        "extraction_id": "a6a6c2d4-c310-45e0-a82a-f66f414990a9",
+        "extracted_at": "2026-01-09 06:36:12.605403",
+        "extracted_at_epoch": 1767940572,
+        "author_name": "Unable to parse",
+        "author_url": "https://medium.com/@sangeethadevarajan14",
+        "num_followers": 0,
+        "short_bio": "avaScript and cookies to continu"
+    },
+    {
+        "extraction_id": "a6a6c2d4-c310-45e0-a82a-f66f414990a9",
+        "extracted_at": "2026-01-09 06:36:12.605403",
+        "extracted_at_epoch": 1767940572,
+        "author_name": "Khanh Nguyen",
+        "author_url": "https://medium.com/@khanhnguyen7802",
+        "num_followers": 0,
+        "short_bio": "pen in appSign upSign inMedium LogoWriteSearchSign upSign inKhanh Nguyen1 followerHomeAboutPublished inTowards Data EngineeringUnderstanding Docker from its roots (part 2)A complete guide to Docker commandsDec 23, 2025Dec 23, 2025Published inTowards Data EngineeringSQL Joins? Do You Know Them All?An introduction to SQL JoinsNov 28, 2025Nov 28, 2025Published inLearning DataApache Airflow 3.0 — A General to Deep Picture — Part 1A modern way to orchestrate your taskNov 26, 2025Nov 26, 2025Published inTowards Data EngineeringUnderstanding Docker from its roots (part 1)A detailed view into using DockerNov 24, 2025Nov 24, 2025Khanh Nguyen1 followerData Engineer stuff"
+    },
+    {
+        "extraction_id": "a6a6c2d4-c310-45e0-a82a-f66f414990a9",
+        "extracted_at": "2026-01-09 06:36:12.605403",
+        "extracted_at_epoch": 1767940572,
+        "author_name": "Dipendu Chanda",
+        "author_url": "https://medium.com/@chandadipendu",
+        "num_followers": 0,
+        "short_bio": "pen in appSign upSign inMedium LogoWriteSearchSign upSign inDipendu Chanda175 followersHomeAboutCustom Skills for Databricks Assistant: Your Custom Databricks AI CopilotCreate Custom Skills for Databricks Assistant: Supercharge Your Databricks AI Copilot15h ago15h agoDatabricks Generative AI Engineer Associate Certification: Study Guide Part 2Because Databricks is the best platform to do end-to-end Generative AI!Oct 17, 2024A response icon3Oct 17, 2024A response icon3Databricks Generative AI Engineer Associate Certification: Study Guide Part 1Because Databricks is the best platform to do end-to-end Generative AI!Aug 23, 2024A response icon6Aug 23, 2024A response icon6Free App — Vested Stock Calculator 📈Ever find yourself obsessively checking your stock vesting schedule? You’re not alone! But what if I told you there’s a better way?Aug 3, 2024Aug 3, 2024Databricks Certification MCQ Generator: Your AI-Powered Study CompanionTransform Your Databricks Certification Exam PreparationApr 8, 2024A response icon1Apr 8, 2024A response icon1Control What You See: How I Personally Control My Digital Life!Tips for Intentional Online EngagementOct 21, 2023Oct 21, 2023“Next-Gen” Machine Learning Engineers: Leading the Generative AI RevolutionBlending Traditional ML with Modern Software EngineeringOct 17, 2023Oct 17, 2023Databricks Machine Learning Associate Certification: A Comprehensive Study GuideNow? Why? How? With Detailed Study GuideJul 29, 2023A response icon4Jul 29, 2023A response icon4Dipendu Chanda175 followersSenior Architect at Databricks. Skilled in software to AI/ML, from FAANG to startups. Keen on holistic learning and sharing- https://www.linkedin.com/in/dchanda"
+    },
+    {
+        "extraction_id": "a6a6c2d4-c310-45e0-a82a-f66f414990a9",
+        "extracted_at": "2026-01-09 06:36:12.605403",
+        "extracted_at_epoch": 1767940572,
+        "author_name": "Unable to parse",
+        "author_url": "https://medium.com/@jacheung415",
+        "num_followers": 0,
+        "short_bio": "avaScript and cookies to continu"
+    },
+    {
+        "extraction_id": "a6a6c2d4-c310-45e0-a82a-f66f414990a9",
+        "extracted_at": "2026-01-09 06:36:12.605403",
+        "extracted_at_epoch": 1767940572,
+        "author_name": "Unable to parse",
+        "author_url": "https://medium.com/@abhisheksarkar1990",
+        "num_followers": 0,
+        "short_bio": "avaScript and cookies to continu"
+    },
+    {
+        "extraction_id": "a6a6c2d4-c310-45e0-a82a-f66f414990a9",
+        "extracted_at": "2026-01-09 06:36:12.605403",
+        "extracted_at_epoch": 1767940572,
+        "author_name": "Unable to parse",
+        "author_url": "https://medium.com/@kaushalsinh73",
+        "num_followers": 0,
+        "short_bio": "avaScript and cookies to continu"
+    },
+    {
+        "extraction_id": "a6a6c2d4-c310-45e0-a82a-f66f414990a9",
+        "extracted_at": "2026-01-09 06:36:12.605403",
+        "extracted_at_epoch": 1767940572,
+        "author_name": "Unable to parse",
+        "author_url": "https://medium.com/@seonggil",
+        "num_followers": 0,
+        "short_bio": "avaScript and cookies to continu"
+    },
+    {
+        "extraction_id": "a6a6c2d4-c310-45e0-a82a-f66f414990a9",
+        "extracted_at": "2026-01-09 06:36:12.605403",
+        "extracted_at_epoch": 1767940572,
+        "author_name": "Gustavo Henrique de Souza Costa",
+        "author_url": "https://medium.com/@gustavohenrique063",
+        "num_followers": 0,
+        "short_bio": "pen in appSign upSign inMedium LogoWriteSearchSign upSign inGustavo Henrique de Souza CostaHomeAboutComo organizar o tratamento de dados no DBT com camadas para não ter que apagar incêndio no BI?Se você trabalha com dados no dia a dia, provavelmente já passou por um desses cenários: o número do dashboard não bate com o da planilha…3d ago3d agoGustavo Henrique de Souza CostaHelpStatusAboutCareersPressBlogPrivacyRulesTermsText to speec"
+    },
+    {
+        "extraction_id": "a6a6c2d4-c310-45e0-a82a-f66f414990a9",
+        "extracted_at": "2026-01-09 06:36:12.605403",
+        "extracted_at_epoch": 1767940572,
+        "author_name": "Unable to parse",
+        "author_url": "https://medium.com/@annesha.das94",
+        "num_followers": 0,
+        "short_bio": "avaScript and cookies to continu"
+    },
+    {
+        "extraction_id": "a6a6c2d4-c310-45e0-a82a-f66f414990a9",
+        "extracted_at": "2026-01-09 06:36:12.605403",
+        "extracted_at_epoch": 1767940572,
+        "author_name": "Unable to parse",
+        "author_url": "https://medium.com/@laurencewells_59423",
+        "num_followers": 0,
+        "short_bio": "avaScript and cookies to continu"
+    },
+    {
+        "extraction_id": "a6a6c2d4-c310-45e0-a82a-f66f414990a9",
+        "extracted_at": "2026-01-09 06:36:12.605403",
+        "extracted_at_epoch": 1767940572,
+        "author_name": "Unable to parse",
+        "author_url": "https://medium.com/@khushbu.shah_661",
+        "num_followers": 0,
+        "short_bio": "avaScript and cookies to continu"
+    },
+    {
+        "extraction_id": "a6a6c2d4-c310-45e0-a82a-f66f414990a9",
+        "extracted_at": "2026-01-09 06:36:12.605403",
+        "extracted_at_epoch": 1767940572,
+        "author_name": "Unable to parse",
+        "author_url": "https://medium.com/@geir.alstad",
+        "num_followers": 0,
+        "short_bio": "avaScript and cookies to continu"
+    },
+    {
+        "extraction_id": "a6a6c2d4-c310-45e0-a82a-f66f414990a9",
+        "extracted_at": "2026-01-09 06:36:12.605403",
+        "extracted_at_epoch": 1767940572,
+        "author_name": "Unable to parse",
+        "author_url": "https://medium.com/@benjohnokezie",
+        "num_followers": 0,
+        "short_bio": "avaScript and cookies to continu"
+    },
+    {
+        "extraction_id": "a6a6c2d4-c310-45e0-a82a-f66f414990a9",
+        "extracted_at": "2026-01-09 06:36:12.605403",
+        "extracted_at_epoch": 1767940572,
+        "author_name": "Unable to parse",
+        "author_url": "https://medium.com/@amitdassit",
+        "num_followers": 0,
+        "short_bio": "avaScript and cookies to continu"
+    },
+    {
+        "extraction_id": "a6a6c2d4-c310-45e0-a82a-f66f414990a9",
+        "extracted_at": "2026-01-09 06:36:12.605403",
+        "extracted_at_epoch": 1767940572,
+        "author_name": "Unable to parse",
+        "author_url": "https://medium.com/@saleh.faize",
+        "num_followers": 0,
+        "short_bio": "avaScript and cookies to continu"
+    },
+    {
+        "extraction_id": "a6a6c2d4-c310-45e0-a82a-f66f414990a9",
+        "extracted_at": "2026-01-09 06:36:12.605403",
+        "extracted_at_epoch": 1767940572,
+        "author_name": "Unable to parse",
+        "author_url": "https://medium.com/@weitweety",
+        "num_followers": 0,
+        "short_bio": "avaScript and cookies to continu"
+    },
+    {
+        "extraction_id": "a6a6c2d4-c310-45e0-a82a-f66f414990a9",
+        "extracted_at": "2026-01-09 06:36:12.605403",
+        "extracted_at_epoch": 1767940572,
+        "author_name": "Unable to parse",
+        "author_url": "https://medium.com/@pathak12darshan",
+        "num_followers": 0,
+        "short_bio": "avaScript and cookies to continu"
+    },
+    {
+        "extraction_id": "a6a6c2d4-c310-45e0-a82a-f66f414990a9",
+        "extracted_at": "2026-01-09 06:36:12.605403",
+        "extracted_at_epoch": 1767940572,
+        "author_name": "Unable to parse",
+        "author_url": "https://medium.com/@luantorrestech",
+        "num_followers": 0,
+        "short_bio": "avaScript and cookies to continu"
+    },
+    {
+        "extraction_id": "a6a6c2d4-c310-45e0-a82a-f66f414990a9",
+        "extracted_at": "2026-01-09 06:36:12.605403",
+        "extracted_at_epoch": 1767940572,
+        "author_name": "Unable to parse",
+        "author_url": "https://medium.com/@prashant05kumar",
+        "num_followers": 0,
+        "short_bio": "avaScript and cookies to continu"
+    },
+    {
+        "extraction_id": "a6a6c2d4-c310-45e0-a82a-f66f414990a9",
+        "extracted_at": "2026-01-09 06:36:12.605403",
+        "extracted_at_epoch": 1767940572,
+        "author_name": "Unable to parse",
+        "author_url": "https://medium.com/@mariusz_kujawski",
+        "num_followers": 0,
+        "short_bio": "avaScript and cookies to continu"
+    },
+    {
+        "extraction_id": "a6a6c2d4-c310-45e0-a82a-f66f414990a9",
+        "extracted_at": "2026-01-09 06:36:12.605403",
+        "extracted_at_epoch": 1767940572,
+        "author_name": "Unable to parse",
+        "author_url": "https://medium.com/@anitaowens",
+        "num_followers": 0,
+        "short_bio": "avaScript and cookies to continu"
+    },
+    {
+        "extraction_id": "a6a6c2d4-c310-45e0-a82a-f66f414990a9",
+        "extracted_at": "2026-01-09 06:36:12.605403",
+        "extracted_at_epoch": 1767940572,
+        "author_name": "Unable to parse",
+        "author_url": "https://medium.com/@alcpayasli",
+        "num_followers": 0,
+        "short_bio": "avaScript and cookies to continu"
+    },
+    {
+        "extraction_id": "a6a6c2d4-c310-45e0-a82a-f66f414990a9",
+        "extracted_at": "2026-01-09 06:36:12.605403",
+        "extracted_at_epoch": 1767940572,
+        "author_name": "Unable to parse",
+        "author_url": "https://medium.com/@vaibhav-pawar",
+        "num_followers": 0,
+        "short_bio": "avaScript and cookies to continu"
+    },
+    {
+        "extraction_id": "a6a6c2d4-c310-45e0-a82a-f66f414990a9",
+        "extracted_at": "2026-01-09 06:36:12.605403",
+        "extracted_at_epoch": 1767940572,
+        "author_name": "Unable to parse",
+        "author_url": "https://medium.com/@blakelassiter",
+        "num_followers": 0,
+        "short_bio": "avaScript and cookies to continu"
+    },
+    {
+        "extraction_id": "a6a6c2d4-c310-45e0-a82a-f66f414990a9",
+        "extracted_at": "2026-01-09 06:36:12.605403",
+        "extracted_at_epoch": 1767940572,
+        "author_name": "Unable to parse",
+        "author_url": "https://medium.com/@indatawetrust.idwt",
+        "num_followers": 0,
+        "short_bio": "avaScript and cookies to continu"
+    },
+    {
+        "extraction_id": "a6a6c2d4-c310-45e0-a82a-f66f414990a9",
+        "extracted_at": "2026-01-09 06:36:12.605403",
+        "extracted_at_epoch": 1767940572,
+        "author_name": "Unable to parse",
+        "author_url": "https://medium.com/@likkilaxminarayana",
+        "num_followers": 0,
+        "short_bio": "avaScript and cookies to continu"
+    },
+    {
+        "extraction_id": "a6a6c2d4-c310-45e0-a82a-f66f414990a9",
+        "extracted_at": "2026-01-09 06:36:12.605403",
+        "extracted_at_epoch": 1767940572,
+        "author_name": "Unable to parse",
+        "author_url": "https://medium.com/@kanerika",
+        "num_followers": 0,
+        "short_bio": "avaScript and cookies to continu"
+    },
+    {
+        "extraction_id": "a6a6c2d4-c310-45e0-a82a-f66f414990a9",
+        "extracted_at": "2026-01-09 06:36:12.605403",
+        "extracted_at_epoch": 1767940572,
+        "author_name": "Unable to parse",
+        "author_url": "https://medium.com/@jubinsoni",
+        "num_followers": 0,
+        "short_bio": "avaScript and cookies to continu"
+    },
+    {
+        "extraction_id": "a6a6c2d4-c310-45e0-a82a-f66f414990a9",
+        "extracted_at": "2026-01-09 06:36:12.605403",
+        "extracted_at_epoch": 1767940572,
+        "author_name": "Unable to parse",
+        "author_url": "https://medium.com/@thedataforge",
+        "num_followers": 0,
+        "short_bio": "avaScript and cookies to continu"
+    },
+    {
+        "extraction_id": "a6a6c2d4-c310-45e0-a82a-f66f414990a9",
+        "extracted_at": "2026-01-09 06:36:12.605403",
+        "extracted_at_epoch": 1767940572,
+        "author_name": "Unable to parse",
+        "author_url": "https://medium.com/@nemekonen",
+        "num_followers": 0,
+        "short_bio": "avaScript and cookies to continu"
+    },
+    {
+        "extraction_id": "a6a6c2d4-c310-45e0-a82a-f66f414990a9",
+        "extracted_at": "2026-01-09 06:36:12.605403",
+        "extracted_at_epoch": 1767940572,
+        "author_name": "Unable to parse",
+        "author_url": "https://medium.com/@dataquestio",
+        "num_followers": 0,
+        "short_bio": "avaScript and cookies to continu"
+    }
+]
