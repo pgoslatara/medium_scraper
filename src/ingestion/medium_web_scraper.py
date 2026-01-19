@@ -13,6 +13,7 @@ from utils.utils import (
     get_extracted_at_epoch,
     get_extraction_id,
     get_json_content,
+    medium_post_graphql_request,
     save_to_landing_zone,
 )
 
@@ -136,11 +137,9 @@ class MediumWebScraper:
             },
         ]
 
-        response = create_requests_session().post(
-            "https://medium.com/_/graphql", headers=headers, json=json_data
-        )
+        response = medium_post_graphql_request(headers=headers, json=json_data)
         logger.info(
-            f'Retrieved {len(response.json()[0]["data"]["tagFromSlug"]["sortedFeed"]["edges"])} blogs...'
+            f'Retrieved {len(response[0]["data"]["tagFromSlug"]["sortedFeed"]["edges"])} blogs...'  # type: ignore[index]
         )
 
         base_data = {
@@ -152,7 +151,7 @@ class MediumWebScraper:
         }
 
         blog_data = []
-        raw_data = response.json()[0]["data"]["tagFromSlug"]["sortedFeed"]["edges"]
+        raw_data = response[0]["data"]["tagFromSlug"]["sortedFeed"]["edges"]  # type: ignore[index]
         for i in raw_data:
             info = {
                 "author_name": i["node"]["creator"]["name"],

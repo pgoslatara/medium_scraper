@@ -6,7 +6,7 @@ from datetime import datetime
 from functools import lru_cache, partial
 from glob import glob
 from pathlib import Path
-from typing import Any, Dict, List, Mapping, Optional, Union
+from typing import Any, Collection, Dict, List, Mapping, Optional, Union
 
 import cloudscraper  # type: ignore[import-not-found]
 import pytz
@@ -18,6 +18,7 @@ from graphql_query import (  # type: ignore[import-not-found]
     Operation,
     Query,
 )
+from retry import retry
 
 from utils.logger import logger
 
@@ -274,6 +275,17 @@ def dbt_invoke(dbt_cli_args: List[str], suppress_log: bool = False) -> dbtRunner
     if not res.success:
         raise RuntimeError(f"dbt_invoke failed with args: {dbt_cli_args}")
     return res
+
+
+@retry(delay=5, tries=5)
+def medium_post_graphql_request(
+    headers: dict[str, str], json: list[dict[str, Collection[str]]]
+) -> dict[str, Any]:
+    return (  # type: ignore[no-any-return]
+        create_requests_session()
+        .post("https://medium.com/_/graphql", headers=headers, json=json)
+        .json()
+    )
 
 
 def save_to_landing_zone(data: List[Dict[str, object]], file_name: str) -> None:
