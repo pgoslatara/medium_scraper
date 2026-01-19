@@ -7,8 +7,7 @@ import duckdb
 
 from utils.logger import logger
 
-df = duckdb.sql(
-    f"""
+df = duckdb.sql(f"""
     WITH base AS (
         SELECT
             CAST(run_started_at AS DATE) AS run_date,
@@ -43,8 +42,7 @@ df = duckdb.sql(
     GROUP BY 1,2,5
     ORDER BY 1 DESC
     LIMIT 1
-"""
-)
+""")
 
 monthly_billable_minutes_pct = df.fetchall()[0][3]
 pct_month_elapsed = df.fetchall()[0][4]
