@@ -15,10 +15,7 @@ class SendNewDbtDiscussionEmail:
         self.lookback_days = lookback_days
 
     def get_recent_discussions(self) -> Mapping[str, Union[str, int]]:
-        df = (
-            duckdb.connect(database=":memory:")
-            .execute(
-                f"""
+        df = duckdb.connect(database=":memory:").execute(f"""
                     SELECT
                         discussion_title,
                         discussion_url,
@@ -30,10 +27,7 @@ class SendNewDbtDiscussionEmail:
                         created_at >= (GET_CURRENT_TIMESTAMP() - INTERVAL {self.lookback_days} DAY)
                         and repo_owner = 'dbt-labs'
                     ORDER BY first_extracted_at DESC
-        """
-            )
-            .arrow()
-        )
+        """).arrow()
 
         data = df.to_pydict()
         logger.debug(f"{data=}")

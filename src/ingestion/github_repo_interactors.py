@@ -392,20 +392,17 @@ def get_github_repo_interactor_info(usernames: List[object]) -> List[Dict[str, o
     # Only get info for users new users and users whose data is > 90 days old
     try:
         conn = duckdb.connect(database=":memory:")
-        df_recently_extracted_usernames = conn.execute(
-            f"""
+        df_recently_extracted_usernames = conn.execute(f"""
             SELECT
                 username,
                 user_info_extracted_at
             FROM read_parquet('{os.getenv('DATA_DIR')}/marts/fct_dbt_interactors.parquet')
             WHERE
                 EPOCH_MS(user_info_extracted_at) >= EPOCH_MS(GET_CURRENT_TIMESTAMP() - INTERVAL 7 DAY)
-        """
-        ).arrow()
+        """).arrow()
 
         usernames_pa = pa.Table.from_arrays([pa.array(usernames)], names=["username"])
-        df_usernames_to_extract = conn.execute(
-            f"""
+        df_usernames_to_extract = conn.execute(f"""
             -- new usernames
             SELECT
                 usernames_pa.username
@@ -424,8 +421,7 @@ def get_github_repo_interactor_info(usernames: List[object]) -> List[Dict[str, o
             WHERE
                 df_recently_extracted_usernames.username IS NULL
             USING SAMPLE 1000 -- never more than 1000 usernames that have already been extracted
-        """
-        ).arrow()
+        """).arrow()
         usernames = [u["username"] for u in df_usernames_to_extract.to_pylist()]
     except duckdb.BinderException as e:
         logger.warning(
