@@ -15,10 +15,7 @@ class SendMediumBlogsEmail:
         self.lookback_days = lookback_days
 
     def get_relevant_blogs(self) -> Mapping[str, Union[str, int]]:
-        df = (
-            duckdb.connect(database=":memory:")
-            .execute(
-                f"""
+        df = duckdb.connect(database=":memory:").execute(f"""
             WITH base AS (
                 SELECT
                     author_name,
@@ -50,10 +47,7 @@ class SendMediumBlogsEmail:
                 tag AS 'Tag(s)',
             FROM base
             ORDER BY published_at
-        """
-            )
-            .arrow()
-        )
+        """).arrow()
 
         data = df.to_pydict()
         logger.debug(f"{data=}")

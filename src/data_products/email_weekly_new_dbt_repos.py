@@ -15,10 +15,7 @@ class SendNewDbtRepoEmail:
         self.lookback_days = lookback_days
 
     def get_recent_repos(self) -> Mapping[str, Union[str, int]]:
-        df = (
-            duckdb.connect(database=":memory:")
-            .execute(
-                f"""
+        df = duckdb.connect(database=":memory:").execute(f"""
                     SELECT
                         repo_name,
                         html_url,
@@ -28,10 +25,7 @@ class SendNewDbtRepoEmail:
                     WHERE
                         to_timestamp(first_extracted_at) >= (GET_CURRENT_TIMESTAMP() - INTERVAL {self.lookback_days} DAY)
                     ORDER BY created_at DESC
-        """
-            )
-            .arrow()
-        )
+        """).arrow()
 
         data = df.to_pydict()
         logger.debug(f"{data=}")
