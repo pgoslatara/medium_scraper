@@ -17,7 +17,7 @@ on:
 
 env:
   CICD_RUN: "${{ github.event_name == 'pull_request' && 'True' || 'False' }}"
-  DATA_DIR: "/home/runner/work/medium_scraper/medium_scraper/output"
+  DATA_DIR: "${{ github.workspace }}/output"
   DBT_PROFILES_DIR: "${{ github.workspace }}/dbt"
   DBT_PROJECT_DIR: "${{ github.workspace }}/dbt"
   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -26,40 +26,28 @@ env:
 
 jobs:
   pipeline:
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
     timeout-minutes: 45
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
 
-      - uses: actions/setup-python@v5
-        id: setup-python
+      - name: Install uv
+        uses: astral-sh/setup-uv@v6
 
-      - name: Install Poetry
-        uses: snok/install-poetry@v1
-        with:
-            virtualenvs-create: true
-            virtualenvs-in-project: true
-            installer-parallel: true
+      - name: Install Python
+        run: uv python install 3.11
 
-      - name: Load cached venv
-        id: cached-poetry-dependencies
-        uses: actions/cache@v3
-        with:
-            path: .venv
-            key: venv-${{ runner.os }}-${{ steps.setup-python.outputs.python-version }}-${{ hashFiles('**/poetry.lock') }}
+      - name: Install dependencies
+        run: uv sync
 
-      - name: Install python dependencies
-        if: steps.cached-poetry-dependencies.outputs.cache-hit != 'true'
-        run: poetry install --no-interaction --no-ansi
-
-      - run: poetry run pre-commit run -a
+      - run: uv run pre-commit run -a
         if: github.event_name == 'pull_request'
 
-      - run: poetry run ingestion
+      - run: uv run ingestion
 
-      - run: poetry run transformation
+      - run: uv run transformation
 
-      - run: poetry run data_products
+      - run: uv run data_products
         env:
           RECIPIENT_EMAIL_ADDRESS: "${{ github.event_name == 'pull_request' && '123@mailslurp.com' || secrets.SENDER_EMAIL_ADDRESS }}"
           SENDER_EMAIL_ADDRESS: ${{ secrets.SENDER_EMAIL_ADDRESS }}
@@ -67,7 +55,7 @@ jobs:
 
       - name: Build static content
         run: |
-          poetry run jupyter lite build \
+          uv run jupyter lite build \
             --contents ./src/data_products/jupyter-lite.ipynb \
             --contents ./output/marts \
             --lite-dir ./src/data_products \
@@ -75,11 +63,11 @@ jobs:
 
       - name: Run pre-commit
         if: github.event_name != 'pull_request'
-        run: poetry run pre-commit run -a || true
+        run: uv run pre-commit run -a || true
 
       - name: Run pre-commit (again)
         if: github.event_name != 'pull_request'
-        run: poetry run pre-commit run -a || true
+        run: uv run pre-commit run -a || true
 
       - uses: EndBug/add-and-commit@v9
         if: github.event_name != 'pull_request'
@@ -100,7 +88,7 @@ jobs:
   automerge_pull_requests:
     if: github.event_name == 'pull_request'
     needs: [pipeline]
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
     steps:
       - name: Merge pull request
         uses: pascalgn/automerge-action@v0.15.6
