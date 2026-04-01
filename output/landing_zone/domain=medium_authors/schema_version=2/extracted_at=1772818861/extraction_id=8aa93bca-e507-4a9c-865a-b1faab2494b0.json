@@ -1,0 +1,542 @@
+[
+    {
+        "extraction_id": "8aa93bca-e507-4a9c-865a-b1faab2494b0",
+        "extracted_at": "2026-03-06 17:41:01.555876",
+        "extracted_at_epoch": 1772818861,
+        "author_name": "Unable to parse",
+        "author_url": "https://medium.com/@bossruji",
+        "num_followers": 0,
+        "short_bio": "avaScript and cookies to continu"
+    },
+    {
+        "extraction_id": "8aa93bca-e507-4a9c-865a-b1faab2494b0",
+        "extracted_at": "2026-03-06 17:41:01.555876",
+        "extracted_at_epoch": 1772818861,
+        "author_name": "Dharmik Soni",
+        "author_url": "https://medium.com/@dhsoni2510",
+        "num_followers": 0,
+        "short_bio": "pen in appSign upSign inMedium LogoGet appWriteSearchSign upSign inDharmik Sonihe/him3 followersHomeAboutThe Trap of Delta Lake Time Travel: Why Your Structured Streaming Queries Keep Crashing13h ago13h agoThe Mystery of the Disappearing Cache FlagIf you’ve worked with Apache Spark for any length of time, you’ve probably encountered memory issues in production. You cache DataFrames…Nov 12, 2025Nov 12, 2025Why Your Spark DataFrames Won’t Unpersist (And How Spark Connect Changes Everything)A deep dive into cache management pitfalls in Apache Spark’s new client-server architectureNov 11, 2025Nov 11, 2025Taming the Beast: Understanding and Preventing AttributeReference Memory Leaks in Apache SparkIntroductionOct 28, 2025Oct 28, 2025How We Slashed Structured Streaming Costs by 80% — And Made Batches Lightning FastWhen running large-scale data pipelines in Databricks, performance optimization can often feel like black magic.Oct 4, 2025Oct 4, 2025When Spark’s Cache Betrays You: The Hidden Dangers of Non-Idempotent TransformationsHow monotonically_increasing_id() and similar functions can silently sabotage your performance optimizationsSep 22, 2025Sep 22, 2025The Hidden Cost of Clean Code: Method Boundaries vs Performance in Databricks StreamingThe Great Debate: Clean Code vs PerformanceMay 27, 2025May 27, 2025Dharmik Sonihe/him3 followersAI Software Engineer @ Insurance CompanyHelpStatusAboutCareersPressBlogPrivacyRulesTermsText to speec"
+    },
+    {
+        "extraction_id": "8aa93bca-e507-4a9c-865a-b1faab2494b0",
+        "extracted_at": "2026-03-06 17:41:01.555876",
+        "extracted_at_epoch": 1772818861,
+        "author_name": "Unable to parse",
+        "author_url": "https://medium.com/@rakeshranjan24",
+        "num_followers": 0,
+        "short_bio": "avaScript and cookies to continu"
+    },
+    {
+        "extraction_id": "8aa93bca-e507-4a9c-865a-b1faab2494b0",
+        "extracted_at": "2026-03-06 17:41:01.555876",
+        "extracted_at_epoch": 1772818861,
+        "author_name": "Franco",
+        "author_url": "https://medium.com/@francotesei",
+        "num_followers": 0,
+        "short_bio": "pen in appSign upSign inMedium LogoGet appWriteSearchSign upSign inFranco51 followersHomeAboutData Overwrite: Idempotency When Metadata Operations Aren’t AvailableSeries: Data Engineering Design Patterns | Post 9 of 6418h ago18h agoMemory Management: How AI Agents RememberThis is Part 8 of a 21-part series on Agentic Design Patterns. We’ve completed the foundational patterns. Now we enter Part Two: making…3d ago3d agoFast Metadata Cleaner: Delete Terabytes in MillisecondsSeries: Data Engineering Design Patterns | Post 8 of 64Feb 25Feb 25Multi-Agent Collaboration: Building Teams of AI SpecialistsThis is Part 7 of a 21-part series on Agentic Design Patterns. We’ve covered the foundations for individual agents.Feb 23Feb 23Checkpointer: Save Your Progress or Start From ZeroSeries: Data Engineering Design Patterns | Post 7 of 64Feb 18Feb 18Planning: How AI Agents Tackle Complex ProblemsThis is Part 6 of a 21-part series on Agentic Design Patterns. We’ve covered execution (Chaining), decisions (Routing), speed…Feb 16Feb 16Filter Interceptor: Why Is My Pipeline Filtering 90% of Records?Series: Data Engineering Design Patterns | Post 6 of 64Feb 11Feb 11Tool Use: How AI Agents Interact With the Real WorldThis is Part 5 of a 21-part series on Agentic Design Patterns. We’ve covered how agents think (Chaining, Routing, Reflection) and work…Feb 8A response icon1Feb 8A response icon1Dynamic Late Data Integrator: Backfill Only What Actually ChangedSeries: Data Engineering Design Patterns | Post 5 of 64Feb 4Feb 4Reflection: Teaching AI Agents to Critique Their Own WorkThis is Part 4 of a 21-part series on Agentic Design Patterns. We’ve covered how agents execute tasks (Chaining), make decisions (Routing)…Feb 2Feb 2Franco51 followersFounding AI Engineer | Data Engineer https://www.linkedin.com/in/franco-tesei-4b7580109"
+    },
+    {
+        "extraction_id": "8aa93bca-e507-4a9c-865a-b1faab2494b0",
+        "extracted_at": "2026-03-06 17:41:01.555876",
+        "extracted_at_epoch": 1772818861,
+        "author_name": "Niteesha Balla",
+        "author_url": "https://medium.com/@ballaniteesha",
+        "num_followers": 0,
+        "short_bio": "pen in appSign upSign inMedium LogoGet appWriteSearchSign upSign inNiteesha BallaHomeAboutBeyond the Dashboard: What My Interview at Syntax Taught Me About Modern Analytics EngineeringA chronological deep-dive into the architectural strategies and stakeholder scenarios that define the modern Analytics Engineering…6d ago6d agoNiteesha BallaHelpStatusAboutCareersPressBlogPrivacyRulesTermsText to speec"
+    },
+    {
+        "extraction_id": "8aa93bca-e507-4a9c-865a-b1faab2494b0",
+        "extracted_at": "2026-03-06 17:41:01.555876",
+        "extracted_at_epoch": 1772818861,
+        "author_name": "Nick Komissarenko https://bigdataschool.ru",
+        "author_url": "https://medium.com/@bigdataschool",
+        "num_followers": 0,
+        "short_bio": "pen in appSign upSign inMedium LogoGet appWriteSearchSign upSign inNick Komissarenko https://bigdataschool.ru426 followersHomeAboutAIRF: Построение ETL процессов на Apache Airflow для инженеров данных2d ago2d agoKAFKA: Администрирование кластера Kafka3d ago3d agoApache Arrow3d ago3d agoApache AirFlow4d ago4d agoABAC4d ago4d agoODS6d ago6d agoОблачное хранилище6d ago6d agoAgentic AIFeb 26Feb 26Claude CodeFeb 25Feb 25Урок 8. Event-Driven Airflow — Запуск DAG по событиям из Apache KafkaFeb 24Feb 24Nick Komissarenko https://bigdataschool.ru426 followersТехнический тренер компании \"Школа Больших Данных\" г. Москва, https://bigdataschool.ru co-founder of Big Data School - delivering Big Data, Kafka, Spark!"
+    },
+    {
+        "extraction_id": "8aa93bca-e507-4a9c-865a-b1faab2494b0",
+        "extracted_at": "2026-03-06 17:41:01.555876",
+        "extracted_at_epoch": 1772818861,
+        "author_name": "Unable to parse",
+        "author_url": "https://medium.com/@tewarimanish6",
+        "num_followers": 0,
+        "short_bio": "avaScript and cookies to continu"
+    },
+    {
+        "extraction_id": "8aa93bca-e507-4a9c-865a-b1faab2494b0",
+        "extracted_at": "2026-03-06 17:41:01.555876",
+        "extracted_at_epoch": 1772818861,
+        "author_name": "Unable to parse",
+        "author_url": "https://medium.com/@sauhar",
+        "num_followers": 0,
+        "short_bio": "avaScript and cookies to continu"
+    },
+    {
+        "extraction_id": "8aa93bca-e507-4a9c-865a-b1faab2494b0",
+        "extracted_at": "2026-03-06 17:41:01.555876",
+        "extracted_at_epoch": 1772818861,
+        "author_name": "Unable to parse",
+        "author_url": "https://medium.com/@pchandrika0613",
+        "num_followers": 0,
+        "short_bio": "avaScript and cookies to continu"
+    },
+    {
+        "extraction_id": "8aa93bca-e507-4a9c-865a-b1faab2494b0",
+        "extracted_at": "2026-03-06 17:41:01.555876",
+        "extracted_at_epoch": 1772818861,
+        "author_name": "Sahil Bhange",
+        "author_url": "https://medium.com/@sahilbhange",
+        "num_followers": 0,
+        "short_bio": "pen in appSign upSign inMedium LogoGet appWriteSearchSign upSign inSahil Bhange18 followersHomeListsAboutPinnedPublished inTowards Data EngineeringBreaking the SQL Barrier: How Snowflake Intelligence Democratizes AnalyticsHow I Learned to Stop Writing SQL and Let the Data Explain ItselfFeb 24Feb 24Published inTowards Data EngineeringThe Trust Layer: How to Sleep at Night When AI Answers Your Stakeholders’ QuestionsThe 2 AM Slack MessageFeb 25Feb 25Data Architecture for AI: Why Your Warehouse Needs a RefactorSarah pointed Cortex Analyst at their existing data warehouse. Demo day: standing ovation. Day 30: $30,000 bill (previous month: $18,000).Feb 25Feb 25Published inTowards Data EngineeringContext Engineering: How Metadata Breaks the SQL Barrier?The Demo That BrokeFeb 24Feb 24Sahil Bhange18 followers"
+    },
+    {
+        "extraction_id": "8aa93bca-e507-4a9c-865a-b1faab2494b0",
+        "extracted_at": "2026-03-06 17:41:01.555876",
+        "extracted_at_epoch": 1772818861,
+        "author_name": "Unable to parse",
+        "author_url": "https://medium.com/@tjanif",
+        "num_followers": 0,
+        "short_bio": "avaScript and cookies to continu"
+    },
+    {
+        "extraction_id": "8aa93bca-e507-4a9c-865a-b1faab2494b0",
+        "extracted_at": "2026-03-06 17:41:01.555876",
+        "extracted_at_epoch": 1772818861,
+        "author_name": "Unable to parse",
+        "author_url": "https://medium.com/@sendoamoronta",
+        "num_followers": 0,
+        "short_bio": "avaScript and cookies to continu"
+    },
+    {
+        "extraction_id": "8aa93bca-e507-4a9c-865a-b1faab2494b0",
+        "extracted_at": "2026-03-06 17:41:01.555876",
+        "extracted_at_epoch": 1772818861,
+        "author_name": "Unable to parse",
+        "author_url": "https://medium.com/@ntando.nkuna2099",
+        "num_followers": 0,
+        "short_bio": "avaScript and cookies to continu"
+    },
+    {
+        "extraction_id": "8aa93bca-e507-4a9c-865a-b1faab2494b0",
+        "extracted_at": "2026-03-06 17:41:01.555876",
+        "extracted_at_epoch": 1772818861,
+        "author_name": "Likhith Kongara",
+        "author_url": "https://medium.com/@likhith0715",
+        "num_followers": 0,
+        "short_bio": "pen in appSign upSign inMedium LogoGet appWriteSearchSign upSign inLikhith Kongarahe/himHomeAboutFastAPI Basics: Setup, Path Operations, Path Parameters, and Query ParametersLearn FastAPI basics: installation with uv, path operations, and parameters. Master automatic Swagger docs and Python type hint validation.12h ago12h agoFastAPI Beyond Pip: Master Secrets & Envs with uvA practical guide to securing FastAPI apps with environment variables, virtual environments, and modern Rust-based tools.1d ago1d agoAsync in Python — The Beginner-Friendly Mental Model (Without the Confusion)When learning modern Python (especially for FastAPI), you’ll constantly hear:2d ago2d agoBuilding Blocks of FastAPI: From Type Hints to PydanticToday, I’m breaking down the essential layers of modern Python development. If you want to master FastAPI, you have to understand the logic…3d ago3d agoMastering Apache Airflow for CertificationA beginner-friendly guide to Airflow architecture, interval-based scheduling, and exam trapsFeb 24Feb 24From Raw Spotify Data to a Power BI Dashboard: What I Learned Analyzing SongsA beginner-friendly walkthrough from raw data to an interactive dashboard — covering the essential concepts you need to know.Dec 5, 2025Dec 5, 2025Likhith Kongarahe/himData enthusiast | Power BI & Tableau | Sharing dashboards, tutorials, and insightsHelpStatusAboutCareersPressBlogPrivacyRulesTermsText to speec"
+    },
+    {
+        "extraction_id": "8aa93bca-e507-4a9c-865a-b1faab2494b0",
+        "extracted_at": "2026-03-06 17:41:01.555876",
+        "extracted_at_epoch": 1772818861,
+        "author_name": "Unable to parse",
+        "author_url": "https://medium.com/@prachi.r",
+        "num_followers": 0,
+        "short_bio": "avaScript and cookies to continu"
+    },
+    {
+        "extraction_id": "8aa93bca-e507-4a9c-865a-b1faab2494b0",
+        "extracted_at": "2026-03-06 17:41:01.555876",
+        "extracted_at_epoch": 1772818861,
+        "author_name": "Unable to parse",
+        "author_url": "https://medium.com/@pravashish2036",
+        "num_followers": 0,
+        "short_bio": "avaScript and cookies to continu"
+    },
+    {
+        "extraction_id": "8aa93bca-e507-4a9c-865a-b1faab2494b0",
+        "extracted_at": "2026-03-06 17:41:01.555876",
+        "extracted_at_epoch": 1772818861,
+        "author_name": "Unable to parse",
+        "author_url": "https://medium.com/@lkbustabad",
+        "num_followers": 0,
+        "short_bio": "avaScript and cookies to continu"
+    },
+    {
+        "extraction_id": "8aa93bca-e507-4a9c-865a-b1faab2494b0",
+        "extracted_at": "2026-03-06 17:41:01.555876",
+        "extracted_at_epoch": 1772818861,
+        "author_name": "Pat S",
+        "author_url": "https://medium.com/@sienkiewicz.pat",
+        "num_followers": 0,
+        "short_bio": "pen in appSign upSign inMedium LogoGet appWriteSearchSign upSign inPat S6 followersHomeAboutHeat Pump AI-Powered Diagnostic Tool — Built with Databricks ai-dev-kit and Claude CodeThe Motivation19h ago19h agoPat S6 followers"
+    },
+    {
+        "extraction_id": "8aa93bca-e507-4a9c-865a-b1faab2494b0",
+        "extracted_at": "2026-03-06 17:41:01.555876",
+        "extracted_at_epoch": 1772818861,
+        "author_name": "Unable to parse",
+        "author_url": "https://medium.com/@marcogarciagz",
+        "num_followers": 0,
+        "short_bio": "avaScript and cookies to continu"
+    },
+    {
+        "extraction_id": "8aa93bca-e507-4a9c-865a-b1faab2494b0",
+        "extracted_at": "2026-03-06 17:41:01.555876",
+        "extracted_at_epoch": 1772818861,
+        "author_name": "Unable to parse",
+        "author_url": "https://medium.com/@krpsanthoshkumar",
+        "num_followers": 0,
+        "short_bio": "avaScript and cookies to continu"
+    },
+    {
+        "extraction_id": "8aa93bca-e507-4a9c-865a-b1faab2494b0",
+        "extracted_at": "2026-03-06 17:41:01.555876",
+        "extracted_at_epoch": 1772818861,
+        "author_name": "Unable to parse",
+        "author_url": "https://medium.com/@pierre.munhoz",
+        "num_followers": 0,
+        "short_bio": "avaScript and cookies to continu"
+    },
+    {
+        "extraction_id": "8aa93bca-e507-4a9c-865a-b1faab2494b0",
+        "extracted_at": "2026-03-06 17:41:01.555876",
+        "extracted_at_epoch": 1772818861,
+        "author_name": "Unable to parse",
+        "author_url": "https://medium.com/@ga.nyaga7",
+        "num_followers": 0,
+        "short_bio": "avaScript and cookies to continu"
+    },
+    {
+        "extraction_id": "8aa93bca-e507-4a9c-865a-b1faab2494b0",
+        "extracted_at": "2026-03-06 17:41:01.555876",
+        "extracted_at_epoch": 1772818861,
+        "author_name": "Nara Guimaraes",
+        "author_url": "https://medium.com/@nara.guimaraes",
+        "num_followers": 0,
+        "short_bio": "pen in appSign upSign inMedium LogoGet appWriteSearchSign upSign inNara Guimaraes125 followersHomeAboutApache Airflow 3: The Next Era in Workflow OrchestrationApache Airflow has become one of the foundational tools of modern data engineering, powering pipelines, data workflows, ML orchestration…Feb 22Feb 22🧠 Label Encoding vs One-Hot Encoding: Quando Usar Cada Um?Quando trabalhamos com dados categóricos, precisamos convertê-los em números para que os algoritmos possam processá-los. Duas técnicas…Jul 14, 2025Jul 14, 2025🎯 Testes Técnicos na Área de Dados: O Que Esperar e Como se PrepararA área de dados é vasta e diversa, com cargos que vão de análise a arquitetura, passando por engenharia, ciência de dados e machine…Jun 2, 2025A response icon1Jun 2, 2025A response icon1Modelos de Classificação: Teoria e Prática com PythonA classificação é um dos pilares do aprendizado de máquina supervisionado, sendo fundamental para quem está começando na área de dados…May 14, 2025May 14, 2025Estatística: Desvendando o Mundo das Frequências e ProbabilidadesA estatística é uma ferramenta poderosa que nos permite extrair significado de dados, identificar padrões e tomar decisões informadas. Dois…Apr 1, 2025Apr 1, 2025Published inData GirlsTutorial de Primeiros Passos com PythonPython é uma linguagem de programação de alto nível (elevado nível de abstração aproximando-se da linguagem humana), interpretada (o código…Mar 30, 2025Mar 30, 2025Unit Testing in Data EngineeringUnit testing is a fundamental practice in software development. While it’s often associated with application development, it has a…Mar 3, 2025Mar 3, 2025Frequências e Medidas: Conceitos EstatísticosEm um mundo repleto de dados, a estatística desempenha um papel fundamental na compreensão e interpretação das informações que coletamos…Feb 27, 2025Feb 27, 2025Como Salvar um DataFrame do Pandas no Google Sheets Usando Google ColabO Google Colab é uma ferramenta poderosa para trabalhar com Python na nuvem, e uma de suas vantagens é a integração fácil com o Google…Feb 18, 2025Feb 18, 2025Tudo o Que Você Precisa Saber Sobre APIs: Conceitos, Exemplos em Python e Aplicabilidade na Área de…As APIs (Application Programming Interfaces) desempenham um papel fundamental no desenvolvimento de software moderno, permitindo a…Feb 16, 2025Feb 16, 2025Nara Guimaraes125 followersHelpStatusAboutCareersPressBlogPrivacyRulesTermsText to speec"
+    },
+    {
+        "extraction_id": "8aa93bca-e507-4a9c-865a-b1faab2494b0",
+        "extracted_at": "2026-03-06 17:41:01.555876",
+        "extracted_at_epoch": 1772818861,
+        "author_name": "Unable to parse",
+        "author_url": "https://medium.com/@muneebtariq.1214",
+        "num_followers": 0,
+        "short_bio": "avaScript and cookies to continu"
+    },
+    {
+        "extraction_id": "8aa93bca-e507-4a9c-865a-b1faab2494b0",
+        "extracted_at": "2026-03-06 17:41:01.555876",
+        "extracted_at_epoch": 1772818861,
+        "author_name": "Yochan Khoi",
+        "author_url": "https://medium.com/@yochankhoi",
+        "num_followers": 0,
+        "short_bio": "pen in appSign upSign inMedium LogoGet appWriteSearchSign upSign inYochan Khoi22 followersHomeAboutPublished inGorgias EngineeringBuilding a context layer from the ground upAt Gorgias, we built an internal AI agent that can answer business questions across every department: finance, product, sales, and customer…2d ago2d agoPublished inGorgias EngineeringBigQuery is a wealthy librarianRoad to BigQuery optimisations: Partition and clusters keys.Jul 3, 2025Jul 3, 2025Published inGorgias EngineeringHow to roll-out a data conversational agent?A complete set up example with DotApr 3, 2025Apr 3, 2025Yochan Khoi22 followersSenior analytics engineer working at Gorgias who loves to play with data and find easy ways to solve complex problems."
+    },
+    {
+        "extraction_id": "8aa93bca-e507-4a9c-865a-b1faab2494b0",
+        "extracted_at": "2026-03-06 17:41:01.555876",
+        "extracted_at_epoch": 1772818861,
+        "author_name": "Unable to parse",
+        "author_url": "https://medium.com/@vijay.m.anusuri",
+        "num_followers": 0,
+        "short_bio": "avaScript and cookies to continu"
+    },
+    {
+        "extraction_id": "8aa93bca-e507-4a9c-865a-b1faab2494b0",
+        "extracted_at": "2026-03-06 17:41:01.555876",
+        "extracted_at_epoch": 1772818861,
+        "author_name": "Harshil Jani",
+        "author_url": "https://medium.com/@harshiljani2002",
+        "num_followers": 0,
+        "short_bio": "pen in appSign upSign inMedium LogoGet appWriteSearchSign upSign inHarshil Janihim/he174 followersHomeAboutYou Failed as a Leader If You Can’t Convince Your Team to Run Claude CodeLet me say the quiet part loud that if your team isn’t using Claude Code in 2026, that’s not a tooling problem. That’s a leadership…Feb 23Feb 23Don’t upgrade your Airflow DB in-place - Sharing lessons from our Airflow 3 migrationAirflow 3 isn’t a version bump — it’s a rearchitecture. Fresh database, new auth, 4 services. Here’s what broke and whether it was worth it.Feb 20Feb 20I have added 3 WebMCP attributes to a form and AI agents started using my website like an APIChrome 146 shipped WebMCP which is a browser API that lets any website expose tools to AI agents. No backend needed and here's how it works.Feb 13Feb 13I Open-Sourced My Amazon Kindle Publishing Pipeline and It Has a Team of 8 AgentsI built 8 AI agents, one for each publishing role and wired them into a DAG that turns a book idea into a Kindle-ready manuscript.Feb 8Feb 8Skills vs MCP: When Should You Use What?Everyone building with Claude Code eventually hits the same fork in the road on should I write a Skill or set up an MCP server?Feb 6Feb 6What if Claude could just… look at Sentry directly?A Claude skill for debugging production errors. Fetches from Sentry API, reads your codebase, finds root cause. Free, open source, 3 steps.Jan 28A response icon1Jan 28A response icon1Published inEngineering Playbook9 battle-tested techniques to optimize your Django logging speedA comprehensive guide to making your Django application’s logging faster and more efficientJan 17Jan 17Why Low-Ranked SEO Articles Get 23x More Conversions in AI Search (GEO)What happens when your perfect SEO article ranks #1 on Google but ChatGPT never mentions it? Most people in SEO aren’t asking this question…Jan 16Jan 16Published inPython in Plain EnglishMonitor FastAPI Background Tasks with One-Liner Dashboard integrationFastAPI-BGTasks-Dashboard: One-liner integration for real-time task monitoring. Must-have for FastAPI devs to avoid crashes & costs!Sep 24, 2025Sep 24, 2025My First Liquidation: Lessons from Shorting XRP That Went WrongShorting XRP at $2.93 with 10x leverage, wiped out in a week. Always protect your capital first.Sep 14, 2025A response icon1Sep 14, 2025A response icon1Harshil Janihim/he174 followersSoftware Engineer and Technical Writer. Would love to talk about Tech, Finance and Capitalism."
+    },
+    {
+        "extraction_id": "8aa93bca-e507-4a9c-865a-b1faab2494b0",
+        "extracted_at": "2026-03-06 17:41:01.555876",
+        "extracted_at_epoch": 1772818861,
+        "author_name": "Kiran Kumar",
+        "author_url": "https://medium.com/@kirankbs",
+        "num_followers": 0,
+        "short_bio": "pen in appSign upSign inMedium LogoGet appWriteSearchSign upSign inKiran Kumar7 followersHomeListsAboutPinnedStreaming Failure Models: Why “It Didn’t Crash” Is the Worst OutcomePart 1 of 3 — Databricks Streaming Architecture(Multi-Query Single Job on a Shared Cluster)3d ago3d agoMulti-Task on a Shared Cluster — Why That’s Also Not EnoughPart 2 of 3 — Databricks Streaming Architecture20h ago20h agoUnity Catalog in Practice: Governance with DatabricksIf you’re already running Spark + Delta + streaming, moving to Databricks isn’t about features.Feb 27Feb 27Understanding Delta Table Partition Size Distribution Using the Delta LogWhen working with externally managed Delta tables and traditional partitioning strategies (for example by day, week, or month), one common…Feb 16Feb 16Kiran Kumar7 followersSoftware engineer passionate about Data, AI & Databricks Landscape. I'm in awe of their ongoing advancements and the endless possibilits."
+    },
+    {
+        "extraction_id": "8aa93bca-e507-4a9c-865a-b1faab2494b0",
+        "extracted_at": "2026-03-06 17:41:01.555876",
+        "extracted_at_epoch": 1772818861,
+        "author_name": "Jyotsna Jha",
+        "author_url": "https://medium.com/@jyotsna.jha003",
+        "num_followers": 0,
+        "short_bio": "pen in appSign upSign inMedium LogoGet appWriteSearchSign upSign inJyotsna Jhashe/herHomeAboutFrom Raw Data to Gold: A Hands-On Guide to Data Modelling in Data EngineeringA complete hands-on walkthrough of Medallion Architecture, Star Schema, Snowflake, SCD Type 1 & 2 built from scratch in Databricks1d ago1d agoJyotsna Jhashe/herData Engineering Enthusiast | Building skills in Data Modeling, SCD Implementation & Databricks | Sharing my learning journeyHelpStatusAboutCareersPressBlogPrivacyRulesTermsText to speec"
+    },
+    {
+        "extraction_id": "8aa93bca-e507-4a9c-865a-b1faab2494b0",
+        "extracted_at": "2026-03-06 17:41:01.555876",
+        "extracted_at_epoch": 1772818861,
+        "author_name": "Christian Hansen",
+        "author_url": "https://medium.com/@cralle",
+        "num_followers": 0,
+        "short_bio": "pen in appSign upSign inMedium LogoGet appWriteSearchSign upSign inChristian Hansen262 followersHomeAboutCreating Catalogs and Schemas with Databricks Asset BundlesDefining Unity Catalog catalogs and schemas directly in your Databricks Asset Bundle deployments.1d ago1d agoNative Python Unit Testing in Databricks NotebooksFrom interactive notebooks to real development environments — native Python testing, directly in your Databricks workspace4d agoA response icon14d agoA response icon1Auto-TTL in Databricks: Automated Data Retention, Done ProperlyHow Databricks Auto-TTL Turns Data Retention Into a Native Platform CapabilityFeb 21A response icon1Feb 21A response icon1Temporary Tables in Databricks SQL: A Familiar Pattern, Finally Done RightTemporary Tables Change How You Write SQL in DatabricksJan 30A response icon1Jan 30A response icon1What Developers Need to Know About Apache Spark 4.1Spark 4.1: Faster, Smarter, and Ready for the Next Generation of Data WorkflowsJan 12Jan 12A Step-by-Step Guide to Setting Up ABAC in Databricks (Unity Catalog)How to use governed tags, dynamic policies, and UDFs to implement scalable attribute-based access controlDec 1, 2025Dec 1, 2025Important Changes Coming to Delta Lake Time Travel (Databricks, December 2025)Understand the upcoming Delta Lake time travel changes in Databricks and how to prepare your tables before December 2025.Nov 3, 2025A response icon1Nov 3, 2025A response icon1Mastering Governed Tags in Unity Catalog: Consistency, Compliance, and ControlLearn how to enforce consistent tagging across your Databricks environment to simplify discovery, governance, and cost management at scale.Oct 5, 2025Oct 5, 2025Handling Data Skew in Databricks and PySparkTechniques to Identify, Diagnose, and Optimize Skewed Workloads for Faster Spark JobsSep 30, 2025A response icon1Sep 30, 2025A response icon1How Spark Really Runs Your Code: A Deep Dive into Jobs, Stages, and TasksA practical guide to understanding how Spark executes your code and how to optimize it.Sep 16, 2025A response icon2Sep 16, 2025A response icon2Christian Hansen262 followersDatabricks Champion, Lead Data & Machine Learning Engineer at Halfspace LinkedIn: https://www.linkedin.com/in/cenh/HelpStatusAboutCareersPressBlogPrivacyRulesTermsText to speec"
+    },
+    {
+        "extraction_id": "8aa93bca-e507-4a9c-865a-b1faab2494b0",
+        "extracted_at": "2026-03-06 17:41:01.555876",
+        "extracted_at_epoch": 1772818861,
+        "author_name": "Antonio Soto",
+        "author_url": "https://medium.com/@antoniosql",
+        "num_followers": 0,
+        "short_bio": "pen in appSign upSign inMedium LogoGet appWriteSearchSign upSign inAntonio Soto169 followersHomeListsAboutPinnedPublished inThe StartupWelcome to the Semantic World!This week a little light came on for me. At first I thought it was a mania of mine to point out everything, and want to know the reason for…Dec 6, 2023Dec 6, 2023PinnedInterpretability, Ethics, and Responsibility in Artificial IntelligenceMuch is said and written in these times, about Responsible AI, mixing certain terms and often without understanding very well what we are…Mar 6, 2022Mar 6, 2022PinnedThe definitive intro guide to Machine Learning. Analyzing Customer behaviorUsing Python and sklearn to analyze customer behaviour and marketing campaignsJan 30, 2022A response icon1Jan 30, 2022A response icon1PinnedAnalytics Maturity ModelIn the previous article in this series, which you can review here, I commented on the real importance that data has in society in general…Jan 17, 2022Jan 17, 2022PinnedPublished inPython in Plain EnglishRFM NAV Customer Classification with Python and Azure FunctionsThis article is part of #ServerlessSeptember. You’ll find other helpful articles, detailed tutorials, and videos in this…Sep 5, 2020Sep 5, 2020From the Data Quality Agent to Data Quality as Code in DatabricksWhy this is the natural sequelJust nowJust nowBuilding a Data Quality Agent on Databricks: Unity Catalog + Expectations as a Closed LoopYou know that feeling when a dashboard looks “almost” right, but not quite? The numbers aren’t wildly wrong — just subtly off. A conversion…5d ago5d agoThe Uncomfortable Truth About AI in Business (and Why It’s Moving So Damn Slowly)The Mirage: “We’re Doing AI” vs. Actually Deploying AIDec 24, 2025Dec 24, 2025Microsoft Fabric explicado de verdad: la guía que me habría gustado tener antes de diseñar…En los últimos años he trabajado con organizaciones que querían modernizar su plataforma de datos, integrar IA generativa o acelerar la…Dec 8, 2025Dec 8, 2025From Raw Data to Smart Insights: Using Microsoft Fabric AI Functions in Real PipelinesIntroductionAug 29, 2025Aug 29, 2025Antonio Soto169 followersHelping executives and tech leaders make sense of AI beyond the hype. Data & AI consultant | Microsoft AI MVP | Real-world stories from enterprise projects."
+    },
+    {
+        "extraction_id": "8aa93bca-e507-4a9c-865a-b1faab2494b0",
+        "extracted_at": "2026-03-06 17:41:01.555876",
+        "extracted_at_epoch": 1772818861,
+        "author_name": "Unable to parse",
+        "author_url": "https://medium.com/@adams-chang",
+        "num_followers": 0,
+        "short_bio": "avaScript and cookies to continu"
+    },
+    {
+        "extraction_id": "8aa93bca-e507-4a9c-865a-b1faab2494b0",
+        "extracted_at": "2026-03-06 17:41:01.555876",
+        "extracted_at_epoch": 1772818861,
+        "author_name": "LAXMINARAYANA LIKKI",
+        "author_url": "https://medium.com/@likkilaxminarayana",
+        "num_followers": 0,
+        "short_bio": "pen in appSign upSign inMedium LogoGet appWriteSearchSign upSign inLAXMINARAYANA LIKKIhe/him23 followersHomeListsAbout25. Slowly Changing Dimensions (SCD) in dbtA Practical Guide to Handling Changing Data in Modern Warehouses1d ago1d ago24. Building a Star Schema Using dbtA Practical Guide for Modern Analytics Engineering1d ago1d ago23. Dimensional Modeling with dbt (Facts & Dimensions)A Practical Guide for Modern Analytics Engineering2d ago2d ago22. dbt Naming Conventions (Models, Columns, Tests)A Practical Guide to Writing Clean, Scalable, and Enterprise-Ready dbt Projects2d ago2d ago21. Staging, Intermediate & Mart Layers in dbt — A Complete GuideIf you’re working with dbt (data build tool), understanding how to properly structure your transformation layers is one of the most…4d ago4d ago20. Common Beginner Mistakes in dbt (And How to Avoid Them)If you’re starting your journey with dbt (data build tool), you’re probably excited about transforming data using SQL, version control…4d ago4d ago19. dbt_project.yml Explained (Complete Guide for Analytics Engineers)When working with dbt (data build tool), most developers focus on writing SQL models and YAML documentation.6d ago6d ago18. dbt profiles.yml Explained (Complete Guide)When working with dbt (data build tool), most people focus on models, YAML files, and tests.6d ago6d ago17. dbt YAML Files ExplainedWhen people start working with dbt (data build tool), they usually focus on SQL models.Feb 25Feb 2516. dbt Lineage Graph ExplainedIn modern analytics engineering, understanding where data comes from and where it flows is just as important as writing transformation…Feb 24Feb 24LAXMINARAYANA LIKKIhe/him23 followersBI consultant with 14+ years of experience. Writing about dbt, Looker, analytics engineering, and best practices for building reliable data models.HelpStatusAboutCareersPressBlogPrivacyRulesTermsText to speec"
+    },
+    {
+        "extraction_id": "8aa93bca-e507-4a9c-865a-b1faab2494b0",
+        "extracted_at": "2026-03-06 17:41:01.555876",
+        "extracted_at_epoch": 1772818861,
+        "author_name": "Unable to parse",
+        "author_url": "https://medium.com/@reliabledataengineering",
+        "num_followers": 0,
+        "short_bio": "avaScript and cookies to continu"
+    },
+    {
+        "extraction_id": "8aa93bca-e507-4a9c-865a-b1faab2494b0",
+        "extracted_at": "2026-03-06 17:41:01.555876",
+        "extracted_at_epoch": 1772818861,
+        "author_name": "Unable to parse",
+        "author_url": "https://medium.com/@nsalexamy",
+        "num_followers": 0,
+        "short_bio": "avaScript and cookies to continu"
+    },
+    {
+        "extraction_id": "8aa93bca-e507-4a9c-865a-b1faab2494b0",
+        "extracted_at": "2026-03-06 17:41:01.555876",
+        "extracted_at_epoch": 1772818861,
+        "author_name": "Unable to parse",
+        "author_url": "https://medium.com/@maahmudur",
+        "num_followers": 0,
+        "short_bio": "avaScript and cookies to continu"
+    },
+    {
+        "extraction_id": "8aa93bca-e507-4a9c-865a-b1faab2494b0",
+        "extracted_at": "2026-03-06 17:41:01.555876",
+        "extracted_at_epoch": 1772818861,
+        "author_name": "Unable to parse",
+        "author_url": "https://medium.com/@ayanmulaskar",
+        "num_followers": 0,
+        "short_bio": "avaScript and cookies to continu"
+    },
+    {
+        "extraction_id": "8aa93bca-e507-4a9c-865a-b1faab2494b0",
+        "extracted_at": "2026-03-06 17:41:01.555876",
+        "extracted_at_epoch": 1772818861,
+        "author_name": "Unable to parse",
+        "author_url": "https://medium.com/@balajij8",
+        "num_followers": 0,
+        "short_bio": "avaScript and cookies to continu"
+    },
+    {
+        "extraction_id": "8aa93bca-e507-4a9c-865a-b1faab2494b0",
+        "extracted_at": "2026-03-06 17:41:01.555876",
+        "extracted_at_epoch": 1772818861,
+        "author_name": "Unable to parse",
+        "author_url": "https://medium.com/@derek.witt-databricks",
+        "num_followers": 0,
+        "short_bio": "avaScript and cookies to continu"
+    },
+    {
+        "extraction_id": "8aa93bca-e507-4a9c-865a-b1faab2494b0",
+        "extracted_at": "2026-03-06 17:41:01.555876",
+        "extracted_at_epoch": 1772818861,
+        "author_name": "Shano Maria Selvan",
+        "author_url": "https://medium.com/@shano.selvan",
+        "num_followers": 0,
+        "short_bio": "pen in appSign upSign inMedium LogoGet appWriteSearchSign upSign inShano Maria Selvan2 followersHomeAboutPinnedStep-by-Step Guide: Cook up Local MWAA Apache Airflow with DockerPre-requisite: Uhm! Find and learn as you go…!4d ago4d agoPinnedPredicting Audience Ratings: A Journey Through Rotten Tomatoes DataIntroductionDec 21, 2024Dec 21, 2024Essential Tools for AI Engineers: From Development to Deployment!Amazon SageMaker —  A comprehensive ML service offered by AWS to build, train, and deploy machine learning models at scale. SageMaker…Jul 21, 2024Jul 21, 2024Neuralink: The Next Frontier in Human and Machine SynergyImagine a world where you don’t need eyes to see or limbs to act. This isn’t science fiction — it’s the potential future that Neuralink…Jul 12, 2024Jul 12, 2024𝐌𝐞𝐭𝐚 𝐀𝐈 𝐇𝐢𝐭𝐬 𝐖𝐡𝐚𝐭𝐬𝐀𝐩𝐩: 𝐄𝐦𝐛𝐫𝐚𝐜𝐞 𝐭𝐡𝐞 𝐅𝐮𝐭𝐮𝐫𝐞 𝐨𝐟 𝐌𝐞𝐬𝐬𝐚𝐠𝐢𝐧𝐠!Hey peeps! Have you updated your WhatsApp yet? Well, you better do it ’cause MetaAI is here and it’s pretty rad. \n \nRemember the good ol’…Jun 29, 2024Jun 29, 2024Have you checked out the latest hype💥𝐋𝐮𝐦𝐚’𝐬 𝐃𝐫𝐞𝐚𝐦 𝐌𝐚𝐜𝐡𝐢𝐧𝐞? 🚀Here’s the scoop: You get 30 free trials per account, but due to the buzz, it’s now limited to 5 trials/day. 📉 \nLink…Jun 29, 2024Jun 29, 2024🧠 𝐄𝐱𝐩𝐥𝐚𝐢𝐧(𝐚𝐛𝐥𝐞) 𝐀𝐈❓⏳ 𝘘𝘶𝘪𝘤𝘬 𝘳𝘦𝘢𝘥 — 𝘑𝘶𝘴𝘵 1 𝘮𝘪𝘯𝘶𝘵𝘦!Jun 29, 2024Jun 29, 2024Shano Maria Selvan2 followersSoftware Engineer @SumUp | Grad @UOM | Ex-Cisco | linkedin.com/in/shano-maria-selvan"
+    },
+    {
+        "extraction_id": "8aa93bca-e507-4a9c-865a-b1faab2494b0",
+        "extracted_at": "2026-03-06 17:41:01.555876",
+        "extracted_at_epoch": 1772818861,
+        "author_name": "Gabriel Souza",
+        "author_url": "https://medium.com/@gabrielms12.gms",
+        "num_followers": 0,
+        "short_bio": "pen in appSign upSign inMedium LogoGet appWriteSearchSign upSign inGabriel SouzaHomeListsAboutBoas práticas para um código SQL limpoQue o SQL é uma ótima linguagem para modelagem e tratamento de dados todo mundo já sabe. Mas, assim como em qualquer outra linguagem…2d ago2d agoSe um dia vamos morrer, qual é o sentido da vida?As duas verdadesNov 9, 2024Nov 9, 2024Gabriel SouzaDe maneira nada frequente, escrevo sobre coisas da vida, boas práticas relacionadas à uso de tecnologias na carreira, e por aí vai. Seja bem-vindo :)HelpStatusAboutCareersPressBlogPrivacyRulesTermsText to speec"
+    },
+    {
+        "extraction_id": "8aa93bca-e507-4a9c-865a-b1faab2494b0",
+        "extracted_at": "2026-03-06 17:41:01.555876",
+        "extracted_at_epoch": 1772818861,
+        "author_name": "Yuji",
+        "author_url": "https://medium.com/@yujikawa",
+        "num_followers": 0,
+        "short_bio": "pen in appSign upSign inMedium LogoGet appWriteSearchSign upSign inYuji1 followerHomeListsAboutI Built a Data Modeling Tool With AI: ModscapeIntroduction8h ago8h agoEnhancing Python Performance with Rust: A PyO3 ApproachIntroduce to PyO3Feb 22, 2025Feb 22, 2025How to Get Table and Dashboard Lineage in TableauHave you ever used Tableau metadata api? It’s so useful api to understand about tables in Tableau.Feb 19, 2025Feb 19, 2025Yuji1 followerI've been working as an analytics engineer in Japan. I'd like to share my knowledge and improve my English skills. Feel free to follow me."
+    },
+    {
+        "extraction_id": "8aa93bca-e507-4a9c-865a-b1faab2494b0",
+        "extracted_at": "2026-03-06 17:41:01.555876",
+        "extracted_at_epoch": 1772818861,
+        "author_name": "sumit saraswat",
+        "author_url": "https://medium.com/@sumitxsaraswat",
+        "num_followers": 0,
+        "short_bio": "pen in appSign upSign inMedium LogoGet appWriteSearchSign upSign insumit saraswat6 followersHomeAboutConnecting Claude Agent Teams to Databricks for Automated Data AnalysisI was curious to see how Claude Agent Team actually works, especially with enterprise data secured in Databricks Unity Catalog (UC). To…21h ago21h agoDatabricks Assistant AI Skills: So You Can Go to Lunch and Actually Stay ThereNo coding required. Just plain English and simply takes 10 minutes.Feb 12Feb 12🎙️ Talk2Bricks, The 10-Second Path from Voice to Data MagicThis was a fun little weekend project I put together!\n We all dream of simply talking to our data, but in reality it often means typing…Nov 3, 2025Nov 3, 2025From Weeks to Hours: Unity Catalog, MCP & AI Agents Redefine Real-Time ComplianceTL;DR: Tired of compliance work dragging on for weeks? Now it can be done in just hours. With Unity Catalog keeping your data clean and…Sep 12, 2025Sep 12, 2025Transform External APIs Into Smart Agents Weapons with Databricks UCTL;DRAug 11, 2025Aug 11, 2025I Used AI in Databricks to Turn NASA PDFs into Fun Space FactsHow I used Databricks and LLMs to turn dense NASA PDFs into shareable space trivia — and how this same approach can help banks and…Jul 6, 2025Jul 6, 2025Adaptive Query Execution: Great Out of the Box, Even Better With a Little TuningAQE Makes Spark Queries Smarter — Here’s How to Make Them Even Faster.If you’ve run a complex join in Spark and watched your cluster sweat…Jun 7, 2025Jun 7, 2025sumit saraswat6 followersThese are my own thoughts, fueled by coffee and curiosity, not official Databricks statements. Don’t blame the Lakehouse if I go off the rails.HelpStatusAboutCareersPressBlogPrivacyRulesTermsText to speec"
+    },
+    {
+        "extraction_id": "8aa93bca-e507-4a9c-865a-b1faab2494b0",
+        "extracted_at": "2026-03-06 17:41:01.555876",
+        "extracted_at_epoch": 1772818861,
+        "author_name": "Unable to parse",
+        "author_url": "https://medium.com/@csr.clave",
+        "num_followers": 0,
+        "short_bio": "avaScript and cookies to continu"
+    },
+    {
+        "extraction_id": "8aa93bca-e507-4a9c-865a-b1faab2494b0",
+        "extracted_at": "2026-03-06 17:41:01.555876",
+        "extracted_at_epoch": 1772818861,
+        "author_name": "Kirti Sinha",
+        "author_url": "https://medium.com/@kirti.sinha16",
+        "num_followers": 0,
+        "short_bio": "pen in appSign upSign inMedium LogoGet appWriteSearchSign upSign inKirti Sinha3 followersHomeAboutHow I Reduced 120+ Analyst Review Hours Using Governed Analytics (Without Black-Box AI)Analysts weren’t slow because they lacked insights. They were slow because they were stuck reviewing the same numbers, every cycle. This is…2d ago2d agoDesigning Audit-Ready Analytics: A Practical Governance Guide for Financial Data AnalystsA practical breakdown of data governance, quality checks, lineage, and cloud controls that make financial analytics defensible in audits…3d ago3d agoWhere BI Ends and Governed AI-Assisted Analytics Begins in Regulated EnterprisesFor more than a decade, Business Intelligence has been the backbone of enterprise decision-making. But dashboards alone no longer drive…3d ago3d agoGaming on a Budget: Discover the two Best Amazon Games Under $20 for 2023Are you a passionate gamer in search of exciting and captivating games that won’t put a dent in your wallet? Look no further! In this blog…Aug 3, 2023Aug 3, 2023Kirti Sinha3 followers"
+    },
+    {
+        "extraction_id": "8aa93bca-e507-4a9c-865a-b1faab2494b0",
+        "extracted_at": "2026-03-06 17:41:01.555876",
+        "extracted_at_epoch": 1772818861,
+        "author_name": "Brahma, The Data Engineer.",
+        "author_url": "https://medium.com/@BrahmaWritings",
+        "num_followers": 0,
+        "short_bio": "pen in appSign upSign inMedium LogoGet appWriteSearchSign upSign inMastodonBrahma, The Data Engineer.832 followersHomeBooksAboutFeatured BookSee all (3)The Data Engineer’s Pocketbook: FastTrack to Expertise: Your Compact Guide with Industry-Relevant Use CasesThe Data Engineer’s Pocketbook: FastTrack to Expertise: Your Compact Guide with Industry-Relevant Use CasesWhether you're just starting out or looking to improve your existing skills, this book will be your guide to success.2024·Brahma Reddy KatamBrahma Reddy KatamStoriesPinnedPublished inILLUMINATIONTry This Simple Daily Routine for a Healthy Life.Balancing Data and Well-Being: A Data Engineer’s Daily Routine.Oct 18, 2023A response icon5Oct 18, 2023A response icon5PinnedPublished inReaders HopeA small message for future engineers: I’m not inspiring :-)Learn, Apply, Move Forward: The Engineer’s PathOct 29, 2023A response icon3Oct 29, 2023A response icon3Published inDatabricks CommunityUnderstanding the Lakehouse Architecture in Databricks.Lakehouse Architecture in Databricks Explained.3h ago3h agoPublished inDatabricks CommunityWelcome to All Things DatabricksHello and welcome.1d ago1d agoPublished inDatabricks CommunityData Contracts in Databricks Prevent Broken Pipelines.Schema Discipline in Databricks Platforms.1d ago1d agoPublished inDatabricks CommunityFeature Engineering in Databricks Drives AI Success.Building Reliable Features in Databricks.2d ago2d agoPublished inDatabricks CommunityBefore AI in Databricks, Fix Your Data.Designing AI-ready Databricks platforms.4d ago4d agoPublished inDatabricks CommunityData Discovery in Databricks Done Right.Making curated data easy to find and trust.6d ago6d agoPublished inDatabricks CommunityDo You Really Need Streaming in Databricks?Designing smarter data pipelines in Databricks.Feb 25Feb 25Published inDatabricks CommunityBuilding Trusted Data in Databricks.Engineering trust inside the Lakehouse.Feb 22Feb 22Brahma, The Data Engineer.832 followersBook Author100K views. Data Engineer, USA. Having deep interest in DATA, AI & ML, entrepreneurship, and the vibrant world of startups. Databricks Community Champion.HelpStatusAboutCareersPressBlogPrivacyRulesTermsText to speec"
+    },
+    {
+        "extraction_id": "8aa93bca-e507-4a9c-865a-b1faab2494b0",
+        "extracted_at": "2026-03-06 17:41:01.555876",
+        "extracted_at_epoch": 1772818861,
+        "author_name": "Unable to parse",
+        "author_url": "https://medium.com/@hiteshkhk0105",
+        "num_followers": 0,
+        "short_bio": "avaScript and cookies to continu"
+    },
+    {
+        "extraction_id": "8aa93bca-e507-4a9c-865a-b1faab2494b0",
+        "extracted_at": "2026-03-06 17:41:01.555876",
+        "extracted_at_epoch": 1772818861,
+        "author_name": "Abhishek Pratap Singh",
+        "author_url": "https://medium.com/@appsingh248",
+        "num_followers": 0,
+        "short_bio": "pen in appSign upSign inMedium LogoGet appWriteSearchSign upSign inAbhishek Pratap SinghHomeAboutHow To Build a Reliable Data Orchestration PlatformReal-World Orchestration Patterns with Airflow, Azkaban, and AWS Step Functions3h ago3h agoOptimizing React Components for Conditional Rendering of Dynamic and Static Components Using ModalsIn this article, we’ll explore a common scenario in React applications where conditional rendering is used to display dynamic and static…Mar 29, 2024Mar 29, 2024Abhishek Pratap SinghSoftware DeveloperHelpStatusAboutCareersPressBlogPrivacyRulesTermsText to speec"
+    },
+    {
+        "extraction_id": "8aa93bca-e507-4a9c-865a-b1faab2494b0",
+        "extracted_at": "2026-03-06 17:41:01.555876",
+        "extracted_at_epoch": 1772818861,
+        "author_name": "Nikulsinh Rajput",
+        "author_url": "https://medium.com/@hadiyolworld007",
+        "num_followers": 0,
+        "short_bio": "pen in appSign upSign inMedium LogoGet appWriteSearchSign upSign inNikulsinh Rajput4.5K followersHomeListsAbout10 action-audit patterns that make agents defensible in reviewsHow to make every agent decision explainable, replayable, and review-proof — without slowing teams down or drowning in logs.3h ago3h ago7 myths about “more data” (and why models get worse)More examples can help — until they quietly poison your labels, distort your distribution, and teach your model the wrong lesson. Here’s…13h ago13h ago12 Node streaming mistakes that turn uploads into memory bombsLearn the exact failure modes that make Node “uploads” quietly buffer gigabytes — and the streaming patterns that keep memory flat under…1d ago1d ago9 off-policy RL failures that happen before you notice instabilityLearn the early warning signs — so you can catch off-policy RL drift, critic collapse, and replay-buffer poison before training explodes.6d ago6d agoStop doing naive batching: 7 reasons your inference p95 explodesLearn why “bigger batches = faster” backfires in production, and how to batch in ways that protect tail latency without wasting GPU.6d ago6d ago11 symptoms your TypeScript types are hiding runtime contract driftLearn how to spot “it compiles” lies — before a quiet contract change turns into broken checkouts, missing data, or weird production-only…Feb 27Feb 2710 production lessons from a model that “passed” but still harmedA practical checklist for catching real-world failure modes that offline evals miss — before your “green” model ships harm at scale.Feb 27Feb 2713 ML monitoring mistakes that make drift look like seasonalityLearn how to tell “normal cycles” from silent model decay, so you catch real drift early, debug faster, and stop shipping bad predictions.Feb 26Feb 268 safety guardrail myths (and what actually reduces harm)A practical, production-minded guide to building AI guardrails that hold up under jailbreaks, prompt injection, and real user behavior —…Feb 26Feb 267 tool-call backpressure rules for agents that don’t DDoS youHow to keep LLM agents fast, polite, and production-safe when they can “click buttons” at machine speed.Feb 25Feb 25Nikulsinh Rajput4.5K followersI passionate about staying upto date with latest technologies. I writing informative posts about new and emerging technologies to share my knowledge with others"
+    },
+    {
+        "extraction_id": "8aa93bca-e507-4a9c-865a-b1faab2494b0",
+        "extracted_at": "2026-03-06 17:41:01.555876",
+        "extracted_at_epoch": 1772818861,
+        "author_name": "Victor Horlenko",
+        "author_url": "https://medium.com/@vicgorlenko",
+        "num_followers": 0,
+        "short_bio": "pen in appSign upSign inMedium LogoGet appWriteSearchSign upSign inVictor Horlenkohe/himHomeAboutMeaning on Sand: Why Semantics Collapse Without StructureOver the last few years, the semantic layer has returned to the center of analytics conversations. For many organizations, it feels like…4d ago4d agoVictor Horlenkohe/himAI | Analytics | AI Agents | Copilots | Driving AI-Powered Products https://www.linkedin.com/in/victor-horlenko-0738b3b0/"
+    },
+    {
+        "extraction_id": "8aa93bca-e507-4a9c-865a-b1faab2494b0",
+        "extracted_at": "2026-03-06 17:41:01.555876",
+        "extracted_at_epoch": 1772818861,
+        "author_name": "Hugo Lu",
+        "author_url": "https://medium.com/@hugolu87",
+        "num_followers": 0,
+        "short_bio": "pen in appSign upSign inMedium LogoGet appWriteSearchSign upSign inHugo Lu11.2K followersHomeAboutPinnedBuilding the Ultimate Orchestrator for dbt CloudHow to fit dbt Cloud and Orchestra into your data architectureSep 1, 2025Sep 1, 2025PinnedOrchestra Revolutions: Announcing the Orchestra MetaEngineRedesigning broken metadata frameworks and dynamic DAGsSep 8, 2025Sep 8, 2025PinnedPlatform-Mesh, Hub and Spoke, and Centralised | 3 Types of data teamWhy understanding Team Structure is critical for Data and AIMar 11, 2025Mar 11, 20255 ways to spawn Multi Agents with the Claude SDK | Orchestra swarmsThe easiest way to spawn armies of sub-agents8h ago8h agoHow to run Claude Agents in Production using the Claude SDKImportant considerations for Agentic Automation with Claude1d ago1d agoHow to Orchestrate workflows on EKS | EKS Support in OrchestraThe easiest way to trigger and monitor workflows on AWS EKS3d ago3d agoOpenClaw vs. Claude Code in 5 minsWhat I learned from spending 10 hours on Claude Code and OpenClaw4d agoA response icon14d agoA response icon15 BigQuery Partitioning Tips you need to know aboutHow to reduce cost and optimise pipelines like a Cloud Admin ProFeb 19A response icon1Feb 19A response icon1Run the Claude API in your Data Pipelines | Claude and OrchestraHow to move on from desktop governance to controlled AIFeb 18Feb 18HIPAA Compliant Data OrchestrationWhy Healthcare Companies should separate orchestration from execution | Orchestra is HIPAA ComplaintFeb 5Feb 5Hugo Lu11.2K followersFriend of MediumI write on Data engineering and the coolest data stuff. CEO@ Orchestra, the best-in-class control plane for Data and AI. https://app.getorchestra.io/signup"
+    },
+    {
+        "extraction_id": "8aa93bca-e507-4a9c-865a-b1faab2494b0",
+        "extracted_at": "2026-03-06 17:41:01.555876",
+        "extracted_at_epoch": 1772818861,
+        "author_name": "Parade",
+        "author_url": "https://medium.com/@parade4940",
+        "num_followers": 0,
+        "short_bio": "pen in appSign upSign inMedium LogoGet appWriteSearchSign upSign inParade18 followersHomeAboutYou Don’t Need a Data Science Degree to Build a Predictive Model AnymoreAI just removed the last excuse.7h ago7h agoMedallion Architecture: What It Will Teach You the Hard Way Unless Someone Tells You FirstThree boxes. Two arrows. Bronze, silver, gold. Left to right.4d ago4d agoThe Gap Between Thinking and Sending Is Killing Your Work – Here’s How to Close ItBefore you write a single word, you’re choosing a font.Feb 25Feb 25The Smart SMB Stack: Why Emerging Markets Should Skip New Windows LaptopsRefurbished hardware + Linux MINT are not a compromise. They are a strategic advantage for small business and the planet.Feb 24Feb 24THE SECRET SAUCE NOBODY IN AI IS TALKING ABOUTYou do not need LangChain. You do not need a cloud server. You do not need to spend a cent. You just need Thonny.Feb 23Feb 23Your Laptop Isn’t Old. Windows Just Got Heavy.How Linux Mint is breathing new life into decade-old hardware – and why it’s the antidote to AI bloat.Feb 23Feb 23AI will do the work. But can you still Think?The three human skills that decide whether AI effort goes anywhere worth going.Feb 22Feb 22You Don’t Own Your Email. You’re Just Borrowing It.On my last day at a job I’d had for six years, IT disabled my work account at 5pm. Not the next day. Not at the end of the week. That…Feb 21Feb 21Your Excel Skills Are Not the Asset You Think They AreThere is a version of you that spent years mastering VLOOKUP. That learned nested IF statements the hard way. That built a pivot table so…Feb 21Feb 21I Can Walk Into Any Client Site and Start Delivering Insights the Same Day. Here’s Exactly How.Or the journey on how I became an AI Data AnalystFeb 20Feb 20Parade18 followers"
+    },
+    {
+        "extraction_id": "8aa93bca-e507-4a9c-865a-b1faab2494b0",
+        "extracted_at": "2026-03-06 17:41:01.555876",
+        "extracted_at_epoch": 1772818861,
+        "author_name": "Unable to parse",
+        "author_url": "https://medium.com/@marcoOesterlin",
+        "num_followers": 0,
+        "short_bio": "avaScript and cookies to continu"
+    },
+    {
+        "extraction_id": "8aa93bca-e507-4a9c-865a-b1faab2494b0",
+        "extracted_at": "2026-03-06 17:41:01.555876",
+        "extracted_at_epoch": 1772818861,
+        "author_name": "Jaco van der Laan",
+        "author_url": "https://medium.com/@jacovanderlaan",
+        "num_followers": 0,
+        "short_bio": "pen in appSign upSign inMedium LogoGet appWriteSearchSign upSign inJaco van der Laanhe/him890 followersHomeAboutPinnedPublished inTowards Data EngineeringHow I’m Using Claude Code to Build a Metadata-Driven Data Engineering FrameworkA deep dive into Claude-first architecture, MCP integration, and practical tips for AI-assisted developmentFeb 22Feb 22PinnedWhat a Real Migration Changed About MDDEWhat a Real Migration Changed About MDDEFeb 1Feb 1PinnedPublished inTowards Data Engineering💍 The Marriage of Modeling Structure and MovementWhere Data Modelers and Data Engineers Finally Say “I Do”Nov 2, 2025Nov 2, 2025Optimizing Your IDE for Metadata-Driven Data EngineeringHow to configure VSCode and AI assistants for productive MDDE development17h ago17h agoPublished inTowards Data EngineeringSidecar Tables: Companion Metadata for Data AssetsHow auxiliary tables extend your data model without polluting your core schema1d ago1d agoCTE Regression Testing: Find SQL Migration Root Causes 10x FasterA systematic approach to comparing SQL queries that pinpoints exactly which CTE and which rows differ1d agoA response icon11d agoA response icon1Building with Claude Code: Part 3 — Practical TipsLessons from building 6,634 tests with AI assistance2d ago2d agoBuilding with Claude Code: Part 2 — MCP IntegrationTools, not just chat: How Model Context Protocol transforms AI assistance2d ago2d agoBuilding with Claude Code: Part 1 — The Claude-First ArchitectureHow documentation-as-code transforms AI from assistant to collaborator3d ago3d agoPublished inTowards Data EngineeringQuality Metadata Exchange: Trust Through TransparencyHow sidecar schemas and quality attestations enable data consumers to make informed trust decisions3d ago3d agoJaco van der Laanhe/him890 followersExploring Business & Logical Data Modeling. Writing on Clarity, Structure & Creative Approaches to Data Architecture."
+    },
+    {
+        "extraction_id": "8aa93bca-e507-4a9c-865a-b1faab2494b0",
+        "extracted_at": "2026-03-06 17:41:01.555876",
+        "extracted_at_epoch": 1772818861,
+        "author_name": "Unable to parse",
+        "author_url": "https://medium.com/@jickpatel611",
+        "num_followers": 0,
+        "short_bio": "avaScript and cookies to continu"
+    },
+    {
+        "extraction_id": "8aa93bca-e507-4a9c-865a-b1faab2494b0",
+        "extracted_at": "2026-03-06 17:41:01.555876",
+        "extracted_at_epoch": 1772818861,
+        "author_name": "Rui Carvalho",
+        "author_url": "https://medium.com/@ruimigueltcarvalho",
+        "num_followers": 0,
+        "short_bio": "pen in appSign upSign inMedium LogoGet appWriteSearchSign upSign inRui Carvalho1.2K followersHomeListsAboutPublished inThe Data TherapyBuilt an Automated Expiration Monitor for Databricks Tokens and Azure Key VaultHow to make sure a pipeline never fails due to token and secrets expiration alerts via Microsoft Teams8h agoA response icon18h agoA response icon1I Work a 9–5, Build Content and Study. Here Is How I Stay BalancedA simple system built over the years that helps me do more without paying the price.Feb 27Feb 27Published inThe Data TherapyHow Autoloader Solved My File Ingestion Problem in DatabricksHow Databricks Autoloader handles incremental file ingestion from cloud storage to Delta Lake without custom tracking codeFeb 19Feb 19Published inThe Data TherapyHow I Replaced 180 Lines of Schema Definition With a Single VARIANT ColumnUsing Databricks VARIANT to handle unpredictable JSON from external APIs without constant schema maintenanceFeb 11Feb 11Published inThe Data TherapyHow Databricks Fixed the Materialized View Cost ProblemNew REFRESH POLICY and EXPLAIN commands give you control over incremental refresh behavior before surprise full table scans drain your…Feb 2Feb 2Published inThe Data TherapyDatabricks Materialized Views and why the Enzyme engine mattersA deep technical guide to Databricks SQL materialized views, Enzyme refresh logic, incremental vs full recompute, performance trade offs…Jan 5Jan 5Published inThe Data TherapySpark Join Types ExplainedLearn Broadcast Hash Join, Sort Merge Join and Shuffle Hash Join with a simple mental model and real explain patterns to debug slow Spark…Dec 26, 2025Dec 26, 2025Published inThe Data TherapyFixing Databricks Deployments When Python Modules Get Turned Into NotebooksRefactoring a Databricks deployment pipeline when Python modules started to breakDec 23, 2025Dec 23, 2025Published inLearning SQLDatabricks SQL INSERT REPLACE Explained—REPLACE USING and REPLACE ON for Delta TablesA cleaner way to refresh partitions and fix keys without writing long MERGE statementsDec 16, 2025Dec 16, 2025Published inThe Data TherapyCustomizable SharePoint connector in Databricks is a feature I wanted for a long timeHow to ingest SharePoint files into Delta tables using Unity Catalog, PySpark batch reads, read_files, Auto Loader and COPY INTODec 16, 2025Dec 16, 2025Rui Carvalho1.2K followersData Engineer @IWG Data Enthusiast SQL, Spark, Databricks, Fabric"
+    },
+    {
+        "extraction_id": "8aa93bca-e507-4a9c-865a-b1faab2494b0",
+        "extracted_at": "2026-03-06 17:41:01.555876",
+        "extracted_at_epoch": 1772818861,
+        "author_name": "Unable to parse",
+        "author_url": "https://medium.com/@gthesheep",
+        "num_followers": 0,
+        "short_bio": "avaScript and cookies to continu"
+    },
+    {
+        "extraction_id": "8aa93bca-e507-4a9c-865a-b1faab2494b0",
+        "extracted_at": "2026-03-06 17:41:01.555876",
+        "extracted_at_epoch": 1772818861,
+        "author_name": "Filip Kosowski",
+        "author_url": "https://medium.com/@FKosa",
+        "num_followers": 0,
+        "short_bio": "pen in appSign upSign inMedium LogoGet appWriteSearchSign upSign inFilip Kosowski22 followersHomeListsAboutTerraform & Infrastructure as Code: The Complete FoundationThis article answers the questions listed below:1d ago1d agoApache Kafka: A Complete IntroductionUnderstand what Kafka is, why it exists, and the core patterns used in modern data platforms.4d ago4d agoEvent-Driven Architecture: Kafka FundamentalsLet me guide you through Event-Driven Architecture (EDA) systematically, building from foundational concepts to practical applications…Feb 23Feb 23Apache Airflow Fundamentals: A Practical IntroductionWhat Airflow is, why it exists, and how it orchestrates your pipelines?Feb 18Feb 18Hadoop Fundamentals: HDFS, YARN, and MapReduceWhy it was created in the first place and how it fits into modern architecture.Feb 11Feb 11Apache Spark Shuffle Deep Dive: How It Actually Works Under the HoodShuffle Deep DiveFeb 4Feb 4Apache Spark Shuffle: What It Is, Why We Need It, and What Triggers It?What is Shuffle?Feb 3Feb 3Spark Fundamentals: A Deep Dive into Executors, Tasks, and the DriverApache Spark’s distributed architecture can seem complex at first, but understanding its core components is essential for writing efficient…Feb 2Feb 2Docker Development Done Right: Stop Rebuilding Your ContainersDeveloping Your Code in Docker ContainersJan 18Jan 18Understanding Spark’s Complex Data Types: A Practical Guide to StructType and JSON ParsingFor data engineers who want to master nested data structures in Apache Spark.Jan 16Jan 16Filip Kosowski22 followersHelpStatusAboutCareersPressBlogPrivacyRulesTermsText to speec"
+    },
+    {
+        "extraction_id": "8aa93bca-e507-4a9c-865a-b1faab2494b0",
+        "extracted_at": "2026-03-06 17:41:01.555876",
+        "extracted_at_epoch": 1772818861,
+        "author_name": "Abeng Zoa",
+        "author_url": "https://medium.com/@jabengzoa",
+        "num_followers": 0,
+        "short_bio": "pen in appSign upSign inMedium LogoGet appWriteSearchSign upSign inAbeng Zoa15 followersHomeAboutPinnedCRÉATION D’UNE ARCHITECTURE DÉCISIONNELLE DATA Warehouse : Guide pratique d’un projet d’ingénierie…Un Data Warehouse (entrepôt de données) est une base de données relationnelle qui est hébergée sur un serveur dans un Data Center ou dans…Dec 29, 2023Dec 29, 2023How I Built a Production ELT Pipeline on 17 Million Real Estate Transactions — Airflow, dbt…A data engineer’s honest story: building a full ELT pipeline with Apache Airflow, dbt, Snowflake, and Power BI on French housing data — the…2d ago2d agoArchitecture Data Warehouse Moderne : Pipeline ETL Scalable avec Airflow, PostgreSQL & Docker…Construction d’un ETL Haute Performance : Airflow + PostgreSQL sous Docker avec CI/CDApr 16, 2025Apr 16, 2025Freelance Data Analyst & Engineer : Architecture Data avec Azure (Spark, Synapse, Power BI…IntroductionFeb 20, 2025Feb 20, 2025GUIDE PRATIQUE DATA ENGINEERING : PYTHON POWER BI GITHUB AZURE CLOUDGénéralement, un projet Data Engineering vise à construire ou à optimiser une infrastructure de données afin de rendre les données…May 15, 2024May 15, 2024GUIDE PRATIQUE D’UN PROJET DATA ENGINEERING AVEC MICROSOFT AZURE CLOUDMicrosoft Azure est une plate forme robuste pour la réalisation de plusieurs projets par exemple ceux liés aux données. De l’ingestion à…Apr 29, 2024Apr 29, 2024MISE EN PLACE D’UN PROJET DATA ENGINEERINGUn projet de Data Engineering vise à mettre en place l’infrastructure et les processus nécessaires pour permettre à une organisation de…Apr 17, 2024Apr 17, 2024Abeng Zoa15 followersData Engineer passionné, expert en BI, Python, Azure, SQL et ETL, je conçois des solutions data-driven pour une prise de décision optimisée."
+    },
+    {
+        "extraction_id": "8aa93bca-e507-4a9c-865a-b1faab2494b0",
+        "extracted_at": "2026-03-06 17:41:01.555876",
+        "extracted_at_epoch": 1772818861,
+        "author_name": "Patharjay",
+        "author_url": "https://medium.com/@patharjay20",
+        "num_followers": 0,
+        "short_bio": "pen in appSign upSign inMedium LogoGet appWriteSearchSign upSign inPatharjayHomeAboutBank Statement Extraction and Automation: A Beginner’s GuideGetting Started: Bank Statement Processing ExplainedFeb 19Feb 19Apache Airflow Explained: A Simple Guide for Data EngineersIntroductionFeb 18Feb 18Schema Evolution in Data Pipelines: A Practical Guide to Managing Change Without Breaking…Modern data systems are constantly evolving, and with that evolution comes an unavoidable reality — schemas rarely stay the same for long…Feb 12Feb 12PatharjayHelpStatusAboutCareersPressBlogPrivacyRulesTermsText to speec"
+    }
+]

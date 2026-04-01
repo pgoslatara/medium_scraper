@@ -25,16 +25,6 @@ models:
       - dbt_expectations.expect_table_column_count_to_be_between:
           min_value: 1
 
-  - name: dim_github_action_usage
-    columns:
-      - name: workflow_run_id
-        tests:
-          - not_null
-          - unique
-    tests:
-      - dbt_expectations.expect_table_column_count_to_be_between:
-          min_value: 1
-
   - name: dim_medium_authors
     columns:
       - name: author_url
