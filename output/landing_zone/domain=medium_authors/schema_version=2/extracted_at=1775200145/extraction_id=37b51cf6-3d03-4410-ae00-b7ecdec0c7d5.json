@@ -1,0 +1,623 @@
+[
+    {
+        "extraction_id": "37b51cf6-3d03-4410-ae00-b7ecdec0c7d5",
+        "extracted_at": "2026-04-03 07:09:05.121841",
+        "extracted_at_epoch": 1775200145,
+        "author_name": "Pratik",
+        "author_url": "https://medium.com/@dataanalytics3020",
+        "num_followers": 0,
+        "short_bio": "pen in appSign upSign inMedium LogoGet appWriteSearchSign upSign inPratik3 followersHomeAboutAirflow Studio: Build, Visualize & Deploy Apache Airflow DAGs Without the HeadacheMar 14A response icon1Mar 14A response icon1Pratik3 followersI’m a passionate Data Engineer dedicated to transforming raw data into meaningful insights. Skilled in Python, Apache Spark, Airflow, SQL.HelpStatusAboutCareersPressBlogPrivacyRulesTermsText to speec"
+    },
+    {
+        "extraction_id": "37b51cf6-3d03-4410-ae00-b7ecdec0c7d5",
+        "extracted_at": "2026-04-03 07:09:05.121841",
+        "extracted_at_epoch": 1775200145,
+        "author_name": "Unable to parse",
+        "author_url": "https://medium.com/@deepchatterjee910",
+        "num_followers": 0,
+        "short_bio": "avaScript and cookies to continu"
+    },
+    {
+        "extraction_id": "37b51cf6-3d03-4410-ae00-b7ecdec0c7d5",
+        "extracted_at": "2026-04-03 07:09:05.121841",
+        "extracted_at_epoch": 1775200145,
+        "author_name": "Nidhin",
+        "author_url": "https://medium.com/@nidhin.dwh",
+        "num_followers": 0,
+        "short_bio": "pen in appSign upSign inMedium LogoGet appWriteSearchSign upSign inNidhin7 followersHomeAboutTop 10 Databricks Spark\nPerformance Optimization\nTechniquesPart 3 — The Finishing Techniques & Complete Decision Framework. Techniques #9–10 plus the complete 8-step framework to diagnose and fix…23h ago23h agoTop 10 Databricks Spark\nPerformance Optimization\nTechniquesPart 2 — The Medium-Impact Techniques. Techniques #5–8: Memory sizing, partition control, smart caching, and the skew problem that silently…2d ago2d agoTop 10 Databricks Spark\nPerformance Optimization\nTechniquesPart 1 — The High-Impact Techniques. #1–4: The fixes that deliver 10×–50× improvements. Most engineers never apply them correctly.2d ago2d agoWhy Your Spark Job Is Slow:Understanding Shuffles and Performance3d ago3d agoHow Spark DAG Execution\nWorks in DatabricksFrom the moment you press Run to the moment results appear — a complete walkthrough of how Spark turns your code into a graph, optimises…3d ago3d agoDriver vs Executor\nWhat Really Happens\nWhen You Run a Spark JobYou submit a notebook cell. Something extraordinary happens inside the cluster. This is the complete story — from the moment you press Run…4d ago4d agoThe Engine Behind\nModern Data IntelligenceA definitive guide to Apache Spark’s architecture — from in-memory execution to cluster orchestration — explained with the clarity it…5d ago5d agoThe ADF–Databricks Integration Pattern: A Technical Breakdown for Teams Using BothUnderstanding exactly how ADF reaches into a Databricks workspace — and what each field in the linked service JSON actually does — is the…6d ago6d agoWhy Databricks Took So Long to Support Stored ProceduresThe architectural reason most engineers miss — and what it means for enterprise data platforms in financial servicesMar 26Mar 26Databricks Just Entered the Security Market — And It Could Change Everything for Banks Like HSBCLakewatch launched. Here’s what it means, why it matters, what financial services architects — and anyone building on Databricks — should…Mar 25Mar 25Nidhin7 followersPlace to learn Data Lakehouse Architecture & Databricks Solution Architecture"
+    },
+    {
+        "extraction_id": "37b51cf6-3d03-4410-ae00-b7ecdec0c7d5",
+        "extracted_at": "2026-04-03 07:09:05.121841",
+        "extracted_at_epoch": 1775200145,
+        "author_name": "Jaco van der Laan",
+        "author_url": "https://medium.com/@jacovanderlaan",
+        "num_followers": 0,
+        "short_bio": "pen in appSign upSign inMedium LogoGet appWriteSearchSign upSign inJaco van der Laanhe/him949 followersHomeAboutPinnedPublished inTowards Data EngineeringHow I’m Using Claude Code to Build a Metadata-Driven Data Engineering FrameworkA deep dive into Claude-first architecture, MCP integration, and practical tips for AI-assisted developmentFeb 22Feb 22PinnedWhat a Real Migration Changed About MDDEWhat a Real Migration Changed About MDDEFeb 1Feb 1PinnedPublished inTowards Data Engineering💍 The Marriage of Modeling Structure and MovementWhere Data Modelers and Data Engineers Finally Say “I Do”Nov 2, 2025Nov 2, 2025Your Skills Are Your IP: Protecting Consultant Knowledge In The AI AgeWhen AI skills and rules encode your expertise, who owns the brains?3d ago3d agoMDDE Adoption Framework: Minimal Metadata for Your Use CaseDon’t Deploy the Whole Platform. Deploy Exactly What You Need.3d ago3d agoPublished inTowards Data EngineeringThe End Of Offshore Data Teams: Why AI Changes EverythingIn the age of AI, small high-performing local teams beat large distributed ones4d ago4d agoMDDE Transformation Methodology: From Reactive to Proactive Data EngineeringA complete framework for adopting metadata-driven development with measurable outcomes5d ago5d agoPublished inTowards Data EngineeringAI Makes Good Data Engineers Great — A Step-by-Step MethodologyA practical roadmap to transform your data engineering team through strategic AI adoption5d ago5d agoPublished inTowards Data EngineeringStop Generating SQL On-the-Fly: Why Your ETL Pipelines Need Static, Reviewable CodeDynamic SQL generation seems clever until production breaks and nobody can tell you what query actually ran.6d ago6d agoMulti-Tenant Airflow DAG Generation: Implementation Deep DivePart 2: Code patterns, Databricks integration, and production recipesMar 24Mar 24Jaco van der Laanhe/him949 followersExploring Business & Logical Data Modeling. Writing on Clarity, Structure & Creative Approaches to Data Architecture."
+    },
+    {
+        "extraction_id": "37b51cf6-3d03-4410-ae00-b7ecdec0c7d5",
+        "extracted_at": "2026-04-03 07:09:05.121841",
+        "extracted_at_epoch": 1775200145,
+        "author_name": "sittiphon",
+        "author_url": "https://medium.com/@j4lgnp",
+        "num_followers": 0,
+        "short_bio": "pen in appSign upSign inMedium LogoGet appWriteSearchSign upSign insittiphon4 followersHomeAboutDateTimeSensor VS DeltaTimeSensor | What Should I Use?IntroductionMar 13Mar 13sittiphon4 followersHelpStatusAboutCareersPressBlogPrivacyRulesTermsText to speec"
+    },
+    {
+        "extraction_id": "37b51cf6-3d03-4410-ae00-b7ecdec0c7d5",
+        "extracted_at": "2026-04-03 07:09:05.121841",
+        "extracted_at_epoch": 1775200145,
+        "author_name": "Punya Saryar",
+        "author_url": "https://medium.com/@sinhapunya",
+        "num_followers": 0,
+        "short_bio": "pen in appSign upSign inMedium LogoGet appWriteSearchSign upSign inPunya Saryar2 followersHomeAboutPublished inTowards AIdbt Explained Simply — and How AI Makes It Even EasierYou keep hearing about dbt. Your data team uses it. Job listings mention it. Here’s what it actually is, why engineers love it, and how AI…4h ago4h agoHow AI writes SQL for you — and when not to trust itChatGPT, Copilot, and Gemini can write SQL fast. Sometimes it’s brilliant. Sometimes it’s subtly wrong in ways that will ruin your numbers…6d ago6d agoBuild a data pipeline with Python — using an AI coding assistantA hands-on walkthrough where we build a real pipeline step by step — and use Copilot or ChatGPT to scaffold the boring parts. Spoiler: AI…Mar 21Mar 21What is a data pipeline? (And how AI is already changing it)A plain-English guide to one of the most fundamental concepts in data engineering — plus a look at how AI tools are quietly automating the…Mar 14Mar 14Punya Saryar2 followersData engineer writing weekly about building pipelines and using AI tools in practiceHelpStatusAboutCareersPressBlogPrivacyRulesTermsText to speec"
+    },
+    {
+        "extraction_id": "37b51cf6-3d03-4410-ae00-b7ecdec0c7d5",
+        "extracted_at": "2026-04-03 07:09:05.121841",
+        "extracted_at_epoch": 1775200145,
+        "author_name": "Prenil Sewmohan",
+        "author_url": "https://medium.com/@prenil.s",
+        "num_followers": 0,
+        "short_bio": "pen in appSign upSign inMedium LogoGet appWriteSearchSign upSign inPrenil Sewmohan3 followersHomeAboutThe Environment Knows What the Agent Doesn’t: VibeOps for Analytics EngineersAdapting VibeOps for analytics engineering — adapting the environment for successful agentic workflowsMar 16A response icon1Mar 16A response icon1Prenil Sewmohan3 followersHelpStatusAboutCareersPressBlogPrivacyRulesTermsText to speec"
+    },
+    {
+        "extraction_id": "37b51cf6-3d03-4410-ae00-b7ecdec0c7d5",
+        "extracted_at": "2026-04-03 07:09:05.121841",
+        "extracted_at_epoch": 1775200145,
+        "author_name": "Chandrika Pathakamuri",
+        "author_url": "https://medium.com/@pchandrika0613",
+        "num_followers": 0,
+        "short_bio": "pen in appSign upSign inMedium LogoGet appWriteSearchSign upSign inChandrika Pathakamurishe/herHomeAboutBuilding Gold Tables for Analytics: How Analytics Engineers Prepare Data for ReportingA practical guide to transforming structured data into business-ready datasets\nEven after data is cleaned and structured, it is often still…5d ago5d agoUnderstanding Medallion Architecture in Modern Data PlatformsHow analytics engineers structure data from raw ingestion to business-ready datasetsMar 22Mar 22How Analytics Engineers Fit Into the Modern Data StackUnderstanding the role that bridges raw data and business insightsMar 17Mar 17What Does an Analytics Engineer Actually Do?A practical breakdown of the role, responsibilities, and why it’s becoming essential in modern data teams.Feb 27Feb 27Chandrika Pathakamurishe/herAnalytics Engineer building scalable ETL systems in Microsoft Fabric. Writing about medallion architecture and modern data platforms.HelpStatusAboutCareersPressBlogPrivacyRulesTermsText to speec"
+    },
+    {
+        "extraction_id": "37b51cf6-3d03-4410-ae00-b7ecdec0c7d5",
+        "extracted_at": "2026-04-03 07:09:05.121841",
+        "extracted_at_epoch": 1775200145,
+        "author_name": "Unable to parse",
+        "author_url": "https://medium.com/@think-data",
+        "num_followers": 0,
+        "short_bio": "avaScript and cookies to continu"
+    },
+    {
+        "extraction_id": "37b51cf6-3d03-4410-ae00-b7ecdec0c7d5",
+        "extracted_at": "2026-04-03 07:09:05.121841",
+        "extracted_at_epoch": 1775200145,
+        "author_name": "Denis Dubeau",
+        "author_url": "https://medium.com/@denis.dubeau_99915",
+        "num_followers": 0,
+        "short_bio": "pen in appSign upSign inMedium LogoGet appWriteSearchSign upSign inDenis Dubeau2 followersHomeAboutConnecting your on-prem Data Estate to Databricks Without Replicationco-authored with Ryan Garrett, Director of Product and Solutions Marketing for MinIO12h ago12h agoDenis Dubeau2 followersHelpStatusAboutCareersPressBlogPrivacyRulesTermsText to speec"
+    },
+    {
+        "extraction_id": "37b51cf6-3d03-4410-ae00-b7ecdec0c7d5",
+        "extracted_at": "2026-04-03 07:09:05.121841",
+        "extracted_at_epoch": 1775200145,
+        "author_name": "Unable to parse",
+        "author_url": "https://medium.com/@bhanu.tcs",
+        "num_followers": 0,
+        "short_bio": "avaScript and cookies to continu"
+    },
+    {
+        "extraction_id": "37b51cf6-3d03-4410-ae00-b7ecdec0c7d5",
+        "extracted_at": "2026-04-03 07:09:05.121841",
+        "extracted_at_epoch": 1775200145,
+        "author_name": "Unable to parse",
+        "author_url": "https://medium.com/@cenkayyaman1",
+        "num_followers": 0,
+        "short_bio": "avaScript and cookies to continu"
+    },
+    {
+        "extraction_id": "37b51cf6-3d03-4410-ae00-b7ecdec0c7d5",
+        "extracted_at": "2026-04-03 07:09:05.121841",
+        "extracted_at_epoch": 1775200145,
+        "author_name": "GoChameleons",
+        "author_url": "https://medium.com/@mehsan.eng",
+        "num_followers": 0,
+        "short_bio": "pen in appSign upSign inMedium LogoGet appWriteSearchSign upSign in5 followersHomeAboutPinnedGoogle Secure AI Framework (SAIF) is built upon six core elementsThe Google Secure AI Framework (SAIF) is built upon six core elements designed to provide a consistent industry standard for building and…Mar 17Mar 17PinnedBeyond the Hype: 5 Crucial Lessons for Securing the $4.4 Trillion AI FrontierBeyond the Hype: 5 Crucial Lessons for Securing the $4.4 Trillion AI FrontierMar 17Mar 17EP02 : Mach 16 and Dark Airports: Inside the Intelligence Transformation Rewriting the Rules of…Mach 16 and Dark Airports: Inside the Intelligence Transformation Rewriting the Rules of Flight9h ago9h agoMach 16 and Dark Airports: Inside the Intelligence Transformation Rewriting the Rules of Flight1. The Hook: A World Moving at the Speed of Intelligence1d ago1d agoThe Invisible Giants: 5 Surprising Truths About the Engines Powering Your Travels1. Introduction: The View from the Window Seat3d ago3d agoStrategic Revenue Framework: Engineering Resilience in Modern AviationStrategic Revenue Framework: Engineering Resilience in Modern Aviation3d ago3d agoFrom Shuffles to Snapshots: 5 Game-Changing Tactics for High-Performance Data EngineeringMost “stalled” data pipelines aren’t a failure of hardware; they are a failure of architectural foresight. Every senior engineer has…4d ago4d agoBeyond the Warehouse: 6 Game-Changing Snowflake Features You Didn’t Know You Needed1. Introduction: The Hidden Power of Your Data Stack In the high-pressure environment of enterprise data, most architects are so buried…Mar 26Mar 26The Architectural of Snowflake Data WarehousingSnowflake’s architecture is a unique hybrid of shared-disk and shared-nothing designs natively built for the cloud. Its core innovation is…Mar 26Mar 26Why Spark Was Hard (Until It Wasn’t): 5 Secrets to Mastering Big DataIn the early days of big data, we lived in the “MapReduce Era,” and frankly, it was agonizing. The frustration wasn’t just about the…Mar 25Mar 25GoChameleons5 followersData engineering as a passion involves managing & transforming data; it's about finding joy in building processes that enable actionable insights & innovationHelpStatusAboutCareersPressBlogPrivacyRulesTermsText to speec"
+    },
+    {
+        "extraction_id": "37b51cf6-3d03-4410-ae00-b7ecdec0c7d5",
+        "extracted_at": "2026-04-03 07:09:05.121841",
+        "extracted_at_epoch": 1775200145,
+        "author_name": "Huanjie Guo",
+        "author_url": "https://medium.com/@huanjie.guo_37052",
+        "num_followers": 0,
+        "short_bio": "pen in appSign upSign inMedium LogoGet appWriteSearchSign upSign inHuanjie Guo1 followerHomeListsAboutA Dive Deep for Apache AirflowA deep dive into the design principles, patterns, and architectural decisions that make Airflow a scalable workflow orchestration platformMar 25Mar 25Huanjie Guo1 follower"
+    },
+    {
+        "extraction_id": "37b51cf6-3d03-4410-ae00-b7ecdec0c7d5",
+        "extracted_at": "2026-04-03 07:09:05.121841",
+        "extracted_at_epoch": 1775200145,
+        "author_name": "Unable to parse",
+        "author_url": "https://medium.com/@infinitylearnings1201",
+        "num_followers": 0,
+        "short_bio": "avaScript and cookies to continu"
+    },
+    {
+        "extraction_id": "37b51cf6-3d03-4410-ae00-b7ecdec0c7d5",
+        "extracted_at": "2026-04-03 07:09:05.121841",
+        "extracted_at_epoch": 1775200145,
+        "author_name": "Abhirup Pal",
+        "author_url": "https://medium.com/@abhirup.pal93",
+        "num_followers": 0,
+        "short_bio": "pen in appSign upSign inMedium LogoGet appWriteSearchSign upSign inAbhirup Palhe/him44 followersHomeAboutI Tried Fine-Tuning LLMs on Both Snowflake Cortex and Databricks.A practitioner’s honest breakdown of what “AI fine-tuning” actually means on each platform — tested, documented, and slightly caffeinated.1d ago1d agoLiquid Clustering + Deletion Vectors — what they actually are, how they work under the hood, and…Most data engineers still reach for Hive partitioning + ZORDER by default. That’s an outdated mental model. But before you enable Liquid…Mar 23Mar 23The Mathematics of Semantic Similarity Search: From Vector Arithmetic to High-Dimensional ManifoldsA deep technical exploration of how embedding models encode meaning as geometry — with worked examples, distance metric comparisons, and…Mar 23Mar 23🚀 Databricks AI Dev Kit in Claude Code (Desktop + CLI + VS Code) — The Complete Setup GuideI’ve been using the Databricks AI Dev Kit with Claude Code daily, and the setup tripped me up the first time. Here’s the exact step-by-step…Mar 15A response icon1Mar 15A response icon1🐘 Databricks Lakebase Postgres vs Snowflake Postgres — The OLTP War Has Officially BegunBoth platforms went GA in February 2026 with managed Postgres offerings. Both acquired specialist companies to get here. But…Mar 15Mar 15Databricks Genie Code: The Rise of Autonomous Data Engineering (Hands-On with a Lakeflow Medallion…Data engineering has traditionally required a mix of pipeline orchestration, debugging, governance navigation, and infrastructure…Mar 13Mar 13⭐ Databricks now supports Certification for Notebooks.Until now, Certification was limited to tables and dashboards in Unity Catalog. Extending it to notebooks is a meaningful governance…Mar 8Mar 8Snowpipe vs. COPY INTO: Choosing the Right Snowflake Ingestion Path ❄️When loading data into Snowflake, one of the most common architectural decisions is between Snowpipe and the standard COPY INTO command…Mar 8Mar 8Snowflake Materialized Views vs. Dynamic Tables in Snowflake: Which one should you use? ❄️If you are building data pipelines or optimizing query performance in Snowflake, you’ve likely had to choose between these two powerful…Mar 3Mar 3Databricks Zerobus vs. Snowflake Snowpipe Streaming HP: A Deep-Dive ComparisonI was exploring the Zerobus and Snowpipe Streaming (High Performance) features and below tried to put some points and my thoughts 💭.Mar 3Mar 3Abhirup Palhe/him44 followersData Architect"
+    },
+    {
+        "extraction_id": "37b51cf6-3d03-4410-ae00-b7ecdec0c7d5",
+        "extracted_at": "2026-04-03 07:09:05.121841",
+        "extracted_at_epoch": 1775200145,
+        "author_name": "Unable to parse",
+        "author_url": "https://medium.com/@22.gautam",
+        "num_followers": 0,
+        "short_bio": "avaScript and cookies to continu"
+    },
+    {
+        "extraction_id": "37b51cf6-3d03-4410-ae00-b7ecdec0c7d5",
+        "extracted_at": "2026-04-03 07:09:05.121841",
+        "extracted_at_epoch": 1775200145,
+        "author_name": "Unable to parse",
+        "author_url": "https://medium.com/@nbdeeptha",
+        "num_followers": 0,
+        "short_bio": "avaScript and cookies to continu"
+    },
+    {
+        "extraction_id": "37b51cf6-3d03-4410-ae00-b7ecdec0c7d5",
+        "extracted_at": "2026-04-03 07:09:05.121841",
+        "extracted_at_epoch": 1775200145,
+        "author_name": "Praneeth v",
+        "author_url": "https://medium.com/@praneeth.v10",
+        "num_followers": 0,
+        "short_bio": "pen in appSign upSign inMedium LogoGet appWriteSearchSign upSign inPraneeth vHomeAboutHow I Processed 10M+ Healthcare Claims Daily Using AWS and DatabricksIn one of my recent projects, I worked on a healthcare data platform where we had to process over 10 million claims every single day. The…1d ago1d agoPraneeth vHelpStatusAboutCareersPressBlogPrivacyRulesTermsText to speec"
+    },
+    {
+        "extraction_id": "37b51cf6-3d03-4410-ae00-b7ecdec0c7d5",
+        "extracted_at": "2026-04-03 07:09:05.121841",
+        "extracted_at_epoch": 1775200145,
+        "author_name": "gerardotoboso",
+        "author_url": "https://medium.com/@gerardotoboso1909",
+        "num_followers": 0,
+        "short_bio": "pen in appSign upSign inMedium LogoGet appWriteSearchSign upSign ingerardotobosohe/him1 followerHomeListsAboutMastering SaaS Metrics: Modeling ARR Transitions with dbt and DuckDBWhy your revenue data is lying to you and how to build a professional-grade transition model.19h ago19h agoETC Code: The Only Design Principle That Matters in the Age of AIWhy “Easy to Change” is the ultimate North Star for Data Engineers navigating shifting business landscapesMar 26Mar 26Stop Waiting for P-Values: A Bayesian Guide to Faster A/B TestingThe Business Paradox of Frequentist TestingMar 23Mar 23A Broken Window: Why Software Entropy is the Silent Killer of Data PipelinesWe are obsessed with AI and new frameworks, but we are forgetting the fundamental psychology of high-quality engineeringMar 23Mar 23The Bayesian Guardrail: Calibrating Confidence in RAG SystemsBeyond Fixed ThresholdsMar 19Mar 19The Architecture of Silence: Why Your RAG System Needs to Learn to Say “I Don’t Know”The Hallucination TrapMar 16Mar 16Why AI Isn’t the Silver Bullet for Data Engineering: Lessons from 1986In 2026, we are faster than ever at writing code. But are we any better at building systems? Reflecting on Fred Brooks’ “No Silver Bullet”…Mar 9Mar 9From \\\\xa0230,821 to a Clean Float: A Deep Dive into Scraping and Structuring Booking.com Data“Few things as challenging as structuring scraped web data.” — A comment I received after sharing this project on LinkedIn. And they were…Mar 4A response icon1Mar 4A response icon1Why Data Engineers must understand CausalityMoving beyond “uptime” and “pipelines” — why the future of Data Engineering lies in Bayesian reasoning and the science of “Why.”Feb 24Feb 24Beyond Linters: Automating Code Reviews with Kullback-Leibler DivergenceHow I used Information Theory to scale a Bayesian Causal Inference track and why this is the future of AI-driven development.Feb 21Feb 21gerardotobosohe/him1 followerBridging the gap between robust data infrastructure and statistical rigor."
+    },
+    {
+        "extraction_id": "37b51cf6-3d03-4410-ae00-b7ecdec0c7d5",
+        "extracted_at": "2026-04-03 07:09:05.121841",
+        "extracted_at_epoch": 1775200145,
+        "author_name": "Unable to parse",
+        "author_url": "https://medium.com/@elanthirayan",
+        "num_followers": 0,
+        "short_bio": "avaScript and cookies to continu"
+    },
+    {
+        "extraction_id": "37b51cf6-3d03-4410-ae00-b7ecdec0c7d5",
+        "extracted_at": "2026-04-03 07:09:05.121841",
+        "extracted_at_epoch": 1775200145,
+        "author_name": "Unable to parse",
+        "author_url": "https://medium.com/@filipedbrito94",
+        "num_followers": 0,
+        "short_bio": "avaScript and cookies to continu"
+    },
+    {
+        "extraction_id": "37b51cf6-3d03-4410-ae00-b7ecdec0c7d5",
+        "extracted_at": "2026-04-03 07:09:05.121841",
+        "extracted_at_epoch": 1775200145,
+        "author_name": "ECE DALPOLAT",
+        "author_url": "https://medium.com/@ecedlplt9850",
+        "num_followers": 0,
+        "short_bio": "pen in appSign upSign inMedium LogoGet appWriteSearchSign upSign inECE DALPOLAT50 followersHomeAboutdbt ile Row Level Security: Naive’den Native’e Bir EvrimBir önceki dbt ile alakalı yazıda dbt’nin temel yapısını ele almıştım: staging/intermediate/marts katmanları, materialization tipleri…4d ago4d agodbt Nedir ve Neden Production’da Kullanıyoruz?“Ham veriden analitik tablolara uzanan yol”Mar 22Mar 22LLM-as-a-Judge: Yapay Zekânın Yapay Zekâyı DeğerlendirmesiNeden LLM-as-a-Judge’a İhtiyaç Duyuyoruz?Sep 16, 2025Sep 16, 2025Prompt Monitoring ve Yönetimi: GenAI Projelerinizin KalbiAI teknolojisinin hızla yaygınlaştığı günümüzde, özellikle büyük dil modelleri (LLM) ile çalışan geliştiriciler ve veri bilimciler için…Sep 1, 2025Sep 1, 2025“USD Kaç TL?” Sorusuna Kodla Cevap: MCP ile Gerçek Zamanlı Döviz BotuClaude Desktop’a sordum: “Euro ne kadar?”Aug 4, 2025Aug 4, 2025Ben Çok Şanslıyım Ki Kendimin Farkındayım…Hayat, seni hayalini bile kurmadığın ya da istemediğin noktalara getirdiğinde başlar aslında.Jul 21, 2025A response icon1Jul 21, 2025A response icon1MCP (Model Controller Protocol) Nedir? LLM ve Araçlar Arasında Bağlantının USB-C Adaptörü“Yapay zeka projelerinde entegrasyon karmaşasını çözen yeni nesil açık protokol: MCP.”Jun 17, 2025Jun 17, 2025TIME SERIESBu yazı benimde detaylarını yeni keşfettiğim bir konu olan time series başlığını detaylarıyla size açıkladığım bir çalışma olacak.Dec 25, 2024Dec 25, 2024DeepLabCut: Hayvan Davranışlarını İncelemek için Güçlü Bir AraçHayvanların hareketlerini izlemek ve analiz etmek, biyoloji, sinir bilimi ve davranış bilimleri gibi alanlarda büyük öneme sahiptir. Ancak…Nov 15, 2024Nov 15, 2024Makine Öğrenmesinde Karar Ağaçları ve Ensemble YöntemleriMakine öğrenmesi, günümüzde hayatımızın her alanına dokunan birçok uygulamaya temel oluşturuyor. Sınıflandırma ve regresyon gibi…Nov 4, 2024Nov 4, 2024ECE DALPOLAT50 followers"
+    },
+    {
+        "extraction_id": "37b51cf6-3d03-4410-ae00-b7ecdec0c7d5",
+        "extracted_at": "2026-04-03 07:09:05.121841",
+        "extracted_at_epoch": 1775200145,
+        "author_name": "Olena Harkusha",
+        "author_url": "https://medium.com/@elena.garkusha1206",
+        "num_followers": 0,
+        "short_bio": "pen in appSign upSign inMedium LogoGet appWriteSearchSign upSign inOlena Harkusha1 followerHomeAboutPinnedPublished inTowards Data EngineeringFrom 5 Hours to 3 Minutes: What It Actually Took to Get GA4 into DatabricksI want to be upfront about what this post is. It’s not a tidy how-to guide. It’s a retrospective of a migration that hit bottlenecks I…18h ago18h agoOlena Harkusha1 followerSenior Data Engineer @ SoftServe"
+    },
+    {
+        "extraction_id": "37b51cf6-3d03-4410-ae00-b7ecdec0c7d5",
+        "extracted_at": "2026-04-03 07:09:05.121841",
+        "extracted_at_epoch": 1775200145,
+        "author_name": "Unable to parse",
+        "author_url": "https://medium.com/@vignan.v",
+        "num_followers": 0,
+        "short_bio": "avaScript and cookies to continu"
+    },
+    {
+        "extraction_id": "37b51cf6-3d03-4410-ae00-b7ecdec0c7d5",
+        "extracted_at": "2026-04-03 07:09:05.121841",
+        "extracted_at_epoch": 1775200145,
+        "author_name": "Unable to parse",
+        "author_url": "https://medium.com/@gonzaloglr23",
+        "num_followers": 0,
+        "short_bio": "avaScript and cookies to continu"
+    },
+    {
+        "extraction_id": "37b51cf6-3d03-4410-ae00-b7ecdec0c7d5",
+        "extracted_at": "2026-04-03 07:09:05.121841",
+        "extracted_at_epoch": 1775200145,
+        "author_name": "Unable to parse",
+        "author_url": "https://medium.com/@cssoyoung67",
+        "num_followers": 0,
+        "short_bio": "avaScript and cookies to continu"
+    },
+    {
+        "extraction_id": "37b51cf6-3d03-4410-ae00-b7ecdec0c7d5",
+        "extracted_at": "2026-04-03 07:09:05.121841",
+        "extracted_at_epoch": 1775200145,
+        "author_name": "Unable to parse",
+        "author_url": "https://medium.com/@databrickster",
+        "num_followers": 0,
+        "short_bio": "avaScript and cookies to continu"
+    },
+    {
+        "extraction_id": "37b51cf6-3d03-4410-ae00-b7ecdec0c7d5",
+        "extracted_at": "2026-04-03 07:09:05.121841",
+        "extracted_at_epoch": 1775200145,
+        "author_name": "Unable to parse",
+        "author_url": "https://medium.com/@cralle",
+        "num_followers": 0,
+        "short_bio": "avaScript and cookies to continu"
+    },
+    {
+        "extraction_id": "37b51cf6-3d03-4410-ae00-b7ecdec0c7d5",
+        "extracted_at": "2026-04-03 07:09:05.121841",
+        "extracted_at_epoch": 1775200145,
+        "author_name": "Taibat Abowaba",
+        "author_url": "https://medium.com/@adedola",
+        "num_followers": 0,
+        "short_bio": "pen in appSign upSign inMedium LogoGet appWriteSearchSign upSign inTaibat Abowabashe/her21 followersHomeAboutORCHESTRATION — Apache Airflow 101As a newbie in data engineering, one term among many that came up in almost every conversation and in books I read was orchestration and…1d ago1d agoLinux — Beyond the command lines.Dec 13, 2025Dec 13, 2025Version control, Git, Github.Put a finger up if you’ve ever saved your project files as “Final”, “Final Final 1”, or even “Officially Final” just because you kept…Oct 1, 2025A response icon1Oct 1, 2025A response icon1Pandas Codebase.“To write better code, read more code.”Jul 2, 2025Jul 2, 2025Common Table Expression (CTE) & Recursive CTE.If your search for understanding CTE and recursive CTE landed you here, welcome!.May 1, 2025May 1, 202550 Days of SQL.How a Random Moment Sparked a 50-Day Challenge….Apr 14, 2025Apr 14, 2025Understanding ALL, ALLSELECTED & ALLEXCEPT in DAXThere was a time when I struggled to understand ALL, ALLSELECTED, and ALLEXCEPT in DAX. If you’re in the same boat, this article is for…Mar 12, 2025Mar 12, 2025Data Granularity.Recently, I was working on a dataset and kept wondering why it wasn’t detailed enough. It struck me that if the dataset were more detailed…Jan 11, 2025Jan 11, 2025Bank of America Customer complaints: Trends and Resolutions.BACKGROUNDDec 9, 2024Dec 9, 2024Analytical Exploration of Fintech Transactions: Automation, Advanced Analytics and Fraud Detection.Case Study: A financial technology company aims to continually monitor user retention, engagements and activities to gain deeper insights…Nov 11, 2024Nov 11, 2024Taibat Abowabashe/her21 followers"
+    },
+    {
+        "extraction_id": "37b51cf6-3d03-4410-ae00-b7ecdec0c7d5",
+        "extracted_at": "2026-04-03 07:09:05.121841",
+        "extracted_at_epoch": 1775200145,
+        "author_name": "Unable to parse",
+        "author_url": "https://medium.com/@reliabledataengineering",
+        "num_followers": 0,
+        "short_bio": "avaScript and cookies to continu"
+    },
+    {
+        "extraction_id": "37b51cf6-3d03-4410-ae00-b7ecdec0c7d5",
+        "extracted_at": "2026-04-03 07:09:05.121841",
+        "extracted_at_epoch": 1775200145,
+        "author_name": "Hugo Lu",
+        "author_url": "https://medium.com/@hugolu87",
+        "num_followers": 0,
+        "short_bio": "pen in appSign upSign inMedium LogoGet appWriteSearchSign upSign inHugo Lu11.2K followersHomeAboutPinnedBuilding the Ultimate Orchestrator for dbt CloudHow to fit dbt Cloud and Orchestra into your data architectureSep 1, 2025Sep 1, 2025PinnedOrchestra Revolutions: Announcing the Orchestra MetaEngineRedesigning broken metadata frameworks and dynamic DAGsSep 8, 2025Sep 8, 2025PinnedPlatform-Mesh, Hub and Spoke, and Centralised | 3 Types of data teamWhy understanding Team Structure is critical for Data and AIMar 11, 2025Mar 11, 2025Databricks LakeWatch is not all as it SIEMsWhat Databricks LakeWatch means for the cybersecurity industry4d ago4d agoPublished inData Engineer ThingsEverything must be code in the age of AIAI radically changes how you can spend your time. Writing code is not one of themMar 20A response icon1Mar 20A response icon1Hightouch vs. Census (Fivetran) in 2026Your complete guide to Reverse ELT and Marketing Automation SoftwareMar 20Mar 20Building a Real-Time Data Platform | Orchestra’s Estuary IntegrationGet your data at the right-time with Orchestra and EstuaryMar 9Mar 95 ways to spawn Multi Agents with the Claude SDK | Orchestra swarmsThe easiest way to spawn armies of sub-agentsMar 6Mar 6How to run Claude Agents in Production using the Claude SDKImportant considerations for Agentic Automation with ClaudeMar 5Mar 5How to Orchestrate workflows on EKS | EKS Support in OrchestraThe easiest way to trigger and monitor workflows on AWS EKSMar 3Mar 3Hugo Lu11.2K followersFriend of MediumI write on Data engineering and the coolest data stuff. CEO@ Orchestra, the best-in-class control plane for Data and AI. https://app.getorchestra.io/signup"
+    },
+    {
+        "extraction_id": "37b51cf6-3d03-4410-ae00-b7ecdec0c7d5",
+        "extracted_at": "2026-04-03 07:09:05.121841",
+        "extracted_at_epoch": 1775200145,
+        "author_name": "Unable to parse",
+        "author_url": "https://medium.com/@kkarya1011",
+        "num_followers": 0,
+        "short_bio": "avaScript and cookies to continu"
+    },
+    {
+        "extraction_id": "37b51cf6-3d03-4410-ae00-b7ecdec0c7d5",
+        "extracted_at": "2026-04-03 07:09:05.121841",
+        "extracted_at_epoch": 1775200145,
+        "author_name": "Sendoa Moronta",
+        "author_url": "https://medium.com/@sendoamoronta",
+        "num_followers": 0,
+        "short_bio": "pen in appSign upSign inMedium LogoGet appWriteSearchSign upSign inSendoa Morontahe339 followersHomeListsAboutBeyond CSV and Parquet: Advanced Data Ingestion Patterns in Apache SparkWhat really happens when your data doesn’t fit the model and how senior engineers design around it1d ago1d agoThe Hidden Cost of Poor Data Modeling in Modern Analytics PlatformsHow suboptimal data models silently degrade pipelines, inflate costs, and break analytics at scale — and what advanced teams do…3d ago3d agoWhy Most AI Agents Are Useless: It’s a Data Architecture ProblemHow to serve low-latency, production-ready data to AI agents using feature stores, reverse ETL and serving-first architecturesMar 26Mar 26Designing a Modern Batch Data Platform: Layers, Responsibilities and Architectural Best PracticesA deep dive into how to structure scalable, resilient, and production-grade batch data platforms through clear separation of concerns.Mar 24Mar 24Published inArtificial Intelligence in Plain EnglishAI Agent Types and Communication Architectures: From Simple Systems to Multi-Agent Ecosystems…Designing scalable AI systems: agent types, multi-agent patterns, and communication architectures for real-world productionMar 19A response icon1Mar 19A response icon1Published inStackademicBuilding High-Performance Data Pipelines in Python with PolarsHow to use Polars with Parquet, columnar data lakes, and modern data workflows to build fast analytical pipelines.Mar 17Mar 17Understanding Polars Lazy Execution: Query Optimization Inside Python Data PipelinesHow Polars builds optimized query plans, performs predicate pushdown, and executes analytical workloads faster than pandas.Mar 16Mar 16Migrating from Pandas to Polars: A Practical Guide for Data EngineersLearn how to translate common pandas workflows into Polars while gaining massive performance improvements. (Polars series part 2)Mar 15Mar 15Why Polars Is Replacing Pandas for Modern Data WorkloadsA deep technical introduction to Polars, its architecture, and why data engineers are moving beyond pandas (Polars series part 1)Mar 14Mar 14Designing and Operating a Production-Grade Semantic Layer with dbt Core and MetricFlowMar 12Mar 12Sendoa Morontahe339 followersCloud Data Architect | Sharing practical insights on data engineering and architecture | "
+    },
+    {
+        "extraction_id": "37b51cf6-3d03-4410-ae00-b7ecdec0c7d5",
+        "extracted_at": "2026-04-03 07:09:05.121841",
+        "extracted_at_epoch": 1775200145,
+        "author_name": "Seonggil Jeong",
+        "author_url": "https://medium.com/@seonggil",
+        "num_followers": 0,
+        "short_bio": "pen in appSign upSign inMedium LogoGet appWriteSearchSign upSign inSeonggil Jeong318 followersHomeListsAboutPinnedPublished inLevel Up CodingFactoryPattern without if-elseUsing FactoryPattern without if-elseAug 19, 2022A response icon15Aug 19, 2022A response icon15Part1: Airflow, Spark 기반의 Data pipeline Architecture 설계 및 개발 환경 구축최근 Apache Airflow와 Apache Spark을 활용해서 GH Archive 데이터를 활용한 프로젝트를 진행했습니다.\n해당 프로젝트를 진행하면서 마주친 문제들에 대해 정리한 글 입니다.Mar 22Mar 22Apache Spark Deep Dive: MemoryJan 16Jan 16[TIL — 42일차] 데이터 엔지니어링: Hadoop, Spark (5)데이터 엔지니어링 데브코스 42일차 TIL | Apache Spark, SparkML, EMR, AWSJan 7Jan 7[TIL — 41일차] 데이터 엔지니어링: Hadoop, Spark (4)데이터 엔지니어링 데브코스 41일차 TIL | Apache Spark, Spark File Format, Execution Plan, Transformation & Action, Bucketing, PartitioningDec 24, 2025Dec 24, 2025[TIL — 40일차] 데이터 엔지니어링: Hadoop, Spark (3)데이터 엔지니어링 데브코스 40일차 TIL | Apache Spark, Spark SQL, Aggregation, JOIN, UDF, Hive MetaStoreDec 5, 2025Dec 5, 2025[TIL — 39일차] 데이터 엔지니어링: Hadoop, Spark (2)데이터 엔지니어링 데브코스 39일차 TIL | Apache Spark, Spark Partition, Data Skew, Spark RDD/DataFrameDec 3, 2025Dec 3, 2025Apache Spark Deep Dive: repartition & coalesceSpark를 통해 연산을 하다 보면 파티션의 수를 변경할 때 repartition과 coalesce를 사용할 수 있습니다. repartition, coalesce의 차이와 각각 어떻게 동작하는지 알아보겠습니다.Dec 2, 2025Dec 2, 2025Apache Spark Deep Dive: ShuffleSpark에서 Shuffle이 어떤 단계를 거쳐서 일어나고 각 단계마다 파티션 수가 어떻게 변하는지 알아보겠습니다.Dec 1, 2025Dec 1, 2025[TIL — 38일차] 데이터 엔지니어링: Hadoop, Spark (1)데이터 엔지니어링 데브코스 38일차 TIL | Hadoop, Apache Spark, MapReduce, BigData, HDFSDec 1, 2025Dec 1, 2025Seonggil Jeong318 followersSoftware Engineer | Spring Boot, SQL, Spark, Airflow | Java, Python, Scala, Kotlin"
+    },
+    {
+        "extraction_id": "37b51cf6-3d03-4410-ae00-b7ecdec0c7d5",
+        "extracted_at": "2026-04-03 07:09:05.121841",
+        "extracted_at_epoch": 1775200145,
+        "author_name": "Unable to parse",
+        "author_url": "https://medium.com/@DataDo",
+        "num_followers": 0,
+        "short_bio": "avaScript and cookies to continu"
+    },
+    {
+        "extraction_id": "37b51cf6-3d03-4410-ae00-b7ecdec0c7d5",
+        "extracted_at": "2026-04-03 07:09:05.121841",
+        "extracted_at_epoch": 1775200145,
+        "author_name": "Unable to parse",
+        "author_url": "https://medium.com/@sauravsinghsisodiya",
+        "num_followers": 0,
+        "short_bio": "avaScript and cookies to continu"
+    },
+    {
+        "extraction_id": "37b51cf6-3d03-4410-ae00-b7ecdec0c7d5",
+        "extracted_at": "2026-04-03 07:09:05.121841",
+        "extracted_at_epoch": 1775200145,
+        "author_name": "Tarik Berkovac",
+        "author_url": "https://medium.com/@tberkovac",
+        "num_followers": 0,
+        "short_bio": "pen in appSign upSign inMedium LogoGet appWriteSearchSign upSign inTarik Berkovac36 followersHomeListsAboutPinnedPublished inTowards DevIntroduction to DockerHave you had any problems with versions between Python or Node or .NET or any other programming language/framework that requires different…Apr 30, 2024Apr 30, 2024PinnedPublished inTowards DevModular Monolith Architecture PART IThe problem with typical 3-layer architecture is that we can get spaghetti code pretty fast. A more interesting method to develop software…Apr 25, 2024A response icon2Apr 25, 2024A response icon2Published inTowards DevGet started with Databricks - Lakeflow Connect - Part I How to create serverless and hybrid Azure Databricks workspaces. Interaction with Azure SQL through service principal, and Lakeflow Connect10h ago10h agoIntroduction to Assembly Instructions and RegistersWe are confident with programming in C#, Java, C++, and other high-level programming languages. But do we really know how it is executed on…Jul 27, 2024Jul 27, 2024Published inTowards DevSecure Your App: Authenticating with Microsoft Identity ProviderIf you have been following us for a while now, you will know that we are exploring free Azure services, one of which is App Service. It…Jun 4, 2024Jun 4, 2024Published inTowards DevAPI Gateways, Load Balancing, Caching and ProxiesSuppose we have multiple services. With the number of services rising it is becoming very difficult to configure all the URLs on the…May 23, 2024May 23, 2024Published inTowards DevCommunication between Microservices with Azure EventGridSuppose we have service A and service B which are deployed on separate machines. Services can communicate directly via HTTP by using…May 16, 2024May 16, 2024Published inTowards DevIntro to AI: Expert SystemsYou have a colleague who is great at work but is busy all the time. We could say he is an expert. It would be great if we could have one…May 9, 2024May 9, 2024Published inTowards DevPgAdmin 4 Docker container and Data Seeding EF CoreOne of the applications that lets us manage PostgreSQL is PgAdmin 4.May 5, 2024May 5, 2024Published inTowards DevDocker compose and Postgres containerWe will continue improving our process of dockerization of the MediumBooks.API project, which we introduced in the Modular Monolith…May 3, 2024May 3, 2024Tarik Berkovac36 followersSoftware engineer | C# | .NET | Docker | Azure"
+    },
+    {
+        "extraction_id": "37b51cf6-3d03-4410-ae00-b7ecdec0c7d5",
+        "extracted_at": "2026-04-03 07:09:05.121841",
+        "extracted_at_epoch": 1775200145,
+        "author_name": "Unable to parse",
+        "author_url": "https://medium.com/@saurabh.kr",
+        "num_followers": 0,
+        "short_bio": "avaScript and cookies to continu"
+    },
+    {
+        "extraction_id": "37b51cf6-3d03-4410-ae00-b7ecdec0c7d5",
+        "extracted_at": "2026-04-03 07:09:05.121841",
+        "extracted_at_epoch": 1775200145,
+        "author_name": "David Grunwald",
+        "author_url": "https://medium.com/@degrun8",
+        "num_followers": 0,
+        "short_bio": "pen in appSign upSign inMedium LogoGet appWriteSearchSign upSign inDavid Grunwald5 followersHomeListsAboutQuantum: A Different Category of SystemHumans are frightened most by what they don’t know. And they probably should be.3d ago3d agoMike Tyson’s Plan, Data Engineering and PolarsElite boxer Mike Tyson was once asked if he had a plan before a fight. He responded that indeed he had a plan.Mar 26Mar 26The Nvidia GTC Conference Thumbnail San Jose 2026Jensen Huang’s Keynote offered a tantalizing view of tomorrow happening today. In the keynote the Nvidia CEO covered the latest…Mar 23Mar 23Quantum Principles American Foreign Policy and the Battle at Marathon 490 BCEI recently finished reading an essay in Hillsdale’s Imprimis magazine which reached over 7 million readers. The author A. Wess Mitchell is…Mar 18Mar 18First Waver AI Deployment Report From the FieldMany fine articles are coming on the implements needed for the AI practitioner.Mar 16Mar 16The Dangers of “Frontier AI”: Lessons from “Giants in the Earth”At a recent Google training on multi-modal AI, the term “AI Frontier” was bandied about. I wondered if anyone really knew what a frontier…Mar 14Mar 14The New AI WhisperersThe other night while watching a presentation on multi-modal AI models using Google’s ADK in a crowded room without working electrical…Mar 12Mar 12The Backbone of Data Engineering: Directed Acyclic Graphs (DAGs)In the world of data engineering, managing complex workflows without a clear structure is a recipe for disaster. Enter the Directed Acyclic…Mar 8Mar 8Analyzing Wind on Venus with Python Audio: Soviet Venera 13 and 14 Program 1982In 1982, the Soviet Venera 14 lander touched down on the scorching surface of Venus, surviving for 57 minutes in temperatures of 465°C…Mar 1Mar 1David Grunwald5 followersPassionate about Python, AI, Databases, writing and translating, 30+ year Oracle veteran, teacher and author."
+    },
+    {
+        "extraction_id": "37b51cf6-3d03-4410-ae00-b7ecdec0c7d5",
+        "extracted_at": "2026-04-03 07:09:05.121841",
+        "extracted_at_epoch": 1775200145,
+        "author_name": "Unable to parse",
+        "author_url": "https://medium.com/@douglas.garcia_64102",
+        "num_followers": 0,
+        "short_bio": "avaScript and cookies to continu"
+    },
+    {
+        "extraction_id": "37b51cf6-3d03-4410-ae00-b7ecdec0c7d5",
+        "extracted_at": "2026-04-03 07:09:05.121841",
+        "extracted_at_epoch": 1775200145,
+        "author_name": "Unable to parse",
+        "author_url": "https://medium.com/@techynurse",
+        "num_followers": 0,
+        "short_bio": "avaScript and cookies to continu"
+    },
+    {
+        "extraction_id": "37b51cf6-3d03-4410-ae00-b7ecdec0c7d5",
+        "extracted_at": "2026-04-03 07:09:05.121841",
+        "extracted_at_epoch": 1775200145,
+        "author_name": "Preethi Kaluva",
+        "author_url": "https://medium.com/@kaluvapreethi",
+        "num_followers": 0,
+        "short_bio": "pen in appSign upSign inMedium LogoGet appWriteSearchSign upSign inPreethi KaluvaHomeAboutPublished inTowards Data EngineeringWhy I Stopped Manually Masking Data in Snowflake, and How I Used DBT to Automate it Forever“Imagine it’s 4:00 PM on a Friday. Your legal team just updated the PII policy for SSNs. You have 140 tables containing SSNs across three…4d agoA response icon14d agoA response icon1Ranking Window functions in SQL with Examples-Part 3This article will cover ranking window functions.Jul 3, 2025Jul 3, 2025Window functions in SQL with Examples-Part 2 (Running total)Ever wondered how running totals are calculated using window functions?Jun 29, 2025Jun 29, 2025Window functions in SQL with Examples -Part 1This article will help you in understanding the application of window functions.Jun 26, 2025Jun 26, 2025Preethi KaluvaHelpStatusAboutCareersPressBlogPrivacyRulesTermsText to speec"
+    },
+    {
+        "extraction_id": "37b51cf6-3d03-4410-ae00-b7ecdec0c7d5",
+        "extracted_at": "2026-04-03 07:09:05.121841",
+        "extracted_at_epoch": 1775200145,
+        "author_name": "Unable to parse",
+        "author_url": "https://medium.com/@SakshiChavan",
+        "num_followers": 0,
+        "short_bio": "avaScript and cookies to continu"
+    },
+    {
+        "extraction_id": "37b51cf6-3d03-4410-ae00-b7ecdec0c7d5",
+        "extracted_at": "2026-04-03 07:09:05.121841",
+        "extracted_at_epoch": 1775200145,
+        "author_name": "Unable to parse",
+        "author_url": "https://medium.com/@thescalableway",
+        "num_followers": 0,
+        "short_bio": "avaScript and cookies to continu"
+    },
+    {
+        "extraction_id": "37b51cf6-3d03-4410-ae00-b7ecdec0c7d5",
+        "extracted_at": "2026-04-03 07:09:05.121841",
+        "extracted_at_epoch": 1775200145,
+        "author_name": "Unable to parse",
+        "author_url": "https://medium.com/@nima.aref6",
+        "num_followers": 0,
+        "short_bio": "avaScript and cookies to continu"
+    },
+    {
+        "extraction_id": "37b51cf6-3d03-4410-ae00-b7ecdec0c7d5",
+        "extracted_at": "2026-04-03 07:09:05.121841",
+        "extracted_at_epoch": 1775200145,
+        "author_name": "Unable to parse",
+        "author_url": "https://medium.com/@bluebirz",
+        "num_followers": 0,
+        "short_bio": "avaScript and cookies to continu"
+    },
+    {
+        "extraction_id": "37b51cf6-3d03-4410-ae00-b7ecdec0c7d5",
+        "extracted_at": "2026-04-03 07:09:05.121841",
+        "extracted_at_epoch": 1775200145,
+        "author_name": "Unable to parse",
+        "author_url": "https://medium.com/@nsalexamy",
+        "num_followers": 0,
+        "short_bio": "avaScript and cookies to continu"
+    },
+    {
+        "extraction_id": "37b51cf6-3d03-4410-ae00-b7ecdec0c7d5",
+        "extracted_at": "2026-04-03 07:09:05.121841",
+        "extracted_at_epoch": 1775200145,
+        "author_name": "Unable to parse",
+        "author_url": "https://medium.com/@joshua-data",
+        "num_followers": 0,
+        "short_bio": "avaScript and cookies to continu"
+    },
+    {
+        "extraction_id": "37b51cf6-3d03-4410-ae00-b7ecdec0c7d5",
+        "extracted_at": "2026-04-03 07:09:05.121841",
+        "extracted_at_epoch": 1775200145,
+        "author_name": "Paul Houghton",
+        "author_url": "https://medium.com/@databard",
+        "num_followers": 0,
+        "short_bio": "pen in appSign upSign inMedium LogoGet appWriteSearchSign upSign inPaul Houghton4 followersHomeAboutPinnedPublished inDatabard Analytics2026: The Year of ContextThe data industry’s biggest bottleneck has changed, and why context now decides who pulls ahead.Jan 20Jan 20Published inDatabard AnalyticsWhy OSI Reframes Semantic Work as a ContractIf you have ever watched the same metric get redefined across dashboards, models, catalogues, and AI tools, you will eventually ask…3d ago3d agoPublished inDatabard AnalyticsThe Lean Startup Analytics Stack: Building for Scale Without Breaking the BankBuilding a scalable, low-cost data infrastructure with minimal vendor lock-in.Feb 19Feb 19Published inDatabard Analyticsdbt Coalesce 2025: AI, Fivetran, and the Future of Analytics Engineeringdbt Coalesce 2025 shows how AI, Fivetran, and VS Code are reshaping analytics engineering and the modern data stack.Oct 28, 2025Oct 28, 2025Published inDatabard AnalyticsChoosing the Right Data Model for Analytics with Alteryx and TableauWhen we build analytics solutions, we often obsess about the tools — what Alteryx workflow to run, or how to design the perfect Tableau…Oct 2, 2025Oct 2, 2025Published inDatabard AnalyticsAlteryx or dbt? Why Not Both?In the ever-evolving world of data, debates often arise over which tool is the ‘best’. Should your organisation invest in Alteryx or dbt…Aug 4, 2025Aug 4, 2025Published inDatabard AnalyticsAlteryx Inspire 2025 RecapLast week (14–16 May), I attended the Alteryx Inspire 2025 and wow what a difference 12 months makes. New CEO, New C-Suite, New Energy. It…May 27, 2025May 27, 2025Published inDatabard AnalyticsGearing Up for Inspire 2025: Understanding Alteryx’s Strategic CompassWith Alteryx Inspire 2025 in Las Vegas just around the corner (May 12th-15th!), the anticipation is building. For many of us, Inspire isn’t…Apr 29, 2025Apr 29, 2025Published inDatabard AnalyticsWhat is your Data Strategy?IntroductionOct 31, 2024Oct 31, 2024Published inDatabard AnalyticsAlteryx Inspire 2024: A Week of Evolution and CommunityLast week, I had the privilege of attending Alteryx Inspire 2024 in Las Vegas. It was an incredible experience, and it was fantastic…May 22, 2024May 22, 2024Paul Houghton4 followers"
+    },
+    {
+        "extraction_id": "37b51cf6-3d03-4410-ae00-b7ecdec0c7d5",
+        "extracted_at": "2026-04-03 07:09:05.121841",
+        "extracted_at_epoch": 1775200145,
+        "author_name": "Unable to parse",
+        "author_url": "https://medium.com/@ganiukuku",
+        "num_followers": 0,
+        "short_bio": "avaScript and cookies to continu"
+    },
+    {
+        "extraction_id": "37b51cf6-3d03-4410-ae00-b7ecdec0c7d5",
+        "extracted_at": "2026-04-03 07:09:05.121841",
+        "extracted_at_epoch": 1775200145,
+        "author_name": "Unable to parse",
+        "author_url": "https://medium.com/@kaivalyapendse95",
+        "num_followers": 0,
+        "short_bio": "avaScript and cookies to continu"
+    },
+    {
+        "extraction_id": "37b51cf6-3d03-4410-ae00-b7ecdec0c7d5",
+        "extracted_at": "2026-04-03 07:09:05.121841",
+        "extracted_at_epoch": 1775200145,
+        "author_name": "Unable to parse",
+        "author_url": "https://medium.com/@BrahmaWritings",
+        "num_followers": 0,
+        "short_bio": "avaScript and cookies to continu"
+    },
+    {
+        "extraction_id": "37b51cf6-3d03-4410-ae00-b7ecdec0c7d5",
+        "extracted_at": "2026-04-03 07:09:05.121841",
+        "extracted_at_epoch": 1775200145,
+        "author_name": "Unable to parse",
+        "author_url": "https://medium.com/@srkota1951",
+        "num_followers": 0,
+        "short_bio": "avaScript and cookies to continu"
+    },
+    {
+        "extraction_id": "37b51cf6-3d03-4410-ae00-b7ecdec0c7d5",
+        "extracted_at": "2026-04-03 07:09:05.121841",
+        "extracted_at_epoch": 1775200145,
+        "author_name": "Unable to parse",
+        "author_url": "https://medium.com/@vaishnavipkand",
+        "num_followers": 0,
+        "short_bio": "avaScript and cookies to continu"
+    },
+    {
+        "extraction_id": "37b51cf6-3d03-4410-ae00-b7ecdec0c7d5",
+        "extracted_at": "2026-04-03 07:09:05.121841",
+        "extracted_at_epoch": 1775200145,
+        "author_name": "Mansi Bhadani",
+        "author_url": "https://medium.com/@mansi.bhadani31",
+        "num_followers": 0,
+        "short_bio": "pen in appSign upSign inMedium LogoGet appWriteSearchSign upSign inMansi Bhadani1 followerHomeAboutdbt Tests That Actually Catch Real Data Quality Issues (Not Just Null Checks)Beyond not_null and unique: building custom dbt tests for range validation, cross-table referential integrity, and statistical drift…1d ago1d agoHow I Passed the SnowPro Core Exam in 3 Weeks While in Grad SchoolStudy plan, resource list, the 5 topic areas that actually appear on the exam, and the one practice test worth paying for.1d ago1d agoApache Iceberg’s Hidden Superpower: Time-Travel Queries in ProductionHow I migrated 10TB of mortgage data from Snowflake to Iceberg on S3, what I gained, what broke, and why snapshot isolation changed how…2d ago2d agoWhy I Chose Kafka Over Kinesis for the NJ Transit Real-Time PipelineA breakdown of the architectural decision — partition semantics, consumer group replay, and why Confluent’s Schema Registry was the…2d ago2d agoMansi Bhadani1 followerI'm Mansi Bhadani — a data engineerHelpStatusAboutCareersPressBlogPrivacyRulesTermsText to speec"
+    },
+    {
+        "extraction_id": "37b51cf6-3d03-4410-ae00-b7ecdec0c7d5",
+        "extracted_at": "2026-04-03 07:09:05.121841",
+        "extracted_at_epoch": 1775200145,
+        "author_name": "Unable to parse",
+        "author_url": "https://medium.com/@ayyoubmaulana",
+        "num_followers": 0,
+        "short_bio": "avaScript and cookies to continu"
+    },
+    {
+        "extraction_id": "37b51cf6-3d03-4410-ae00-b7ecdec0c7d5",
+        "extracted_at": "2026-04-03 07:09:05.121841",
+        "extracted_at_epoch": 1775200145,
+        "author_name": "Vit Cuellar",
+        "author_url": "https://medium.com/@vitcuellar",
+        "num_followers": 0,
+        "short_bio": "pen in appSign upSign inMedium LogoGet appWriteSearchSign upSign inVit Cuellarshe/her103 followersHomeListsAboutDados Fresquinhos: Como garantir seus dados atualizados com dbt?Esse artigo é para quem já viveu a situação de se deparar com um relatório, dashboard ou qualquer outro produto de dados com dados…Mar 26A response icon1Mar 26A response icon1Qualidade de Dados & Primary Key: 4 Formas de Checar Unicidade com dbtSe você já teve que parar pra pensar no quanto um dado duplicado pode estragar uma análise, esse artigo é pra você.Mar 19A response icon3Mar 19A response icon3Review do livro Fundamentos de Qualidade de Dados (Parte 2)Finalmente, vamos para a segunda parte da nossa review, que contém conteúdo dos últimos 5 capítulos do livro.Nov 7, 2025A response icon2Nov 7, 2025A response icon2Review do livro Fundamentos de Qualidade de Dados (Parte 1)Esse artigo é para desvendarmos conceitos importantes de Qualidade de Dados, utilizando como referência os cinco primeiros capítulos do…Oct 10, 2025A response icon2Oct 10, 2025A response icon2Entrevistas Técnicas de Dados: Como se preparar?Sempre bom lembrar que eu não tenho uma fórmula mágica. Vou compartilhar coisas que deram certo para mim e que, trocando com outras…Jul 30, 2025A response icon3Jul 30, 2025A response icon3Lidando com erros: uma outra visão sobre trabalhar na área de Dados.Eu sei que pode parecer um título meio polêmico, mas eis aqui minha real percepção sobre como é lidar com erros dentro de uma área de…Jul 8, 2025A response icon2Jul 8, 2025A response icon2Survivor Guide to BigQuery: Introduction to Procedures.This article aims to guide you through creating and understanding the usability of procedures in BigQuery. Let’s explore this subject…Jun 15, 2025A response icon1Jun 15, 2025A response icon1De Analista de Dados a Engenheira de Dados: Faça uma Limonada com seu Networking.Já ouviu a história de “se a vida te der limões, faça uma limonada”, né?Jun 8, 2025A response icon2Jun 8, 2025A response icon2Protegendo suas Credenciais de Acesso com Python: Biblioteca de Fernet.Esse artigo é para falarmos sobre um método relativamente simples de proteger suas credenciais ou dados utilizando uma biblioteca em…Jun 1, 2025Jun 1, 2025BigQuery Views: An “Overview”.This article aims to give you some understanding about Views and what it mean, where they live, and how to use them. Also, I’m bringing 2…May 21, 2025May 21, 2025Vit Cuellarshe/her103 followersData Engineer Senior. I share learnings and projects of my career in Data. Together, in code and bugs!"
+    },
+    {
+        "extraction_id": "37b51cf6-3d03-4410-ae00-b7ecdec0c7d5",
+        "extracted_at": "2026-04-03 07:09:05.121841",
+        "extracted_at_epoch": 1775200145,
+        "author_name": "Unable to parse",
+        "author_url": "https://medium.com/@pramod.venuturla_1194",
+        "num_followers": 0,
+        "short_bio": "avaScript and cookies to continu"
+    },
+    {
+        "extraction_id": "37b51cf6-3d03-4410-ae00-b7ecdec0c7d5",
+        "extracted_at": "2026-04-03 07:09:05.121841",
+        "extracted_at_epoch": 1775200145,
+        "author_name": "Unable to parse",
+        "author_url": "https://medium.com/@Nexumo_",
+        "num_followers": 0,
+        "short_bio": "avaScript and cookies to continu"
+    },
+    {
+        "extraction_id": "37b51cf6-3d03-4410-ae00-b7ecdec0c7d5",
+        "extracted_at": "2026-04-03 07:09:05.121841",
+        "extracted_at_epoch": 1775200145,
+        "author_name": "Sajad Ahmadi",
+        "author_url": "https://medium.com/@sajadahmdi",
+        "num_followers": 0,
+        "short_bio": "pen in appSign upSign inMedium LogoGet appWriteSearchSign upSign inSajad Ahmadihe/him6 followersHomeAboutDQX , A Spark-based framework for Data Quality Checks-Part 1This is the first post in a multi-part series where we explore DQX , from basic setup to advanced configuration.21h ago21h agoA comparison between DenseNet and VGG16 (Part 2: Transfer learning and fine-tuning the models)Part 2: Transfer learning and fine-tuning the modelsDec 29, 2023Dec 29, 2023A comparison between DenseNet and VGG16Part 1: PCA and DenseNetDec 23, 2023Dec 23, 2023Sajad Ahmadihe/him6 followersData Engineer"
+    },
+    {
+        "extraction_id": "37b51cf6-3d03-4410-ae00-b7ecdec0c7d5",
+        "extracted_at": "2026-04-03 07:09:05.121841",
+        "extracted_at_epoch": 1775200145,
+        "author_name": "Unable to parse",
+        "author_url": "https://medium.com/@dagen.ai",
+        "num_followers": 0,
+        "short_bio": "avaScript and cookies to continu"
+    },
+    {
+        "extraction_id": "37b51cf6-3d03-4410-ae00-b7ecdec0c7d5",
+        "extracted_at": "2026-04-03 07:09:05.121841",
+        "extracted_at_epoch": 1775200145,
+        "author_name": "Unable to parse",
+        "author_url": "https://medium.com/@AI-on-Databricks",
+        "num_followers": 0,
+        "short_bio": "avaScript and cookies to continu"
+    },
+    {
+        "extraction_id": "37b51cf6-3d03-4410-ae00-b7ecdec0c7d5",
+        "extracted_at": "2026-04-03 07:09:05.121841",
+        "extracted_at_epoch": 1775200145,
+        "author_name": "Geir Alstad",
+        "author_url": "https://medium.com/@geir.alstad",
+        "num_followers": 0,
+        "short_bio": "pen in appSign upSign inMedium LogoGet appWriteSearchSign upSign inGeir Alstad54 followersHomeListsAboutManaging a Hybrid Databricks Development EnvironmentThis is the fourth part of our broader series on running Spark locally on Windows (where previous parts covered baseline CLI setup and…8h ago8h agoInstalling and Configuring Apache Spark LocallyIn this blog series, we describe how to create local Spark environment running on Windows. Part 1 served as a condensed bare bones…Mar 21Mar 21The Toolchain and ArchitectureIn part 1 of this blog series, we outlined the commands needed to get a local Spark environment running on Windows. Now, let’s explore why…Mar 15A response icon1Mar 15A response icon1A Complete Guide to Running Spark and Databricks Connect Locally on WindowsThis is the first of a five-part series on how to make Apache Spark and Databricks Connect work as a first-class development experience…Mar 7Mar 7Linking multiple (sibling) libraries in the same DAB using Databricks and VS CodeWhen working with Databricks across teams it is often necessary to have access to shared functions or library. There are many ways to…Jan 7A response icon1Jan 7A response icon1Geir Alstad54 followersChief Data Architect|Databricks MVP|Scuba diver|Dad"
+    },
+    {
+        "extraction_id": "37b51cf6-3d03-4410-ae00-b7ecdec0c7d5",
+        "extracted_at": "2026-04-03 07:09:05.121841",
+        "extracted_at_epoch": 1775200145,
+        "author_name": "Unable to parse",
+        "author_url": "https://medium.com/@abhishekkrgupta0",
+        "num_followers": 0,
+        "short_bio": "avaScript and cookies to continu"
+    },
+    {
+        "extraction_id": "37b51cf6-3d03-4410-ae00-b7ecdec0c7d5",
+        "extracted_at": "2026-04-03 07:09:05.121841",
+        "extracted_at_epoch": 1775200145,
+        "author_name": "Unable to parse",
+        "author_url": "https://medium.com/@smanocha",
+        "num_followers": 0,
+        "short_bio": "avaScript and cookies to continu"
+    },
+    {
+        "extraction_id": "37b51cf6-3d03-4410-ae00-b7ecdec0c7d5",
+        "extracted_at": "2026-04-03 07:09:05.121841",
+        "extracted_at_epoch": 1775200145,
+        "author_name": "Unable to parse",
+        "author_url": "https://medium.com/@shrikantlambe",
+        "num_followers": 0,
+        "short_bio": "avaScript and cookies to continu"
+    },
+    {
+        "extraction_id": "37b51cf6-3d03-4410-ae00-b7ecdec0c7d5",
+        "extracted_at": "2026-04-03 07:09:05.121841",
+        "extracted_at_epoch": 1775200145,
+        "author_name": "Unable to parse",
+        "author_url": "https://medium.com/@kezhu2007",
+        "num_followers": 0,
+        "short_bio": "avaScript and cookies to continu"
+    },
+    {
+        "extraction_id": "37b51cf6-3d03-4410-ae00-b7ecdec0c7d5",
+        "extracted_at": "2026-04-03 07:09:05.121841",
+        "extracted_at_epoch": 1775200145,
+        "author_name": "Unable to parse",
+        "author_url": "https://medium.com/@tarunadhit22",
+        "num_followers": 0,
+        "short_bio": "avaScript and cookies to continu"
+    }
+]
