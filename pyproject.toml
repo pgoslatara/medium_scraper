@@ -58,7 +58,7 @@ packages = [
 
 [tool.poetry.group.dev.dependencies]
 duckcli="*"
-pre-commit=">3"
+pre-commit=">=4.6.0"
 pytest = ">=7.1.1"
 ipykernel = "^6.29.5"
 
