@@ -1,6 +1,6 @@
 {
   "name": "@jupyter-widgets/jupyterlab-manager",
-  "version": "5.0.14",
+  "version": "5.0.15",
   "description": "The JupyterLab extension providing Jupyter widgets.",
   "keywords": [
     "jupyter",
@@ -93,6 +93,5 @@
     "extension": true,
     "outputDir": "labextension",
     "schemaDir": "./schema"
-  },
-  "gitHead": "ace1a8fe516699b06914ff59d8a26f33a6911239"
+  }
 }
