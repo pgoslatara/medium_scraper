@@ -5,7 +5,6 @@ from src.ingestion.medium_web_scraper import MediumWebScraper
 def main() -> None:
     tags = [
         "analytics-engineering",
-        "apache-airflow",
         "databricks",
         "dbt",
     ]
