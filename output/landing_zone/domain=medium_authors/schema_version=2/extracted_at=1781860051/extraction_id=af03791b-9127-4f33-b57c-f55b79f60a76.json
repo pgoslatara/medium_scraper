@@ -1,0 +1,380 @@
+[
+    {
+        "extraction_id": "af03791b-9127-4f33-b57c-f55b79f60a76",
+        "extracted_at": "2026-06-19 09:07:31.665528",
+        "extracted_at_epoch": 1781860051,
+        "author_name": "Gary Nakanelua",
+        "author_url": "https://medium.com/@gnakan",
+        "num_followers": 0,
+        "short_bio": "pen in appSign upSign inMedium LogoGet appWriteSearchSign upSign inGary Nakanelua74 followersHomeActivityAboutPinnedGary Nakanelua·May 2Genie Code Built the Pipeline. Here’s What the Code Review Found.Lab Notes: a series of structured experiments on Databricks featuresGary Nakanelua·15h agoOne Unity AI Gateway config gave three Foundation Model API models guardrails, routing, and a…Lab Notes: hands-on experiments on Databricks featuresGary Nakanelua·May 23Reasoning vs base on Foundation Model APIs: 2 tokens per right answer killed a routing hypothesisLab Notes: hands-on experiments on Databricks featuresGary Nakanelua·May 21Three token-saving patterns stacked doubled token usage. Caching held the line.Lab Notes: hands-on experiments on Databricks featuresGary Nakanelua·May 16Three Foundation Models, one Lakebase lifecycle: one hallucinated, one retried, one ran cleanLab Notes: hands-on experiments on Databricks featuresGary Nakanelua·May 15Lakebase database branching is git-style isolation for Postgres on DatabricksLab Notes: a series of structured experiments on Databricks featuresInGTA: Generative Tech AdvancesbyGary Nakanelua·Dec 14, 2023OpenGPT: An Open-Source GPTsBuild custom GPTs with open-source.A response icon1A response icon1InliquidvinylbyGary Nakanelua·Nov 25, 2023RSD Black Friday 2023Over the last few years, heading out early for Record Store Day on Black Friday has become a personal tradition.InGTA: Generative Tech AdvancesbyGary Nakanelua·Oct 26, 2023Exploring the Future of Human Behavior with Humanoid AgentsA platform for building AI agents inspired by how humans think, talk and behaveInGTA: Generative Tech AdvancesbyGary Nakanelua·Oct 4, 2023Mammoth: Building Math Generalist Models Through Hybrid Instruction TuningIn the recently published whitepaper, “MAmmoTH: Building Math Generalist Models Through Hybrid Instruction Tuning,” researchers from the…A response icon1A response icon1Gary Nakanelua74 followersMD of Innovation @ Blueprint - Open-Source Evangelist - Author of Experiment or Expire - Bass player for Iris Drive"
+    },
+    {
+        "extraction_id": "af03791b-9127-4f33-b57c-f55b79f60a76",
+        "extracted_at": "2026-06-19 09:07:31.665528",
+        "extracted_at_epoch": 1781860051,
+        "author_name": "DataStrata",
+        "author_url": "https://medium.com/@datastrata",
+        "num_followers": 0,
+        "short_bio": "pen in appSign upSign inMedium LogoGet appWriteSearchSign upSign inDataStrata10 followersHomeActivityListsAboutDataStrata·4h agoFRACE: The 5 Requirements Every Financial Data Pipeline Must SatisfyBefore you draw a single box in a finance DE system design, you need to answer 5 questions. Most engineers skip them. That’s why their…DataStrata·2d agoThe AI Agent Stack: A Playbook for Building AgentsBuilding an AI agent sounds hard. It’s not — once you know the stack. Here are the 5 layers every agent needs.DataStrata·3d ago5 DE Patterns That Map 1:1 to AI Agent ArchitectureAgent architecture didn’t invent new abstractions.\nIt borrowed them from data engineering and gave them new names.DataStrata·3d agoLLMs, RAG, Agents & MCP: What’s the Actual Difference?Everyone is talking about AI. LLMs, RAG, agents, MCP — these terms show up in every product roadmap, every job description, every board…DataStrata·4d ago11 AWS Services Every Data Engineer Should KnowAWS has over 200 services. As a data engineer, you need about 10.DataStrata·4d agoFinance DE Is Different. Here’s the Full Stack That Makes It Provably Right.Most data engineering problems are forgiving. A broken pipeline delays a dashboard. Someone files a ticket. You fix it.A response icon1A response icon1DataStrata·5d agoWhy Finance Data Needs More Than a Star SchemaEvery data engineer learns the star schema. One fact table. Dimensions around it. Clean, simple, fast.DataStrata·5d agoUnifying Kafka and S3: One Table, Two Paths, Zero DuplicatesMost data teams build two pipelines and treat them as separate problems.DataStrata·6d agoStop Organizing by Topic. Every File Has a Home — If You Know the One Question to Ask.You have a folder called “Misc.” You have another called “Old Stuff.” You have three different places where you save articles you’ll “read…DataStrata·Jul 8, 2025Optimizing Database Design with Generative AI — Flipped Interaction & Design ArtifactsIntroductionDataStrata10 followersData Engineering × AI × Business. Weekly posts on the systems behind the data.HelpStatusAboutCareersPressBlogStorePrivacyRulesTermsText to speec"
+    },
+    {
+        "extraction_id": "af03791b-9127-4f33-b57c-f55b79f60a76",
+        "extracted_at": "2026-06-19 09:07:31.665528",
+        "extracted_at_epoch": 1781860051,
+        "author_name": "Unable to parse",
+        "author_url": "https://medium.com/@justworks-technology",
+        "num_followers": 0,
+        "short_bio": "avaScript and cookies to continu"
+    },
+    {
+        "extraction_id": "af03791b-9127-4f33-b57c-f55b79f60a76",
+        "extracted_at": "2026-06-19 09:07:31.665528",
+        "extracted_at_epoch": 1781860051,
+        "author_name": "Ka Ling Wu",
+        "author_url": "https://medium.com/@kalingwu",
+        "num_followers": 0,
+        "short_bio": "pen in appSign upSign inMedium LogoGet appWriteSearchSign upSign inKa Ling WuHomeActivityAboutKa Ling Wu·20h agoThe Semantic Layer, Explained: The Meaning Layer Your AI Agent NeedsA practitioner’s guide to what a semantic layer is, how it works, and why it’s only one of three layers a production analytics agent needs.Ka Ling Wu·2d agoAgentic Analytics, Explained: The Three Layers That Decide Whether It WorksA practitioner’s guide to the category, the context layers an agent actually needs, and how to tell a production-ready platform from one…Ka Ling Wu·5d agoWhy Analytics Agents Keep Failing in Production (And It’s Not the Model)The failures almost always trace back to three missing layers of context. Here’s how to think about building them.Ka Ling Wu·Jun 10How to Evaluate an AI Agent Builder for Analytics in 2026A practitioner’s framework for the four platform categories, seven evaluation dimensions, and the context infrastructure that decides…Ka Ling WuCo-founder & CEO of Upsolve AI (YC W24). Building context infrastructure for trustworthy analytics agents. Ex-Palantir, Brown University.HelpStatusAboutCareersPressBlogStorePrivacyRulesTermsText to speec"
+    },
+    {
+        "extraction_id": "af03791b-9127-4f33-b57c-f55b79f60a76",
+        "extracted_at": "2026-06-19 09:07:31.665528",
+        "extracted_at_epoch": 1781860051,
+        "author_name": "Unable to parse",
+        "author_url": "https://medium.com/@wjduenow",
+        "num_followers": 0,
+        "short_bio": "avaScript and cookies to continu"
+    },
+    {
+        "extraction_id": "af03791b-9127-4f33-b57c-f55b79f60a76",
+        "extracted_at": "2026-06-19 09:07:31.665528",
+        "extracted_at_epoch": 1781860051,
+        "author_name": "Unable to parse",
+        "author_url": "https://medium.com/@BrahmaWritings",
+        "num_followers": 0,
+        "short_bio": "avaScript and cookies to continu"
+    },
+    {
+        "extraction_id": "af03791b-9127-4f33-b57c-f55b79f60a76",
+        "extracted_at": "2026-06-19 09:07:31.665528",
+        "extracted_at_epoch": 1781860051,
+        "author_name": "Unable to parse",
+        "author_url": "https://medium.com/@ilonashkil",
+        "num_followers": 0,
+        "short_bio": "avaScript and cookies to continu"
+    },
+    {
+        "extraction_id": "af03791b-9127-4f33-b57c-f55b79f60a76",
+        "extracted_at": "2026-06-19 09:07:31.665528",
+        "extracted_at_epoch": 1781860051,
+        "author_name": "Thiru",
+        "author_url": "https://medium.com/@thiru_68023",
+        "num_followers": 0,
+        "short_bio": "pen in appSign upSign inMedium LogoGet appWriteSearchSign upSign inThiru3 followersHomeActivityAboutThiru·11h agoYour RBAC Estate Is a Slow-Motion Time BombThe most common reason a CDO calls me is an access model nobody can audit anymore. That’s not a discipline problem — it’s a math problem.Thiru·11h agoFrom Tables to Data Products — and Why “Who” Isn’t Enough Without “Why”A healthcare org spent two years fighting role explosion. The roles were never the disease.Thiru·1d agoApache Iceberg Solved Data Portability. It Didn’t Solve Governance.A masked column came back in clear text the instant a different engine read it. Nothing was misconfigured. That’s the gap.A response icon1A response icon1Thiru·1d agoGovernance as an AcceleratorA lending marketplace measured access in days and reported a ~10x gain when it stopped. In the agentic era, that latency isn’t survivable.Thiru·3d agoOne Place to Decide, Many Places to EnforceA Fortune 500 hit a wall doing fine-grained access control across two catalogs. Here’s the pattern that got them past it.Thiru·Jun 10Unity Catalog Governs the Platform. Who Governs the Enterprise?A Field CTO’s notes heading into Data + AI Summit weekThiru·May 4The Cloud Migration Accelerator: Multi-Cloud and Hybrid Are Not Optional — Neither Is Frictionless…Carry governance across on‑prem, hybrid, and multi‑cloud with a control plane — ensuring day‑zero correctness without policy rebuilds.Thiru·May 2Database Role Explosion Is a Modeling Problem: Rethinking Access Control with Dynamic PoliciesAccess is not a static assignment — it is a dynamic, context-aware decision that must be evaluated, enforced, and governed consistently…Thiru·Apr 30The End of Static Audits and Dashboards: Real-Time Compliance with Audit Governance AgentsStatic audits and reports reconstruct fragments of the past. Real-time compliance requires connected context across identities, access…Thiru·Apr 27AI Governance Is Broken. The Governance Agent Is the Missing Control Plane.Why traditional governance models are failing — and why the future is agent-driven, real-time, and unified across AI and data.Thiru3 followersField CTO, Trust3.ai - Agentic AI & Data Governance Faster Access To Data & AI without Friction"
+    },
+    {
+        "extraction_id": "af03791b-9127-4f33-b57c-f55b79f60a76",
+        "extracted_at": "2026-06-19 09:07:31.665528",
+        "extracted_at_epoch": 1781860051,
+        "author_name": "Unable to parse",
+        "author_url": "https://medium.com/@abaqasif",
+        "num_followers": 0,
+        "short_bio": "avaScript and cookies to continu"
+    },
+    {
+        "extraction_id": "af03791b-9127-4f33-b57c-f55b79f60a76",
+        "extracted_at": "2026-06-19 09:07:31.665528",
+        "extracted_at_epoch": 1781860051,
+        "author_name": "Muhammad Naufal Dzakki Rauf",
+        "author_url": "https://medium.com/@mnaufaldr01_5793",
+        "num_followers": 0,
+        "short_bio": "pen in appSign upSign inMedium LogoGet appWriteSearchSign upSign inMuhammad Naufal Dzakki RaufHomeActivityAboutMuhammad Naufal Dzakki Rauf·1d agoThe Batch Layer That Keeps Real-Time Fraud HonestWhy Airflow, re-audits, and gated retraining matter as much as real-time scoringMuhammad Naufal Dzakki Rauf·4d agoA Fraud Score Doesn’t Help Until Someone Can Act on ItHow dbt staging models, analytics marts, and a read-only API transform operational fraud data into a dashboard analysts can actually use.Muhammad Naufal Dzakki Rauf·Jun 11The Hardest Part of Stream Scoring Isn’t the ModelHow rules, XGBoost, and anomaly detection combine into an auditable fraud decision system, and why the decision logic matters more than…Muhammad Naufal Dzakki Rauf·Jun 8Building a Fraud Pipeline: Why Ingestion Is Harder Than the ModelThree producers, one Kafka topic, a dead-letter queue, and why idempotent upserts quietly keep everything aliveMuhammad Naufal Dzakki Rauf·Jun 1I Built a Lambda-Style Fraud Detection Pipeline in a Month. Here’s the Architecture.Streaming, batch processing, machine learning, and analytics working together in docker, from scratch.Muhammad Naufal Dzakki RaufData scientist & engineer. MSc @ USYD | Ex-PwC | Building LLM pipelines, RAG systems & real-time data products.HelpStatusAboutCareersPressBlogStorePrivacyRulesTermsText to speec"
+    },
+    {
+        "extraction_id": "af03791b-9127-4f33-b57c-f55b79f60a76",
+        "extracted_at": "2026-06-19 09:07:31.665528",
+        "extracted_at_epoch": 1781860051,
+        "author_name": "Ismail Mezzour",
+        "author_url": "https://medium.com/@mezzour.ismail07",
+        "num_followers": 0,
+        "short_bio": "pen in appSign upSign inMedium LogoGet appWriteSearchSign upSign inIsmail Mezzour43 followersHomeActivityListsAboutIsmail Mezzour·1d agoWelcome to Userland: Why Every Snowflake Developer Needs a SandboxA Real Snowflake Journey: Welcome to UserlandIsmail Mezzour·Jun 11Inside the Chaos of Modern Data QualityThe Modern Data Stack Solved Access, Not TrustIsmail Mezzour·Jun 8Building a dbt AI Agent to Reduce Repetitive Questions and Improve OnboardingThe Hidden Pain of Static Knowledge in Data Platform TeamsIsmail Mezzour·Jun 4How We Built an AI “Data Concierge” to Stop Dashboard HuntingThe “Where is the Data?” CrisisIsmail Mezzour·Jun 2How We Turned Data Teams Into a Streamlit FactoryFrom Backlog to Build-It-Yourself: Inside IsmaFrost’s Shift to StreamlitIsmail Mezzour·May 27A Real Snowflake Journey: Designing an Ingestion Pipeline That WorksWant to pass SnowPro Core COF-C03 but don’t know where to start? "
+    },
+    {
+        "extraction_id": "af03791b-9127-4f33-b57c-f55b79f60a76",
+        "extracted_at": "2026-06-19 09:07:31.665528",
+        "extracted_at_epoch": 1781860051,
+        "author_name": "Pascal Pfäffle",
+        "author_url": "https://medium.com/@pascalpfffle",
+        "num_followers": 0,
+        "short_bio": "pen in appSign upSign inMedium LogoGet appWriteSearchSign upSign inPascal Pfäffle380 followersHomeActivityListsAboutPinnedPascal Pfäffle·Jun 11Snowflake CoWork: What the Rebrand of Snowflake Intelligence Actually Means for Data EngineersIntroductionPinnedPascal Pfäffle·Feb 17From Code to Context: Redefining the Data Engineering Lifecycle with Snowflake Cortex CodeThe enterprise data landscape is currently navigating a fundamental transition from static, query-based interactions toward dynamic…Pascal Pfäffle·2d agoSnowflake CoCo Desktop: The Data-Native AI Coding Agent Gets Its Own EditorIntroductionPascal Pfäffle·May 6The Price of Intelligence: Engineering Cost on Snowflake Cortex’s Token Model*Updated May 7, 2026 — added clarification on the April 1, 2026 introduction of AI Credits and what it means for Edition pricing.*Pascal Pfäffle·Apr 28ACCUMULATE: Building Custom Aggregations Without Writing a Single UDFIf you’ve been waiting for a way to write custom aggregate functions in Snowflake without the friction of UDFs, ACCUMULATE is exactly what…Pascal Pfäffle·Apr 21Check Constraints in Snowflake: Enforcing Business Logic at the Table LevelIntroductionA response icon1A response icon1Pascal Pfäffle·Apr 10Terraform-Managed RBAC in Snowflake: A Complete Dev-to-Prod Setup with Database RolesIntroductionA response icon3A response icon3Pascal Pfäffle·Mar 26Snowflake DCM Projects: Declarative Change Management Without the Script SprawlIntroductionA response icon1A response icon1Pascal Pfäffle·Mar 16From Retention to Retrieval: Managing Data Age with Snowflake Storage Lifecycle PoliciesIntroductionPascal Pfäffle·Mar 11Snowflake Openflow Connector for Oracle Is GA — and That Matters More Than It SoundsMoving Oracle data into Snowflake has rarely been the hard part. Moving it reliably, incrementally, and without building a fragile custom…Pascal Pfäffle380 followersAs a data enthusiast, I am primarily involved in projects focused on Data Management and Data Engineering with a strong emphasis on Snowflake."
+    },
+    {
+        "extraction_id": "af03791b-9127-4f33-b57c-f55b79f60a76",
+        "extracted_at": "2026-06-19 09:07:31.665528",
+        "extracted_at_epoch": 1781860051,
+        "author_name": "Bharani",
+        "author_url": "https://medium.com/@muthu.bharanidharan",
+        "num_followers": 0,
+        "short_bio": "pen in appSign upSign inMedium LogoGet appWriteSearchSign upSign inBharanihe135 followersHomeActivityListsAboutPinnedBharani·May 16, 2024Databricks Champion : JourneyThis is an invite-only program from Databricks thru Partnership between Avanade (my current employer) and Databricks.PinnedBharani·Mar 31, 2024Spark Caching — DatabricksIn Databricks if you are going to use a dataset repeatedly in a notebook, it is highly recommended to cache the dataset to save cost on IO…Bharani·22h agoThe Ghost in the Cluster: How a DNS Caching Flaw Intermittently Crippled Our Databricks PipelinesIf you work with enterprise data platforms at scale, you are likely intimately familiar with “ghost” errors — those maddening, intermittent…Bharani·1d agoDemystifying Apache Spark’s Execution Engine: From Notebook Click to Hardware BytesWith the recent Databricks Data + AI Summit 2026 announcing a massive wave of new features — including autonomous auto-tuning AI…Bharani·3d agoThe Sound of Silence: How Maestro Ilaiyaraaja Turns Pauses into MusicWhen Ilaiyaraaja Uses Silence as MusicBharani·May 21From Replay Recovery to Durable Customer State: Why We Adopted LakebaseThree days after Christmas 2025, a schema change in our Okta Customer Identity and Access Management (CIAM) event stream caused eleven…Bharani·May 1Architecture principles that makes Claude Code robust and efficientWhy Claude Feels “Stronger”: The Architecture Patterns Behind Reliable AI SystemsBharani·Apr 14Type Widening in Delta Lake: The End of Costly Data RewritesIn modern data engineering, one of the most underestimated challenges is schema evolution.Bharani·Apr 13Auto-Generate Wiki Documentation from Databricks Notebooks using AI (PySpark + LLM)Why Documentation is Still a Pain in Data EngineeringBharani·Apr 11Integrate OpenAI Codex in devops pipeline for Databricks (pyspark / sql) code reviewIntroductionA response icon1A response icon1Bharanihe135 followersPassionate about cloud application architecture and data platform architecture"
+    },
+    {
+        "extraction_id": "af03791b-9127-4f33-b57c-f55b79f60a76",
+        "extracted_at": "2026-06-19 09:07:31.665528",
+        "extracted_at_epoch": 1781860051,
+        "author_name": "Unable to parse",
+        "author_url": "https://medium.com/@npogeant",
+        "num_followers": 0,
+        "short_bio": "avaScript and cookies to continu"
+    },
+    {
+        "extraction_id": "af03791b-9127-4f33-b57c-f55b79f60a76",
+        "extracted_at": "2026-06-19 09:07:31.665528",
+        "extracted_at_epoch": 1781860051,
+        "author_name": "Unable to parse",
+        "author_url": "https://medium.com/@andreas.limpak_42413",
+        "num_followers": 0,
+        "short_bio": "avaScript and cookies to continu"
+    },
+    {
+        "extraction_id": "af03791b-9127-4f33-b57c-f55b79f60a76",
+        "extracted_at": "2026-06-19 09:07:31.665528",
+        "extracted_at_epoch": 1781860051,
+        "author_name": "Unable to parse",
+        "author_url": "https://medium.com/@kaustavpaul-007",
+        "num_followers": 0,
+        "short_bio": "avaScript and cookies to continu"
+    },
+    {
+        "extraction_id": "af03791b-9127-4f33-b57c-f55b79f60a76",
+        "extracted_at": "2026-06-19 09:07:31.665528",
+        "extracted_at_epoch": 1781860051,
+        "author_name": "Schinkel Scott",
+        "author_url": "https://medium.com/@schinkel.scott",
+        "num_followers": 0,
+        "short_bio": "pen in appSign upSign inMedium LogoGet appWriteSearchSign upSign inSchinkel Scotthe4 followersHomeActivityAboutPinnedInLevel Up CodingbySchinkel Scott·May 30When the source of truth lives in two repos and a JOINHow marketing session attribution from a CSV-plus-SQL pair into something you can actually reason aboutInLevel Up CodingbySchinkel Scott·4d agoWhen a session isn’t a rowHow we rebuilt GA4 session modelling from a partition rebuild into something Snowflake could actually useSchinkel Scotthe4 followersData and analytics engineer by day, builder of small useful things by night. Writing about pipelines, attribution, and tools for neurodivergent people."
+    },
+    {
+        "extraction_id": "af03791b-9127-4f33-b57c-f55b79f60a76",
+        "extracted_at": "2026-06-19 09:07:31.665528",
+        "extracted_at_epoch": 1781860051,
+        "author_name": "Victor Sánchez Jáuregui",
+        "author_url": "https://medium.com/@vsanchezjauregui",
+        "num_followers": 0,
+        "short_bio": "pen in appSign upSign inMedium LogoGet appWriteSearchSign upSign inVictor Sánchez Jáuregui1 followerHomeActivityListsAboutPinnedVictor Sánchez Jáuregui·18h agoA Data Platform Orchestration Strategy — Part 1: From Schedules to Business-Aware ExecutionA practical way to understand how orchestration evolves from scheduled jobs to dependency-aware, change-aware, and SLA-driven execution.Victor Sánchez Jáuregui1 follower"
+    },
+    {
+        "extraction_id": "af03791b-9127-4f33-b57c-f55b79f60a76",
+        "extracted_at": "2026-06-19 09:07:31.665528",
+        "extracted_at_epoch": 1781860051,
+        "author_name": "Unable to parse",
+        "author_url": "https://medium.com/@tfearn_99219",
+        "num_followers": 0,
+        "short_bio": "avaScript and cookies to continu"
+    },
+    {
+        "extraction_id": "af03791b-9127-4f33-b57c-f55b79f60a76",
+        "extracted_at": "2026-06-19 09:07:31.665528",
+        "extracted_at_epoch": 1781860051,
+        "author_name": "Leohuang",
+        "author_url": "https://medium.com/@leohuang2416",
+        "num_followers": 0,
+        "short_bio": "pen in appSign upSign inMedium LogoGet appWriteSearchSign upSign inLeohuang7 followersHomeActivityAboutLeohuang·Just now【硬核大師班】AI 只能看不能動？深度拆解 Databricks LTAP 引擎與 Genie Agent 的全雙工自主架構前言：那個「只會出張嘴」的殘缺 AI 助理Leohuang·1h ago【硬核大師班】OLTP 與 OLAP 的終極統一：深度拆解 Databricks LTAP 引擎與 Genie Agent 的全雙工 AI 應用場景前言：那個「只能看、不能動」的殘缺 AI 專案Leohuang·Jun 7【硬核大師班】Text-to-SQL 為什麼在生產環境必死？深度拆解 Databricks Genie 的 Agentic 推理迴圈與語義層底層架構前言：那個被「幻覺 SQL」徹底摧毀信任的 AI 專案Leohuang·Jun 7【硬核大師班】大模型推論顯存碎片化？深入拆解 PagedAttention 記憶體分頁映射與動態快取重用機制前言：那個被 KV Cache 撐爆 VRAM 的平台架構師Leohuang·Apr 28【硬核大師班】向量 RAG 只是局部檢索？深度拆解 GraphRAG、Leiden 演算法與知識圖譜的維度融合前言：當向量搜尋在「全域問題」面前折戟Leohuang·Apr 28【硬核大師班】機器學習最致命的「未來穿越」？深度拆解 AS OF Join 演算法與 Feature Store 即時推論底層架構前言：那個在 POC 準確率 99%，上線後卻全面崩盤的模型Leohuang·Apr 27【硬核大師班】UPDATE 幾筆資料卻重寫幾百 GB？深度拆解 Deletion Vectors 演算法與千萬級 CDC 亂序同步架構前言：那個被「寫入放大 (Write Amplification)」拖垮的資料湖Leohuang·Apr 27【硬核大師班】微調 70B 模型狂噴 OOM？深度拆解 Mosaic AI 訓練底層的 FSDP 記憶體切片與 FlashAttention 物理極限前言：那個被「反向傳播」榨乾顯存的演算法工程師Leohuang·Apr 22【硬核大師班】幾千張 View 維護到崩潰？深度拆解 Unity Catalog 的 AST 語法樹重寫與動態資料遮罩底層機制前言：那個被「視圖爆炸 (View Explosion)」壓垮的架構師Leohuang·Apr 22【硬核大師班】PB 級資料表查詢為何不會卡死？深度拆解 Delta Lake 交易日誌與快照重建底層演算法那個被 S3 LIST API 徹底擊潰的 Hive 架構Leohuang7 followersHelpStatusAboutCareersPressBlogStorePrivacyRulesTermsText to speec"
+    },
+    {
+        "extraction_id": "af03791b-9127-4f33-b57c-f55b79f60a76",
+        "extracted_at": "2026-06-19 09:07:31.665528",
+        "extracted_at_epoch": 1781860051,
+        "author_name": "George Kuruvilla",
+        "author_url": "https://medium.com/@georgeiswrite",
+        "num_followers": 0,
+        "short_bio": "pen in appSign upSign inMedium LogoGet appWriteSearchSign upSign inGeorge Kuruvilla180 followersHomeActivityAboutGeorge Kuruvilla·7h agoDatabricks announces LTAP : Innovation or Validation?On a stage at the Data + AI Summit, Ali Godsi announced something that wasn’t supposed to work. Databricks launched LTAP (Lake…George Kuruvilla·4d agoSingapore Didn’t Get Lucky. It Never Does.The time OpenAI announced it was opening its first Applied AI Lab outside the United States, in Singapore, with a $234 million commitment…George Kuruvilla·Jun 6The Accidental Model That Made PalantirThe Forward Deployed Engineer, did not emerge from strategic geniusGeorge Kuruvilla·May 31Noboby Predicted AI & Jobs BoomTurns out “the robots” came for the narrative, not the jobsGeorge Kuruvilla·May 25AI Changed How We Build. Not How We BuyYou can vibe-code your way to an App but you can’t vibe-code your way past the Buying Committee.InArtificial Intelligence in Plain EnglishbyGeorge Kuruvilla·May 18The Software Isn’t Dead. The Business Model Is.Let’s be precise about something.InArtificial Intelligence in Plain EnglishbyGeorge Kuruvilla·May 11AI-First Company. Zero AI Governance. Good Luck.A growing threat in every EnterpriseGeorge Kuruvilla·May 5Bill is due. Earth is running out of room for AIAccording to recent analysis on orbital infrastructure, data center electricity demand in the U.S. alone could hit 12% of national…George Kuruvilla·Nov 25, 2025Shift Happens : AI Is Rewriting the Enterprise Application ArchitectureChanges to the application design are happening without your knowledge or involvement.George Kuruvilla·Nov 7, 2025Rwanda: The Soul of Africa’s FutureTechnology with Vision is the great enablerGeorge Kuruvilla180 followersThoughts on Tech and Humanity, now in a Global scale"
+    },
+    {
+        "extraction_id": "af03791b-9127-4f33-b57c-f55b79f60a76",
+        "extracted_at": "2026-06-19 09:07:31.665528",
+        "extracted_at_epoch": 1781860051,
+        "author_name": "Agentic Data Engineering",
+        "author_url": "https://medium.com/@agentic-data-engineering",
+        "num_followers": 0,
+        "short_bio": "pen in appSign upSign inMedium LogoGet appWriteSearchSign upSign inAgentic Data Engineering1 followerHomeActivityAboutAgentic Data Engineering·19h agoThe Correctness LayerWe started altimate-code with one goal: build a harness that data engineers could actually trust with their pipelines and platforms. The…Agentic Data Engineering1 followerWe build AI for data and analytics engineering. Try Altimate Code - an open-source agentic data engineering harness.HelpStatusAboutCareersPressBlogStorePrivacyRulesTermsText to speec"
+    },
+    {
+        "extraction_id": "af03791b-9127-4f33-b57c-f55b79f60a76",
+        "extracted_at": "2026-06-19 09:07:31.665528",
+        "extracted_at_epoch": 1781860051,
+        "author_name": "Bochao S.",
+        "author_url": "https://medium.com/@bchaoss",
+        "num_followers": 0,
+        "short_bio": "pen in appSign upSign inMedium LogoGet appWriteSearchSign upSign inBochao S.HomeActivityAboutBochao S.·Jun 9Moving Beyond CASE WHEN for Binning Logic in SQLManaging SQL binning logic as configuration, not hardcoded codeBochao S.Writing about business analytics & analytics engineering.HelpStatusAboutCareersPressBlogStorePrivacyRulesTermsText to speec"
+    },
+    {
+        "extraction_id": "af03791b-9127-4f33-b57c-f55b79f60a76",
+        "extracted_at": "2026-06-19 09:07:31.665528",
+        "extracted_at_epoch": 1781860051,
+        "author_name": "Patrick Lam",
+        "author_url": "https://medium.com/@patrick_lam",
+        "num_followers": 0,
+        "short_bio": "pen in appSign upSign inMedium LogoGet appWriteSearchSign upSign inPatrick Lam43 followersHomeActivityAboutInThe Airbnb Tech BlogbyPatrick Lam·Jun 9Scaling beyond one: How Airbnb evolved its data architecture for a multi-product worldHow Airbnb’s data engineers and analytics engineers built a consistent and flexible data modeling framework to support the expansion into…Patrick Lam43 followers"
+    },
+    {
+        "extraction_id": "af03791b-9127-4f33-b57c-f55b79f60a76",
+        "extracted_at": "2026-06-19 09:07:31.665528",
+        "extracted_at_epoch": 1781860051,
+        "author_name": "Nora | Freelance Analytics Engineer & dbt Trainer",
+        "author_url": "https://medium.com/@enoranathalie",
+        "num_followers": 0,
+        "short_bio": "pen in appSign upSign inMedium LogoGet appWriteSearchSign upSign inNora | Freelance Analytics Engineer & dbt Trainershe/herHomeActivityAboutNora | Freelance Analytics Engineer & dbt Trainer·5d agoBridging the Gap: How We Automated dbt Documentation via Collaborative CSVsStop forcing business stakeholders to learn Git. Here is a Python and dbt-osmosis pipeline to sync dbt documentation directly from…Nora | Freelance Analytics Engineer & dbt Trainershe/herFreelance Analytics Engineer 🛠️ I fix messy dbt setups, build clean pipelines & unblock business teams. Let's scale! Connect: linkedin.com/in/nneloufir/HelpStatusAboutCareersPressBlogStorePrivacyRulesTermsText to speec"
+    },
+    {
+        "extraction_id": "af03791b-9127-4f33-b57c-f55b79f60a76",
+        "extracted_at": "2026-06-19 09:07:31.665528",
+        "extracted_at_epoch": 1781860051,
+        "author_name": "Sriw World of Coding",
+        "author_url": "https://medium.com/@sriwworldofcoding",
+        "num_followers": 0,
+        "short_bio": "pen in appSign upSign inMedium LogoGet appWriteSearchSign upSign inSriw World of Coding347 followersHomeActivityListsAboutPinnedSriw World of Coding·Mar 27🚀 PySpark for Data Engineers: Architecture & Interviews | Best YouTube Tutorial + Udemy Course…Watch this PySpark YouTube tutorial and master Spark architecture, performance tuning & interviews. Enroll in the full Udemy course today.A response icon1A response icon1PinnedSriw World of Coding·May 14, 2025Crack Azure Data Engineer Interviews: Your Ultimate Guide to Landing the Job 💼☁️Are you preparing for an Azure Data Engineer interview and feeling overwhelmed by the vastness of topics — like Data Factory, Synapse…A response icon1A response icon1PinnedSriw World of Coding·Aug 24, 2024Apache Airflow Bootcamp: Hands-On Workflow Automation🚀 New Course Launch!Sriw World of Coding·2h agoYour Bronze Layer Pipeline Crashed at 3 AM — Here’s How to Make Sure It Never Does AgainThe complete guide to bulletproof Databricks Auto Loader ingestion with schema evolution, drift handling, and quarantine patternsSriw World of Coding·1d agoHow to Build a 5-Minute Incremental Pipeline for a 100 TB Delta Lake or Iceberg TableWhat if your daily workload is only 10 GB, but your Spark job insists on touching 100 TB every single day? That is the hidden tax of…Sriw World of Coding·2d agoSpark Interview Questions : Spark Driver OOM Nightmare - How to Calculate Driver Memory for…Sriw World of Coding·3d agoData Enginner Interview Question : Designing an OLAP-Friendly Data Model for Social Media ReactionsInData And BeyondbySriw World of Coding·4d agoData Enginering Interview Question: Optimize Spark Shuffle Partitions(And How to Fix It)Sriw World of Coding·5d agoSpark Shuffle Partitions Interview Question: What Happens When You Join 1 TB and 100 GB Tables?InTowards AWSbySriw World of Coding·6d agoShuffle-Heavy Spark Join on AWS EMR: 10 r5.4xlargeSriw World of Coding347 followersYOUTUBE : https://www.youtube.com/@sriwworldofcoding?sub_confirmation=1"
+    },
+    {
+        "extraction_id": "af03791b-9127-4f33-b57c-f55b79f60a76",
+        "extracted_at": "2026-06-19 09:07:31.665528",
+        "extracted_at_epoch": 1781860051,
+        "author_name": "Aasir Waseer",
+        "author_url": "https://medium.com/@mohamedaasir1992",
+        "num_followers": 0,
+        "short_bio": "pen in appSign upSign inMedium LogoGet appWriteSearchSign upSign inAasir Waseerhe57 followersHomeActivityAboutPinnedInTowards AIbyAasir Waseer·Apr 19Synthetic data: the privacy-first secret weapon for enterprise MLAnonymisation looks good on a compliance checklist. It fails in production. Here’s why synthetic data is the only technique that satisfies…PinnedAasir Waseer·Oct 13, 2024Mastering Supply Chain Analytics: Building a Comprehensive Power BI DashboardIn today’s fast-paced business environment, 79% of companies with high-performing supply chains achieve revenue growth superior to the…PinnedAasir Waseer·Oct 27, 2024A Practical Guide to A/B Testing: From Theory to ResultsIntroductionPinnedAasir Waseer·Sep 28, 2024Enhancing Your SQL Skills with Complex Queries and Optimization TechniquesGoal: Improve your SQL proficiency by optimizing a slow-running query. In this blog, we’ll go through the steps to identify, analyze, and…A response icon1A response icon1InStackademicbyAasir Waseer·21h agoTaming the Alarm Clock: Cutting False Positives in Monte Carlo & Soda Observability for Real-World…I once turned my analytics team into a night-shift zoo. Every few minutes, a data anomaly triggered a frantic email chain — Slack pings…InTowards AIbyAasir Waseer·2d agoMeasuring the Hidden Costs of AI-Generated Insights: A Data Analyst’s Guide to Autonomous Pipeline…The five-component ROI framework I published last week — time recapture, delayed-action cost reduction, escalation overhead, infrastructure…Aasir Waseer·4d agoT-Shaped Analysts Are Commanding 40% More: Why Healthcare Domain Experts Who Code Actually Win in…Last month, a recruiter offered me $145k to lead healthcare analytics at a Series B startup. The same role paid $103k at my last financial…Aasir Waseer·6d agoClaude Sonnet 4 vs Gemini 2.5 Flash: The Real-World Cost-Per-Token Showdown for Data TeamsWhen I upgraded my Qlik Cloud analytics stack to use an LLM for auto-chart suggestions, the first thing I checked wasn’t accuracy — it was…Aasir Waseer·Jun 12The GraphRAG Pivot: Why Vector Search Failed My Enterprise AI and How Knowledge Graphs Fixed ItI spent three months optimising my vector database. Tweaking chunk sizes. Adjusting overlap parameters. Experimenting with different…InStackademicbyAasir Waseer·Jun 11How Agentic AI Reduced Healthcare Denial Rates by 38%: A Real RCM ImplementationI spent the last quarter rebuilding a legacy claims processing pipeline into an autonomous, self-optimizing system — and we cut denial…Aasir Waseerhe57 followersData Science & Analytics Professional"
+    },
+    {
+        "extraction_id": "af03791b-9127-4f33-b57c-f55b79f60a76",
+        "extracted_at": "2026-06-19 09:07:31.665528",
+        "extracted_at_epoch": 1781860051,
+        "author_name": "Unable to parse",
+        "author_url": "https://medium.com/@kiran-pothina",
+        "num_followers": 0,
+        "short_bio": "avaScript and cookies to continu"
+    },
+    {
+        "extraction_id": "af03791b-9127-4f33-b57c-f55b79f60a76",
+        "extracted_at": "2026-06-19 09:07:31.665528",
+        "extracted_at_epoch": 1781860051,
+        "author_name": "David Chan",
+        "author_url": "https://medium.com/@iamdavidchan",
+        "num_followers": 0,
+        "short_bio": "pen in appSign upSign inMedium LogoGet appWriteSearchSign upSign inDavid Chan286 followersHomeActivityListsAboutDavid Chan·19h agoDatabricks CustomerLake: Gravity winsDuring Databricks’ Data + AI Summit, the company officially announced CustomerLake, its “Agentic CDP” offering. The move was bold. The…A response icon1A response icon1David Chan·May 12Agents, here, there, everywhereMartin Kihn, SVP of Strategy at Salesforce, questions what the martech stack of the future should look like. But the real question is…A response icon1A response icon1David Chan·Mar 27Re: The New Martech Stack for the AI AgeDavid Chan·Mar 16Are you ready to adopt AI?Scott Brinker popularized a concept he coined Martec’s law in 2013 that was trying to explain the widening gap between the pace of SaaS…David Chan·Feb 4CDPs & AI: Where do we go from here?Last week, Gartner’s Magic Quadrant for CDPs dropped, and it led to a week of hot takes, disagreements, disillusionment… and even a…David Chan·Oct 31, 2025The New Shape of TransformationFor as long as I can remember, it seemed everyone — clients and teammates alike — innately understood and accepted the framework of People…David Chan·Aug 19, 2025Do you have the right level of Data Governance needed for Personalization?David Chan·Jul 7, 2025Why is CDP and AI adoption so *** slow?The Five stages of Data & AI griefDavid Chan·Apr 8, 2025Why it’s difficult to evaluate Composable CDP vendors against Packaged / Hybrid CDP vendorsDavid Chan·Mar 6, 2025Should CDP be used to support Operational use cases?Can CDPs support Operational use cases as an Operational Data Store (ODS)?David Chan286 followersHelping organizations navigate the “data-driven everything” abyss. Learn from my mistakes and successes."
+    },
+    {
+        "extraction_id": "af03791b-9127-4f33-b57c-f55b79f60a76",
+        "extracted_at": "2026-06-19 09:07:31.665528",
+        "extracted_at_epoch": 1781860051,
+        "author_name": "Unable to parse",
+        "author_url": "https://medium.com/@asrathore08",
+        "num_followers": 0,
+        "short_bio": "avaScript and cookies to continu"
+    },
+    {
+        "extraction_id": "af03791b-9127-4f33-b57c-f55b79f60a76",
+        "extracted_at": "2026-06-19 09:07:31.665528",
+        "extracted_at_epoch": 1781860051,
+        "author_name": "Joshua Kim",
+        "author_url": "https://medium.com/@joshua-data",
+        "num_followers": 0,
+        "short_bio": "pen in appSign upSign inMedium LogoGet appWriteSearchSign upSign inJoshua Kim369 followersHomeActivityAboutPinnedJoshua Kim·Feb 18[AI] Building an AI Data Analysis Bot for Slack — Handle Data Requests Right in Slackit identifies tables and schemas from DataHub, generates and executes a BigQuery query, then responds with the answer.A response icon1A response icon1PinnedJoshua Kim·Apr 7[AI] Building an AI Data Analysis Bot for Slack — Prompt Caching[AI] Building an AI Data Analysis Bot for Slack — Prompt CachingPinnedJoshua Kim·Apr 30[AI] Building an AI Data Analysis Bot for Slack — CI/CD Environmenthow I built a CI/CD environment to stabilize the deployment of the Slack AI data analysis botJoshua Kim·Jun 10[Life] My English Journey, Q2 2026I recently tested at early C2 (the top band on the CEFR scale, roughly “near-native” proficiency)Joshua Kim·Jun 9[DE] Building an End-to-End Data Platform (2): The First dbt Models on a Polymorphic Event StreamThe First dbt Models on a Polymorphic Event StreamJoshua Kim·Jun 4[DE] Building an End-to-End Data Platform (1): The Lakehouse Before the First dbt ModelThe Lakehouse Before the First dbt ModelJoshua Kim·Apr 30[AI] 슬랙 AI 데이터 분석봇 개발기 — CI/CD 환경 구축슬랙 AI 데이터 분석봇에 CI/CD 환경을 구축하여 배포를 안정화한 과정Joshua Kim·Apr 21[Study] 데이터팀이 Agentic AI를 도입해야 할 12개의 영역“AI는 지식을 대체하지 않는다. 기존 전문성을 증폭시킨다.”A response icon1A response icon1Joshua Kim·Apr 21[Study] 12 Areas Where Data Teams Should Adopt Agentic AI“AI doesn’t replace expertise. It amplifies the expertise that already exists.”Joshua Kim·Apr 19[DE] Catalog as a Code: dbt에서 영감을 얻어 구축한 DataHub 메타데이터 CI/CD 파이프라인“GitHub PR 하나만 생성하면, BigQuery 테이블의 스키마와 yaml 명세서에 작성한 설명이 DataHub에 자동으로 반영되는 CI/CD 파이프라인을 구축한 이야기입니다. dbt Documentation의 compile 방식에서 영감을…Joshua Kim369 followersAnalytics Engineer | 🇨🇦HelpStatusAboutCareersPressBlogStorePrivacyRulesTermsText to speec"
+    },
+    {
+        "extraction_id": "af03791b-9127-4f33-b57c-f55b79f60a76",
+        "extracted_at": "2026-06-19 09:07:31.665528",
+        "extracted_at_epoch": 1781860051,
+        "author_name": "inVerita",
+        "author_url": "https://medium.com/@inverita",
+        "num_followers": 0,
+        "short_bio": "pen in appSign upSign inMedium LogoGet appWriteSearchSign upSign ininVerita2.8K followersHomeActivityAboutinVerita·23h agoSnowflake vs Databricks for BI: Which Platform Fits Your Use Case?The Short Answer for Busy Decision MakersinVerita·Jun 212 Top Generative AI Development Companies in 2026Generative AI has moved from a research curiosity to a core line item in enterprise technology budgets. According to McKinsey, generative…A response icon1A response icon1inVerita·Jun 212 Best Big Data Analytics Companies: Expert Picks for 2026The volume of data businesses generate, collect, and store has grown faster than most organizations’ ability to use it. By 2026, the global…inVerita·May 8Modernizing Legacy Systems: A Pragmatic Roadmap for BI + App ModernizationModernizing legacy software, infrastructure, and applications allows you to adapt your IT systems to both current and future business…inVerita·Apr 22Top 12 AI Agent Development CompaniesBy 2026, AI agents, autonomous software systems that perceive, reason, and act to complete multi-step tasks, have shifted from research…InDev GeniusbyinVerita·Apr 810 Data Engineering Trends to Watch in 2026Each year, organizations become more and more reliant and dependent on data. Raw data, now generated at unprecedented scale, holds immense…inVerita·Mar 30Top Snowflake Service Providers in the US: Certified Partners & Data Engineering FirmsSelecting the right Snowflake service provider can be the difference between a data platform that transforms how your organization operates…inVerita·Mar 27Top 10 Business Intelligence Companies in ColombiaA nearshore BI consulting company differs from a BI software vendor like Microsoft Power BI or Tableau: instead of selling a platform…inVerita·Mar 13Top 11 Epic Integration Companies for Healthcare Organizations in 2026Epic Systems holds over 37% of the acute care hospital EHR market in the United States and manages health records for nearly half of the US…A response icon1A response icon1inVerita·Feb 16On-Device AI in iOS Apps: The Future of MobileWhat if your smartphone could summarize text, rewrite tone, generate content, analyze on-screen information, and translate speech in real…inVerita2.8K followersinVerita is a software consulting company focusing on outsourcing and staff augmentation services based in Ukraine. https://inveritasoft.com"
+    },
+    {
+        "extraction_id": "af03791b-9127-4f33-b57c-f55b79f60a76",
+        "extracted_at": "2026-06-19 09:07:31.665528",
+        "extracted_at_epoch": 1781860051,
+        "author_name": "christan_tech",
+        "author_url": "https://medium.com/@christan_tech",
+        "num_followers": 0,
+        "short_bio": "pen in appSign upSign inMedium LogoGet appWriteSearchSign upSign inchristan_techhe/him4 followersHomeActivityListsAboutchristan_tech·5h agoDatabricks Compute Types Explained: The Complete Guide to Serverless, Classic Compute, SQL…Master Databricks compute types with a deep dive into Serverless Compute, Classic Compute, SQL Warehouses, Access Modes, Photon, Unity…christan_tech·5h agoDelta Lake Deep Dive: Merge Operations, Delta Sharing, and Deletion Vectors ExplainedPart of series: Databricks Complete Guide (Beginner to Advanced)christan_tech·6d agoAmazon S3 Storage Classes Explained: The Complete Deep Dive GuidePart of series: AWS Complete Guide (Beginner to Advanced)christan_tech·6d agoAWS Route Tables in VPC: Complete Production-Level GuidePart of series: AWS Complete Guide (Beginner to Advanced)christan_tech·Jun 10Change Data Feed (CDF) in Delta Lake: The Complete Production Guide for Data EngineersPart of series: Databricks Complete Guide (Beginner to Advanced)christan_tech·Jun 10Schema Enforcement and Schema Evolution in Delta Lake: The Complete Production Guide for Databricks…Part of series: Databricks Complete Guide (Beginner to Advanced)christan_tech·Jun 8Liquid Clustering in Delta Lake: The Complete Production GuidePart of series: Databricks Complete Guide (Beginner to Advanced)christan_tech·Jun 8Z-ORDER Clustering in Databricks Delta Lake: Complete Production & Interview GuidePart of series: Databricks Complete Guide (Beginner to Advanced)christan_tech·Jun 1File Compaction in Delta Lake — Complete Production-Level Deep DivePart of series: Databricks Complete Guide (Beginner to Advanced)christan_tech·Jun 1Deep Dive into Delta Lake Transaction Log (_delta_log)Part of series: Databricks Complete Guide (Beginner to Advanced)christan_techhe/him4 followersData Engineer passionate about scalable data systems. Sharing insights on PySpark, SQL, ETL pipelines, Databricks and cloud technologies.HelpStatusAboutCareersPressBlogStorePrivacyRulesTermsText to speec"
+    },
+    {
+        "extraction_id": "af03791b-9127-4f33-b57c-f55b79f60a76",
+        "extracted_at": "2026-06-19 09:07:31.665528",
+        "extracted_at_epoch": 1781860051,
+        "author_name": "Balaji J",
+        "author_url": "https://medium.com/@balajij8",
+        "num_followers": 0,
+        "short_bio": "pen in appSign upSign inMedium LogoGet appWriteSearchSign upSign inBalaji J1 followerHomeActivityAboutBalaji J·16h agoZero Code REST Integration for Modern HealthCare Vitals via Databricks Lakebase Data APIThe friction between modern operational edge applications and core analytical data systems is a massive architectural bottleneck in…Balaji J·Jun 11HealthCare Prior Authorizations with Databricks Lakebase Vector SearchHealthcare organizations possess enormous volumes of care, operational and payer related data. Every care interaction generates information…Balaji J·Jun 1Modern HealthCare Capacity Planning with Databricks Lake base & AI BIEnterprise Care systems today are constrained in decision making but possess rich data. Every patient journey generates signals across…Balaji J·May 22Databricks Lake base Evolution — Mandatory Shift from Provisioned Instances to Elastic AutoscalingThe OLTP landscape within the Data Intelligence Platform is undergoing an essential evolutionary step. Databricks has announced a automatic…Balaji J·May 17Databricks Lakebase — Healthcare Patient Risk Scoring using Feature Stores powered by Lake baseHealthcare organizations are increasingly adopting predictive AI systems to identify patient deterioration earlier to reduce ICU escalation…Balaji J·May 7Achieving Enterprise Healthcare Intelligence — Bidirectional Sync with Databricks LakebaseHealthcare organizations have invested heavily in the modern Lakehouse architectures for enterprise data analytics, AI and governance…Balaji J·Apr 27Databricks Lakebase — Modern Healthcare Agents with Lake base MemoryPatient Journey in Healthcare is always about continuity. A patient’s story unfolds over years & Clinician’s decisions are shaped by…Balaji J·Apr 20OLTP Time Travel — Secure Healthcare Trial Compliance via Databricks Lake baseRegulatory Compliance, Patient Safety and Clinical Trust are vital for Healthcare Organizations. A global healthcare giant used Lake base…Balaji J·Apr 9Databricks Lakebase — Modern Medical Inventory Management with Databricks Apps & LakebaseDatabricks Lakebase is becoming the real time operational database for large enterprises demanding sub second latency, strict consistency…Balaji J·Apr 5Databricks Clean Rooms — Eliminate Data Exposure & Maximize InsightsDatabricks Clean Rooms are secure & governed collaboration environments that enable various organizations run joint analytics without…Balaji J1 followerMicrosoft Practice LeadHelpStatusAboutCareersPressBlogStorePrivacyRulesTermsText to speec"
+    },
+    {
+        "extraction_id": "af03791b-9127-4f33-b57c-f55b79f60a76",
+        "extracted_at": "2026-06-19 09:07:31.665528",
+        "extracted_at_epoch": 1781860051,
+        "author_name": "Muaaz",
+        "author_url": "https://medium.com/@muaazmuzammil69",
+        "num_followers": 0,
+        "short_bio": "pen in appSign upSign inMedium LogoGet appWriteSearchSign upSign inMuaazhim100 followersHomeActivityListsAboutMuaaz·20h agoWhat is Databricks? Architecture, Features, Use Cases & A Complete Beginner to Expert GuideWhat is Databricks?A response icon1A response icon1Muaaz·3d ago25 PySpark DataFrame Operations Every Data Engineer Should KnowA practical hands on guide covering joins, aggregations, window functions, schema handling, Spark SQL, and real world transformations.A response icon1A response icon1InTowards Data EngineeringbyMuaaz·Jun 11Open Table Format Explained: Features, Benefits, and Why It Matters in Modern Data EngineeringInitially, organizations relied heavily on data warehouses, storing structured data in traditional databases like MySQL and building…A response icon1A response icon1Muaaz·Jun 8Delta Lake Explained: Architecture, Features, and Real World Use CasesDelta Lake is an open table format designed to bring reliability and structure to data lakes. Open table formats behave like traditional…A response icon1A response icon1InTowards Data EngineeringbyMuaaz·Jun 1How the Databricks Account Console Works: Roles, Permissions, and Access Control ExplainedDatabricks is a unified, open analytics platform for building, deploying, and managing enterprise grade data, analytics, and AI solutions…A response icon1A response icon1InTowards Data EngineeringbyMuaaz·May 26Databricks on GCP: Unity Catalog and External Location Setup GuideDatabricks has become a powerful platform for handling large scale data processing using Apache Spark. In today’s data driven world…A response icon1A response icon1InTowards Data EngineeringbyMuaaz·May 21Azure Databricks Unity Catalog Setup with ADLS Gen2 (Step-by-Step Guide)Databricks is a powerful platform for processing large-scale data using Apache Spark. In today’s data-driven world, it helps solve big data…A response icon1A response icon1InTowards AIbyMuaaz·May 18The Complete SQL Guide: Concepts, Queries & PracticeSQL (Structured Query Language) is a language used to interact with relational databases that store structured data. It is primarily used…A response icon1A response icon1Muaaz·May 11Docker for Data Engineering: Concepts, Use Cases, Best Practices and CommandsDocker is a platform for packaging, distributing, and running applications in lightweight, portable(you can run same application anywhere…A response icon1A response icon1Muaaz·May 4Kafka + Spark Structured Streaming Pipeline (Docker Compose Setup Guide)Streaming is a very common real world use case today. Most modern data pipelines in the industry are built around streaming systems to…A response icon1A response icon1Muaazhim100 followersData & AI Engineer with experience across batch/streaming data pipelines, ML, NLP, and GenAI. https://www.linkedin.com/in/muaazmuzammil-ai-ml-dataengineering/"
+    },
+    {
+        "extraction_id": "af03791b-9127-4f33-b57c-f55b79f60a76",
+        "extracted_at": "2026-06-19 09:07:31.665528",
+        "extracted_at_epoch": 1781860051,
+        "author_name": "Hugo Lu",
+        "author_url": "https://medium.com/@hugolu87",
+        "num_followers": 0,
+        "short_bio": "pen in appSign upSign inMedium LogoGet appWriteSearchSign upSign inHugo Lu11.4K followersHomeActivityAboutPinnedHugo Lu·May 11Top Dagster Alternatives in 2026 | Data Orchestration PrimerLearn about the up-and-coming platforms that beat Dagster at its own gameA response icon2A response icon2PinnedHugo Lu·Sep 1, 2025Building the Ultimate Orchestrator for dbt CloudHow to fit dbt Cloud and Orchestra into your data architecturePinnedHugo Lu·Sep 8, 2025Orchestra Revolutions: Announcing the Orchestra MetaEngineRedesigning broken metadata frameworks and dynamic DAGsPinnedHugo Lu·Mar 11, 2025Platform-Mesh, Hub and Spoke, and Centralised | 3 Types of data teamWhy understanding Team Structure is critical for Data and AIHugo Lu·1d ago7 Crucial Barriers between Data Teams and Self-Healing Data ArchitectureWhat Data Teams need to build with AI to make Self-Healing Data Architecture a practical realityHugo Lu·3d agoReal-time anomaly detection and log monitoring for dbt coreHow to add real-time alerting for dbt coreHugo Lu·3d agoOpen-Sourcing State-Aware Orchestration (SAO) for dbt coreWhy we’re open-sourcing State-Aware Orchestration for dbt in Orchestra and dbt coreHugo Lu·6d agoTop Monte Carlo Data Observability Alternatives in 2026How to tackle Data Observability outside of Monte Carlo in 2026Hugo Lu·Jun 12Top Enterprise Airflow Alternatives in 2026 | Data Orchestration 101How to pick the right Data Orchestration Tool for your enterpriseA response icon1A response icon1Hugo Lu·Jun 4Everything you need to know about Snowflake Summit 2026Sridhar Ramaswamy and Christian Kleinerman embark on a new journeyA response icon3A response icon3Hugo Lu11.4K followersFriend of MediumI write on Data engineering and the coolest data stuff. CEO@ Orchestra, the best-in-class control plane for Data and AI. https://app.getorchestra.io/signup"
+    },
+    {
+        "extraction_id": "af03791b-9127-4f33-b57c-f55b79f60a76",
+        "extracted_at": "2026-06-19 09:07:31.665528",
+        "extracted_at_epoch": 1781860051,
+        "author_name": "Gib Bassett",
+        "author_url": "https://medium.com/@gib.bassett",
+        "num_followers": 0,
+        "short_bio": "pen in appSign upSign inMedium LogoGet appWriteSearchSign upSign inGib Bassett83 followersHomeActivityAboutPinnedGib Bassett·Sep 28, 2022Three steps to valuing (and protecting) your analytics investmentsIn life it’s pleasantly serendipitous to realize you possess something of value. Like an appraiser informing you that the fake antique vase…Gib Bassett·4h agoGenie One shows where BI is heading — and why work context is the layer no platform can ownDatabricks’ Genie One announcement is easy to read as another “end of BI” moment. A business user asks a question in Slack, Teams, mobile…Gib Bassett·2d agoSolving the Agentic Work Context Blind Spot in Data CatalogsEnterprise data catalogs are having another moment. Platforms like Collibra, Alation, Atlan, Informatica, Microsoft Purview, and Databricks…Gib Bassett·5d agoPredictive BI Won’t Eliminate the Data Worker. It Will Make Their Context More Valuable.Every few years, the data world gets a new promise that sounds like liberation. Business users won’t wait for analysts. Analysts won’t wait…Gib Bassett·Jun 9MyDataWork: The System of Record Data Practitioners Never Got…Until NowEvery other business function got its system of record. Sales got the CRM. Marketing got the campaign and content platforms. Finance got…Gib Bassett·Jun 6The Best BI Renewal Strategy Is a Credible Exit PlanBI and analytics tool renewals used to be fairly straightforward. A company reviewed usage, counted users, checked adoption, and negotiated…Gib Bassett·Jun 4How to Spot Someone Who Actually Understands Agentic AIThe real test is whether they can explain how the agent knows what it’s allowed to doA response icon1A response icon1Gib Bassett·Jun 2The Next Analytics Tool Fight Will Be About AI BudgetAI is not arriving as a free layer on top of the enterprise technology stack. It is arriving as a competitor for dollars that used to fund…A response icon1A response icon1Gib Bassett·May 28The Missing Context Layer in AI-Era AnalyticsOrganizations have spent more than a decade modernizing the data stack. Cloud warehouses, BI platforms, transformation frameworks…Gib Bassett·May 23Borrow from P&G to get your agentic AI program on trackNearly a decade ago, enterprise software companies discovered that artificial intelligence sounded better when it had a name.Gib Bassett83 followersSalesforce, Oracle, Teradata, FICO, Alteryx, SPSS https://www.linkedin.com/in/gibbassett/. Now building MyDataWork, www.mydatawork.com."
+    },
+    {
+        "extraction_id": "af03791b-9127-4f33-b57c-f55b79f60a76",
+        "extracted_at": "2026-06-19 09:07:31.665528",
+        "extracted_at_epoch": 1781860051,
+        "author_name": "balaji bal",
+        "author_url": "https://medium.com/@balajibal",
+        "num_followers": 0,
+        "short_bio": "pen in appSign upSign inMedium LogoGet appWriteSearchSign upSign inbalaji bal727 followersHomeActivityAboutbalaji bal·16h agoUsing Debezium to Move Change Data from Azure Database for PostgreSQL into DatabricksCDC is the difference between stale snapshots and an actually usable lakehousebalaji bal·6d agoUnderstanding Server-Sent Events : Core Infrastructure for Agentic PlatformsMost developers first encounter Server-Sent Events as a small browser feature. A convenient way to push notifications. A simpler…balaji bal·Jun 11A2A Is a Nonsense Protocoltl;dr : If the industry is serious about agentic infrastructure, it should stop fetishising conversations between endpoints and start…balaji bal·Jun 1MCP’s Upcoming 2026 Release Is a Big DealThe next release of the Model Context Protocol, scheduled to finalise on July 28, 2026, looks less like a routine version bump and more…balaji bal·May 31Why we don’t use Jira: Reducing Cognitive TaxEven before we start as the sole engineering team on a client engagement, we make our preference clear: we do not default to Jira…balaji bal·May 30The Upside-Downside of AI: Apparently We Are All Supposed to Pretend the Numbers WorkThere is a wonderful tradition in technology markets where, every few years, a group of very serious people explain that this time the laws…balaji bal·May 28W3C Tracing: The Common Language for "
+    },
+    {
+        "extraction_id": "af03791b-9127-4f33-b57c-f55b79f60a76",
+        "extracted_at": "2026-06-19 09:07:31.665528",
+        "extracted_at_epoch": 1781860051,
+        "author_name": "Keshav M.",
+        "author_url": "https://medium.com/@misrakeshav",
+        "num_followers": 0,
+        "short_bio": "pen in appSign upSign inMedium LogoGet appWriteSearchSign upSign inKeshav M.9 followersHomeActivityAboutKeshav M.·4d agoI Tested Snowflake’s Two Brand New AI Tools by Building a Self-Running Data Modelling PipelineCoCo Desktop launched at Snowflake Summit two weeks ago, so I thought of a use case for it, to understand when to use it. Here’s what I…A response icon1A response icon1Keshav M.·Apr 9Building a Reusable Snowflake Infrastructure-as-Code Platform with Snowflake DCM ProjectsI noticed this feature pop up recently in preview and it reminded me of an article I had written almost 2 years ago now (shameless self…Keshav M.·Jul 27, 2025Creating a Microsoft Teams Bot to Query Snowflake with an LLM BackendPremiseKeshav M.·Oct 1, 2024Azure Key Vault Key Rotation — Snowflake PasswordsSo a few months ago, there was some noise in the Snowflake sphere of things about account security and the enforcing MFAs on (human) user…Keshav M.·May 30, 2024Using Jinja2 templates to create tablesContextA response icon1A response icon1Keshav M.9 followersI sometimes create Snowflake PoCs between bouts of procrastinationHelpStatusAboutCareersPressBlogStorePrivacyRulesTermsText to speec"
+    },
+    {
+        "extraction_id": "af03791b-9127-4f33-b57c-f55b79f60a76",
+        "extracted_at": "2026-06-19 09:07:31.665528",
+        "extracted_at_epoch": 1781860051,
+        "author_name": "Andreretorta",
+        "author_url": "https://medium.com/@andreretorta046",
+        "num_followers": 0,
+        "short_bio": "pen in appSign upSign inMedium LogoGet appWriteSearchSign upSign inAndreretorta5 followersHomeActivityAboutPinnedAndreretorta·Feb 3, 2025Projeto Engenharia de Dados- Uber DataO objetivo deste projeto é realizar análises de dados e construir uma pipeline de dados da Uber utilizando diversas ferramentas e…Andreretorta·22h agoHow I built a complete Data Product, from MongoDB to BigQuery, Data Mesh styleI wanted to build a project that showed, in practice, the full lifecycle of a Data Product — from the first byte to the last, the way it…Andreretorta·1d agoComo construí um Data Product completo, do MongoDB ao BigQuery, no estilo Data MeshQuis construir um projeto que mostrasse, na prática, como reproduzir o ciclo de vida completo de um Data Product, do primeiro byte ao…Andreretorta·1d agoUn pipeline analytique complet avec dbt et SnowflakeCe projet est né d’une question simple : que faudrait-il pour construire un pipeline de données de bout en bout, de la donnée brute jusqu’à…Andreretorta·2d agoUn pipeline analítico completo con dbt y SnowflakeEste proyecto nació de una pregunta simple: ¿cómo sería construir un pipeline de datos de extremo a extremo, desde el dato crudo hasta la…Andreretorta·2d agoA complete analytics pipeline with dbt and SnowflakeThis project started with a simple question: what would it take to build a data pipeline end to end, from raw data to an analysis-ready…Andreretorta·4d agoUm pipeline analítico completo com dbt e SnowflakeEste projeto nasceu de uma pergunta simples: como seria construir um pipeline de dados de ponta a ponta, do dado bruto até a camada pronta…Andreretorta·4d agoConstruindo um Pipeline de Dados ETL com Pentaho PDI e Modelagem DimensionalDa extração de arquivos CSV/XLSX e de um sistema OLTP em PostgreSQL à carga de um Data Mart de Vendas em Star Schema — um projeto completo…Andreretorta·Jun 11Construire un Pipeline de Données de Bout en Bout sur Azure avec l’Architecture MedallionDe l’ingestion automatisée dans Data Factory à la consommation serverless dans Synapse un projet complet d’Ingénierie de Données dans le…Andreretorta·Jun 11Construyendo un Pipeline de Datos de Extremo a Extremo en Azure con Arquitectura MedallionDe la ingesta automatizada en Data Factory al consumo serverless en Synapse — un proyecto completo de Ingeniería de Datos en la nube.Andreretorta5 followersEngenheiro de Dados, apaixonado por tecnologia e Economia. Resido no Porto e sou movido pela ciência, sempre buscando aprender e conectar conhecimentos."
+    },
+    {
+        "extraction_id": "af03791b-9127-4f33-b57c-f55b79f60a76",
+        "extracted_at": "2026-06-19 09:07:31.665528",
+        "extracted_at_epoch": 1781860051,
+        "author_name": "Unable to parse",
+        "author_url": "https://medium.com/@sigmoidanalytics",
+        "num_followers": 0,
+        "short_bio": "avaScript and cookies to continu"
+    },
+    {
+        "extraction_id": "af03791b-9127-4f33-b57c-f55b79f60a76",
+        "extracted_at": "2026-06-19 09:07:31.665528",
+        "extracted_at_epoch": 1781860051,
+        "author_name": "Ansam Yousry",
+        "author_url": "https://medium.com/@ansam.yousry",
+        "num_followers": 0,
+        "short_bio": "pen in appSign upSign inMedium LogoGet appWriteSearchSign upSign inAnsam Yousry1.1K followersHomeActivityListsAboutInTowards Data EngineeringbyAnsam Yousry·1d agoDatabricks Just Leveled Up: New Features That Make Vibe Coding Fast, Safe & Super CheapAt Data + AI Summit 2026, Databricks announced three new Databricks Apps features that, as a data engineer, actually make sense in real…InTowards Data EngineeringbyAnsam Yousry·6d agoMetric Views in Databricks: The “Define Once, Slice Everywhere” RevolutionBy a data engineer who has written too many duplicate SUM() expressions in his lifetimeAnsam Yousry·Jan 13Stop Trusting df.equals(): The Critical Validation Skill for Pandas and PySpark UsersIt is 4:45 PM on a Friday.InTowards DevbyAnsam Yousry·Dec 21, 2025Mirroring in Microsoft Fabric: From Data Pipelines to a Collaborative Analytics FabricModern analytics teams struggle not because they lack data, but because operational data is slow to reach analytical systems. Microsoft…Ansam Yousry·Dec 5, 2025How to Get Certified in Databricks: A Complete Guide to Ace the ExamIf you want a strong certificate that empowers your CV, the Databricks certification is highly recommended. It’s recognized globally and…A response icon1A response icon1Ansam Yousry·Nov 27, 2025What Tech Leaders Say About AI and Your Career, And What You Should Be Planning NowCreated by authorAnsam Yousry·Sep 24, 2025The Secret Behind Google’s Smarter Results: Semantic SearchImagine you type “cheap places to stay in NYC near theaters”. A classic keyword engine hunts for pages that literally contain cheap…Ansam Yousry·Sep 7, 2025Why Keyword Search Fails and How Semantic Search Solves It (2025 Guide)We’ve all experienced it: you type a question into a search box, and the results feel off. Sometimes you get irrelevant pages stuffed with…Ansam Yousry·Jun 10, 2025Why PostgreSQL is at the Center of the Next Big Tech BattleData is more important than ever. As companies rush to build smarter applications and AI-powered tools, they need powerful, flexible, and…Ansam Yousry·Feb 18, 2025Mastering dbt: Your Complete Step-by-Step HandbookSetting up dbt Core involves installing the tool, configuring your environment, and running your first dbt project. Below is a step-by-step…Ansam Yousry1.1K followersHelp data engineers grow their skills by sharing real-world demos and in-depth technical articles. https://www.linkedin.com/in/ansam-yousry/"
+    }
+]
