@@ -45,6 +45,36 @@ models:
       - dbt_expectations.expect_table_column_count_to_be_between:
           min_value: 1
 
+  - name: fct_dbt_interactors
+    columns:
+      - name: username
+        tests:
+          - not_null
+          - unique
+      # A minority of users have no issue or PR in the latest snapshot, e.g. because the
+      # repo they interacted with is no longer scraped, so the first_interaction_ columns
+      # are only asserted for users that do have one.
+      - name: first_interaction_at
+        tests:
+          - not_null:
+              config:
+                where: "num_issues_created is not null or num_prs_created is not null"
+      - name: first_interaction_type
+        tests:
+          - accepted_values:
+              values: ["issue", "pull_request"]
+          - not_null:
+              config:
+                where: "num_issues_created is not null or num_prs_created is not null"
+      - name: first_interaction_url
+        tests:
+          - not_null:
+              config:
+                where: "num_issues_created is not null or num_prs_created is not null"
+    tests:
+      - dbt_expectations.expect_table_column_count_to_be_between:
+          min_value: 1
+
   - name: fct_medium_blogs_per_day
     tests:
       - dbt_expectations.expect_table_column_count_to_be_between:
