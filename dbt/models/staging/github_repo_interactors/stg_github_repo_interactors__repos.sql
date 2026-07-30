@@ -23,6 +23,7 @@ select distinct
     namewithowner as full_name,
     url as html_url,
     base."databaseId" as repo_id,
+    string_split(namewithowner, '/')[1] as repo_owner,
     name as repo_name,
     url,
     cast("createdAt" as timestamp) as created_at,
