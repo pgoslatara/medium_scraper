@@ -61,10 +61,12 @@ class SendNewDutchInteractorEmail:
         msg["From"] = sender_email_address
         msg["To"] = recipient_email_address
 
+        # Titles and locations are free text written by any GitHub user, so escape them
+        # rather than using tabulate's unsafehtml format.
         formatted_interactors = tabulate(
             list(map(list, zip(*[v for k, v in interactors.items()]))),
             interactors.keys(),  # type: ignore
-            tablefmt="unsafehtml",
+            tablefmt="html",
         )
         msg.set_content(
             f"""
