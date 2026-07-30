@@ -3,10 +3,16 @@ version: 2
 models:
   - name: stg_github_discussions__discussions
     columns:
-      - name: discussion_number
+      - name: discussion_id
         tests:
           - not_null
           - unique
+      - name: discussion_number
+        tests:
+          - not_null
     tests:
       - dbt_expectations.expect_table_column_count_to_be_between:
           min_value: 1
+      # discussion_number is only unique within a repo, not across repos
+      - dbt_expectations.expect_compound_columns_to_be_unique:
+          column_list: ["repo_owner", "repo_name", "discussion_number"]
