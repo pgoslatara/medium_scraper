@@ -20,6 +20,78 @@ from utils.utils import (
     save_to_landing_zone,
 )
 
+# Owners whose every non-forked repo is scraped.
+GITHUB_OWNERS = ["dbt-labs"]
+
+# Individually named `owner/name` repos, for owners where scraping every repo is not
+# wanted (e.g. personal accounts that also hold unrelated projects).
+GITHUB_REPOS = [
+    "SQLMesh/sqlmesh",
+    "sqlfluff/sqlfluff",
+    "tconbeer/sqlfmt",
+]
+
+
+def get_github_repos(repos: List[str]) -> List[Dict[str, object]]:
+    """Fetch metadata for individually named `owner/name` repos.
+
+    Returns the same fields as `get_github_repos_per_org` so both write an identical
+    schema to the `github_repos` landing zone.
+    """
+
+    def get_repo_info(repo: str) -> Any:
+        logger.info(f"Fetching repo {repo=}...")
+
+        repo_query = Query(
+            name="repository",
+            arguments=[
+                Argument(name="owner", value=f'"{repo.split("/")[0]}"'),
+                Argument(name="name", value=f'"{repo.split("/")[1]}"'),
+            ],
+            fields=[
+                "createdAt",
+                "databaseId",
+                "isFork",
+                "name",
+                "nameWithOwner",
+                "url",
+            ],
+        )
+
+        repo_info = call_github_api(
+            method="graphql",
+            json={"query": Operation(type="query", queries=[repo_query]).render()},
+        )["data"]["repository"]
+
+        if repo_info is None:
+            # Deleted or made private since being added to GITHUB_REPOS. GitHub resolves
+            # renames, so a rename alone does not land here.
+            logger.warning(f"Could not resolve {repo=}, skipping.")
+        return repo_info
+
+    pool = ThreadPool(1)
+    repo_info = [x for x in pool.map(lambda repo: get_repo_info(repo), repos) if x is not None]
+
+    logger.info(f"Retrieved {len(repo_info)} of {len(repos)} individually named repos.")
+
+    metadata = {
+        "extraction_id": get_extraction_id(),
+        "extracted_at": get_extracted_at(),
+        "extracted_at_epoch": get_extracted_at_epoch(),
+    }
+    for repo in repo_info:
+        repo.update(metadata)
+
+    # The landing zone is partitioned by owner, so group before writing to keep one file
+    # per partition per extraction. Use the owner from `nameWithOwner` so renamed repos
+    # land under their current owner.
+    for owner in sorted({str(x["nameWithOwner"]).split("/")[0] for x in repo_info}):
+        save_to_landing_zone(
+            data=[x for x in repo_info if str(x["nameWithOwner"]).split("/")[0] == owner],
+            file_name=f"domain=github_repos/schema_version=2/org={owner}/extracted_at={get_extracted_at_epoch()}/extraction_id={get_extraction_id()}.json",
+        )
+    return repo_info
+
 
 def get_github_repos_per_org(org: str) -> List[Dict[str, object]]:
     logger.info(f"Fetching repos from {org=}...")
@@ -458,31 +530,47 @@ def get_github_repo_interactor_info(usernames: List[object]) -> List[Dict[str, o
 
 
 def main() -> None:
-    github_orgs = ["dbt-labs"]
-    for org in github_orgs:
+    owner_repo_names: List[str] = []
+    for org in GITHUB_OWNERS:
         repos = get_github_repos_per_org(org)
-        repo_names = [str(x["nameWithOwner"]) for x in repos if not x["isFork"]]
-        if os.getenv("CICD_RUN") == "True":
-            repo_names = repo_names[:10]
+        owner_repo_names += [str(x["nameWithOwner"]) for x in repos if not x["isFork"]]
 
-        logger.info(f"Retrieving issues and PRs for {len(repo_names)} non-forked repos.")
-        issues = get_github_issues(repo_names)
-        prs = get_github_pull_requests(repo_names)
+    if os.getenv("CICD_RUN") == "True":
+        owner_repo_names = owner_repo_names[:10]
 
-        # Accounting for accounts that have been deleted
-        repo_interactors = [
-            y
-            for y in {
-                (x.get("author").get("login") if x.get("author") is not None else x.get("author"))  # type: ignore[attr-defined]
-                for x in prs + issues
-            }
-            if y is not None
-        ]
-        logger.info(f"Extracted {len(repo_interactors)} unique GitHub usernames.")
-        get_github_repo_interactor_info(list(repo_interactors))
+    # Named repos already covered by GITHUB_OWNERS are skipped: extracting them twice
+    # would collide on the same landing zone partition and duplicate rows downstream.
+    named_repos = [x for x in GITHUB_REPOS if x.split("/")[0] not in GITHUB_OWNERS]
+    if len(named_repos) < len(GITHUB_REPOS):
+        logger.info(
+            f"Skipping {len(GITHUB_REPOS) - len(named_repos)} named repos already covered by GITHUB_OWNERS."
+        )
+    named_repo_names = [
+        str(x["nameWithOwner"]) for x in get_github_repos(named_repos) if not x["isFork"]
+    ]
 
-        logger.info(f"Retrieving discussions for {len(repo_names)} non-forked repos.")
-        get_github_discussions(repo_names)
+    # Issues, PRs, discussions and users are written to a single unpartitioned file per
+    # domain per run, so they must be extracted once for all repos rather than per owner.
+    repo_names = list(dict.fromkeys(owner_repo_names + named_repo_names))
+
+    logger.info(f"Retrieving issues and PRs for {len(repo_names)} non-forked repos.")
+    issues = get_github_issues(repo_names)
+    prs = get_github_pull_requests(repo_names)
+
+    # Accounting for accounts that have been deleted
+    repo_interactors = [
+        y
+        for y in {
+            (x.get("author").get("login") if x.get("author") is not None else x.get("author"))  # type: ignore[attr-defined]
+            for x in prs + issues
+        }
+        if y is not None
+    ]
+    logger.info(f"Extracted {len(repo_interactors)} unique GitHub usernames.")
+    get_github_repo_interactor_info(list(repo_interactors))
+
+    logger.info(f"Retrieving discussions for {len(repo_names)} non-forked repos.")
+    get_github_discussions(repo_names)
 
 
 if __name__ == "__main__":
