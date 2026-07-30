@@ -24,6 +24,7 @@ class SendNewDbtRepoEmail:
                     FROM read_parquet("{os.getenv('DATA_DIR')}/marts/dim_dbt_repos.parquet")
                     WHERE
                         to_timestamp(first_extracted_at) >= (GET_CURRENT_TIMESTAMP() - INTERVAL {self.lookback_days} DAY)
+                        and repo_owner = 'dbt-labs'
                     ORDER BY created_at DESC
         """).arrow()
 
