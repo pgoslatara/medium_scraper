@@ -23,10 +23,19 @@ models:
 
   - name: stg_github_repo_interactors__repos
     columns:
-      - name: repo_name
+      # repo_name is only unique within an owner, e.g. both dbt-labs/sqlfluff and
+      # sqlfluff/sqlfluff are scraped, so uniqueness is asserted on full_name
+      - name: full_name
         tests:
           - not_null
           - unique
+      - name: repo_id
+        tests:
+          - not_null
+          - unique
+      - name: repo_name
+        tests:
+          - not_null
     tests:
       - dbt_expectations.expect_table_column_count_to_be_between:
           min_value: 1
