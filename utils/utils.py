@@ -25,9 +25,11 @@ from utils.logger import logger
 # GitHub throttles in two distinct ways. A primary rate limit publishes a reset time
 # that can be polled, whereas a secondary (abuse detection) limit publishes nothing and
 # only clears by backing off.
-RATE_LIMIT_POLL_SECONDS = 60
+RATE_LIMIT_POLL_SECONDS = 60  # Longest single sleep before re-checking the allocation.
+RATE_LIMIT_MIN_SLEEP_SECONDS = 5  # Floor between attempts, so retries cannot spin.
 RATE_LIMIT_MAX_WAIT_SECONDS = 60 * 90  # Primary allocations reset hourly.
 SECONDARY_RATE_LIMIT_BACKOFF_SECONDS = 60
+SECONDARY_RATE_LIMIT_MAX_BACKOFF_SECONDS = 60 * 15  # Guards against a bogus header.
 SECONDARY_RATE_LIMIT_MAX_RETRIES = 5
 # Backstop against a response that always looks retryable, e.g. a malformed query
 # returning no data key while the allocation is healthy.
@@ -165,19 +167,57 @@ def request_github_api(
     raise ValueError(f"Unsupported GitHub API method: {method}")
 
 
+def seconds_until(target: datetime) -> float:
+    """Return the seconds remaining until target, never negative."""
+    now = datetime.now(pytz.utc) if target.tzinfo else datetime.now()
+    return max(0.0, (target - now).total_seconds())
+
+
+def get_retry_after_seconds(response: Any) -> Optional[float]:
+    """Read GitHub's own back-off hint from a throttled response.
+
+    GitHub asks clients to honour Retry-After first, then x-ratelimit-reset once the
+    remaining allocation is zero. Returns None when neither header is usable.
+    """
+    headers = getattr(response, "headers", None) or {}
+
+    retry_after = headers.get("Retry-After") or headers.get("retry-after")
+    if retry_after:
+        try:
+            return max(0.0, float(retry_after))
+        except (TypeError, ValueError):
+            logger.warning(f"Could not parse Retry-After header: {retry_after!r}")
+
+    if str(headers.get("x-ratelimit-remaining", "")).strip() == "0":
+        reset_at = headers.get("x-ratelimit-reset")
+        if reset_at is not None:
+            try:
+                return max(0.0, float(reset_at) - time.time())
+            except (TypeError, ValueError):
+                logger.warning(f"Could not parse x-ratelimit-reset header: {reset_at!r}")
+
+    return None
+
+
 def wait_for_rest_rate_limit_reset() -> None:
-    """Poll until the REST allocation is available again."""
+    """Wait until the REST allocation is available again.
+
+    Sleeps up to the published reset time rather than in fixed polling intervals, so a
+    reset that is seconds away does not cost a full poll interval.
+    """
     deadline = time.monotonic() + RATE_LIMIT_MAX_WAIT_SECONDS
     while time.monotonic() < deadline:
-        # Sleep first so that callers always back off before their next request.
-        time.sleep(RATE_LIMIT_POLL_SECONDS)
         reset_time = get_rest_api_reset_time()
         if reset_time is None:
             logger.info("REST rate limit query was refused, continuing to wait...")
+            sleep_seconds = float(RATE_LIMIT_POLL_SECONDS)
         elif reset_time <= datetime.now():
             return
         else:
             logger.info(f"Waiting until {reset_time} for REST allocation to reset...")
+            sleep_seconds = seconds_until(reset_time)
+
+        time.sleep(min(max(sleep_seconds, RATE_LIMIT_MIN_SLEEP_SECONDS), RATE_LIMIT_POLL_SECONDS))
 
     raise GitHubAPIRateLimitError(
         f"REST allocation still exhausted after {RATE_LIMIT_MAX_WAIT_SECONDS} seconds."
@@ -185,18 +225,20 @@ def wait_for_rest_rate_limit_reset() -> None:
 
 
 def wait_for_graphql_rate_limit_reset() -> None:
-    """Poll until the GraphQL allocation is available again."""
+    """Wait until the GraphQL allocation is available again."""
     deadline = time.monotonic() + RATE_LIMIT_MAX_WAIT_SECONDS
     while time.monotonic() < deadline:
-        # Sleep first so that callers always back off before their next request.
-        time.sleep(RATE_LIMIT_POLL_SECONDS)
         reset_info = get_graphql_api_reset_info()
         if reset_info is None:
             logger.info("GraphQL rate limit query was refused, continuing to wait...")
+            sleep_seconds = float(RATE_LIMIT_POLL_SECONDS)
         elif int(reset_info["remaining"]) > 0:  # type: ignore[arg-type]
             return
         else:
             logger.info(f"Waiting until {reset_info['resetAt']} UTC...")
+            sleep_seconds = seconds_until(reset_info["resetAt"])  # type: ignore[arg-type]
+
+        time.sleep(min(max(sleep_seconds, RATE_LIMIT_MIN_SLEEP_SECONDS), RATE_LIMIT_POLL_SECONDS))
 
     raise GitHubGraphqlRateLimitError(
         f"GraphQL allocation still exhausted after {RATE_LIMIT_MAX_WAIT_SECONDS} seconds."
@@ -234,16 +276,31 @@ def call_github_api(
                     f"Still secondary rate limited after {SECONDARY_RATE_LIMIT_MAX_RETRIES} retries."
                 )
 
-            # Secondary limits publish no reset time, so back off exponentially.
-            backoff_seconds = SECONDARY_RATE_LIMIT_BACKOFF_SECONDS * 2 ** (
-                secondary_rate_limit_retries - 1
+            # Prefer GitHub's own hint; fall back to exponential back-off when the
+            # response carries no usable header.
+            backoff_seconds = get_retry_after_seconds(r)
+            if backoff_seconds is None:
+                backoff_seconds = SECONDARY_RATE_LIMIT_BACKOFF_SECONDS * 2 ** (
+                    secondary_rate_limit_retries - 1
+                )
+            backoff_seconds = min(
+                max(backoff_seconds, RATE_LIMIT_MIN_SLEEP_SECONDS),
+                SECONDARY_RATE_LIMIT_MAX_BACKOFF_SECONDS,
             )
-            logger.info(f"Secondary rate limit hit, retrying in {backoff_seconds} seconds...")
+            logger.info(f"Secondary rate limit hit, retrying in {backoff_seconds:.0f} seconds...")
             time.sleep(backoff_seconds)
-        elif method.lower() == "graphql":
-            wait_for_graphql_rate_limit_reset()
         else:
-            wait_for_rest_rate_limit_reset()
+            wait_started = time.monotonic()
+            if method.lower() == "graphql":
+                wait_for_graphql_rate_limit_reset()
+            else:
+                wait_for_rest_rate_limit_reset()
+
+            # The wait returns immediately when the allocation is already healthy, so
+            # enforce a floor to stop a persistently retryable response spinning.
+            remaining_floor = RATE_LIMIT_MIN_SLEEP_SECONDS - (time.monotonic() - wait_started)
+            if remaining_floor > 0:
+                time.sleep(remaining_floor)
 
     raise GitHubAPIRateLimitError(
         f"GitHub API still returning retryable errors after {MAX_RETRIES} retries."

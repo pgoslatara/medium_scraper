@@ -27,7 +27,9 @@ env:
 jobs:
   pipeline:
     runs-on: ubuntu-latest
-    timeout-minutes: 45
+    # Ingestion waits out GitHub rate limits rather than failing, so the job needs
+    # headroom beyond a normal ~20 minute run for days when throttling is heavy.
+    timeout-minutes: 90
     steps:
       - uses: actions/checkout@v4
 

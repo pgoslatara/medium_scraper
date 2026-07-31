@@ -31,6 +31,10 @@ GITHUB_REPOS = [
     "tconbeer/sqlfmt",
 ]
 
+# Concurrent user lookups. GitHub applies secondary rate limits to bursts of parallel
+# requests, so this trades a little throughput for far less time spent backing off.
+USER_INFO_THREAD_COUNT = 4
+
 
 def get_github_repos(repos: List[str]) -> List[Dict[str, object]]:
     """Fetch metadata for individually named `owner/name` repos.
@@ -504,7 +508,7 @@ def get_github_repo_interactor_info(usernames: List[object]) -> List[Dict[str, o
         f"Fetching {len(usernames)} unique GitHub usernames that are new or have not been extracted recently."
     )
 
-    pool = ThreadPool(8)
+    pool = ThreadPool(USER_INFO_THREAD_COUNT)
     user_info = pool.map(
         lambda username: get_username_info(username),
         usernames,
