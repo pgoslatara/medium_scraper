@@ -22,54 +22,185 @@ from retry import retry
 
 from utils.logger import logger
 
+# GitHub throttles in two distinct ways. A primary rate limit publishes a reset time
+# that can be polled, whereas a secondary (abuse detection) limit publishes nothing and
+# only clears by backing off.
+RATE_LIMIT_POLL_SECONDS = 60
+RATE_LIMIT_MAX_WAIT_SECONDS = 60 * 90  # Primary allocations reset hourly.
+SECONDARY_RATE_LIMIT_BACKOFF_SECONDS = 60
+SECONDARY_RATE_LIMIT_MAX_RETRIES = 5
+# Backstop against a response that always looks retryable, e.g. a malformed query
+# returning no data key while the allocation is healthy.
+MAX_RETRIES = 20
+
 
 class GitHubAPIRateLimitError(Exception):
-    def __init__(self) -> None:
-        logger.info(self.__str__())
-
-    def __str__(self) -> str:
-        return f"GitHubAPIRateLimitError: API allocations resets at {self.get_api_reset_time()}."
-
-    def get_api_reset_time(self) -> datetime:
-        r = call_github_api(
-            "GET",
-            "rate_limit",
-        )
-        return datetime.fromtimestamp(r["rate"]["reset"])
+    """The REST API primary rate limit did not reset within the allowed wait."""
 
 
 class GitHubGraphqlRateLimitError(Exception):
-    def __init__(self) -> None:
-        logger.info(self.__str__())
+    """The GraphQL API primary rate limit did not reset within the allowed wait."""
 
-    def __str__(self) -> str:
-        return (
-            f"GitHubGraphqlRateLimitError: API allocations resets at {self.get_api_reset_info()}."
+
+class GitHubSecondaryRateLimitError(Exception):
+    """GitHub applied a secondary rate limit that did not clear after backing off."""
+
+
+def get_rest_api_reset_time() -> Optional[datetime]:
+    """Return when the REST allocation resets, or None if it could not be read.
+
+    The rate_limit endpoint does not itself consume allocation, but it can still be
+    refused under a secondary rate limit, hence the optional return.
+    """
+    r = call_github_api("GET", "rate_limit", raise_on_rate_limit=False)
+    if not isinstance(r, dict) or "rate" not in r:
+        logger.warning(f"Could not read REST rate limit state: {r=}")
+        return None
+
+    return datetime.fromtimestamp(r["rate"]["reset"])
+
+
+def get_graphql_api_reset_info() -> Optional[dict[str, Union[int, datetime, str]]]:
+    """Return the GraphQL allocation state, or None if it could not be read."""
+    ratelimit_query = Query(
+        name="rateLimit",
+        fields=[
+            Field(name="limit"),
+            Field(name="remaining"),
+            Field(name="used"),
+            Field(name="resetAt"),
+        ],
+    )
+
+    # raise_on_rate_limit=False is essential: this probe runs *because* a call was
+    # throttled, so re-entering rate limit handling here would recurse indefinitely.
+    r = call_github_api(
+        method="graphql",
+        json={"query": Operation(type="query", queries=[ratelimit_query]).render()},
+        raise_on_rate_limit=False,
+    )
+    rate_limit = r.get("data", {}).get("rateLimit") if isinstance(r, dict) else None
+    if rate_limit is None:
+        logger.warning(f"Could not read GraphQL rate limit state: {r=}")
+        return None
+
+    return {
+        "remaining": rate_limit["remaining"],
+        "used": rate_limit["used"],
+        "resetAt": pytz.utc.localize(
+            datetime.strptime(rate_limit["resetAt"], "%Y-%m-%dT%H:%M:%SZ")
+        ),
+    }
+
+
+def is_secondary_rate_limit(payload: Any) -> bool:
+    """Detect a secondary rate limit response from either the REST or GraphQL API.
+
+    The two APIs link to different documentation anchors, so match on the shared
+    substring as well as on the message text.
+    """
+    if not isinstance(payload, dict):
+        return False
+
+    documentation_url = payload.get("documentation_url") or ""
+    message = payload.get("message") or ""
+
+    return "secondary-rate-limits" in documentation_url or "secondary rate limit" in message
+
+
+def is_retryable_response(method: str, payload: Any) -> bool:
+    """Detect responses that clear by waiting: rate limits and transient API errors."""
+    if not isinstance(payload, dict):
+        return False
+
+    if is_secondary_rate_limit(payload):
+        return True
+
+    message = payload.get("message") or ""
+    if message.startswith("API rate limit exceeded for user ID"):
+        return True
+
+    if method.lower() != "graphql":
+        return False
+
+    errors = payload.get("errors")
+    if errors:
+        first_error = errors[0]
+        if first_error.get("type") == "RATE_LIMITED" or first_error.get("message") in [
+            "A query attribute must be specified and must be a string."
+        ]:
+            return True
+
+    # A GraphQL response with no data key is an error or a server-side timeout, both
+    # of which are worth retrying.
+    return "data" not in payload.keys()
+
+
+def request_github_api(
+    method: str,
+    endpoint: Optional[str] = None,
+    json: Optional[Mapping[str, Union[int, str]]] = None,
+    params: Optional[Mapping[str, Union[int, str]]] = None,
+) -> Any:
+    """Issue a single GitHub API request with no rate limit handling."""
+    headers = {
+        "Accept": "application/vnd.github+json",
+        "Authorization": f"Bearer {os.getenv('PAT_GITHUB')}",
+        "X-GitHub-Api-Version": "2022-11-28",
+    }
+
+    if method.lower() == "get":
+        return create_requests_session().get(
+            f"https://api.github.com/{endpoint}",
+            headers=headers,
+            params=params,
+        )
+    elif method.lower() == "graphql":
+        return create_requests_session().post(
+            url="https://api.github.com/graphql",
+            headers=headers,
+            json=json,
         )
 
-    def get_api_reset_info(self) -> dict[str, Union[int, datetime, str]]:
-        ratelimit_query = Query(
-            name="rateLimit",
-            fields=[
-                Field(name="limit"),
-                Field(name="remaining"),
-                Field(name="used"),
-                Field(name="resetAt"),
-            ],
-        )
+    raise ValueError(f"Unsupported GitHub API method: {method}")
 
-        r = call_github_api(
-            method="graphql",
-            json={"query": Operation(type="query", queries=[ratelimit_query]).render()},
-        )
-        logger.info(f"{r=}")
-        return {
-            "remaining": r["data"]["rateLimit"]["remaining"],
-            "used": r["data"]["rateLimit"]["used"],
-            "resetAt": pytz.utc.localize(
-                datetime.strptime(r["data"]["rateLimit"]["resetAt"], "%Y-%m-%dT%H:%M:%SZ")
-            ),
-        }
+
+def wait_for_rest_rate_limit_reset() -> None:
+    """Poll until the REST allocation is available again."""
+    deadline = time.monotonic() + RATE_LIMIT_MAX_WAIT_SECONDS
+    while time.monotonic() < deadline:
+        # Sleep first so that callers always back off before their next request.
+        time.sleep(RATE_LIMIT_POLL_SECONDS)
+        reset_time = get_rest_api_reset_time()
+        if reset_time is None:
+            logger.info("REST rate limit query was refused, continuing to wait...")
+        elif reset_time <= datetime.now():
+            return
+        else:
+            logger.info(f"Waiting until {reset_time} for REST allocation to reset...")
+
+    raise GitHubAPIRateLimitError(
+        f"REST allocation still exhausted after {RATE_LIMIT_MAX_WAIT_SECONDS} seconds."
+    )
+
+
+def wait_for_graphql_rate_limit_reset() -> None:
+    """Poll until the GraphQL allocation is available again."""
+    deadline = time.monotonic() + RATE_LIMIT_MAX_WAIT_SECONDS
+    while time.monotonic() < deadline:
+        # Sleep first so that callers always back off before their next request.
+        time.sleep(RATE_LIMIT_POLL_SECONDS)
+        reset_info = get_graphql_api_reset_info()
+        if reset_info is None:
+            logger.info("GraphQL rate limit query was refused, continuing to wait...")
+        elif int(reset_info["remaining"]) > 0:  # type: ignore[arg-type]
+            return
+        else:
+            logger.info(f"Waiting until {reset_info['resetAt']} UTC...")
+
+    raise GitHubGraphqlRateLimitError(
+        f"GraphQL allocation still exhausted after {RATE_LIMIT_MAX_WAIT_SECONDS} seconds."
+    )
 
 
 def call_github_api(
@@ -77,81 +208,46 @@ def call_github_api(
     endpoint: Optional[str] = None,
     json: Optional[Mapping[str, Union[int, str]]] = None,
     params: Optional[Mapping[str, Union[int, str]]] = None,
+    raise_on_rate_limit: bool = True,
 ) -> Any:
-    if method.lower() == "get":
-        r = create_requests_session().get(
-            f"https://api.github.com/{endpoint}",
-            headers={
-                "Accept": "application/vnd.github+json",
-                "Authorization": f"Bearer {os.getenv('PAT_GITHUB')}",
-                "X-GitHub-Api-Version": "2022-11-28",
-            },
-            params=params,
-        )
-    elif method.lower() == "graphql":
-        r = create_requests_session().post(
-            url="https://api.github.com/graphql",
-            headers={
-                "Accept": "application/vnd.github+json",
-                "Authorization": f"Bearer {os.getenv('PAT_GITHUB')}",
-                "X-GitHub-Api-Version": "2022-11-28",
-            },
-            json=json,
-        )
+    """Call the GitHub REST or GraphQL API, waiting out any rate limits.
 
-    if isinstance(r.json(), dict) and (
-        (
-            r.json().get("message")
-            and r.json()["message"].startswith("API rate limit exceeded for user ID")
-        )
-        or (
-            method.lower() == "graphql"
-            and (
-                (
-                    "errors" in r.json().keys()
-                    and (
-                        r.json().get("errors")[0].get("type") in ["RATE_LIMITED"]
-                        or r.json().get("errors")[0].get("message")
-                        in ["A query attribute must be specified and must be a string."]
-                    )
-                    or "data" not in r.json().keys()
-                )
-                or (
-                    r.json().get("documentation_url")
-                    == "https://docs.github.com/free-pro-team@latest/rest/overview/rate-limits-for-the-rest-api#about-secondary-rate-limits"
-                )
-            )
-        )
-    ):
-        logger.warning(f"Error detected, returned data: {r.json()=}")
-        try:
-            if method.lower() == "graphql":
-                raise GitHubGraphqlRateLimitError
-            else:
-                raise GitHubAPIRateLimitError
-        except GitHubGraphqlRateLimitError as e:
-            reset_info: dict[str, Union[int, datetime, str]] = {"remaining": 0}
-            while reset_info["remaining"] == 0:
-                time.sleep(60)  # Only log "Waiting ..." message every 60 seconds
-                reset_info = e.get_api_reset_info()
-                logger.info(f"Waiting until {reset_info['resetAt']} UTC...")
-            return call_github_api(
-                method,
-                endpoint,
-                json,
-                params,
-            )
-        except GitHubAPIRateLimitError:
-            logger.info("Retrying in 60 seconds...")
-            time.sleep(60)
-            return call_github_api(
-                method,
-                endpoint,
-                params,
-            )
+    Set raise_on_rate_limit to False to receive the raw payload instead of triggering
+    rate limit handling; the rate limit probes rely on this to avoid recursing.
+    """
+    secondary_rate_limit_retries = 0
 
-    logger.debug(f"Response: {r.status_code} {r.reason}")
-    return r.json()
+    for attempt in range(MAX_RETRIES + 1):
+        r = request_github_api(method=method, endpoint=endpoint, json=json, params=params)
+        payload = r.json()
+
+        if not raise_on_rate_limit or not is_retryable_response(method, payload):
+            logger.debug(f"Response: {r.status_code} {r.reason}")
+            return payload
+
+        logger.warning(f"Error detected on attempt {attempt + 1}, returned data: {payload=}")
+
+        if is_secondary_rate_limit(payload):
+            secondary_rate_limit_retries += 1
+            if secondary_rate_limit_retries > SECONDARY_RATE_LIMIT_MAX_RETRIES:
+                raise GitHubSecondaryRateLimitError(
+                    f"Still secondary rate limited after {SECONDARY_RATE_LIMIT_MAX_RETRIES} retries."
+                )
+
+            # Secondary limits publish no reset time, so back off exponentially.
+            backoff_seconds = SECONDARY_RATE_LIMIT_BACKOFF_SECONDS * 2 ** (
+                secondary_rate_limit_retries - 1
+            )
+            logger.info(f"Secondary rate limit hit, retrying in {backoff_seconds} seconds...")
+            time.sleep(backoff_seconds)
+        elif method.lower() == "graphql":
+            wait_for_graphql_rate_limit_reset()
+        else:
+            wait_for_rest_rate_limit_reset()
+
+    raise GitHubAPIRateLimitError(
+        f"GitHub API still returning retryable errors after {MAX_RETRIES} retries."
+    )
 
 
 @lru_cache
