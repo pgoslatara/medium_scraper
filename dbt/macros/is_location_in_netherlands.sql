@@ -14,6 +14,8 @@
             'Eindhoven',
             'Eindhoven, The Netherlands',
             'Groningen',
+            'Nederland',
+            'Nederlands',
             'Netherlands',
             'Nijmegen',
             'Oegstgeest',
