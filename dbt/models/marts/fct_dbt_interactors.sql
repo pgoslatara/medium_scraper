@@ -23,6 +23,47 @@ with
             max(created_at) as last_pr_created_at,
         from {{ ref('stg_github_repo_interactors__pull_requests') }}
         group by 1
+    ),
+    interactions as (
+        select
+            issue_creator as username,
+            'issue' as interaction_type,
+            created_at,
+            title,
+            html_url,
+            repository_url
+        from {{ ref('stg_github_repo_interactors__issues') }}
+
+        union all
+
+        select
+            pull_request_creator as username,
+            'pull_request' as interaction_type,
+            created_at,
+            title,
+            html_url,
+            repository_url
+        from {{ ref('stg_github_repo_interactors__pull_requests') }}
+    ),
+    first_interaction as (
+        -- The staging models hold every issue and PR ever opened on a scraped repo, so
+        -- the earliest row per user is their first ever interaction, not merely the
+        -- first one the pipeline happened to see.
+        select
+            username,
+            created_at as first_interaction_at,
+            concat(
+                string_split(repository_url, '/')[4],
+                '/',
+                string_split(repository_url, '/')[5]
+            ) as first_interaction_repo,
+            title as first_interaction_title,
+            interaction_type as first_interaction_type,
+            html_url as first_interaction_url,
+        from interactions
+        -- html_url breaks ties between an issue and a PR opened at the same second
+        qualify
+            row_number() over (partition by username order by created_at, html_url) = 1
     )
 
 select
@@ -35,37 +76,14 @@ select
     pr.num_prs_created,
     pr.first_pr_created_at,
     pr.last_pr_created_at,
-    if(
-        u.location in (
-            'Almere',
-            'Amsterdam',
-            'Amsterdam, NL',
-            'Amsterdam, The Netherlands',
-            'Amsterdam / Gliwice',
-            'Breda',
-            'Delft',
-            'Delft, The Netherlands',
-            'Eindhoven',
-            'Eindhoven, The Netherlands',
-            'Groningen',
-            'Netherlands',
-            'Nijmegen',
-            'Oegstgeest',
-            'Rotterdam',
-            'Rotterdam, the Netherlands',
-            'The Hague',
-            'The Netherlands',
-            'Tilburg',
-            'Utrecht'
-        )
-        or lower(u.location) like '%amsterdam%'
-        or lower(u.location) like '%netherlands%'
-        or u.location like '%, NL%'
-        or u.location = 'NL',
-        true,
-        false
-    ) as is_user_based_in_netherlands,
+    {{ is_location_in_netherlands('u.location') }} as is_user_based_in_netherlands,
+    fi.first_interaction_at,
+    fi.first_interaction_repo,
+    fi.first_interaction_title,
+    fi.first_interaction_type,
+    fi.first_interaction_url,
     u.user_info_extracted_at
 from {{ ref ('stg_github_repo_interactors__users') }} u
 left join issue_stats i on u.username = i.username
 left join pr_stats pr on u.username = pr.username
+left join first_interaction fi on u.username = fi.username

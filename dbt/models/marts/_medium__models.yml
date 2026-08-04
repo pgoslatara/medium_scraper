@@ -3,16 +3,27 @@ version: 2
 models:
   - name: dim_dbt_discussions
     columns:
-      - name: discussion_number
+      - name: discussion_url
         tests:
           - not_null
           - unique
+      - name: discussion_number
+        tests:
+          - not_null
     tests:
       - dbt_expectations.expect_table_column_count_to_be_between:
           min_value: 1
+      # discussion_number is only unique within a repo, not across repos
+      - dbt_expectations.expect_compound_columns_to_be_unique:
+          column_list: ["repo_owner", "repo_name", "discussion_number"]
 
   - name: dim_dbt_repos
     columns:
+      # repo_name is only unique within an owner, see stg_github_repo_interactors__repos
+      - name: full_name
+        tests:
+          - not_null
+          - unique
       - name: repo_id
         tests:
           - not_null
@@ -20,7 +31,6 @@ models:
       - name: repo_name
         tests:
           - not_null
-          - unique
     tests:
       - dbt_expectations.expect_table_column_count_to_be_between:
           min_value: 1
@@ -31,6 +41,36 @@ models:
         tests:
           - not_null
           - unique
+    tests:
+      - dbt_expectations.expect_table_column_count_to_be_between:
+          min_value: 1
+
+  - name: fct_dbt_interactors
+    columns:
+      - name: username
+        tests:
+          - not_null
+          - unique
+      # A minority of users have no issue or PR in the latest snapshot, e.g. because the
+      # repo they interacted with is no longer scraped, so the first_interaction_ columns
+      # are only asserted for users that do have one.
+      - name: first_interaction_at
+        tests:
+          - not_null:
+              config:
+                where: "num_issues_created is not null or num_prs_created is not null"
+      - name: first_interaction_type
+        tests:
+          - accepted_values:
+              values: ["issue", "pull_request"]
+          - not_null:
+              config:
+                where: "num_issues_created is not null or num_prs_created is not null"
+      - name: first_interaction_url
+        tests:
+          - not_null:
+              config:
+                where: "num_issues_created is not null or num_prs_created is not null"
     tests:
       - dbt_expectations.expect_table_column_count_to_be_between:
           min_value: 1

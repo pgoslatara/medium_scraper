@@ -30,7 +30,8 @@ with
             string_split(url, '/')[5] as repo_name,
             title as discussion_title,
             url as discussion_url,
-            row_number() over (partition by number order by extracted_at desc) as rnum
+            -- Dedupe on id: numbers are per-repo so they collide across repos
+            row_number() over (partition by id order by extracted_at desc) as rnum
         from
             read_json_auto(
                 "{{ env_var('DATA_DIR') }}/landing_zone/domain=github_discussions/schema_version=1/*/*.json",
