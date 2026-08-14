@@ -8,6 +8,7 @@ from retry import retry
 
 from utils.logger import logger
 from utils.utils import (
+    MediumGraphQLError,
     create_requests_session,
     get_extracted_at,
     get_extracted_at_epoch,
@@ -27,7 +28,14 @@ class MediumWebScraper:
         for tag in self.tags:
             logger.info(f"Scraping {self.medium_blog_limit} blogs with tag '{tag}'...")
 
-            scraped_data = self.scrape_blogs(tag=tag)
+            # Medium intermittently blocks the scrape for a given tag. Treat a failed tag
+            # as non-fatal so one blocked tag does not abort the whole pipeline (the
+            # GitHub Discussions data is already gathered by this point).
+            try:
+                scraped_data = self.scrape_blogs(tag=tag)
+            except MediumGraphQLError:
+                logger.exception(f"Skipping tag '{tag}' after Medium GraphQL failure.")
+                continue
 
             save_to_landing_zone(
                 data=[dict(t) for t in {tuple(d.items()) for d in scraped_data}],
