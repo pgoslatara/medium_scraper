@@ -430,15 +430,35 @@ def dbt_invoke(dbt_cli_args: List[str], suppress_log: bool = False) -> dbtRunner
     return res
 
 
+class MediumGraphQLError(Exception):
+    """Medium's GraphQL endpoint returned an unusable (non-JSON or error) response."""
+
+
 @retry(delay=5, tries=5)
 def medium_post_graphql_request(
     headers: dict[str, str], json: list[dict[str, Collection[str]]]
 ) -> dict[str, Any]:
-    return (  # type: ignore[no-any-return]
-        create_requests_session()
-        .post("https://medium.com/_/graphql", headers=headers, json=json)
-        .json()
+    response = create_requests_session().post(
+        "https://medium.com/_/graphql", headers=headers, json=json
     )
+
+    # Medium intermittently blocks/throttles unauthenticated GraphQL requests, returning
+    # an empty or HTML body instead of JSON. Surface the status and a body snippet so the
+    # cause is diagnosable rather than a bare JSONDecodeError.
+    if not response.ok:
+        raise MediumGraphQLError(
+            f"Medium GraphQL request failed with status {response.status_code}: "
+            f"{response.text[:200]!r}"
+        )
+
+    try:
+        # requests raises a JSONDecodeError (a ValueError subclass) on an empty/HTML body.
+        return response.json()  # type: ignore[no-any-return]
+    except ValueError as exc:
+        raise MediumGraphQLError(
+            f"Medium GraphQL returned a non-JSON body (status {response.status_code}): "
+            f"{response.text[:200]!r}"
+        ) from exc
 
 
 def save_to_landing_zone(data: List[Dict[str, object]], file_name: str) -> None:
