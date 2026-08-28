@@ -72,7 +72,11 @@ class SendNewDbtDiscussionEmail:
         )
         logger.debug(formatted_discussions)
 
-        if sender_email_address and sender_email_password and recipient_email_address:
+        # In CI (pull_request runs) exercise everything up to the send but do not
+        # dispatch — the placeholder recipient bounces back to the sender account.
+        if os.getenv("CICD_RUN") == "True":
+            logger.info("CICD_RUN is True, skipping email send.")
+        elif sender_email_address and sender_email_password and recipient_email_address:
             logger.info("Sending email...")
             context = ssl.create_default_context()
             with smtplib.SMTP("smtp.gmail.com", 587) as smtp:
