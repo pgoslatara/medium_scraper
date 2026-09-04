@@ -1,6 +1,6 @@
 import os
 from multiprocessing.pool import ThreadPool
-from typing import Any, Dict, List
+from typing import Any, Dict, List, Optional
 
 import duckdb
 import pyarrow as pa
@@ -14,6 +14,7 @@ from graphql_query import (  # type: ignore[import-not-found]
 from utils.logger import logger
 from utils.utils import (
     call_github_api,
+    extract_graphql_page,
     get_extracted_at,
     get_extracted_at_epoch,
     get_extraction_id,
@@ -145,16 +146,15 @@ def get_github_repos_per_org(org: str) -> List[Dict[str, object]]:
         json={"query": Operation(type="query", queries=[org_query]).render()},
     )
     repos = []
-    endCursor = "null"  # Initialising
+    endCursor: Optional[str] = "null"  # Initialising
     while endCursor == "null" or endCursor is not None:
         r = call_github_api(
             method="graphql",
             json={"query": Operation(type="query", queries=[org_query]).render()},
         )
-        endCursor = r["data"]["organization"]["repositories"]["pageInfo"]["endCursor"]
+        nodes, endCursor = extract_graphql_page(r, "organization", "repositories", f"{org=}")
         org_query.fields[0].arguments[1].value = f'"{endCursor}"'
-        for i in r["data"]["organization"]["repositories"]["edges"]:
-            repos.append(i["node"])
+        repos.extend(nodes)
 
     metadata = {
         "extraction_id": get_extraction_id(),
@@ -216,16 +216,15 @@ def get_github_discussions(repos: List[str]) -> None:
         )
 
         discussions = []
-        endCursor = "null"  # Initialising
+        endCursor: Optional[str] = "null"  # Initialising
         while endCursor == "null" or endCursor is not None:
             r = call_github_api(
                 method="graphql",
                 json={"query": Operation(type="query", queries=[repo_query]).render()},
             )
-            endCursor = r["data"]["repository"]["discussions"]["pageInfo"]["endCursor"]
+            nodes, endCursor = extract_graphql_page(r, "repository", "discussions", f"{repo=}")
             repo_query.fields[0].arguments[1].value = f'"{endCursor}"'
-            for disc in r["data"]["repository"]["discussions"]["edges"]:
-                discussions.append(disc["node"])
+            discussions.extend(nodes)
 
         logger.info(f"Retrieved {len(discussions)} discussions from {repo}...")
         return discussions
@@ -305,16 +304,15 @@ def get_github_issues(repos: List[str]) -> List[Dict[str, object]]:
             json={"query": Operation(type="query", queries=[issue_query]).render()},
         )
         issues = []
-        endCursor = "null"  # Initialising
+        endCursor: Optional[str] = "null"  # Initialising
         while endCursor == "null" or endCursor is not None:
             r = call_github_api(
                 method="graphql",
                 json={"query": Operation(type="query", queries=[issue_query]).render()},
             )
-            endCursor = r["data"]["repository"]["issues"]["pageInfo"]["endCursor"]
+            nodes, endCursor = extract_graphql_page(r, "repository", "issues", f"{repo=}")
             issue_query.fields[0].arguments[1].value = f'"{endCursor}"'
-            for i in r["data"]["repository"]["issues"]["edges"]:
-                issues.append(i["node"])
+            issues.extend(nodes)
 
         logger.info(f"Retrieved {len(issues)} issues from {repo}...")
         return issues
@@ -397,16 +395,15 @@ def get_github_pull_requests(repos: List[str]) -> List[Dict[str, object]]:
             json={"query": Operation(type="query", queries=[pr_query]).render()},
         )
         prs = []
-        endCursor = "null"  # Initialising
+        endCursor: Optional[str] = "null"  # Initialising
         while endCursor == "null" or endCursor is not None:
             r = call_github_api(
                 method="graphql",
                 json={"query": Operation(type="query", queries=[pr_query]).render()},
             )
-            endCursor = r["data"]["repository"]["pullRequests"]["pageInfo"]["endCursor"]
+            nodes, endCursor = extract_graphql_page(r, "repository", "pullRequests", f"{repo=}")
             pr_query.fields[0].arguments[1].value = f'"{endCursor}"'
-            for i in r["data"]["repository"]["pullRequests"]["edges"]:
-                prs.append(i["node"])
+            prs.extend(nodes)
 
         logger.info(f"Retrieved {len(prs)} PRs from {repo}...")
         return prs

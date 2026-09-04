@@ -36,6 +36,10 @@ SECONDARY_RATE_LIMIT_MAX_RETRIES = 5
 MAX_RETRIES = 20
 
 
+class GitHubAPIError(Exception):
+    """GitHub returned an unusable response: a non-JSON body or an auth failure."""
+
+
 class GitHubAPIRateLimitError(Exception):
     """The REST API primary rate limit did not reset within the allowed wait."""
 
@@ -261,7 +265,22 @@ def call_github_api(
 
     for attempt in range(MAX_RETRIES + 1):
         r = request_github_api(method=method, endpoint=endpoint, json=json, params=params)
-        payload = r.json()
+
+        # Abuse protections can return a non-JSON body (e.g. an HTML 401). Guard the parse
+        # so it surfaces as a diagnosable error rather than a bare JSONDecodeError.
+        try:
+            payload = r.json()
+        except ValueError as exc:
+            raise GitHubAPIError(
+                f"GitHub API returned a non-JSON body (status {r.status_code}): "
+                f"{r.text[:200]!r}"
+            ) from exc
+
+        # A 401 is an authentication failure (expired/insufficient PAT, or abuse
+        # protection demanding auth). It never clears by waiting, so fail fast instead of
+        # letting the data-less body be mistaken for a retryable rate limit.
+        if r.status_code == 401:
+            raise GitHubAPIError(f"GitHub API authentication failed (status 401): {payload}")
 
         if not raise_on_rate_limit or not is_retryable_response(method, payload):
             logger.debug(f"Response: {r.status_code} {r.reason}")
@@ -305,6 +324,39 @@ def call_github_api(
     raise GitHubAPIRateLimitError(
         f"GitHub API still returning retryable errors after {MAX_RETRIES} retries."
     )
+
+
+def extract_graphql_page(
+    payload: Any,
+    parent_field: str,
+    connection_field: str,
+    label: str,
+) -> tuple[List[Any], Optional[str]]:
+    """Read the nodes and next cursor from one GraphQL connection page.
+
+    Returns (nodes, end_cursor). A partial response (e.g. a FORBIDDEN/NOT_FOUND error)
+    nulls the parent object while still returning HTTP 200 with an errors array; in that
+    case this returns ([], None) after logging, so the caller skips the resource rather
+    than crashing on a null subscript. Null edges or nodes within a page are skipped too.
+    """
+    data = payload.get("data") if isinstance(payload, dict) else None
+    parent = data.get(parent_field) if isinstance(data, dict) else None
+    if parent is None:
+        errors = payload.get("errors") if isinstance(payload, dict) else None
+        logger.warning(
+            f"No {parent_field!r} data returned for {label}; skipping. GraphQL errors: {errors}"
+        )
+        return [], None
+
+    connection = parent[connection_field]
+    end_cursor: Optional[str] = connection["pageInfo"]["endCursor"]
+    nodes: List[Any] = []
+    for edge in connection["edges"]:
+        if edge is None or edge.get("node") is None:
+            logger.warning(f"Skipping null edge for {label}.")
+            continue
+        nodes.append(edge["node"])
+    return nodes, end_cursor
 
 
 @lru_cache
