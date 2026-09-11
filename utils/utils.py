@@ -31,6 +31,11 @@ RATE_LIMIT_MAX_WAIT_SECONDS = 60 * 90  # Primary allocations reset hourly.
 SECONDARY_RATE_LIMIT_BACKOFF_SECONDS = 60
 SECONDARY_RATE_LIMIT_MAX_BACKOFF_SECONDS = 60 * 15  # Guards against a bogus header.
 SECONDARY_RATE_LIMIT_MAX_RETRIES = 5
+# Gateway errors (typically an HTML 502 from GitHub's edge) are transient; the requests
+# are read-only, so retrying them, GraphQL POSTs included, is safe.
+TRANSIENT_SERVER_ERROR_STATUS_CODES = frozenset({502, 503, 504})
+TRANSIENT_SERVER_ERROR_BACKOFF_SECONDS = 5
+TRANSIENT_SERVER_ERROR_MAX_RETRIES = 5
 # Backstop against a response that always looks retryable, e.g. a malformed query
 # returning no data key while the allocation is healthy.
 MAX_RETRIES = 20
@@ -262,9 +267,29 @@ def call_github_api(
     rate limit handling; the rate limit probes rely on this to avoid recursing.
     """
     secondary_rate_limit_retries = 0
+    transient_server_error_retries = 0
 
     for attempt in range(MAX_RETRIES + 1):
         r = request_github_api(method=method, endpoint=endpoint, json=json, params=params)
+
+        # Checked before parsing, as gateway errors carry an HTML body rather than JSON.
+        if r.status_code in TRANSIENT_SERVER_ERROR_STATUS_CODES:
+            transient_server_error_retries += 1
+            if transient_server_error_retries > TRANSIENT_SERVER_ERROR_MAX_RETRIES:
+                raise GitHubAPIError(
+                    f"GitHub API still returning status {r.status_code} after "
+                    f"{TRANSIENT_SERVER_ERROR_MAX_RETRIES} retries: {r.text[:200]!r}"
+                )
+
+            backoff_seconds = TRANSIENT_SERVER_ERROR_BACKOFF_SECONDS * 2 ** (
+                transient_server_error_retries - 1
+            )
+            logger.warning(
+                f"GitHub API returned status {r.status_code}, retrying in "
+                f"{backoff_seconds} seconds..."
+            )
+            time.sleep(backoff_seconds)
+            continue
 
         # Abuse protections can return a non-JSON body (e.g. an HTML 401). Guard the parse
         # so it surfaces as a diagnosable error rather than a bare JSONDecodeError.
