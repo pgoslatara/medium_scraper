@@ -1,5 +1,3 @@
-import os
-
 import papermill as pm  # type: ignore[import-not-found]
 
 from src.data_products.email_weekly_medium_blogs import SendMediumBlogsEmail
@@ -8,15 +6,11 @@ from src.data_products.email_weekly_new_dbt_repos import SendNewDbtRepoEmail
 from src.data_products.email_weekly_new_dutch_interactors import (
     SendNewDutchInteractorEmail,
 )
+from utils.utils import get_ingestion_lookback_days
 
 
 def main() -> None:
-    # INGESTION_LOOKBACK_WINDOW is "" when action is triggered from main branch
-    default_lookback = 7
-    try:
-        lookback_days = int(os.getenv("INGESTION_LOOKBACK_WINDOW", default_lookback))
-    except:
-        lookback_days = default_lookback
+    lookback_days = get_ingestion_lookback_days()
 
     SendMediumBlogsEmail(lookback_days=lookback_days).run()
     SendNewDbtDiscussionEmail(lookback_days=lookback_days).run()
