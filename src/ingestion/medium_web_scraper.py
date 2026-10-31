@@ -25,6 +25,7 @@ class MediumWebScraper:
         self.tags = tags
 
     def run(self) -> None:
+        failed_tags = []
         for tag in self.tags:
             logger.info(f"Scraping {self.medium_blog_limit} blogs with tag '{tag}'...")
 
@@ -35,12 +36,20 @@ class MediumWebScraper:
                 scraped_data = self.scrape_blogs(tag=tag)
             except MediumGraphQLError:
                 logger.exception(f"Skipping tag '{tag}' after Medium GraphQL failure.")
+                failed_tags.append(tag)
                 continue
 
             save_to_landing_zone(
                 data=[dict(t) for t in {tuple(d.items()) for d in scraped_data}],
                 file_name=f"domain=medium_blogs/tag={tag}/extracted_at={get_extracted_at_epoch()}/extraction_id={get_extraction_id()}.json",
             )
+
+        # Every tag failing means Medium is blocking the runner outright. Fail loudly rather
+        # than let the weekly email silently go out with stale blogs.
+        if failed_tags and len(failed_tags) == len(self.tags):
+            raise MediumGraphQLError(f"Medium GraphQL failed for every tag: {failed_tags}.")
+        if failed_tags:
+            logger.warning(f"Medium GraphQL failed for {len(failed_tags)} tag(s): {failed_tags}.")
 
         author_data = self.scrape_authors(extraction_id=get_extraction_id())
         save_to_landing_zone(
