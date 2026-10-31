@@ -2,12 +2,12 @@
   "content": [
     {
       "content": null,
-      "created": "2026-10-31T08:13:45.437884Z",
+      "created": "2026-10-31T13:49:52.658301Z",
       "format": null,
       "hash": null,
       "hash_algorithm": null,
-      "last_modified": "2026-10-31T07:52:48.487828Z",
-      "mimetype": "application/vnd.apache.parquet",
+      "last_modified": "2026-10-31T13:28:18.145921Z",
+      "mimetype": null,
       "name": "rpt_github_action_usage.parquet",
       "path": "reports/rpt_github_action_usage.parquet",
       "size": 1393,
@@ -15,11 +15,11 @@
       "writable": true
     }
   ],
-  "created": "2026-10-31T08:13:45.437884Z",
+  "created": "2026-10-31T13:49:52.658301Z",
   "format": "json",
   "hash": null,
   "hash_algorithm": null,
-  "last_modified": "2026-10-31T08:13:45.437884Z",
+  "last_modified": "2026-10-31T13:49:52.658301Z",
   "mimetype": null,
   "name": "reports",
   "path": "reports",
