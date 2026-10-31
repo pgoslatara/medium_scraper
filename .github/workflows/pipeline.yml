@@ -26,7 +26,8 @@ env:
 
 jobs:
   pipeline:
-    runs-on: ubuntu-latest
+    # Pinned: Medium's Cloudflare returns 403 to the scraper on the ubuntu-latest (26.04) image.
+    runs-on: ubuntu-24.04
     # Ingestion waits out GitHub rate limits rather than failing, so the job needs
     # headroom beyond a normal ~20 minute run for days when throttling is heavy.
     timeout-minutes: 90
