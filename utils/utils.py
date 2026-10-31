@@ -417,6 +417,14 @@ def get_extraction_id() -> str:
     return str(uuid.uuid4())
 
 
+def get_ingestion_lookback_days(default_lookback_days: int = 7) -> int:
+    # INGESTION_LOOKBACK_WINDOW is "" when action is triggered from main branch
+    try:
+        return int(os.getenv("INGESTION_LOOKBACK_WINDOW", default_lookback_days))
+    except ValueError:
+        return default_lookback_days
+
+
 @lru_cache
 def get_output_dir() -> str:
     if get_environment() == "prod":

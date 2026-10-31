@@ -31,7 +31,7 @@ def test_run_raises_when_every_tag_fails(monkeypatch: pytest.MonkeyPatch) -> Non
     saved_files = _patch_scraper(monkeypatch, blocked_tags=["dbt", "databricks"])
 
     with pytest.raises(MediumGraphQLError) as exc_info:
-        MediumWebScraper(tags=["dbt", "databricks"]).run()
+        MediumWebScraper(tags=["dbt", "databricks"], lookback_days=7).run()
 
     assert "every tag" in str(exc_info.value)
     assert saved_files == []
@@ -40,7 +40,7 @@ def test_run_raises_when_every_tag_fails(monkeypatch: pytest.MonkeyPatch) -> Non
 def test_run_continues_when_some_tags_fail(monkeypatch: pytest.MonkeyPatch) -> None:
     saved_files = _patch_scraper(monkeypatch, blocked_tags=["dbt"])
 
-    MediumWebScraper(tags=["dbt", "databricks"]).run()
+    MediumWebScraper(tags=["dbt", "databricks"], lookback_days=7).run()
 
     blog_files = [f for f in saved_files if f.startswith("domain=medium_blogs/")]
     assert len(blog_files) == 1
@@ -50,6 +50,6 @@ def test_run_continues_when_some_tags_fail(monkeypatch: pytest.MonkeyPatch) -> N
 def test_run_succeeds_when_no_tags_fail(monkeypatch: pytest.MonkeyPatch) -> None:
     saved_files = _patch_scraper(monkeypatch, blocked_tags=[])
 
-    MediumWebScraper(tags=["dbt", "databricks"]).run()
+    MediumWebScraper(tags=["dbt", "databricks"], lookback_days=7).run()
 
     assert len([f for f in saved_files if f.startswith("domain=medium_blogs/")]) == 2
