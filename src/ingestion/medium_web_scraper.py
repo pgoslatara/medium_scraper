@@ -184,6 +184,8 @@ class MediumWebScraper:
             info = {
                 "author_name": i["node"]["creator"]["name"],
                 "author_url": "https://medium.com/@" + i["node"]["creator"]["username"],
+                # Point-in-time snapshot: claps keep accruing after publication.
+                "clap_count": i["node"].get("clapCount"),
                 "published_at": datetime.fromtimestamp(i["node"]["firstPublishedAt"] / 1000),
                 "reading_time_minutes": i["node"]["readingTime"],
                 "story_url": i["node"]["mediumUrl"],

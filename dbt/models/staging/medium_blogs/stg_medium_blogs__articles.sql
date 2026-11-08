@@ -3,6 +3,8 @@ with
         select
             author_name,
             author_url,
+            -- Null for extractions made before clap counts were captured
+            cast(clap_count as integer) as clap_count,
             extracted_at,
             extracted_at_epoch,
             extraction_id,
@@ -25,6 +27,7 @@ with
                 columns = {
                     author_name:'STRING',
                     author_url:'STRING',
+                    clap_count:'NUMERIC',
                     extracted_at:'STRING',
                     extracted_at_epoch:'NUMERIC',
                     extraction_id:'UUID',
