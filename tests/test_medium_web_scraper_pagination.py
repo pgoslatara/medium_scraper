@@ -12,6 +12,7 @@ from src.ingestion.medium_web_scraper import MediumWebScraper
 def _edge(published_at: datetime) -> Dict[str, Any]:
     return {
         "node": {
+            "clapCount": 42,
             "creator": {"name": "Author", "username": "author"},
             "extendedPreviewContent": {"subtitle": "-"},
             "firstPublishedAt": published_at.timestamp() * 1000,
@@ -87,3 +88,11 @@ def test_scrape_blogs_stops_at_page_cap(monkeypatch: pytest.MonkeyPatch) -> None
 
     assert len(cursors_requested) == scraper.max_pages
     assert len(blogs) == scraper.max_pages
+
+
+def test_scrape_blogs_captures_clap_count(monkeypatch: pytest.MonkeyPatch) -> None:
+    _patch_feed(monkeypatch, pages=[[_days_ago(1)]])
+
+    blogs = MediumWebScraper(tags=["dbt"], lookback_days=8).scrape_blogs(tag="dbt")
+
+    assert blogs[0]["clap_count"] == 42
