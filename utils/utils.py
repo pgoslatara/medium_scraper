@@ -8,8 +8,8 @@ from glob import glob
 from pathlib import Path
 from typing import Any, Collection, Dict, List, Mapping, Optional, Union
 
-import cloudscraper  # type: ignore[import-not-found]
 import pytz
+from curl_cffi import requests as curl_requests  # type: ignore[import-not-found]
 from dbt.cli.main import dbtRunner, dbtRunnerResult
 from dbt_common.events.base_types import EventMsg  # type: ignore[import-not-found]
 from graphql_query import (  # type: ignore[import-not-found]
@@ -384,10 +384,16 @@ def extract_graphql_page(
     return nodes, end_cursor
 
 
+# Medium sits behind Cloudflare bot management, which challenges clients whose TLS
+# fingerprint does not match their User-Agent. curl_cffi impersonates a real browser's
+# TLS/HTTP2 handshake and headers so requests from hosted CI runners are not challenged.
+MEDIUM_BROWSER_IMPERSONATION = "edge"
+
+
 @lru_cache
-def create_requests_session() -> cloudscraper.Session:
+def create_requests_session() -> curl_requests.Session:
     logger.info("Creating re-usable requests session...")
-    return cloudscraper.create_scraper()
+    return curl_requests.Session(impersonate=MEDIUM_BROWSER_IMPERSONATION)
 
 
 @lru_cache
