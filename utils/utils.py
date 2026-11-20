@@ -387,7 +387,7 @@ def extract_graphql_page(
 # Medium sits behind Cloudflare bot management, which challenges clients whose TLS
 # fingerprint does not match their User-Agent. curl_cffi impersonates a real browser's
 # TLS/HTTP2 handshake and headers so requests from hosted CI runners are not challenged.
-MEDIUM_BROWSER_IMPERSONATION = "safari"
+MEDIUM_BROWSER_IMPERSONATION = "edge"
 
 
 @lru_cache
